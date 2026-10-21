@@ -1,0 +1,75 @@
+kind: ADDProjectAdoption
+schema_version: 1
+framework:
+  version: 0.9.5
+project:
+  name: Han
+  purpose: 从零建设内容发布社区。用户可以注册和登录，并创建、修改、删除和浏览文章；首期完成用户身份认证与文章管理的最小可用闭环。评论、收藏、关注和标签不纳入首期。
+  projection_root:
+    id: han
+  repository_roots:
+    - id: han
+      responsibility: 承载内容发布社区的项目代码、规格与 ADD 项目内容
+      git_relation: projection-root
+      shared_attributes:
+        module_ids:
+          - identity-auth
+          - article-management
+        check_commands: []
+        security_policy: 禁止提交凭据或密钥；认证信息必须安全存储；用户数据遵循最小必要原则；鉴权、文章所有权及内容安全相关变更必须经过评审。具体认证方案、数据库和接口形式保持待确认。
+  enabled_profiles:
+    - go-service
+  profile_instances:
+    go-service:
+      source: .add/project/profiles/go-service
+      digest: sha256:1c20bb435d5603acf5a4fc89c0b9882b49c1d60cf6952da4fd5eb1b063bb9bcf
+      origin:
+        digest: sha256:1c20bb435d5603acf5a4fc89c0b9882b49c1d60cf6952da4fd5eb1b063bb9bcf
+        kind: canonical-template
+        profile: go-service
+        release: 0.9.5
+  repo_layout: 单仓绿地项目；首期包含 Go 后端服务，具体框架、数据库、接口形式和工程结构待确认。
+  module_map:
+    - identity-auth：用户注册与登录（首期）
+    - article-management：文章创建、修改、删除与浏览（首期）
+  check_commands: []
+  security_policy: 禁止提交凭据或密钥；认证信息必须安全存储；用户数据遵循最小必要原则；鉴权、文章所有权及内容安全相关变更必须经过评审。具体认证方案、数据库和接口形式保持待确认。
+artifact_profiles:
+  enabled: []
+  default: ""
+  definitions: {}
+runtimes:
+  codex:
+    enabled: true
+    prefix: add-
+    root: AGENTS.md
+    team_overview: .codex/team-overview.md
+    roles: .codex/agents
+    guidance: .codex/guidance
+    skills: .codex/skills
+    profiles: .codex/profiles
+    runbook: .codex/runtime-runbook.md
+paths:
+  knowledge_root: .add/project/knowledge
+  work_root: .spec
+  issue_root: .spec/issues
+owners: {}
+sources: []
+replacements: []
+records:
+  diagnostic_level: minimal
+  retention_days: 30
+  checkpoint_store:
+    provider: filesystem
+    path: .add/records/checkpoints
+    schema: 1
+  evidence_ingest: []
+materials:
+  enabled: false
+  default_remind_on: []
+  exclusions: []
+  note: 首期不启用材料提醒。
+  index:
+    provider: filesystem
+    path: .add/records/materials.json
+    schema: 1

@@ -1,0 +1,54 @@
+{
+  "deliveryUnit": "ir-01-content-community",
+  "checkpoint": "design",
+  "objectRef": {
+    "path": ".add/project/knowledge/design/architecture.md",
+    "digest": "sha256:6645abfd3b5f1c2e5ba21a546f1e6aea9625868202a9ca1abcc61385abee9efb"
+  },
+  "configRef": {
+    "path": "add.manifest.yaml",
+    "digest": "sha256:8467771211cddd6295f3cb6724a82c0432090206b22efe3bfa13ad217b6df929"
+  },
+  "producerAttestation": {
+    "stableId": "current-user",
+    "statement": "接受 architecture-ir01-r13。",
+    "evidenceRefs": []
+  },
+  "receiverDecision": {
+    "stableId": "current-user",
+    "statement": "确认 r13 可承接 B0 规划与实施。"
+  },
+  "decisionState": "accepted",
+  "continuation": "proceed",
+  "decidedAt": "2026-10-21T01:29:16.243Z",
+  "scope": [],
+  "hostEvidenceRefs": [],
+  "sessionEvidenceRefs": [],
+  "verificationLevel": "declared",
+  "confirmations": [
+    {
+      "role": "当前设计负责人",
+      "stableId": "current-user",
+      "scope": [
+        "设计成果",
+        "需求覆盖",
+        "提交依据"
+      ],
+      "decisionState": "accepted",
+      "decidedAt": "2026-10-21T01:29:16.243Z",
+      "remark": "接受 architecture-ir01-r13。"
+    },
+    {
+      "role": "下一任务规划 / 开发责任人或指定技术代表",
+      "stableId": "current-user",
+      "scope": [
+        "方案",
+        "契约",
+        "实现及验证条件能否承接"
+      ],
+      "decisionState": "accepted",
+      "decidedAt": "2026-10-21T01:29:16.243Z",
+      "remark": "确认可承接 B0。"
+    }
+  ]
+}

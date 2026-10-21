@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "host": "claude",
+  "applicability": "仅适用于 Claude Code；其他 Host 不使用此投影。",
+  "roleRead": "方法已按当前任务选定后，使用 Read 定向读取下列本端 Skill 的完整有效正文及所需资源；同版本全文仍有效则复用。此处不是 skills 预加载，父会话读过不等于本角色已取得；不要一次读取所有方法。",
+  "rootShared": "ADD 受管片段：授权、固定工作区与客户已有内容优先；发现不等于实际读取或执行。",
+  "navigation": {
+    "workflows": ["workflow:development-delivery", "workflow:issue-resolution"],
+    "skills": ["skill:project-initialization", "skill:project-experience"]
+  },
+  "profileMethods": {"backend-dev": ["skill:tdd-go"]},
+  "runbook": "# Claude 运行边界\n\n仅遇委派、权限、发现或交付异常时读取。Role 通过 Read 取得当前选定的本端 Skill，不假设父会话内容已注入；不增加 Skill 工具或 skills 预加载。\n\n工具白名单不能证明逐文件硬隔离；Bash 也不是物理只读。Explorer 不授予 Write/Edit，Reviewer 不授予 Edit；报告 Write 仅在本次明确授权范围内使用，调用层可进一步收窄。客户 settings、hooks、permissions 保持原件，投影不修改它们。\n\n角色不得继续委派。Lead 复核真实调用身份、固定 worktree/分支、文件范围、diff、测试与交付；启动/返回不等于完成。异常时先核活调用与可能副作用，不根据未知状态重复启动。\n\n未知版本先做语法、发现和真实 smoke；过旧版本明确缺项。失败不覆盖现役投影；文案约束不冒充沙箱。\n",
+  "roleTools": {
+    "arch-designer": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"],
+    "backend-dev": ["Read", "Grep", "Glob", "Bash", "Edit", "Write"],
+    "boundary-griller": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"],
+    "explorer": ["Read", "Grep", "Glob", "Bash", "WebFetch", "WebSearch"],
+    "feature-designer": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"],
+    "frontend-dev": ["Read", "Grep", "Glob", "Bash", "Edit", "Write"],
+    "mo": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"],
+    "req-analyst": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"],
+    "reviewer": ["Read", "Grep", "Glob", "Bash", "Write"],
+    "steward": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"],
+    "task-planner": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"],
+    "test-engineer": ["Read", "Grep", "Glob", "Bash", "Write", "Edit"]
+  }
+}

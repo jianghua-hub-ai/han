@@ -1,0 +1,260 @@
+[
+  {
+    "id": "codex-root",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "记录实际 Host 版本/平台/表面，使用仓外无敏感项目；验证项目只有一份已明确命名的需求制品"
+    ],
+    "input": "分别在两个独立新会话输入：①请继续这项需求并补齐验收条件；②这项需求的验收条件应该怎么补？",
+    "action": "两次分别核 AGENTS.md 唯一受管片段、首次 Route 与选定内容真实读取",
+    "expected": [
+      "只推荐本端身份",
+      "两次分别完成新会话首次 Route；属于研发工作先读选定 Workflow，按 description 读当前专业 Skill；不预读总览、另一条 Workflow 或角色库",
+      "问答命中 Skill 时不因形式跳过；问答只解释、不修改制品",
+      "两次各有独立 sessionId 与 Workflow/Skill 的 readPath、readDigest、readRange，不以一次读取冒充两次",
+      "项目事实追溯 manifest 字段",
+      "联合入口不得拼两套完整流程"
+    ],
+    "evidenceFields": [
+      "hostVersion",
+      "platform",
+      "surface",
+      "sessionId",
+      "readPath",
+      "readDigest",
+      "readRange"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-skill",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "清单含该 Skill；不以发现列表证明读取完成"
+    ],
+    "input": "明确请求一个已安装 Skill",
+    "action": "分别验证原生 Skill 选择，以及发现列表元数据不可用时的精确文件读取",
+    "expected": [
+      "得到完整有效正文及必要资源",
+      "元数据预算省略不阻断已知路径直读",
+      "不读无关方法"
+    ],
+    "evidenceFields": [
+      "selectedName",
+      "toolCall",
+      "readPath",
+      "readDigest",
+      "readRange"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-navigation",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "已安装清单包含本次所选内容；不以发现列表证明正文已读"
+    ],
+    "input": "分别请求开发交付、Issue 闭环、项目初始化与项目经验整理",
+    "action": "核对投影中的实际 WorkflowLocation 和本端 Skill 路径，再定向读取已选正文",
+    "expected": [
+      "研发 Workflow 只有 development-delivery 与 issue-resolution",
+      "项目初始化和项目经验是 Skill，不冒充第三条 Workflow",
+      "未选内容不物化，不包含 ADD 母仓维护入口"
+    ],
+    "evidenceFields": [
+      "sessionId",
+      "selectedUnitIds",
+      "workflowLocations",
+      "selectedName",
+      "readPath",
+      "readDigest",
+      "readRange"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-role-read",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "精确 Context Pack；独立评审使用真实独立身份；项目已获 Host 信任；有角色时 .codex/config.toml 配置层存在"
+    ],
+    "input": "调用一个只读角色和一个获准有界写角色",
+    "action": "记录真实角色 ID、角色自己的主 Skill 读取与实际权限",
+    "expected": [
+      "TOML 三基础字段正确",
+      "不重复注册 config_file",
+      "原生 agent_type 为本次选定角色；带 agent_type 派发不使用完整历史 fork",
+      "父读取不冒充子读取",
+      "继承沙箱不放宽"
+    ],
+    "evidenceFields": [
+      "agentId",
+      "roleName",
+      "effectiveSandbox",
+      "authorizedFiles",
+      "readPath",
+      "readDigest",
+      "actualDiff"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-knowledge-command",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "无敏感知识样例；命令来自项目配置"
+    ],
+    "input": "读取必要项目知识并运行已授权检查",
+    "action": "核实际知识引用、命令和输出；缺命令如实报告",
+    "expected": [
+      "输出可追溯",
+      "不强制 Wiki 或未启用 profile"
+    ],
+    "evidenceFields": [
+      "knowledgeRef",
+      "command",
+      "exitCode",
+      "stdout",
+      "stderr"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-coexistence",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "单端/两端/三端分别验证；不可见私人策略列未验"
+    ],
+    "input": "选择本端、外端、旧 ADD 与客户自有 Skill",
+    "action": "在获准组合中核候选与有效策略；必要时人工合并精确 skills.config 禁用",
+    "expected": [
+      "不默认广域禁用",
+      "客户已有 TOML 与数组项保留",
+      "发现不等于实际加载"
+    ],
+    "evidenceFields": [
+      "combination",
+      "candidates",
+      "effectiveConfig",
+      "unchecked",
+      "actualSelection",
+      "customerCapability"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-profile",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "准备三种明确配置的独立验证项目"
+    ],
+    "input": "要求执行当前 profile 测试方法",
+    "action": "分别核未启用、启用、禁用后新会话的 tdd-go 路径、正文与资源",
+    "expected": [
+      "启用只有一份原生 tdd-go",
+      "profile 子树无第二正文",
+      "关闭后实际撤下需新会话验证，不自动启用其他 profile"
+    ],
+    "evidenceFields": [
+      "profiles",
+      "files",
+      "selectedName",
+      "readPath",
+      "readDigest",
+      "newSession"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "progressive-disclosure",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "使用仓外无敏感验证项目，记录实际 Host 版本、平台和表面",
+      "项目显式启用 go-service，并有可复核的项目事实、检查命令和知识样例",
+      "先启动一个新会话，再在同一会话续接评审修复"
+    ],
+    "input": "在新会话中开始一个 Go 实施任务：先回答一个只读专业证据问题，再进入 development-delivery 的实施阶段；只使用 backend-dev、task-implementation、go-service/tdd-go、精确编码 Rules 与项目知识。随后在同一会话继续修复评审意见。",
+    "action": "核 AGENTS.md 最小入口、PostToolUse(Agent) 与 SubagentStart/SubagentStop；当前 importer 未支持的角色生命周期事件保持 unknown；逐项绑定 Route、Workflow、角色、Skill、Rule、Profile、项目知识的实际读取或 unknown",
+    "expected": [
+      "根入口仅提供最小导航，不预读团队总览、另一条 Workflow、未来阶段、无关 Role/Skill/Rule/Profile 或完整历史",
+      "新会话首次 Route 恰好一次并选择 development-delivery；同会话继续修复评审意见不 reroute",
+      "进入实施阶段后才读取 development-delivery 当前阶段与 skill:task-implementation",
+      "只读专业证据问题按 Skill description 直达 skill:research，回答不修改项目制品",
+      "仅在真实执行后端角色时读取 role:backend-dev，父会话读取不冒充角色读取",
+      "只读取当前 Go 实施所需 rule:coding-standards、rule:no-hardcode-policy、rule:code-review-checklist；日志/追踪无影响时不预读其 Rules",
+      "仅当 profile:go-service 已启用且与当前任务相关时，精确读取 skill:tdd-go 正文与必要资源",
+      "项目事实、检查命令与必要知识沿 manifest/项目知识引用读取，缺失保持 unknown，不强制 Wiki",
+      "所有加载结论分别绑定 session/turn、Route 次数、所选 Workflow/Unit、readPath/readDigest/readRange、Profile 与知识引用；不可观测处保持 unknown"
+    ],
+    "evidenceFields": [
+      "hostVersion",
+      "platform",
+      "surface",
+      "sessionId",
+      "turnId",
+      "routeCount",
+      "selectedWorkflow",
+      "selectedUnitIds",
+      "readPath",
+      "readDigest",
+      "readRange",
+      "profileRef",
+      "knowledgeRef",
+      "observation",
+      "source"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-nonlive",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "只用仓外复制样例；禁止在研发仓启动 Host"
+    ],
+    "input": "从非现役 payload/template/backup 的 cwd 启动",
+    "action": "实际核发现列表和调用，记录恢复状态",
+    "expected": [
+      "非现役不展开第二原生根",
+      "无 symlink 不作为隔离证明"
+    ],
+    "evidenceFields": [
+      "cwd",
+      "layout",
+      "discovery",
+      "calls",
+      "restoredFiles"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  },
+  {
+    "id": "codex-failure",
+    "host": "codex",
+    "hostVersions": [],
+    "preconditions": [
+      "可控无敏感失败样例"
+    ],
+    "input": "模拟缺正文、权限拒绝、调用失败与未知版本",
+    "action": "核失败及下一步，不捏造调用或验证完成",
+    "expected": [
+      "现役原件不变",
+      "旧版缺项明确；未知版先验证",
+      "不可观察的行为明确 unknown"
+    ],
+    "evidenceFields": [
+      "failure",
+      "unchangedDigests",
+      "unknown",
+      "nextAction"
+    ],
+    "cleanupOwner": "执行验证的维护者"
+  }
+]

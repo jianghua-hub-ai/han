@@ -1,0 +1,44 @@
+# Codex 构建/装配期映射
+
+> 本文件只在维护母本或装配项目时使用；正常运行由根 `AGENTS.md` 路由，异常交付才读取 `.codex/runtime-runbook.md`。
+
+| canonical | Codex projection |
+|---|---|
+| `entry/project-guide.md` | `AGENTS.md`，填充本端物理解析表 |
+| `entry/team-overview.md` | `.codex/team-overview.md` |
+| `roles/<role>.md` | `.codex/agents/add-cx-<role>.toml` 的完整 `developer_instructions` |
+| `rules/*.md` | `.codex/guidance/*.md` |
+| `skills/<skill>/` | `.codex/skills/add-cx-<skill>/` |
+| `profiles/<profile>/` | `.codex/profiles/<profile>/`，仅项目启用后加载 |
+
+逻辑引用解析：
+
+- `role:<id>` → `.codex/agents/add-cx-<id>.toml`
+- `entry:team-overview` → `.codex/team-overview.md`
+- `rule:<id>` → `.codex/guidance/<id>.md`
+- `skill:<id>` → `.codex/skills/add-cx-<id>/SKILL.md`
+- `profile:<id>` → `.codex/profiles/<id>/`
+
+`AGENTS.md` 只内联最小 L1 和路由，不复制完整 guidance/profile。
+
+以上是默认路径；实际目标、前缀、所选内容与资源由同次已核 catalog 和 RenderBindings 决定，不按母本现役目录猜测。项目 name、启用 profiles 填实际 DTO；DTO 不携带的 repo_layout / module_map / check_commands / security_policy / human_approvers 保留各自 `add.manifest.yaml` 精确字段引用，不伪造默认事实或宣称未配置。
+
+角色 TOML 仅采用 `name`、`description`、`developer_instructions` 三基础字段，生成新候选时由真实 TOML parser round-trip 校验；完整 Role 正文及主 Skill 物理直链都在 instructions 内，不依赖发现列表的元数据预算。Role 取得自己的有效方法全文与必要资源，父会话读取不冒充角色已读。
+
+Host 已支持 `sandbox_mode`，但当前模板不设置它；本端不添加 model、工具/审批配置或 skills 预加载，不放宽继承限制。角色文字文件范围不是硬隔离；实际权限、版本与策略须在运行手册及 smoke 中核验。现有客户 TOML 只诊断、保留原件；基础字段外的已观察策略列具体路径未验，不把解析成功称为有效权限验证。
+
+项目自定义角色位于 `.codex/agents/*.toml`，不向 `.codex/config.toml` 重复注册角色。当前实测的 Codex 版本只有在项目配置层存在、且项目被 Host 信任后，才发现这些角色：选择了角色而客户尚无 `.codex/config.toml` 时，生成仅含 `[agents]` 的最小入口；客户已有该文件则原样保留。信任由 Host/用户控制，ADD 不擅自修改。版本行为仍以真实 smoke 为准；带原生 `agent_type` 派发时不得同时请求完整历史 fork。
+
+采用前真实验证 `AGENTS.md`、TOML 语法/角色发现、Skill/Profile 路径和最小子角色调用。失败保持项目原状；未知版本不覆盖，旧版本明确报告能力缺口。
+
+`templates.json` 是纯渲染数据，`smoke.json` 是九项待执行用例，不是 Host 执行证据。装配层显式传入同来源 catalog 元数据及 smoke 用例；缺装配明确缺项，不隐式读取本研发仓。渲染只接受已选 sources/resource bytes，不扩展选择或读取客户内容。
+
+仅启用 go-service 且选择到其方法时，将 tdd-go 投影成唯一 `.codex/skills/add-cx-tdd-go/SKILL.md` 及资源；profile 子树不留第二正文。未启用不生成；关闭后现役撤下及新会话实际发现归采用接线/Host 验证。
+
+新项目默认只在 `.codex/` 下生成 Codex 专属资产，不在 `.agents/skills` 留别名或副本；客户显式更改 `runtimes.codex` 路径时仍按其确认值投影。`inspect` 继续观察 Codex 原生可读的既有 `.agents/skills`，但观察不触发迁移。此处是内容发现路径，不是权限隔离。Codex 0.155.0-alpha.9 的本地启动上下文已观察到 `.codex/skills`；其他版本仍须按 `smoke.json` 实测发现与正文读取。
+
+`inspect` 只观察 scope 声明的 snapshot 文件和外部候选；标准布局的 applicable 不是“Host 已发现”。已登记自定义 Role 路径参与实际观察身份冲突并列具体未验路径，不读取私人范围或猜测优先级。缺 bytes、摘要不符、链接、未知语法/策略和未观察范围明确 unchecked；异常不回显正文。
+
+精确外端 Skill 禁用复用 S3.1 `planNativeConfig`：空配置只生成确认字段，已有 `.codex/config.toml` 返回人工合并候选，不重序列化、不删除客户 skills.config 数组项。不会重复注册 config_file。
+
+本端 render 仅产生单端 AGENTS 候选。Codex + OpenCode 联合入口归 S4.2 从同源 project-guide 与全部实际 bindings 一次合成并替换单端候选；不能简单拼接两套完整流程。本段未实现或验证联合合成，也未修共享转换器已登记的大写 URI 分类限制。

@@ -1,0 +1,27 @@
+# OpenCode 构建/装配期映射
+
+> 本文件供母本维护与项目装配使用；正常工作从根 `AGENTS.md` 专业直链进入，异常时才读本端运行手册。
+
+| 中性内容 | 默认 OpenCode 投影 |
+|---|---|
+| `entry/project-guide.md` | `AGENTS.md` 的单端 ADD 候选片段 |
+| `entry/team-overview.md` | `.opencode/team-overview.md` |
+| `roles/<role>.md` | `.opencode/agents/add-oc-<role>.md` |
+| `rules/*.md` | `.opencode/guidance/*.md` |
+| `skills/<skill>/` | `.opencode/skills/add-oc-<skill>/` |
+| 已启用 profile 的 Rule/说明 | `.opencode/profiles/<profile>/` |
+| 已选择的 profile Skill `tdd-go` | `.opencode/skills/add-oc-tdd-go/SKILL.md` 及同目录资源 |
+
+实际目录、前缀、选择及资源来自同次已核 catalog 与 RenderBindings；不按构建者现役目录猜源。所有逻辑引用、资源相对路径与 WorkflowLocation 复用共享投影器，保留自然语言正文，不维护第二份方法。tdd-go 不在 profile 子树保留第二正文；未启用不生成，不自动启用其他 profile。
+
+Role 使用 Markdown YAML frontmatter 的 `description`、`mode: subagent`，原生名称由文件名决定，不仿造 Claude 的 `name/tools`。Skill 使用必需 `name/description`；name 与目录一致，遵守本端长度和小写连字符约束。只生成最小本端元数据，不添加 model、工具白名单或权限 allow，不放宽客户继承权限。角色的方法引用指向同次生成的本端 Skill；原生选择不可用时保留精确文件读取回退。[原生 Agent 格式](https://opencode.ai/docs/agents/)、[Skill 字段与发现](https://opencode.ai/docs/skills/)。
+
+`inspect` 只观察声明的 snapshot/scope。标准角色路径为 `.opencode/agents/*.md`；一层 `.opencode/skills/*/SKILL.md` 及兼容 `.claude/skills/*/SKILL.md`、`.agents/skills/*/SKILL.md` 是可观察布局，不表示 Host 已加载或权限已生效。资源的 agents、嵌套 SKILL.md、参考 AGENTS/CLAUDE 不因后缀成为主身份。自定义路径必须有同次已核配置/来源映射、准确主路径和 sourceDigest 证明；缺失、错配或陈旧时保留具体路径与来源的 unchecked，不捏造候选或逻辑冲突。标准布局无需 installed 也可观察，installed 的相反 owner kind 不冒主文件；真实已证多主路径才报逻辑冲突。
+
+原生配置只读检查使用 `opencode.json` / `opencode.jsonc` 的完整已核 bytes。精确外端前缀来自当前已核项目配置，不硬编码默认前缀代替实际选择。相反值、重叠通配规则及 Agent 级覆盖先报告冲突；无法核清的配置形状、范围或来源明确 unchecked，不模拟完整 Host 配置合并与有效权限。客户无关能力不删改，普通 read 不因 Skill deny 成为安全隔离。[原生权限与覆盖](https://opencode.ai/docs/permissions/)。
+
+采用层负责按实际发现/前缀装配 `NativeConfigEdit`，复用 `planNativeConfig` 产生 `permission.skill.<外端前缀>* = deny` 的最小字段候选。已有 JSONC 按源区间保留客户字段/注释，相反值需明确确认；不新增全局 allow，不把客户配置作为 render 的 whole-file 投影。target 不反向导入 adoption，不增加持久状态或 public DTO。
+
+项目 name/启用 profiles 使用实际 DTO；其他项目事实保留 `add.manifest.yaml` 对应字段的精确按需引用，不伪造检查命令或审批人。render 只生成本端 AGENTS 候选；Codex/OpenCode 联合入口由 S4.2 从同源 guide 和全部 bindings 一次合成，不能拼接两套完整入口。
+
+`templates.json` 是渲染数据，`smoke.json` 是待执行用例；装配层显式传入同来源 catalog 与 smoke，缺失时明确缺项。纯函数不读客户磁盘、不启动 Host、不返回 passed。真实版本、Skill 调用、角色独立身份、有效权限、共存与客户能力留给 S17 在仓外获授权项目验证；个人/组织/插件/环境来源不可见时不能签发完整发现或兼容结论。

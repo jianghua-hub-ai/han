@@ -1,0 +1,43 @@
+# Claude 构建/装配期映射
+
+本文件仅描述格式、名称、路径与能力边界；专业正文和依赖来自同次已核 ContentCatalog。运行时按 `CLAUDE.md` 专业直链读取，只有相关异常才读 runtime runbook，不要求先读本映射或总览。
+
+## 原生布局
+
+以下是默认采用路径；实际路径与前缀统一消费 RenderBindings，不从渲染机器上的现役目录猜客户配置。
+
+| 中性单元 | Claude 默认目标 |
+|---|---|
+| `entry:project-guide` | `CLAUDE.md` 唯一 ADD marked-fragment |
+| `entry:team-overview` | `.claude/team-overview.md`，按需导航 |
+| `role:<id>` | `.claude/agents/add-cc-<id>.md` |
+| `rule:<id>` | `.claude/guidance/<id>.md`，不复制为常驻 rules |
+| core `skill:<id>` | `.claude/skills/add-cc-<id>/SKILL.md` 与已声明资源 |
+| `profile:<id>` | `.claude/profiles/<id>/README.md` 与该 profile 已声明规则/资源 |
+| 已启用 go-service 的 `skill:tdd-go` | `.claude/skills/add-cc-tdd-go/SKILL.md` 与同行资源；profile 子树不生成第二正文 |
+
+Role/Skill 的目录名、原生 name、适用端说明和直接引用由同一映射生成；自定义前缀全程一致。Workflow 定义与步骤仍来自所属 Skill；返回 WorkflowLocation 指向实际投影及其摘要，不生成另一份执行流程。workflow-index/catalog 派生由 compile 消费此返回，不在 target 写第二定义。
+
+根入口在原专业路由行内转换精确链接，不另建常驻方法索引、不从导航自动增选所有角色。已有 name/profiles 按配置 DTO 填实；DTO 未携带的项目取值逐格指向 `add.manifest.yaml` 的对应原字段（repo_layout、module_map、check_commands、security_policy、human_approvers），不猜母仓值，也不误报客户未配置。
+
+## 模板输入与装配
+
+- 逻辑模板键为 `claude/templates.json`，值是本端格式文本、Role 工具白名单与条件 profile 方法映射。render 消费已核 ContentImage bytes/digest；缺项或坏摘要拒绝，不读本仓模板兜底。
+- `claude/smoke.json` 是 SmokeCase 数据；`createClaudeTarget({catalog, smokeCases})` 由构建/采用接线提供同来源数据。catalog 只用于精确 source/resources→owner、同源摘要/依赖核验和 optional 不可用判断，不读取或增选未选正文。没有目录而实际需要未选普通相对链接的归属时明确缺项；真正悬空仍失败。
+- 选中来源、资源与 bindings 必须一致。专业正文仅做 AST 定位的逻辑引用/路径转换，不把 fenced 示例当真实依赖。未选 optional 标明不适用，不生成近名路径或自动启用 profile。
+- render/inspect/smokeGuide 不读写项目或启动 Host。render 仅返回内存原生目标；compile/pack 沿既定 `targets/template-map.json` 与 `.template`/`.payload` 存储合同保持映射可逆。原生目录只在选定安装或仓外明确验证项目物化，不在 targets、候选或备份展开。
+- CLAUDE.md 使用 S3.1 的联合根片段支持；共享 AGENTS.md 由采用层一次合成，Claude target 不独立写它。客户 marker 外文本由采用计划保留。
+
+## Role 方法与权限
+
+Role 对已选方法显式定向 **Read 本端 Skill** 的完整有效正文及必要资源；父会话读过不等于角色已取得。没有 `skills` 预加载字段，不新增 Skill 工具，也不一次预读全部方法。go-service 被显式选中时，backend-dev 的测试方法链接指向同一份原生 tdd-go。
+
+工具白名单以既有本端 Role 元数据为上限，可收窄不可静默增加。Explorer 无 Write/Edit；Reviewer 无 Edit，Write 只用于本次明确授权的报告。Bash 与粗粒度 Write 都不能证明物理只读或逐文件硬隔离，调用层授权和 Lead 的实际 status/diff 核验仍必需。现役 settings、hooks、permissions、客户 rules 不由 renderer 写入。
+
+只有 inspect 确实发现的不适用/旧非插件 ADD Skill，采用层才可按 S3.1 生成精确 `skillOverrides/<实际名称>=off` 候选；不添加广域禁用或扩大到客户无关 Skill。该字段不承诺禁用插件 Skill，不以 disable-model-invocation 冒充完全禁用。
+
+## 发现与真实验证
+
+inspect 只消费声明路径内的 snapshot bytes 和显式获准的外部候选；同名、installed 真实逻辑归属重复与根 marker 异常列冲突。链接、缺 bytes/摘要、未观察范围与个人/组织/插件/Agent 有效策略列未验。不扫描私人目录，不把外部候选当项目所有，不把发现或本端布局当已加载、优先级保证或安全隔离。
+
+smokeGuide 输出入口识别、Skill 选择、真实 Role 定向 Read、项目知识/命令输出、客户能力保留、profile 启停、非现役发现及失败场景。只有用例，没有 passed 结果；未装配 smoke 数据给明确缺项，空 hostVersions 不签发支持版本。实际版本/平台/表面及七种组合须独立运行取证，不能由静态文件或其他端结果代替。未知新版本先隔离验证，过旧版本明确能力缺口；失败保持现役原件。

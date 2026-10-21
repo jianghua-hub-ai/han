@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "host": "opencode",
+  "applicability": "仅适用于 OpenCode；其他 Host 不使用此投影。",
+  "roleRead": "方法已按当前任务选定后，使用本端原生 Skill 或精确文件路径取得完整有效正文与必要资源；同版本全文仍有效则复用。父会话读取不等于本角色已取得，发现列表不证明正文已读，不一次加载全部方法。",
+  "rootShared": "ADD 受管片段：授权、固定工作区与客户已有内容优先；发现不等于实际读取或执行。",
+  "navigation": {
+    "workflows": ["workflow:development-delivery", "workflow:issue-resolution"],
+    "skills": ["skill:project-initialization", "skill:project-experience"]
+  },
+  "profileMethods": {"backend-dev": ["skill:tdd-go"]},
+  "runbook": "# OpenCode 运行边界\n\n仅遇角色调用、发现、权限或交付异常时读取。选定 Role/Skill 后取得其完整有效正文及必要资源；原生 Skill 不可用时定向读取本端精确路径，不虚构工具调用。父会话已读不冒充角色自己已读。\n\n新 Role Markdown 只生成 description 与 mode: subagent，原生名称来自文件名；不新增 model、tools 或 permission allow。实际权限继承客户配置，不因采用而放宽。OpenCode 的 edit 权限覆盖文件修改，不能把报告 Write 与代码 Edit 宣称为已经物理隔离；只读角色和允许报告写入的 reviewer 都须核实际授权与有效限制。\n\nOpenCode 还可能发现 .claude/skills 与 .agents/skills；不同前缀及适用端声明不等于隔离。采用层只对本项目实际外端 ADD 前缀生成 permission.skill 的精确 deny 候选，不新增全局 allow，不覆盖客户完整配置。相反值、重叠通配符、Agent 覆盖先报告冲突，由维护者明确处理。deny 针对 Skill 工具，不禁止普通 read；个人、组织、插件、环境和其他不可见来源保持未验证。\n\n角色不继续委派。Lead 核真实角色身份、固定 worktree/分支、精确文件范围、diff、测试和交付。启动/返回不等于完成；状态未知时先核活调用与可能副作用，不重复启动。\n\n未知版本先做真实语法、发现、最小调用和权限 smoke；过旧版本明确缺项。失败保留现役内容，未安装 Host 不伪造执行结果。\n"
+}

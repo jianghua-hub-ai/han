@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "host": "codex",
+  "applicability": "仅适用于 Codex；其他 Host 不使用此投影。",
+  "roleRead": "方法已按当前任务选定后，定向读取下列本端 Skill 的完整有效正文与必要资源；同版本全文仍有效则复用。父会话读取不等于本角色已取得，不依赖发现列表元数据预算，不一次加载全部方法。",
+  "rootShared": "ADD 受管片段：授权、固定工作区与客户已有内容优先；发现不等于实际读取或执行。",
+  "navigation": {
+    "workflows": ["workflow:development-delivery", "workflow:issue-resolution"],
+    "skills": ["skill:project-initialization", "skill:project-experience"]
+  },
+  "profileMethods": {"backend-dev": ["skill:tdd-go"]},
+  "runbook": "# Codex 运行边界\n\n仅遇角色调用、发现、权限或交付异常时读取。角色使用本端 Skill 精确物理路径取得完整有效方法与所需资源；发现列表省略元数据不取消文件直读回退。父会话读取不冒充子角色读取。\n\n新角色 TOML 仅生成 name、description、developer_instructions。Host 已支持 sandbox_mode，但当前模板不设置它，也不添加 model、工具或审批配置；继承的限制不因采用而放宽，角色文件范围仍不是硬隔离证明。核实际版本、有效沙箱与授权，权限不足明确报告。\n\n项目标准角色位于 .codex/agents/*.toml，不向 config.toml 重复注册 config_file。当前实测版本还需项目配置层与 Host 信任：缺 config.toml 时安装最小 [agents] 入口，已有客户配置原样保留；信任交由 Host/用户处理。自定义角色位置须单独验证实际发现；精确 skills.config 禁用的既有 TOML 仅提供人工合并候选，保留客户数组项。\n\n调用原生角色时使用其真实 agent_type，不同时请求完整历史 fork；否则 Host 可能拒绝派发。Lead 核真实角色身份、固定 worktree/分支、精确文件范围、diff、测试和返回结果。不继续委派；启动/返回不等于完成，未知状态先核活调用与副作用，不重复启动。\n\n未知版本先做真实语法、发现、最小调用与权限 smoke；过旧版本明确缺项。失败不覆盖现役内容，不把文字约束当沙箱。\n"
+}

@@ -1,0 +1,1058 @@
+kind: ADDCanonicalInventory
+canonical_version: 3.0.0
+content_language: zh-CN
+
+bindings:
+  schemaVersion: 1
+  definitions:
+    - key: project.name
+      type: string
+      source: {kind: config, path: [project, name]}
+      required: true
+      allowEmpty: false
+      render: inline
+      aliases: ['<待填充:project-name>']
+    - key: project.description
+      type: string
+      source: {kind: config, path: [project, description]}
+      required: true
+      allowEmpty: true
+      render: block
+      aliases: []
+    - key: project.repo_layout
+      type: string
+      source: {kind: config, path: [project, repoLayout]}
+      required: true
+      allowEmpty: false
+      render: inline
+      aliases: ['<待填充:repo-layout>']
+    - key: project.module_map
+      type: string-list
+      source: {kind: config, path: [project, moduleMap]}
+      required: true
+      allowEmpty: true
+      render: list
+      aliases: ['<待填充:module-map>']
+    - key: project.check_commands
+      type: string-list
+      source: {kind: config, path: [project, checkCommands]}
+      required: true
+      allowEmpty: true
+      render: list
+      aliases: ['<待填充:check-commands>']
+    - key: project.security_policy
+      type: string
+      source: {kind: config, path: [project, securityPolicy]}
+      required: true
+      allowEmpty: false
+      render: block
+      aliases: ['<待填充:config-security-policy>']
+    - key: project.enabled_profiles
+      type: string-list
+      source: {kind: config, path: [profiles]}
+      required: true
+      allowEmpty: true
+      render: list
+      aliases: ['<待填充:enabled-profiles>']
+    - key: host.root
+      type: relpath
+      source: {kind: config, path: [runtimes, $host, root]}
+      required: true
+      allowEmpty: false
+      render: path
+      aliases: []
+    - key: host.prefix
+      type: string
+      source: {kind: config, path: [runtimes, $host, prefix]}
+      required: true
+      allowEmpty: false
+      render: inline
+      aliases: []
+    - key: host.team_overview
+      type: relpath
+      source: {kind: config, path: [runtimes, $host, teamOverview]}
+      required: true
+      allowEmpty: false
+      render: path
+      aliases: ['{{TEAM_OVERVIEW}}']
+    - key: host.role_dir
+      type: relpath
+      source: {kind: config, path: [runtimes, $host, roles]}
+      required: true
+      allowEmpty: false
+      render: path
+      aliases: ['{{ROLE_DIR}}']
+    - key: host.guidance_dir
+      type: relpath
+      source: {kind: config, path: [runtimes, $host, guidance]}
+      required: true
+      allowEmpty: false
+      render: path
+      aliases: ['{{GUIDANCE_DIR}}']
+    - key: host.skill_dir
+      type: relpath
+      source: {kind: config, path: [runtimes, $host, skills]}
+      required: true
+      allowEmpty: false
+      render: path
+      aliases: ['{{SKILL_DIR}}']
+    - key: host.profile_dir
+      type: relpath
+      source: {kind: config, path: [runtimes, $host, profiles]}
+      required: true
+      allowEmpty: false
+      render: path
+      aliases: ['{{PROFILE_DIR}}']
+    - key: host.runbook
+      type: relpath
+      source: {kind: config, path: [runtimes, $host, runbook]}
+      required: true
+      allowEmpty: false
+      render: path
+      aliases: ['{{RUNTIME_RUNBOOK}}']
+    - key: host.role_suffix
+      type: string
+      source: {kind: adapter, field: roleSuffix}
+      required: true
+      allowEmpty: false
+      render: inline
+      aliases: ['{{ROLE_SUFFIX}}']
+
+entry:
+  - project-guide
+  - team-overview
+
+roles:
+  - arch-designer
+  - backend-dev
+  - boundary-griller
+  - explorer
+  - feature-designer
+  - frontend-dev
+  - mo
+  - req-analyst
+  - reviewer
+  - steward
+  - task-planner
+  - test-engineer
+
+core_rules:
+  - abstraction-principles
+  - agent-framework
+  - architecture-principles
+  - code-review-checklist
+  - coding-standards
+  - decisions-guide
+  - design-doc-writing-style
+  - frontend-coding-standards
+  - frontend-design-standards
+  - language-preference
+  - multi-agent-coordination
+  - no-hardcode-policy
+  - observability-standards
+  - task-execution-workflow
+  - tech-stack-compliance
+  - tracing-standards
+
+core_skills:
+  - adr-decision
+  - architecture-design
+  - batch-plan
+  - boundary-grill
+  - bounded-change-workflow
+  - code-review
+  - delivery-workflow
+  - design-tdd
+  - e2e-verification
+  - git-workflow
+  - issue-handling
+  - knowledge-curate
+  - project-adoption-workflow
+  - project-context
+  - project-customization
+  - project-experience
+  - project-initialization
+  - release-communication
+  - requirement-grill
+  - research
+  - route-work
+  - systematic-debugging
+  - task-decompose
+  - task-implementation
+  - test-design
+
+profiles:
+  go-service:
+    description: Go 服务端实现约束与测试方法
+    rules: [coding-standards, no-hardcode-policy, observability-standards, tracing-standards, security-coding-standards]
+    skills: [tdd-go]
+  react-web:
+    description: React 与 TypeScript Web 实现和设计约束
+    rules: [frontend-coding-standards, frontend-design-standards]
+    skills: []
+  resource-platform:
+    description: 声明式资源平台的抽象与生命周期约束
+    rules: [abstraction-principles]
+    skills: []
+
+targets: [claude, codex, opencode]
+
+projection_policy:
+  # 交付闭包不等于运行时加载；专业直达与当前活动续接不先经过总览。
+  root_entry: minimal-l1-and-routing
+  workflow_discovery: intent-and-current-activity-on-demand
+  team_overview: explicit-global-overview-only
+  role_body: property-boundary-logical-references
+  role_rules: explicit-read
+  profiles: explicit-project-selection
+  task_context: context-pack
+  project_merge: per-domain-append
+  overwrite_project_local: false
+  runtime_failure: preserve-existing-projection
+
+# 首次显式接口登记。canonical_version 是内容版本，不是单元或 Workflow 接口版本。
+# requires 只保证随包交付；实际读取/执行仍由当前任务、正文和授权决定。
+# optional 为条件引用，启用前须选择相应单元/profile；requiresContracts 同样校验其 major。
+contracts:
+  entry:project-guide:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts:
+      entry:team-overview: [1]
+      role:arch-designer: [1]
+      role:backend-dev: [1]
+      role:boundary-griller: [1]
+      role:explorer: [1]
+      role:feature-designer: [1]
+      role:frontend-dev: [1]
+      role:mo: [1]
+      role:req-analyst: [1]
+      role:reviewer: [1]
+      role:steward: [1]
+      role:task-planner: [1]
+      role:test-engineer: [1]
+      rule:abstraction-principles: [1]
+      rule:agent-framework: [1]
+      rule:coding-standards: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      rule:frontend-coding-standards: [1]
+      rule:frontend-design-standards: [1]
+      rule:multi-agent-coordination: [1]
+      rule:no-hardcode-policy: [1]
+      rule:observability-standards: [1]
+      rule:task-execution-workflow: [1]
+      rule:tracing-standards: [1]
+      skill:adr-decision: [1]
+      skill:architecture-design: [1]
+      skill:batch-plan: [1]
+      skill:boundary-grill: [1]
+      skill:code-review: [1]
+      skill:design-tdd: [1]
+      skill:e2e-verification: [1]
+      skill:project-experience: [1]
+      skill:git-workflow: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:project-adoption-workflow: [1]
+      skill:project-context: [1]
+      skill:project-customization: [1]
+      skill:project-initialization: [1]
+      skill:release-communication: [1]
+      skill:requirement-grill: [1]
+      skill:research: [1]
+      skill:route-work: [1]
+      skill:systematic-debugging: [1]
+      skill:task-decompose: [1]
+      skill:task-implementation: [1]
+      skill:test-design: [1]
+    optional: [
+      "entry:team-overview", "role:arch-designer", "role:backend-dev", "role:boundary-griller", "role:explorer",
+      "role:feature-designer", "role:frontend-dev", "role:mo", "role:req-analyst", "role:reviewer", "role:steward",
+      "role:task-planner", "role:test-engineer", "rule:abstraction-principles", "rule:agent-framework",
+      "rule:coding-standards", "rule:decisions-guide", "rule:design-doc-writing-style",
+      "rule:frontend-coding-standards", "rule:frontend-design-standards", "rule:multi-agent-coordination",
+      "rule:no-hardcode-policy", "rule:observability-standards", "rule:task-execution-workflow",
+      "rule:tracing-standards", "skill:adr-decision", "skill:architecture-design", "skill:batch-plan",
+      "skill:boundary-grill", "skill:code-review", "skill:design-tdd", "skill:e2e-verification",
+      "skill:project-experience", "skill:git-workflow", "skill:issue-handling", "skill:knowledge-curate",
+      "skill:project-adoption-workflow", "skill:project-context", "skill:project-customization", "skill:project-initialization",
+      "skill:release-communication",
+      "skill:requirement-grill", "skill:research", "skill:route-work", "skill:systematic-debugging",
+      "skill:task-decompose", "skill:task-implementation", "skill:test-design"
+    ]
+    resources: []
+  entry:team-overview:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts:
+      entry:project-guide: [1]
+      role:arch-designer: [1]
+      role:backend-dev: [1]
+      role:boundary-griller: [1]
+      role:explorer: [1]
+      role:feature-designer: [1]
+      role:frontend-dev: [1]
+      role:mo: [1]
+      role:req-analyst: [1]
+      role:reviewer: [1]
+      role:steward: [1]
+      role:task-planner: [1]
+      role:test-engineer: [1]
+      rule:agent-framework: [1]
+      rule:multi-agent-coordination: [1]
+      rule:task-execution-workflow: [1]
+      skill:bounded-change-workflow: [1]
+      skill:code-review: [1]
+      skill:delivery-workflow: [1]
+      skill:e2e-verification: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:project-adoption-workflow: [1]
+      skill:project-context: [1]
+      skill:route-work: [1]
+      skill:task-implementation: [1]
+      skill:test-design: [1]
+    optional: [
+      "entry:project-guide", "role:arch-designer", "role:backend-dev", "role:boundary-griller", "role:explorer",
+      "role:feature-designer", "role:frontend-dev", "role:mo", "role:req-analyst", "role:reviewer", "role:steward",
+      "role:task-planner", "role:test-engineer", "rule:agent-framework", "rule:multi-agent-coordination",
+      "rule:task-execution-workflow", "skill:bounded-change-workflow", "skill:code-review",
+      "skill:delivery-workflow", "skill:e2e-verification", "skill:issue-handling", "skill:knowledge-curate",
+      "skill:project-adoption-workflow", "skill:project-context",
+      "skill:route-work", "skill:task-implementation", "skill:test-design"
+    ]
+    resources: []
+  profile:go-service:
+    contractVersion: 1.0.0
+    requires: ["rule:abstraction-principles"]
+    requiresContracts:
+      entry:project-guide: [1]
+      profile:resource-platform: [1]
+      rule:abstraction-principles: [1]
+    optional: ["entry:project-guide","profile:resource-platform"]
+    resources: []
+  profile:react-web:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:code-review-checklist", "rule:frontend-coding-standards", "rule:frontend-design-standards",
+      "rule:task-execution-workflow", "skill:task-implementation"
+    ]
+    requiresContracts:
+      rule:code-review-checklist: [1]
+      rule:frontend-coding-standards: [1]
+      rule:frontend-design-standards: [1]
+      rule:task-execution-workflow: [1]
+      skill:task-implementation: [1]
+    optional: []
+    resources: []
+  profile:resource-platform:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts:
+      entry:project-guide: [1]
+    optional: ["entry:project-guide"]
+    resources: []
+  role:arch-designer:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:architecture-principles", "rule:decisions-guide",
+      "rule:design-doc-writing-style", "rule:tech-stack-compliance", "skill:adr-decision",
+      "skill:architecture-design", "skill:research"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:architecture-principles: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      rule:tech-stack-compliance: [1]
+      skill:adr-decision: [1]
+      skill:architecture-design: [1]
+      skill:research: [1]
+    optional: []
+    resources: []
+  role:backend-dev:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:code-review-checklist", "rule:coding-standards", "rule:no-hardcode-policy",
+      "rule:observability-standards", "rule:tech-stack-compliance", "rule:tracing-standards", "skill:git-workflow",
+      "skill:systematic-debugging", "skill:task-implementation"
+    ]
+    requiresContracts:
+      rule:code-review-checklist: [1]
+      rule:coding-standards: [1]
+      rule:no-hardcode-policy: [1]
+      rule:observability-standards: [1]
+      rule:tech-stack-compliance: [1]
+      rule:tracing-standards: [1]
+      skill:git-workflow: [1]
+      skill:systematic-debugging: [1]
+      skill:task-implementation: [1]
+    optional: []
+    resources: []
+  role:boundary-griller:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:decisions-guide", "rule:design-doc-writing-style", "skill:adr-decision",
+      "skill:boundary-grill", "skill:research"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      skill:adr-decision: [1]
+      skill:boundary-grill: [1]
+      skill:research: [1]
+    optional: []
+    resources: []
+  role:explorer:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:architecture-principles", "rule:decisions-guide", "rule:design-doc-writing-style", "skill:research",
+      "skill:systematic-debugging"
+    ]
+    requiresContracts:
+      rule:architecture-principles: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      skill:research: [1]
+      skill:systematic-debugging: [1]
+    optional: []
+    resources: []
+  role:feature-designer:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:decisions-guide", "rule:design-doc-writing-style", "skill:adr-decision",
+      "skill:design-tdd", "skill:research"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      skill:adr-decision: [1]
+      skill:design-tdd: [1]
+      skill:research: [1]
+    optional: []
+    resources: []
+  role:frontend-dev:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:code-review-checklist", "rule:frontend-coding-standards", "rule:frontend-design-standards",
+      "rule:no-hardcode-policy", "skill:e2e-verification", "skill:git-workflow", "skill:systematic-debugging",
+      "skill:task-implementation"
+    ]
+    requiresContracts:
+      rule:code-review-checklist: [1]
+      rule:frontend-coding-standards: [1]
+      rule:frontend-design-standards: [1]
+      rule:no-hardcode-policy: [1]
+      skill:e2e-verification: [1]
+      skill:git-workflow: [1]
+      skill:systematic-debugging: [1]
+      skill:task-implementation: [1]
+    optional: []
+    resources: []
+  role:mo:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:design-doc-writing-style", "rule:language-preference", "skill:release-communication", "skill:research"
+    ]
+    requiresContracts:
+      rule:design-doc-writing-style: [1]
+      rule:language-preference: [1]
+      skill:release-communication: [1]
+      skill:research: [1]
+    optional: []
+    resources: []
+  role:req-analyst:
+    contractVersion: 1.0.0
+    requires: ["rule:design-doc-writing-style","rule:language-preference","skill:requirement-grill","skill:research"]
+    requiresContracts:
+      rule:design-doc-writing-style: [1]
+      rule:language-preference: [1]
+      skill:requirement-grill: [1]
+      skill:research: [1]
+      skill:delivery-workflow: [1]
+    optional: ["skill:delivery-workflow"]
+    resources: []
+  role:reviewer:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:code-review-checklist", "rule:coding-standards", "rule:decisions-guide",
+      "rule:design-doc-writing-style", "rule:frontend-coding-standards", "rule:frontend-design-standards",
+      "rule:no-hardcode-policy", "rule:observability-standards", "rule:tracing-standards", "skill:code-review",
+      "skill:research"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:code-review-checklist: [1]
+      rule:coding-standards: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      rule:frontend-coding-standards: [1]
+      rule:frontend-design-standards: [1]
+      rule:no-hardcode-policy: [1]
+      rule:observability-standards: [1]
+      rule:tracing-standards: [1]
+      skill:code-review: [1]
+      skill:research: [1]
+    optional: []
+    resources: []
+  role:steward:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:decisions-guide", "rule:design-doc-writing-style", "rule:task-execution-workflow",
+      "skill:knowledge-curate", "skill:project-experience"
+    ]
+    requiresContracts:
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      rule:task-execution-workflow: [1]
+      skill:knowledge-curate: [1]
+      skill:project-experience: [1]
+    optional: []
+    resources: []
+  role:task-planner:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:design-doc-writing-style", "rule:multi-agent-coordination", "rule:task-execution-workflow",
+      "skill:batch-plan", "skill:git-workflow", "skill:task-decompose"
+    ]
+    requiresContracts:
+      rule:design-doc-writing-style: [1]
+      rule:multi-agent-coordination: [1]
+      rule:task-execution-workflow: [1]
+      skill:batch-plan: [1]
+      skill:git-workflow: [1]
+      skill:task-decompose: [1]
+    optional: []
+    resources: []
+  role:test-engineer:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:code-review-checklist", "rule:coding-standards", "rule:design-doc-writing-style",
+      "skill:e2e-verification", "skill:systematic-debugging", "skill:task-decompose", "skill:test-design"
+    ]
+    requiresContracts:
+      rule:code-review-checklist: [1]
+      rule:coding-standards: [1]
+      rule:design-doc-writing-style: [1]
+      skill:e2e-verification: [1]
+      skill:systematic-debugging: [1]
+      skill:task-decompose: [1]
+      skill:test-design: [1]
+    optional: []
+    resources: []
+  rule:abstraction-principles:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts:
+      profile:resource-platform: [1]
+    optional: ["profile:resource-platform"]
+    resources: []
+  rule:agent-framework:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts:
+      skill:bounded-change-workflow: [1]
+      skill:delivery-workflow: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:project-adoption-workflow: [1]
+      skill:project-context: [1]
+      skill:research: [1]
+      skill:route-work: [1]
+    optional: [
+      "skill:bounded-change-workflow", "skill:delivery-workflow", "skill:issue-handling", "skill:knowledge-curate",
+      "skill:project-adoption-workflow", "skill:project-context",
+      "skill:research", "skill:route-work"
+    ]
+    resources: []
+  rule:architecture-principles:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:code-review-checklist:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:coding-standards:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:decisions-guide:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:design-doc-writing-style:
+    contractVersion: 1.0.0
+    requires: ["rule:language-preference"]
+    requiresContracts:
+      rule:language-preference: [1]
+      skill:design-tdd: [1]
+      skill:test-design: [1]
+    optional: ["skill:design-tdd","skill:test-design"]
+    resources: []
+  rule:frontend-coding-standards:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:frontend-design-standards:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:language-preference:
+    contractVersion: 1.0.0
+    requires: ["rule:design-doc-writing-style"]
+    requiresContracts:
+      rule:design-doc-writing-style: [1]
+    optional: []
+    resources: []
+  rule:multi-agent-coordination:
+    contractVersion: 1.0.0
+    requires: ["rule:agent-framework","rule:task-execution-workflow"]
+    requiresContracts:
+      rule:agent-framework: [1]
+      rule:task-execution-workflow: [1]
+      skill:code-review: [1]
+      skill:git-workflow: [1]
+      skill:task-implementation: [1]
+    optional: ["skill:code-review","skill:git-workflow","skill:task-implementation"]
+    resources: []
+  rule:no-hardcode-policy:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:observability-standards:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:task-execution-workflow:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:agent-framework", "rule:language-preference",
+      "rule:multi-agent-coordination"
+    ]
+    requiresContracts:
+      entry:project-guide: [1]
+      role:reviewer: [1]
+      role:steward: [1]
+      rule:abstraction-principles: [1]
+      rule:agent-framework: [1]
+      rule:language-preference: [1]
+      rule:multi-agent-coordination: [1]
+      skill:batch-plan: [1]
+      skill:boundary-grill: [1]
+      skill:bounded-change-workflow: [1]
+      skill:code-review: [1]
+      skill:delivery-workflow: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:project-adoption-workflow: [1]
+      skill:project-context: [1]
+      skill:requirement-grill: [1]
+      skill:route-work: [1]
+      skill:systematic-debugging: [1]
+      skill:task-decompose: [1]
+      skill:task-implementation: [1]
+    optional: [
+      "entry:project-guide", "role:reviewer", "role:steward", "skill:batch-plan", "skill:boundary-grill",
+      "skill:bounded-change-workflow", "skill:code-review", "skill:delivery-workflow",
+      "skill:issue-handling", "skill:knowledge-curate", "skill:project-adoption-workflow", "skill:project-context",
+      "skill:requirement-grill", "skill:route-work", "skill:systematic-debugging", "skill:task-decompose",
+      "skill:task-implementation"
+    ]
+    resources: []
+  rule:tech-stack-compliance:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  rule:tracing-standards:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  skill:adr-decision:
+    contractVersion: 1.0.0
+    requires: ["rule:decisions-guide","rule:design-doc-writing-style"]
+    requiresContracts:
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+    optional: []
+    resources: []
+  skill:architecture-design:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:architecture-principles", "rule:decisions-guide",
+      "rule:design-doc-writing-style", "rule:tech-stack-compliance", "skill:adr-decision", "skill:boundary-grill",
+      "skill:knowledge-curate"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:architecture-principles: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      rule:tech-stack-compliance: [1]
+      skill:adr-decision: [1]
+      skill:batch-plan: [1]
+      skill:boundary-grill: [1]
+      skill:design-tdd: [1]
+      skill:knowledge-curate: [1]
+      skill:task-decompose: [1]
+    optional: ["skill:batch-plan","skill:design-tdd","skill:task-decompose"]
+    resources: ["skills/architecture-design/references/架构设计说明书模版.md"]
+  skill:batch-plan:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:agent-framework", "rule:multi-agent-coordination", "rule:task-execution-workflow", "skill:code-review",
+      "skill:git-workflow", "skill:task-decompose", "skill:task-implementation"
+    ]
+    requiresContracts:
+      rule:agent-framework: [1]
+      rule:multi-agent-coordination: [1]
+      rule:task-execution-workflow: [1]
+      skill:code-review: [1]
+      skill:delivery-workflow: [1]
+      skill:git-workflow: [1]
+      skill:knowledge-curate: [1]
+      skill:task-decompose: [1]
+      skill:task-implementation: [1]
+    optional: ["skill:delivery-workflow","skill:knowledge-curate"]
+    resources: ["skills/batch-plan/references/template.md"]
+  skill:boundary-grill:
+    contractVersion: 1.0.0
+    requires: ["rule:design-doc-writing-style"]
+    requiresContracts:
+      rule:design-doc-writing-style: [1]
+      skill:design-tdd: [1]
+    optional: ["skill:design-tdd"]
+    resources: []
+  skill:bounded-change-workflow:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:task-execution-workflow", "skill:code-review", "skill:issue-handling", "skill:knowledge-curate",
+      "skill:systematic-debugging", "skill:task-implementation"
+    ]
+    requiresContracts:
+      rule:task-execution-workflow: [1]
+      skill:code-review: [1]
+      skill:delivery-workflow: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:route-work: [1]
+      skill:systematic-debugging: [1]
+      skill:task-implementation: [1]
+      skill:test-design: [1]
+    optional: ["skill:delivery-workflow","skill:route-work","skill:test-design"]
+    resources: []
+  skill:code-review:
+    contractVersion: 1.0.0
+    requires: ["rule:abstraction-principles","rule:code-review-checklist","rule:multi-agent-coordination"]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:code-review-checklist: [1]
+      rule:multi-agent-coordination: [1]
+    optional: []
+    resources: ["skills/code-review/references/产品安全红线.md"]
+  skill:delivery-workflow:
+    contractVersion: 1.0.0
+    requires: [
+      "role:arch-designer", "role:backend-dev", "role:boundary-griller", "role:feature-designer",
+      "role:frontend-dev", "role:req-analyst", "role:reviewer", "role:task-planner", "role:test-engineer",
+      "rule:multi-agent-coordination", "rule:task-execution-workflow", "skill:adr-decision",
+      "skill:architecture-design", "skill:batch-plan", "skill:boundary-grill", "skill:bounded-change-workflow",
+      "skill:code-review", "skill:design-tdd", "skill:e2e-verification", "skill:git-workflow",
+      "skill:issue-handling", "skill:knowledge-curate", "skill:release-communication", "skill:requirement-grill",
+      "skill:route-work", "skill:task-decompose", "skill:task-implementation", "skill:test-design"
+    ]
+    requiresContracts:
+      role:arch-designer: [1]
+      role:backend-dev: [1]
+      role:boundary-griller: [1]
+      role:feature-designer: [1]
+      role:frontend-dev: [1]
+      role:req-analyst: [1]
+      role:reviewer: [1]
+      role:task-planner: [1]
+      role:test-engineer: [1]
+      rule:multi-agent-coordination: [1]
+      rule:task-execution-workflow: [1]
+      skill:adr-decision: [1]
+      skill:architecture-design: [1]
+      skill:batch-plan: [1]
+      skill:boundary-grill: [1]
+      skill:bounded-change-workflow: [1]
+      skill:code-review: [1]
+      skill:design-tdd: [1]
+      skill:e2e-verification: [1]
+      skill:git-workflow: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:release-communication: [1]
+      skill:requirement-grill: [1]
+      skill:route-work: [1]
+      skill:task-decompose: [1]
+      skill:task-implementation: [1]
+      skill:test-design: [1]
+    optional: []
+    resources: []
+  skill:design-tdd:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:decisions-guide", "rule:design-doc-writing-style", "skill:boundary-grill",
+      "skill:code-review"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      rule:task-execution-workflow: [1]
+      skill:boundary-grill: [1]
+      skill:code-review: [1]
+      skill:knowledge-curate: [1]
+      skill:task-decompose: [1]
+      skill:task-implementation: [1]
+    optional: ["rule:task-execution-workflow","skill:knowledge-curate","skill:task-decompose","skill:task-implementation"]
+    resources: ["skills/design-tdd/references/特性设计说明书模版.md"]
+  skill:e2e-verification:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:design-doc-writing-style", "rule:observability-standards",
+      "rule:task-execution-workflow", "rule:tracing-standards", "skill:code-review", "skill:issue-handling",
+      "skill:knowledge-curate", "skill:systematic-debugging", "skill:test-design"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:design-doc-writing-style: [1]
+      rule:observability-standards: [1]
+      rule:task-execution-workflow: [1]
+      rule:tracing-standards: [1]
+      skill:code-review: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:systematic-debugging: [1]
+      skill:test-design: [1]
+    optional: []
+    resources: [
+      "skills/e2e-verification/references/cases-template.md",
+      "skills/e2e-verification/references/coverage-template.md",
+      "skills/e2e-verification/references/env-template.md",
+      "skills/e2e-verification/references/materials-template.md",
+      "skills/e2e-verification/references/runs-template.md"
+    ]
+  skill:git-workflow:
+    contractVersion: 1.0.0
+    requires: ["skill:batch-plan"]
+    requiresContracts:
+      skill:batch-plan: [1]
+    optional: []
+    resources: []
+  skill:issue-handling:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:multi-agent-coordination", "skill:code-review", "skill:knowledge-curate", "skill:systematic-debugging",
+      "skill:task-implementation"
+    ]
+    requiresContracts:
+      rule:multi-agent-coordination: [1]
+      skill:adr-decision: [1]
+      skill:code-review: [1]
+      skill:delivery-workflow: [1]
+      skill:design-tdd: [1]
+      skill:e2e-verification: [1]
+      skill:knowledge-curate: [1]
+      skill:project-experience: [1]
+      skill:systematic-debugging: [1]
+      skill:task-implementation: [1]
+      skill:test-design: [1]
+    optional: [
+      "skill:adr-decision", "skill:delivery-workflow", "skill:design-tdd", "skill:e2e-verification",
+      "skill:project-experience", "skill:test-design"
+    ]
+    resources: ["skills/issue-handling/references/RCA-复盘模版.md"]
+  skill:knowledge-curate:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:agent-framework", "rule:decisions-guide", "rule:design-doc-writing-style",
+      "rule:multi-agent-coordination", "rule:task-execution-workflow", "skill:project-experience"
+    ]
+    requiresContracts:
+      rule:agent-framework: [1]
+      rule:decisions-guide: [1]
+      rule:design-doc-writing-style: [1]
+      rule:multi-agent-coordination: [1]
+      rule:task-execution-workflow: [1]
+      skill:design-tdd: [1]
+      skill:project-experience: [1]
+    optional: ["skill:design-tdd"]
+    resources: []
+  skill:project-adoption-workflow:
+    contractVersion: 1.0.0
+    requires: ["rule:multi-agent-coordination","rule:task-execution-workflow","skill:knowledge-curate"]
+    requiresContracts:
+      rule:multi-agent-coordination: [1]
+      rule:task-execution-workflow: [1]
+      skill:knowledge-curate: [1]
+      skill:project-context: [1]
+      skill:project-initialization: [1]
+    optional: ["skill:project-context","skill:project-initialization"]
+    resources: []
+  skill:project-context:
+    contractVersion: 1.0.0
+    requires: ["rule:multi-agent-coordination","rule:task-execution-workflow"]
+    requiresContracts:
+      rule:multi-agent-coordination: [1]
+      rule:task-execution-workflow: [1]
+      skill:project-adoption-workflow: [1]
+      skill:project-initialization: [1]
+    optional: ["skill:project-adoption-workflow","skill:project-initialization"]
+    resources: []
+  skill:project-customization:
+    contractVersion: 1.0.0
+    requires: ["rule:agent-framework"]
+    requiresContracts:
+      rule:agent-framework: [1]
+    optional: []
+    resources: []
+  skill:project-experience:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts:
+      skill:project-adoption-workflow: [1]
+    optional: ["skill:project-adoption-workflow"]
+    resources: []
+  skill:project-initialization:
+    contractVersion: 1.0.0
+    requires: ["skill:project-adoption-workflow"]
+    requiresContracts:
+      skill:project-adoption-workflow: [1]
+      skill:project-context: [1]
+      skill:project-customization: [1]
+    optional: ["skill:project-context","skill:project-customization"]
+    resources: []
+  skill:release-communication:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  skill:requirement-grill:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts:
+      skill:boundary-grill: [1]
+      skill:delivery-workflow: [1]
+    optional: ["skill:boundary-grill","skill:delivery-workflow"]
+    resources: ["skills/requirement-grill/references/需求文档模版.md"]
+  skill:research:
+    contractVersion: 1.0.0
+    requires: []
+    requiresContracts: {}
+    optional: []
+    resources: []
+  skill:route-work:
+    contractVersion: 1.0.0
+    requires: ["rule:multi-agent-coordination"]
+    requiresContracts:
+      rule:multi-agent-coordination: [1]
+      skill:bounded-change-workflow: [1]
+      skill:delivery-workflow: [1]
+      skill:issue-handling: [1]
+      skill:knowledge-curate: [1]
+      skill:project-adoption-workflow: [1]
+      skill:project-context: [1]
+    optional: [
+      "skill:bounded-change-workflow", "skill:delivery-workflow", "skill:issue-handling", "skill:knowledge-curate",
+      "skill:project-adoption-workflow", "skill:project-context"
+    ]
+    resources: []
+  skill:systematic-debugging:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:observability-standards", "rule:tracing-standards", "skill:knowledge-curate", "skill:task-implementation"
+    ]
+    requiresContracts:
+      rule:observability-standards: [1]
+      rule:task-execution-workflow: [1]
+      rule:tracing-standards: [1]
+      skill:knowledge-curate: [1]
+      skill:task-implementation: [1]
+    optional: ["rule:task-execution-workflow"]
+    resources: []
+  skill:task-decompose:
+    contractVersion: 1.0.0
+    requires: [
+      "rule:abstraction-principles", "rule:agent-framework", "rule:design-doc-writing-style",
+      "rule:task-execution-workflow", "skill:batch-plan", "skill:design-tdd", "skill:test-design"
+    ]
+    requiresContracts:
+      rule:abstraction-principles: [1]
+      rule:agent-framework: [1]
+      rule:design-doc-writing-style: [1]
+      rule:task-execution-workflow: [1]
+      skill:batch-plan: [1]
+      skill:design-tdd: [1]
+      skill:test-design: [1]
+    optional: []
+    resources: []
+  skill:task-implementation:
+    contractVersion: 1.0.0
+    requires: ["rule:coding-standards","skill:git-workflow","skill:systematic-debugging"]
+    requiresContracts:
+      rule:coding-standards: [1]
+      rule:task-execution-workflow: [1]
+      skill:batch-plan: [1]
+      skill:e2e-verification: [1]
+      skill:git-workflow: [1]
+      skill:systematic-debugging: [1]
+    optional: ["rule:task-execution-workflow","skill:batch-plan","skill:e2e-verification"]
+    resources: []
+  skill:tdd-go:
+    contractVersion: 1.0.0
+    requires: ["profile:go-service","skill:systematic-debugging","skill:task-implementation"]
+    requiresContracts:
+      entry:project-guide: [1]
+      profile:go-service: [1]
+      skill:systematic-debugging: [1]
+      skill:task-implementation: [1]
+    optional: ["entry:project-guide"]
+    resources: []
+  skill:test-design:
+    contractVersion: 1.0.0
+    requires: ["skill:batch-plan","skill:task-decompose"]
+    requiresContracts:
+      skill:batch-plan: [1]
+      skill:e2e-verification: [1]
+      skill:task-decompose: [1]
+    optional: ["skill:e2e-verification"]
+    resources: []
+
+# 步骤由唯一 owner 的实际 wf-step-* 锚点派生；此处不复制活动条件。
+workflows:
+  workflow:development-delivery:
+    version: 1.0.0
+    owner: skill:delivery-workflow
+    anchor: wf-definition
+  workflow:issue-resolution:
+    version: 1.0.0
+    owner: skill:issue-handling
+    anchor: wf-definition

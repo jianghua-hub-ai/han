@@ -1,0 +1,24 @@
+{
+  "action": "verify",
+  "actor": {
+    "kind": "human",
+    "label": "user"
+  },
+  "confirmationRef": {
+    "digest": "sha256:98de78a57f7fbba918d15c1d25ab27c7e0066427af932f4007e1c5ad3f9dcf14",
+    "path": ".add/local/adoption/d87a052c-ab9c-4980-998e-741f0275b27a/apply-confirmation.json"
+  },
+  "id": "result",
+  "kind": "business",
+  "operationId": "d87a052c-ab9c-4980-998e-741f0275b27a",
+  "operationKind": "install",
+  "pathCount": 343,
+  "pathSetDigest": "sha256:005f0adea3f9fc564157ace698e5e00ee21cb164aa0a609afc149c6b875d79bd",
+  "phase": "result",
+  "planDigest": "sha256:6648b8047b806f94dcd7bcadcf3de398b28fc1342e5928bd16889e05d018aadb",
+  "projectIdentity": "sha256:b52d75352f1e182e4cf7ce6c9756d917dd4f46722730e6a8a6e14abfbd13180d",
+  "recordedAt": "2026-10-16T08:35:34.586Z",
+  "result": "verified",
+  "schemaVersion": 1,
+  "targetDigest": "sha256:5a744e414e459c5a3846605c7d993109de46208443adb2fb9a9a3b825d5be509"
+}
