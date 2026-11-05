@@ -81,3 +81,22 @@
   - `go test -tags=integration ./internal/identity -run '^TestRecoveryInstallationPostgres$' -count=1` → **ok 11.621s**（覆盖本次改动的 `s413Checkpoint`）。
   - 同包整包运行：本测试通过；另有 7 项要求 `han_b13c` / `han_b13c_identity`（5433 上存在该库但口令未知，可用一次性集群复现）。
 - 收尾：`pg_ctl stop -m fast`，恢复运行前状态（`51935` 已不再监听）。
+
+### 同日补充：identity 包此前 8 项失败已全部实跑通过
+
+- `TestRecoveryInstallationPostgres`（s413）：用既有 B13E fixture（`51935`）跑通，`ok 11.621s`。
+- 其余 7 项用一次性集群 `Temp/pg-verify-b13c`（`initdb` PG 18.6、端口 `55433`、trust）实跑通过：
+
+| 测试 | 需要 | 结果 |
+|---|---|---|
+| `TestRecoveryAdmissionStorePostgres` | `han_b13c` / `han_b13c_identity` | ok |
+| `TestRecoveryRunStoreMainlineUTCAndJournalVerification` | 同上 | ok |
+| `TestRecoveryRunStoreRejectsDirectIdentityReadyDuplicateAndTriggerBypass` | 同上 | ok |
+| `TestRecoveryRunStoreConcurrentTransitionCAS` | 同上 | ok |
+| `TestRecoveryMaintenanceAuthenticationPostgres` | `HAN_B13E_S411_PG_CONFIG` 信号 + `han_b13e` / `han_b13e_identity` | ok |
+| `TestRecoveryRestoredPasswordResetPostgres` | 同上 | ok |
+| `TestRecoveryIdentityExecutionPostgres` | `HAN_TEST_POSTGRES_DSN` → `han_b13d_identity` / `han_b13d` | **ok 68.422s** |
+
+信号文件格式（`HAN_B13E_S411_PG_CONFIG`）：`Purpose=B13E-S411`、`Host=127.0.0.1`、`Database=han_b13e_identity`、`User=han_b13e`、非零 `Port`、`ServerVersion>=180000`；DSN 必须带 `sslmode=disable`；文件路径必须是 `d:/temp/` 下的绝对路径。
+
+收尾：`pg_ctl stop -m fast`，删除 `Temp/pg-verify-b13c` 与 `D:\temp\han-b13e-verify`；既有 `D:\temp\han-b13e-lead-20261030-r01` 未改动。
