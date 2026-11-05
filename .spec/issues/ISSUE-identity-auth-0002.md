@@ -209,3 +209,21 @@ func s414Directory(t *testing.T) string {
 - B：显式登记为 ADR-0039 排除点并补记 §3，接受持续保留。
 
 **附带口径修正**：`%TEMP%` 测试残留不止清理清单里的 1,429 个 `han-s414-retain-*`；另有 1,135 个其他前缀目录 / 约 111.7 MB（`han-s44-retained-*` 1,001 / 30.33 MB、`han-b13d-a48-media-*` 62、`han-b13d-a48-legacy-*` 54、`s413-approved-checkpoint-*` 6、`han_s62_journal_*` 5、`han-s105-cli-*` 4 / 81.31 MB、`s413-deletion-media-*` 3）。其中 s44 / s62 属 ADR-0039 已登记的排除点，b13d-media / b13d-legacy / s413-* 为历史集成运行产物。
+
+### 2026-11-06 处置：S10.5 采用方案 A 并实施（提交 `75d299b`）
+
+按项目负责人「继续」推进方案 A：`s105EvidenceDir(t)` 与 `s414Directory` 同构——`HAN_S105_TEST_EVIDENCE_DIR` 为空时返回 `t.TempDir()`，非空时在指定根下 `os.MkdirTemp` 保留并 `t.Logf`。生产代码与测试断言未改。
+
+**A/B 实测**（一次性 PG 18.6 集群 `127.0.0.1:55441`，`HAN_TEST_POSTGRES_DSN=postgres://postgres@.../han_s105?sslmode=disable`）：
+
+| 运行 | 证据目录 | `%TEMP%\han-s105-cli-*` |
+|---|---|---|
+| 改前（`git stash` 还原基线） | `%TEMP%\han-s105-cli-515438412` | 4 → **5（+1）** |
+| 改后，未设 env | `%TEMP%\TestPasswordResetMaintenancePostgresCLI530903984\001`（测试作用域，结束后回收） | 4 → **4（+0）** |
+| 改后，设 `HAN_S105_TEST_EVIDENCE_DIR` | `Temp\s105-retain-root\han-s105-cli-42000971` | 4 → **4（+0）** |
+
+**未取得整套通过的原因**：该测试的 `maintenanceEndpoint` 要求字面 `127.0.0.1:5433`（`:638-640`），而本机 5433 为共享实例且口令未知（`psql` 探测四种角色均为 `no password supplied`）。三次运行均在同一行失败：`:107 unsafe parsed identity/primary endpoint; no connection attempted`——**改前改后失败点完全一致**，说明本次改动不改变测试判定，仅改变证据目录落点；接口之外的连接、迁移与用例逻辑未被执行。
+
+**门禁与残留回归**：`gofmt -l cmd internal test` 0 文件、`go build ./...`、`go vet ./...`、`go vet -tags=integration ./...` 均 exit 0；`go test ./...` 14 包 0 FAIL、`go test -tags=contract ./...` 16 包 0 FAIL；套件前后 `%TEMP%` 目录集合 8,466 → 8,466，新增 0。
+
+**遗留**：该测试的完整通过仍需一台 `127.0.0.1:5433`、口令可知的实例；本轮不声称该测试 PASS。

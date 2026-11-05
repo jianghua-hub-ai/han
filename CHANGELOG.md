@@ -16,6 +16,7 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 
 - Reclaim non-retained test fixtures via `t.TempDir()` (`ISSUE-identity-auth-0002`)
 - Default S4.14 recovery fixtures to the test temp dir; retain only on an explicit evidence root (ADR-0039)
+- Default the S10.5 CLI evidence dir to the test temp dir; retain only on `HAN_S105_TEST_EVIDENCE_DIR` (ADR-0039)
 
 ### Documentation
 
