@@ -108,12 +108,27 @@ func TestPasswordResetMaintenancePostgresCLI(t *testing.T) {
 	fixture.runCases(t)
 }
 
+// s105EvidenceDir 返回 S10.5 CLI 套件的证据根：默认使用测试作用域临时目录并在测试结束时回收；
+// 仅当 HAN_S105_TEST_EVIDENCE_DIR 非空时在该根下保留（ADR-0039）。
+func s105EvidenceDir(t *testing.T) string {
+	t.Helper()
+	root := os.Getenv(maintenanceTestEvidenceEnv)
+	if root == "" {
+		return t.TempDir()
+	}
+	dir, err := os.MkdirTemp(root, "han-s105-cli-")
+	if err != nil {
+		t.Fatalf("create retained evidence under root %q from %s: %v", root, maintenanceTestEvidenceEnv, err)
+	}
+	t.Logf("retained_evidence=%s", dir)
+	return dir
+}
+
 func newMaintenanceCLISuite(t *testing.T) *maintenanceCLISuite {
 	t.Helper()
 	repo, err := filepath.Abs(filepath.Join("..", "..", ".."))
 	maintenanceMust(t, err, "repository path")
-	evidence, err := os.MkdirTemp(os.Getenv(maintenanceTestEvidenceEnv), "han-s105-cli-")
-	maintenanceMust(t, err, "retained evidence directory")
+	evidence := s105EvidenceDir(t)
 	suite := &maintenanceCLISuite{repo: repo, evidence: evidence}
 	suite.recordHarness(t)
 	suite.binary = os.Getenv(maintenanceTestBinaryEnv)
