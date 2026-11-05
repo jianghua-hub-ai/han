@@ -171,3 +171,5 @@ func s414Directory(t *testing.T) string {
 **现状**：`%TEMP%` 仍残留 1,429 个目录 / 10.88 GB，全部是修复前产物；清理清单 `.spec/wip/cleanup/temp-residue-20261105.md`（逐项列出），**未执行任何删除**，待用户按清单确认。
 
 **仍未关闭**：独立评审与两方验收未完成；历史残留的清理未完成。
+
+**代码复核（2026-11-05，作者自审口径）**：逐点核对 4 处改动的目录生命周期——`t.TempDir()` 的回收点在测试结束时，全部消费方（fixture 构造、传给被测生产代码的 inventory/media 路径）都在同一测试作用域内使用，没有跨测试或跨进程复用；`git grep` 复核旧前缀 `han-article-anchor-fixture`/`han-b13d-a48-media`/`han-b13d-a48-legacy`/`s413-approved-checkpoint` 在 Go 代码中已 **0 命中**，说明无断言依赖这些名字或路径持久性。`s414Directory` 保留分支未变，实测 55 个目录仍落在 `HAN_S414_TEST_EVIDENCE_DIR`。**已知限制**：本轮为作者自审，弱于非作者独立评审；未覆盖 Windows 下子进程仍持有句柄导致 `t.TempDir()` 回收失败的极端路径（三轮实测未复现）。
