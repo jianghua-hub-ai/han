@@ -64,3 +64,11 @@
 另两个专用端口当前**关闭**：`51935`（`han_b13e`，s413 系列）、`53519`（`han_b13h`，cmd/han-server 恢复链三项）→ 需先启动对应实例，属环境变更。
 
 结论：集成套件的 5 个失败包中，1 个只缺口令（可立即解锁），2 个缺专用实例（需启动），1 个缺 `HAN_PG_PERF_EVIDENCE_DIR`（需指定目录），1 个缺浏览器/实例门禁。
+
+### 同日补充：A47 已用临时集群实跑通过
+
+- 在 `Temp/pg-verify-20261105` 用 `initdb`（PostgreSQL 18.6、trust、UTF8）起临时集群于 `127.0.0.1:55432`，建 `han_b13c` 角色与 `han_b13c_article` 库；**未改动 5433 实例上的同名对象**。
+- DSN：`postgres://han_b13c:synthetic@127.0.0.1:55432/han_b13c_article?sslmode=disable`。注意默认 `sslmode=prefer` 会因临时集群未启 SSL 报 `tls error: server refused TLS connection`，必须显式 `disable`。
+- `go test -tags=integration ./internal/article -run '^TestAnchoredArticleFinalizerPostgres$' -count=1` → **ok 8.434s**。
+- 收尾：`pg_ctl stop -m fast` 成功，临时数据目录已删除（`Test-Path` 为 False）。
+- 仍被挡：s413 系列要求固定端口 `51935` 与固定数据目录字符串 `d:/temp/han-b13e-lead-20261030-r01/postgres/data`；cmd/han-server 恢复链要求 `53519` 上的 `han_b13h`。重建这类“按旧会话字形匹配”的实例没有验证价值，未做。
