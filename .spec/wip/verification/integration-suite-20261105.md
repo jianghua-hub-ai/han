@@ -51,3 +51,16 @@
 - 克隆内 `go test ./... -count=1` → exit 0（无 FAIL）。
 - 克隆内 `go test -tags=contract ./... -count=1` → exit 0（无 FAIL）。
 - 结论：离线包可独立复现工作树并完成构建与测试，未发现因 `.gitignore` 误排除而缺失的文件。验证用克隆已删除，源仓与包未受影响。
+
+## 被挡住的测试：落地条件核查（同日）
+
+`5433` 实例（`127.0.0.1`）上，测试所需的对象**已存在**：
+
+- 角色：`han_b13c`、`han_b13d`、`han_b13e`
+- 数据库：`han_b13c_article`、`han_b13c_identity`、`han_b13d_identity`、`han_b13e_identity`
+- 实测 `postgres://han_b13c:probe_only@127.0.0.1:5433/han_b13c_article` → `Password 认证失败`，即口令未知（scram），不是对象缺失
+- 因此 `TestAnchoredArticleFinalizerPostgres` 只缺一个可用的 `han_b13c` DSN；提供后即可实跑，无需新建任何对象
+
+另两个专用端口当前**关闭**：`51935`（`han_b13e`，s413 系列）、`53519`（`han_b13h`，cmd/han-server 恢复链三项）→ 需先启动对应实例，属环境变更。
+
+结论：集成套件的 5 个失败包中，1 个只缺口令（可立即解锁），2 个缺专用实例（需启动），1 个缺 `HAN_PG_PERF_EVIDENCE_DIR`（需指定目录），1 个缺浏览器/实例门禁。
