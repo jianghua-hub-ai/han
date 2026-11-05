@@ -43,3 +43,11 @@
 - 环境：`go env CGO_ENABLED` = `0`；`CC` = `gcc` 但 PATH 上无 `gcc`/`clang`，无 C 工具链。**结论：`-race` 在本机不可用，属工具链缺失，不是测试失败**；启用需安装 C 工具链并设 `CGO_ENABLED=1`，属环境变更，未做。
 - `go vet -tags=integration ./...` → exit 0（全仓，含集成构建约束）。
 - `gofmt -l cmd internal test` → 0 个文件。
+
+## 离线包自足性验证（同日）
+
+- `git clone --no-hardlinks .spec/wip/transfer/han-ir01-20261105.bundle Temp/bundle-check-20261105` → 成功；检出 **1,814** 个跟踪文件（与源仓 `git ls-files` 计数一致），HEAD `0a4b8e3`，历史 **24** 个提交。
+- 克隆内 `go build ./...` → exit 0。
+- 克隆内 `go test ./... -count=1` → exit 0（无 FAIL）。
+- 克隆内 `go test -tags=contract ./... -count=1` → exit 0（无 FAIL）。
+- 结论：离线包可独立复现工作树并完成构建与测试，未发现因 `.gitignore` 误排除而缺失的文件。验证用克隆已删除，源仓与包未受影响。
