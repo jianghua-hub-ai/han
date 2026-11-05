@@ -657,6 +657,7 @@
 - **验收命令**（workdir：仓库根目录 `.`）：
   - `go test -tags=integration ./test/integration/recovery`
   - 当前状态：专用命令 `go test -tags=integration ./test/integration/identity -count=1`（真实 PG18.6）与 `-race` 均 PASS；Manifest 固定七项（`gofmt -l .`、`go mod verify`、`go vet ./...`、`go build ./...`、`go test -tags=contract ./...`、`go test -race ./...`、`go test ./...`）已按序全部 PASS。二者互不替代。
+- 更正（2026-11-05）：上一行「当前状态」系 `identity-auth-S1.6` 误贴，不代表本卡；本卡真实执行为 `go test -tags=integration ./test/integration/recovery -count=1` 三次 `ok`（33.422s／36.943s／33.445s），r04 复审内另跑分组 16/16 PASS、整包 41.276s、`-race` 40.111s，`gofmt -l test/integration/recovery` 无输出，`go vet ./...` 与 `go build ./...` exit 0；16 子测试口径为 11 实质断言 + 5 部分/未取证。目标 POSIX 平台行为、真实持久卷崩溃/损坏/跨版本重放等边界 NOT RUN，详见「关闭证据与限制」。
 - **依赖**：requires `project-bootstrap-B0.1`、`identity-auth-S4.2`、`identity-auth-S4.3`、`identity-auth-S4.5`、`identity-auth-S4.6`、`identity-auth-S9.2`、`article-management-S4.2`、`article-management-S4.4`
 - **并行**：[P]；前置满足后仅修改本卡文件，可与无文件交叉且无依赖的任务并行。
 - **阻塞注记**：无
@@ -931,7 +932,7 @@
 - **验收命令**（workdir：仓库根目录 `.`）：
   - `go test -tags=integration ./test/integration/crossmodule -run "TestCanonicalUserDelete"`
   - 当前状态：专用命令 `go test -tags=integration ./test/integration/identity -count=1`（真实 PG18.6）与 `-race` 均 PASS；Manifest 固定七项（`gofmt -l .`、`go mod verify`、`go vet ./...`、`go build ./...`、`go test -tags=contract ./...`、`go test -race ./...`、`go test ./...`）已按序全部 PASS。二者互不替代。
-  - 历史证据边界：上一行“当前状态”为其他 identity 专项/Manifest 的历史原句，原文保留，不能替代本卡 crossmodule 两文件或新 top 的执行；本卡当时实施/静态结果仍待回；本轮执行、独立评审与 Lead 仅关闭本卡的最终决定见上述核证记录，不以旧 identity 专项证明本卡完成。
+  - 历史证据边界：上一行“当前状态”为其他 identity 专项/Manifest 的历史原句，原文保留，不能替代本卡 crossmodule 两文件或新 top 的执行；本卡两文件已创建；实施、独立评审与 Lead 关闭决定见上述 2026-10-28 核证记录，不以旧 identity 专项证明本卡完成。
 - **依赖**：requires `project-bootstrap-B0.1`、`identity-auth-S9.1`、`article-management-S4.1`、`article-management-S6.2`
 - **并行**：[P]；前置满足后仅修改本卡文件，可与无文件交叉且无依赖的任务并行。
 - **阻塞注记**：原四 requires 均已关闭，本任务声明范围的真实 PG、独立 Review 与 Lead 核收已满足。controlled maintenance Gate 仅为明示 local test seam，非 production 全局恢复/开流；SQL UNIQUE 非完整注册，组件矩阵非 HTTP/浏览器验证。真实 Journal/旧备份/global recovery/MarkConsumed 与后续验证仍归原关联，不倒挂 article S4.4，也不释放 root/identity/架构写权。
@@ -1231,6 +1232,7 @@
 - **验收命令**（workdir：仓库根目录 `.`）：
   - `go test -tags=e2e ./test/e2e/article`
   - 当前状态：专用命令 `go test -tags=integration ./test/integration/identity -count=1`（真实 PG18.6）与 `-race` 均 PASS；Manifest 固定七项（`gofmt -l .`、`go mod verify`、`go vet ./...`、`go build ./...`、`go test -tags=contract ./...`、`go test -race ./...`、`go test ./...`）已按序全部 PASS。二者互不替代。
+- 更正（2026-11-05）：上一行「当前状态」系 `identity-auth-S1.6` 误贴，且本卡两文件 `test/e2e/article/journey_test.go`、`test/e2e/article/README.md` 从未创建、专用命令 `go test -tags=e2e ./test/e2e/article` 从未执行（NOT RUN）；按 ADR-0036 以范围决策关闭，不声称部署后 E2E 通过。
 - **依赖**：requires `project-bootstrap-B0.1`、`article-management-S1.5`、`article-management-S2.2`、`article-management-S2.3`、`article-management-S4.3`、`article-management-S4.4`、`article-management-S4.6`、`article-management-S7.2`
 - **并行**：[P]；前置满足后仅修改本卡文件，可与无文件交叉且无依赖的任务并行。
 - **阻塞注记**：无
