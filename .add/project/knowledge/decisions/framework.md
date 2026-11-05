@@ -1791,3 +1791,4 @@ r19 按 Lead F001 裁定第 1、3 条删除的 r17 旧 `:1234` S3.6 模拟替代
 ### 引用记录
 
 - 2026-11-05 首次适用：`cmd/han-server/recovery_restore_test.go`（`s414Directory`）、`internal/article/deletion_journal_snapshot_test.go`、`internal/article/replay_publication_integration_test.go`（两处）、`internal/identity/recovery_installation_postgres_test.go:476`。实测：未设变量时 `TestRecoveryRestoreDriver` 新增 0 个 `%TEMP%` 目录；设置 `HAN_S414_TEST_EVIDENCE_DIR` 后 55 个目录落在指定根。
+- 2026-11-06 第二次适用：`test/integration/identity/password_reset_maintenance_test.go`（`s105EvidenceDir`，提交 `75d299b`），env 为空时改回 `t.TempDir()`、`HAN_S105_TEST_EVIDENCE_DIR` 非空才在该根保留；A/B 实测：改前 `%TEMP%` 新增 1 个 `han-s105-cli-*`，改后新增 0；整套通过仍受该测试固定要求 `127.0.0.1:5433` 且口令未知限制，未声称 PASS。
