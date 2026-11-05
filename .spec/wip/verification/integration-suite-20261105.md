@@ -121,3 +121,10 @@
 - `TestPgPerf*`（3 项）：除 `HAN_PG_PERF_EVIDENCE_DIR` 外还要求 `HAN_PG_PERF_RUN_ID`、`HAN_PG_PERF_DATABASE`（默认 `han_perf_s24`）、`HAN_PG_PERF_WINDOW_START`、`HAN_PG_PERF_BASE_BYTES`、`HAN_PG_PERF_BASELINE_DIR`，且需 5433 上的 PG 18.6。性能结论依赖受控窗口与基线；人为拼凑这些条件只会产出不可信数字，**不跑**。
 
 至此本机可运行的集成测试已全部实际执行；其余缺口均由 ADR-0036/0037 的范围决策或专用受控环境所致。
+
+### 同日补充：README 记载命令的可执行性核对
+
+- `go mod verify` → `all modules verified`（exit 0）。
+- README 引用的 5 份文档全部存在：`docs/testing.md`、`docs/dependencies.md`、`docs/runbooks/database-recovery.md`、`docs/runbooks/article-deletion-recovery.md`、`docs/runbooks/identity-observability.md`。
+- 无 `HAN_DATABASE_DSN` 时执行 `go run ./cmd/han-server`：2.5s 内退出，stderr 为 `han-server startup failed` + `exit status 1`，与 README 的 fail-closed 描述一致，未挂起。
+- README 标注 `-race` 需要 CGO，本机实测确为 `-race requires cgo`，文档与事实一致。
