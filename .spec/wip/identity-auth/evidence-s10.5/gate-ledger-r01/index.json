@@ -1,0 +1,19 @@
+{
+  "scope": "Current gate ledger metadata only, no CodeGate or Case PASS",
+  "payloads": {
+    "planner/edits.json": "C684E2FA6AA9313B3BDAEA2BBCEE5AA7CD0DCFAE683E34B0E43B6927CE75864A",
+    "planner/tasks.md.before": "9C073E731DB9FA09E74FE324CD8E3043EA357504AC93837E90AF00E06D8AF839",
+    "planner/tasks.md.gate.diff": "D6AD7A5503738BCB07140DD3884406A9C0480BBB5CD84B3E186D3A8DB7EDEB5F",
+    "planner/update_ledger.py": "A0E7F371C290E79403A081E857113E400237FCCEDD0562C40032088860E548CF",
+    "planner/verification.gate.json": "BE43E5E545895502E693C8305C3560E15DEC66F981D0EA4815973E559AC6A32B"
+  },
+  "lead_actual_added_text_read": true,
+  "lead_task_hash_verified": "8EC3CC062447ABEA2FB5C4990487A716CC8BD11DBFF507E436EF528779F6FD7C",
+  "counts": [
+    59,
+    47,
+    4,
+    8
+  ],
+  "plan_unchanged": true
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "c1-design-author-f001-r02",
+  "owner": {
+    "role": "Feature-Designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-design-f001-64hmd_1a",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/article.diff",
+      "sha256": "D37B1906D18FB33AEEE939388543DCE74FD633D3AC2AEE1065255F961A296114",
+      "bytes": 7689,
+      "source_name": "article.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/article.final.md",
+      "sha256": "1D1CEE350E4FD93B3B8700FD2D48F00BA2E70561FDCD8D0630B2741CF7A45F31",
+      "bytes": 353227,
+      "source_name": "article.final.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/article.original.md",
+      "sha256": "69C56796285F8187FBF2261D90183A519962A7F3EAF0A7788D558370C7CAC619",
+      "bytes": 351395,
+      "source_name": "article.original.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/baseline.json",
+      "sha256": "C405F0EBC285E5198C9C1043A18CB8C38764EC14F80426E0E41C468FCF7BF8A1",
+      "bytes": 426,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/hashes.json",
+      "sha256": "0325882D22C85F19FAADC2B62FD1BB52404386A842C1E59DD545D2ECECBC3804",
+      "bytes": 628,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/readset.json",
+      "sha256": "5A41E86A312238EDC9AB4D86BE7A996EA15F822B4D9B997516B8EEA21429FAD5",
+      "bytes": 6975,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/receipt.md",
+      "sha256": "EB28C2B88A175994CD3743C4F8522A3E18CDDA5C5A0791CCEA08646F28E49B2F",
+      "bytes": 2341,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-author-f001-r02/static-checks.json",
+      "sha256": "4BA304AB15B46D6CF024A755A503D90D2DB400BBD5FF6798DB8CA7072762A21C",
+      "bytes": 1749,
+      "source_name": "static-checks.json"
+    }
+  ]
+}

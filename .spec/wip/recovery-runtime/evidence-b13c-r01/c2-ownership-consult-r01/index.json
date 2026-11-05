@@ -1,0 +1,50 @@
+{
+  "scope": "c2-ownership-consult-r01",
+  "owner": {
+    "role": "Feature-Designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-c2-ownership-consult-xaz1sxb4",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-consult-r01/baseline.json",
+      "sha256": "ABA2D56365619E4797BEE6A10DAAF08F35BF273ADA31E8A5265F3B4F20690E9D",
+      "bytes": 1676,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-consult-r01/consult.md",
+      "sha256": "2FD7161C76B3E6159EE9244332B76ABC2A342F4EFC00BA8891EAB5E71E3727B6",
+      "bytes": 11290,
+      "source_name": "consult.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-consult-r01/guard-after.json",
+      "sha256": "7F88249931FB8B69A98762C099147A1BC314CF96CFC4C7A90A87A09A601D5B18",
+      "bytes": 1486,
+      "source_name": "guard-after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-consult-r01/hashes.json",
+      "sha256": "4875627E928A6438231B483BF0AA0A2571A27C25FB527F829FA021C2994E0C52",
+      "bytes": 439,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-consult-r01/readset.json",
+      "sha256": "2B89EF41198C76C821409E77F1ED825CB0FDD0E802AC143B0FDD263994D7DAC9",
+      "bytes": 10967,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-consult-r01/receipt.md",
+      "sha256": "102F28E2BCD8F318E81ED1FF037DC0C061E97B342B3D88C3AEED49C34FE47C72",
+      "bytes": 2240,
+      "source_name": "receipt.md"
+    }
+  ]
+}

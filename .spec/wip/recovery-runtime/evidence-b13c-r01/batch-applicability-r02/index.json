@@ -1,0 +1,98 @@
+{
+  "scope": "batch-applicability-r02",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-precheck-applicability-d6ac6a820986476094f85e631dfb21e1",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/analyze.py",
+      "sha256": "46FB37D944C1EF8DC195E6D1CC05793C3C1A24B12141583CAC37A845E1F500FE",
+      "bytes": 7418,
+      "source_name": "analyze.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/applicability-memo.md",
+      "sha256": "2AEFEA2D50F9A56B6D3CAD656729D94E373912D811176DA96F7716DD7370A56A",
+      "bytes": 9879,
+      "source_name": "applicability-memo.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/entry-hashes.json",
+      "sha256": "81C181BEBCCAE0545C6485CAB75902E998BBA8A176767808CB873D3B5818E06E",
+      "bytes": 1044,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/exit-hashes.json",
+      "sha256": "F801F5A922A471D2D2760CD9ABB45739A65710BF8D222461AD7B4E580CA63406",
+      "bytes": 1083,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/finalize.py",
+      "sha256": "272064A78492A2236DAB6DD2F37BFAB66298D524710470F854D4956720DA8D7E",
+      "bytes": 6917,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/hashes.json",
+      "sha256": "B99B96B9AD7A772C7F032BF7F2D144839EA14FF72929A25B69A5DC3394DFAB2D",
+      "bytes": 1901,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/inspect_structure.py",
+      "sha256": "2336CDC880EC7C8E27CE070450C4D16BDA53E307DFB0D4817F0D5759753FECB7",
+      "bytes": 653,
+      "source_name": "inspect_structure.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/pending-updates.json",
+      "sha256": "8EF55F132EB803096AD98554F808BDF04725D43902C2690BC0BDCC964C10C8B4",
+      "bytes": 3113,
+      "source_name": "pending-updates.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/read.ps1",
+      "sha256": "B96279D51DCA82664FC215AF1C6D542B661D7D9FD35E8C45D82EA19B58D2D6E8",
+      "bytes": 860,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/readset.jsonl",
+      "sha256": "BAD835BEE14F95A1CE8EBC0BEED0FA0D627B166D8FCF28A4AE562D5DDDE24CD0",
+      "bytes": 6714,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/receipt.json",
+      "sha256": "8372F9E088B6CC721DFB36229AB5BB71202D32CA8241FEDC6E93B478CDF4E25C",
+      "bytes": 3820,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/reused-methods.json",
+      "sha256": "4FED2585AB7597DA6BEEF143AAD26C91E8F1AD2E98E8A95B1E3B0499E6A6C5D5",
+      "bytes": 10060,
+      "source_name": "reused-methods.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/static-analysis.json",
+      "sha256": "CB298D8B6E260388D4544D7F58F730DE382B232C9DD45B427BE183FCFA17D2C4",
+      "bytes": 2557,
+      "source_name": "static-analysis.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-applicability-r02/static-readset.jsonl",
+      "sha256": "A8694D8C3B31B9F0E5698CFADEE54AE43A2006036985A4F8E14CAEEE2D23518A",
+      "bytes": 7559,
+      "source_name": "static-readset.jsonl"
+    }
+  ]
+}

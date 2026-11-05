@@ -1,0 +1,97 @@
+{
+  "scope": "a48-g0-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Noether",
+    "runtime_id": "01a1861b-9405-7942-8dd2-2db8b8d39eb2"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-a48-g0-67wwiie_",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/capture.py",
+      "sha256": "21FF9E5C97F97C81B34AD78D4B02BA73DF535016CF2E1E0040EFD2FD15D59F99",
+      "bytes": 3032,
+      "source_name": "capture.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/finalize.py",
+      "sha256": "D5EBC0E0E5FDF8ED88471F05B9D5EBD742B8C29362D9C57B5392757AFAA00E54",
+      "bytes": 10299,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/source-index.json",
+      "sha256": "B94E385300373971592A8C40166E4E587319B08FF075112A141E422069E9B614",
+      "bytes": 2223,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/interfaces-and-scope.md",
+      "sha256": "C64FE44FDB4C8728A4BFD2AF1896957E659F881D507726828EE1347554045222",
+      "bytes": 9388,
+      "source_name": "interfaces-and-scope.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/methods-reused.json",
+      "sha256": "11B452AEFC6232A4687822E1C2CD6921FC38D46858B598C22A7C4AAA81192FD1",
+      "bytes": 6658,
+      "source_name": "methods-reused.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/protection-entry-exit.json",
+      "sha256": "9868F47AAC0B43ABA44A528C2553D24B7C06C7C21D076E7A1401F9C178949F46",
+      "bytes": 12031,
+      "source_name": "protection-entry-exit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/protection-entry.json",
+      "sha256": "155E8536A82B5913C77D7D5B8C780322ED43C6E2A75AB179AB6B6B7926052354",
+      "bytes": 4163,
+      "source_name": "protection-entry.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/readset.json",
+      "sha256": "EDFDB5A0E72CC77259C255DB4E47A05DE0FFF84C0BC091CC328AEDADF851575D",
+      "bytes": 15075,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/receipt.md",
+      "sha256": "2E77039122C3D3C190611300DBD7335586C95445232AE9C9D9948232DFE8E69A",
+      "bytes": 4763,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/source10-entry-exit.json",
+      "sha256": "B56EF5FD4F30583ED2028552772FDEBED22581208F96C0FD42D079B8BB9D0EB2",
+      "bytes": 3090,
+      "source_name": "source10-entry-exit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/source10-entry.json",
+      "sha256": "C828F4B02E10A7328A60185B47C42796F0F1C68CBF6D3BFBBCBB853D73F1B835",
+      "bytes": 1502,
+      "source_name": "source10-entry.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/test-preservation-inventory.json",
+      "sha256": "B2AC483CA360B07D68AB87BEE41730C00AEE7134DDDC96B4908DC24F00D13D70",
+      "bytes": 7428,
+      "source_name": "test-preservation-inventory.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/validation-plan.md",
+      "sha256": "097E7397AA13584198BB18C444074DB4D1DFD985984A3236ACCDE47E4C65699A",
+      "bytes": 11819,
+      "source_name": "validation-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-g0-r01/verification.json",
+      "sha256": "484365AD20FB8A3302BF1F417887916A5906EB9258CECC0B024BF2B82193D7D6",
+      "bytes": 1306,
+      "source_name": "verification.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

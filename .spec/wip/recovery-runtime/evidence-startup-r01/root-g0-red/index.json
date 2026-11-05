@@ -1,0 +1,35 @@
+{
+  "scope": "Original Root author actual compiled overlay RED1/control8, no source writes or real resource actions; Main read raw counters and verified188 live source identity. Not product success or independent review.",
+  "snapshot_text_name_map": {
+    "main_test.overlay.go": "author/main_test.overlay.go.txt",
+    "fixture-compile-failure/main_test.overlay.go": "author/fixture-compile-failure/main_test.overlay.go.txt",
+    "root-before/cmd/han-server/main.go": "author/root-before/cmd/han-server/main.go.txt",
+    "root-before/cmd/han-server/main_test.go": "author/root-before/cmd/han-server/main_test.go.txt"
+  },
+  "payloads": {
+    "author/artifact-hashes.json": "9B093AE6AB749CCE76E429DF98B84872962AE0E3D3EF66D4C07185053DB520AC",
+    "author/finalize.py": "C4E09DB1FD457461F47CA2D138926F39754F1C57F1AE0A3C0569098E58A5022F",
+    "author/G0-red-verification.json": "5DD3DCE00B8387EA0F76CFC321D0C313666337709A624A1CD58345A4F7164CA5",
+    "author/G0-root.md": "593ED99309B0B51EEE321C315879BAF6F268EB1A7AA0BBD701F1D787605A3609",
+    "author/main_test.overlay.go.txt": "110E5655FD046BAC25F33107BB929915C0FDCC30F3296F22BA42BFDE3CA1EFF1",
+    "author/overlay-only.diff": "BDB1B36FB97E5EA57E8FDFCC5961AE7D4A3C9D95B4EB4CAD7ADE15DD28DF34B5",
+    "author/overlay.json": "AAD67870CC119CAA4C19F0EF81D88F80731C1157A9A9CFD06550D737F4D64985",
+    "author/prepare.py": "98B94C4AF44BFF2292B158A0CD20FD196A2CFA4FAE8E2C5DF8F041B1883FBF68",
+    "author/protected.after.json": "937D4C7108EC064ED593FC9944F442501FFD10C7C98B1A76CC3CA080E30C08B9",
+    "author/protected.before.json": "937D4C7108EC064ED593FC9944F442501FFD10C7C98B1A76CC3CA080E30C08B9",
+    "author/readset.json": "9E9097BD8BC5E4CB10FD54E5FCC1F3CA4BDA4CE408C1892F9AEA2B35C62F4603",
+    "author/red.run.json": "C1B05E078B1EBA30E60265A686657336FCAB16F59245925395ABEFA42D23E511",
+    "author/red.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "author/red.stdout.txt": "771EBFE1A4E3832343B4CD78F00E4E8C7506448F79EDD996F7701C68225C585F",
+    "author/source188.after.json": "6C202028DDFB58FC0B848DBCFDB55A25EC6EB6201D7D2E82AEA43075A51FA819",
+    "author/source188.before.json": "6C202028DDFB58FC0B848DBCFDB55A25EC6EB6201D7D2E82AEA43075A51FA819",
+    "author/status.after.txt": "09513FDF0FB0429D1448287C3BB158E37BF7512028A2921C0094E2DF0A7BB901",
+    "author/status.before.txt": "09513FDF0FB0429D1448287C3BB158E37BF7512028A2921C0094E2DF0A7BB901",
+    "author/fixture-compile-failure/main_test.overlay.go.txt": "0A89FA40700AB7BF5D5E6EA289A8668051BEF6C6F635C3ECB82EFD5FC03966FE",
+    "author/fixture-compile-failure/red.run.json": "97ABC7D1C81B65E555823A9EB0559C79983F525C880F433964C6725DCBC88CEC",
+    "author/fixture-compile-failure/red.stderr.txt": "53B5F2762D4A465B146119F5B53A064F5D42090C5A08476B375C90A2B9AA5FEA",
+    "author/fixture-compile-failure/red.stdout.txt": "EC9C372F4A0E59086746A873337CB29E5F8CED9C14313D1C3EF2A960E64D13E9",
+    "author/root-before/cmd/han-server/main.go.txt": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+    "author/root-before/cmd/han-server/main_test.go.txt": "4EF46AA9AF542C15FEF8D4688208ABDD75A6674C0A6F134D6645C86F4068D73E"
+  }
+}

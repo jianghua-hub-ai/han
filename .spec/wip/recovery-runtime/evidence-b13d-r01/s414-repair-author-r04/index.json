@@ -1,0 +1,469 @@
+{
+  "scope": "s414-repair-author-r04",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Chandrasekhar",
+    "runtime_id": "01a187a1-c022-71f3-92f5-6a9dc032e32b"
+  },
+  "source_temp": "D:\\Temp\\han-s414-r04-jkgwL1\\packet",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/after/cmd/han-server/recovery_exclusive.go.frozen",
+      "sha256": "D74537835601F20CA1B270AB21EED0E1179E61CDB7B59B0FFDB98E052E095B9B",
+      "bytes": 1721,
+      "source_name": "after/cmd/han-server/recovery_exclusive.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/after/cmd/han-server/recovery_exclusive_test.go.frozen",
+      "sha256": "7984D8EE2E6295EF6BDC490B7FA20C3A322863097B02934B3E71180D8D8A40EF",
+      "bytes": 5329,
+      "source_name": "after/cmd/han-server/recovery_exclusive_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/after/cmd/han-server/recovery_restore.go.frozen",
+      "sha256": "C0CB4B012F5EE1DE3CD346DD768D14C50AAA60AB8A0A549FA9098997B0668BBA",
+      "bytes": 23057,
+      "source_name": "after/cmd/han-server/recovery_restore.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/after/cmd/han-server/recovery_restore_integration_test.go.frozen",
+      "sha256": "AFE7AE9162BFFA06672B23266E9478BAB8DCA4007ACCAE36F674F3D6FFB983FD",
+      "bytes": 10155,
+      "source_name": "after/cmd/han-server/recovery_restore_integration_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/after/cmd/han-server/recovery_restore_test.go.frozen",
+      "sha256": "549196E579A254FC09CCADFD2500E1FA35FF4330EDEF224723A9B69E087B073C",
+      "bytes": 52567,
+      "source_name": "after/cmd/han-server/recovery_restore_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/after.json",
+      "sha256": "BF6C0D89E1FBE33AAAF69563153DD5E33601319A93FC7D3000D7D2A63E4707D5",
+      "bytes": 3549,
+      "source_name": "after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/before/cmd/han-server/recovery_exclusive.go.frozen",
+      "sha256": "D74537835601F20CA1B270AB21EED0E1179E61CDB7B59B0FFDB98E052E095B9B",
+      "bytes": 1721,
+      "source_name": "before/cmd/han-server/recovery_exclusive.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/before/cmd/han-server/recovery_exclusive_test.go.frozen",
+      "sha256": "7984D8EE2E6295EF6BDC490B7FA20C3A322863097B02934B3E71180D8D8A40EF",
+      "bytes": 5329,
+      "source_name": "before/cmd/han-server/recovery_exclusive_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/before/cmd/han-server/recovery_restore.go.frozen",
+      "sha256": "FDC2792E93A638F45917C097D8CAE6DEBC22918159C1495F7D31148987534423",
+      "bytes": 21599,
+      "source_name": "before/cmd/han-server/recovery_restore.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/before/cmd/han-server/recovery_restore_integration_test.go.frozen",
+      "sha256": "AFE7AE9162BFFA06672B23266E9478BAB8DCA4007ACCAE36F674F3D6FFB983FD",
+      "bytes": 10155,
+      "source_name": "before/cmd/han-server/recovery_restore_integration_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/before/cmd/han-server/recovery_restore_test.go.frozen",
+      "sha256": "57946F39EAE83C8273A66C15E62C3AAA83E0CB47FA4C2CD6A03A967A76E41259",
+      "bytes": 47321,
+      "source_name": "before/cmd/han-server/recovery_restore_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/before.json",
+      "sha256": "788F23095613F75B5B934A2070BD4087AC8E83862E2DEC9421BAD8C8BA1ABADF",
+      "bytes": 3441,
+      "source_name": "before.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/child-joins.json",
+      "sha256": "3851C14EB2B511603859D09C1933B923651C90516D3B06446409FCC8CFE52081",
+      "bytes": 60466,
+      "source_name": "child-joins.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/delivery.json",
+      "sha256": "6B0DC6612D24932B35F86688C1B12C8441A11E5D33713537BE70641F9EE11AE9",
+      "bytes": 3498,
+      "source_name": "delivery.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/execution-notes.json",
+      "sha256": "6EA8D64FEF7096A51EF9D77D22854A331B998D4040D10CF6C4062FABE30AFA19",
+      "bytes": 2023,
+      "source_name": "execution-notes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/fmt-owned2.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "fmt-owned2.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/fmt-owned2.stdout",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "fmt-owned2.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/fmt-owned5.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "fmt-owned5.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/fmt-owned5.stdout",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "fmt-owned5.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-branch.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "git-branch.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-branch.stdout",
+      "sha256": "6403203DD5A0867EB14D104EE8A73730BD72DD9AD92E78D996A6DBA0A5DCFC01",
+      "bytes": 5,
+      "source_name": "git-branch.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-diff-check.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "git-diff-check.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-diff-check.stdout",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "git-diff-check.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-head.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "git-head.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-head.stdout",
+      "sha256": "33F42A45651AD8819857B3638603AD470179BC4A4ED4018D523E435CF6189368",
+      "bytes": 41,
+      "source_name": "git-head.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-own5-status.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "git-own5-status.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/git-own5-status.stdout",
+      "sha256": "50ED8C809784EA2AB07637E6447E26401ECA9F03B8207DDCCFD0679133E2FA33",
+      "bytes": 221,
+      "source_name": "git-own5-status.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/green-normal.jsonl",
+      "sha256": "F872070EBAA8DE65695E9C7A54ED8C63741BF5D51122BF4C2C5F1050EBF93E66",
+      "bytes": 166854,
+      "source_name": "green-normal.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/green-normal.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "green-normal.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/green-race.jsonl",
+      "sha256": "09D9E2727B56740482869F1C2243247A5C5071252661347F499446668B8A15BA",
+      "bytes": 166885,
+      "source_name": "green-race.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/green-race.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "green-race.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/green-test.frozen",
+      "sha256": "3E890F0EFA861710A7602D58E9BD3BC12F3007C6DFFB0E7D86A88A987852CDD2",
+      "bytes": 61945,
+      "source_name": "green-test.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/known-pids.json",
+      "sha256": "A9052168B2EEB4B4C9B2315124A4A86FE4A3AD16C09E264AD6CF14A44F6BA2E8",
+      "bytes": 44474,
+      "source_name": "known-pids.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/leaf-retention.json",
+      "sha256": "87415E0CFFBC7B56B724735753EDA496D794383FD7A8F13F907F1DCCB68D3C35",
+      "bytes": 662,
+      "source_name": "leaf-retention.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/list-fivegroups.jsonl",
+      "sha256": "7424EA70B712B2E531EF504F78D763F4903F2E42914244ECC8C5A8BE36108501",
+      "bytes": 1057,
+      "source_name": "list-fivegroups.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/list-fivegroups.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "list-fivegroups.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/list-pg.jsonl",
+      "sha256": "E5B41940ED9207C232BCDC72B6B982C3872F33B34D83E6F067F7D876D232898A",
+      "bytes": 489,
+      "source_name": "list-pg.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/list-pg.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "list-pg.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/manifest.json",
+      "sha256": "E3C3A388A0C3F7C26615C8D6216E5E86A323D1FA3D7D921324AE74400488BB56",
+      "bytes": 12374,
+      "source_name": "manifest.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/method-reuse.json",
+      "sha256": "53D4B45C144BEFE5E3F9FB2BD49A10C96F5B7F1A8CF3908CE128BDE87D62F99F",
+      "bytes": 3180,
+      "source_name": "method-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/observer-adaptation.json",
+      "sha256": "BDA25931FEA6703EC378DA91651619C86B25F0656317CE80EAE422D959612CC4",
+      "bytes": 713,
+      "source_name": "observer-adaptation.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/offline-module-inputs.json",
+      "sha256": "70B256A90C50EEED86CD25D1C29887192457B32888D576368E1DA9122A3A31FC",
+      "bytes": 6408,
+      "source_name": "offline-module-inputs.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/overlay-audit.json",
+      "sha256": "FD58F4DE55A8D11EAB8D9D3AA882682E5F5003AB4F4CBAFF70F00E4F1FE76A42",
+      "bytes": 687,
+      "source_name": "overlay-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/overlay-green.json",
+      "sha256": "2E1569F34501BB524C4FFA901F361C6CDE754A17A1FE0E3C145B1AFC7611F60B",
+      "bytes": 159,
+      "source_name": "overlay-green.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/overlay-red.json",
+      "sha256": "9AA4D6E33CA6E8B3810C4D6AFEED4C65D2D8035DAFF6937C5D61B1DBD21ED0F3",
+      "bytes": 157,
+      "source_name": "overlay-red.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/pg-normal.jsonl",
+      "sha256": "B832A07C01699035D09B4EB056B03B2511806A3BC23E6AC5CBDE6EECAE7DD7BB",
+      "bytes": 21225,
+      "source_name": "pg-normal.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/pg-normal.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "pg-normal.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/pg-race.jsonl",
+      "sha256": "8F64650975805931502BCADAC76F8FB7EC0D1A553A8BC7927780B44828A42F9D",
+      "bytes": 21236,
+      "source_name": "pg-race.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/pg-race.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "pg-race.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/process-ledger.json",
+      "sha256": "3CBA0207AD9800B4A9641FCDDAA1DC72AA1B7D114C73394FA88D600AF7766063",
+      "bytes": 12182,
+      "source_name": "process-ledger.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/progress.json",
+      "sha256": "ABE05C1C1D6C1CF0F772C78539B255A5DA733F42AA0A12BA5A9357BD96B32296",
+      "bytes": 109,
+      "source_name": "progress.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/raw-index.json",
+      "sha256": "0425818444071BA6B5CB65B746339B474033149B5AECE115359D3005E0D1AB91",
+      "bytes": 7382,
+      "source_name": "raw-index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/readset.json",
+      "sha256": "570EA58B042CF57D65DF9D80DBCFA875C8A0F25B307D8992FCF6633CE3CA6754",
+      "bytes": 1930,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/receipt.json",
+      "sha256": "6B0DC6612D24932B35F86688C1B12C8441A11E5D33713537BE70641F9EE11AE9",
+      "bytes": 3498,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/red-normal.jsonl",
+      "sha256": "8AD9F8661090091E01D5341D00C1A3112C8678F6A5E78ABB8CC509904AA0F120",
+      "bytes": 2260,
+      "source_name": "red-normal.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/red-normal.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "red-normal.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/red-race.jsonl",
+      "sha256": "A21EECFEB2DE2760B876505D5E4832EF84520AECD808BDA88DE46455F0B7E742",
+      "bytes": 2259,
+      "source_name": "red-race.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/red-race.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "red-race.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/red-test.frozen",
+      "sha256": "7003D8F89EAAF75836215D882F1BD4BE4E45C745EAF5C606DC107470D544CCF8",
+      "bytes": 56699,
+      "source_name": "red-test.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/repair.patch",
+      "sha256": "3D8CE415CC98A20147498D1EB0104D9430905236E485889790306BEE10AE87AA",
+      "bytes": 10837,
+      "source_name": "repair.patch"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/report.md",
+      "sha256": "AB2C16D7BCC232C99FD9A69E4CEEBEBDB2B53F6D04F4DD89056C4359F1B59AD3",
+      "bytes": 5742,
+      "source_name": "report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/retained-schema-check.sql",
+      "sha256": "98FE3D07D12246888068981E2225FDE9513D5952356251B36D81D625D3CC1C5B",
+      "bytes": 852,
+      "source_name": "retained-schema-check.sql"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/retained-schemas.json",
+      "sha256": "6072537CF6CBDECEB719F6EFD399528211E790F901311215889F08F3930BC94D",
+      "bytes": 4009,
+      "source_name": "retained-schemas.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/reviewer-1.fragment.frozen",
+      "sha256": "DBDEDF67A4E252BB9E22E6316FF4A31CED4C9689569F109A7F811D48517073BA",
+      "bytes": 3782,
+      "source_name": "reviewer-1.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/reviewer-2.fragment.frozen",
+      "sha256": "24D710DF1DD3B85B1CED8FEA4650C0BAB6C7EAFF8319525D1ECF02B263737223",
+      "bytes": 2617,
+      "source_name": "reviewer-2.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/reviewer-3.fragment.frozen",
+      "sha256": "613CD0AE6DB387C08C9E611C9937F5452BB93AFBDF5B454C043F956FB82A6D7A",
+      "bytes": 2976,
+      "source_name": "reviewer-3.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/source5-applied.json",
+      "sha256": "96506DC3DFE5A6BCD6BB53241A4343754FD79C1236BCFBE5667CCA09800DFE21",
+      "bytes": 573,
+      "source_name": "source5-applied.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/sql-preflight.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "sql-preflight.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/sql-preflight.stdout",
+      "sha256": "9F8BB6EA8D86E95C93E9CAE7E0C57BE76CB8FCC0FC9CD2AEA08436D538BC8B45",
+      "bytes": 211,
+      "source_name": "sql-preflight.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/sql-schema-retention.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "sql-schema-retention.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/sql-schema-retention.stdout",
+      "sha256": "B07ED2673A894CDD7FE2B40656710A95682C2D59C1C4195ACC8B27DC8540476C",
+      "bytes": 700,
+      "source_name": "sql-schema-retention.stdout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/test-inventory.json",
+      "sha256": "C42CEB24A80150F67283CAB80DEFEE6B996FBC4197160D056D48E188C84BE67C",
+      "bytes": 34188,
+      "source_name": "test-inventory.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/vet-integration.jsonl",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "vet-integration.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/vet-integration.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "vet-integration.stderr"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/vet-normal.jsonl",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "vet-normal.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-repair-author-r04/vet-normal.stderr",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "vet-normal.stderr"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

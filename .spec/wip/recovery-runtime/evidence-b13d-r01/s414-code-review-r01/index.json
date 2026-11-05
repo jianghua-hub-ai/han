@@ -1,0 +1,151 @@
+{
+  "scope": "s414-code-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s414-review-r01-1tfappge\\packet",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/actual-validation.json",
+      "sha256": "679506260241E37E00D9DD86D2D1338485065315579994D7022ED8D0D2CA2F9D",
+      "bytes": 20281,
+      "source_name": "actual-validation.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/author-evidence-audit.json",
+      "sha256": "F2A8D7A2048E42ED3AC53786FE3E3C3591CB2C1282AF08D6946DAEACF5331195",
+      "bytes": 84128,
+      "source_name": "author-evidence-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/checks/launch-race/result.json",
+      "sha256": "3D0F3220028130E5BB7E1EFE94B989113A2D1BCFE60F11A28078254781131333",
+      "bytes": 725,
+      "source_name": "checks/launch-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/checks/launch-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/launch-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/checks/launch-race/stdout.log",
+      "sha256": "679BFBD5C7B22433E838D29F07DBDDC3C37EBF2A4640CB14CCAD162F591C13E2",
+      "bytes": 8086,
+      "source_name": "checks/launch-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/checks/original80-and-launch-normal/result.json",
+      "sha256": "E58A131D17BDEC107A674273B37224378587529636500F8546B58C2DB033124B",
+      "bytes": 772,
+      "source_name": "checks/original80-and-launch-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/checks/original80-and-launch-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/original80-and-launch-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/checks/original80-and-launch-normal/stdout.log",
+      "sha256": "271DE2DE93EEA75A42872316172222A274ECBCF17DA8E8225EB2E76B0195FBB5",
+      "bytes": 108010,
+      "source_name": "checks/original80-and-launch-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/current-restore-test-overlay.frozen",
+      "sha256": "BB44307C81F8F9A6A701822FAAC65BCFE9C23640BBD78907EF65E8EC99B17BCF",
+      "bytes": 31602,
+      "source_name": "current-restore-test-overlay.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/entry-source5.json",
+      "sha256": "7849BE68AFDA5DD5A7D3F01A845C08EAC7CC84CBF04B3AB60A53349DCF0C9B54",
+      "bytes": 786,
+      "source_name": "entry-source5.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/findings.json",
+      "sha256": "A9AC5E0330515F0B8EC0F2C7B0DB687CE8D3F4C68285777BDE464FAE31C3872E",
+      "bytes": 5302,
+      "source_name": "findings.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/launch-boundary-probe.fragment.frozen",
+      "sha256": "DBDEDF67A4E252BB9E22E6316FF4A31CED4C9689569F109A7F811D48517073BA",
+      "bytes": 3782,
+      "source_name": "launch-boundary-probe.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/methods-same-version.json",
+      "sha256": "DE2ED31756A9CA92467B3BC8900BB8880ECF25339D027A30C865B6DFC1219D63",
+      "bytes": 4122,
+      "source_name": "methods-same-version.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/overlay-current.json",
+      "sha256": "4BA2F242F48DEC9C394698C2EA5858183763CFDB5835E0E51B8B5DAB58499245",
+      "bytes": 231,
+      "source_name": "overlay-current.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/overlay.json",
+      "sha256": "D6FE02E4FF1945C9BE540D0A050DBA608750E67085D59A91683D1ED2AC2DDBE8",
+      "bytes": 223,
+      "source_name": "overlay.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/patch-audit.json",
+      "sha256": "EE0756156221A83921D7007717E458EC3C705A88AE050E6B455A4C3DE388E15D",
+      "bytes": 244,
+      "source_name": "patch-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/readset.json",
+      "sha256": "DB1E70AF7020D949CD29A230DBE885005F254DFB42AFDCF98B5AC7E9B052584F",
+      "bytes": 8025,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/receipt.json",
+      "sha256": "F36D71281CAA6D285C54260FF98D7EA8E646D1CDB4CB42645F1F3441845E531D",
+      "bytes": 6548,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/retained-schemas.json",
+      "sha256": "9823EAF0289D7C8C97669D6B62E64F384709B56C36D43A4270A81F39CE27BD14",
+      "bytes": 398,
+      "source_name": "retained-schemas.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/REUSE.md",
+      "sha256": "3A35B9715ACB3EFE90738DB960434581BD2AEA3834DF6331D15FBB0C57A3DE79",
+      "bytes": 554,
+      "source_name": "REUSE.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/review-report.md",
+      "sha256": "4D58A2500F58EA15D820DF23CA1549CB627902F91B14425A150D205EC1D88C41",
+      "bytes": 10091,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/run_local.py",
+      "sha256": "F7EBA6BB444609050E5DC458D6F25C1163E2B8D80764500A40BA15272F44E6F3",
+      "bytes": 2888,
+      "source_name": "run_local.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r01/source5-entry-exit.json",
+      "sha256": "788EEDE249EB5ADC0FB9685AC8B3749C7B5FF9A803FBAB13A84F757480EC8410",
+      "bytes": 2092,
+      "source_name": "source5-entry-exit.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

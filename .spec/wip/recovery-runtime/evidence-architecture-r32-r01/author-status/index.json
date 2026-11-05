@@ -1,0 +1,78 @@
+{
+  "scope": "Final author metadata-only synchronization of actual R02 closure; no technical contract change",
+  "agent": {
+    "role": "add-arch-designer",
+    "nickname": "Pascal",
+    "id": "01a17e3d-5550-7f91-bb7e-6e6fad3d082c"
+  },
+  "authorization_submission": "01a1837f-5810-72f3-89b5-15ae86def4bc",
+  "review_recheck_submission": "01a18382-b369-7f22-a1ac-0f135dd933ac",
+  "status": "Author STOP/frozen; independent final metadata check pending; R02 design closure retained, no implementation/human acceptance.",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/handoff.md",
+      "sha256": "ECEF9CCD45D8AC7141B2DDEA05A3ABBDC274FF2A3D62CE3B5B2F20F2460BEFFF",
+      "bytes": 1188
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/verification.json",
+      "sha256": "AA87C81C83AB974FF0DC29D6301A4C4AE3AFC8D7BD8F5DD4C94C72FF5DC78115",
+      "bytes": 2457
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/before.json",
+      "sha256": "686F83DDF3927150966DB51CA1CC9055B5151848C900F23BFAF04F5FF82CA96B",
+      "bytes": 3651782
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/check.py",
+      "sha256": "F01B9D4F347500EDEDFB23DF1393981B687C727905BA01A250397EBCE9F39A04",
+      "bytes": 5071
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/architecture.md.before",
+      "sha256": "F0D1334187A5E7533CF31C88EFCE4E3BB84F36EE484B01A1BDD9B7DB0D382CBA",
+      "bytes": 233199
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/framework.md.before",
+      "sha256": "2825D595FFC6C347DAC41142B23AB22DC29B543A1E2924D6C42744A76E7A7C71",
+      "bytes": 94431
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/README.md.before",
+      "sha256": "2F2F3B2C70D07218A06217AA8D1A15B3CC2C67C7F35BB99583F0A0E4EEC90C6E",
+      "bytes": 15302
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/architecture.md.actual.diff",
+      "sha256": "C088C391F59DEDE71534E7E1D71E6839FC7A7D2D5FE1578B0E7BD15FCDA43C54",
+      "bytes": 2879
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/framework.md.actual.diff",
+      "sha256": "C2F276CC60131B1D539E2A86E300DA8A96C833BC924826B1B5E502FD703FE23B",
+      "bytes": 2023
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/README.md.actual.diff",
+      "sha256": "261C0232ABFBAF9CCE8079707FE770EB92EF34E98C5E3E98F33383E916879874",
+      "bytes": 1885
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/frozen/.add/project/knowledge/design/architecture.md",
+      "sha256": "89605FAF5D0C7C663791086112E6BD1A33FC5C309A01E6DBCAA2C91795B0A27E",
+      "bytes": 233399
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/frozen/.add/project/knowledge/decisions/framework.md",
+      "sha256": "329631B71E692E96D8B8FA918686E7942AE549B492E1B3A4B69F03C889F81F5C",
+      "bytes": 94700
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-status/frozen/.add/project/knowledge/decisions/README.md",
+      "sha256": "92B7598534B934FD7214F30B46A9BFBAAD8A500617561873DBD13BDF965848AC",
+      "bytes": 15477
+    }
+  ]
+}

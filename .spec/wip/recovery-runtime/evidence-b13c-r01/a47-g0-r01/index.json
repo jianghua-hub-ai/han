@@ -1,0 +1,62 @@
+{
+  "scope": "a47-g0-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Noether",
+    "runtime_id": "01a1861b-9405-7942-8dd2-2db8b8d39eb2"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "D:\\AID\\VSCode\\Codex\\Han\\Temp\\b13c-article-s47-g0-20261029-r01",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/source-index.json",
+      "sha256": "2FD64A6F6B126908791492D932C4190C319807CB11C025F83A514D7DCB65A1F5",
+      "bytes": 2318,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/readset.json",
+      "sha256": "96DAD961A054EE698867882BE38F941A26B5D36E33DA4B3B94E22125801B359C",
+      "bytes": 22063,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/receipt.md",
+      "sha256": "336F57B83745809E4E5CD6AE372D1AEF803943BEBB4606A256074211072B17B1",
+      "bytes": 17220,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/sourcebeforehash-r02.json",
+      "sha256": "18AA081396778F3D384A07F4187E756EF941BA4E08B93705EA482D9C2831D5F2",
+      "bytes": 3259,
+      "source_name": "sourcebeforehash-r02.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/sourcebeforehash.json",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "sourcebeforehash.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/upstream-hash-check.json",
+      "sha256": "7A3DEA091AFB418166E1B1B8E6B071408A8135045F5885791E5DBEC463773133",
+      "bytes": 8101,
+      "source_name": "upstream-hash-check.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/validation-plan.md",
+      "sha256": "281917E16F2AA19DF36D2E5C1D6D6EC89B342B8B28FF8133A5DE19BBA040D03F",
+      "bytes": 12390,
+      "source_name": "validation-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-g0-r01/verification.json",
+      "sha256": "EB6513956045198D9AAF180B2B3006280859DB3BB12225FC23501CD2DEA5C9A3",
+      "bytes": 4269,
+      "source_name": "verification.json"
+    }
+  ]
+}

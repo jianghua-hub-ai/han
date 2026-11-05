@@ -1,0 +1,252 @@
+{
+  "owner": {
+    "role": "Main",
+    "nickname": "Main",
+    "runtime_id": "unknown-main-session-id"
+  },
+  "source_temp": "D:\\Temp\\han-b13f-lead-20261030-r01\\checks\\Main-final-F001-current36-r02",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/build/result.json",
+      "source_name": "build/result.json",
+      "bytes": 6332,
+      "sha256": "7425E89A9EACC2F79152040A83CBB2FF23E4A93933A7BB0F598B169D3E235BDE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/build/running.json",
+      "source_name": "build/running.json",
+      "bytes": 207,
+      "sha256": "2909BD84411D037E629B8E3F8DCABCB03BD230F3FB45FACC040BA15D32D3DDA2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/build/stderr.log",
+      "source_name": "build/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/build/stdout.log",
+      "source_name": "build/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/contract/result.json",
+      "source_name": "contract/result.json",
+      "bytes": 6406,
+      "sha256": "BC8C135D0A4A7AE75A04310C0953F2CE90B1806BF3E6DACB985F06844930F025"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/contract/running.json",
+      "source_name": "contract/running.json",
+      "bytes": 243,
+      "sha256": "D84CB16DBE5DAD9892A81089CBC8B393635CC45485EFF211925E5FA3FE1CC146"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/contract/stderr.log",
+      "source_name": "contract/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/contract/stdout.log",
+      "source_name": "contract/stdout.log",
+      "bytes": 5575004,
+      "sha256": "FB34FC706B797EE487D13E99AC1B7A7FD47C8922D560BC0C75B1CE0FCE413E7E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/format-owned30/result.json",
+      "source_name": "format-owned30/result.json",
+      "bytes": 7770,
+      "sha256": "F9D942B689083FBD48A7A99A97F9236FCCF5CDAB9E83D01A7F6A4785BFF436BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/format-owned30/stderr.log",
+      "source_name": "format-owned30/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/format-owned30/stdout.log",
+      "source_name": "format-owned30/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/format-root/result.json",
+      "source_name": "format-root/result.json",
+      "bytes": 6345,
+      "sha256": "7AFB3D33D419E230A31D55A6A46FE0C4920C28E9FF268D4D0293C0B0CE471FDA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/format-root/running.json",
+      "source_name": "format-root/running.json",
+      "bytes": 203,
+      "sha256": "4FCC8A8D1DA61BA4AE1C7F9B18D3F3FE6004793B7EF64109A6825F6D53B68E22"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/format-root/stderr.log",
+      "source_name": "format-root/stderr.log",
+      "bytes": 1133,
+      "sha256": "53258F7B21EF40C6BE7E8E671216EEF5DD0441B27314FA806AE24F5C2CB010FD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/format-root/stdout.log",
+      "source_name": "format-root/stdout.log",
+      "bytes": 1631,
+      "sha256": "D01225B146C06C238B38AEA344662D8253842CEE671EF68137BCC4B66C9379A8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/modverify/result.json",
+      "source_name": "modverify/result.json",
+      "bytes": 6342,
+      "sha256": "5B62E1A96F6148DA75A2385FA7ABC1C42A83B0DE377564A3A8291D5881CDCBE6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/modverify/running.json",
+      "source_name": "modverify/running.json",
+      "bytes": 206,
+      "sha256": "7E7648EFF027452526B93C94309546B3B3D3B316009FDD313730D7E1B9DDFA7B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/modverify/stderr.log",
+      "source_name": "modverify/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/modverify/stdout.log",
+      "source_name": "modverify/stdout.log",
+      "bytes": 21,
+      "sha256": "B4537ED75F533F993F371954DE47E42A793B8E5B0587577DE7E27FB3E50696BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-normal/result.json",
+      "source_name": "Pspot-normal/result.json",
+      "bytes": 8164,
+      "sha256": "ACBFDFD9A9D7AF72C505653FF161364E56626FC5D8E654C0B1A194E20C3F681E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-normal/running.json",
+      "source_name": "Pspot-normal/running.json",
+      "bytes": 713,
+      "sha256": "EEB4DA93F29D7F30B998D137D27E08AA45D4DD98458D5D8BD2BEEDEA363ECEF5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-normal/stderr.log",
+      "source_name": "Pspot-normal/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-normal/stdout.log",
+      "source_name": "Pspot-normal/stdout.log",
+      "bytes": 218706,
+      "sha256": "93CF08AB70D4C279B6A14F6B7E6235B4FA1B6BCCF0BD1AC3D022993BEEE99346"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-race/result.json",
+      "source_name": "Pspot-race/result.json",
+      "bytes": 8186,
+      "sha256": "A825137FB858DF788AC2AC1307B3A9A42FDA230100A72D0B60A1F19784D8CCEA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-race/running.json",
+      "source_name": "Pspot-race/running.json",
+      "bytes": 727,
+      "sha256": "218D8DB2CA0B8D099BA4D1305FC5D1A5C8024E2DA0D2758BEA40E7A2778960E9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-race/stderr.log",
+      "source_name": "Pspot-race/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/Pspot-race/stdout.log",
+      "source_name": "Pspot-race/stdout.log",
+      "bytes": 218678,
+      "sha256": "6B2F6E56E3393382187F096889AE0FFC36606917783E115A827A9D3C3FD99B63"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/race/result.json",
+      "source_name": "race/result.json",
+      "bytes": 6513,
+      "sha256": "38F9BA7AB65B3F852054B933F52CCC6D941ABD2E2C6A61C0AFFE81447BF2E4B4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/race/running.json",
+      "source_name": "race/running.json",
+      "bytes": 251,
+      "sha256": "9554585D7B1DFA8B9F993B4DF5955C70F1A68DCAB58A877155F0D90EB384869C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/race/stderr.log",
+      "source_name": "race/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/race/stdout.log",
+      "source_name": "race/stdout.log",
+      "bytes": 5266230,
+      "sha256": "AD123BC860F2B8AE1B8A780266C1DA1F7679E2AA8F73B0B9D6B8D49D90AEE89F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/summary.json",
+      "source_name": "summary.json",
+      "bytes": 77586,
+      "sha256": "5625DD4F49EAF61D85274FB6369D8577D4F82D2EAD8269ACBDE0269EE2F8A19F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/tests/result.json",
+      "source_name": "tests/result.json",
+      "bytes": 6388,
+      "sha256": "30870042CB29DDB3B477AD34278D9E332DF1F72C56DB11BB6C32F5E14212E0D9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/tests/running.json",
+      "source_name": "tests/running.json",
+      "bytes": 237,
+      "sha256": "E854376C073B3E71E67D531CBD63AA885A791336C659A55CDAE6C0B66B313720"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/tests/stderr.log",
+      "source_name": "tests/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/tests/stdout.log",
+      "source_name": "tests/stdout.log",
+      "bytes": 5265632,
+      "sha256": "44CED3ECF401B90541A69B3A58E1FB0CBE17891D0512167CD50929605DBF9751"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/vet/result.json",
+      "source_name": "vet/result.json",
+      "bytes": 6323,
+      "sha256": "567D3487183DC5E35EAA8EF4FF242B0D19A5936B025D5B16E575CD30603E47BB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/vet/running.json",
+      "source_name": "vet/running.json",
+      "bytes": 205,
+      "sha256": "F5772463C78A8AD039A086DAA5057D3368A7BF5358EABBEF2A5902561DE042B8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/vet/stderr.log",
+      "source_name": "vet/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-final-checks-raw-r02/vet/stdout.log",
+      "source_name": "vet/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

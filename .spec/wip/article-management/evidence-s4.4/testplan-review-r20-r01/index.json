@@ -1,0 +1,30 @@
+{
+  "scope": "Independent fixed-r20 test-plan review only; no execution proof",
+  "captured_at": "2026-10-27T22:46:08.724419+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-s44-r20-review-837b7f8dbc3a4169872b1d0cd9bf0dc5\\readset-start.json",
+      "copy": "readset-start.json",
+      "role": "Pauli",
+      "sha256": "0E40B7F246CDBD5E9BC83DE58AEDF56AAD7383003086F69EA517D023C4391259"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-s44-r20-review-837b7f8dbc3a4169872b1d0cd9bf0dc5\\independent-static.json",
+      "copy": "independent-static.json",
+      "role": "Pauli",
+      "sha256": "75631BA4AEF2C47FB1834ACA18C2D608F52F96BF9FA037E58A7909A990A62949"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-s44-r20-review-837b7f8dbc3a4169872b1d0cd9bf0dc5\\end-check.json",
+      "copy": "end-check.json",
+      "role": "Pauli",
+      "sha256": "7B25CB7FCE92C660FC51730CBD52A785938C0BD45C52F1493B663A1E34232D05"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\review-test-plan-r20-s4.4-r01.md",
+      "copy": "review.md",
+      "role": "Pauli",
+      "sha256": "1F5FBF2FC190AA7429C79441FD88CEADC35F52C7AAC1E0166041B3BB7B6E4402"
+    }
+  ]
+}

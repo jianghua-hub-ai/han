@@ -1,0 +1,92 @@
+{
+  "scope": "a47-c1-g0-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Noether",
+    "runtime_id": "01a1861b-9405-7942-8dd2-2db8b8d39eb2"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-a47-c1-g0-vc7aoki6",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/component-setup-not-run.json",
+      "sha256": "5CE567A9A7649667889566B2246601B9566E05EC7255A2E46F3022BAB1DA2B9B",
+      "bytes": 3160,
+      "source_name": "component-setup-not-run.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/entry-source8.json",
+      "sha256": "3BF8A6F25AA8F0988D7CED903B4971F01B376267A1080EAB2F8C5D713BF197AB",
+      "bytes": 1921,
+      "source_name": "entry-source8.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/gates-and-observed-state.json",
+      "sha256": "704E4BB493E83240C01C0E1F862D450B68CACB2E3A2A00ECE0AB7E9D164D0B0D",
+      "bytes": 1216,
+      "source_name": "gates-and-observed-state.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/source-index.json",
+      "sha256": "2B3A63D7E00D782AED3FA46F3B144BFE956899FFF809F9D5131B8449DAAF98CA",
+      "bytes": 1991,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/interface-map.json",
+      "sha256": "D0D5AB1B6238C2142BC9079E3E601F5E01FE7D1847BCCF1EBC2CD476BD20A4B7",
+      "bytes": 3667,
+      "source_name": "interface-map.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/packet_helper.py",
+      "sha256": "62182F125C2ED2DB4FCA18C455FAB8484BE3A0D8D7634B084E2C01A06CC88205",
+      "bytes": 627,
+      "source_name": "packet_helper.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/paths-and-feasibility.json",
+      "sha256": "DE310B9798B9CECC40D92C1B708E45B6578EEB0A27AA3821DE17E4A979A18778",
+      "bytes": 3008,
+      "source_name": "paths-and-feasibility.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/port-and-lifetime-notes.md",
+      "sha256": "67316E1D9300432BC65960B86C858284E6FB604A40EFC94A7FFF07015567EA33",
+      "bytes": 5880,
+      "source_name": "port-and-lifetime-notes.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/readset.json",
+      "sha256": "1068E5E87C761F909E4F5F103729D58DD4843B9121ABD1F5948A3678745919A9",
+      "bytes": 11208,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/receipt.json",
+      "sha256": "12394B6E7D6F195AE86831B6BCF4598F71F14ABCC2677F62899EC9E7687E12AA",
+      "bytes": 1277,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/receipt.md",
+      "sha256": "1408C8C524EF13A99B864E3E836328337515FF6EC37BEC054E491A061746FAAE",
+      "bytes": 5375,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/risk-matrix-not-run.json",
+      "sha256": "614A24F8BCCDCEC42507052CD1D760E9083D6965363F58CB810B1B1ABEEFBC44",
+      "bytes": 6644,
+      "source_name": "risk-matrix-not-run.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c1-g0-r01/source8-entry-exit.json",
+      "sha256": "1749E1875296CDE442651D1DDF367F91FB4280BA586C8B20C82E2FC59945E4BB",
+      "bytes": 3365,
+      "source_name": "source8-entry-exit.json"
+    }
+  ]
+}

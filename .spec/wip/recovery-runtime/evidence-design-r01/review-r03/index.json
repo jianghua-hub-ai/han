@@ -1,0 +1,90 @@
+{
+  "scope": "Final independent pure metadata review; not a new technical, implementation, test or human acceptance result",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "result": "PASS - six frozen objects, pure metadata only",
+  "main_reception": "Full R03 report and both receipts read. Actual six live hashes matched. Technical R02 closure and subsequent reversible metadata-only changes separately accepted; report historical pending retained.",
+  "new_findings": 0,
+  "human_acceptance": "unknown",
+  "implementation_or_test_PASS": false,
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/audit-final-meta.py",
+      "sha256": "A8B6031DB7B063BA8E5AD338BDF48ACFBBD4ACC98F60B767DF27A15AA71E2627",
+      "bytes": 6443
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/audit-four.py",
+      "sha256": "D855C4EB3C9676EC4CF9EFFDEEE99B033CA895DEB28937318673B7C3CA2BE6FD",
+      "bytes": 5891
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/final-meta-verification.json",
+      "sha256": "5850E2A0E6FB3D54FC7772707E44B02307E2884D820F02014D33A227FCAEFF6F",
+      "bytes": 11729
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/four-file-checkpoint.md",
+      "sha256": "1B3DC9C969A501810BD89B7B323C7EEDF00D9B503A43258D8727E8D0BE88CD96",
+      "bytes": 2716
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/four-file-verification.json",
+      "sha256": "E02BF1D2628D24C513C25A9C6D905EFA9FD022F54F2708277251712EA36DAA43",
+      "bytes": 7306
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/initial-four.json",
+      "sha256": "8C41500E14AA51CBF70F2BAC65B3F80F088CF44B9C71F9E0441FBD68E685D3E8",
+      "bytes": 910
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/initial-six.json",
+      "sha256": "711D68F24B39EE28C71E2C6A95D55790D9A6D02698A045A444F3B4427A876FFF",
+      "bytes": 1119
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/read-meta.py",
+      "sha256": "6456CDEE23E739D95A95DBB8D26ECDD6A7AD2A07AA3DEBDBA73E0A05C65FAD78",
+      "bytes": 866
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/read.py",
+      "sha256": "6E56CD7AE1C619193CD40B84F78CE2E1CD4167EAD9E958D6A348C5349B624FC0",
+      "bytes": 861
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/readset.jsonl",
+      "sha256": "B68EC97DE9BD732186A784980D6ADB913C368643B38D3A8C3F5EB52F42864A55",
+      "bytes": 4199
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/readset.md",
+      "sha256": "6F50D805888F1DC51D18D693371A54344911C326B61380D43B11914E0DD8A40F",
+      "bytes": 3254
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/review-report.md",
+      "sha256": "BDCE0C0571769497B6208CA86C1FBDAA4906D2CA414AC93449F0D9A1F385331B",
+      "bytes": 4898
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/receipt.json",
+      "sha256": "5D4F5DF9125F00DA07262BAD29537226C64BC49A940F061DA345AED8A312EEA3",
+      "bytes": 6547
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/receipt.md",
+      "sha256": "80D9C34981454CC762D44DE2ACAEA33172594DBC8A8AE2FB73D52CA34F9A686F",
+      "bytes": 2986
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r03/sha256sums.txt",
+      "sha256": "F5EEF96D3B54C71B107BA6A7E636FC738A06115F28B9159742D6E17B4E4B91D7",
+      "bytes": 1175
+    }
+  ]
+}

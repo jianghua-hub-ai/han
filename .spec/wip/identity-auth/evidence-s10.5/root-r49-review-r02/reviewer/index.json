@@ -1,0 +1,266 @@
+{
+  "scope": "Original Root author F003/F004 repair evidence; Main checked minimal diff, exact final Root4, source freeze, normal/race/vet and comments-only version bridge. Not independent review or PG/E2E PASS.",
+  "sources": {
+    "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+    "cmd/han-server/main_test.go": "4EF46AA9AF542C15FEF8D4688208ABDD75A6674C0A6F134D6645C86F4068D73E",
+    "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+    "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9"
+  },
+  "behavior_evidence": {
+    "vet": {
+      "argv": [
+        "go",
+        "vet",
+        "./..."
+      ],
+      "exit": 0,
+      "elapsed_seconds": 2.469000000040978,
+      "source_before": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "source_after": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "stdout_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "normal": {
+      "argv": [
+        "go",
+        "test",
+        "-mod=readonly",
+        "./cmd/han-server",
+        "-run",
+        "^TestPasswordResetMaintenanceRoot$",
+        "-count=1",
+        "-v",
+        "-timeout=300s"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 8.03200000000652,
+      "source_before": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "source_after": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "unique_nodes": 169,
+      "leaf_cases": 153,
+      "failed": 0,
+      "skip": 0,
+      "authority_counts": [
+        "main_test.go:10724: scenario=already_canceled prepare_calls=0 dsn_reads=0 exit=6 stdin_closed=true",
+        "main_test.go:10724: scenario=elapsed_1ns_budget prepare_calls=0 dsn_reads=0 exit=6 stdin_closed=true",
+        "main_test.go:10724: scenario=late_parent_timer prepare_calls=0 dsn_reads=0 exit=6 stdin_closed=true",
+        "main_test.go:10724: scenario=timely_prepare prepare_calls=1 dsn_reads=0 exit=3 stdin_closed=true"
+      ],
+      "sdk_observations": [
+        "main_test.go:1188: kind=scram acquire_canceled=true cleanup_deadline=true constructing_at_cutoff=1 stages_at_cutoff=1 sockets_at_cutoff=0 observed_after_cutoff=178.5\u00b5s joined_after_cutoff=395.0526ms final_constructing=0 final_stages=0 final_sockets=0 peer_joined=true pool_close_returned=true",
+        "main_test.go:1190: r49 exit=6 stdout_empty=true sticky_overrun=true final_acquired=0 dialed=true",
+        "main_test.go:1188: kind=lookup acquire_canceled=true cleanup_deadline=true constructing_at_cutoff=1 stages_at_cutoff=2 sockets_at_cutoff=0 observed_after_cutoff=402.9\u00b5s joined_after_cutoff=1.2354ms final_constructing=0 final_stages=0 final_sockets=0 peer_joined=false pool_close_returned=true",
+        "main_test.go:1190: r49 exit=6 stdout_empty=true sticky_overrun=true final_acquired=0 dialed=false",
+        "main_test.go:1019: tls=1.2 sdk=pgx/v5.11.0 backpressure=true cleanup_budget_ms=1000 elapsed_ms=1000 cleanup_error=true deadline_extended=false raw_before_sdk=false sdk_close_calls=1 raw_close_calls=1 final_stages=0 final_sockets=0 sdk_done=true pool_close_returned=true peer_joined=true",
+        "main_test.go:1019: tls=1.2 sdk=pgx/v5.11.0 backpressure=false cleanup_budget_ms=1000 elapsed_ms=0 cleanup_error=false deadline_extended=false raw_before_sdk=false sdk_close_calls=1 raw_close_calls=1 final_stages=0 final_sockets=0 sdk_done=true pool_close_returned=true peer_joined=true"
+      ],
+      "stdout_sha256": "281DDE8AB74D7C84868DC1D354B218C3EE177C5177A9A6770D4B2B66843F477A",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "race": {
+      "argv": [
+        "go",
+        "test",
+        "-race",
+        "-mod=readonly",
+        "./cmd/han-server",
+        "-run",
+        "^TestPasswordResetMaintenanceRoot$",
+        "-count=1",
+        "-v",
+        "-timeout=300s"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 38.31299999996554,
+      "source_before": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "source_after": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "unique_nodes": 169,
+      "leaf_cases": 153,
+      "failed": 0,
+      "skip": 0,
+      "authority_counts": [
+        "main_test.go:10724: scenario=already_canceled prepare_calls=0 dsn_reads=0 exit=6 stdin_closed=true",
+        "main_test.go:10724: scenario=elapsed_1ns_budget prepare_calls=0 dsn_reads=0 exit=6 stdin_closed=true",
+        "main_test.go:10724: scenario=late_parent_timer prepare_calls=0 dsn_reads=0 exit=6 stdin_closed=true",
+        "main_test.go:10724: scenario=timely_prepare prepare_calls=1 dsn_reads=0 exit=3 stdin_closed=true"
+      ],
+      "sdk_observations": [
+        "main_test.go:1188: kind=scram acquire_canceled=true cleanup_deadline=true constructing_at_cutoff=1 stages_at_cutoff=1 sockets_at_cutoff=0 observed_after_cutoff=336.1\u00b5s joined_after_cutoff=20.9208308s final_constructing=0 final_stages=0 final_sockets=0 peer_joined=true pool_close_returned=true",
+        "main_test.go:1190: r49 exit=6 stdout_empty=true sticky_overrun=true final_acquired=0 dialed=true",
+        "main_test.go:1188: kind=lookup acquire_canceled=true cleanup_deadline=true constructing_at_cutoff=1 stages_at_cutoff=2 sockets_at_cutoff=0 observed_after_cutoff=238\u00b5s joined_after_cutoff=1.4933ms final_constructing=0 final_stages=0 final_sockets=0 peer_joined=false pool_close_returned=true",
+        "main_test.go:1190: r49 exit=6 stdout_empty=true sticky_overrun=true final_acquired=0 dialed=false",
+        "main_test.go:1019: tls=1.2 sdk=pgx/v5.11.0 backpressure=true cleanup_budget_ms=1000 elapsed_ms=1000 cleanup_error=true deadline_extended=false raw_before_sdk=false sdk_close_calls=1 raw_close_calls=1 final_stages=0 final_sockets=0 sdk_done=true pool_close_returned=true peer_joined=true",
+        "main_test.go:1019: tls=1.2 sdk=pgx/v5.11.0 backpressure=false cleanup_budget_ms=1000 elapsed_ms=0 cleanup_error=false deadline_extended=false raw_before_sdk=false sdk_close_calls=1 raw_close_calls=1 final_stages=0 final_sockets=0 sdk_done=true pool_close_returned=true peer_joined=true"
+      ],
+      "stdout_sha256": "461F82A0C5384BA64A236CCFAA2CE08E9186406388DEB048A73E387B34D74468",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "linux-compile": {
+      "argv": [
+        "go",
+        "test",
+        "-mod=readonly",
+        "-c",
+        "-o",
+        "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s105-root-f003-d5c8dcdbe5384c04a51e789979e745de\\final-checks\\han-server-linux-amd64.test",
+        "./cmd/han-server"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 4.516000000061467,
+      "source_before": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "source_after": {
+        "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+        "cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E",
+        "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+        "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+        "go.mod": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+        "go.sum": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+      },
+      "cross_environment": {
+        "GOOS": "linux",
+        "GOARCH": "amd64"
+      },
+      "stdout_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  },
+  "binary_refs_retained_in_temp": [
+    {
+      "path": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s105-root-f003-d5c8dcdbe5384c04a51e789979e745de\\han-server-linux-amd64.test",
+      "sha256": "D821A85707E29A0CD1C9037A14A6F94605FAC018537044DB4142934F54FD8333",
+      "bytes": 23088166
+    },
+    {
+      "path": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s105-root-f003-d5c8dcdbe5384c04a51e789979e745de\\final-checks\\han-server-linux-amd64.test",
+      "sha256": "0CA1E896AC6BA5B873D333E8C9D8F201F4B00F657732AE7E9EAAC468FCD2F2C6",
+      "bytes": 23088486
+    }
+  ],
+  "payloads": {
+    "role/artifact-hashes.json": "6A0A754D6ABB054ED4E6016A12FA05D38ACA1AAC4D31F67D806A831003E78D26",
+    "role/author-red.json": "9DE4A67A7FA0BB47077CD2674FED3EEC5623FBA37554C4931A489530BEDF0068",
+    "role/author-red.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/author-red.stdout.txt": "29F19CCDF4866B2ED163511B81988E1E8EBEE3D23DED09FADEB423DF67B17C73",
+    "role/clock-main_test.go": "532A690C7AE608F2954AFA4B72111600EE84C851FFED7513EBDEC557C4E88EBD",
+    "role/clock-overlay.json": "D70602B966E995D3FE5E3C860435CB9C031508C090A75924814DB63015B16F16",
+    "role/clock.py": "0B5B890E5E705CE7F5A41BDCE02AC50890EFC92A5E79085898EBC6F984A7101A",
+    "role/clock.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/clock.stdout.txt": "A2A56666AE56A411A1D2E68F0B0974B203E881DB1B4E0A478EB87FDA4583DB46",
+    "role/diff-check.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/diff-check.stdout.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/f003-only.diff": "A3FDD117AC5EC6DB0D06949B63A9B0830B3EE64FD8F684F233E9E0925F545B4C",
+    "role/freeze.py": "76B7BCEBB20C91200B36492E84C1D09D6E0EBCE0EF0333AF4FCCCE4866124E9B",
+    "role/gofmt.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/gofmt.stdout.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/handoff.md": "0D53B07463D02289575346CB8791F60E2E2521FF415A4C95E4B21DAFAD433937",
+    "role/linux-compile.json": "E217A60E9E31BFD0825844B61E9B9F20AB2CE2DD0337CF9306B437877758DC81",
+    "role/linux-compile.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/linux-compile.stdout.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/normal.json": "57C9944CC230964A08AC93A4CC552A2A69FDA09D8FAA8C953F4B8213A3261D35",
+    "role/normal.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/normal.stdout.txt": "5A6CC1C14C3783BA9A9232666B4CAC15E95EDDAA5976752D219E83712358B558",
+    "role/replay-precondition.py": "8A88CC381F58232577CF35677E9057FA5148E4C7816CEDA91D823D0CA85DA562",
+    "role/reviewer-probe-current-main_test.go": "EA070ACCC049F5D7EFBD14B6AB7E320DBFB6807CF504A0FEBE7D414A6CEFB622",
+    "role/reviewer-probe-current-overlay.json": "ADE0556CFB3A506060A58D811E0B8FFC52D58B600A2048297CCCC7CAFB0DA56A",
+    "role/reviewer-probe-current.json": "59BB80848478D2C1F23A1874BB51F9048A02D02FAC072BA2D74B0C195DCB9B0D",
+    "role/reviewer-probe-current.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/reviewer-probe-current.stdout.txt": "F768AA51FFAA21F53D962C299B192BC7E6ED7833DB438881E9E41583571F21D2",
+    "role/reviewer-probe-precondition-main_test.go": "B74C983587DE301C6312564199C5F129B7AC715D6E39E22AC441360E5DD1FD9D",
+    "role/reviewer-probe-precondition-overlay.json": "9AE72C058538464144351225F06C054AB1EC98C8C9725B581106BF1909575766",
+    "role/reviewer-probe-precondition.json": "1040D4D76A52F1B1C6DA4A890E418FA13EF1E4EEDB43E577DF534F919D4DA7FA",
+    "role/reviewer-probe-precondition.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/reviewer-probe-precondition.stdout.txt": "C37C5F6813164250DFF89CF8BA94188A22756CC43E1A05309E7CCD522739AC16",
+    "role/root-ready-f003.json": "516643EED92DB9098C6154E9944F96C45ACFF9B53900598D103E6BFA63142BFC",
+    "role/run.py": "E28E713C044A1F558FD11253A26267474DCD456F664FF7F31AD52178A6287507",
+    "role/source-before.json": "903568DACB573C33A8C5BDE22395F04F5D30C5F87C532EA91B87C73F6A7225FE",
+    "role/status.after.txt": "E83D9133CB4801F7693B39F215247ADC4EFE4060C853F07F81B9014874E8ACD1",
+    "role/vet.json": "A5820DCCD4DF8E08CBF5956F143D64089A4F335F10336B63C58DCA46F38E270B",
+    "role/vet.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/vet.stdout.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/comment-removal-final/comment-only.diff": "29EF7F4053A96EA3560A564A8BF2A91F4C2A097FFFE07A7794B717955BA8CA63",
+    "role/comment-removal-final/final-freeze.json": "6635EF36156C3B8E82BF470E01C696223B74A697111D7012F31430BD9C73BE91",
+    "role/final-checks/linux-compile.json": "B182DA84945CBC761B32506A1672FDEEC929E6887C8A5E50D956854C792C1951",
+    "role/final-checks/linux-compile.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/final-checks/linux-compile.stdout.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/final-checks/normal.json": "B3889750CAF0421A701CE7DDEDFBC94CB1F4D5A7E471535C7A8E54EFA605B345",
+    "role/final-checks/normal.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/final-checks/normal.stdout.txt": "281DDE8AB74D7C84868DC1D354B218C3EE177C5177A9A6770D4B2B66843F477A",
+    "role/final-checks/race.json": "740AB8816E7BE63B3F1572421C36CEF6CDB69097C5AD1075AB0133A2BE24C25E",
+    "role/final-checks/race.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/final-checks/race.stdout.txt": "461F82A0C5384BA64A236CCFAA2CE08E9186406388DEB048A73E387B34D74468",
+    "role/final-checks/run.py": "E28E713C044A1F558FD11253A26267474DCD456F664FF7F31AD52178A6287507",
+    "role/final-checks/vet.json": "45E504ECF93EA170B3AB6CE117F07B0D3BC9E83136EBF9519EB4AE6C8573B25D",
+    "role/final-checks/vet.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/final-checks/vet.stdout.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/independent-red/own-test-counts.json": "8A222030981556F6D13C1E86BDC33A189FD19EB366A6899029EB2E69A242B775",
+    "role/independent-red/review-code-s10.5-root-r49-r01.md": "17E4A4C7324BC0A20093E038F1C029AF116A0A44B904B186ACBCAB070A6BA99B",
+    "role/independent-red/reviewer-normal.run.json": "1B514CEF265BA066A0237D0CFF2A660A5130824EA0EC5E6C5CC0997909503988",
+    "role/independent-red/reviewer-normal.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "role/independent-red/reviewer-normal.stdout.jsonl": "91A203FB19EBDBF21F11F2815C00F8B4591B95C7A0020E0D62F3297ED26570FE",
+    "role/independent-red/reviewer-probe-suffix.txt": "CB10DD586F82E6B5D929BA7E3130CCCFBADEC63304B46E12E4DC9DFF492406EC",
+    "role/independent-red/verification.json": "0286879C543E1B1E7FB56B4AC4CDA7F0A294FEABCD4F9A027F8D4AC019570363",
+    "role/red-source/main.go": "7051777CB03BDAEF7AF3249CB01E668C482FCA3C7236BDDF38DD0D456DB01640",
+    "role/red-source/main_test.go": "7B48AA37FCEAEA03C30D5B4BA4D91D62EAAAE8F167691B192E19FB2AE8470539",
+    "role/before/cmd/han-server/main.go": "7051777CB03BDAEF7AF3249CB01E668C482FCA3C7236BDDF38DD0D456DB01640",
+    "role/before/cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+    "role/before/cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+    "role/before/cmd/han-server/main_test.go": "0D3F2FB0F5AD525EE1F47F4FF7B319A45465E179FC9AB177C9B03B3FF2087ECB",
+    "role/comment-removal-final/frozen/cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+    "role/comment-removal-final/frozen/cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+    "role/comment-removal-final/frozen/cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+    "role/comment-removal-final/frozen/cmd/han-server/main_test.go": "4EF46AA9AF542C15FEF8D4688208ABDD75A6674C0A6F134D6645C86F4068D73E",
+    "role/frozen/cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+    "role/frozen/cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+    "role/frozen/cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+    "role/frozen/cmd/han-server/main_test.go": "89890A8110503950F6AB3BB6042908360059E280965CE62F263E88C01340E59E"
+  }
+}

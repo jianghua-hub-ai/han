@@ -1,0 +1,127 @@
+{
+  "scope": "s410-tp-r26-author-r01",
+  "owner": {
+    "role": "add-test-engineer",
+    "nickname": "Jason",
+    "runtime_id": "01a18395-a83b-7512-b7d1-824b073ab907"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-r56-tp-jason-b4d6ae11",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/baseline.json",
+      "sha256": "D44FF271EA544C305CF037D671001FBA77C7146D5CA1D363E5672500C35192B3",
+      "bytes": 4744,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/build_check.py",
+      "sha256": "EB913E6033A9767BCCA97652D4B88202DB38BD9252397B7738A0500A904EBA02",
+      "bytes": 3890,
+      "source_name": "build_check.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/identity-test-plan.after.md",
+      "sha256": "34826759C79A58EB0B4A296D2DD5C9157014406859153DC6CA0FA6E2BD921DAB",
+      "bytes": 328016,
+      "source_name": "identity-test-plan.after.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/identity-test-plan.before.md",
+      "sha256": "5AEA4284B0E903A3E12FE4065E53778A252B0EC006F8E91E854870AF156FAD57",
+      "bytes": 318936,
+      "source_name": "identity-test-plan.before.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/identity-test-plan.diff",
+      "sha256": "471C26D7601B2675FCA5ACC28049AD6958873217372CB4D719E4414DF1715FA8",
+      "bytes": 10346,
+      "source_name": "identity-test-plan.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/identity-test-plan.live.frozen.md",
+      "sha256": "34826759C79A58EB0B4A296D2DD5C9157014406859153DC6CA0FA6E2BD921DAB",
+      "bytes": 328016,
+      "source_name": "identity-test-plan.live.frozen.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/increment.md",
+      "sha256": "AFC19DA38000D945CEE84BBA64667D6440B6D3E414FD713A9E01889F42EE22C4",
+      "bytes": 9079,
+      "source_name": "increment.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/source-index.json",
+      "sha256": "8BF4ABBFEEA408AB89CF9F598CD458E166DB82450346826CB3534769C25B40E6",
+      "bytes": 1672,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/init.py",
+      "sha256": "691D2D484B7E03CDAEB4FA79AE1666FE9D6B5400EEB3079588FE67B53F84B65D",
+      "bytes": 2497,
+      "source_name": "init.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/protection-after.json",
+      "sha256": "2E35EC85CEBDE7C393B26461AB6FDE31B46B6E1A432352297531E258CC80E5D6",
+      "bytes": 2406,
+      "source_name": "protection-after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/protection-prewrite.json",
+      "sha256": "2E35EC85CEBDE7C393B26461AB6FDE31B46B6E1A432352297531E258CC80E5D6",
+      "bytes": 2406,
+      "source_name": "protection-prewrite.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/read.py",
+      "sha256": "087DFF20A27C43FB04CB80A77DB197A71CB45B539351C963863EF5F0EFD3B39F",
+      "bytes": 825,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/readset.json",
+      "sha256": "44CFF8E2F5909416D1E501154A83338FECA7193F2B438B1556E3B9CAFF24E5D0",
+      "bytes": 3815,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/readset.jsonl",
+      "sha256": "5AAB79D856AB18EF1D46F3E1AB103CBF14BD514ADE17E4A1E20283556EA088E9",
+      "bytes": 948,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/receipt.json",
+      "sha256": "1BB803C64E3345B4646E2BDB9A819223D4CCA8D835B0D97FBF3D0F941B3BD21F",
+      "bytes": 2488,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/risk-map.json",
+      "sha256": "8FF0BA5C6CC41F5CCB56747DFCDCDB28C636D2C089E0C5E6AAED63127BFD7D0C",
+      "bytes": 1661,
+      "source_name": "risk-map.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/verification-prewrite.json",
+      "sha256": "54278C521FB7F594A3CEE3B4563DBAD477CCD13A0EB1E59FC57EF56CEBC3DCD6",
+      "bytes": 1647,
+      "source_name": "verification-prewrite.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/verification.json",
+      "sha256": "6BF2F0D441EE17CA7DB0EA3C93A10855CB615914B82F5B0EF6905751D7BA3B52",
+      "bytes": 1874,
+      "source_name": "verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r26-author-r01/write_freeze.py",
+      "sha256": "08AE263A0FFE260B512194E875FC65A0D6D628416CD4D5E9C29C88E3C79FC685",
+      "bytes": 6046,
+      "source_name": "write_freeze.py"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

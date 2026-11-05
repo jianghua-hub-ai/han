@@ -1,0 +1,139 @@
+{
+  "scope": "joint-r56-mapping-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-r56-joint-mapping-review-179230df8e",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/card-protection-independent.json",
+      "sha256": "1F0103B52E9BD0DB93FA0FA7DD42382846C4957A41B728AF70F2DF2DB102448D",
+      "bytes": 7873,
+      "source_name": "card-protection-independent.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/consumer-read-reuse.json",
+      "sha256": "8C19E28204723BB8DB10A7B09BE39874EC86DC5D8FB3098F954FABC25A42DC21",
+      "bytes": 7591,
+      "source_name": "consumer-read-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/entry-hashes.json",
+      "sha256": "A2C4D09EE17FCAB03CCF5A8EB3FAD469DFC5B6AC3887F72311DAA28F5F7DC1CD",
+      "bytes": 643,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/exit-hashes.json",
+      "sha256": "7FC8CD92BF64D249CE983A8FE29B9DE472F2087A493399C7CF511104C601F137",
+      "bytes": 643,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/findings.json",
+      "sha256": "7F16BED13778D8F9B3A8D657CA695C7A607AC4A1CBAA7705D4A5FB087576C47B",
+      "bytes": 482,
+      "source_name": "findings.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/graph-independent.json",
+      "sha256": "F059679144D34FD846482762F549DCDC7AEE77BA68B0D7CCF25F751AFE5463EA",
+      "bytes": 26522,
+      "source_name": "graph-independent.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/hashes.json",
+      "sha256": "21778C771D2BA9346D2D95B0BD26899C230C210C4DD06D8BA033843DA4A0E89E",
+      "bytes": 1848,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/ir-01-content-community-batches.md.entry",
+      "sha256": "133C1C3ABA0E95D8279AB46E863DB1865A8207E1DCBBCD50A18D678D9E609B03",
+      "bytes": 471379,
+      "source_name": "ir-01-content-community-batches.md.entry"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/methods-reuse.json",
+      "sha256": "55A6279B14B9EDF0B65068AD697FC5BCF080A63054F4360786087FE3A6258230",
+      "bytes": 4244,
+      "source_name": "methods-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/read.py",
+      "sha256": "FDE6C36B8C5C50821E0D84133B00D02B0113877D3BBB0C4E27E6433599DE3D9E",
+      "bytes": 763,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/readset.json",
+      "sha256": "8D6EE7CAECE781812740A538255D76A03FCD5CC2E180B5593545B7AD9ED0472F",
+      "bytes": 9897,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/readset.jsonl",
+      "sha256": "298FC666493FE4CBB4E4074CD328B1EBA16ECDC26BD6040B284742CCC6169EFA",
+      "bytes": 5138,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/receipt.json",
+      "sha256": "313E2B132B957CDEE97913E25E7C1B2FAEEA7F6F7B778B5340402185EFE24F95",
+      "bytes": 2554,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/reuse.py",
+      "sha256": "3185D0FA221C770AB1909C86FC43C98DE08F2891B3F35F3F08839BFAA3C94347",
+      "bytes": 2434,
+      "source_name": "reuse.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/review-report.md",
+      "sha256": "3CD16CC4896A3B8A869DFF09313C728D1E4E4A8EC703435C2DFA1C8177C0D289",
+      "bytes": 5031,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/seal.py",
+      "sha256": "CCA005E819EB08D0977D9F3CB0C49487035F660FB104FCF4437ED3AD11C61ED7",
+      "bytes": 4896,
+      "source_name": "seal.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/static-proof.json",
+      "sha256": "C9F69880D2C326C846A19E74C192801CCC17C7CC40DEBCB3B232214D4AABAC11",
+      "bytes": 3134,
+      "source_name": "static-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/static_proof.py",
+      "sha256": "6E3F51C47322AC8EBB4FC33A5CC21B36EB4E6A64FEEEDE1C5D15DFFC6F764928",
+      "bytes": 8437,
+      "source_name": "static_proof.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/tasks.md.entry",
+      "sha256": "F3A8F7A33F47698E6EAFE79CC47C7557B810B81A70B38D2A759B915BE7214643",
+      "bytes": 632880,
+      "source_name": "tasks.md.entry"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/test-plan.md.entry",
+      "sha256": "34826759C79A58EB0B4A296D2DD5C9157014406859153DC6CA0FA6E2BD921DAB",
+      "bytes": 328016,
+      "source_name": "test-plan.md.entry"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-r56-mapping-review-r01/three-object-hashes.json",
+      "sha256": "5B081D56B3547F8F524B58D7576D9D5EBA66BC575100F6428750EBC9F4101367",
+      "bytes": 1402,
+      "source_name": "three-object-hashes.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

@@ -1,0 +1,224 @@
+{
+  "scope": "s48-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13b-s48-review-r01-24ef1a5fa27a4fabbc59858fe1a48438",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/admission-test-overlay.frozen",
+      "sha256": "89725ED901A55D52C3EDC534F8A3546B1EA4FFD9F12B42656278B87A3B3DD546",
+      "bytes": 57217,
+      "source_name": "admission-test-overlay.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/audit.py",
+      "sha256": "23A7491B17E07A60A4E357B4EA244D80190BEF5A2FD7B28B9875E502BC111B2C",
+      "bytes": 5383,
+      "source_name": "audit.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/component-normal/result.json",
+      "sha256": "0CEB79345C91C2535B946DA9A1461B67056EB55F71FC20D504CCD15D3E265160",
+      "bytes": 987,
+      "source_name": "checks/component-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/component-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/component-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/component-normal/stdout.log",
+      "sha256": "D8481D57BFC1C12DDCB9FACB70498930F5EC8A0B786372AF03EED7FDC9BFD433",
+      "bytes": 104428,
+      "source_name": "checks/component-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/component-race/result.json",
+      "sha256": "1B1B2AB00A0CBB77608C5EA6E8E3BEF53C8351241B2114279926D7EA84351EA0",
+      "bytes": 997,
+      "source_name": "checks/component-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/component-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/component-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/component-race/stdout.log",
+      "sha256": "530D4F40EA77E5D94130BCE41FBD0E7D6A27C12D4DC97BFD40C9837B993E63D9",
+      "bytes": 104510,
+      "source_name": "checks/component-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/independent-normal/result.json",
+      "sha256": "71D884858F535A1DACB9E46B08ECAE8F61C8ABB1E496C118802A74B39DD01FB3",
+      "bytes": 940,
+      "source_name": "checks/independent-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/independent-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/independent-normal/stdout.log",
+      "sha256": "2CD51AC844C59D83796AEBF4A0EFCEB192857B642BC12233B7AD295A583B8D36",
+      "bytes": 62085,
+      "source_name": "checks/independent-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/independent-race/result.json",
+      "sha256": "4DCEE285CD760D72016821403A35400927F808C7C597364A1AAF69EB28E829BA",
+      "bytes": 950,
+      "source_name": "checks/independent-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/independent-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/checks/independent-race/stdout.log",
+      "sha256": "1C3445586EBCE38AA985EEB8D8F43D7989DAF8F26193EFF08DE373384D32AFD3",
+      "bytes": 62098,
+      "source_name": "checks/independent-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/compat-oracle.json",
+      "sha256": "974E80F076F0069E879D552FDF99FD0807E770002CB6F00A214F96B83F2E2277",
+      "bytes": 2360,
+      "source_name": "compat-oracle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/compat-probes-reused.frozen",
+      "sha256": "E77555994610E244A6B202DD57BBB381333F70172379B1E84F14FBE9AE7F80A6",
+      "bytes": 9000,
+      "source_name": "compat-probes-reused.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/evidence-audit.json",
+      "sha256": "91C58B0042D8EFE0BFC1AB4D1CE8EDC062E81900E2F64615B372F078F8ECC887",
+      "bytes": 40006,
+      "source_name": "evidence-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/finalize.py",
+      "sha256": "9406A91B836F1DDDE99B6F99647308A4AB0D23B378A1436811B9595CA90DB9A2",
+      "bytes": 22258,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/make-overlay.py",
+      "sha256": "292C899638C4A3C776CF63EB013887BDE55EB6956A2A1E193D63FF987FF25AAC",
+      "bytes": 1499,
+      "source_name": "make-overlay.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/probe-overlay.json",
+      "sha256": "B439B4D85C227C207D22D5A71EDCA055970E71BDECA21B9938631674D3EB0598",
+      "bytes": 452,
+      "source_name": "probe-overlay.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/probe-summary.json",
+      "sha256": "176BFD9D73A4C7202A28F03DE9DB0542EA7FC58177AD61D2CC276A7F8C9EC4B4",
+      "bytes": 34228,
+      "source_name": "probe-summary.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/probes.frozen",
+      "sha256": "769C287BE2172A1B31493B59EDA6B15BD14B06E1E0044CF757CB1CF7EE984F5A",
+      "bytes": 5032,
+      "source_name": "probes.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/readset.md",
+      "sha256": "2036058FCE0075596044D353B8C421D755E88B4DE36F9161322C1CEFA7FA04F9",
+      "bytes": 3535,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/receipt.json",
+      "sha256": "FB4431FE408F77C62200907F11D6CD9535E5121A86FBD3832C5255EF63AE7B91",
+      "bytes": 44690,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/review-report.md",
+      "sha256": "5E82E5C7516472380582698BB1C4D62EB8B10F81ECC09E746EC3790E4A512763",
+      "bytes": 14533,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/run_local.py",
+      "sha256": "135EEF50DDB4E78924FA97FD20896745DC83C194164C2A30473989F8D0401685",
+      "bytes": 1661,
+      "source_name": "run_local.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/snapshot-test-overlay.frozen",
+      "sha256": "A3B39DC24E25DAF2D2F7BF48B7883B7C3D34B9B5DE944FE98382941303C4B66F",
+      "bytes": 22156,
+      "source_name": "snapshot-test-overlay.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-1172583399/.journal.tmp-2473894687",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-1172583399/.journal.tmp-2473894687"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-1680840196/.journal.tmp-3911128251",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-1680840196/.journal.tmp-3911128251"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-2329524711/.journal.tmp-2681749375",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-2329524711/.journal.tmp-2681749375"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-3126944374/.journal.tmp-2699889639",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-3126944374/.journal.tmp-2699889639"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-3714826357/.journal.tmp-3623813302",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-3714826357/.journal.tmp-3623813302"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-4080683562/.journal.tmp-1183366732",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-4080683562/.journal.tmp-1183366732"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-790795570/.journal.tmp-3851778860",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-790795570/.journal.tmp-3851778860"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-review-r01/writer-lock-849196581/.journal.tmp-113905727",
+      "sha256": "8E9ADAB950411405C321FFAC448B29680699DE2C44632A5B53E44ACD4E4CE561",
+      "bytes": 396,
+      "source_name": "writer-lock-849196581/.journal.tmp-113905727"
+    }
+  ]
+}

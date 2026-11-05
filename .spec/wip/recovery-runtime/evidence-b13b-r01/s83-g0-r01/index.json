@@ -1,0 +1,38 @@
+{
+  "scope": "s83-g0-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Pauli",
+    "runtime_id": "01a1854a-0e79-7f02-abfd-632b91c4fb04"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13b-s83-g0-20261029T013816Z-da0c54f6",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s83-g0-r01/baseline-receipt.json",
+      "sha256": "0171EA5109361B7F37D5667142AED1853768CDAC62B17F3E2882F763760E1C2E",
+      "bytes": 38385,
+      "source_name": "baseline-receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s83-g0-r01/final-receipt.json",
+      "sha256": "E9E7F3446BC6C07B46C8397062CBC910EC533B003F389C8643F219E3C75885EA",
+      "bytes": 8667,
+      "source_name": "final-receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s83-g0-r01/readset.json",
+      "sha256": "D2F77EB5C8371C9CBA04152AC4C691D28EB37A89D732FE8318EDEAA728DFDD68",
+      "bytes": 11710,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s83-g0-r01/receipt.md",
+      "sha256": "ABDB7BF4737C6B648FEAF4FDA5A0377E9AB49E6B66EA8962CC52DCC15C4E5E7D",
+      "bytes": 12679,
+      "source_name": "receipt.md"
+    }
+  ]
+}

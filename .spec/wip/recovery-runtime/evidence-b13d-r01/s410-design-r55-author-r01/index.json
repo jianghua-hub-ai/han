@@ -1,0 +1,67 @@
+{
+  "scope": "s410-design-r55-author-r01",
+  "owner": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-design-r55-7jnurs6d",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/baseline.json",
+      "sha256": "8C2E23F20F2DC7136B6182DF1FBF22F839F9568A5A6A8DE29E96CFD4D592ED62",
+      "bytes": 855,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/consumer-map.json",
+      "sha256": "E931E72AAF44463F89178720A296CA3EFEAB16C38407D43A0912F492D4DF5AE7",
+      "bytes": 1516,
+      "source_name": "consumer-map.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/design-r54.before.md",
+      "sha256": "E823D25D9CDDFD4F2D7E3A869FBB6B15EAF5275E55147A21546D4C2836472522",
+      "bytes": 815810,
+      "source_name": "design-r54.before.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/design-r55.after.md",
+      "sha256": "419B800DE82405CE0D24ED0E9FCE3788D112E298F14C89220F49C4D313029DE2",
+      "bytes": 825564,
+      "source_name": "design-r55.after.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/design-r55.diff",
+      "sha256": "D474EF4E6556D2811BE982B825DFE23A0E23D2BD46908C2E2705C83A5EB94263",
+      "bytes": 31214,
+      "source_name": "design-r55.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/hashes.json",
+      "sha256": "E29E578A531E41104537E57AA0F4322FF9522861F2A7FBDB0293B963FFC54453",
+      "bytes": 720,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/readset.json",
+      "sha256": "1912457DE5DA3B3FE72B69178A159818CC6EC58E38F3FECB50060E07E1265FC2",
+      "bytes": 7789,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/receipt.md",
+      "sha256": "7A463CB7E1D95144F1B0CC7B22E14DE8AB17387084E236343628EA43EE049EC7",
+      "bytes": 2467,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r55-author-r01/static.json",
+      "sha256": "2C96C5B170B414159299F09D402E06C6147599348119015DD3D4DB6A736A5248",
+      "bytes": 4128,
+      "source_name": "static.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

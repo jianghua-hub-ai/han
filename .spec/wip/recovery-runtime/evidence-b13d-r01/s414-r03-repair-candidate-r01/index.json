@@ -1,0 +1,121 @@
+{
+  "scope": "s414-r03-repair-candidate-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Chandrasekhar",
+    "runtime_id": "01a187a1-c022-71f3-92f5-6a9dc032e32b"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s414-r03-temp-candidate-1AeLBe",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/before/cmd/han-server/recovery_restore.go.frozen",
+      "sha256": "FDC2792E93A638F45917C097D8CAE6DEBC22918159C1495F7D31148987534423",
+      "bytes": 21599,
+      "source_name": "before/cmd/han-server/recovery_restore.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/before/cmd/han-server/recovery_restore_test.go.frozen",
+      "sha256": "57946F39EAE83C8273A66C15E62C3AAA83E0CB47FA4C2CD6A03A967A76E41259",
+      "bytes": 47321,
+      "source_name": "before/cmd/han-server/recovery_restore_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/candidate/cmd/han-server/recovery_restore.go.frozen",
+      "sha256": "C0CB4B012F5EE1DE3CD346DD768D14C50AAA60AB8A0A549FA9098997B0668BBA",
+      "bytes": 23057,
+      "source_name": "candidate/cmd/han-server/recovery_restore.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/candidate/cmd/han-server/recovery_restore_test.go.frozen",
+      "sha256": "FEE5909FBBAE449CC0B4A523DD46BFAF043B39608CA60ADDF4FD96E716342ADB",
+      "bytes": 52239,
+      "source_name": "candidate/cmd/han-server/recovery_restore_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/candidate.patch",
+      "sha256": "7BBBEE70698EEE29D7F462C459692A0DD84E95E1382E00C705BF39DA57288507",
+      "bytes": 8637,
+      "source_name": "candidate.patch"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/canonical-evidence-index.json",
+      "sha256": "8E7DE6F90C4E1674FD7066142BE200484143D628CEFE786C2F90EFBF99A47F7B",
+      "bytes": 1307,
+      "source_name": "canonical-evidence-index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/delivery.json",
+      "sha256": "4AAE17D029FF000FDBB6BD46EA27F3EF6AEEE54CF3A137EEC48FD7978792E9EF",
+      "bytes": 3429,
+      "source_name": "delivery.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/green-test-prefix-plus-exact3.frozen",
+      "sha256": "978E55B451CC753BE96B219132B6EEB6843784D6333BE5B7AA3B2085E8A7AC7E",
+      "bytes": 61617,
+      "source_name": "green-test-prefix-plus-exact3.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/manifest.json",
+      "sha256": "B5CF78A3B475C7F0013746464F0B916A7759B8C95762D6F714BB75F2E85F0E2C",
+      "bytes": 3143,
+      "source_name": "manifest.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/method-reuse.json",
+      "sha256": "53D4B45C144BEFE5E3F9FB2BD49A10C96F5B7F1A8CF3908CE128BDE87D62F99F",
+      "bytes": 3180,
+      "source_name": "method-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/overlay-green.json",
+      "sha256": "6415957BA4BA6E752FCA9B318E0498CFDC78F664AC15579733AB2F8D7E20A19E",
+      "bytes": 218,
+      "source_name": "overlay-green.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/overlay-red.json",
+      "sha256": "FE992AF33D762DCEE32C144A2CAC986F9EF208E640A0386CA79568C5E7AEFADF",
+      "bytes": 216,
+      "source_name": "overlay-red.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/probe-plan.json",
+      "sha256": "C0537A28C0472EB41BBD9C6735C900ECDECDE2EFEB324A065F5B087372D5ECAC",
+      "bytes": 3657,
+      "source_name": "probe-plan.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/red-test-prefix-plus-exact3.frozen",
+      "sha256": "7003D8F89EAAF75836215D882F1BD4BE4E45C745EAF5C606DC107470D544CCF8",
+      "bytes": 56699,
+      "source_name": "red-test-prefix-plus-exact3.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/report.md",
+      "sha256": "71DA03E5AA329B0AAE0ED1B7330001E10A3FAD7991AED4BBC641A20C42439F62",
+      "bytes": 2842,
+      "source_name": "report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/reviewer-1.fragment.frozen",
+      "sha256": "DBDEDF67A4E252BB9E22E6316FF4A31CED4C9689569F109A7F811D48517073BA",
+      "bytes": 3782,
+      "source_name": "reviewer-1.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/reviewer-2.fragment.frozen",
+      "sha256": "24D710DF1DD3B85B1CED8FEA4650C0BAB6C7EAFF8319525D1ECF02B263737223",
+      "bytes": 2617,
+      "source_name": "reviewer-2.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-r03-repair-candidate-r01/reviewer-3.fragment.frozen",
+      "sha256": "613CD0AE6DB387C08C9E611C9937F5452BB93AFBDF5B454C043F956FB82A6D7A",
+      "bytes": 2976,
+      "source_name": "reviewer-3.fragment.frozen"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

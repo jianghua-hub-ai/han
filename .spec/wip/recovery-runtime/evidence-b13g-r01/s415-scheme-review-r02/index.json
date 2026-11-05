@@ -1,0 +1,24 @@
+{
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18bbe-e72e-7d62-a3fc-8748bf262fb0"
+  },
+  "source_temp": "D:\\Temp\\han-b13g-s415-review-234247015feb4265ad5c84e50f3b57f3\\scheme-r02-1bf79c7a",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scheme-review-r02/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 4083,
+      "sha256": "5DD51A527B1660EF13BBF1C785D0A7B0F1EA277BA9CF6A95899406AE1F84D0B7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scheme-review-r02/scheme-review.md",
+      "source_name": "scheme-review.md",
+      "bytes": 3573,
+      "sha256": "6678A269789D1EB93C19607570DCF50135A3B9F8874321F93D1823DFBD4FD7F8"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

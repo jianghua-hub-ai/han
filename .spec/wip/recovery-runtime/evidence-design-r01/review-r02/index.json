@@ -1,0 +1,78 @@
+{
+  "scope": "Immutable independent design-only R02 re-review of original two HIGH findings and related new risks",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "result": "PASS - bounded design repair only",
+  "findings": [
+    {
+      "id": "RECOVERY-DES-R01-F001",
+      "status": "CLOSED",
+      "level": "design",
+      "evidence": "identity-auth/design.md:3571,3604-3628; controlled maintenance scope and atomic recovery password change"
+    },
+    {
+      "id": "RECOVERY-DES-R01-F002",
+      "status": "CLOSED",
+      "level": "design",
+      "evidence": "identity-auth/design.md:3630,3659-3687,3741; controlled recovery qualification and atomic settlement"
+    }
+  ],
+  "new_findings": 0,
+  "main_reception": "Full report and receipt read; four frozen hashes and author fix deltas verified; technical design closure accepted without risk waiver. Final metadata refresh/check remains pending.",
+  "human_acceptance": "unknown; no checkpoint or implementation/test acceptance",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/audit.py",
+      "sha256": "22D0504085E0ED8790B2EFB326EFCDF357551B4F87C54D4320F759E31B9A8FD7",
+      "bytes": 4868
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/initial.json",
+      "sha256": "BFB374E4F59012B66C2D0E9440F5E38960812DB98B901CC7FD72DBB324102C6C",
+      "bytes": 938
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/read.py",
+      "sha256": "B7ACDA8D93C765A15EEFB9038F75C866C360C4C3B925E53BDFAF1269A5B82521",
+      "bytes": 891
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/readset.jsonl",
+      "sha256": "E9CE01FAA3BA2CE392E7A4B5408E6199A9523F4C52B807AD639EBC9121A139DD",
+      "bytes": 8001
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/readset.md",
+      "sha256": "362A70C8EEC1A3D6FB5581D86D268EB4B02EEC5D92A80475CE2468607440D0DD",
+      "bytes": 4187
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/review-report.md",
+      "sha256": "71F3B811E5B374E377DC46675753A29272D012761F2328424C10308784AAABDB",
+      "bytes": 18016
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/static-verification.json",
+      "sha256": "7C9CB6C3344073F846F168FED724F22B628C34C8901AE18B7EFEFFA3A39AFF7C",
+      "bytes": 11693
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/receipt.json",
+      "sha256": "D0575925EA3805D86B6DAB9C123D4E7E9C5AECF65D6ECD3B6435B2B3FE75F82E",
+      "bytes": 4784
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/receipt.md",
+      "sha256": "DE1AA77C58AFEB732A98E737EA7B4AA17970FD2221E58056BF2FB22C85CA9B47",
+      "bytes": 3510
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r02/sha256sums.txt",
+      "sha256": "B144B210D89685BC883EB07385F4AA8FC52581B7C28777E3F95F3299A16D2D05",
+      "bytes": 724
+    }
+  ]
+}

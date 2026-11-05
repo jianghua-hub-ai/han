@@ -1,0 +1,55 @@
+{
+  "scope": "planner-new-tp-input",
+  "agent": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-runtime-tp-frozen-supplement-ec462ea99a3e4b19aabce328b7c20d10",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-new-tp-input/baseline.json",
+      "sha256": "3F91EF51A67753A8CE955C0DAC456E695D3E859AA316F2212C7DD51A424D3574",
+      "bytes": 2573,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-new-tp-input/finalize_delta.py",
+      "sha256": "5D380120547C9D3468D3903A3AA395B3A9B0BBF6734E7458142E7F9416EAB86C",
+      "bytes": 9133,
+      "source_name": "finalize_delta.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-new-tp-input/read_frozen.py",
+      "sha256": "B2EE351A2581E0DB67C90687EEC3640D4C439F903604BD40D540FDFFABF0F119",
+      "bytes": 1937,
+      "source_name": "read_frozen.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-new-tp-input/readset.jsonl",
+      "sha256": "B5AFE8C3793A1EE54C5F2F87735491A84DCF7F9CCCC489AA46E2624C8EE9F7F8",
+      "bytes": 1323,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-new-tp-input/receipt.json",
+      "sha256": "02CC3B59AAFEE9ABA636DC8D706340998B24043F5171CEAB7F0286D689B2FF23",
+      "bytes": 2973,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-new-tp-input/receipt.md",
+      "sha256": "7901E3DFFB3FC864A12AE3B32699E3469C842260E87C00D72235F9688C38AC66",
+      "bytes": 7219,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-new-tp-input/sha256sums.json",
+      "sha256": "6C7ECC499F143D932CF33AE8DD076A4E50701E41538C83B2B856090BAF91452C",
+      "bytes": 532,
+      "source_name": "sha256sums.json"
+    }
+  ]
+}

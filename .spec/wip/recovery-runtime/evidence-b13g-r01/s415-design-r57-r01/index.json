@@ -1,0 +1,72 @@
+{
+  "owner": {
+    "role": "add-feature-designer",
+    "nickname": "Linnaeus",
+    "runtime_id": "01a18be5-1d5a-7c13-89e6-bc2173e19f22"
+  },
+  "source_temp": "D:\\Temp\\han-b13g-s415-design-linnaeus-r57-fe5b8507fed34677b23e42372d5a8f91",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/actual-release.json",
+      "source_name": "actual-release.json",
+      "bytes": 557,
+      "sha256": "EB8204A68044572030D2F0E42A01E4B501942229D17DBA994BE98CF788DBE088"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/checks.json",
+      "source_name": "checks.json",
+      "bytes": 615,
+      "sha256": "1B692471994E6C576669D60CC230E7D010208CFE7D1F75C3E4331E624E3C83CC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/design-r56-before.md",
+      "source_name": "design-r56-before.md",
+      "bytes": 839688,
+      "sha256": "75AA4C5D449E2CABEF6C1F66D731CB98BF679693B6AE4CD0E6D8BA0494B200BF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/design-r56-to-r57.diff",
+      "source_name": "design-r56-to-r57.diff",
+      "bytes": 8656,
+      "sha256": "8AA4F70B9A61CE4725E855FB17F2790CD647CC79763C4D281C8E9A8AEDCBC5E7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/design-r57-after.md",
+      "source_name": "design-r57-after.md",
+      "bytes": 842580,
+      "sha256": "0FC3DE78C950661C2947680F678F92B7390843883FAD4F90362DB2C3F5A19277"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/exact-edits.json",
+      "source_name": "exact-edits.json",
+      "bytes": 6461,
+      "sha256": "A0CBD225B06BFF15CF0B133EA228DFD59A4B9B29E5C450CE060D600499BF359C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/readset.json",
+      "source_name": "readset.json",
+      "bytes": 12407,
+      "sha256": "42B7B4E39B1C8132A507F2B95B52C20307FC50B72297B5262AFB8A494C222EFB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 3546,
+      "sha256": "EB64CF9CB15777CF84ADD4ABFC8CD8A2DFE34A8DC289A997C201A77D173AEBB7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/STOP.json",
+      "source_name": "STOP.json",
+      "bytes": 746,
+      "sha256": "223FC0372D6D5D72E80CFE9090B037A15A8FB06083236FC54FC6B351F6F02B98"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-design-r57-r01/verification.json",
+      "source_name": "verification.json",
+      "bytes": 2891,
+      "sha256": "2955663B203A0947D5C2E43B46E5F0C715929078FA7DA06FF0342E334C45B873"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

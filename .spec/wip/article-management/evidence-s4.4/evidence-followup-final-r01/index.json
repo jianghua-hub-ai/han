@@ -1,0 +1,108 @@
+{
+  "scope": "Final S4.4-card/B8A-only metadata, other58/35identity/source181/BOM/branch checks; no new tests or human acceptance",
+  "captured_at": "2026-10-28T01:24:13.839813+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\apply-metadata.ps1",
+      "copy": "planner/apply-metadata.ps1.txt",
+      "role": "Task-Planner",
+      "sha256": "F29538D51B9D0D024C0158FF9E97DAC274D77CAE3A70CD8548BA68AA981E8758"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\exactpatch.json",
+      "copy": "planner/exactpatch.json",
+      "role": "Task-Planner",
+      "sha256": "8E63EAEB5F96A9ACFE8C81991A524517CEFFBF4D079A22AF1E7FB7803287829F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\plan.actual.diff",
+      "copy": "planner/plan.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "73E95984E1051CD7F6EDF86E4A482D3D32B5F99FC9BDD4B27E62F117B2CCC96A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\plan.after.md",
+      "copy": "planner/plan.after.md",
+      "role": "Task-Planner",
+      "sha256": "CBCC228146E5D260E5D47F70B0FD5B14E7E1B99DD4F7CFF6F26292A7C3BACB41"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\plan.before.md",
+      "copy": "planner/plan.before.md",
+      "role": "Task-Planner",
+      "sha256": "E0C2C647460959E34EA8E7789E8BEF7BD943AFD4DBBA1EFD48A98FCF53A66021"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\plan.candidate.md",
+      "copy": "planner/plan.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "CBCC228146E5D260E5D47F70B0FD5B14E7E1B99DD4F7CFF6F26292A7C3BACB41"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\readback-scope-check.json",
+      "copy": "planner/readback-scope-check.json",
+      "role": "Task-Planner",
+      "sha256": "2F5C271039872502B6FE5C81C8F128AC6DBE67EC294707CE03F6793A20C482F3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\tasks.actual.diff",
+      "copy": "planner/tasks.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "48C0D14EBEE998C6B9BAF7D2A188CCC53FFABB02DDD5CD870A675C5A0B3D77FC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\tasks.after.md",
+      "copy": "planner/tasks.after.md",
+      "role": "Task-Planner",
+      "sha256": "1560602DE69EC52AA6AF087B45417FAC58BC8679ACC2C2A2EB0EB807BC8E126F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\tasks.before.md",
+      "copy": "planner/tasks.before.md",
+      "role": "Task-Planner",
+      "sha256": "86284D1E14D527F8B46DEF400EF359620284AA38C33ACDE9D8D7606DD4F5D604"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\tasks.candidate.md",
+      "copy": "planner/tasks.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "1560602DE69EC52AA6AF087B45417FAC58BC8679ACC2C2A2EB0EB807BC8E126F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-followup-metadata-70b27e7d68514190a03f28e1e2b95783\\write-receipt.json",
+      "copy": "planner/write-receipt.json",
+      "role": "Task-Planner",
+      "sha256": "64F3DD64FF66F7C568BA8D71F7AA8E448845066639EB7E67669726351257AB4B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\lead-final-followup-verification.json",
+      "copy": "lead/lead-final-followup-verification.json",
+      "role": "Lead",
+      "sha256": "C836C4B3A3B69B7A64188B4C0126A171043E8CB28524EEA54D2E6E21B1183888"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\lead-durable-followup-verification.json",
+      "copy": "lead/lead-durable-followup-verification.json",
+      "role": "Lead",
+      "sha256": "3586BDF2F01EC4F321E030BB2D3F0FE9FB19F28EDBE2F062469017942E73C7EF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\final-evidence-git-status.txt",
+      "copy": "lead/final-evidence-git-status.txt",
+      "role": "Lead",
+      "sha256": "3C9047647872BEE45452A4661716AEB5C318860FF2D12259CBDE1164E6FA0C24"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\final-metadata-diff-check.stdout.txt",
+      "copy": "lead/final-metadata-diff-check.stdout.txt",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\final-metadata-diff-check.stderr.txt",
+      "copy": "lead/final-metadata-diff-check.stderr.txt",
+      "role": "Lead",
+      "sha256": "81DA9D43C1D3C0408E9E111FC1C1208E294D41EFA717D15EB944B436277818A8"
+    }
+  ]
+}

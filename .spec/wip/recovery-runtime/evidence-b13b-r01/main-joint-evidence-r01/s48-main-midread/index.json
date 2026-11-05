@@ -1,0 +1,15 @@
+{
+  "actor": "Main intermediate source inspection, not final frozen receipt or independent Role Review",
+  "files": [
+    {
+      "file": "journal_snapshot.go",
+      "sha256": "45CE1C1FD2D5024BE93F29CCBDDF19C53D25A456BDABFD3B0D556F9A18526EA4",
+      "bytes": 10039
+    },
+    {
+      "file": "coordinator.go",
+      "sha256": "0EFC2304EB8CC24046D065B899772BD4AAB58567C391FC857E294DD0DE4E8131",
+      "bytes": 12667
+    }
+  ]
+}

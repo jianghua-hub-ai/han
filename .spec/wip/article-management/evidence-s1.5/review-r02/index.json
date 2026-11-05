@@ -1,0 +1,170 @@
+{
+  "scope": "Independent R02 F001 CLOSED and bounded component CodeReview PASS; full task blocked",
+  "report": ".spec/wip/article-management/review-code-s1.5-components-r02.md",
+  "report_sha256": "52298FEDD5F13E9A9017334C1FEA72A1BD72C9A9658A2384660D9075D6F59933",
+  "finding": "AM-S15-COMP-R01-F001 CLOSED by original independent Reviewer",
+  "files": [
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\independent-rest.patch",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/independent-rest.patch",
+      "sha256": "0BCE4FBB3EF2D411CF66E864CECDBC4A1D2B1DF981A43174E40B44BA13848822"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\normal.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/normal.meta.json",
+      "sha256": "8E67F339DE8FCAED2512E66AD846E8DADA7FF09DAD0DE03611329CBA62AE9332"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\normal.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/normal.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\normal.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/normal.stdout.jsonl",
+      "sha256": "A79A0E26CDF3CFC8A8245B64565C823CD7FC25793B67C6CF29361003873F1070"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\overlay-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/overlay-verification.json",
+      "sha256": "F9EFB2FA5C01D5866771EE458385390603AA7DE30EE0CE9A5B12DC01E4626330"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\race.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/race.meta.json",
+      "sha256": "7E6D4F77E135B1CDF6865627C70DDF5FFA3109F7949A3CA2283572BE53FB3844"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\race.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/race.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\race.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/race.stdout.jsonl",
+      "sha256": "74997F7EF9A7FF425D7D9CD6C444E90C31870A494B822B227FF347ADB5E9DCF6"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\raw-index.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/raw-index.json",
+      "sha256": "72899BD34D6E6D8F5175D71BF0A485F5D80DB0DFBD0FF98B98AB65BEB8F32A86"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\raw-run-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/raw-run-verification.json",
+      "sha256": "CD9546705FA0B850A5CE4E7A0225C4D97F05C19144D4F2812EADF6954B8E4BA0"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\report-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/report-verification.json",
+      "sha256": "92D5763E74E330ADCBEAC2F29258E8974F04A4072AD8F4B0EAAC8CE3B46FF9CD"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\run-review.py",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/run-review.py.txt",
+      "sha256": "146931E66E2A91D7A3632BBF259472CF99B4DFEDA4BD72B6FFBCF5EE2D95A1D7"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\source-after-178.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/source-after-178.json",
+      "sha256": "E88DC26D92259E3C147F644E27FDE4E4079899A3428B9A7D74FB8A16E70D470E"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\source-before-178.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/source-before-178.json",
+      "sha256": "E88DC26D92259E3C147F644E27FDE4E4079899A3428B9A7D74FB8A16E70D470E"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\source-review-binding.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/source-review-binding.json",
+      "sha256": "8D04C11190EED88E90964578DC499A167B9C7FC9E51FCE5BE560ABC4E62CDC4E"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\source-set-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/source-set-verification.json",
+      "sha256": "39F784044CDD4D7E61604D0344E8530CF1F0FD522078B49CC9DAF4EB9FDB8B49"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\vet.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/vet.meta.json",
+      "sha256": "8DED70538C169A0BD55AE2ED27BB4ADE2ED29031025FB2AAC58276C1D391C4F0"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\vet.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/vet.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\vet.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/vet.stdout.jsonl",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\wire-mutant\\handler.go",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/wire-mutant/handler.go.txt",
+      "sha256": "910652ED2F532CAB36064BAFF5FA15CE626D4645AFE11FB1FEBFDCAB6D513186"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\wire-mutant\\overlay.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/wire-mutant/overlay.json",
+      "sha256": "A6723AD8E1A1FC1AC682EAC17B758BC5BA9517F53C934EEDF74B83AEF0959873"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\wire-mutant.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/wire-mutant.meta.json",
+      "sha256": "D93584D89ED01B2F8F89E08094990B7BEA815B262FB91EB3CE4C5C9D4D29B7C8"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\wire-mutant.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/wire-mutant.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\fix-r03\\review-r02\\wire-mutant.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/wire-mutant.stdout.jsonl",
+      "sha256": "272458B88F0DD8FCF8D8DC0EE410C7B3A387AFF644F17044769E0D244152C89C"
+    },
+    {
+      "owner": "Lead actual review verification",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\lead-review-r02-structure.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/lead/lead-review-r02-structure.json",
+      "sha256": "79C96F79B6E0805730E8A6D3FA20A2D844AD16B7CDA4AFC66B9CE98A67832060"
+    },
+    {
+      "owner": "Lead actual review verification",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\lead-review-r02-evidence-check.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/lead/lead-review-r02-evidence-check.json",
+      "sha256": "BE9655C1CEA521AED383F7F56252D406F83F168731A8106D21117BD3FE44ED5A"
+    },
+    {
+      "owner": "Lead actual review verification",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\lead-final-code-acceptance.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r02/lead/lead-final-code-acceptance.json",
+      "sha256": "7111DE7FEC9471477FC05E986BDE42F6129302E47E869288AAE82CA9838EA48F"
+    }
+  ]
+}

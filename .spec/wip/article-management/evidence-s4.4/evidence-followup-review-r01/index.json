@@ -1,0 +1,545 @@
+{
+  "scope": "Independent two-round CodeReview PASS/0finding; own preflight+new two-leaf normal/race+vet, all children waited; Lead raw/full181/58payload/6Ready SQL fact checks",
+  "captured_at": "2026-10-28T01:17:00.294675+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\actual-readset-and-bindings.json",
+      "copy": "reviewer/actual-readset-and-bindings.json",
+      "role": "Erdos",
+      "sha256": "2CDC36EE643BB86DF0E75CB26D6249EC5C490B90973406E3186654617E634031"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\analyze.py",
+      "copy": "reviewer/analyze.py.txt",
+      "role": "Erdos",
+      "sha256": "CB797AE5A96897ACB166DA3BA35C55B9194ECB21CD3CA969587D82671AEECB61"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\author-evidence-verification.json",
+      "copy": "reviewer/author-evidence-verification.json",
+      "role": "Erdos",
+      "sha256": "D3547071CD116824B8A8CCDFFDA98313616E244CC2D91724F4B5E1E50718B68F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\closeout-source181.json",
+      "copy": "reviewer/closeout-source181.json",
+      "role": "Erdos",
+      "sha256": "9295D46144F607B3525A5C557CE2A9E8218EF93402997046CD27DF643E4AD23F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\finish.py",
+      "copy": "reviewer/finish.py.txt",
+      "role": "Erdos",
+      "sha256": "EA8CEF1006ECC932662AE9CFB97029B7F64BF66EF3C6F2DCAA40DA3E02CFE2B7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\own-run-sql-verification.json",
+      "copy": "reviewer/own-run-sql-verification.json",
+      "role": "Erdos",
+      "sha256": "BDCF49E88744C7ED66FE302CAEB9E0710F83D93F5EF77EA5C2C5497A684BD082"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\preflight.go",
+      "copy": "reviewer/preflight.go.txt",
+      "role": "Erdos",
+      "sha256": "793703D51F6F6F1D629A4A14BCC59ADB1A4E84B70A23E4C0E8DE792F4975D042"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\raw-meta-index.json",
+      "copy": "reviewer/raw-meta-index.json",
+      "role": "Erdos",
+      "sha256": "370D492DDEE04985C72A9793E28F5DF89FE1C507917E4B2347D2D7265D3D1703"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\report-verification.json",
+      "copy": "reviewer/report-verification.json",
+      "role": "Erdos",
+      "sha256": "A45618353823F08D718C07E7BB7FCFCD8C9A06DD8E87B6BE70E9D4A978C98F3D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\reused-methods-upstream.json",
+      "copy": "reviewer/reused-methods-upstream.json",
+      "role": "Erdos",
+      "sha256": "6537A8D2363046186821F775B75D4A2FDC8E953DA81541BD3B3B14EDFD4A4DE2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\run.py",
+      "copy": "reviewer/run.py.txt",
+      "role": "Erdos",
+      "sha256": "1399069E7CD501458440744E91C337361241B5D2194CE0F6094C560D49E66C8D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\source181-final.json",
+      "copy": "reviewer/source181-final.json",
+      "role": "Erdos",
+      "sha256": "9295D46144F607B3525A5C557CE2A9E8218EF93402997046CD27DF643E4AD23F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\source181-initial.json",
+      "copy": "reviewer/source181-initial.json",
+      "role": "Erdos",
+      "sha256": "9295D46144F607B3525A5C557CE2A9E8218EF93402997046CD27DF643E4AD23F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\sql-artifact-index.json",
+      "copy": "reviewer/sql-artifact-index.json",
+      "role": "Erdos",
+      "sha256": "1A47DD75225C0C0377AEA496D02CAB12588F9D8801475EB4C7A1E81666E44F3F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\preflight\\stdout.jsonl",
+      "copy": "runs/preflight/stdout.jsonl",
+      "role": "Erdos",
+      "sha256": "968C2DA704E1C1A02B4D81ECE6F93A82F3174CFCF8ECC680B83AED0741DA1CBA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\preflight\\stderr.log",
+      "copy": "runs/preflight/stderr.log",
+      "role": "Erdos",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\preflight\\meta.json",
+      "copy": "runs/preflight/meta.json",
+      "role": "Erdos",
+      "sha256": "F0B7C7F8CCBD0674AB955400FC063C0A6601A33E6F026FED2E4F919F6D0444C4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\stdout.jsonl",
+      "copy": "runs/normal/stdout.jsonl",
+      "role": "Erdos",
+      "sha256": "1B6BF3DD138A85FCBA8E04778C1B7AE20FD65FD8F5002EE931507D48A8B1A264"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\stderr.log",
+      "copy": "runs/normal/stderr.log",
+      "role": "Erdos",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\meta.json",
+      "copy": "runs/normal/meta.json",
+      "role": "Erdos",
+      "sha256": "3AF24ADC732CA834FAFC9424AEBDEDA6D9046FF2A31B3D64A28104C7A42D3840"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\stdout.jsonl",
+      "copy": "runs/race/stdout.jsonl",
+      "role": "Erdos",
+      "sha256": "CBBE207D411F54856EDFDCC246DF7165EA1BC3586C487E2A305778EA9B1B4766"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\stderr.log",
+      "copy": "runs/race/stderr.log",
+      "role": "Erdos",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\meta.json",
+      "copy": "runs/race/meta.json",
+      "role": "Erdos",
+      "sha256": "DDBC9EC200F696772F89DEC45165D784A0F4F47B184154032A55B9F8ED741A8C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\vet\\stdout.jsonl",
+      "copy": "runs/vet/stdout.jsonl",
+      "role": "Erdos",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\vet\\stderr.log",
+      "copy": "runs/vet/stderr.log",
+      "role": "Erdos",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\vet\\meta.json",
+      "copy": "runs/vet/meta.json",
+      "role": "Erdos",
+      "sha256": "06409151702A8EA1326AD4560F4231CD2C7A0F4DAF7D8B2A787524779B8769BD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\different-backup-begin.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/different-backup-begin.json",
+      "role": "Erdos",
+      "sha256": "0CDFE6CAF5141DAD6209313927E5BEFBDDE5EF6D9EA48F2A50A2D51E15499E2A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\different-backup-final-sql.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/different-backup-final-sql.json",
+      "role": "Erdos",
+      "sha256": "181051F1719A1BB11CCCEA590848D722376229CDD550F78413F8800DEECDBAAF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\different-backup-lock-observed.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/different-backup-lock-observed.json",
+      "role": "Erdos",
+      "sha256": "ABB87E042DA8F47CCA41ADFEBE634EA66E7B0AA9B6E53B4C99B65981C4FF2169"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\different-backup-loser-read.raw.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/different-backup-loser-read.raw.json",
+      "role": "Erdos",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\different-backup-loser-replay.raw.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/different-backup-loser-replay.raw.json",
+      "role": "Erdos",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/ready-01-facts-and-last-execution.json",
+      "role": "Erdos",
+      "sha256": "9814E937583928561CB0DD122194C03E1E29C12A05941FD12BD61563E8CD1A1B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\ready-01-sql.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/ready-01-sql.json",
+      "role": "Erdos",
+      "sha256": "181051F1719A1BB11CCCEA590848D722376229CDD550F78413F8800DEECDBAAF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\ready-01.wire.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/ready-01.wire.json",
+      "role": "Erdos",
+      "sha256": "D136EB2F4FBD3E141F84DE8F45AB255A140FA6110D5ECB93F8178D6B8214507F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\schema-created.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/schema-created.json",
+      "role": "Erdos",
+      "sha256": "AF05C49AC8682B4390D2A8C6B99AEE1EBFDBC7768030AB7B9A9E0FEA08C40BA9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\seed-before.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/seed-before.json",
+      "role": "Erdos",
+      "sha256": "AE6DCE314BD743632077A72525FC2B164C69DD69ACA257A1C7329C77D50F5D53"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\synthetic-backup-B.inventory.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/synthetic-backup-B.inventory.json",
+      "role": "Erdos",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-3275068718\\synthetic-inventory.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-3275068718/synthetic-inventory.json",
+      "role": "Erdos",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\execution-01.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/execution-01.json",
+      "role": "Erdos",
+      "sha256": "ED678092759E2EA0663B429E8A30479A87AD359476FB1C16697BA74F8E1F258E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\foreign-ref-provenance.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/foreign-ref-provenance.json",
+      "role": "Erdos",
+      "sha256": "E7E1E7660CF19083190AA25C8DAA6A3236E668ECD0A97CB27F9F31CA8640A65F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\publish-insert-before-sql.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/publish-insert-before-sql.json",
+      "role": "Erdos",
+      "sha256": "7AB23781EF6F737970C167382E0DBF9F6D97C7076E1E0FE4107E2E2D3214D54C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\publish-insert-conflict.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/publish-insert-conflict.json",
+      "role": "Erdos",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\publish-insert-pending.raw.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/publish-insert-pending.raw.json",
+      "role": "Erdos",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\publish-insert-resource-observation.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/publish-insert-resource-observation.json",
+      "role": "Erdos",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\publish-insert-retry-final-sql.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/publish-insert-retry-final-sql.json",
+      "role": "Erdos",
+      "sha256": "E89D4D06F03FCF5423211E71E2A1D9E14FE6AB93AAC870D7586C45D574730B48"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\publish-insert-rolled-back-sql.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/publish-insert-rolled-back-sql.json",
+      "role": "Erdos",
+      "sha256": "7AB23781EF6F737970C167382E0DBF9F6D97C7076E1E0FE4107E2E2D3214D54C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/ready-01-facts-and-last-execution.json",
+      "role": "Erdos",
+      "sha256": "55DE49D291C08CF60A5AA1B988F50AFCD8C0394E2594DF289D1A1519737860A5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\ready-01-sql.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/ready-01-sql.json",
+      "role": "Erdos",
+      "sha256": "E89D4D06F03FCF5423211E71E2A1D9E14FE6AB93AAC870D7586C45D574730B48"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\ready-01.wire.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/ready-01.wire.json",
+      "role": "Erdos",
+      "sha256": "0A9F2CAD3CE0A5D4AB82F8FE430F6BC4AF791FBAAAAB5B0E47308B5E9E35AC8C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\ready-02-facts-and-last-execution.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/ready-02-facts-and-last-execution.json",
+      "role": "Erdos",
+      "sha256": "55DE49D291C08CF60A5AA1B988F50AFCD8C0394E2594DF289D1A1519737860A5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\ready-02-sql.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/ready-02-sql.json",
+      "role": "Erdos",
+      "sha256": "E89D4D06F03FCF5423211E71E2A1D9E14FE6AB93AAC870D7586C45D574730B48"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\ready-02.wire.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/ready-02.wire.json",
+      "role": "Erdos",
+      "sha256": "0A9F2CAD3CE0A5D4AB82F8FE430F6BC4AF791FBAAAAB5B0E47308B5E9E35AC8C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\schema-created.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/schema-created.json",
+      "role": "Erdos",
+      "sha256": "58D2BBB287F91DD5595A67AEED58A274B3D754E557FC1304ED12656713F05474"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\seed-before.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/seed-before.json",
+      "role": "Erdos",
+      "sha256": "8B4CB49D7FDDE3F61F05B9BF9F1B4475C2C8ADAF1F9FEA629F1E59DADE44E460"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\normal\\retained-temp\\han-s44-retained-2651141683\\synthetic-inventory.json",
+      "copy": "cases/normal/retained-temp/han-s44-retained-2651141683/synthetic-inventory.json",
+      "role": "Erdos",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\different-backup-begin.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/different-backup-begin.json",
+      "role": "Erdos",
+      "sha256": "EA84DD16F0566CF8AF587497F35CB3C582AA21AE87823A50F063416263D2E7B3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\different-backup-final-sql.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/different-backup-final-sql.json",
+      "role": "Erdos",
+      "sha256": "D8C0A484567B79C2DD3BBD126ED4D0258BF7FF81A6F468ACED59230EE52A9B13"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\different-backup-lock-observed.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/different-backup-lock-observed.json",
+      "role": "Erdos",
+      "sha256": "6723502B4EAFC6F7FDC08B110805C27BA14E15EF82D3A747D209A8E7077FFD1F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\different-backup-loser-read.raw.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/different-backup-loser-read.raw.json",
+      "role": "Erdos",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\different-backup-loser-replay.raw.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/different-backup-loser-replay.raw.json",
+      "role": "Erdos",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/ready-01-facts-and-last-execution.json",
+      "role": "Erdos",
+      "sha256": "6AA2DABD00D6E22BCF7E4D91DC7D561EAC67449A0645D103262F8339CA6BB75F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\ready-01-sql.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/ready-01-sql.json",
+      "role": "Erdos",
+      "sha256": "D8C0A484567B79C2DD3BBD126ED4D0258BF7FF81A6F468ACED59230EE52A9B13"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\ready-01.wire.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/ready-01.wire.json",
+      "role": "Erdos",
+      "sha256": "A12A5E6BA06BBC52E216B622DF39421C76417F180D496FA68A4CBBF60B7A2457"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\schema-created.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/schema-created.json",
+      "role": "Erdos",
+      "sha256": "D4DDA96A38E23D6AC1BE495F73FCEB7A525C478149C22FD0B3D7081371B33BDE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\seed-before.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/seed-before.json",
+      "role": "Erdos",
+      "sha256": "3425878EBA05ADA9B47C2DD826C05DC831B2C8A5217925A436D1E168D3B18087"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\synthetic-backup-B.inventory.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/synthetic-backup-B.inventory.json",
+      "role": "Erdos",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-4246742339\\synthetic-inventory.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-4246742339/synthetic-inventory.json",
+      "role": "Erdos",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\execution-01.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/execution-01.json",
+      "role": "Erdos",
+      "sha256": "A8CA069D4D250371F01BD7C400CDA45F3110163261299858187279B50301E971"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\foreign-ref-provenance.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/foreign-ref-provenance.json",
+      "role": "Erdos",
+      "sha256": "89E9B775C6C1EE73DF4ABD061C2A4F65211DB64B21FE01B6B54B9361A15219ED"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\publish-insert-before-sql.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/publish-insert-before-sql.json",
+      "role": "Erdos",
+      "sha256": "79FC9B0B62B6CD24E2E4C6425B8D63D4200084C5BD425AB27917204DC7464B7A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\publish-insert-conflict.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/publish-insert-conflict.json",
+      "role": "Erdos",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\publish-insert-pending.raw.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/publish-insert-pending.raw.json",
+      "role": "Erdos",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\publish-insert-resource-observation.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/publish-insert-resource-observation.json",
+      "role": "Erdos",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\publish-insert-retry-final-sql.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/publish-insert-retry-final-sql.json",
+      "role": "Erdos",
+      "sha256": "9CDDDBB38D2225FA6BEC57E540812FFFC4639D623D6C48EF2C6E1978AFF391EE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\publish-insert-rolled-back-sql.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/publish-insert-rolled-back-sql.json",
+      "role": "Erdos",
+      "sha256": "79FC9B0B62B6CD24E2E4C6425B8D63D4200084C5BD425AB27917204DC7464B7A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/ready-01-facts-and-last-execution.json",
+      "role": "Erdos",
+      "sha256": "F1851F675530D08F1B25E91AB5F208E052F8ABB6DC11AE1F50F58AC3B52F6443"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\ready-01-sql.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/ready-01-sql.json",
+      "role": "Erdos",
+      "sha256": "9CDDDBB38D2225FA6BEC57E540812FFFC4639D623D6C48EF2C6E1978AFF391EE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\ready-01.wire.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/ready-01.wire.json",
+      "role": "Erdos",
+      "sha256": "EAD6BE50FEDFB0155330F1EF280CDF02A87C35206F833BB43D51E44DA1C8428C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\ready-02-facts-and-last-execution.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/ready-02-facts-and-last-execution.json",
+      "role": "Erdos",
+      "sha256": "F1851F675530D08F1B25E91AB5F208E052F8ABB6DC11AE1F50F58AC3B52F6443"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\ready-02-sql.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/ready-02-sql.json",
+      "role": "Erdos",
+      "sha256": "9CDDDBB38D2225FA6BEC57E540812FFFC4639D623D6C48EF2C6E1978AFF391EE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\ready-02.wire.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/ready-02.wire.json",
+      "role": "Erdos",
+      "sha256": "EAD6BE50FEDFB0155330F1EF280CDF02A87C35206F833BB43D51E44DA1C8428C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\schema-created.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/schema-created.json",
+      "role": "Erdos",
+      "sha256": "314344F075992118133C61A6CFB47EBF86264593BD9998BFEE85CAD2DEFF884E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\seed-before.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/seed-before.json",
+      "role": "Erdos",
+      "sha256": "1A3139BC8F10EC1B79701E0658F40DFA8DB123861CC4DD15E451FF88181AD1F9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-erdos-s44-evidence-review-r01-b38f9a12\\race\\retained-temp\\han-s44-retained-3969677272\\synthetic-inventory.json",
+      "copy": "cases/race/retained-temp/han-s44-retained-3969677272/synthetic-inventory.json",
+      "role": "Erdos",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\lead-reviewer-json-structure.json",
+      "copy": "lead/lead-reviewer-json-structure.json",
+      "role": "Lead",
+      "sha256": "A084909D3F45F446976BBD62862BFEF52421F314ECBBF675FE80A51C1B9C9D69"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\lead-reviewer-pg-verification.json",
+      "copy": "lead/lead-reviewer-pg-verification.json",
+      "role": "Lead",
+      "sha256": "FC1ADD2B6BE58E568BED65542A6A708ADD9DC9538FC0813EBFA8760D958BE377"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\review-code-s4.4-evidence-r01.md",
+      "copy": "review.final.md",
+      "role": "Erdos",
+      "sha256": "15C4EE2344DFDC6CF407D51934A9CC91C6343C7C1D1B2A4B097945D66F8B45CB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\review-before-wording.exact.md",
+      "copy": "review.before-wording.exact.md",
+      "role": "Lead byte reconstruction matching recorded prior Reviewer hash",
+      "sha256": "145C2CDA7C0BE59C4F1CFDD065CF2CC41B192116C06488EB5C17222172AB8613"
+    }
+  ],
+  "reviewer_schemas": [
+    "han_s44red_3a79827ffb43a10e55062cb5",
+    "han_s44red_68f5ab0cc4e0d106521c5c8d",
+    "han_s44red_820685c21a8fba72dcc903bc",
+    "han_s44red_e44a19ecff823e9f5eb0de56"
+  ],
+  "disjoint_author4": true,
+  "source_binding_index": "../evidence-followup-prep-r01/index.json",
+  "source_binding_index_sha256": "2AB5AF916504D0F0848E5AA803E2453817808588CE379E1DA7027974E367B683",
+  "report_history": "Prior145C byte image reconstructed from single dependency-count wording substitution and checked against its actual recorded hash; final15C4 only clarifies S4.4 six vs S1.5 twelve dependencies, no technical change. Prior raw report-verification record retained.",
+  "limits": "Only INSERT23505 failure and different-backup first binding; controlled Journal, synthetic backups; no whole S4.4/old backup/global recovery proof"
+}

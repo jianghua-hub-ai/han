@@ -1,0 +1,157 @@
+{
+  "scope": "planning-threecard-author-r01",
+  "owner": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "runtime_id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-threecard-planning-ec1dba98a2a44bfaaf7435a505e99ebd",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/after/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "C76D29953D4B07A580270D963DCA99782B1B1E921A79F78C7AF02094484BD3F5",
+      "bytes": 470092,
+      "source_name": "after/.add/project/knowledge/plans/ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/after/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "6609246F343F7A0C1FE5163B3AD4F4F03520795146A799B077C5F4BCA1A4A320",
+      "bytes": 623523,
+      "source_name": "after/.add/project/knowledge/tasks/tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/article-management-TP-consumed-block.md",
+      "sha256": "5407AF8F333CD64426F15902BBFEA964E53A99CA7755EFC62F9CB1F7BA99A159",
+      "bytes": 11147,
+      "source_name": "article-management-TP-consumed-block.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/baseline.json",
+      "sha256": "003A8287F49D1CD2179CACDF0B9F50DB6AA2F713D034A27B52C3E895C04F5FD9",
+      "bytes": 2850,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "FDBF3E26BD9B8063C3158299EF8056E3AE60427D44D46D11D670E2DEC8E71736",
+      "bytes": 468454,
+      "source_name": "before/.add/project/knowledge/plans/ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/before/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "ED7B2E51DAF509B3292BC57347373A7708C8E28D2DAC940F5DEC608F2793BE25",
+      "bytes": 611265,
+      "source_name": "before/.add/project/knowledge/tasks/tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/card-protection.json",
+      "sha256": "B64605C48851488D54B5DB42CBC270D021E7E0E1F14CEF146FAB918DB034B58A",
+      "bytes": 27905,
+      "source_name": "card-protection.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/exact-operations.json",
+      "sha256": "7249A9F659B22920C9D7263B34B9992045917D598A89167BFFCCC946AAFB65A7",
+      "bytes": 59815,
+      "source_name": "exact-operations.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/final-inspection.json",
+      "sha256": "E32752A28CC90A0AB82A4BBE4548E460ECEF67C48D6BAEAE088DC7A7A96AB46D",
+      "bytes": 723,
+      "source_name": "final-inspection.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/freeze.py",
+      "sha256": "AB70E227E19F40934982954637079A02C7496EB3CEB639BD451E50D37673808E",
+      "bytes": 2857,
+      "source_name": "freeze.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/graph-proof.json",
+      "sha256": "369D899BB68F3C75E21C4114D51DD1FD15DAD5729AAAE02F4E10978798788EEC",
+      "bytes": 15123,
+      "source_name": "graph-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/identity-auth-TP-consumed-block.md",
+      "sha256": "D4748A8E1237876043685A6C888F86A866569379163DD1F04C671145EBA6E73E",
+      "bytes": 12321,
+      "source_name": "identity-auth-TP-consumed-block.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/ir-01-content-community-batches.md.diff",
+      "sha256": "ECCB4071FEFC9C82C150C4E0E2FDEE361E47263CDE6EC75002A9F3AAA4D0897A",
+      "bytes": 4260,
+      "source_name": "ir-01-content-community-batches.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/phase-a.json",
+      "sha256": "0C5670CCB1E778AEF48740FC983F5B47328B666CDA9822B86C20D88EE9837A91",
+      "bytes": 169,
+      "source_name": "phase-a.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/prepare.py",
+      "sha256": "14D7887A10209AE606C9B1D12B5E4E360186979A2FAF1146803D14C7242ABC9C",
+      "bytes": 5017,
+      "source_name": "prepare.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/protected-inputs.json",
+      "sha256": "3ED6977DD7809EF077E5778CC96774B615E9E4BF7D7D68220969A0F20C22EFBA",
+      "bytes": 11516,
+      "source_name": "protected-inputs.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/readset.json",
+      "sha256": "CE94F61AB2982DDFB1FB1411B29A234C3A2F3FF3FF82597CF8C16F21C19DE814",
+      "bytes": 12727,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/receipt.json",
+      "sha256": "12665CE9A05E6D3188006FDCADA3BCB6BF40E7199157F9403B9CC09BCE1B288F",
+      "bytes": 2869,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/receipt.md",
+      "sha256": "21449C8FDC5B8334B519A8EE8F7874437457C00D0E295CC2B518488B47396EA5",
+      "bytes": 3531,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/register.py",
+      "sha256": "6ED293C5580B113FD69F5225CB7C467365DB70DEC1DA1C1DAFF762580BD64E6E",
+      "bytes": 23733,
+      "source_name": "register.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/sha256sums.json",
+      "sha256": "5E100063837A075D10651A80AB54CE6660802A710B4636AB28E5E8523C7B18CF",
+      "bytes": 2307,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/tasks.md.diff",
+      "sha256": "1C562DEDEB6671CFEB189E9D31099F04EC88127CE68EC993D592FFB519B791D8",
+      "bytes": 29748,
+      "source_name": "tasks.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/threecard-risk-map.json",
+      "sha256": "B9861DA3ACB167CAE6884022B6356FAB7F0C7E2260C9C0A0380882B98C236222",
+      "bytes": 3971,
+      "source_name": "threecard-risk-map.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-threecard-author-r01/verification.json",
+      "sha256": "99CB78CA895C5568931A3A1077DCA88E4C8F1A2811AFC61A377AC07BB676155E",
+      "bytes": 4407,
+      "source_name": "verification.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

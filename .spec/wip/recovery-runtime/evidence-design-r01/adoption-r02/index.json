@@ -1,0 +1,63 @@
+{
+  "scope": "Final adoption metadata only; two existing adoption records refreshed, count remains three",
+  "agent": {
+    "role": "add-arch-designer",
+    "nickname": "Pascal",
+    "id": "01a17e3d-5550-7f91-bb7e-6e6fad3d082c"
+  },
+  "submission": "01a18404-1fd8-7c52-90ef-d050bd141ccb",
+  "main_reception": "Full receipt, two exact diffs and verification read; before bytes matched retained adoption-r01; exact two-line replacement checked; README byte-identical.",
+  "status": "STOP/frozen; no technical decision change; final independent metadata review separate",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/before.json",
+      "sha256": "FE472AF79EEC80768CB16A0F384BFD0B95D63B5A89391095C649291852D8070F",
+      "bytes": 3661039
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/check.py",
+      "sha256": "923F4175A1D8EFE1909E46968639B47E49B102A339C1915299DD7CC0C02EB2FE",
+      "bytes": 6168
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/receipt.md",
+      "sha256": "D37597431653D9764ABF8F9BCAA0C6927811E2EE25F8942AA0BF1D463CE7B558",
+      "bytes": 1711
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/verification.json",
+      "sha256": "F049DA56DA7C4778FA09F26AF08631D7C9831686B5085AD0643DC57C71B9DEE6",
+      "bytes": 2753
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/framework.md.before",
+      "sha256": "BCB83191B5760826295BF661EAECDB2B873B31C26DF60B840E81B031DF639989",
+      "bytes": 96150
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/README.md.before",
+      "sha256": "157A549AD375B650479900A350464FCB842E828EFD296F3A50FA406A996FBAA1",
+      "bytes": 15477
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/framework.md.actual.diff",
+      "sha256": "466190BAFF068A7BD159EDF1AC307916E80D2D00DF02812E423FF4EB8983EB0C",
+      "bytes": 4303
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/README.md.actual.diff",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/frozen/.add/project/knowledge/decisions/framework.md",
+      "sha256": "36F4B49FD5C9B6FC0B351BAF326E03CF74889A5FA91CD052516D4B2542708B79",
+      "bytes": 96901
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/adoption-r02/frozen/.add/project/knowledge/decisions/README.md",
+      "sha256": "157A549AD375B650479900A350464FCB842E828EFD296F3A50FA406A996FBAA1",
+      "bytes": 15477
+    }
+  ]
+}

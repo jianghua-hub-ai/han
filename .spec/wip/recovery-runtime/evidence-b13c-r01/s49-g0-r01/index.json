@@ -1,0 +1,116 @@
+{
+  "scope": "s49-g0-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-s49-g0-24qbx_v7",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/caller-sweep.txt",
+      "sha256": "D8425E2027B7C38913BEDC99B69E7D9425266F13563789775827176F29E07BB0",
+      "bytes": 7396,
+      "source_name": "caller-sweep.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/capture_guard.py",
+      "sha256": "EE79BCFA81A7B75F674B39766B8F48A335E8164EF160751BBE4D51FF15AD6B04",
+      "bytes": 2869,
+      "source_name": "capture_guard.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/diagnostics.json",
+      "sha256": "934A2B65D5E588878C1B09584185EACA55BD4DD2CE6C33F731AC1BE333CB4F57",
+      "bytes": 509,
+      "source_name": "diagnostics.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/final-guard.json",
+      "sha256": "6E395AD838B9641F2A3EE52D8C7DFCF0AF760EE6CB204D6C06431D93CB3285A6",
+      "bytes": 1220,
+      "source_name": "final-guard.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/finalize_temp.py",
+      "sha256": "A4E739AAE8779B6EF2564276A537168E8291CFC2598E307A1DAEAED0FB92C283",
+      "bytes": 5586,
+      "source_name": "finalize_temp.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/guard.json",
+      "sha256": "F5835A15E49B27BAFD024451DC8442E7E90DCE71F00DEC60EF669C21559B9AAC",
+      "bytes": 1403,
+      "source_name": "guard.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/source-index.json",
+      "sha256": "FA55D216F3AB07D61B4B43D5F97D654215DBD2EF708ECEF79C6AB21F85EABA25",
+      "bytes": 1512,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/migration-consumer-sweep.txt",
+      "sha256": "2D26A47CA70FE301A2E05C659C9F8611974ED18E14880F2B1B345375D0455AC0",
+      "bytes": 444,
+      "source_name": "migration-consumer-sweep.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/read_source.py",
+      "sha256": "484CC386C0E99CF0A42A6263CDDA047BFFDF67CEBB81BC3A0C29079F9A2DC830",
+      "bytes": 698,
+      "source_name": "read_source.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/readset.jsonl",
+      "sha256": "5D263DA20255E1FE1A100A5E297A586437E234E2CBCFBCE49FAF6E6EC7BDF488",
+      "bytes": 13742,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/readset.md",
+      "sha256": "7062EF0CCC6142C53991771AD344FB6640ACCBB5D6528F3FABF18CCEBA69B9F0",
+      "bytes": 8013,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/receipt.json",
+      "sha256": "6810E1EDAE1248C8F4E743F66926032A68602D3D2FBDDC6A8F444A88599535F3",
+      "bytes": 980,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/receipt.md",
+      "sha256": "395B72F287A3A7BB35BCD8E766DFCDF17191CD25AE479C0E1EBEECDA6AA0036E",
+      "bytes": 18182,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/recovery_run_store.go.before.frozen",
+      "sha256": "519D7E98A4908A7AC4EF10C91D990575C4C8B3D3B621B4B69E6BD7589E722056",
+      "bytes": 10374,
+      "source_name": "recovery_run_store.go.before.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/recovery_run_store_integration_test.go.before.frozen",
+      "sha256": "CADC4A4529ECAB2135FA2BAF3CCF632A5FC0E0B922272F2B528C50C78B7DB1F2",
+      "bytes": 13333,
+      "source_name": "recovery_run_store_integration_test.go.before.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/source-guard-baseline.json",
+      "sha256": "7D9578B1CBE5B23EB615B6256917B0AACAEB8DF0A789C6E551D145E3E3E55B2B",
+      "bytes": 21359,
+      "source_name": "source-guard-baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-g0-r01/sourcebefore.json",
+      "sha256": "8ACE7A908FB8B570A940977BE0BD63D346B9B765FF8261522500269E06BB0848",
+      "bytes": 501,
+      "source_name": "sourcebefore.json"
+    }
+  ]
+}

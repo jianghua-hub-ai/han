@@ -1,0 +1,37 @@
+{
+  "scope": "s414-g0-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Chandrasekhar",
+    "runtime_id": "01a187a1-c022-71f3-92f5-6a9dc032e32b"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s414-g0-7leGfz",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-g0-r01/readset.json",
+      "sha256": "955EA0D9D0ABFD7FC713D1EC8D8FC9383F8A812799C8BE11262D36ACF1D9A9F4",
+      "bytes": 16411,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-g0-r01/report.md",
+      "sha256": "4858ECF922C7D3BBC6C5C05F2877E270EC2931308CA4E1A26430B30C5D43605A",
+      "bytes": 15842,
+      "source_name": "report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-g0-r01/risk-scenarios.md",
+      "sha256": "F9BAFCA94636C939377567DD6528AE697E111325F429F3333D8EEB9ED622765A",
+      "bytes": 11079,
+      "source_name": "risk-scenarios.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-g0-r01/scope.json",
+      "sha256": "1DFDC085818288B8CD3298A397E00894461834A8040980BF2729323E5086F8A8",
+      "bytes": 14542,
+      "source_name": "scope.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

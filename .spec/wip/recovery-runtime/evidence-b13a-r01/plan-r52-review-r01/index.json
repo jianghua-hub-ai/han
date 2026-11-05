@@ -1,0 +1,98 @@
+{
+  "scope": "plan-r52-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "runtime_id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-plan-r52-review-r01-9bdc7a3d22cb48cfbcc6ca2fe22760be",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/audit.py",
+      "sha256": "2E7570D2B1E47C9869345AC75F070414327022B1E6B451A55E2653087E6C3443",
+      "bytes": 6437,
+      "source_name": "audit.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/commands.md",
+      "sha256": "DB46BFCF3E887B726C8D15CDC5DD821A2E642C466604F905D3A44D2481106B79",
+      "bytes": 1118,
+      "source_name": "commands.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/finalize.py",
+      "sha256": "4C6F27FC3A74C9E61EF71BBD14782BF052EAD6D8576C5F363EDAD1910099BFC0",
+      "bytes": 14310,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/metadata-static-verification.json",
+      "sha256": "C74345B1D8366333F2389620C7703DAB203C72B6C22AB2EF20218D804481F62A",
+      "bytes": 5156,
+      "source_name": "metadata-static-verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/metadata_audit.py",
+      "sha256": "A4A7F616BCB9084FD1AA5164E0F76DFD92FE5B70EDAA95479EFA8AB643B7D747",
+      "bytes": 2337,
+      "source_name": "metadata_audit.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/read.py",
+      "sha256": "9CB0388F2964B499B83394043ACDE8218BCD01E041613163DE2BBD552E3D2F1C",
+      "bytes": 773,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/readset.json",
+      "sha256": "5CF9395EDBE9577639FA7EF358E803FF77DEB49D2017D727BFB4BB2EE471FA0C",
+      "bytes": 13099,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/readset.jsonl",
+      "sha256": "EAEAEA3A1DD00520BAF7EA507E3B4BFA785ECC4DE70BD90C6C61B39B152E0E57",
+      "bytes": 9299,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/readset.md",
+      "sha256": "035EE6670B3B86085C07A01FE265DE71CF0A38C6EFDB71531E56EBE9B5D2EDD1",
+      "bytes": 6440,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/receipt.json",
+      "sha256": "06F323FE4C9EFBF18A042924D1ADD2A3F3C8ED0CBFD22CA6B10DC4FE25FB2A41",
+      "bytes": 4373,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/receipt.md",
+      "sha256": "266979670BF775AC19BE5586B81C6EF600BA4C164725155302F9D61761A73306",
+      "bytes": 642,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/review-report.md",
+      "sha256": "87DD233CC453FDD988A5CD8006E3FDC9A9EF12716160D1847FC9832F85F7886F",
+      "bytes": 7100,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/sha256sums.json",
+      "sha256": "C4D96B5F4D066662F3F2B664D7C38295217019A2A01B1D86AD7F8FCBF385443E",
+      "bytes": 1162,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/plan-r52-review-r01/static-verification.json",
+      "sha256": "1279D46967277F8B686AFB57D1D45B111C989AA1F925FC2DFAA05DF5E3D4B5C8",
+      "bytes": 13895,
+      "source_name": "static-verification.json"
+    }
+  ]
+}

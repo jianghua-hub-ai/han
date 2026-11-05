@@ -1,0 +1,332 @@
+{
+  "schema": "add.review-index/v1",
+  "role": "add-reviewer",
+  "independence": "independent non-author review; reviewed artifacts not modified by reviewer",
+  "objectType": "design + adr + index (composite) + security review; targeted round-2 re-review",
+  "item": "pending-B13J-D03",
+  "workflow": "development-delivery",
+  "phase": "non-author targeted re-review r02 of B13J-D03-RV-01..RV-05 remediation",
+  "verdict": "CHANGES REQUIRED",
+  "verdicts": {
+    "design": "CHANGES REQUIRED",
+    "security": "CHANGES REQUIRED",
+    "overall": "CHANGES REQUIRED",
+    "reason": "All five original findings (RV-01..RV-05) are closed, and minimality, format, traceability and inheritance boundaries pass. But the r02 fix introduced a new contract-level conflict in design.md:3862: the clause 'whole-DB artifact vs protected tables (exclude schemas OR restore into an isolated DB then root-controlled switchover)' contradicts the fixed target semantics at design.md:3864 (live verified DSN), :3866 (same verified artifact/target) and :3870 (same no-follow fd), grants root a new direct data-movement write path that violates 'root must not execute in place of the executor', and relies on an undefined 'identity/recovery tables' scope that cannot hold simultaneously with a whole-DB restore of a database where account data and recovery_runs share one PostgreSQL fault domain (design.md:545, :1718). ADR-0031:1036 mirrors this as an unpassable release gate. gap-map section 2.5 requires a security review PASS, so neither design nor security can pass."
+  },
+  "rounds": {
+    "round1": "CHANGES REQUIRED",
+    "round2": "CHANGES REQUIRED"
+  },
+  "reviewedAt": "2026-11-01T23:24:24+08:00",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "artifact": {
+    "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r02/report.md",
+    "sha256": "7F357D6AE3C5E23FD9A19EFA808D1F86C6986668A34CC0E4B811A3A0742D18C6",
+    "bytes": 15997,
+    "encoding": "utf-8",
+    "bom": false,
+    "line_endings": "LF only",
+    "trailing": "single LF (0x0a)",
+    "source": "independent targeted re-review report (this review)"
+  },
+  "object": {
+    "design": {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "baseline": {
+        "sha256": "79F226D5BB152C7A2DF359548CBFE24C306DF54A1B2EFD8BED71A80F488B2037",
+        "bytes": 846117,
+        "lines": 4924
+      },
+      "target": {
+        "sha256": "B452E38E7074B1D483CB8A0EB511A7EF858B3F35C13CC0841A75118E4B7F013C",
+        "bytes": 846941,
+        "lines": 4924
+      },
+      "changedLinesThisRound": [
+        3862
+      ],
+      "deltaBytes": 824,
+      "deltaProvenExact": true,
+      "deltaMethod": "replaced :5/:38 (r59->r58) and :83/:3858/:3862/:3870 with the author report D03 before-texts in memory, re-encoded UTF-8 preserving each line ending; result equals the D03 baseline byte for byte, proving the file differs from the D03 baseline only in those six lines. Per-line byte increments equal the r01 increments (+760/+94/+506 for :83/:3858/:3870, version bumps equal length), and the file total +824 equals the :3862 increment (r01 was +666), so :3862 is the only line changed this round.",
+      "reconstructedSha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+      "reconstructedBytes": 844091,
+      "perLineByteIncrementsVsD03Baseline": {
+        ":83": 760,
+        ":3858": 94,
+        ":3862": 1490,
+        ":3870": 506,
+        ":5": 0,
+        ":38": 0
+      },
+      "unchangedAnchors": [
+        ":7",
+        ":3874-:3902",
+        ":3864",
+        ":3866",
+        ":3868",
+        ":3870 (content identical to r01)"
+      ]
+    },
+    "framework": {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "baseline": {
+        "sha256": "A80F5DD3F542AD15EC9BB717BAF20C4CA43EC83EB1B215171E1DA41516EB0589",
+        "bytes": 153033,
+        "lines": 1048
+      },
+      "target": {
+        "sha256": "3A3B2B214D9732BB61A0C8768CEF701B08F65ED3D8161C85F254A0F4B37275B8",
+        "bytes": 154074,
+        "lines": 1049
+      },
+      "prefixBytes": 137491,
+      "prefixSha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+      "prefixMatchesBaseline": true,
+      "declaredModifiedLines": [
+        981,
+        1006,
+        1045
+      ],
+      "declaredAddedLine": 1036,
+      "deltaBytes": 1041,
+      "adrRange": "framework.md:967-1049 (separator :967-:969, anchor :970, title :971, body through :1049; 83 lines)",
+      "releaseConditionItems": "9 bullets at :1032-:1040",
+      "exactnessVerified": "prefix hash + line/format invariants + content of the four declared spots",
+      "exactnessLimitation": "byte-level proof that only :981/:1006/:1036/:1045 changed relative to the r01 snapshot is not obtainable: the r01 file is not in Git (HEAD predates all ADD work) and the author overwrote the r01 evidence; see B13J-D03-RV2-03"
+    },
+    "readme": {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "baseline": {
+        "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+        "bytes": 20764,
+        "lines": 108
+      },
+      "target": {
+        "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+        "bytes": 20764,
+        "lines": 108
+      },
+      "unchanged": true,
+      "deltaMethod": "whole-file SHA256 identical to the r01 baseline; zero drift"
+    }
+  },
+  "formatInvariants": {
+    "design": {
+      "bom": false,
+      "lines": 4924,
+      "crlf": 169,
+      "bare_lf": 4755,
+      "lf_total": 4924,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf": 1,
+      "tab_byte_offset": 466829,
+      "tab_pre_existing": true,
+      "tab_before_offset_r01": 466069,
+      "tab_line": 3303,
+      "tab_context": "existing Go fenced code block (CheckLockedUser)"
+    },
+    "framework": {
+      "bom": false,
+      "lines": 1049,
+      "crlf": 1049,
+      "bare_lf": 0,
+      "lf_total": 1049,
+      "trailing": "single CRLF (0x0d0a)",
+      "control_excluding_cr_lf": 0
+    },
+    "readme": {
+      "bom": false,
+      "lines": 108,
+      "crlf": 2,
+      "bare_lf": 106,
+      "lf_total": 108,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf": 0
+    }
+  },
+  "findings": {
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 1,
+      "LOW": 2
+    },
+    "total": 3,
+    "items": [
+      {
+        "id": "B13J-D03-RV2-01",
+        "severity": "MEDIUM",
+        "status": "open",
+        "blocking": true,
+        "title": "design.md:3862 new artifact/protected-table boundary clause conflicts with the fixed restore target contract and adds a root write path",
+        "location": [
+          "identity-auth/design.md:3862",
+          "decisions/framework.md:1036",
+          "decisions/framework.md:1007",
+          "decisions/framework.md:1024",
+          "decisions/framework.md:1045"
+        ],
+        "fact": "New sentence: 'whole-DB artifact vs these protected tables (exclude the corresponding schemas OR restore into an isolated DB then root-controlled switchover) is also fixed by the approval record.' Conflicts: (1) :3864 passes only the live verified DSN as target_connection, :3866 requires the child to restore the same verified artifact/target and root to verify 'the same target', :3870 requires the same no-follow stable fd -- an isolated-DB staging plus root switchover breaks all three; (2) :3862 says root does not execute in place of the executor and ADR :1007 limits root to lock/drain/exclusive/Begin/binding/audit/VerifyRestored, so root-controlled data movement is a new privileged write path; (3) 'identity/recovery tables' is undefined (0 hits for the term, no table enumeration) while design.md:545 places account data and recovery metadata in one PostgreSQL fault domain and :1718 puts recovery_runs/recovery_restore_bindings in the same Store, so a whole-DB artifact necessarily contains both, making the role-scope prohibition and a real restore mutually unsatisfiable; excluding those schemas leaves source_schema_digest/restored_schema_digest semantics undefined (:3860, :3866). ADR :1036 mirrors the prohibition as a release gate.",
+        "impact": "Production stays closed (no live exposure), but the normative contract line is self-contradictory, the ADR release gate :1036 cannot be satisfied by a genuine whole-DB restore, and the untracked isolated-DB/root-switchover option contradicts ADR :977 'does not rewrite or weaken the existing restore software contract'.",
+        "recommendation": "Fix this round: (1) replace 'identity/recovery tables' with an enumerable list (recovery_runs, recovery_restore_bindings, audit tables) and state that account/business tables are written by the restore itself as a legitimate write surface; (2) delete or demote the isolated-DB plus root-switchover option (move to a separate decision, updating :3864/:3866/:3870 target semantics if kept); (3) if schema exclusion is kept, replace 'whole-DB artifact' with 'single verified artifact whose schema scope is fixed by the approval record' and define both schema digests; (4) align framework.md:1036 accordingly.",
+        "disposition": "must fix this round; blocking for both design PASS and security PASS"
+      },
+      {
+        "id": "B13J-D03-RV2-02",
+        "severity": "LOW",
+        "status": "open",
+        "blocking": false,
+        "title": "framework.md:1045 attributes 'process group / no-follow' to :3862, which actually says process tree and leaves no-follow at :3870",
+        "location": [
+          "decisions/framework.md:1045",
+          "identity-auth/design.md:3862",
+          "identity-auth/design.md:3870"
+        ],
+        "fact": ":3862 contains 'fd/process-tree isolation precheck'; no-follow stable fd is fixed at :3870; the word 'process group' appears in design.md only at :83.",
+        "impact": "Terminology-level traceability imprecision; no conclusion changes.",
+        "recommendation": "Reword to 'process tree / no-follow / ENV allowlist (:3862, :3870)' or align with ADR :1013 'independent process group/session'.",
+        "disposition": "may fold into next round or D04"
+      },
+      {
+        "id": "B13J-D03-RV2-03",
+        "severity": "LOW",
+        "status": "open",
+        "blocking": false,
+        "title": "r02 framework evidence does not preserve the pre-change text or snapshot needed for byte-level minimality verification",
+        "location": [
+          "design-d03/report.md section 4.2",
+          "design-d03/report.md section 6"
+        ],
+        "fact": "The report gives only the final ADR text plus whole-file hashes; section 6 claims a reverse reconstruction to A80F5DD3/153033 against temporary copies that were not preserved, and no r02 before-text is recorded for :981/:1006/:1045.",
+        "impact": "An independent reviewer can verify the 137491-byte prefix and all content/format invariants, but cannot byte-prove that the other 82 ADR lines are unchanged since r01.",
+        "recommendation": "Preserve the pre-change snapshot hash manifest, or record the three before-lines in the evidence.",
+        "disposition": "evidence quality only; non-blocking"
+      }
+    ]
+  },
+  "rvFinalStatus": {
+    "B13J-D03-RV-01": {
+      "level": "MEDIUM",
+      "status": "CLOSED",
+      "note": "(a) write-side negation, (b) separate DB role + approval-fixed GRANT matrix + closed-if-unproven, (c) :1045 trace matching actual landing points (with the RV2-02 terminology nit)"
+    },
+    "B13J-D03-RV-02": {
+      "level": "LOW",
+      "status": "CLOSED",
+      "note": "supplier self-approval ban, root does not execute/enter shell/replay, no network except target DB -- all three in :3862"
+    },
+    "B13J-D03-RV-03": {
+      "level": "LOW",
+      "status": "CLOSED",
+      "note": ":981 states the merged scope explicitly (enter/install and enter/resume DB replacement both closed, different entry points, not a narrowing); ADR-0030 :926 unchanged verbatim"
+    },
+    "B13J-D03-RV-04": {
+      "level": "LOW",
+      "status": "CLOSED",
+      "note": "independent recompute: LCP 1184 chars, 462 chars / 760 bytes appended; method stated; before 1184 chars/1748 B, after 1646 chars/2508 B"
+    },
+    "B13J-D03-RV-05": {
+      "level": "LOW",
+      "status": "CLOSED",
+      "note": ":1006 and :3862 both ban shell-script/su/sudo wrappers and neither claims a selected mechanism"
+    }
+  },
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "role": "reconciliation source; section 2.5 closure conditions at :121-139"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/report.md",
+      "sha256": "4321F460B8401D54C3F6D78091E91B5AD3865F5DFE92CD98A6C3F081B980A692",
+      "bytes": 94810,
+      "role": "author evidence, updated for r02"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/index.json",
+      "sha256": "2C2AF79228DAB245F183FF54BDCCF6CDA88D210976B15A8B8EC4AA32658B945C",
+      "bytes": 30289,
+      "role": "author evidence index, updated for r02"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/report.md",
+      "role": "previous independent review carrying B13J-D03-RV-01..RV-05"
+    }
+  ],
+  "crossChecks": {
+    "rvTargeted": {
+      "RV-01": "CLOSED (design.md:3862 write-side negation + DB role/GRANT mechanism; framework.md:1036 negative gate; :1045 trace)",
+      "RV-02": "CLOSED (design.md:3862 supplier self-approval ban, root not executing, no network beyond target DB)",
+      "RV-03": "CLOSED (framework.md:981 merged scope; ADR-0030 :926 byte-unchanged)",
+      "RV-04": "CLOSED (author report section 4.1/12 numbers independently recomputed)",
+      "RV-05": "CLOSED (framework.md:1006 and design.md:3862)"
+    },
+    "inheritance": {
+      "prefixUnchanged": "framework.md first 137491 bytes hash equals the D03 baseline whole-file hash, covering ADR-0019 (:418-494), ADR-0030 (:915-966) and ADR-0027",
+      "readmeZeroDrift": "README.md whole-file hash identical to r01 baseline (A67B00D5/20764/108)",
+      "noAdr0031TraceDrift": "ADR :977/:1024 still state ADR-0019/0030/0027 and the restore software contract are unchanged; :1045 now matches actual landing points except the process-group/no-follow wording"
+    },
+    "designContractConflict": {
+      "targetSemantics": "design.md:3864 live verified DSN, :3866 same verified artifact/target, :3870 same no-follow fd -- contradicted by the isolated-DB plus root-switchover option",
+      "storeTopology": "design.md:545 account data and recovery metadata share one PostgreSQL fault domain; :1718 recovery_runs and recovery_restore_bindings live in the same Store",
+      "rootWritePath": "design.md:3862 'root does not execute in place' plus ADR :1007 retained-root duties exclude data movement"
+    },
+    "honesty": {
+      "noValidationClaims": "design.md:3858-3872 contains no verified/rehearsed/approved claims; ADR 'measured pass' appears only at :1035 as a release condition; 'approved binary' only in conditional or negative sentences"
+    }
+  },
+  "commands": [
+    "git rev-parse HEAD",
+    "python: sha256/bytes/line/CRLF/BOM measurement of the three reviewed files and two author evidence files",
+    "python: reverse reconstruction of design.md to the D03 baseline (exact 30B122A0/844091)",
+    "python: per-line byte increments and LCP measurement of design.md:83 (1184 / 462 / 760)",
+    "python: framework.md prefix hash over the first 137491 bytes (33281CB5)",
+    "python: keyword scan for false validation claims in design.md:3858-3872 and framework.md:968-1049",
+    "python: control-character, BOM, trailing-byte measurement for all three files",
+    "git diff --check -- <design.md> <framework.md> <README.md>  (exit 0, autocrlf advisory only)",
+    "ParseError-avoidance: scripts executed from $env:TEMP so no workspace file was created outside review-r02"
+  ],
+  "writeSet": [
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r02/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r02/index.json"
+  ],
+  "notWritten": [
+    ".add/project/knowledge/design-workspace/identity-auth/design.md (read only)",
+    ".add/project/knowledge/decisions/framework.md (read only)",
+    ".add/project/knowledge/decisions/README.md (read only)",
+    "author evidence design-d03/report.md and index.json (read only)",
+    "gap-map.md, tasks.md, plans, stories, test-plan, decisions/identity.md (read only)",
+    "no git write operation, no delete, no move"
+  ],
+  "notVerified": [
+    "any real restore tool, approval record, execution identity, ACL, process isolation, GRANT matrix or old-backup rehearsal; ADR :1036 gate never executed",
+    "byte-level zero-drift of the other 82 ADR-0031 lines against the r01 snapshot (r01 file unrecoverable; see B13J-D03-RV2-03)",
+    "runtime behaviour of cmd/han-server under any restore path (production ADR path remains closed)",
+    "whether third-party changes exist outside this writeSet (untracked workspace items pre-exist and are not attributable to this item)"
+  ],
+  "pendingDecisions": [
+    {
+      "id": "D-RV2-01",
+      "question": "How to resolve the design.md:3862 protected-table/artifact boundary: pick schema exclusion, protect only recovery metadata tables, or defer the isolated-DB option to a separate decision",
+      "owner": "Lead / Arch-Designer",
+      "blocking": "true; design and security review cannot pass until design.md:3862 and framework.md:1036 are mutually satisfiable with a real whole-DB restore"
+    },
+    {
+      "id": "D-RV2-02",
+      "question": "Align the process-tree vs process-group terminology in framework.md:1045",
+      "owner": "Arch-Designer",
+      "blocking": "false"
+    },
+    {
+      "id": "D-RV2-03",
+      "question": "Retain pre-change snapshots or per-line hashes in future evidence so round-to-round minimality is byte-verifiable",
+      "owner": "Lead / author",
+      "blocking": "false"
+    }
+  ],
+  "limitations": "Targeted round-2 re-review only: the 14 full-scope items of review-r01 are not re-run except where directly affected (minimality, format, honesty, inheritance, safety invariants, release conditions). Reviewer verdict does not close pending-B13J-D03, does not release blocked-upstream, does not unlock S4.24, does not claim Case18 or S8.2 passed, and is not a human acceptance, design Gate or security sign-off."
+}

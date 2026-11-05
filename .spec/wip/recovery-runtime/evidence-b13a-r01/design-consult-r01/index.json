@@ -1,0 +1,26 @@
+{
+  "scope": "design-consult-r01",
+  "owner": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-design-consult-wen5dqaf",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-consult-r01/consult-receipt.md",
+      "sha256": "8C9061AE2DE81D57D6D15F7EC46D4027EE3B37B1096D35E6C37DFC0274E2DF8B",
+      "bytes": 7205,
+      "source_name": "consult-receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-consult-r01/readset.json",
+      "sha256": "0DE718030CC0511F2AFBB5E761C90949CDB09E5A1B3CFEC531B8D6EA75A22C53",
+      "bytes": 8550,
+      "source_name": "readset.json"
+    }
+  ]
+}

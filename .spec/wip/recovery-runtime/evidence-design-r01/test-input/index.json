@@ -1,0 +1,73 @@
+{
+  "scope": "Stable architecture and original acceptance coverage consultation, not formal TP update or executed tests",
+  "agent": {
+    "role": "add-test-engineer",
+    "nickname": "Jason",
+    "id": "01a18395-a83b-7512-b7d1-824b073ab907"
+  },
+  "provenance": "Actual ID from Main spawn under user standing authorization; raw report notes its own ID not exposed. Role was delegated by Main, not a direct user selection of a named person. Original report preserved.",
+  "main_reception": "Full report and index read; 16 groups accepted as FD coverage input, no new Case/task/requires or test PASS",
+  "dynamic_design_files": "Not read/hashed by consultant; all expectations from stable architecture/original acceptance",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/coverage-input.md",
+      "sha256": "7492951773C8815ADCD99846F13402A47BD4452DC9CB0C00EA6F3C6394094388",
+      "bytes": 39457
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/readset.json",
+      "sha256": "A72A0E260D70B337AAF0EE306C7F23BF66925AE162E20C03FED493D87E5286B5",
+      "bytes": 32369
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/readset.jsonl",
+      "sha256": "BA147AFA6B76E4D44B208A54C98E91A2B1100FC81B4D8DCAC4F6D85C0D9BDD8D",
+      "bytes": 13730
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/scope-hashes.json",
+      "sha256": "4A97987B66026E72CC7CCB49E07A5A1BA8A2015B503DF559EAFC998D362BE6F2",
+      "bytes": 15403
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/verification.json",
+      "sha256": "A21C04E860C3A4AD98D81D6014CD5164EF489195F717045BD45C37E08C858585",
+      "bytes": 2031
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/read.ps1",
+      "sha256": "57BAB8FAFAE7B0A0CA6C50D9172B52F11988DCA1544355020557AA49EADD6AA2",
+      "bytes": 1602
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/finalize.ps1",
+      "sha256": "B9CE782C03AF9483817C1F9DBC3469E8CC73255FE6E6529D1421CE9606A92123",
+      "bytes": 7195
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/original-index.json",
+      "sha256": "280C598A07748CB432AAE4071C41A1E40184A132E4E96C450194B4C895F43176",
+      "bytes": 3238
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/baseline/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "8AA8A2ED4F1C295903F75A6CF9591C3F5C567A6F79DA4431A9A3D21C774B647F",
+      "bytes": 416558
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/baseline/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "EC9563D6B3A9921DE217ECE92D0F1B421644C4ED3FCF570D8B768B10A128E183",
+      "bytes": 452219
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/baseline/.add/project/knowledge/design-workspace/article-management/test-plan.md",
+      "sha256": "DD7D603CC1CDE2681B0CE6CE168DFD36C77CC3E07A42511609A09C5EA316CEFA",
+      "bytes": 276677
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/test-input/baseline/.add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+      "sha256": "4CDC882308A2CCF6EE249880EBA5EEA469C2C983933C4EE6D42AE1168F5F03D2",
+      "bytes": 261164
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "scope": "main-a47-directed-r02",
+  "owner": {
+    "actor": "Main actual checks, no independent Role claim"
+  },
+  "source_temp": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-b13c-main-a47-directed-r3p7ih4u",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/a47-c2-pg-author-main-parsed-r02.json",
+      "sha256": "F84D8692664E8110D2402F1D7DAB5C333B58EBC2EFEDE228EADFFE7A5DB4668D",
+      "bytes": 39220,
+      "source_name": "a47-c2-pg-author-main-parsed-r02.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/a47-c2-pg-main-freeze-r02.json",
+      "sha256": "6565E1BB4C34DFB8D6FC764CB9CE5F549F6529D05A7F862E606C50BB32D82FCF",
+      "bytes": 1536,
+      "source_name": "a47-c2-pg-main-freeze-r02.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/a47-main-pg-parsed-r02.json",
+      "sha256": "623180D69FF7F4604919F3FE2FBAB4232471299EA149BF3CA74B3422DFDE47CE",
+      "bytes": 6866,
+      "source_name": "a47-main-pg-parsed-r02.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/c1-planning-main-verified-r01.json",
+      "sha256": "14B3AD9395D07B07C221426E1DCCA01B60DF312F96EA909872B5643E4218B386",
+      "bytes": 1461,
+      "source_name": "c1-planning-main-verified-r01.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-ownership-red-r02/result.json",
+      "sha256": "185A047F0D4E07EDB6EBAD4E778C98C4274061C2CB02E353541ECC7969A8FA2E",
+      "bytes": 856,
+      "source_name": "checks/a47-main-ownership-red-r02/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-ownership-red-r02/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/a47-main-ownership-red-r02/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-ownership-red-r02/stdout.log",
+      "sha256": "9E69214C523C8C98B667E6FA299A1739100E6AEFB10623BF13A6FE6500F08D0E",
+      "bytes": 3672,
+      "source_name": "checks/a47-main-ownership-red-r02/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-postgres-normal-r02/result.json",
+      "sha256": "51152AB9BC7235B640EB5847609765818F7AA0A51493B6E988FCE7ECD5A304D9",
+      "bytes": 817,
+      "source_name": "checks/a47-main-postgres-normal-r02/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-postgres-normal-r02/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/a47-main-postgres-normal-r02/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-postgres-normal-r02/stdout.log",
+      "sha256": "5E313C1B05F0F39E43D47533BE4C98CE4DE78B87FEAF40B6FE8F61F5B0D48099",
+      "bytes": 66149,
+      "source_name": "checks/a47-main-postgres-normal-r02/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-postgres-race-r02/result.json",
+      "sha256": "AB53500B7C8C0C3DAF6DBBCD75A2AE09B641237EF99C88C4ACB1C81932F916EB",
+      "bytes": 827,
+      "source_name": "checks/a47-main-postgres-race-r02/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-postgres-race-r02/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/a47-main-postgres-race-r02/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/checks/a47-main-postgres-race-r02/stdout.log",
+      "sha256": "C68C326FDACD9B5ED33E8C1681320E9E7B172E48F47A83F26935A30610E29088",
+      "bytes": 66134,
+      "source_name": "checks/a47-main-postgres-race-r02/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/receipt.json",
+      "sha256": "20A6A23CE3F767D6E393069135497BDBB148D70B1170D55F4AF9AABA2507F1F8",
+      "bytes": 2082,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/receipt.md",
+      "sha256": "FA8320C4E29F71120AB5792C3C9F5C67EBCF1219402511C364F9AAAFA344F1EA",
+      "bytes": 712,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/retained-main-schemas.json",
+      "sha256": "EFF418BF3FCAF268CD8C037E0975B968CE9D75172E7B6D87FB3C994FB7C28C5C",
+      "bytes": 2891,
+      "source_name": "retained-main-schemas.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/main-a47-directed-r02/s418-claim.diff",
+      "sha256": "3AD5BC81E30A4F4B1ED93A5EA9EEB4DB4F8B7E4762A542DA34F6E5B0039D40C9",
+      "bytes": 4870,
+      "source_name": "s418-claim.diff"
+    }
+  ]
+}

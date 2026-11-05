@@ -1,0 +1,210 @@
+{
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18bbe-e72e-7d62-a3fc-8748bf262fb0"
+  },
+  "source_temp": "D:\\Temp\\han-b13g-lead-20261030-r01\\s415-independent-failed-packet-r01",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/actual-release.json",
+      "source_name": "actual-release.json",
+      "bytes": 5978,
+      "sha256": "337F22C68A052DA78F54015B139135A795159485A4F59A4D021324DF47586B92"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/author-final-raw-summary.json",
+      "source_name": "author-final-raw-summary.json",
+      "bytes": 882269,
+      "sha256": "2AD4EAE7898333B0EC349D894E9BE6C8170B8CA008CEF90F64CAEEEBC80E4541"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/independent-leaves.json",
+      "source_name": "independent-leaves.json",
+      "bytes": 11588,
+      "sha256": "EEE5F5795551B8867692DD941F74D2EEAF9A319DD60C6A75D4E7794ABBE66A57"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/owned_windows.py",
+      "source_name": "owned_windows.py",
+      "bytes": 10211,
+      "sha256": "6FD58BE2B28FDDDB47EC3F2F534EAFDAF7EE2CB5C4EC54772D18C357EE1085BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/packet-manifest.json",
+      "source_name": "packet-manifest.json",
+      "bytes": 5466,
+      "sha256": "133455409AAF00C4D96A02FEAE9BCCC5B79638D7498031D2CC6248A2A2963706"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/preliminary-to-final4.diff",
+      "source_name": "preliminary-to-final4.diff",
+      "bytes": 12142,
+      "sha256": "A8BAB9AE5C58E4BE15CAB72286D700D5C7551C72331D2FA411D65EC6FE279C1A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/prepare_packet.py",
+      "source_name": "prepare_packet.py",
+      "bytes": 5096,
+      "sha256": "B54C31C353C7FC5552EECF1E33AC0938D824B91FF9A2E52EC5B16EFF4E260AF6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/probes/overlay.json",
+      "source_name": "probes/overlay.json",
+      "bytes": 213,
+      "sha256": "6B646B603EE8F534D82FB935AB5EC6A60D85B4669940553935331AD49CB8C358"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/probes/s415_independent_test.go.frozen",
+      "source_name": "probes/s415_independent_test.go",
+      "bytes": 5455,
+      "sha256": "FFBA89E89C08248B03C193B6B638973165B1947C0CD23B27D9319787C78E2E63"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-normal/command.json",
+      "source_name": "raw/independent-final-normal/command.json",
+      "bytes": 11094,
+      "sha256": "75B21F72947258802B4FAC8CB0DA976F420AD62F61F42F0F2E79E881D8A7FB8B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-normal/heartbeat.json",
+      "source_name": "raw/independent-final-normal/heartbeat.json",
+      "bytes": 1019,
+      "sha256": "70287A0B95CBD2EF58513F2BC85A0D9912EBD502D0E732AF6B33002F72E5963F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-normal/result.json",
+      "source_name": "raw/independent-final-normal/result.json",
+      "bytes": 17485,
+      "sha256": "BAA815B3D500A75D604B8787D5E785719DD7213D43E7C184D584564C00F0A44F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-normal/stderr.log",
+      "source_name": "raw/independent-final-normal/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-normal/stdout.jsonl",
+      "source_name": "raw/independent-final-normal/stdout.jsonl",
+      "bytes": 25499,
+      "sha256": "3024C3D7283E4CC0F62EFE0A73F944B68C80809A8CAB46C459A9D5338E64245D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-race/command.json",
+      "source_name": "raw/independent-final-race/command.json",
+      "bytes": 11106,
+      "sha256": "2C65F5432CC2636FEB428FCED4D85490190319E08530F34661755F70ED346255"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-race/heartbeat.json",
+      "source_name": "raw/independent-final-race/heartbeat.json",
+      "bytes": 1033,
+      "sha256": "B0416308DA0C33E25C5207AF7812132A29CEC93390B29B49A4AABFCD741B34A0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-race/result.json",
+      "source_name": "raw/independent-final-race/result.json",
+      "bytes": 17536,
+      "sha256": "18A234FB81AFBB8698DCF4FD8117A994D540B64DA5AE3638286B22BA101FF909"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-race/stderr.log",
+      "source_name": "raw/independent-final-race/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/raw/independent-final-race/stdout.jsonl",
+      "source_name": "raw/independent-final-race/stdout.jsonl",
+      "bytes": 25490,
+      "sha256": "7867ECF8B561C25C6AA7B00C40AE5CDBC00505F329E9D4F6E3A67F52422A78C3"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/read.ps1",
+      "source_name": "read.ps1",
+      "bytes": 1125,
+      "sha256": "680E4B0E1B3BBC6C3B1069CA2EF589B2AF4DE370A00FB87D5AD9B0EB486DBA5A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/readset.json",
+      "source_name": "readset.json",
+      "bytes": 84124,
+      "sha256": "2C744252C3FA61573BDF42E8FE57452C6CD776CEC0F9EE0679FA2F9AEE848E4B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 17784,
+      "sha256": "A77B59EEB99C36265A57A1DCECCC4E737891F918ED7C3CCADA2BFF475C07C99A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/report.md",
+      "source_name": "report.md",
+      "bytes": 17750,
+      "sha256": "CE00C6838C66F6657A7312418459D061D39EE3DBD93ED843C5A96C5F9C7FCE44"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/reproduce.md",
+      "source_name": "reproduce.md",
+      "bytes": 3167,
+      "sha256": "335CBBA897351A61EC7553E360491CF988E2E4D19958E62EAC22004FB9C8E607"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/reviewed-final-full10.diff",
+      "source_name": "reviewed-final-full10.diff",
+      "bytes": 50591,
+      "sha256": "1D431EC7AD6F8AB98BDAB4D3E438974509BFF50000025DE64BF65BE1A5B7ED1D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/reviewed-final-manifest.json",
+      "source_name": "reviewed-final-manifest.json",
+      "bytes": 7505,
+      "sha256": "587A4F63C10490A7BC2905563FE5984EC9F704FCC39EFEABCF205B7B2D1523A9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/run_independent.py",
+      "source_name": "run_independent.py",
+      "bytes": 6133,
+      "sha256": "F971AA1637B630A2623CBA7C4914F283A4FBBFFFAFA38A2DD83328BE814DF6FC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/seal_packet.py",
+      "source_name": "seal_packet.py",
+      "bytes": 3221,
+      "sha256": "A01CC01DDBC22E3D89A49E3381A66BD27674EBB19BEA6C2A937E6A5A42A1C2E6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/static-check.ps1",
+      "source_name": "static-check.ps1",
+      "bytes": 4312,
+      "sha256": "4C59EB612D166D5AD864CB14E190429B8FD0F30C7EE10027B29260290A1238D2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/static-checks-final.json",
+      "source_name": "static-checks-final.json",
+      "bytes": 20425,
+      "sha256": "ADC10BD7820D2055977A3E960CFC7FEEFBB4735613C9AA12214AF36F240283F9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/static-checks.json",
+      "source_name": "static-checks.json",
+      "bytes": 21290,
+      "sha256": "F077D9526A201F0F72814ADF7CDE2C705664522D971939B499BC935AD3C15F87"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/static-final-check.ps1",
+      "source_name": "static-final-check.ps1",
+      "bytes": 4929,
+      "sha256": "2074C53636B0F2789ECC114375B56BCB8BC60E0A6F5E7E5A3B1CF2B206ED403F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r01/STOP.json",
+      "source_name": "STOP.json",
+      "bytes": 722,
+      "sha256": "BB5384DB5D6E6A83FA7810181AA1A979D51861321CD7D7E6C4298C163E587503"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

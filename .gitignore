@@ -2,3 +2,5 @@
 .add/local/**
 Temp/
 
+# Working evidence stays local; only curated digests are force-added
+.spec/wip/**

@@ -1,0 +1,98 @@
+{
+  "scope": "batch-f001-static-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-f001-batch-static-s4bxwg8m",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/entry-hashes.json",
+      "sha256": "C4DCF18D5804B820D51D310DBF42A0002A3A2E648F7C151943DC0276AC391433",
+      "bytes": 7670,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/exit-hashes.json",
+      "sha256": "4421B634860A2C43DD800D14A55C082E38A61D441F74FF7C8DCFC9DFB67CE189",
+      "bytes": 5832,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/hashes.json",
+      "sha256": "4E99F157469C24E056D1F0D5958ADB73FD03E181EB24468543E129BDA1CE8CC9",
+      "bytes": 1186,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/methods-reuse.json",
+      "sha256": "77D4195B8A6805807065A78763E95ED0B65CBD8331AF709AFC3673D4C9D351CA",
+      "bytes": 11141,
+      "source_name": "methods-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/partial-review-report.md",
+      "sha256": "23E657238051A1B724BDADCC51F001261E6238F0A2925CD9C894E04C71CF083E",
+      "bytes": 8082,
+      "source_name": "partial-review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/pending-matrix.json",
+      "sha256": "1B0818CF944578B025F78C10CE29E5C0DE216C93741A4ECD791D571751DF3148",
+      "bytes": 1671,
+      "source_name": "pending-matrix.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/read.ps1",
+      "sha256": "FBAA576BDCC99A3B400E02062AF91F1307323C5E0627C8924F49C9691264E4FA",
+      "bytes": 481,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/readset-addendum.json",
+      "sha256": "4803AD42BD0B09C5ED0D7C68BE9D26C07A95E849C136A2449FAEDCF1D11DE865",
+      "bytes": 1639,
+      "source_name": "readset-addendum.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/readset.jsonl",
+      "sha256": "C01302E32CA09DFFC28B2BDEF63E841738AE35DEA7104E137808D8DA50841890",
+      "bytes": 5213,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/receipt.json",
+      "sha256": "9F3069D7C5D80FFD4BDE0E87A3DE86369DD171B3CC388DDFC387C6307C4F8B60",
+      "bytes": 2707,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/seal.py",
+      "sha256": "1FA0EC0D24452D210A3B1D39FB8BFFABF1FD126156347B1A49B6135F0681EC82",
+      "bytes": 6643,
+      "source_name": "seal.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/static-proof.json",
+      "sha256": "54D98863EEE827B68A3C9BC89B2B039C944099101A976007136987E5893BAC65",
+      "bytes": 4871,
+      "source_name": "static-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/static-readset.json",
+      "sha256": "326B146880CA1DC4963E8DA85585ECE49EE1504AB8EDAC574461DB8744E0844B",
+      "bytes": 6205,
+      "source_name": "static-readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-f001-static-r01/static_delta.py",
+      "sha256": "FF5644F3222D9223118804D2D40DA14DC57A33954BBDCF27B4875B377337EF24",
+      "bytes": 5588,
+      "source_name": "static_delta.py"
+    }
+  ]
+}

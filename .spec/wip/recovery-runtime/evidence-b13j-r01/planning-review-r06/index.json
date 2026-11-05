@@ -1,0 +1,330 @@
+{
+    "schema":  "add.evidence.planning-review/v1",
+    "item":  "B13J planning review r06 - registration round r02 (targeted re-review of R05 findings)",
+    "agent_role":  "add-reviewer (non-author; did not write tasks.md, Plan, D01-D04 designs or ADR revisions)",
+    "review_round":  "r06",
+    "scope":  "Targeted re-review only: whether B13J-R05-F001..F005 are CLOSED after registration round r02, plus new-problem scan. No re-review of r01-r04 closed items.",
+    "recorded_at":  "2026-11-02",
+    "timezone":  "Asia/Shanghai",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "previous_rounds":  {
+                            "r04_verdict":  "PASS WITH MINOR",
+                            "r05_verdict":  "CHANGES REQUIRED",
+                            "r04_report_sha256":  "38DE303B432921C9A369C08F7BF4DD1999C08EBA72CACF8A99BFDEBE9174E352",
+                            "r05_report_sha256":  "FC5FACF409379149C1F0422515B32B6C1E1A2E1C90905688616496B58BB82558"
+                        },
+    "verdict":  "PASS WITH MINOR",
+    "verdict_rationale":  "R05 F002/F001/F003/F004 CLOSED; F005 remains OPEN as a LOW deferred to the next ADR-0032 revision and does not block registration. Two new findings (1 MEDIUM, 1 LOW) are local verification-coverage gaps with explicit close conditions, not registration blockers.",
+    "registration_round_gate":  "MAY ENTER decision-card + Task-card registration round (S4.22/S4.23/S4.24a/S4.24b). Registration is not implementation authorization.",
+    "inputs":  [
+                   {
+                       "path":  ".add/project/knowledge/tasks/tasks.md",
+                       "bytes":  856471,
+                       "sha256":  "0BD07ADC2ECC8CD157DC0CD9F295BA6B60D7C2FB00148CF588C55BBEBED1FFE0",
+                       "format":  "CRLF 3225, bareLF 0, no BOM, single trailing CRLF; historical TAB@12631, 0x0C@12676, 0x0C@12691 untouched"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/plans/ir-01-content-community-batches.md",
+                       "bytes":  504671,
+                       "sha256":  "EC24892E46D5CB1C668F8F7E13443BC60F64F6A53A82812DBAEA30C79D9D37B9",
+                       "format":  "CRLF 1651, bareLF 0, no BOM, single trailing CRLF, control chars 0, TAB 0"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/decisions/framework.md",
+                       "bytes":  182488,
+                       "sha256":  "39BD3A797B0FA2F5CDF944ACCF4129BB0B7F7A23FABC743B7E5CCC9F7B9BD704",
+                       "format":  "unchanged this round; CRLF 1141, control chars 0"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/registration-round-r01/author-report-r02.md",
+                       "bytes":  8466,
+                       "sha256":  "42C9EF5AD8F6A7779D1C5755616A565A0B557D76872341BFC458303CC5D4516B",
+                       "format":  "pure LF, no BOM, single trailing LF"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/registration-round-r01/author-index-r02.json",
+                       "bytes":  11092,
+                       "sha256":  "8D3A39731E9DA33460B6A7F4BE48DD78E5096D7F83C1030EA4EA33B9F3793484",
+                       "format":  "pure LF 198, no BOM, valid JSON, schema add.evidence.registration-round/v1"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r04/report.md",
+                       "bytes":  21187,
+                       "sha256":  "38DE303B432921C9A369C08F7BF4DD1999C08EBA72CACF8A99BFDEBE9174E352",
+                       "format":  "unchanged"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r04/index.json",
+                       "bytes":  26320,
+                       "sha256":  "95C2D39DDBC12FEA441B1AB083133A1636582CBF50C80CEDA7DB79F36D639D4E",
+                       "format":  "unchanged"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r05/report.md",
+                       "bytes":  23571,
+                       "sha256":  "FC5FACF409379149C1F0422515B32B6C1E1A2E1C90905688616496B58BB82558",
+                       "format":  "unchanged"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r05/index.json",
+                       "bytes":  27756,
+                       "sha256":  "544E6A99514E6D3D0DC6BF59820B7AB45AE75BD4E739E61C2B7CE8049E1EAC23",
+                       "format":  "unchanged"
+                   }
+               ],
+    "r05_dispositions":  [
+                             {
+                                 "id":  "B13J-R05-F002",
+                                 "severity":  "HIGH",
+                                 "status":  "CLOSED",
+                                 "location":  "tasks.md:3162-3192; plans/ir-01-content-community-batches.md:1338",
+                                 "evidence":  "7th file cmd/han-server/recovery_exclusive_unsupported_integration_test.go at :3169 with tag integration \u0026\u0026 !(aix||darwin||dragonfly||freebsd||linux||netbsd||openbsd||solaris), byte-identical to internal/recovery/filelock_unsupported.go:1 and exact inverse of the POSIX tag at :3168; (e) bound to TestRecoveryDeploymentExclusiveUnsupportedPlatform at :3187; close conditions (4)/(5) split at :3188; stop condition at :3192 forbids dropping the negation; acceptance heading 12 commands matches 12 lines :3174-:3185; slots 2+2+4+4+7+4=23 unique 15",
+                                 "residual":  "Verification-strength gap tracked as B13J-R06-F002 (commands not platform-pinned)"
+                             },
+                             {
+                                 "id":  "B13J-R05-F001",
+                                 "severity":  "MEDIUM",
+                                 "status":  "CLOSED",
+                                 "location":  "tasks.md:3198",
+                                 "evidence":  "Goal now cites design identity-auth-design-ir01-r60 11-port list with ADR-0032 r03 as the deployment-exclusive/release boundary; design.md:5 and design.md:3601 exist and match; framework.md:1068 is adr-0032-r03; rg \"ADR-0032 r60|adr-0032-r60\" over tasks.md and Plan exits 1",
+                                 "residual":  "none"
+                             },
+                             {
+                                 "id":  "B13J-R05-F003",
+                                 "severity":  "LOW",
+                                 "status":  "CLOSED",
+                                 "location":  "plans/ir-01-content-community-batches.md:1311, :1338, :1641",
+                                 "evidence":  "Slot-scope statement unique at :1311 and :1641 (D05/D06 two files include their author evidence; implementation-card .spec evidence reports are excluded from slots); independently parsed card write sets give 2/2/4/4/7/4 = 23 slots and 15 unique files, matching Plan and ownership row",
+                                 "residual":  "none"
+                             },
+                             {
+                                 "id":  "B13J-R05-F004",
+                                 "severity":  "LOW",
+                                 "status":  "CLOSED",
+                                 "location":  "registration-round-r01/author-report-r02.md; author-index-r02.json",
+                                 "evidence":  "Both evidence files exist with measured hashes; index states prior_image.plan.recomputable=false and physical_snapshot_in_repo=false; independent drift check: tasks 1-3154 842938B 31B0BB3E...C05152 unchanged, tasks 3193-3225 6224B A2F5EB15...4EB351, Plan segments 5EEE2810/7EEAFF3A/D2D76702/1B6F1911 with only :1311/:1338/:1641 changed; deltas tasks +1463B/+3 lines and Plan +399B/0 lines are consistent",
+                                 "residual":  "Plan r01 pre-image not recomputable in-repo (observation O03)"
+                             },
+                             {
+                                 "id":  "B13J-R05-F005",
+                                 "severity":  "LOW",
+                                 "status":  "OPEN",
+                                 "deferred_to":  "next ADR-0032 revision",
+                                 "location":  "framework.md:1121, :1123-:1125",
+                                 "evidence":  "framework.md unchanged at 39BD3A79...9704; text still says candidate S4.23 \"尚未登记为正式 Task\" and lists 候选 for S4.24b/S4.24a/S4.22; not worsened this round (no new instances)",
+                                 "residual":  "Must be closed when ADR-0032 is next revised after registration"
+                             }
+                         ],
+    "new_findings":  [
+                         {
+                             "id":  "B13J-R06-F001",
+                             "severity":  "LOW",
+                             "status":  "OPEN",
+                             "location":  "tasks.md:3174",
+                             "title":  "S4.24b gofmt list omits the 7th write-set file",
+                             "evidence":  "gofmt -l lists 6 paths but the write set (:3162, :3169) and Plan :1338 declare 7; the new cmd/han-server/recovery_exclusive_unsupported_integration_test.go is unchecked by the format gate",
+                             "impact":  "Format gate can stay green without covering the new test file; does not affect implementability",
+                             "suggestion":  "Add the path to :3174 (command count stays 12, single-line content change)",
+                             "close_condition":  "tasks.md:3174 contains 7 paths mapping 1:1 to :3162-:3169",
+                             "blocks_registration":  false
+                         },
+                         {
+                             "id":  "B13J-R06-F002",
+                             "severity":  "MEDIUM",
+                             "status":  "OPEN",
+                             "location":  "tasks.md:3182, :3183 (affects close condition (5) at :3188)",
+                             "title":  "Non-POSIX negative-test commands are not platform-pinned and can pass vacuously on POSIX hosts",
+                             "evidence":  "Commands run go test [-race] -tags=integration ./cmd/han-server -run ^TestRecoveryDeploymentExclusiveUnsupportedPlatform$ without GOOS; the test file carries a !(POSIX) build tag, so on Linux/macOS it is excluded and go test exits 0 with no tests executed; :3187 and :3188(5) rely on this test as the sole evidence for (e)",
+                             "impact":  "On POSIX CI, close condition (5) can be satisfied without executing any assertion (false pass); no planning-level error, but the S4.24b negative gate would be ineffective",
+                             "suggestion":  "Pin a non-POSIX platform (e.g. GOOS=windows or a Windows runner) and record GOOS; add to :3188(5) a requirement that -json shows the test actually ran (run/pass events, not \"no tests to run\")",
+                             "close_condition":  ":3182/:3183 bind a platform and :3188(5) forbids a vacuous pass",
+                             "blocks_registration":  false,
+                             "blocks_s424b_close":  true
+                         }
+                     ],
+    "observations":  [
+                         {
+                             "id":  "O01",
+                             "note":  "Pre-existing statistics off-by-one: :46 total 82, :47 67+2+14=83, :49 identity-auth 55 versus actual 83 checkbox lines and 56 identity-auth cards; untouched and unauthorized to fix"
+                         },
+                         {
+                             "id":  "O02",
+                             "note":  "The non-POSIX complement tag also covers js/wasip1/plan9/android/illumos/ios; behaviour on those platforms is out of scope, Windows is the intended evidence platform"
+                         },
+                         {
+                             "id":  "O03",
+                             "note":  "Plan r01 pre-image (497542B, 3FA19CDD...637380) has no in-repo physical snapshot; only an out-of-repo %TEMP% copy exists; author disclosed non-recomputability honestly and reviewers cannot recompute it either"
+                         },
+                         {
+                             "id":  "O04",
+                             "note":  "Historical TAB@12631 and 0x0C@12676/12691 in tasks.md unchanged; r01 F009 stays OPEN with no repair authorization"
+                         },
+                         {
+                             "id":  "O05",
+                             "note":  "author-index-r02.json boundary.changed_existing_cards=false is imprecise: the round did edit existing card text (S4.24b card body, S4.22 goal line), though changes[] and report section 2 disclose them; suggest rewording next round"
+                         },
+                         {
+                             "id":  "O06",
+                             "note":  "framework.md:1121 and :1123-:1125 still use candidate/not-yet-registered wording; same collection point as R05-F005"
+                         },
+                         {
+                             "id":  "O07",
+                             "note":  "My rebuild of the tasks pre-image did not converge (823204B vs claimed 823187B) because the original :51 text is not authoritatively available; the F1D65B0D pre-image hash was therefore not independently reproduced by me. Recorded as a limitation, not as an accusation"
+                         }
+                     ],
+    "consistency_scan":  {
+                             "command_count":  "12 heading vs 12 command lines (:3174-:3185) OK",
+                             "slot_numbers":  "23/15 consistent across :1311, :1338, :1641 and card write sets",
+                             "dependency_edges":  "6 cards / 4 hard edges (D05-\u003eS4.23, D06-\u003eS4.24a, S4.23-\u003eS4.24b, S4.24b-\u003eS4.22)",
+                             "mermaid":  "41 nodes / 79 edges, Plan :1342 and :1647 unchanged",
+                             "claim_scan":  "no positive review-pass/implemented/unlocked/production-ready claims; only negated 不宣称 lines",
+                             "reference_integrity":  "no bare S4.24 (rg --pcre2 exit 1); all referenced IDs are registered"
+                         },
+    "commands":  [
+                     {
+                         "n":  1,
+                         "command":  "git rev-parse HEAD; git branch --show-current",
+                         "result":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca; main"
+                     },
+                     {
+                         "n":  2,
+                         "command":  "Get-FileHash + ReadAllBytes on tasks.md / Plan / framework.md",
+                         "result":  "856471/0BD07ADC...1FFE0; 504671/EC24892E...D37B9; 182488/39BD3A79...9704"
+                     },
+                     {
+                         "n":  3,
+                         "command":  "list registration-round-r01 + hash author-report-r02.md / author-index-r02.json",
+                         "result":  "8466/42C9EF5A...4516B; 11092/8D3A3973...3484"
+                     },
+                     {
+                         "n":  4,
+                         "command":  "ConvertFrom-Json on author-index-r02.json",
+                         "result":  "valid; schema add.evidence.registration-round/v1"
+                     },
+                     {
+                         "n":  5,
+                         "command":  "print tasks.md lines 3156-3192 and 3193-3225",
+                         "result":  "S4.24b card shows 7 files, 12 commands, split (4)/(5), stop condition on tag widening; S4.22 goal cites design r60"
+                     },
+                     {
+                         "n":  6,
+                         "command":  "print Plan :1311, :1338, :1641",
+                         "result":  "15/23 slot scope, 7-file ownership row, matching slot sentence"
+                     },
+                     {
+                         "n":  7,
+                         "command":  "print framework.md :960, :961, :1050, :1068, :1119-:1126",
+                         "result":  "constraint 9 three-tier order, constraint 10, ADR-0031 gate, ADR-0032 r03 header and release chain"
+                     },
+                     {
+                         "n":  8,
+                         "command":  "rg -n \"ADR-0032 r60|adr-0032-r60\" tasks.md Plan",
+                         "result":  "exit 1, zero matches"
+                     },
+                     {
+                         "n":  9,
+                         "command":  "rg -n --pcre2 \"S4\\.24(?!a|b)\" tasks.md Plan",
+                         "result":  "exit 1, zero matches"
+                     },
+                     {
+                         "n":  10,
+                         "command":  "rg -n \"go:build\" internal/recovery/filelock_unsupported.go",
+                         "result":  ":1 tag identical byte-for-byte to tasks.md:3169 tag"
+                     },
+                     {
+                         "n":  11,
+                         "command":  "Test-Path on the two new test files",
+                         "result":  "both False (planned, not yet created)"
+                     },
+                     {
+                         "n":  12,
+                         "command":  "count ^- [ , - [ ], - [x], - [-] lines",
+                         "result":  "83 / 14 / 67 / 2; identity-auth cards 56 (stats line says 55, O01)"
+                     },
+                     {
+                         "n":  13,
+                         "command":  "parse each card write set",
+                         "result":  "2/2/4/4/7/4 = 23 slots, 15 unique"
+                     },
+                     {
+                         "n":  14,
+                         "command":  "count mermaid nodes/edges in Plan",
+                         "result":  "41 nodes / 79 edges; :1342 and :1647 unchanged"
+                     },
+                     {
+                         "n":  15,
+                         "command":  "byte segment sha256 for tasks 1-3154, 3155-3192, 3193-3225",
+                         "result":  "31B0BB3E...C05152 (842938B), BA1AD85B...1A78CE (7309B), A2F5EB15...4EB351 (6224B)"
+                     },
+                     {
+                         "n":  16,
+                         "command":  "byte segment sha256 for Plan 1-1310, 1312-1337, 1339-1640, 1642-1651",
+                         "result":  "5EEE2810...E98D0, 7EEAFF3A...AAFAF3, D2D76702...D96A0, 1B6F1911...10241"
+                     },
+                     {
+                         "n":  17,
+                         "command":  "delta arithmetic",
+                         "result":  "tasks +1463B/+3 lines; Plan +399B/0 lines"
+                     },
+                     {
+                         "n":  18,
+                         "command":  "re-hash r04 and r05 evidence",
+                         "result":  "match r05 records"
+                     },
+                     {
+                         "n":  19,
+                         "command":  "Get-ChildItem -Recurse -Include tasks-before.md,plan-before.md",
+                         "result":  "zero matches (O03)"
+                     },
+                     {
+                         "n":  20,
+                         "command":  "git status --porcelain",
+                         "result":  "293 lines"
+                     }
+                 ],
+    "not_run":  "Go build/test, PG, services, any Git write operation",
+    "not_covered":  [
+                        "No compile or execution of the new tests (including GOOS=windows cross-build); the Windows-compilability judgement is static",
+                        "Full-repo requires graph (333 edges) not recomputed; only the 6-card/4-edge slice and Plan :1342 text/mermaid counts",
+                        "ADR semantics and design conclusions closed in r01-r04 not re-reviewed (framework.md unchanged this round)",
+                        "article-management-S8.2 and Case18 current card state not checked (untouched by this round)",
+                        "Plan batches outside the touched hunks not re-verified in full",
+                        "tasks pre-image hash F1D65B0D not independently reproduced (O07)"
+                    ],
+    "format":  {
+                   "report":  {
+                                  "bytes":  18374,
+                                  "sha256":  "6E00D8B576F3C0B01442DEE6341753EB7A5B2155B8D7E6342FA7FFC43D611291",
+                                  "lf":  162,
+                                  "crlf":  0,
+                                  "bom":  false,
+                                  "trailing":  "single LF",
+                                  "control_chars":  0,
+                                  "tab":  0
+                              },
+                   "index":  {
+                                 "newline":  "LF",
+                                 "bom":  false,
+                                 "json_valid":  true,
+                                 "note":  "self hash cannot be embedded; measured after write and reported to Lead",
+                                 "self_hash_note":  "A file cannot embed its own SHA256; files[] lists only report.md. The index hash is measured after write and reported to Lead in the r06 handoff."
+                             }
+               },
+    "boundaries":  [
+                       "This review does not grant implementation authorization",
+                       "It does not register, start or advance S4.22/S4.23/S4.24a/S4.24b",
+                       "It does not close pending-B13J-D04",
+                       "It does not release blocked-upstream",
+                       "It is not a human sign-off or business acceptance",
+                       "Only this evidence directory was written; no Git writes; no Go/PG/service runs"
+                   ],
+    "files":  [
+                  {
+                      "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r06/report.md",
+                      "bytes":  18374,
+                      "sha256":  "6E00D8B576F3C0B01442DEE6341753EB7A5B2155B8D7E6342FA7FFC43D611291"
+                  }
+              ]
+}

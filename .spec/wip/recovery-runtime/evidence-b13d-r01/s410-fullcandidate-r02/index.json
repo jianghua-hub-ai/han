@@ -1,0 +1,103 @@
+{
+  "scope": "s410-fullcandidate-r02",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-candidate-idem-5tqr9fdw",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/baseline.json",
+      "sha256": "64C7F151ABE2E007EB38176E7DB174DB7AFDB14CF16FBD264D578DE41D438C38",
+      "bytes": 5429,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/candidate-delta.diff",
+      "sha256": "42E6C8165A5FE1C9DB1319AF81556178FEA8B08C6CB175EE6EAF85371A16039E",
+      "bytes": 89466,
+      "source_name": "candidate-delta.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/candidate.diff",
+      "sha256": "094A35F62406FDF477F9BD07ECBCE9E7768B609EBAD86CFC21655D229375C4E1",
+      "bytes": 188202,
+      "source_name": "candidate.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/guard.json",
+      "sha256": "016A26FE4EA197632ED2377DFE458147754BAA6C0F965195F5E725DA0494C611",
+      "bytes": 8428,
+      "source_name": "guard.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/source-index.json",
+      "sha256": "1A1CD85BF82169D453725CA0A388F98A885ADA621B13CDED855336F351FD52EF",
+      "bytes": 1609,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/internal/identity/recovery_execution.go.frozen",
+      "sha256": "9C4A4B8FC19E9FCBA2C8402531C8F5F72241829E5F208DF5142E4F2833F941BF",
+      "bytes": 88399,
+      "source_name": "internal/identity/recovery_execution.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/internal/identity/recovery_execution_postgres_test.go.frozen",
+      "sha256": "140B2850898FFE1AC5573F101A782E5FB22D861E156B31D6FEE2D2F5660055D2",
+      "bytes": 62093,
+      "source_name": "internal/identity/recovery_execution_postgres_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/internal/identity/recovery_execution_test.go.frozen",
+      "sha256": "B33A1E26F42A2735A8FF1CA33DBCA0356F3689471093F600CDA397F90158340F",
+      "bytes": 34046,
+      "source_name": "internal/identity/recovery_execution_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/methods-reused.json",
+      "sha256": "30385241B0A7281E1C0DB73294C1600A8B458A2D8826906420D6D2FCA13603C8",
+      "bytes": 7784,
+      "source_name": "methods-reused.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/old-packet-before.json",
+      "sha256": "1545D4639698E0935DF7ACF5B740A43A9CF4D724EFEF7AF3DD4E294CE430EB16",
+      "bytes": 1190,
+      "source_name": "old-packet-before.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/prepared-case-inventory.json",
+      "sha256": "2AFD4E7793707D107400531A757D0B180B4812592DDB1FB39098CAFF71AAE83B",
+      "bytes": 3093,
+      "source_name": "prepared-case-inventory.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/readset.json",
+      "sha256": "E7060B8D56CA13420D198AB2803609738034DD5CD86DE25CC37D0D22B259979C",
+      "bytes": 5769,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/receipt.md",
+      "sha256": "2056826C255205C03BE3E09B10C991119B3229E3292FB8905B2F669B1C5CF595",
+      "bytes": 6125,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/source-before-after.json",
+      "sha256": "D2A06F428228E7FC525E699DD6500199F0E1DB770EBFF9E0120F80C62D5A4E38",
+      "bytes": 1427,
+      "source_name": "source-before-after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-fullcandidate-r02/text-inventory.json",
+      "sha256": "8E8E768AB169042B6A7800D13B98A1DC1FFB24751BAD381530F2B5C3E0133A7C",
+      "bytes": 5294,
+      "source_name": "text-inventory.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

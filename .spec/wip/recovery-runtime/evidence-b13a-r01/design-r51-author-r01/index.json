@@ -1,0 +1,44 @@
+{
+  "scope": "design-r51-author-r01",
+  "owner": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-design-r51-gd6g0r_h",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-r51-author-r01/baseline.json",
+      "sha256": "0464141FB6D629829A34CF56CD5322AB8DD6BD5D517A91E3B6B0F6DBA164A79B",
+      "bytes": 8699,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-r51-author-r01/design-r50-before.frozen",
+      "sha256": "6634BED32EDE264F6DA6F47C9A7E8152ADD0B19C2DDCBCF3ED4708AE4BA4109D",
+      "bytes": 774384,
+      "source_name": "design-r50-before.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-r51-author-r01/design-r50-to-r51.diff",
+      "sha256": "BA0BE2C288A88218B0C966E881493EA7D6CDF86EACCE94310CA6C7F304DEF076",
+      "bytes": 30667,
+      "source_name": "design-r50-to-r51.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-r51-author-r01/readset.json",
+      "sha256": "B8BFD827D47B83D46905FF4A993520BCA5E1DCF79E25A3FFAEF5A635550FBD48",
+      "bytes": 3509,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-r51-author-r01/receipt.md",
+      "sha256": "0AC27254FBA94CABDECB4F772B799D0E6AE89169145C9C1272CCF7190211AE0E",
+      "bytes": 1893,
+      "source_name": "receipt.md"
+    }
+  ]
+}

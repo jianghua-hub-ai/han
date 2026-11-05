@@ -1,0 +1,70 @@
+{
+    "task":  "article-management-S1.5",
+    "path":  "B",
+    "scope":  "application/migration identity separation + fail-closed startup ACL gate (single-node synthetic roles, single schema)",
+    "code_files":  [
+                       {
+                           "path":  "cmd/han-server/append_only_acl.go",
+                           "sha256":  "1019a5e1f38cbb46eaae1b5a4948db231d0205117a6d03866af6f01f435d12ad"
+                       },
+                       {
+                           "path":  "cmd/han-server/append_only_acl_test.go",
+                           "sha256":  "54ad3302f95ce4fae8cace57a19353fcdfa3646a2248f0597c23e7e7c7771c2b"
+                       },
+                       {
+                           "path":  "cmd/han-server/append_only_acl_integration_test.go",
+                           "sha256":  "8a806c38a66299be47332b0756d345798645f3d10f9e62476ed2f99f7f55579c"
+                       },
+                       {
+                           "path":  "cmd/han-server/main.go",
+                           "sha256":  "68e91cfb0be866a4888950595955a4411db897dbab846a39c63e1fe154d982a7"
+                       },
+                       {
+                           "path":  "deploy/db/provision.sql",
+                           "sha256":  "0af8986f34458059ae2f1398f2f49932575d0b57419c6870d2a1bfb46f57ba05"
+                       },
+                       {
+                           "path":  "deploy/db/grant-application.sql",
+                           "sha256":  "95a93a58db98776ecbf33aec0f3ed14e338bb6663520e603152756fa5e2b3351"
+                       },
+                       {
+                           "path":  "deploy/db/README.md",
+                           "sha256":  "2f808751ceaa6800d5587a1013857404cfc66046b0916671ad18758ff1448f2f"
+                       }
+                   ],
+    "logs":  [
+                 {
+                     "path":  ".spec/wip/article-management/evidence-s1.5/acl-r01/run-01.log",
+                     "sha256":  "43813ca27ba47b60b2846271e1aad64ad3e6bf2d08673aaa208b7675d4954d82",
+                     "result":  "PASS",
+                     "purpose":  "real PostgreSQL 18.6 integration run of the ACL gate"
+                 },
+                 {
+                     "path":  ".spec/wip/article-management/evidence-s1.5/acl-r01/provision-probe-r01.log",
+                     "sha256":  "913dd6a5a0827f399831d727af3894528fb1fdeeb30c0c34844e21827e64fbe0",
+                     "result":  "PASS (transactional probe, rolled back)",
+                     "purpose":  "BEGIN; \\i deploy/db/provision.sql; ROLLBACK; with unique temporary role/schema names"
+                 }
+             ],
+    "retained_resources":  ".spec/wip/article-management/evidence-s1.5/acl-r01/retained-resources.ndjson",
+    "retained_resources_sha256":  "e5c035eed4d2f0b3dc4fbc0270c67251d9b5db46d268be3189fc884b6b6ee9c6",
+    "retained":  [
+                     "schema han_s15_acl_a1023308b90a9b3e",
+                     "role han_s15_mig_a1023308b90a9b3e",
+                     "role han_s15_app_a1023308b90a9b3e"
+                 ],
+    "defect_fixed":  {
+                         "file":  "deploy/db/provision.sql",
+                         "symptom":  "psql does not substitute :\u0027migrator_role\u0027 inside DO $$ ... $$ blocks; probe failed with syntax error at \":\" exit=3",
+                         "fix":  "replaced dollar-quoted DO blocks with SELECT format(\u0027CREATE ROLE %I\u0027, :\u0027...\u0027) WHERE NOT EXISTS (...) followed by \\gexec",
+                         "verification":  "re-executed inside BEGIN/ROLLBACK on PostgreSQL 18.6 with unique temporary names: exit=0, all steps succeeded, pg_roles/pg_namespace count 0 after rollback"
+                     },
+    "commands":  [
+                     "go build ./... (exit 0)",
+                     "go test ./cmd/han-server -count=1 (ok, 42.151s)",
+                     "go vet -tags=integration ./cmd/han-server (exit 0)",
+                     "go test -tags=integration ./cmd/han-server -run TestAppendOnlyACLGate -count=1 -v (PASS 3.081s)",
+                     "psql BEGIN; \\i deploy/db/provision.sql; ROLLBACK; (exit 0)"
+                 ],
+    "verified_boundaries":  "not verified: independent review, human sign-off, real deployment/CI, backup-restore drill, multi-node roles, superuser bypass on real cluster"
+}

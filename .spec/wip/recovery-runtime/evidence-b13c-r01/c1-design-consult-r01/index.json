@@ -1,0 +1,32 @@
+{
+  "scope": "c1-design-consult-r01",
+  "owner": {
+    "role": "Feature-Designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-article-c1-design-consult-eqzg4e3n",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-consult-r01/consult.md",
+      "sha256": "EA146C2D56650194ACDE0C81B4ABA30CD00AEF95614022966098FC94175BF75C",
+      "bytes": 14236,
+      "source_name": "consult.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-consult-r01/readset.json",
+      "sha256": "B240EFBF09088FF46058986C1BD2532309A8D14B3C4EB39798BF58CA3D69384D",
+      "bytes": 6339,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-consult-r01/receipt.md",
+      "sha256": "D3B783BA4E40716EBD095FE5007F4D4E5E540D1909584EFE0EF02A82B47A2733",
+      "bytes": 1115,
+      "source_name": "receipt.md"
+    }
+  ]
+}

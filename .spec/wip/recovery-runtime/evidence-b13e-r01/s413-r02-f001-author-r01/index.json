@@ -1,0 +1,2130 @@
+{
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Hooke",
+    "runtime_id": "01a189aa-4c16-7eb0-8dd6-fffaf4762cb1"
+  },
+  "source_temp": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\r02-f001-repair-r01\\packet",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/author-source-discovery.json",
+      "source_name": "author-source-discovery.json",
+      "bytes": 1148,
+      "sha256": "344C2BB4D7530117FF84E25A895D018DB742F5BC83DE40462759118AADA8DF18"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/candidate-pre-execution/internal/recovery/installation.go.frozen",
+      "source_name": "candidate-pre-execution/internal/recovery/installation.go",
+      "bytes": 16744,
+      "sha256": "AE6836E8FCA886DADBFF98E35BC26A055CE16D9F31933974C5F8179656C58D11"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/candidate-pre-execution/internal/recovery/installation_test.go.frozen",
+      "source_name": "candidate-pre-execution/internal/recovery/installation_test.go",
+      "bytes": 19449,
+      "sha256": "5C73981741096BEF9C4C8425F8B0957D2C94D9861CB1EC454C149771FB3E1F45"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/candidate-pre-execution/preflight-tests.fragment",
+      "source_name": "candidate-pre-execution/preflight-tests.fragment",
+      "bytes": 4403,
+      "sha256": "7DD381EB2EE205F9339E5C5FAACFDDFA7243766AA793EB10A9B4CD960860EFE8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/candidate-pre-execution/README.txt",
+      "source_name": "candidate-pre-execution/README.txt",
+      "bytes": 312,
+      "sha256": "2048F34DF8371E831C7BC44A432843BE17184F8D3B01560D32F8D2F530279FC2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/candidate-pre-execution/writer-preflight.diff",
+      "source_name": "candidate-pre-execution/writer-preflight.diff",
+      "bytes": 469,
+      "sha256": "4360C44FC35EE02516631DA0E99CCB7F2707EA6999F3D1F200934F64D1F388C9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/comment-refresh.json",
+      "source_name": "comment-refresh.json",
+      "bytes": 369,
+      "sha256": "C263F653DB9B33F83AB869DD73F50D1C5F75CFE099E11298E1EB2136F23592EC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/diagnostics/classification.json",
+      "source_name": "diagnostics/classification.json",
+      "bytes": 1841,
+      "sha256": "07BC413194587F0E82606075958EE8CE03399B6C1742FA7A99D45505DCE4DD57"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/entry-frozen23.json",
+      "source_name": "entry-frozen23.json",
+      "bytes": 6143,
+      "sha256": "17AE204B07F5B52132AC49308594BE7FAA00C91387E934FCFB6673C9BEA06F9F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/execution-config-at-start.json",
+      "source_name": "execution-config-at-start.json",
+      "bytes": 6393,
+      "sha256": "4B210170B7E7163A4052EC9E4F7FD44709DCDA2A8BB1E5765AFF44826D830C35"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/execution-start.json",
+      "source_name": "execution-start.json",
+      "bytes": 423,
+      "sha256": "1060CE9BE5E9B320EB862859F6CB69800EE143D6EE5F85FF0B6B3E091FD07BA0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/g0-and-plan.md",
+      "source_name": "g0-and-plan.md",
+      "bytes": 5897,
+      "sha256": "B4EC15EAFBB959631FEFFD55121795BB6B9C3792024D16187ADA4D9EC9BF81E8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/leaf-evidence.json",
+      "source_name": "leaf-evidence.json",
+      "bytes": 62304,
+      "sha256": "8AA0700A932ACB3E8A5E44A239F52E8417D3B071CCA53A9B46179AA8A2BF34A2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/lifecycle.json",
+      "source_name": "lifecycle.json",
+      "bytes": 17032,
+      "sha256": "54E990D57DA8F46C74CC25FC327BFA3EBC62BDBBE71AC5CD470404D0CBB3BB61"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/manifest.json",
+      "source_name": "manifest.json",
+      "bytes": 71415,
+      "sha256": "4B7578C9AE04166FD27AAA2BBD8FAFB6B145FC30D03D9D35A884395B1C39E9A7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/manifest.sha256",
+      "source_name": "manifest.sha256",
+      "bytes": 81,
+      "sha256": "C593CA66014D63B72281F7725C5B0624979E29DEC9AEC8F988BF204A4D43C9BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-1104881010/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-1104881010/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-117974405/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-117974405/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-1260992047/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-1260992047/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-1336822800/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-1336822800/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-1483048088/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-1483048088/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-1735145963/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-1735145963/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-1840894105/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-1840894105/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-1870533332/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-1870533332/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-2268757007/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-2268757007/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-2524744853/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-2524744853/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-2687848034/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-2687848034/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-2787668124/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-2787668124/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-3277854954/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-3277854954/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-3658180254/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-3658180254/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-3809024948/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-3809024948/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-4211439077/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-4211439077/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-497309877/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-497309877/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-approved-checkpoint-828723835/approved-original-publication.json",
+      "source_name": "media/s413-approved-checkpoint-828723835/approved-original-publication.json",
+      "bytes": 568,
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-deletion-media-1919482924/committed-synthetic-tombstone.json",
+      "source_name": "media/s413-deletion-media-1919482924/committed-synthetic-tombstone.json",
+      "bytes": 404,
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-deletion-media-2430836203/committed-synthetic-tombstone.json",
+      "source_name": "media/s413-deletion-media-2430836203/committed-synthetic-tombstone.json",
+      "bytes": 404,
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/media/s413-deletion-media-3449081801/committed-synthetic-tombstone.json",
+      "source_name": "media/s413-deletion-media-3449081801/committed-synthetic-tombstone.json",
+      "bytes": 404,
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/methods-reused.json",
+      "source_name": "methods-reused.json",
+      "bytes": 5273,
+      "sha256": "FBC326EE333CD890126CA7EF84EF0A9022CE2234FA921AF5F45DCB1CDBD847A6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/offline-inputs.json",
+      "source_name": "offline-inputs.json",
+      "bytes": 5214,
+      "sha256": "1B42B1626F66F9BDC297B901256E9A4306CF2BB4594226C5EC4D1AC6B8DEF29B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/old23-after.json",
+      "source_name": "old23-after.json",
+      "bytes": 4103,
+      "sha256": "448E9E0099D08EFD5ED66FF3BF89B597714DF31096E1B7EF8ED446585F22358B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/old23-before.json",
+      "source_name": "old23-before.json",
+      "bytes": 4103,
+      "sha256": "448E9E0099D08EFD5ED66FF3BF89B597714DF31096E1B7EF8ED446585F22358B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/anchored-normal-restart-pg.fragment.frozen",
+      "source_name": "probes/anchored-normal-restart-pg.fragment.frozen",
+      "bytes": 2525,
+      "sha256": "9EFC3A290B56C2243AEFF07F7E159011CCDE4C588105DA43EB9451C5967E3B71"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/bound-reader-kind.fragment.frozen",
+      "source_name": "probes/bound-reader-kind.fragment.frozen",
+      "bytes": 2673,
+      "sha256": "18E1DAE072910A1BE1D858FF2D7CA6847664D1F8EB6F11F90AF9105F842D741C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/final-version-provenance.json",
+      "source_name": "probes/final-version-provenance.json",
+      "bytes": 1791,
+      "sha256": "DC83377B7494AEB252D0BC9D5FE712747ABDA6371300A9217D31029277530DB4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/identity-current-prefix.go.frozen",
+      "source_name": "probes/identity-current-prefix.go.frozen",
+      "bytes": 36515,
+      "sha256": "4D302B2C55B0F773E079881F0203AD7CE8BAFDC471E422C67361AE382A913C39"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/miswired-writer.fragment.frozen",
+      "source_name": "probes/miswired-writer.fragment.frozen",
+      "bytes": 1742,
+      "sha256": "1539B1BD0E7F64CE03012A9613E78E7B877498C2231A35D613D818587EBB561D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/provenance.json",
+      "source_name": "probes/provenance.json",
+      "bytes": 1264,
+      "sha256": "8C3BC22FF8FC337693EDB3A85AC701786E06BD338DFCEF9C173A0713E6BD5992"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/recovery-before-comment-refresh.go.frozen",
+      "source_name": "probes/recovery-before-comment-refresh.go.frozen",
+      "bytes": 24035,
+      "sha256": "6A0E4737155B65D1DA3DB5C75DD710E900B6E0C2C64E22137E94A44C65528972"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/recovery-current-prefix.go.frozen",
+      "source_name": "probes/recovery-current-prefix.go.frozen",
+      "bytes": 24027,
+      "sha256": "808481ABAE3E796C77C4911CFA1DBAF72DFD2A7C9E85C665C556F36C6E2F5EFF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/probes/test-overlay.json",
+      "source_name": "probes/test-overlay.json",
+      "bytes": 438,
+      "sha256": "593C8E9E5B74087B8510078FC2A05F39D7AFE19D121CBE79273D57B4E4DD3721"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/command.json",
+      "source_name": "raw/corrected-source-probe-format/command.json",
+      "bytes": 3049,
+      "sha256": "F39477D5431FAB82BB4223A9F3E2BD63DD9A7DC87D551E9CB52EBA896CF1728E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/leaves.json",
+      "source_name": "raw/corrected-source-probe-format/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/result.json",
+      "source_name": "raw/corrected-source-probe-format/result.json",
+      "bytes": 6603,
+      "sha256": "6B156D9354A6A6A3F1123129B1B6A3C41746E5A3F594495089B93C15BAD005BA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-after/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-after/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-before/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/corrected-source-probe-format/source-before/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/stderr.log",
+      "source_name": "raw/corrected-source-probe-format/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/corrected-source-probe-format/stdout.log",
+      "source_name": "raw/corrected-source-probe-format/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/command.json",
+      "source_name": "raw/final-normal-regression/command.json",
+      "bytes": 3506,
+      "sha256": "8ADB5317E6D3B9E5421BB66C62DFF46A2C283F683CDF028D8EDAD0A0FB5A7126"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/leaves.json",
+      "source_name": "raw/final-normal-regression/leaves.json",
+      "bytes": 24706,
+      "sha256": "F2D0D18DB036128EB295D12A61F09969C126C3F2F67D925B50EC8B6907F1D6D2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/result.json",
+      "source_name": "raw/final-normal-regression/result.json",
+      "bytes": 7077,
+      "sha256": "39EA694639E2BEB4FB16F7772DE8D29345208FBB6FAB9B7C3649B7FC3BED456D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/final-normal-regression/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/final-normal-regression/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/final-normal-regression/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/final-normal-regression/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/final-normal-regression/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/final-normal-regression/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/final-normal-regression/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/final-normal-regression/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/final-normal-regression/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/final-normal-regression/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/stderr.log",
+      "source_name": "raw/final-normal-regression/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-normal-regression/stdout.log",
+      "source_name": "raw/final-normal-regression/stdout.log",
+      "bytes": 15348773,
+      "sha256": "C5924AC64E2E85F84E5E7E1DB016A0CF6BF8EC6289A21E81DA49A72FEFCADBBF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/command.json",
+      "source_name": "raw/final-race-regression/command.json",
+      "bytes": 3520,
+      "sha256": "F0C2D25CA1C792AF5700FDE86CE36A7DA3F6FEAE03DDBEEFC90627B30875AB59"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/leaves.json",
+      "source_name": "raw/final-race-regression/leaves.json",
+      "bytes": 24706,
+      "sha256": "0D620DA756342EFF3A6ED88B02E8E498A1A2C931FDACD79AAEF62293B51A5EC7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/result.json",
+      "source_name": "raw/final-race-regression/result.json",
+      "bytes": 7099,
+      "sha256": "5E8EF1838DEEDAA4DFC47D3542511394EA6CAACCA160EB14B085C794A676DBFF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/final-race-regression/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/final-race-regression/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/final-race-regression/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/final-race-regression/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/final-race-regression/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/final-race-regression/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/final-race-regression/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/final-race-regression/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/final-race-regression/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/final-race-regression/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/stderr.log",
+      "source_name": "raw/final-race-regression/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/final-race-regression/stdout.log",
+      "source_name": "raw/final-race-regression/stdout.log",
+      "bytes": 15349462,
+      "sha256": "4361CF158D1A23951F9AE884FE067670DEE96E0C6CB0BDC8052A21A823581E10"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/command.json",
+      "source_name": "raw/git-diff-check/command.json",
+      "bytes": 3017,
+      "sha256": "7053344345DFD499078AC0988862919343791863A90C841718FD2F78F149EDEC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/leaves.json",
+      "source_name": "raw/git-diff-check/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/result.json",
+      "source_name": "raw/git-diff-check/result.json",
+      "bytes": 6555,
+      "sha256": "C5B958A8893564FFD73C487D40FBEFA15B66394A626FC1207019CB9A649234D2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/git-diff-check/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/git-diff-check/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/git-diff-check/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/git-diff-check/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/git-diff-check/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/git-diff-check/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/git-diff-check/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/git-diff-check/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/git-diff-check/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/git-diff-check/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/stderr.log",
+      "source_name": "raw/git-diff-check/stderr.log",
+      "bytes": 2283,
+      "sha256": "B5EB9EB288CA9F4F10C81172E314C32DD0715AD57BA8DA664A0FE21213F6B736"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-check/stdout.log",
+      "source_name": "raw/git-diff-check/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/command.json",
+      "source_name": "raw/git-diff-stat/command.json",
+      "bytes": 3016,
+      "sha256": "13874D0FDFD0440E6654BC324BA7B3CED4EA023AB6EA04834FBD40072EDB1454"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/leaves.json",
+      "source_name": "raw/git-diff-stat/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/result.json",
+      "source_name": "raw/git-diff-stat/result.json",
+      "bytes": 6538,
+      "sha256": "163E86E4AAB8247373164AAF0ED796DBB6229306E9E1F1324B4E2DB247AB64F1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/git-diff-stat/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/git-diff-stat/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/git-diff-stat/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/git-diff-stat/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/git-diff-stat/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/git-diff-stat/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/git-diff-stat/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/git-diff-stat/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/git-diff-stat/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/git-diff-stat/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/stderr.log",
+      "source_name": "raw/git-diff-stat/stderr.log",
+      "bytes": 2283,
+      "sha256": "B5EB9EB288CA9F4F10C81172E314C32DD0715AD57BA8DA664A0FE21213F6B736"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-diff-stat/stdout.log",
+      "source_name": "raw/git-diff-stat/stdout.log",
+      "bytes": 1173,
+      "sha256": "7149D6C5B143A56DF64304707854A2F382BDA54BADEA265FF826CF02A23CE340"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/command.json",
+      "source_name": "raw/git-status/command.json",
+      "bytes": 3019,
+      "sha256": "BF8F0D80BDC7BC594DDD1C2CD704EE7D5EEAE018E427BF5121BC5E2A6FC75908"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/leaves.json",
+      "source_name": "raw/git-status/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/result.json",
+      "source_name": "raw/git-status/result.json",
+      "bytes": 6535,
+      "sha256": "11AC8B7388AF9687F0EB06A8CFFBC1CFCBEE3B0704FE938BFA9F1B2B69A0866A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/git-status/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/git-status/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/git-status/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/git-status/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/git-status/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/git-status/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/git-status/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/git-status/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/git-status/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/git-status/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/stderr.log",
+      "source_name": "raw/git-status/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/git-status/stdout.log",
+      "source_name": "raw/git-status/stdout.log",
+      "bytes": 15967,
+      "sha256": "CA8001DF9B7948E6E5FDB6FA114245255102840907CABED450895104E2236025"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/command.json",
+      "source_name": "raw/local-build/command.json",
+      "bytes": 3068,
+      "sha256": "B59BF307C81AA92E0A984AFDD669A4F5767B27ECE9E39717663391C1E2524ECE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/leaves.json",
+      "source_name": "raw/local-build/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/result.json",
+      "source_name": "raw/local-build/result.json",
+      "bytes": 6600,
+      "sha256": "4969FEEE80C95CD2AFF2DBC49CC188AD72E8B7CA4FCCE48688C33D8EE57F97D7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/local-build/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/local-build/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/local-build/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/local-build/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/local-build/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/local-build/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/local-build/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/local-build/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/local-build/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/local-build/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/stderr.log",
+      "source_name": "raw/local-build/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-build/stdout.log",
+      "source_name": "raw/local-build/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/command.json",
+      "source_name": "raw/local-vet/command.json",
+      "bytes": 3092,
+      "sha256": "B6FDE67D172B2A3D3CF8787ADD809083B776A528964586B094A5003F3698EDD3"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/leaves.json",
+      "source_name": "raw/local-vet/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/result.json",
+      "source_name": "raw/local-vet/result.json",
+      "bytes": 6619,
+      "sha256": "A28AEFC557E41F4D1A60F9ACE13F1725BCB334E35F387E183CEF699A62981A60"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/local-vet/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/local-vet/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/local-vet/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/local-vet/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/local-vet/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/local-vet/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/local-vet/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/local-vet/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/local-vet/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/local-vet/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/stderr.log",
+      "source_name": "raw/local-vet/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/local-vet/stdout.log",
+      "source_name": "raw/local-vet/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/command.json",
+      "source_name": "raw/owned-format-check/command.json",
+      "bytes": 3263,
+      "sha256": "9CB2CCD48B882BF3C552488503759CE2360EC0F376E40090DF02DC996156210E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/leaves.json",
+      "source_name": "raw/owned-format-check/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/result.json",
+      "source_name": "raw/owned-format-check/result.json",
+      "bytes": 6795,
+      "sha256": "FD4BC5DD34F6297F556D946067A7C9D2BE1791C3D33449F492F090AD56E3CF8D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/owned-format-check/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/owned-format-check/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/owned-format-check/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/owned-format-check/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/owned-format-check/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/owned-format-check/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/owned-format-check/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/owned-format-check/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/owned-format-check/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/owned-format-check/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/stderr.log",
+      "source_name": "raw/owned-format-check/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/owned-format-check/stdout.log",
+      "source_name": "raw/owned-format-check/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/command.json",
+      "source_name": "raw/physical-own75/command.json",
+      "bytes": 3307,
+      "sha256": "821E5022DD2DAB6E1F0C8F79255879F52B082C812FCA0B0DB730DBD986147AA1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/leaves.json",
+      "source_name": "raw/physical-own75/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/result.json",
+      "source_name": "raw/physical-own75/result.json",
+      "bytes": 6845,
+      "sha256": "51129BD8E099E026EBAE95F2F894CD377054868B88FC0634A6E8E5337767AF00"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/physical-own75/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/physical-own75/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/physical-own75/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/physical-own75/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/physical-own75/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/physical-own75/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/physical-own75/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/physical-own75/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/physical-own75/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/physical-own75/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/stderr.log",
+      "source_name": "raw/physical-own75/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/physical-own75/stdout.log",
+      "source_name": "raw/physical-own75/stdout.log",
+      "bytes": 67017,
+      "sha256": "6B6A7D9AA721DB95A5602BB6516C6D5511E137BDA51F81C7E2E58A8A8B5BC1E9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/command.json",
+      "source_name": "raw/preflight-behavior-green/command.json",
+      "bytes": 3253,
+      "sha256": "F32B17888BB496AF60AFF36DA38436BBF6638835D8880307AF769C259CC144F9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/leaves.json",
+      "source_name": "raw/preflight-behavior-green/leaves.json",
+      "bytes": 953,
+      "sha256": "6F15C107E08339A4A9299FA5647E85AA3C732CF2BF5ECC580C212029BBCE7733"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/result.json",
+      "source_name": "raw/preflight-behavior-green/result.json",
+      "bytes": 6812,
+      "sha256": "B77E117432B1C306A05130E1FE1E29221EC2508365D2AD216B266BEB8FD12386"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-after/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-green/source-before/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/stderr.log",
+      "source_name": "raw/preflight-behavior-green/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-green/stdout.log",
+      "source_name": "raw/preflight-behavior-green/stdout.log",
+      "bytes": 12512,
+      "sha256": "A608DBF7CFEA4916A00EC7140FA05ADF91D0CBF9A96C40FBD4EE47E2506E3CE7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/command.json",
+      "source_name": "raw/preflight-behavior-red/command.json",
+      "bytes": 3253,
+      "sha256": "EA8E45BF4BC56782F29B546935A9E61E73BB750F641851367F8045ADB98A8193"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/leaves.json",
+      "source_name": "raw/preflight-behavior-red/leaves.json",
+      "bytes": 953,
+      "sha256": "61143CA548479A14A93AC8BD77B5462C5509F07F3270A68596748BABB009F46B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/result.json",
+      "source_name": "raw/preflight-behavior-red/result.json",
+      "bytes": 6822,
+      "sha256": "0033F5A84551376CB9E205ACC26CFAF20771E62E0D0473A14B2F10AA7D9AA62B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-after/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-after/internal/recovery/installation_test.go",
+      "bytes": 19048,
+      "sha256": "286D67ADEF63543377CF2748CD0268C6AEC2A5626869C3FE81F9180BE6B6B700"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-before/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-behavior-red/source-before/internal/recovery/installation_test.go",
+      "bytes": 19048,
+      "sha256": "286D67ADEF63543377CF2748CD0268C6AEC2A5626869C3FE81F9180BE6B6B700"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/stderr.log",
+      "source_name": "raw/preflight-behavior-red/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-behavior-red/stdout.log",
+      "source_name": "raw/preflight-behavior-red/stdout.log",
+      "bytes": 13573,
+      "sha256": "B9D653CBC6674415FCFAADFF3DC581E3F75A673AD6841F24AA50506FDF684F15"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/command.json",
+      "source_name": "raw/preflight-normal-regression/command.json",
+      "bytes": 3506,
+      "sha256": "EE682FC98220FBCE50853DF66238F15EBF12AF037FC8DA3DCAF5D8821C8C771A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/leaves.json",
+      "source_name": "raw/preflight-normal-regression/leaves.json",
+      "bytes": 24706,
+      "sha256": "759318B50B0084C86776C88F0C303E5D06816A50311B98267221BD17A6E6BF6C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/result.json",
+      "source_name": "raw/preflight-normal-regression/result.json",
+      "bytes": 7097,
+      "sha256": "B680AFE33CE56E233E1D5BC7AECF42F36273E664D86C3AC9C040BA070AE892FC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-after/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-normal-regression/source-before/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/stderr.log",
+      "source_name": "raw/preflight-normal-regression/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-normal-regression/stdout.log",
+      "source_name": "raw/preflight-normal-regression/stdout.log",
+      "bytes": 15350204,
+      "sha256": "20671766F3026B893D4621BB6DFB0793B5366BECB7CAB6489A3E0F43C96E3DEB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/command.json",
+      "source_name": "raw/preflight-repair-format/command.json",
+      "bytes": 3091,
+      "sha256": "F6278B1E63B416FB4138C8C96DD92D6B1919B7392CBE3F9234765673EC60C6CA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/leaves.json",
+      "source_name": "raw/preflight-repair-format/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/result.json",
+      "source_name": "raw/preflight-repair-format/result.json",
+      "bytes": 6632,
+      "sha256": "0B88D55E7AE4C1545E78B04F7D143AD8B92EC0454BA9F2008D7F30710C754336"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-after/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/preflight-repair-format/source-before/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/stderr.log",
+      "source_name": "raw/preflight-repair-format/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/preflight-repair-format/stdout.log",
+      "source_name": "raw/preflight-repair-format/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/command.json",
+      "source_name": "raw/red-test-format/command.json",
+      "bytes": 3049,
+      "sha256": "C3AC1450DB7738B3A331A810BAF43E76E002CC0265F96546D21790A72D8AB8FA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/leaves.json",
+      "source_name": "raw/red-test-format/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/result.json",
+      "source_name": "raw/red-test-format/result.json",
+      "bytes": 6557,
+      "sha256": "5827D32E26C150115F3423F34A5A91A40F8FE7852831EE3A53226E23CB0C0D02"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/red-test-format/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/red-test-format/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/red-test-format/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/red-test-format/source-after/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/red-test-format/source-after/internal/recovery/installation_test.go",
+      "bytes": 19048,
+      "sha256": "286D67ADEF63543377CF2748CD0268C6AEC2A5626869C3FE81F9180BE6B6B700"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/red-test-format/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/red-test-format/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/red-test-format/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/red-test-format/source-before/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/red-test-format/source-before/internal/recovery/installation_test.go",
+      "bytes": 19449,
+      "sha256": "5C73981741096BEF9C4C8425F8B0957D2C94D9861CB1EC454C149771FB3E1F45"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/stderr.log",
+      "source_name": "raw/red-test-format/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/red-test-format/stdout.log",
+      "source_name": "raw/red-test-format/stdout.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/command.json",
+      "source_name": "raw/retained-old23-format/command.json",
+      "bytes": 5582,
+      "sha256": "8A2D3BEA61102B1205DC585C140E3F70DA9AB58927A51AEB160D910229C638B6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/leaves.json",
+      "source_name": "raw/retained-old23-format/leaves.json",
+      "bytes": 61,
+      "sha256": "0F5A6CA8BD31BF72BEA86B4556060C443E7A23136ACD9344B96B2F500891FF37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/result.json",
+      "source_name": "raw/retained-old23-format/result.json",
+      "bytes": 9134,
+      "sha256": "07100ECF35656927940CF6A2B28B88735E4C11E11FFEF7BD95919C4E3F056E7E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/retained-old23-format/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/retained-old23-format/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/retained-old23-format/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/retained-old23-format/source-after/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/retained-old23-format/source-after/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/retained-old23-format/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/retained-old23-format/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/retained-old23-format/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/retained-old23-format/source-before/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/retained-old23-format/source-before/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/stderr.log",
+      "source_name": "raw/retained-old23-format/stderr.log",
+      "bytes": 1133,
+      "sha256": "A397798143B82E9EF9E4D37FB542160E6F0AFDB3462470FF5692D50326D38298"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/retained-old23-format/stdout.log",
+      "source_name": "raw/retained-old23-format/stdout.log",
+      "bytes": 1631,
+      "sha256": "E1B029C90283F634079F5053DC12EC3523B3E68116B87609A60C72F1572BC286"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/command.json",
+      "source_name": "raw/source-behavior-red-correct-boundary/command.json",
+      "bytes": 3229,
+      "sha256": "ED8A426AED287C39F00AD88CA98B2F0BA432410E8923B4460FFD67E5F192975D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/leaves.json",
+      "source_name": "raw/source-behavior-red-correct-boundary/leaves.json",
+      "bytes": 196,
+      "sha256": "232319483F579E02ECF883F943DDF950C1636924ECC76EB54C678A0A9F85CB8E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/result.json",
+      "source_name": "raw/source-behavior-red-correct-boundary/result.json",
+      "bytes": 6812,
+      "sha256": "71A916691EE958705A3F5810D6320EB38C90506D1DBCE1978DE496AAB1F6072C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-after/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-after/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-after/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-after/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-after/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-after/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-after/internal/recovery/installation.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-after/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-after/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-after/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-before/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "raw/source-behavior-red-correct-boundary/source-before/internal/recovery/installation_test.go",
+      "bytes": 19618,
+      "sha256": "30AA48E04B065631DA6DE7C17F888FE8F51E62C2B197B1DFBAC9D0A3E634EA1C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/stderr.log",
+      "source_name": "raw/source-behavior-red-correct-boundary/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/raw/source-behavior-red-correct-boundary/stdout.log",
+      "source_name": "raw/source-behavior-red-correct-boundary/stdout.log",
+      "bytes": 3923,
+      "sha256": "342BF852BF77B97A3B0CBD2B91487F0E0E3DBC2980B79F1420FA957EAB3B4480"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/README-packet.txt",
+      "source_name": "README-packet.txt",
+      "bytes": 655,
+      "sha256": "1551C4BCF606738309A6D14F857FDB375FEAB45D4EF8DA1FA3CCE26DAFB06D3D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/readset.json",
+      "source_name": "readset.json",
+      "bytes": 1697,
+      "sha256": "C6C6C83AF0337FF5926A72ED2124FEC0AB0A9B808EE3604241A4594AB488A0AC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/release.json",
+      "source_name": "release.json",
+      "bytes": 2793,
+      "sha256": "3C3F8A4654EF2F8E316539A546FC446D6EB549114AA9F99ED87CC517BF72679A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/report.md",
+      "source_name": "report.md",
+      "bytes": 11669,
+      "sha256": "6E5B4E1534269B5EEC6FE3F8902CEA08931ABB68FA42665ECEEA9A95DE0AD13D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/actual-leaf-evidence.json",
+      "source_name": "review-input/actual-leaf-evidence.json",
+      "bytes": 27249,
+      "sha256": "54438D5DAB16E2A9B5D1E03A9E514E673FC55C4E58A9145B5E1549AB72EE0055"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-normal/command.json",
+      "source_name": "review-input/checks/writer-normal/command.json",
+      "bytes": 3389,
+      "sha256": "A102123F9A581E3171179C81E64818375EF4AAE02432F5F507110D86A9E6B948"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-normal/result.json",
+      "source_name": "review-input/checks/writer-normal/result.json",
+      "bytes": 4131,
+      "sha256": "E0ECCC29B3107F12C0AD4C58E7AF491D6EC91230848769F0B4B4A3CB3BE00801"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-normal/running.json",
+      "source_name": "review-input/checks/writer-normal/running.json",
+      "bytes": 71,
+      "sha256": "2FB2F6C2487565D10BAFF2917CBE59D23572DDBA0EFBBC68A17BFF59E0314260"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-normal/stderr.log",
+      "source_name": "review-input/checks/writer-normal/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-normal/stdout.log",
+      "source_name": "review-input/checks/writer-normal/stdout.log",
+      "bytes": 1932,
+      "sha256": "09BB68419566B3E99531A7D5BB2CB6C92762F03B7DF6950422FD905EEFD136C5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-race/command.json",
+      "source_name": "review-input/checks/writer-race/command.json",
+      "bytes": 3403,
+      "sha256": "097ECAA897C1F006CDC83B9BCF876C6145CA12E4A8420E7F02F234DD002D86D5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-race/result.json",
+      "source_name": "review-input/checks/writer-race/result.json",
+      "bytes": 4139,
+      "sha256": "A115B2BBACBD46775023C73942D1C322BCDC7A376B4B8C719DB048DD87830F0C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-race/running.json",
+      "source_name": "review-input/checks/writer-race/running.json",
+      "bytes": 71,
+      "sha256": "FCAAD57068AF93CFD0FDFD9A9DE9366D2B830CFCBBD3F6349EC68377BFB502B1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-race/stderr.log",
+      "source_name": "review-input/checks/writer-race/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/checks/writer-race/stdout.log",
+      "source_name": "review-input/checks/writer-race/stdout.log",
+      "bytes": 1935,
+      "sha256": "F12E2EBDC01B49E11FB0BDF8A7CBF66E4D40611AB23704271805D5C87D20DF7C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/f001-independent-recheck.json",
+      "source_name": "review-input/f001-independent-recheck.json",
+      "bytes": 2286,
+      "sha256": "3B798BBA7C670C48D866DB1169DCD8E749A8A45D039CA910A119C232035083FE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/finding-receipt.json",
+      "source_name": "review-input/finding-receipt.json",
+      "bytes": 7292,
+      "sha256": "F92BA16124A873CFA08B9A252DE37ECA457E9DC917A55A7FAB6717035C2E9470"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/local-pg-release.json",
+      "source_name": "review-input/local-pg-release.json",
+      "bytes": 1036,
+      "sha256": "18ECCD5D0017E321C6FB20044BF87DD7AA7BDAE5CD201F54F75369C829F20CD3"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/probes/miswired-writer.fragment.frozen",
+      "source_name": "review-input/probes/miswired-writer.fragment.frozen",
+      "bytes": 1742,
+      "sha256": "1539B1BD0E7F64CE03012A9613E78E7B877498C2231A35D613D818587EBB561D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/probes/source-missing-not-fresh.fragment.frozen",
+      "source_name": "review-input/probes/source-missing-not-fresh.fragment.frozen",
+      "bytes": 1715,
+      "sha256": "D82CE7344DF5899EBFEFF3E455DBD3BD55E76B46BAC7C5FE0FFE1A814B14CD7F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/review-input/report.md",
+      "source_name": "review-input/report.md",
+      "bytes": 10801,
+      "sha256": "FE842830C5734780011F8FBFF255888518060F6A4A8D93696A5CDDA7D068D6FE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/runner/check_old23.py",
+      "source_name": "runner/check_old23.py",
+      "bytes": 249,
+      "sha256": "E9CEA640E1AB610FCBE4C6D1FD22507D7E35BB6BAD455ACD10CBF276C2BBE3D4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/runner/execution-layout.json",
+      "source_name": "runner/execution-layout.json",
+      "bytes": 654,
+      "sha256": "8B53383B6F8A4E4A93F9E3C1D6F6C0906D7125C2448A9F27E5F2DCC0CDDAB78E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/runner/owned_windows.py",
+      "source_name": "runner/owned_windows.py",
+      "bytes": 10211,
+      "sha256": "6FD58BE2B28FDDDB47EC3F2F534EAFDAF7EE2CB5C4EC54772D18C357EE1085BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/runner/README.txt",
+      "source_name": "runner/README.txt",
+      "bytes": 379,
+      "sha256": "3C5A4DC2090D7DBC2BB0CCD7E23C676900C756F880946E4AAF1132C3347D1822"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/runner/run.py",
+      "source_name": "runner/run.py",
+      "bytes": 5204,
+      "sha256": "9A51F27FC34379F24687A2A1E1840EB9B8121C6DF6ECD6903549008061D37478"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/runner-provenance.json",
+      "source_name": "runner-provenance.json",
+      "bytes": 624,
+      "sha256": "A1ED055AC4D265FA9255A472CFA14EF1768F6FFE5FA945C1DCF72BD3A9E93E31"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/schemas/names.json",
+      "source_name": "schemas/names.json",
+      "bytes": 3080,
+      "sha256": "AE103E9B09B0638CB8504F0B7506A24EEE91E080808F8A5D47EDA5EF7533C2D8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/schemas/physical-receipt.json",
+      "source_name": "schemas/physical-receipt.json",
+      "bytes": 90785,
+      "sha256": "6143D23BA92AAB1A8C2747EB06211AD90ECB37F6FEFE0658C561092C7CC32C94"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/schemas/physical.sql",
+      "source_name": "schemas/physical.sql",
+      "bytes": 56830,
+      "sha256": "423565D4DBC07043391F152AAC57A0B3138FE4452A5AB01B91E8FD85479B994D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/schemas/schema-case-map.json",
+      "source_name": "schemas/schema-case-map.json",
+      "bytes": 18483,
+      "sha256": "EB368D9CEA6FB9E2ACD897778549615E21897402708FDC49C673EB13F7BE89CB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/self-check.json",
+      "source_name": "self-check.json",
+      "bytes": 2220,
+      "sha256": "2EF3081CC78C678BC1CAA237ACD317A7A8033B57E08AE418704507B76B91F564"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source/internal/identity/recovery_installation.go.frozen",
+      "source_name": "source/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "source/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "source/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source/internal/recovery/installation.go.frozen",
+      "source_name": "source/internal/recovery/installation.go",
+      "bytes": 16721,
+      "sha256": "E74B5ECAAA17F8B16868DD59212E564F89C4B4CDE0AA0C781754EA94CACEB10D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source/internal/recovery/installation_test.go.frozen",
+      "source_name": "source/internal/recovery/installation_test.go",
+      "bytes": 19610,
+      "sha256": "E550AAAD2C441F78058634D6B41BFB1F9A37A10E91B234DDD78BBB3058D11D2C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source-before/internal/identity/recovery_installation.go.frozen",
+      "source_name": "source-before/internal/identity/recovery_installation.go",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source-before/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "source-before/internal/identity/recovery_installation_postgres_test.go",
+      "bytes": 33989,
+      "sha256": "17076C884D39476EAD22F511CD328A2D753522AC0C6AE0EE55BE2C317542476E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source-before/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "source-before/internal/identity/recovery_installation_test.go",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source-before/internal/recovery/installation.go.frozen",
+      "source_name": "source-before/internal/recovery/installation.go",
+      "bytes": 16219,
+      "sha256": "FA63684B6677E27010C9F7C8D6156D007BE62BF8A4D26303E0DCA56F25BB1BFA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source-before/internal/recovery/installation_test.go.frozen",
+      "source_name": "source-before/internal/recovery/installation_test.go",
+      "bytes": 14456,
+      "sha256": "10CC71B4902C7329C679504F75E2500738E69C1EE63BDE2C69048FDDD2AA0889"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source-freeze-candidate.json",
+      "source_name": "source-freeze-candidate.json",
+      "bytes": 1046,
+      "sha256": "526498BD5DBE6D60D36FA1E09EF2160D0BEC044ED0A9D9423FF1401984140FB5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/source.diff",
+      "source_name": "source.diff",
+      "bytes": 8791,
+      "sha256": "E925050E6FAD14747F00B0D0389099656EFC7D0263C0229E1ED12D61DF7AEC37"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/start.json",
+      "source_name": "start.json",
+      "bytes": 6760,
+      "sha256": "D2C6F13FEEDD7F70372BA9581DC2AAB6658F15A42CFB5B9A237B5E27CD9B4AC8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/tool-availability.json",
+      "source_name": "tool-availability.json",
+      "bytes": 216,
+      "sha256": "F7BC5C147AC5685F6297F9B7B3E06BA53BF272417BA9F41743496B231582CF27"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/validation-summary.json",
+      "source_name": "validation-summary.json",
+      "bytes": 1080,
+      "sha256": "78F86C63E28DAD2049F8AA5D396F4F4DEEE01EFEBDB2DCD8DF3EBE3EF494D2C2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-r02-f001-author-r01/working-source.diff",
+      "source_name": "working-source.diff",
+      "bytes": 8799,
+      "sha256": "7D6AF14E65FA424926C4E6350A4E6EB37100AA53BCDBC665E026177FD34D10C7"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

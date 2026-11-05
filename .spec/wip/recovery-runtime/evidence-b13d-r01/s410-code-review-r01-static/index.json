@@ -1,0 +1,145 @@
+{
+  "scope": "s410-code-review-r01-static",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Confucius",
+    "runtime_id": "01a1890f-a330-73d1-86fb-236777c54751"
+  },
+  "source_temp": "D:\\Temp\\han-s410-independent-static-5d1681d69580",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/author-evidence-static-audit.json",
+      "sha256": "8CD3606FD7BEE07A81EDDBFC3BAC490509D72D16094570B6425899A9D4C1AA81",
+      "bytes": 46767,
+      "source_name": "author-evidence-static-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/author-manifest-hashes.json",
+      "sha256": "ED69FE7B73D5E69EDD3CC54C1B9BAF51035A696BE8250D805292BC0E043894F7",
+      "bytes": 263459,
+      "source_name": "author-manifest-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/coverage-two-rounds.md",
+      "sha256": "FB3403B46D2BA80AEAC6A754CE50C4FBA00BA4782D0BFF7AADE12ABBB5D50EC7",
+      "bytes": 4125,
+      "source_name": "coverage-two-rounds.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/diff-reconstruction.json",
+      "sha256": "79A4B1AE80D16B07F6DF7D8587F292CBFA7913FD7B4E5866B76289BCB3D02292",
+      "bytes": 865,
+      "source_name": "diff-reconstruction.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/execution-plan.json",
+      "sha256": "5B0E427B6ADB1A77E6BC4AE306E53EC81560756F777D97B747DEA69699F01315",
+      "bytes": 6651,
+      "source_name": "execution-plan.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/frozen24-static-check.json",
+      "sha256": "45ABF9B277A98369BFF3F27A736439412D0DC448FE7094F8EE382BE68F93C69E",
+      "bytes": 6761,
+      "source_name": "frozen24-static-check.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/fullread-coverage.json",
+      "sha256": "194DB71F0ECA15517F4FC35BB06ED00BB78B6227509C222F6DB4FB5A4D1E9E37",
+      "bytes": 580,
+      "source_name": "fullread-coverage.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/methods-readset.json",
+      "sha256": "49249027886311787657CA413F1CD9F1B93E72FD2E71B0447F6DD8BCBCF6C9AB",
+      "bytes": 6410,
+      "source_name": "methods-readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/NOTRUN.md",
+      "sha256": "FBC7A9B3FB8355D7B478887B9EBF349982E5697697BEDA24CD740985D29344C4",
+      "bytes": 749,
+      "source_name": "NOTRUN.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/packet-manifest.json",
+      "sha256": "D0420480FE6FEFBCF87520336131CCE826F960CD55C8026ACE4E6D0E239D0CDD",
+      "bytes": 3395,
+      "source_name": "packet-manifest.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/packet-manifest.sha256",
+      "sha256": "C959E16101636E075DEFC53C104DAE8AAEE27E9580FD9F6D2F13D8B2F96C188D",
+      "bytes": 88,
+      "source_name": "packet-manifest.sha256"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/prepared-tests/recovery_execution_postgres_test.go.frozen",
+      "sha256": "60A932E087364F77DB2FA237904B5333214F0187BB6995C20952953E809FC96C",
+      "bytes": 89340,
+      "source_name": "prepared-tests/recovery_execution_postgres_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/prepared-tests/recovery_execution_test.go.frozen",
+      "sha256": "E51D1B82BC7E510A3DAB944C2CA16B85BFB49B132ED28AF12EED45EF596BE9CC",
+      "bytes": 45209,
+      "source_name": "prepared-tests/recovery_execution_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/prepared-tests-preservation.json",
+      "sha256": "B5715AD71302140D35556256035D19C008906987BA29C8034C9FF449C327D2D6",
+      "bytes": 943,
+      "source_name": "prepared-tests-preservation.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/probe-append.go.txt",
+      "sha256": "A469F5FF5295301FE5C7B14C64141FBA275C4148F9980614E50F83E2371684A7",
+      "bytes": 9781,
+      "source_name": "probe-append.go.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/read.py",
+      "sha256": "C8A0364658226BB461755F6F0EDC62DD763351CDBE87D713824C049D8A4523DA",
+      "bytes": 738,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/readset.jsonl",
+      "sha256": "14C458561624FCEF675C151462183AE54448497C6A72D34790E02334E6E88D65",
+      "bytes": 16037,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/receipt.json",
+      "sha256": "B8498403571B3032180A2AB95FADEBEFA1FC89A94257BC0A3654FC7BD45A1895",
+      "bytes": 2652,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/receipt.md",
+      "sha256": "BAAE2DF06A9DE0CFD699AA8E9477B4E9F584904C8025CD963E83049F31B921E6",
+      "bytes": 1902,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/report.md",
+      "sha256": "764EAC8087262E3352CD364291E5AC25E3ED49D9B841AAB2820359A379242FAE",
+      "bytes": 12195,
+      "source_name": "report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/source-sha.json",
+      "sha256": "050D9EFF6E1FB00E0B8226030EAB1800E5781FC7005724DC64B210328714DC7D",
+      "bytes": 763,
+      "source_name": "source-sha.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-code-review-r01-static/test-only-overlay.json",
+      "sha256": "B6A51DA1E421ED885B698D95D1D5ACF72C170F4C09BD1CEFEE5A8020988DEAEC",
+      "bytes": 406,
+      "source_name": "test-only-overlay.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

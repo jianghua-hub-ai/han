@@ -1,0 +1,55 @@
+{
+  "scope": "author-r02",
+  "agent": {
+    "role": "add-test-engineer",
+    "nickname": "Jason",
+    "id": "01a18395-a83b-7512-b7d1-824b073ab907"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-tp-f001-jason-5011d3aa403f4e8fa1e0459192109a32",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/author-r02/article-test-plan.before.md",
+      "sha256": "338F35D12D002B96536DD8017949C326CE49EE7C851883E179815509511A794D",
+      "bytes": 303940,
+      "source_name": "article-test-plan.before.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/author-r02/article-test-plan.diff",
+      "sha256": "0D6EFA6185C8B800C7C7800EB2B7E0CEE3D9FDA35D2AC5F587FC6C72682A974A",
+      "bytes": 2566,
+      "source_name": "article-test-plan.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/author-r02/source-index.json",
+      "sha256": "987009206A7E5D2B7D84D2D32A1906BB40FEA96FAFE286BC64B2F64F9830C5CD",
+      "bytes": 862,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/author-r02/readset.json",
+      "sha256": "EF6C35F53C56DDD8F698728EB4E300DC1EAA138003FB812B37BAF156DE271D9B",
+      "bytes": 3731,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/author-r02/receipt.json",
+      "sha256": "32D1A891AAD74C53788D091F92DEEF8EEE90C1E91FE1688C26E87F20E0E16D16",
+      "bytes": 1771,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/author-r02/repair.py",
+      "sha256": "1BB3B13793839F74EC9E1C17C8E4732184E3D204111411A9A47AF8956DB6CC1A",
+      "bytes": 8050,
+      "source_name": "repair.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/author-r02/verification.json",
+      "sha256": "C6F25F95F926514080A84779494429D8423489CC0FCD88681B386C755FCA9872",
+      "bytes": 2698,
+      "source_name": "verification.json"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "task": "article-management-S4.4",
+  "index_revision": "r03",
+  "previous_index_sha256": "5e6e0a30adad51154681375135c4a563ddb40cc191660f06643f50ae71799f5d",
+  "revision_note": "r03 records that the test file changed after this bundle was produced (shared-harness publication ports were added under harness-publication-r01) and marks this bundle as superseded for the test-file hash only. All run logs in this bundle still describe the code as it was at r01 delivery time. r02 corrected review minor-03/minor-04. Evidence files are unchanged by r02/r03.",
+  "test_file": {
+    "path": "test/integration/recovery/old_backup_restore_test.go",
+    "sha256": "e0c202f25a11a7584e43b734a1bd7fe7a73ca9da113795ce08ea666c92ae61da",
+    "lines": 385,
+    "at_delivery_time": {
+      "sha256": "dff24362ab58af8e2532957c67f2f763674ae282d502e14ca278990bf5f3763c",
+      "lines": 394,
+      "note": "hash recorded by old-backup-r01 run logs; the four subtest assertions are unchanged since, only the 0011 migration call was replaced by the shared idempotent helper"
+    },
+    "line_count_discrepancy": "the fixing agent reported 350 lines; Lead measured 385 with ReadAllLines. 385 is authoritative."
+  },
+  "superseded_for_current_tree": {
+    "path": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/index.json",
+    "sha256": "4e3d54c14df20e32aa9270e5d6b7231f619e3450ef7275642fac41f8cfeb582c",
+    "note": "authoritative evidence for the current working tree: shared harness now configures publication ports; TestArticleReplayPostgres 16/16, TestArticleReplayEvidencePostgres 3/3, TestOldBackupRestore 4/4 all PASS"
+  },
+  "final_log": {
+    "path": ".spec/wip/article-management/evidence-s4.4/old-backup-r01/run-02.log",
+    "sha256": "337db5b4f20934c751661b41314959744231cec1ba314a53ea777c04dce11d9c",
+    "result": "PASS 4/4",
+    "run": "run-02",
+    "duplicate_copies": [
+      {
+        "path": ".spec/wip/article-management/evidence-s4.4/old-backup-r01/run-01.log",
+        "sha256": "337db5b4f20934c751661b41314959744231cec1ba314a53ea777c04dce11d9c",
+        "note": "byte-identical copy of run-02.log; not an independent run"
+      }
+    ]
+  },
+  "attempt_logs": [
+    {
+      "path": ".spec/wip/article-management/evidence-s4.4/old-backup-r01/run-01.attempt1.log",
+      "sha256": "1f24f8768c03df343208f2cf91a79e165d3d2437d7d60c1625b94b3f1844b0eb",
+      "result": "FAIL 2/4",
+      "note": "pre-fix attempt; first durable Ready produced no evidence row"
+    },
+    {
+      "path": ".spec/wip/article-management/evidence-s4.4/old-backup-r01/run-02.log",
+      "sha256": "337db5b4f20934c751661b41314959744231cec1ba314a53ea777c04dce11d9c",
+      "result": "PASS 4/4",
+      "note": "publication ports configured inside the new test file only (superseded by the shared harness change)"
+    }
+  ],
+  "lead_verification": {
+    "path": ".spec/wip/article-management/evidence-s4.4/old-backup-r01/lead-verify-r01.log",
+    "sha256": "dccdb5aa0261f0774af88b1a7655ee81306e1124af43d877bad77e2b722707e4",
+    "result": "PASS 4/4",
+    "run": "lead-verify-r01",
+    "note": "Lead independent rerun on the r02 tree"
+  },
+  "retained_resources": ".spec/wip/article-management/evidence-s4.4/old-backup-r01/retained-resources.ndjson",
+  "retained_schemas": [
+    {"schema": "han_s44red_2de3930d9c7d4f4f43b78efd", "subtest": "RestoreAndReplayThreeTombstones", "run": "run-01.attempt1", "has_log": true},
+    {"schema": "han_s44red_17c2b25bda109a88dd677230", "subtest": "ReadyDriftInvalidatesEvidence", "run": "run-01.attempt1", "has_log": true},
+    {"schema": "han_s44red_656a874f561492291b9fc4c9", "subtest": "InventoryUnavailable", "run": "run-01.attempt1", "has_log": true},
+    {"schema": "han_s44red_bf28d4547e0f92384a3bb7f2", "subtest": "RestoreAndReplayThreeTombstones", "run": "run-02", "has_log": true},
+    {"schema": "han_s44red_718f7412b562ed54f23028b8", "subtest": "ReadyDriftInvalidatesEvidence", "run": "run-02", "has_log": true},
+    {"schema": "han_s44red_4ae4c65b2a3796ceb2166251", "subtest": "InventoryUnavailable", "run": "run-02", "has_log": true},
+    {"schema": "han_s44red_51bb788f7e28a78ad74eb38f", "subtest": "RestoreAndReplayThreeTombstones", "run": "lead-diagnostic-probe", "has_log": false},
+    {"schema": "han_s44red_b0fdb4be646140791ef76f16", "subtest": "ReadyDriftInvalidatesEvidence", "run": "lead-diagnostic-probe", "has_log": false},
+    {"schema": "han_s44red_2b1cb0b65802897a9d57f9c6", "subtest": "InventoryUnavailable", "run": "lead-diagnostic-probe", "has_log": false},
+    {"schema": "han_s44red_1743f8c437b99106e8a4dc65", "subtest": "RestoreAndReplayThreeTombstones", "run": "lead-verify-r01", "has_log": true},
+    {"schema": "han_s44red_646efebf992a23e2efd40857", "subtest": "ReadyDriftInvalidatesEvidence", "run": "lead-verify-r01", "has_log": true},
+    {"schema": "han_s44red_7a75baadf4e93bf0b89c1216", "subtest": "InventoryUnavailable", "run": "lead-verify-r01", "has_log": true}
+  ],
+  "retained_schema_count": 12,
+  "commands": [
+    "go build ./... (exit 0)",
+    "gofmt -l test/integration/recovery/old_backup_restore_test.go (empty after formatting)",
+    "go vet -tags=integration ./test/integration/recovery (exit 0)",
+    "go test -tags=integration ./test/integration/recovery -run ^TestOldBackupRestore$ -count=1 -v (exit 0)"
+  ],
+  "synthetic_guards": "fixtures, journal snapshot, runtime binding, publication IDs are synthetic; no real backup/POSIX/keyring/identity/RPO-RTO proof",
+  "production_assembly_not_covered": "publication ports are constructed inside the test; cmd/han-server/main.go does not call NewReplayPublicationPorts at this HEAD. PASS does not imply production restore path works. Tracked as identity-auth-S4.20."
+}

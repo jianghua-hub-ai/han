@@ -1,0 +1,37 @@
+{
+  "scope": "adoption-consult",
+  "agent": {
+    "role": "add-arch-designer",
+    "nickname": "Pascal",
+    "id": "01a17e3d-5550-7f91-bb7e-6e6fad3d082c"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-adr27-tp-consult-dcc42dff296d4b43872609ce6a258dac",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-consult/readset.json",
+      "sha256": "C99354FDB0807AD5D606269B4A166B431D861592E6999720F9E420F5FAC2D9FD",
+      "bytes": 6699,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-consult/receipt.md",
+      "sha256": "5FABE6CC15D726C99200196CD373897F09D37932AE92B60EC1B6565112B69659",
+      "bytes": 989,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-consult/recommendation.md",
+      "sha256": "C5C1B6938E276368B0450B772BA6E2FF8AA02BF082D1A9FDEAC1ED8C4396E56D",
+      "bytes": 5787,
+      "source_name": "recommendation.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-consult/record.py",
+      "sha256": "1496D3124DCB91F2AB8A2546CF31D79128327A71FBBF6A2D9212A7486B780D1D",
+      "bytes": 6574,
+      "source_name": "record.py"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "a47-c2-join-g0-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Noether",
+    "runtime_id": "01a1861b-9405-7942-8dd2-2db8b8d39eb2"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-a47-c2-join-g0-tryn4i5_",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/feasibility-and-paths.json",
+      "sha256": "5C4BD73881B28A42F2D228F450CCCE71D8ECDBB3496F2CFF5122A9BA60635EBE",
+      "bytes": 6992,
+      "source_name": "feasibility-and-paths.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/source-index.json",
+      "sha256": "CDE60493FCFFE1A133F3755DD39E93F8D2DFA41DA5EE831EA711E67BB12B633D",
+      "bytes": 1176,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/proposed-tests-not-run.json",
+      "sha256": "0C4F1EE99B44204EA1B674047FDC48DA30AE7D7D493FC0160FC61B81CBD08224",
+      "bytes": 8531,
+      "source_name": "proposed-tests-not-run.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/readset.json",
+      "sha256": "B7EFBA4C80623368340BC705BE652C76A663272AD2ED12B110DE2A7AF42E0197",
+      "bytes": 13064,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/receipt.json",
+      "sha256": "5BD0F0FD82555CED32F9246154FA657C8AD960E9A24C9C5FE8BCD1B0C46AAE8B",
+      "bytes": 1664,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/receipt.md",
+      "sha256": "CCCB31438D87C538BC1BEDD05E52DA3FC27D1DFB8B58B8748452C1B1ACA874FA",
+      "bytes": 4716,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/risks-and-gates.json",
+      "sha256": "C8985F3153C583177179E8278FE8F80601BD04B1D5A1D0FEA9711F8D22B49C7B",
+      "bytes": 2520,
+      "source_name": "risks-and-gates.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/a47-c2-join-g0-r01/source8-before.json",
+      "sha256": "DB96D8C1FB55C200BD6CF5AA73A35F30052065E808E6022DEEA1CC9783814C26",
+      "bytes": 3134,
+      "source_name": "source8-before.json"
+    }
+  ]
+}

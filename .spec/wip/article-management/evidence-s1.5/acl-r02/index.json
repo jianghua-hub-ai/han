@@ -1,0 +1,347 @@
+{
+    "title":  "article-management-S1.5 path B ACL review R02 remediation evidence",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "generated_at":  "2026-10-31T08:58:02.4202926Z",
+    "baseline_note":  "r02_before_sha256 is the handoff baseline for this R02 remediation. r01_review_sha256 is the hash recorded in review-code-s1.5-acl-r01.md. All target files are untracked in git, so no committed diff exists. append_only_acl.go changed between the R01 review baseline (1019a5..) and the R02 baseline (fb83..); no snapshot of fb83.. exists, so that inter-revision delta cannot be reconstructed.",
+    "files":  [
+                  {
+                      "path":  "cmd/han-server/append_only_acl.go",
+                      "r01_review_sha256":  "1019a5e1f38cbb46eaae1b5a4948db231d0205117a6d03866af6f01f435d12ad",
+                      "r02_before_sha256":  "fb83a8a36f18be5eaa0a428903acc92a187a40ec64537fb07342a4ff9524824b",
+                      "after_sha256":  "ffa71581cac2ee05a43e0b99ecbf5a4c68d5fe32cc0b3cc0fd6284511fd1d282"
+                  },
+                  {
+                      "path":  "cmd/han-server/append_only_acl_test.go",
+                      "r01_review_sha256":  "54ad3302f95ce4fae8cace57a19353fcdfa3646a2248f0597c23e7e7c7771c2b",
+                      "r02_before_sha256":  "54ad3302f95ce4fae8cace57a19353fcdfa3646a2248f0597c23e7e7c7771c2b",
+                      "after_sha256":  "5dbe9c14d225fccdfad10f42c8c073e4fcaa715cda307fd13d9f060895444c7f"
+                  },
+                  {
+                      "path":  "cmd/han-server/append_only_acl_integration_test.go",
+                      "r01_review_sha256":  "8a806c38a66299be47332b0756d345798645f3d10f9e62476ed2f99f7f55579c",
+                      "r02_before_sha256":  "8a806c38a66299be47332b0756d345798645f3d10f9e62476ed2f99f7f55579c",
+                      "after_sha256":  "f9c288be0576e415c6cc27bce9f97d15c0728dd6e85e14f3209b9645cd16d605"
+                  },
+                  {
+                      "path":  "cmd/han-server/database_config.go",
+                      "r01_review_sha256":  null,
+                      "r02_before_sha256":  "ef8c1077c58b2e240fe3424d775da95446a38080b72e41e548f9ab62518cc2db",
+                      "after_sha256":  "6b29e8720593d6be19f68affe053f037173f5de04a17ab6b4d9f2453a83846bc"
+                  },
+                  {
+                      "path":  "cmd/han-server/main.go",
+                      "r01_review_sha256":  "68e91cfb0be866a4888950595955a4411db897dbab846a39c63e1fe154d982a7",
+                      "r02_before_sha256":  "68e91cfb0be866a4888950595955a4411db897dbab846a39c63e1fe154d982a7",
+                      "after_sha256":  "1d47cc94e415e80c69deebe237ebd085af05044902b12e07b2a04b0822028187"
+                  },
+                  {
+                      "path":  "deploy/db/provision.sql",
+                      "r01_review_sha256":  "0af8986f34458059ae2f1398f2f49932575d0b57419c6870d2a1bfb46f57ba05",
+                      "r02_before_sha256":  "0af8986f34458059ae2f1398f2f49932575d0b57419c6870d2a1bfb46f57ba05",
+                      "after_sha256":  "5252556099a335a480041a62ed30c7618384a5b4d038bfa29356423c446b8c23"
+                  },
+                  {
+                      "path":  "deploy/db/grant-application.sql",
+                      "r01_review_sha256":  "95a93a58db98776ecbf33aec0f3ed14e338bb6663520e603152756fa5e2b3351",
+                      "r02_before_sha256":  "95a93a58db98776ecbf33aec0f3ed14e338bb6663520e603152756fa5e2b3351",
+                      "after_sha256":  "fc0d229818d48407ef4ccbf97d0860e08e781ff8ef102201c551560741af0ae8"
+                  },
+                  {
+                      "path":  "deploy/db/README.md",
+                      "r01_review_sha256":  "2f808751ceaa6800d5587a1013857404cfc66046b0916671ad18758ff1448f2f",
+                      "r02_before_sha256":  "2f808751ceaa6800d5587a1013857404cfc66046b0916671ad18758ff1448f2f",
+                      "after_sha256":  "afbd40278aa3ce23bcb3319ccdd08fd7e46cfb9e0bc70d1808cd73b53a5a6087"
+                  }
+              ],
+    "commands":  [
+                     {
+                         "run":  "run-08.log",
+                         "command":  "psql \u0027postgres://postgres:<redacted>@127.0.0.1:5433/postgres?options=-c%20role%3Dhan_s15_app_756fd7e977a0e722\u0027 -tAc \u0027select current_user,session_user,...\u0027 (+ session_authorization variant)",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "probe: options=-c role=\u003capp\u003e produced current_user=han_s15_app_...|session_user=postgres|current_super=f|session_super=t (F001 bypass vector); options=-c session_authorization had no effect (postgres|postgres|t|t)",
+                         "log":  "run-08.log",
+                         "log_sha256":  "2e274e29c110fe911935d7e98182c2d1714d47103a0be8d6a9f399c7d78c2248"
+                     },
+                     {
+                         "run":  "run-09.log",
+                         "command":  "go build ./...",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "pass: build succeeded, no output",
+                         "log":  "run-09.log",
+                         "log_sha256":  "96d51e9b88fa8e245ecd88639e0fceee7f5a958a205853b6cfe6fbbcc472786c"
+                     },
+                     {
+                         "run":  "run-10.log",
+                         "command":  "gofmt -l cmd/han-server/append_only_acl.go cmd/han-server/append_only_acl_test.go cmd/han-server/append_only_acl_integration_test.go cmd/han-server/database_config.go cmd/han-server/main.go",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "pass: empty output (all changed Go files gofmt-clean)",
+                         "log":  "run-10.log",
+                         "log_sha256":  "6596bc41f068c409a1029ae247ebfb7b877201786b9d48a254b6156d291eaf60"
+                     },
+                     {
+                         "run":  "run-11.log",
+                         "command":  "go vet ./cmd/han-server",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "pass: no findings",
+                         "log":  "run-11.log",
+                         "log_sha256":  "fa9f69260a402c301ee01ac2f54ce8520c9411d0afba874e4372e4c5e98bd8bf"
+                     },
+                     {
+                         "run":  "run-12.log",
+                         "command":  "go vet -tags=integration ./cmd/han-server",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "pass: no findings (integration package builds; F003 no longer reproduces)",
+                         "log":  "run-12.log",
+                         "log_sha256":  "83266abc1d9a9a261a4c1c6af2f35198ebd47b46fd4f6952687f1f07740dbe9f"
+                     },
+                     {
+                         "run":  "run-13.log",
+                         "command":  "go test ./cmd/han-server -count=1",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "pass: ok han/cmd/han-server 44.956s",
+                         "log":  "run-13.log",
+                         "log_sha256":  "cc791739f89891d812087049fc903628109ad5a0555c6233a35c4bf6a124f638"
+                     },
+                     {
+                         "run":  "run-14.log",
+                         "command":  "$env:HAN_TEST_POSTGRES_DSN=\u0027postgres://postgres:<redacted>@127.0.0.1:5433/postgres\u0027; go test -tags=integration ./cmd/han-server -run \u0027^TestAppendOnlyApplicationACL$\u0027 -count=1 -v",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "pass: TestAppendOnlyApplicationACL + 11 subtests PASS (3.209s); fresh_install_gate_passed default_privileges_only=true manual_grant=false; non_superuser_login_positive; superuser_set_role_rejected; owner_rejected; column_update_rejected then_revoked=true",
+                         "log":  "run-14.log",
+                         "log_sha256":  "C3D90D752A0FCA307B9B96DBE5A20EC090098167F9E7B2465159EDC9DAD74356"
+                     },
+                     {
+                         "run":  "run-15.log",
+                         "command":  "$env:HAN_TEST_POSTGRES_DSN=\u0027postgres://postgres:<redacted>@127.0.0.1:5433/postgres\u0027; go test -race -tags=integration ./cmd/han-server -run \u0027^TestAppendOnlyApplicationACL$\u0027 -count=1 -v",
+                         "cwd":  "D:\\AID\\VSCode\\Codex\\Han",
+                         "exit_code":  0,
+                         "result":  "pass: same 12 tests PASS under -race (4.519s)",
+                         "log":  "run-15.log",
+                         "log_sha256":  "FF376CACF1250B3D27CE359DD415D8C51D3FF9D9B225BC4471B7AE51677A37F1"
+                     }
+                 ],
+    "superseded_runs":  [
+                            {
+                                "run":  "run-01.log",
+                                "note":  "pre-final-revision run by the prior session before the session_authorization DSN hardening; retained per no-delete policy, NOT authoritative for the final revision",
+                                "log":  "run-01.log",
+                                "log_sha256":  "0b8bef39f037ecec23152d94080ad7396f338d8aef3e20a3489c399a2bd4bf2a"
+                            },
+                            {
+                                "run":  "run-02.log",
+                                "note":  "pre-final-revision run by the prior session before the session_authorization DSN hardening; retained per no-delete policy, NOT authoritative for the final revision",
+                                "log":  "run-02.log",
+                                "log_sha256":  "1c94c19c270200e5e36cf125ddb34aa8a7a45bd168f54075b99525dd43e3123a"
+                            },
+                            {
+                                "run":  "run-03.log",
+                                "note":  "pre-final-revision run by the prior session before the session_authorization DSN hardening; retained per no-delete policy, NOT authoritative for the final revision",
+                                "log":  "run-03.log",
+                                "log_sha256":  "3d1f6cb7160ed432ccaff72b3eae2862381fcd26e89c364ed3c7a747e6060ad7"
+                            },
+                            {
+                                "run":  "run-04.log",
+                                "note":  "pre-final-revision run by the prior session before the session_authorization DSN hardening; retained per no-delete policy, NOT authoritative for the final revision",
+                                "log":  "run-04.log",
+                                "log_sha256":  "72a770f1c95876345228fcccc9afe6c317cdc17361f08bb0104462e6f38b8046"
+                            },
+                            {
+                                "run":  "run-05.log",
+                                "note":  "pre-final-revision run by the prior session before the session_authorization DSN hardening; retained per no-delete policy, NOT authoritative for the final revision",
+                                "log":  "run-05.log",
+                                "log_sha256":  "c80e7333bcfbe67087cca7bf17825e2fd33b07574c0c8646d65a635ea0c7e8d7"
+                            },
+                            {
+                                "run":  "run-06.log",
+                                "note":  "pre-final-revision run by the prior session before the session_authorization DSN hardening; retained per no-delete policy, NOT authoritative for the final revision",
+                                "log":  "run-06.log",
+                                "log_sha256":  "99ce5ded5d73bc76f5d47c99cf25445103fbcdb1aa734e2d61d373f2e46377fd"
+                            },
+                            {
+                                "run":  "run-07.log",
+                                "note":  "pre-final-revision run by the prior session before the session_authorization DSN hardening; retained per no-delete policy, NOT authoritative for the final revision",
+                                "log":  "run-07.log",
+                                "log_sha256":  "60acbb8a4dfb804a1370a1b2d93b92362c08c34a70b5189bcb305c0f460dd593"
+                            }
+                        ],
+    "retained_resources":  [
+                               {
+                                   "schema":  "han_s15_acl_756fd7e977a0e722",
+                                   "migrator_role":  "han_s15_mig_756fd7e977a0e722",
+                                   "application_role":  "han_s15_app_756fd7e977a0e722",
+                                   "statuses":  [
+                                                    "planned",
+                                                    "created"
+                                                ],
+                                   "source":  "retained-resources.ndjson (acl-r02)"
+                               },
+                               {
+                                   "schema":  "han_s15_acl_07eb389eccb77ab3",
+                                   "migrator_role":  "han_s15_mig_07eb389eccb77ab3",
+                                   "application_role":  "han_s15_app_07eb389eccb77ab3",
+                                   "statuses":  [
+                                                    "planned",
+                                                    "created"
+                                                ],
+                                   "source":  "retained-resources.ndjson (acl-r02)"
+                               },
+                               {
+                                   "schema":  "han_s15_acl_49e05853bf43f50d",
+                                   "migrator_role":  "han_s15_mig_49e05853bf43f50d",
+                                   "application_role":  "han_s15_app_49e05853bf43f50d",
+                                   "statuses":  [
+                                                    "planned",
+                                                    "created"
+                                                ],
+                                   "source":  "retained-resources.ndjson (acl-r02)"
+                               },
+                               {
+                                   "schema":  "han_s15_acl_558476dd50435f81",
+                                   "migrator_role":  "han_s15_mig_558476dd50435f81",
+                                   "application_role":  "han_s15_app_558476dd50435f81",
+                                   "statuses":  [
+                                                    "planned",
+                                                    "created"
+                                                ],
+                                   "source":  "retained-resources.ndjson (acl-r02)"
+                               },
+                               {
+                                   "schema":  "han_s15_acl_2dd15584ab2d5af9",
+                                   "migrator_role":  "han_s15_mig_2dd15584ab2d5af9",
+                                   "application_role":  "han_s15_app_2dd15584ab2d5af9",
+                                   "statuses":  [
+                                                    "planned",
+                                                    "created"
+                                                ],
+                                   "source":  "retained-resources.ndjson (acl-r02)"
+                               },
+                               {
+                                   "schema":  "han_s15_acl_a1023308b90a9b3e",
+                                   "migrator_role":  "han_s15_mig_a1023308b90a9b3e",
+                                   "application_role":  "han_s15_app_a1023308b90a9b3e",
+                                   "statuses":  [
+                                                    "created (R01 author evidence)"
+                                                ],
+                                   "source":  "review-code-s1.5-acl-r01.md; not in acl-r02 ndjson; confirmed present via read-only pg_roles/pg_namespace query"
+                               }
+                           ],
+    "retained_resources_ndjson_sha256":  "f4b11c4da51634db4edc5b7d8daf5880bbdac3ed3aaac0f20d05e94b70f61d67",
+    "findings":  {
+                     "F001":  {
+                                  "status":  "fixed",
+                                  "points":  [
+                                                 "cmd/han-server/append_only_acl.go:158 stable identity current_user=session_user else fail closed",
+                                                 "cmd/han-server/append_only_acl.go:164 reject current_user or session_user superuser",
+                                                 "cmd/han-server/append_only_acl.go:184 reject owner / owner-member via pg_has_role(...,MEMBER)",
+                                                 "cmd/han-server/database_config.go:57 reject role/session_authorization DSN options (regex)",
+                                                 "cmd/han-server/database_config.go:152 URL options check",
+                                                 "cmd/han-server/append_only_acl_integration_test.go:269 superuser_set_role_rejected (must FAIL)",
+                                                 "cmd/han-server/append_only_acl_integration_test.go:164 non_superuser_login_positive (real NOSUPERUSER LOGIN PASS)"
+                                             ],
+                                  "evidence":  "run-08 probe (session_user=postgres) + run-14/15 superuser_set_role_rejected and non_superuser_login_positive PASS"
+                              },
+                     "F002":  {
+                                  "status":  "fixed",
+                                  "points":  [
+                                                 "cmd/han-server/append_only_acl.go:303 restrictApplicationMutations REVOKE UPDATE,DELETE,TRUNCATE on audit_events/processing_gate_records and REVOKE ALL on schema_migrations via migration pool",
+                                                 "cmd/han-server/append_only_acl.go:116 migrationPool.Close() before gate",
+                                                 "cmd/han-server/append_only_acl.go:28 appendOnlyMutationPrivileges single source mirrored by grant-application.sql",
+                                                 "deploy/db/README.md section 2 corrected order (provision -\u003e start service -\u003e gate, grant-application out-of-band)",
+                                                 "cmd/han-server/append_only_acl_integration_test.go:125 fresh-install smoke from provision defaults only"
+                                             ],
+                                  "evidence":  "run-14/15 fresh_install_gate_passed default_privileges_only=true manual_grant=false"
+                              },
+                     "F004":  {
+                                  "status":  "fixed",
+                                  "points":  [
+                                                 "deploy/db/provision.sql:38 ALTER SCHEMA ... OWNER TO migrator_role",
+                                                 "deploy/db/README.md section 4 public-schema risk and dedicated-schema recommendation"
+                                             ],
+                                  "evidence":  "run-14/15 schema_owner_verified owner=\u003cmigrator\u003e owner_superuser=false"
+                              },
+                     "F005":  {
+                                  "status":  "fixed",
+                                  "points":  [
+                                                 "cmd/han-server/append_only_acl.go:441 databaseEndpointsOf includes primary + all Fallbacks",
+                                                 "cmd/han-server/append_only_acl.go:465 rejectSharedDatabaseIdentity compares role names and full (host,port,database,user) endpoint sets",
+                                                 "cmd/han-server/append_only_acl_test.go:333 fallback/same-role negative controls",
+                                                 "cmd/han-server/append_only_acl_test.go:408 fallback endpoint coverage"
+                                             ],
+                                  "evidence":  "run-13 unit tests PASS"
+                              },
+                     "F007":  {
+                                  "status":  "fixed",
+                                  "points":  [
+                                                 "cmd/han-server/append_only_acl.go:263 has_any_column_privilege INSERT",
+                                                 "cmd/han-server/append_only_acl.go:265 has_any_column_privilege UPDATE",
+                                                 "cmd/han-server/append_only_acl.go:271 aclexplode(attacl) defensive column DELETE check",
+                                                 "cmd/han-server/append_only_acl_integration_test.go:296 column_update_rejected grantees then revoked"
+                                             ],
+                                  "evidence":  "run-14/15 column_update_rejected then_revoked=true"
+                              },
+                     "F008":  {
+                                  "status":  "fixed",
+                                  "points":  [
+                                                 "cmd/han-server/main.go:3936-3943 validateProductionMigrationConfiguration before application connect/ping",
+                                                 "cmd/han-server/append_only_acl.go:116 explicit migrationPool.Close() before gate (no defer)"
+                                             ],
+                                  "evidence":  "run-09/13 build+unit; run-14/15 integration PASS"
+                              },
+                     "F009":  {
+                                  "status":  "fixed",
+                                  "points":  [
+                                                 "cmd/han-server/append_only_acl_integration_test.go:59 register planned after aclPreflight at :53",
+                                                 "cmd/han-server/append_only_acl_integration_test.go:99 register created after provisioning"
+                                             ],
+                                  "evidence":  "retained-resources.ndjson shows planned then created per group"
+                              },
+                     "F011":  {
+                                  "status":  "documented-boundary (not code-fixed, per write-set restriction)",
+                                  "points":  [
+                                                 "deploy/db/README.md section 4: service does not set/prove search_path; ops prerequisite; historical schemas never cleaned; unique-visibility fail closed retained",
+                                                 "cmd/han-server/append_only_acl_integration_test.go:35 test boundary comment"
+                                             ],
+                                  "evidence":  "gate still requires exactly one visible relation (run-13 unit ambiguous/missing cases; run-14/15 PASS)"
+                              }
+                 },
+    "other_findings_disposition":  {
+                                       "F003":  "no longer reproduces: go vet -tags=integration exit 0 (run-12) and integration tests PASS (run-14/15); recovery_main_dispatcher_integration_test.go now defines newS419RecoveryRuntime/newS419ProductionDispatcher and no longer references newS419RecoveryWorld. That file is outside this write set and was not modified by this task; only evidence recorded.",
+                                       "F006":  "covered by F001 remediation: tests create real LOGIN NOSUPERUSER NOCREATEROLE roles and separate migrator/application DSNs; non_superuser_login_positive PASS (run-14/15).",
+                                       "F010":  "resolved by freezing all 8 final file hashes in this index; README after_sha256 is the actual worktree hash (R01 had declared/actual mismatch). Target files are untracked in git, so no scoped git diff exists; r02_before_sha256 records the handoff baseline. append_only_acl.go r01_review_sha256 (1019a5..) differs from r02_before_sha256 (fb83..); no snapshot of the intermediate exists, so that inter-revision delta cannot be reconstructed."
+                                   },
+    "main_go_change":  {
+                           "lines":  "cmd/han-server/main.go:3936-3943",
+                           "reason":  "F008 required migration DSN presence/equality/identity validation before the application pool is connected and pinged. productionMigration receives an already-built application pool, so the ordering fix cannot live inside append_only_acl.go; this is the minimal production-wiring change: parse application config, then call validateProductionMigrationConfiguration(config, os.Getenv), then return config. runLegacy/runComposed already call parseDatabase before connect/ping."
+                       },
+    "not_proven":  [
+                       "real production deployment, CI pipeline, or real cluster execution of deploy/db psql assets (equivalent DDL exercised only on local PG 18.6 via integration test)",
+                       "public schema deployment path in a real database (README documents the risk; dedicated-schema path tested)",
+                       "that search_path points at the provision.sql target schema (ops prerequisite; gate only proves unique visibility under the app search_path)",
+                       "isolation of historical same-name schemas (never dropped; gate fails closed on ambiguity)",
+                       "minimum privilege for the whole database beyond audit_events, processing_gate_records, and schema_migrations",
+                       "backup/restore, RPO/RTO, credential distribution, role rotation",
+                       "real multi-fallback connectivity (fallback identity sets compared statically; only loopback:5433 used in tests)",
+                       "migration credential privilege escalation inside the same process (migration and app share the process environment)",
+                       "any database permission model beyond the two append-only tables and the migration ledger",
+                       "options regex may fail closed on quoted search_path values containing the literal text role= (conservative tradeoff)",
+                       "complete column-level ACL model beyond INSERT/UPDATE checks and the defensive aclexplode DELETE check"
+                   ],
+    "redaction":  {
+                      "date":  "2026-10-31",
+                      "reason":  "S15-ACL-R03-F001: plaintext local-dev superuser password removed from recorded command lines and postgres.dsn. No file, log line, or evidence was removed; token replaced with <redacted> and affected log_sha256 values updated.",
+                      "files":  [
+                                    "run-14.log",
+                                    "run-15.log",
+                                    "index.json"
+                                ]
+                  },    "retained_resources_policy":  "all schemas/roles retained; nothing dropped, deleted, or cleaned; evidence files append-only"
+}

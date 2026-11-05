@@ -1,0 +1,324 @@
+{
+  "schema": "add.evidence.design-decision/v1",
+  "item": "B13J ADR revision r04 closeout (ADR-0030 / ADR-0031 r03 -> r04; ADR-0032 unchanged)",
+  "agent_role": "add-arch-designer",
+  "workflow": "development-delivery",
+  "phase": "architecture-decision-ADR",
+  "route_executed": false,
+  "recorded_at": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r03/report.md",
+      "sha256": "3FC6A611EE3ACCBCBDBE33AAD77506B7A0AED7158691CF842229669AF201EC19",
+      "bytes": 27104,
+      "lines": 259,
+      "role": "non-author planning review r03 (PASS WITH MINOR) carrying B13J-PLAN-R03-F001..F007"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r03/index.json",
+      "sha256": "D3594C40CD703C51FCDF5130A12778A639D7FD0A719F815ACD5BF50FDB45E16C",
+      "bytes": 15012,
+      "role": "machine-readable companion of planning review r03"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/snapshots/framework-before-r04.md",
+      "sha256": "9B9A0D7A62DAE9B62F4CF292E9B85888903352E39D06C70B04D303C40D6D53B8",
+      "bytes": 179565,
+      "lines": 1139,
+      "role": "byte-exact pre-change copy of decisions/framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r02/report.md",
+      "sha256": "0462EC08AD8BCFECC24AB0BDDC8A9627700DF8D72DEE0441781BF6CFD930C155",
+      "bytes": 18538,
+      "lines": 164,
+      "role": "consulted by R03-F004 to verify the real r02 finding set and severities (R02-F001..F005 only)"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/index.json",
+      "sha256": "4BA08EA7876C6EB01B18B4769A20C9A295B2895DEC9CE5802DABAAE01C101BC1",
+      "bytes": 28898,
+      "role": "correction target of R03-F004; body left untouched, correction recorded in adr-r03/correction-r01.md"
+    }
+  ],
+  "findings": [
+    {
+      "id": "B13J-PLAN-R03-F001",
+      "severity": "LOW",
+      "disposition": "not-in-architecture-write-set",
+      "landing": [],
+      "note": "adoption-record ADR line anchors (u-adoption-record-r01.md) drifted after r02/r03 revisions; outside this round's write set and remains OPEN; nothing here is closure evidence"
+    },
+    {
+      "id": "B13J-PLAN-R03-F002",
+      "severity": "LOW",
+      "disposition": "not-in-architecture-write-set",
+      "landing": [],
+      "note": "gap-map.md:182 still stacks a/b and requires on one line; planning-role file, outside this round's write set, remains OPEN, gap-map.md not modified"
+    },
+    {
+      "id": "B13J-PLAN-R03-F003",
+      "severity": "LOW",
+      "disposition": "applied-in-adr-0030",
+      "landing": ["framework.md:960"],
+      "note": "the in-body numeric anchors :957/:958 in ADR-0030 constraint 9(c) were replaced by symbolic anchors (constraint 7 real independent fault-domain verification item and formal Task registration item); rg for the old numeric strings now exits 1 (0 hits)"
+    },
+    {
+      "id": "B13J-PLAN-R03-F004",
+      "severity": "LOW",
+      "disposition": "applied-as-correction-file",
+      "landing": ["adr-r03/correction-r01.md"],
+      "note": "R02-F003/F004 are LOW (not MEDIUM) and R02-F006/R02-F009 do not exist in the r02 report (they are r01 B13J-PLAN-F006 MEDIUM and B13J-PLAN-F009 LOW); correction filed as a new errata document, adr-r03/index.json and adr-r03/report.md left byte-identical"
+    },
+    {
+      "id": "B13J-PLAN-R03-F005",
+      "severity": "LOW",
+      "disposition": "applied-in-adr-0030-and-adr-0031",
+      "landing": ["framework.md:960", "framework.md:1050"],
+      "note": "decision-revision acceptance by independent review is now explicitly not human decision acceptance and produces no human approval; production usability still requires the explicit human production approval item of constraint 7/constraint 8"
+    },
+    {
+      "id": "B13J-PLAN-R03-F006",
+      "severity": "LOW",
+      "disposition": "applied-in-adr-0031",
+      "landing": ["framework.md:978", "framework.md:1050", "framework.md:1061"],
+      "note": "ADR-0031 prerequisite node now carries the same-shaped negation as ADR-0030 constraint 9(b): passing architecture/security independent review is not full constraint 8 release; it only lifts the implementation/verification card registration limit; ADR-0031 revision field raised to adr-0031-r04 with an r04 trace record"
+    },
+    {
+      "id": "B13J-PLAN-R03-F007",
+      "severity": "LOW",
+      "disposition": "applied-in-adr-0030",
+      "landing": ["framework.md:953", "framework.md:960"],
+      "note": "constraint 7 now enumerates all three card categories as non-gated for registration and constraint 9(c) states registration of a production assembly/release card is not blocked by unmet constraint 7 items; only release/production-usability is gated"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "before": {
+        "sha256": "9B9A0D7A62DAE9B62F4CF292E9B85888903352E39D06C70B04D303C40D6D53B8",
+        "bytes": 179565,
+        "lines": 1139,
+        "crlf": 1139,
+        "bare_lf": 0,
+        "bare_cr": 0,
+        "bom": false,
+        "trailing_newline": "single CRLF (0x0d0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 0
+      },
+      "after": {
+        "sha256": "39BD3A797B0FA2F5CDF944ACCF4129BB0B7F7A23FABC743B7E5CCC9F7B9BD704",
+        "bytes": 182488,
+        "lines": 1141,
+        "crlf": 1141,
+        "bare_lf": 0,
+        "bare_cr": 0,
+        "bom": false,
+        "trailing_newline": "single CRLF (0x0d0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 0
+      },
+      "status": "modified (ADR-0030 r03 -> r04, ADR-0031 r03 -> r04); ADR-0032 body and revision field unchanged at adr-0032-r03"
+    },
+    {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "before": {
+        "sha256": "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97",
+        "bytes": 21472,
+        "lines": 110,
+        "crlf": 2,
+        "bare_lf": 108,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 0
+      },
+      "after": {
+        "sha256": "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97",
+        "bytes": 21472,
+        "lines": 110,
+        "crlf": 2,
+        "bare_lf": 108,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 0
+      },
+      "status": "unchanged this round (no revision field needed; the pre-existing ' M' in git status predates r04)"
+    },
+    {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "before": {
+        "sha256": "FED48FA9908F9EADD970A3E57B0B448181C51030A4460B437852009722F34D8D",
+        "bytes": 854991,
+        "lines": 4944,
+        "crlf": 169,
+        "bare_lf": 4775,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 1
+      },
+      "after": {
+        "sha256": "FED48FA9908F9EADD970A3E57B0B448181C51030A4460B437852009722F34D8D",
+        "bytes": 854991,
+        "lines": 4944,
+        "crlf": 169,
+        "bare_lf": 4775,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 1
+      },
+      "status": "unchanged this round (read-only input)"
+    },
+    {
+      "path": ".add/project/knowledge/design-workspace/article-management/design.md",
+      "before": {
+        "sha256": "690015BB5C3B4800539F98C5B75115A5A20B5C161ECE7422F9F271840F7C55A7",
+        "bytes": 377424,
+        "lines": 3267,
+        "crlf": 0,
+        "bare_lf": 3267,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 0
+      },
+      "after": {
+        "sha256": "690015BB5C3B4800539F98C5B75115A5A20B5C161ECE7422F9F271840F7C55A7",
+        "bytes": 377424,
+        "lines": 3267,
+        "crlf": 0,
+        "bare_lf": 3267,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf_tab": 0,
+        "tabs": 0
+      },
+      "status": "unchanged this round (read-only input)"
+    }
+  ],
+  "diff": {
+    "hunks": [
+      "old 918 -> new 918: ADR-0030 revision adr-0030-r03 -> adr-0030-r04",
+      "old 953 -> new 953: ADR-0030 constraint 7 registration exemption now enumerates decision / implementation-verification / production assembly-release cards",
+      "old 960 -> new 960: ADR-0030 constraint 9(b) adds 'not human decision acceptance, no human approval'; 9(c) adds registration-vs-release scope and replaces numeric anchors :957/:958 with symbolic anchors",
+      "old 970 -> new 971 (insert): ADR-0030 r04 trace record (triggers R03-F003/F005/F007)",
+      "old 977 -> new 978: ADR-0031 revision adr-0031-r03 -> adr-0031-r04",
+      "old 1049 -> new 1050: ADR-0031 prerequisite node adds the ADR-0030 9(b)-shaped negation and human-acceptance limit",
+      "old 1059 -> new 1061 (insert): ADR-0031 r04 trace record (triggers R03-F006/F005/F003)"
+    ],
+    "numstat": "6 line replacements + 2 line insertions; net +2 lines; 7 unified=0 hunks (the insert hunks are reported at the following line index)",
+    "line_changes": [
+      {"old": 918, "new": 918, "kind": "modify", "what": "ADR-0030 revision field r03 -> r04"},
+      {"old": 953, "new": 953, "kind": "modify", "what": "ADR-0030 constraint 7: registration exemption covers all three card categories"},
+      {"old": 960, "new": 960, "kind": "modify", "what": "ADR-0030 constraint 9: (b) acceptance is not human acceptance; (c) registration not blocked, symbolic anchors"},
+      {"old": null, "new": 971, "kind": "insert", "what": "ADR-0030 r04 trace record (R03-F003/F005/F007)"},
+      {"old": 977, "new": 978, "kind": "modify", "what": "ADR-0031 revision field r03 -> r04"},
+      {"old": 1049, "new": 1050, "kind": "modify", "what": "ADR-0031 prerequisite node: same-shaped negation + human-acceptance limit"},
+      {"old": null, "new": 1061, "kind": "insert", "what": "ADR-0031 r04 trace record (R03-F006/F005/F003)"}
+    ],
+    "first_diff_offset": 126770,
+    "common_prefix_bytes": 126770,
+    "common_prefix_sha256": "0D80C9D34B5E16735AA9E6B0BBB8406398B37DBF8A11A99557173E6F32DA940F",
+    "common_suffix_bytes": 18470,
+    "delta_bytes": 2923
+  },
+  "invariant_evidence": {
+    "adr0019_region": {
+      "start_byte": 31305,
+      "end_byte": 126598,
+      "bytes": 95294,
+      "before_sha256": "607827B08F64D2ADD88DCB815F428575BA214EED3780D67C28DE7DEA6C18D2B6",
+      "after_sha256": "607827B08F64D2ADD88DCB815F428575BA214EED3780D67C28DE7DEA6C18D2B6",
+      "identical": true
+    },
+    "prefix_before_first_diff": {
+      "bytes": 126770,
+      "before_sha256": "0D80C9D34B5E16735AA9E6B0BBB8406398B37DBF8A11A99557173E6F32DA940F",
+      "after_sha256": "0D80C9D34B5E16735AA9E6B0BBB8406398B37DBF8A11A99557173E6F32DA940F",
+      "identical": true,
+      "covers": "ADR-0019 through ADR-0029 and the ADR-0030 header and revision field prefix; first diff lands at 126770, later than the ADR-0019 region end 126598"
+    },
+    "unchanged_lines": [
+      {"meaning": "ADR-0030 decision (no production CAS provider; S4.5 undelivered; production closed)", "old_line": 926, "new_line": 926, "identical": true},
+      {"meaning": "ADR-0030 constraint 7 sub-items (product/fault domain, credentials/ACL, config keys, real verification, independent review plus formal Task registration)", "old_line": "954-958", "new_line": "954-958", "identical": true},
+      {"meaning": "ADR-0031 decision row A (no production restore tool or approver)", "old_line": 995, "new_line": 996, "identical": true},
+      {"meaning": "ADR-0031 constraint 8 (release conditions)", "old_line": 1035, "new_line": 1036, "identical": true},
+      {"meaning": "ADR-0032 decision (POSIX single-machine OS exclusive non-blocking file lock)", "old_line": 1074, "new_line": 1076, "identical": true}
+    ],
+    "note": "equivalence is proven by the common-prefix hash, the ADR-0019 region hash and the unchanged decision/constraint lines; no literal 155139-byte claim is reused"
+  },
+  "reverse_restore": {
+    "method": "from the post-change text: rewrite the two revision fields back to -r03, delete both r04 trace lines, restore the four rewritten fragments (constraint 7 enumeration, 9(b) acceptance sentence, 9(c) registration/symbolic-anchor sentence, ADR-0031 negation) from the snapshot, drop the two r04 trailer sentences, rejoin with CRLF and add the final CRLF",
+    "remaining_diff_lines_after_step_4": [953, 960, 1050],
+    "sha256": "9B9A0D7A62DAE9B62F4CF292E9B85888903352E39D06C70B04D303C40D6D53B8",
+    "bytes": 179565,
+    "lines": 1139,
+    "byte_identical_to_snapshot": true,
+    "method_note": "performed in memory: reconstructed UTF-8 (no BOM) bytes hashed with SHA-256 and compared with the snapshot hash; match=True"
+  },
+  "acceptance": [
+    {"command": "rg -n '含 `:957`|`:958` 的正式' .add/project/knowledge/decisions/framework.md", "exit_code": 1, "result": "0 hits; the numeric in-body anchors are gone"},
+    {"command": "rg -n '修订\\*\\*: adr-003[0-2]-r0[0-9]' .add/project/knowledge/decisions/framework.md", "exit_code": 0, "result": "3 hits: 918 adr-0030-r04, 978 adr-0031-r04, 1068 adr-0032-r03"},
+    {"command": "rg -n '不等于人的决策接纳' .add/project/knowledge/decisions/framework.md", "exit_code": 0, "result": "4 hits: 960, 971, 1050, 1061"},
+    {"command": "rg -n '不是“约束 8 全项解除”' .add/project/knowledge/decisions/framework.md", "exit_code": 0, "result": "1 hit: 1050"},
+    {"command": "rg -n --pcre2 'S4\\.24(?!a|b)' .add/project/knowledge/decisions/framework.md", "exit_code": 0, "result": "3 hits: 969, 1059, 1140, all historical r02 trace records; no live bare S4.24"},
+    {"command": "git diff --check -- .add/project/knowledge/decisions/framework.md", "exit_code": 0, "result": "no whitespace errors"},
+    {"command": "git diff --no-index --unified=0 .spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/snapshots/framework-before-r04.md .add/project/knowledge/decisions/framework.md", "exit_code": 1, "result": "differences present as expected; 7 unified=0 hunks covering exactly the 6 replacements and 2 insertions above, no other hunk"},
+    {"command": "byte scan for control characters (<0x20 excluding CR, LF), TAB, CRLF/bare LF, BOM and trailing newline on framework.md", "exit_code": 0, "result": "control 0; TAB 0; CRLF 1141 = lines 1141; bare LF 0; bare CR 0; no BOM; trailing bytes 0x0d 0x0a"},
+    {"command": "ConvertFrom-Json over .spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/index.json", "exit_code": 0, "result": "valid JSON"},
+    {"command": "git rev-parse HEAD", "exit_code": 0, "result": "6da8abbceb0fa197364810a92a8fa2d97b38ddca (unchanged)"}
+  ],
+  "write_set": [
+    ".add/project/knowledge/decisions/framework.md (ADR-0030 r03 -> r04, ADR-0031 r03 -> r04 only; ADR-0032 untouched)",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/ (new evidence: snapshots/framework-before-r04.md, report.md, index.json)",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/correction-r01.md (new errata file; adr-r03/index.json and report.md untouched)"
+  ],
+  "not_proven": [
+    "no independent review, planning-review PASS, human acceptance, security sign-off or production approval is claimed",
+    "no implementation task is registered: S4.22/S4.23/S4.24a/S4.24b remain candidates and are not formal Tasks; tasks.md untouched (F1D65B0D...76900E34 / 823187 B)",
+    "no lock backend, ACL, two-process exclusion, crash release, restore tool, backup, drill, CAS product or independent fault domain is claimed verified",
+    "ADR-0019/ADR-0027/ADR-0029 bodies, README.md, identity-auth design.md, article-management design.md, gap-map.md, tasks.md, plans, tests and source code were not modified",
+    "R03-F001 and R03-F002 are outside the architecture write set and remain OPEN; R03-F004 closure depends on the reviewer accepting an errata file instead of rewriting adr-r03/index.json"
+  ],
+  "open_items": [
+    "non-author re-review of this r04 author disposition (does not exist yet)",
+    "R03-F001 (adoption-record line anchors) and R03-F002 (gap-map.md:182 line stacking) remain OPEN outside this write set",
+    "r01 B13J-PLAN-F003 / F006 / F009 remain OPEN per planning-review-r03 and are not addressed here"
+  ],
+  "verdict": "applied-draft-unreviewed",
+  "review_claimed": false,
+  "approval_claimed": false,
+  "production_claimed": false,
+  "gate_claimed": false,
+  "evidence_files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/report.md",
+      "sha256": "EF87DAB2B881D9BE60D2ED0438DFB080DC29E14615CEF868290E6851D2E36380",
+      "bytes": 17103,
+      "lines": 205,
+      "role": "author-side evidence report for this r04 closeout"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/correction-r01.md",
+      "sha256": "C1E02277905EA65823C8ACC41E29178F11D174ADFC70490FC40DF11173378500",
+      "bytes": 2733,
+      "lines": 38,
+      "role": "errata correcting adr-r03 index finding ids/severities (R03-F004)"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/snapshots/framework-before-r04.md",
+      "sha256": "9B9A0D7A62DAE9B62F4CF292E9B85888903352E39D06C70B04D303C40D6D53B8",
+      "bytes": 179565,
+      "lines": 1139,
+      "role": "byte-exact pre-change snapshot of decisions/framework.md"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Lead actual Root4 freeze matched author release-race before/after hashes; fixed input for full Root feature review and F001 recheck. Does not represent author Root-ready or CodeGate PASS.",
+  "objects": {
+    "cmd/han-server/main.go": "84A2B2D114F707622D610882754CC10F806CBCE650FF4D4466FA47C31BE8BF8A",
+    "cmd/han-server/main_test.go": "30A48E10A7FD841A9C342C0567DEBB03BFBD6F084FD65234AFCDE9C8A1AD1C39",
+    "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+    "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9"
+  },
+  "payloads": {
+    "author-raw/release-normal.run.json": "E22364226735EB176F38EC179BB4E36A24B3CCC0BFE18DF1300FC2B6970F10A4",
+    "author-raw/release-normal.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "author-raw/release-normal.stdout.txt": "49494B33D1FE692767CFA44A928494342CE19F210E40621B7940DAAE34FA72D0",
+    "author-raw/release-race.run.json": "E5543D461F790C9A930D88AEABF87908B49DA08E73A849F546F74B43BE070A7D",
+    "author-raw/release-race.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "author-raw/release-race.stdout.txt": "5C7FA7A3472B1B4E1930594F907A0D1F0C82E8BA5654AC39D71624D21FCABBDE",
+    "fixed/cmd/han-server/main.go": "84A2B2D114F707622D610882754CC10F806CBCE650FF4D4466FA47C31BE8BF8A",
+    "fixed/cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9",
+    "fixed/cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+    "fixed/cmd/han-server/main_test.go": "30A48E10A7FD841A9C342C0567DEBB03BFBD6F084FD65234AFCDE9C8A1AD1C39"
+  }
+}

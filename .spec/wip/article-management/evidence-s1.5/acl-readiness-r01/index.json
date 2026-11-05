@@ -1,0 +1,10 @@
+{
+  "scope": "Original Explorer Turing ACL readiness read-only report; Main fully read report and preserved exact bytes. ACL remains unverified: actual application role/effective permissions/fixture carrier unknown. No credentials/PG/DDL/role grants/tests/task closure.",
+  "report_sha256": "667959A43E6B0506D3FDAE44F4EAC026C6342D27872A504EEFE4E04E85760524",
+  "agent_id": "01a18307-7bd3-7293-8396-d146c33e12fe",
+  "payloads": {
+    "explorer/readset.json": "173EA3CDE79C57DB539A09BEAB8A8477D871D7A652AF4C182E33C92B8015FFB0",
+    "explorer/report.md": "667959A43E6B0506D3FDAE44F4EAC026C6342D27872A504EEFE4E04E85760524",
+    "explorer/SHA256SUMS.txt": "324AA996F9E9D4A14280442675570B00FCDDC46E1380EE3101E8D4341B3B710B"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "actor": "Main actual newly observed C2 namespace cleanup ownership gap; not independent Review",
+  "original_actor": "Noether/add-backend-dev/01a1861b-9405-7942-8dd2-2db8b8d39eb2",
+  "behavior_failure": "TestAnchoredArticleJournal/OwnCauseAndLateCompletion/NamespaceCloseUnknownRetainsDeploymentOwnership",
+  "main_reads": "author-gap JSON full; probe raw failure diagnostics and actual test body, current Article completion path and Runtime Fault/drain/Stop direct consumer",
+  "status": "OPEN upstream contract; Banach bounded readonly consult active, Runtime source remains closed; independent PG slice remains valid only its actual scope",
+  "not": "not automatic reopening of old HIGH, nativePOSIX result, all C2 closure or code review",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-main-observation-r01/author-gap.json",
+      "sha256": "9FDB1EC67F3802B24B7D6C81C6201F6F41FD57C1BA65A9FA2D85B9A738CF5EFE",
+      "bytes": 2362,
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-a47-pgdev-llo6peu4\\c2-close-ownership-gap.json",
+      "status": "Noether actual compiling failure evidence, Main retained copy"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-main-observation-r01/author-probe.raw",
+      "sha256": "609DA4624FE72471C95569D54A75C8A30F9F05A3BA16F8137D8FDD7509B9E969",
+      "bytes": 3550,
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-a47-author-0an_x8fi\\c2-close-ownership-probe-r01.raw",
+      "status": "Noether actual compiling failure evidence, Main retained copy"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-main-observation-r01/active-anchor.go.frozen",
+      "sha256": "1BC81B0BD6BA0558CACCCC71E543A4B43AB7242E5C6403816B1A3DDDB4E8C538",
+      "bytes": 18793,
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\internal\\article\\deletion_journal_anchor.go",
+      "status": "active author intermediate snapshot only, not final delivery/Review"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-ownership-main-observation-r01/active-anchor-test.go.frozen",
+      "sha256": "74F3E66DA58C9B58B5DB787965099303C27E164F690C2B543C12AA25215F23B7",
+      "bytes": 43539,
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\internal\\article\\deletion_journal_anchor_test.go",
+      "status": "active author intermediate snapshot only, not final delivery/Review"
+    }
+  ]
+}

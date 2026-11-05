@@ -1,0 +1,2892 @@
+{
+  "scope": "article-management-S4.4 post-INSERT current UPDATE rollback bounded supplement; task remains active",
+  "at": "2026-10-28T05:20:46.925709+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-current-update-plan-bb5dfad71bbb4eecb53ededfc6065b39\\inputs.json",
+      "copy": "test-design/inputs.json",
+      "sha256": "FBA693FA79FCC71941D6719EE1600BE943E29B6ACF317919F375393F1AE9A601"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-current-update-plan-bb5dfad71bbb4eecb53ededfc6065b39\\report.md",
+      "copy": "test-design/report.md",
+      "sha256": "2582EA87DCF98B0F81DE2AA93973EABB0B60AAA0D14E5AAAFD7AD886A5CAA3F0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-current-update-plan-bb5dfad71bbb4eecb53ededfc6065b39\\verification.json",
+      "copy": "test-design/verification.json",
+      "sha256": "AC2E286F12929AE37D1D4844964C3735FA7174985393952F8AAB93F098A6315F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\change.diff",
+      "copy": "author/change.diff",
+      "sha256": "D6EED1C31F14E5E0E0DEB427E015F40030FDA672592A40AEF49602775D0DA3B8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\CODE-LOCAL.json",
+      "copy": "author/CODE-LOCAL.json",
+      "sha256": "0AA38A96BAC9581F8693F5391E9358B24E04005D3DF08D579498C49DEF3C5938"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\delivery-index.json",
+      "copy": "author/delivery-index.json",
+      "sha256": "C941382C2F4F831E25DB0B9B2568413F38CF7EAE6543AF5FA0F881A748A3D29C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\diff-check-no-autocrlf.stderr.raw",
+      "copy": "author/diff-check-no-autocrlf.stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\diff-check-no-autocrlf.stdout.raw",
+      "copy": "author/diff-check-no-autocrlf.stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\diff-check-result.json",
+      "copy": "author/diff-check-result.json",
+      "sha256": "893ADD849C51E949FE2558783528B020C6EE5198DE737451F7B7D4A9749849F0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\diff-check.stderr.raw",
+      "copy": "author/diff-check.stderr.raw",
+      "sha256": "BE937A62AF01666DB817652E3B04BB35EDE791F9121553120B485EA22C0B3230"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\diff-check.stdout.raw",
+      "copy": "author/diff-check.stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\diff.stderr.raw",
+      "copy": "author/diff.stderr.raw",
+      "sha256": "BE937A62AF01666DB817652E3B04BB35EDE791F9121553120B485EA22C0B3230"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\G0.md",
+      "copy": "author/G0.md",
+      "sha256": "1D24DB2D6E2F68579673D1730A64390E3F1BDC54715D3112DB83ABD02204C530"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\git-status.code.after.txt",
+      "copy": "author/git-status.code.after.txt",
+      "sha256": "29645A4ECBD94E878F75A8F5A6E9144691C5360EA13E89B56DD57C76A3A98CD2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\git-status.g0.before.txt",
+      "copy": "author/git-status.g0.before.txt",
+      "sha256": "57DFF60FA57400CA342F567E7066DC95FC151DC288D4390F5294132F2CC39EFA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\handoff.md",
+      "copy": "author/handoff.md",
+      "sha256": "07D13EB4C2FFF729C8F7396864B88BE444760AB71D9B583DD2364B07445C49AE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-compile\\result.json",
+      "copy": "author/local-compile/result.json",
+      "sha256": "C6F82EBCCC426A856D1A97B3EF09CB4E8072A66E68DE5F13D1EBF0FDCE4EC87B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-compile\\source185.after.json",
+      "copy": "author/local-compile/source185.after.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-compile\\source185.before.json",
+      "copy": "author/local-compile/source185.before.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-compile\\stderr.raw",
+      "copy": "author/local-compile/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-compile\\stdout.raw",
+      "copy": "author/local-compile/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-format\\result.json",
+      "copy": "author/local-format/result.json",
+      "sha256": "62D839C923D7ACF4D3E0CD034CD091D47FF012EA477196500B2CC7B7F12B9901"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-format\\source185.after.json",
+      "copy": "author/local-format/source185.after.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-format\\source185.before.json",
+      "copy": "author/local-format/source185.before.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-format\\stderr.raw",
+      "copy": "author/local-format/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-format\\stdout.raw",
+      "copy": "author/local-format/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-list\\result.json",
+      "copy": "author/local-list/result.json",
+      "sha256": "320FED306BD7F8738680711ED45557C47B33BFAB01D637B25C966B55D09645A2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-list\\source185.after.json",
+      "copy": "author/local-list/source185.after.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-list\\source185.before.json",
+      "copy": "author/local-list/source185.before.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-list\\stderr.raw",
+      "copy": "author/local-list/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-list\\stdout.raw",
+      "copy": "author/local-list/stdout.raw",
+      "sha256": "D9B1C4CB332F372D3B44D34AE4BC18E213CDBED5AB7C727F9C1E189D22CFF9EC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-static-results.json",
+      "copy": "author/local-static-results.json",
+      "sha256": "FBE07768C9D3EFCA54233FE931F69DF3E8E60921A6245EBEE25BE9927A31F88C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-vet\\result.json",
+      "copy": "author/local-vet/result.json",
+      "sha256": "9AD39AD3D1EE6F829AA1388CDBF23CBA988B9DE62C94C5BFC36C0427DBA56ABE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-vet\\source185.after.json",
+      "copy": "author/local-vet/source185.after.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-vet\\source185.before.json",
+      "copy": "author/local-vet/source185.before.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-vet\\stderr.raw",
+      "copy": "author/local-vet/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\local-vet\\stdout.raw",
+      "copy": "author/local-vet/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\final-index.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/final-index.json",
+      "sha256": "08565D11154E67A018CACCD3FDB7D2DD5B424A891686C27245E9652ECD87177F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\index.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/index.json",
+      "sha256": "A1ABD7EB72BA4D3422CCC24346E6CA7FB63E63D1C423B69A8CA15C1AD3912163"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\input-binding.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/input-binding.json",
+      "sha256": "38B3ECC6223A27B5AED037F8D699B1F46C2559048E388C0AFAED313FAAD358CD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\normal\\argv.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/normal/argv.json",
+      "sha256": "40FEF6E1F470EC793107001EB34172BA99AD8AB4DFCBA0DB799E5F354F775D0C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\normal\\result.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/normal/result.json",
+      "sha256": "DD93595AD3DED8E1DE08B28CA69F392D6F58CF72F8C8E2CC76FB0DE0A3B6E97B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\normal\\retained-payload-index.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/normal/retained-payload-index.json",
+      "sha256": "86556852A73701D3321E50181F2A0735C2C902C46193D63200D2E503673AEC41"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\normal\\source185.after.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/normal/source185.after.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\normal\\source185.before.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/normal/source185.before.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\normal\\stderr.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/normal/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\normal\\stdout.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/normal/stdout.raw",
+      "sha256": "A69A5CB9A9AD42FDC02674FDBEA29C646AABA392192D12A5CC65256F4CA1C381"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight\\result.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight/result.json",
+      "sha256": "DC964AB0E35CD3236FFB5498EFB00ABF28B148DAEDDB969F65FEFB95545C89A9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight\\source185.after.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight/source185.after.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight\\source185.before.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight/source185.before.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight\\stderr.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight\\stdout.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight/stdout.raw",
+      "sha256": "A73AC6B79375C359BF50FC6114EEDBF37E09FF992AD93E16F71E43E7DD5BC77D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight-build\\result.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight-build/result.json",
+      "sha256": "B877229422055D55BC02F8A409F33EF09F25B929CCE30ABF093E9A9E4CF97FC8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight-build\\source185.after.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight-build/source185.after.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight-build\\source185.before.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight-build/source185.before.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight-build\\stderr.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight-build/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\preflight-build\\stdout.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/preflight-build/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\race\\argv.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/race/argv.json",
+      "sha256": "ACAD2A96B494ED836D98485A303C07D8E98F05DFE27837150EB8A9F34177131B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\race\\result.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/race/result.json",
+      "sha256": "742E4396AB90884C3E882B8D2BAFEC4815D93EB132667EBD424E3571EF1C71AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\race\\retained-payload-index.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/race/retained-payload-index.json",
+      "sha256": "8F85FBB2E01C05434DCD5EC1E34F249E413A61B80E1DFE2189F8708A9FF29808"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\race\\source185.after.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/race/source185.after.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\race\\source185.before.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/race/source185.before.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\race\\stderr.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/race/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\race\\stdout.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/race/stdout.raw",
+      "sha256": "AA73B7159347654883DD89ABEFBA552108ABD1B57FF5562EBDA528BB35336B77"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\STOPPED.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/STOPPED.json",
+      "sha256": "5EF2A4F459A5022AA9ED88EF29C91882CB417A97E37A3C3B3814F9825F416D3D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\verification.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/verification.json",
+      "sha256": "DD84595596469AF1EBB90579FE5FED1E3217668C9095C1E7063534953AED62A3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\vet\\result.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/vet/result.json",
+      "sha256": "CBB7265163E280BB5DA3C891DE928ED694A343574ECB6382A3EC5C451D65040B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\vet\\source185.after.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/vet/source185.after.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\vet\\source185.before.json",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/vet/source185.before.json",
+      "sha256": "5AD2C2CCF700C4C4D1CE65C02D44FE4C58FCF61CCFADC099860B5ACC5A7F60F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\vet\\stderr.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/vet/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\pg-run-646e35b6d16640c48fe2a7e95077f330\\vet\\stdout.raw",
+      "copy": "author/pg-run-646e35b6d16640c48fe2a7e95077f330/vet/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\preflight.go",
+      "copy": "author/preflight.go.txt",
+      "sha256": "3E2662F69A98A7C377AE73A1E6DCEA54D86142B8DF95077AF85805F739A23514"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\readset.json",
+      "copy": "author/readset.json",
+      "sha256": "AEACBCE86A922B4035586CA4951B0146794C020598AEBE85889E709F7F5F5B98"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\replay_evidence.before.txt",
+      "copy": "author/replay_evidence.before.txt",
+      "sha256": "BE6C689273783CFCB4939EE987397E09DB175B30506D9C0E49881FA8CE83A925"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\run_local_static.py",
+      "copy": "author/run_local_static.py.txt",
+      "sha256": "16007DE6E0212E58BF675D9E9922C15F429359B8178AA2488AE211AAA1C4E9A7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\run_pg185.py",
+      "copy": "author/run_pg185.py.txt",
+      "sha256": "F2AE23662FDFEF94E3ABB9F7A259A67A77822F319359A9E5A932F39A51F1C119"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\source185.code.json",
+      "copy": "author/source185.code.json",
+      "sha256": "99B5F63A1C31D714D74162A97FACFB9D46C07A2D22D8330D9BCAE5C3E78B5B30"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\source185.g0.before.json",
+      "copy": "author/source185.g0.before.json",
+      "sha256": "7CB9407BA159C9B0E056B5EA1D5E95E76D353E10869C8983F9A87C682D741AB7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-compile\\result.json",
+      "copy": "author/static-r02/local-compile/result.json",
+      "sha256": "5A160373D0F342EEB279630CEE30135980F566E0501AEC6DF1690D0AC839993A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-compile\\source185.after.json",
+      "copy": "author/static-r02/local-compile/source185.after.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-compile\\source185.before.json",
+      "copy": "author/static-r02/local-compile/source185.before.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-compile\\stderr.raw",
+      "copy": "author/static-r02/local-compile/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-compile\\stdout.raw",
+      "copy": "author/static-r02/local-compile/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-format\\result.json",
+      "copy": "author/static-r02/local-format/result.json",
+      "sha256": "71BCA59E74B2258927DF04C5420E4F0B2E08F1BF49CAC516D59102DFB37CC857"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-format\\source185.after.json",
+      "copy": "author/static-r02/local-format/source185.after.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-format\\source185.before.json",
+      "copy": "author/static-r02/local-format/source185.before.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-format\\stderr.raw",
+      "copy": "author/static-r02/local-format/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-format\\stdout.raw",
+      "copy": "author/static-r02/local-format/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-list\\result.json",
+      "copy": "author/static-r02/local-list/result.json",
+      "sha256": "1160AFFBEE3541920A3DB9B26D50F832F7D9083F251DC4DEA8AB09AB8581B2AF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-list\\source185.after.json",
+      "copy": "author/static-r02/local-list/source185.after.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-list\\source185.before.json",
+      "copy": "author/static-r02/local-list/source185.before.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-list\\stderr.raw",
+      "copy": "author/static-r02/local-list/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-list\\stdout.raw",
+      "copy": "author/static-r02/local-list/stdout.raw",
+      "sha256": "D9B1C4CB332F372D3B44D34AE4BC18E213CDBED5AB7C727F9C1E189D22CFF9EC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-static-results.json",
+      "copy": "author/static-r02/local-static-results.json",
+      "sha256": "DB9638A5F84B80ED906C480F15510BFB061284AC90D9C503D0B13603D0A781DA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-vet\\result.json",
+      "copy": "author/static-r02/local-vet/result.json",
+      "sha256": "D7F0FF217BF730BEBF841459A2BF1C09D6992D5A801BFDFD7DE83C510C4F46CE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-vet\\source185.after.json",
+      "copy": "author/static-r02/local-vet/source185.after.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-vet\\source185.before.json",
+      "copy": "author/static-r02/local-vet/source185.before.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-vet\\stderr.raw",
+      "copy": "author/static-r02/local-vet/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\local-vet\\stdout.raw",
+      "copy": "author/static-r02/local-vet/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\replay_evidence.before.txt",
+      "copy": "author/static-r02/replay_evidence.before.txt",
+      "sha256": "BE6C689273783CFCB4939EE987397E09DB175B30506D9C0E49881FA8CE83A925"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\run_local_static.py",
+      "copy": "author/static-r02/run_local_static.py.txt",
+      "sha256": "16007DE6E0212E58BF675D9E9922C15F429359B8178AA2488AE211AAA1C4E9A7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-backend-g0-92b4e10673ec40d4bd54fc1ce767827f\\static-r02\\source185.code.json",
+      "copy": "author/static-r02/source185.code.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\different-backup-begin.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/different-backup-begin.json",
+      "sha256": "105627E6AFBC06810BAC3BD0A290438C832BF2BA26E4E5FD6427858FDF372495"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\different-backup-final-sql.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/different-backup-final-sql.json",
+      "sha256": "C46BFE82EC355B5B52E05097D0378024A7D76D7FD88EB5D4271920BF89F9B411"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\different-backup-lock-observed.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/different-backup-lock-observed.json",
+      "sha256": "FD2102E83B1A898F59864D3D7336435B8EA169F2DEE34C6E2ACDF90F70415A1F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\different-backup-loser-read.raw.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/different-backup-loser-read.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\different-backup-loser-replay.raw.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/different-backup-loser-replay.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\ready-01-facts-and-last-execution.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/ready-01-facts-and-last-execution.json",
+      "sha256": "C1F79E1AF9B7D46AB740786D9CB536835EA7EBD00EC7E41974A8FAA3CBD6624F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\ready-01-sql.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/ready-01-sql.json",
+      "sha256": "C46BFE82EC355B5B52E05097D0378024A7D76D7FD88EB5D4271920BF89F9B411"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\ready-01.wire.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/ready-01.wire.json",
+      "sha256": "FD4A675BEF88B195462F850BFE230A31017B6AAAF01933C8CCFAABE797FED9B4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\schema-created.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/schema-created.json",
+      "sha256": "299DA95B5120A3BF1F76F83C0EAF3816CBA46026ED7AA5DB687A7B942D21CC73"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\seed-before.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/seed-before.json",
+      "sha256": "9FEAF6B5D4BE09D91F68AD3AFC05F69FA70849DD69EEA974A4C34B4CB30AC7AE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\synthetic-backup-B.inventory.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/synthetic-backup-B.inventory.json",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-2186049039\\synthetic-inventory.json",
+      "copy": "author-retained/normal/DifferentBackupFirstBinding/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\execution-01.json",
+      "copy": "author-retained/normal/PublishRollback/execution-01.json",
+      "sha256": "49F85A4955EFE0517B4E13DC9A6AEE98C08235B252D6B3326D54BF2A432EB3F9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\foreign-ref-provenance.json",
+      "copy": "author-retained/normal/PublishRollback/foreign-ref-provenance.json",
+      "sha256": "83C492B190A49B0F4E5EB5F87BF06FAA99AC5DF3A09A899DD6D47BCFA738167C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\publish-insert-before-sql.json",
+      "copy": "author-retained/normal/PublishRollback/publish-insert-before-sql.json",
+      "sha256": "F74F84586A91D1CA985860C87949D5BAD28CF9A32EEC198EF2908BF416773428"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\publish-insert-conflict.json",
+      "copy": "author-retained/normal/PublishRollback/publish-insert-conflict.json",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\publish-insert-pending.raw.json",
+      "copy": "author-retained/normal/PublishRollback/publish-insert-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\publish-insert-resource-observation.json",
+      "copy": "author-retained/normal/PublishRollback/publish-insert-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\publish-insert-retry-final-sql.json",
+      "copy": "author-retained/normal/PublishRollback/publish-insert-retry-final-sql.json",
+      "sha256": "775D95DABC4CF7D82BCE5AA45BEED0062EABA7FBC55E69D45EB385DFD1C16D55"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\publish-insert-rolled-back-sql.json",
+      "copy": "author-retained/normal/PublishRollback/publish-insert-rolled-back-sql.json",
+      "sha256": "F74F84586A91D1CA985860C87949D5BAD28CF9A32EEC198EF2908BF416773428"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\ready-01-facts-and-last-execution.json",
+      "copy": "author-retained/normal/PublishRollback/ready-01-facts-and-last-execution.json",
+      "sha256": "D464284A4B82E3FCE1EE7E47C59BFC9966F4499BC0F6D52BD989026B38E0C6CD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\ready-01-sql.json",
+      "copy": "author-retained/normal/PublishRollback/ready-01-sql.json",
+      "sha256": "775D95DABC4CF7D82BCE5AA45BEED0062EABA7FBC55E69D45EB385DFD1C16D55"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\ready-01.wire.json",
+      "copy": "author-retained/normal/PublishRollback/ready-01.wire.json",
+      "sha256": "DD3D2E34813D0BDA9F72E2FA32A8C11752E203A3AF68E54033F4159A84B2F66D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\ready-02-facts-and-last-execution.json",
+      "copy": "author-retained/normal/PublishRollback/ready-02-facts-and-last-execution.json",
+      "sha256": "D464284A4B82E3FCE1EE7E47C59BFC9966F4499BC0F6D52BD989026B38E0C6CD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\ready-02-sql.json",
+      "copy": "author-retained/normal/PublishRollback/ready-02-sql.json",
+      "sha256": "775D95DABC4CF7D82BCE5AA45BEED0062EABA7FBC55E69D45EB385DFD1C16D55"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\ready-02.wire.json",
+      "copy": "author-retained/normal/PublishRollback/ready-02.wire.json",
+      "sha256": "DD3D2E34813D0BDA9F72E2FA32A8C11752E203A3AF68E54033F4159A84B2F66D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\schema-created.json",
+      "copy": "author-retained/normal/PublishRollback/schema-created.json",
+      "sha256": "0876B7FDCC3AE56611D5371A7DAD21690A95317B8EDBACBC4A82B84AE3416105"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\seed-before.json",
+      "copy": "author-retained/normal/PublishRollback/seed-before.json",
+      "sha256": "5505DD067167404748054F1924E3D1B5914350B5B4FC72C2FAEA825388E20150"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3924026103\\synthetic-inventory.json",
+      "copy": "author-retained/normal/PublishRollback/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\execution-01.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/execution-01.json",
+      "sha256": "7B007DB2CE945A6C924BF77FDF38361122D8556FE44B0799E66B30B08BC2D8F3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\publish-update-before-sql.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/publish-update-before-sql.json",
+      "sha256": "71612B3A6424AED1E42956D515E9A316BB66638822209FF3EFAFA842FF92081B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\publish-update-call-history.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/publish-update-call-history.json",
+      "sha256": "D0F16FD34B8991562D230FDCF370FA3410191C084B59FE315154B941829E2D63"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\publish-update-failure-witness.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/publish-update-failure-witness.json",
+      "sha256": "F76F077D19CA7C287779D2707C8B2E2970FE5A6A69B631D2872F5D296BC54B1F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\publish-update-pending.raw.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/publish-update-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\publish-update-resource-observation.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/publish-update-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\publish-update-retry-final-sql.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/publish-update-retry-final-sql.json",
+      "sha256": "B27C377E2B16958BB05020F4CF1AFD8BB8680364529760FE10D03EC2AE1AC70E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\publish-update-rolled-back-sql.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/publish-update-rolled-back-sql.json",
+      "sha256": "71612B3A6424AED1E42956D515E9A316BB66638822209FF3EFAFA842FF92081B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\ready-01-facts-and-last-execution.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/ready-01-facts-and-last-execution.json",
+      "sha256": "8C03064B2FA54367901398E64719075CC6D96D12706046AE4C2D09FD0CDF05D1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\ready-01-sql.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/ready-01-sql.json",
+      "sha256": "B27C377E2B16958BB05020F4CF1AFD8BB8680364529760FE10D03EC2AE1AC70E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\ready-01.wire.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/ready-01.wire.json",
+      "sha256": "22D69D47901C16E27C2CE32E86F3F86FA59DFEB5DFF218ACEB5882A654810340"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\ready-02-facts-and-last-execution.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/ready-02-facts-and-last-execution.json",
+      "sha256": "8C03064B2FA54367901398E64719075CC6D96D12706046AE4C2D09FD0CDF05D1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\ready-02-sql.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/ready-02-sql.json",
+      "sha256": "B27C377E2B16958BB05020F4CF1AFD8BB8680364529760FE10D03EC2AE1AC70E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\ready-02.wire.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/ready-02.wire.json",
+      "sha256": "22D69D47901C16E27C2CE32E86F3F86FA59DFEB5DFF218ACEB5882A654810340"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\schema-created.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/schema-created.json",
+      "sha256": "45FE4F8125241F8097DB20CC64C0C8BFD9B49558E46626273AF1485794C9942F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\seed-before.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/seed-before.json",
+      "sha256": "4AB080DCE91D6B7E74B87E19DCE13BA5A8B7D87F07B89637AC5004281A08204D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1356997467\\synthetic-inventory.json",
+      "copy": "author-retained/normal/CurrentUpdateRollback/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\different-backup-begin.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/different-backup-begin.json",
+      "sha256": "E4028DB4747E73AF252DE8D43683EC968D406A145D7EDBF6F24A21299FBE4F45"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\different-backup-final-sql.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/different-backup-final-sql.json",
+      "sha256": "BA14888F7C438C23669BAE28D06AF72CB6875061CDA4844CBE5108F370647F5C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\different-backup-lock-observed.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/different-backup-lock-observed.json",
+      "sha256": "B5F010AF2E60BE58114905938D56664A5371D9F416D1141F3E7EDD916FAA006B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\different-backup-loser-read.raw.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/different-backup-loser-read.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\different-backup-loser-replay.raw.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/different-backup-loser-replay.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\ready-01-facts-and-last-execution.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/ready-01-facts-and-last-execution.json",
+      "sha256": "29EBAF0BC91CEFD53D9D61339507841EBEF7CF2459FADF9803D7066F280C63B4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\ready-01-sql.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/ready-01-sql.json",
+      "sha256": "BA14888F7C438C23669BAE28D06AF72CB6875061CDA4844CBE5108F370647F5C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\ready-01.wire.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/ready-01.wire.json",
+      "sha256": "40F9BFBD9BE70DD353A4BCE67F91D4DE6D31DE503FC1B26B74D242ED7A8E5F7E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\schema-created.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/schema-created.json",
+      "sha256": "652EDF99AA8A899315A2F4E56C0D590E5869C5F3E22F518DC363A1BB62059927"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\seed-before.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/seed-before.json",
+      "sha256": "DCDB2D66AF4555A7E128009EFE57C545C34B117C72642886575E8FB11500A2AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\synthetic-backup-B.inventory.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/synthetic-backup-B.inventory.json",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1821713315\\synthetic-inventory.json",
+      "copy": "author-retained/race/DifferentBackupFirstBinding/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\execution-01.json",
+      "copy": "author-retained/race/PublishRollback/execution-01.json",
+      "sha256": "A7C0DB6BBC270921845CCA16A4B3DB773E58F493398EBB21C346A20E8D0228A9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\foreign-ref-provenance.json",
+      "copy": "author-retained/race/PublishRollback/foreign-ref-provenance.json",
+      "sha256": "04231FED70986CB86313C2B6B9BB04D5BB396247C8E47CB3F9F03FB2C309BCC6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\publish-insert-before-sql.json",
+      "copy": "author-retained/race/PublishRollback/publish-insert-before-sql.json",
+      "sha256": "C1692C28152B58F01D087E2FFC71C102252754C4B22B36D69FF3F5DEFFF3CEFE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\publish-insert-conflict.json",
+      "copy": "author-retained/race/PublishRollback/publish-insert-conflict.json",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\publish-insert-pending.raw.json",
+      "copy": "author-retained/race/PublishRollback/publish-insert-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\publish-insert-resource-observation.json",
+      "copy": "author-retained/race/PublishRollback/publish-insert-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\publish-insert-retry-final-sql.json",
+      "copy": "author-retained/race/PublishRollback/publish-insert-retry-final-sql.json",
+      "sha256": "09E7ADA0F9649C74F251401CB74A5B931996DC16BBBA8227C1148604D24D17AA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\publish-insert-rolled-back-sql.json",
+      "copy": "author-retained/race/PublishRollback/publish-insert-rolled-back-sql.json",
+      "sha256": "C1692C28152B58F01D087E2FFC71C102252754C4B22B36D69FF3F5DEFFF3CEFE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\ready-01-facts-and-last-execution.json",
+      "copy": "author-retained/race/PublishRollback/ready-01-facts-and-last-execution.json",
+      "sha256": "57572C688BF1615F1AA9831C671185AA04867244BF96B23C41ABC8E01BACF77D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\ready-01-sql.json",
+      "copy": "author-retained/race/PublishRollback/ready-01-sql.json",
+      "sha256": "09E7ADA0F9649C74F251401CB74A5B931996DC16BBBA8227C1148604D24D17AA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\ready-01.wire.json",
+      "copy": "author-retained/race/PublishRollback/ready-01.wire.json",
+      "sha256": "AC51B688EDD45C674F14CDA4D6AB7BD8742078254BE213F6644A95E9CC42489E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\ready-02-facts-and-last-execution.json",
+      "copy": "author-retained/race/PublishRollback/ready-02-facts-and-last-execution.json",
+      "sha256": "57572C688BF1615F1AA9831C671185AA04867244BF96B23C41ABC8E01BACF77D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\ready-02-sql.json",
+      "copy": "author-retained/race/PublishRollback/ready-02-sql.json",
+      "sha256": "09E7ADA0F9649C74F251401CB74A5B931996DC16BBBA8227C1148604D24D17AA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\ready-02.wire.json",
+      "copy": "author-retained/race/PublishRollback/ready-02.wire.json",
+      "sha256": "AC51B688EDD45C674F14CDA4D6AB7BD8742078254BE213F6644A95E9CC42489E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\schema-created.json",
+      "copy": "author-retained/race/PublishRollback/schema-created.json",
+      "sha256": "479DD4FB4BAB3108782CE9348968E199B1F0CF340DF2EC649BFE555962524C0C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\seed-before.json",
+      "copy": "author-retained/race/PublishRollback/seed-before.json",
+      "sha256": "9D67D9AEEA36E272145E6564110D949456DABD5D41F612BE84930EEEAD3777DA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-3220990873\\synthetic-inventory.json",
+      "copy": "author-retained/race/PublishRollback/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\execution-01.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/execution-01.json",
+      "sha256": "5BD483C54C31D91EB4C58B0DE2ED75229B3E882BEBD99D791FBBE9C2CC917FE6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\publish-update-before-sql.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/publish-update-before-sql.json",
+      "sha256": "E6756D29C99EB3F22A95FC33CD61A23DD1E0A8CF700C965FB852D1AA4592D27A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\publish-update-call-history.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/publish-update-call-history.json",
+      "sha256": "D0F16FD34B8991562D230FDCF370FA3410191C084B59FE315154B941829E2D63"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\publish-update-failure-witness.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/publish-update-failure-witness.json",
+      "sha256": "E5D8E1E68EB3DE4387ECD02BC1B5D3518495256F750F531A603DDBBC90E06885"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\publish-update-pending.raw.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/publish-update-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\publish-update-resource-observation.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/publish-update-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\publish-update-retry-final-sql.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/publish-update-retry-final-sql.json",
+      "sha256": "BC1ED11AD99119287B6126BD88C3F54AC8BAA6703D17DFED5260CA8B788D0978"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\publish-update-rolled-back-sql.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/publish-update-rolled-back-sql.json",
+      "sha256": "E6756D29C99EB3F22A95FC33CD61A23DD1E0A8CF700C965FB852D1AA4592D27A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\ready-01-facts-and-last-execution.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/ready-01-facts-and-last-execution.json",
+      "sha256": "95DCACCC8502BBD5727120D6028F8BBDDDCC9AE922EFAA293DE9BD14F0DF4190"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\ready-01-sql.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/ready-01-sql.json",
+      "sha256": "BC1ED11AD99119287B6126BD88C3F54AC8BAA6703D17DFED5260CA8B788D0978"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\ready-01.wire.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/ready-01.wire.json",
+      "sha256": "3FB253A34B4DD9F6FB96317A7AAA92CB3BD544695F00541D184FEC94CAB9283D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\ready-02-facts-and-last-execution.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/ready-02-facts-and-last-execution.json",
+      "sha256": "95DCACCC8502BBD5727120D6028F8BBDDDCC9AE922EFAA293DE9BD14F0DF4190"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\ready-02-sql.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/ready-02-sql.json",
+      "sha256": "BC1ED11AD99119287B6126BD88C3F54AC8BAA6703D17DFED5260CA8B788D0978"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\ready-02.wire.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/ready-02.wire.json",
+      "sha256": "3FB253A34B4DD9F6FB96317A7AAA92CB3BD544695F00541D184FEC94CAB9283D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\schema-created.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/schema-created.json",
+      "sha256": "0B2726B80CD32BAC7DABBC69E641BABEFB3D52B4B026DF61D27DA31E96E4FC0C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\seed-before.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/seed-before.json",
+      "sha256": "4964CB439714A29C982C4C4098C64095FB6B64CCFC8D5454EF8D94EC044D31F2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-retained-1424638127\\synthetic-inventory.json",
+      "copy": "author-retained/race/CurrentUpdateRollback/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\add.manifest.yaml",
+      "copy": "lead/add.manifest.yaml",
+      "sha256": "E8F5E9C1CDB0548BE00F20A187DEA22347D40C8FF2E5E8D61E563699DA253F80"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\baseline.json",
+      "copy": "lead/baseline.json",
+      "sha256": "6FA02B341F2A524ECA5A558AF6CFF26D7EEBBD25F8B7D156B7388329330C1CEF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\git-status.before.txt",
+      "copy": "lead/git-status.before.txt",
+      "sha256": "35E2E78A4CC598248E10173AB34DB755D7D73EDADC241DE870E3B7202D8FF9CC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\ir-01-content-community-batches.md",
+      "copy": "lead/ir-01-content-community-batches.md",
+      "sha256": "9CC777D62256EBCB93EE1DED5DE2D94E9E41A90943DE356AB93BB0924AE14964"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\knowledge.before.json",
+      "copy": "lead/knowledge.before.json",
+      "sha256": "17AF952B911463B239B2EB85B7FABAA2258A15C43768232B39318EE4304CB655"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-author-verification.json",
+      "copy": "lead/lead-author-verification.json",
+      "sha256": "F74FD5BBBC58BBD802B12563E9C9B37EA3D40B779F009C699C7E382FA77D1CFE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-build.stderr.log",
+      "copy": "lead/lead-update185-r01-build.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-build.stdout.log",
+      "copy": "lead/lead-update185-r01-build.stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-contract.stderr.log",
+      "copy": "lead/lead-update185-r01-contract.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-contract.stdout.log",
+      "copy": "lead/lead-update185-r01-contract.stdout.log",
+      "sha256": "86170FB20E2BFD87D89E545132E9CB1BABC53935049AD0A17F3AE70D51C34321"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-format.stderr.log",
+      "copy": "lead/lead-update185-r01-format.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-format.stdout.log",
+      "copy": "lead/lead-update185-r01-format.stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-modules.stderr.log",
+      "copy": "lead/lead-update185-r01-modules.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-modules.stdout.log",
+      "copy": "lead/lead-update185-r01-modules.stdout.log",
+      "sha256": "B4537ED75F533F993F371954DE47E42A793B8E5B0587577DE7E27FB3E50696BD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-race.stderr.log",
+      "copy": "lead/lead-update185-r01-race.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-race.stdout.log",
+      "copy": "lead/lead-update185-r01-race.stdout.log",
+      "sha256": "A3601DD2CD3EBCA063A88B650D3E4938A3EB85D6C84D0096AB4162BE7FB5C948"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-results.json",
+      "copy": "lead/lead-update185-r01-results.json",
+      "sha256": "BC88309366DDF1EA214048FA13C1534D56DB7E44E29D21709E10A97D707D3EBB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-unit.stderr.log",
+      "copy": "lead/lead-update185-r01-unit.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-unit.stdout.log",
+      "copy": "lead/lead-update185-r01-unit.stdout.log",
+      "sha256": "A3601DD2CD3EBCA063A88B650D3E4938A3EB85D6C84D0096AB4162BE7FB5C948"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-vet.stderr.log",
+      "copy": "lead/lead-update185-r01-vet.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-update185-r01-vet.stdout.log",
+      "copy": "lead/lead-update185-r01-vet.stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\manifest_runner.py",
+      "copy": "lead/manifest_runner.py.txt",
+      "sha256": "DC105CB5579BC69760D316CB1D2C1BF7E07397378304E1D3AB58C36D3A712BBD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\review-start-binding.json",
+      "copy": "lead/review-start-binding.json",
+      "sha256": "429F3EFAB753F6BBDF36C0F603C693E84E6BB22202AA00080B6E6F861962789F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\source.after.flat.json",
+      "copy": "lead/source.after.flat.json",
+      "sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\source.after.json",
+      "copy": "lead/source.after.json",
+      "sha256": "D13091B79658D1B325CBAB3F4DF177BF4DB5835E133C675F07E316CE57F1C9E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\source.before.json",
+      "copy": "lead/source.before.json",
+      "sha256": "003D018E4B5B70B737C9AFB28F9C0BFDB542241F22A33ED61063DC29317921F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\tasks.md",
+      "copy": "lead/tasks.md",
+      "sha256": "29D18DEB95042CAE05BECFD1276DC189AFB3547D92213136CFAF40686AE088A1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\test-design-received.md",
+      "copy": "lead/test-design-received.md",
+      "sha256": "2582EA87DCF98B0F81DE2AA93973EABB0B60AAA0D14E5AAAFD7AD886A5CAA3F0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\test.after.go.txt",
+      "copy": "lead/test.after.go.txt",
+      "sha256": "CF1B07C58F5A7DDCDEA256484CFC9E5F1C0E595B0A1A13B3B1B49DDB410E9048"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\test.before.go.txt",
+      "copy": "lead/test.before.go.txt",
+      "sha256": "BE6C689273783CFCB4939EE987397E09DB175B30506D9C0E49881FA8CE83A925"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\test.diff.txt",
+      "copy": "lead/test.diff.txt",
+      "sha256": "3D60C5A43FB50051731D14AB84EFD15670E275E29E3B1B4B3948E1A39AAB6197"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\analyze_evidence.py",
+      "copy": "reviewer/analyze_evidence.py.txt",
+      "sha256": "AB1FF3AFF80A9B88B31DABE6D03B792521128F7DF98AC9F444C66FDBEA828CCA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\binding.pending.json",
+      "copy": "reviewer/binding.pending.json",
+      "sha256": "7217B3DF4C1804DC24867BBA4DA7C9EDD1ABC7F3BF7B8F004D2B04D7DA28CFD9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\binding.template.json",
+      "copy": "reviewer/binding.template.json",
+      "sha256": "A9D4DE87D508510F1A7CA9B9C44040F87775D2BD6A27A45282145411E6892E73"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\closeout-guard.json",
+      "copy": "reviewer/closeout-guard.json",
+      "sha256": "0D88EAB880545931E9CF556DCAF332914B6DA6488CE3FC8FF0FB2BC64BD9593B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\endpoint_guard.go",
+      "copy": "reviewer/endpoint_guard.go.txt",
+      "sha256": "8E3FBACF470C969CDA8BAE00763B6746462E72C2B75D2421A84E4714C8E84470"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\final-index.json",
+      "copy": "reviewer/final-index.json",
+      "sha256": "46A5BEFCBD8A02F80362DB3CC31499F83D8E356CF331DC61EB5FCC86D2C11F82"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\finalize_review.py",
+      "copy": "reviewer/finalize_review.py.txt",
+      "sha256": "82AD488AB280DEE8669ACD9FFD189B7078090F10699E351B9EC0B2B946767517"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\fixed-code-preparation.json",
+      "copy": "reviewer/fixed-code-preparation.json",
+      "sha256": "777CDEAC1A54D194DEF623443DB489CB9ABDA25BAC42080863FF054088CA8BCF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\independent-evidence-verification.json",
+      "copy": "reviewer/independent-evidence-verification.json",
+      "sha256": "3EBDB2712FD5963656EBD1903C1C641928138E95E986D49E0FD8A5AFF8AEABD0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\after.json",
+      "copy": "reviewer/normal/after.json",
+      "sha256": "A21C4BC62C983B0DFECC55D9CBD923D060748EC4F2146792AFED3F45FF2AB8B5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\analysis.json",
+      "copy": "reviewer/normal/analysis.json",
+      "sha256": "9D4432F92916813EE9CD52D58AA7B9B6717BFAC5DB0706114137956E24BE31B7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\before.json",
+      "copy": "reviewer/normal/before.json",
+      "sha256": "9FC9A4C6CFC04CC664DB9CFFB8CBE6C637DBB483FBA636A638FB2606D62FD538"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\exit.json",
+      "copy": "reviewer/normal/exit.json",
+      "sha256": "215BB90FD7932ADED3A7A6A04411E8FCED29E4B285F6FE69071D1B9317F25C81"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\invocation.json",
+      "copy": "reviewer/normal/invocation.json",
+      "sha256": "7F2818FD46A499565B847F57DE13E34DD031989453322A9C9BDEAC6FC6FB420B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\meta.json",
+      "copy": "reviewer/normal/meta.json",
+      "sha256": "FFA5111357527DF3BA56DAAC0C3DFAB82881AB80297DE7BBF1D792BE3330C2D9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\mode-index.json",
+      "copy": "reviewer/normal/mode-index.json",
+      "sha256": "71E1675BC0E580957ABC2F25C720E1C85410A8106B7E4CA8356192B421F78477"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\execution-01.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/execution-01.json",
+      "sha256": "2ADA4CA1BF223D2085DA3A5B619E654697A52E947396EDEA00D0D3113E7FA24B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\publish-update-before-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/publish-update-before-sql.json",
+      "sha256": "D70FA64635D8ECD58250381A2E628C34F20BB57F97566A80FD4BE8E1D45DF320"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\publish-update-call-history.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/publish-update-call-history.json",
+      "sha256": "D0F16FD34B8991562D230FDCF370FA3410191C084B59FE315154B941829E2D63"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\publish-update-failure-witness.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/publish-update-failure-witness.json",
+      "sha256": "B5497E53CEDFFDDFC6D95D7A88289F0946BC22BCCE6FF4E3A745555AAE70B5F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\publish-update-pending.raw.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/publish-update-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\publish-update-resource-observation.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/publish-update-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\publish-update-retry-final-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/publish-update-retry-final-sql.json",
+      "sha256": "47092E6514A1B4910462FBCE67C7BD37EDA97F8E2316D4F514BC56C3E2A7A274"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\publish-update-rolled-back-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/publish-update-rolled-back-sql.json",
+      "sha256": "D70FA64635D8ECD58250381A2E628C34F20BB57F97566A80FD4BE8E1D45DF320"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\ready-01-facts-and-last-execution.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/ready-01-facts-and-last-execution.json",
+      "sha256": "7C096978F5AFB33F444F1163184E4C5C2F153A744883B2B05161E6043F355C2B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\ready-01-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/ready-01-sql.json",
+      "sha256": "47092E6514A1B4910462FBCE67C7BD37EDA97F8E2316D4F514BC56C3E2A7A274"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\ready-01.wire.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/ready-01.wire.json",
+      "sha256": "FEA8EA3DF74DA0B33FDB23D085D69B5528D9C5F258122CDBDB98D07CA357E0AD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\ready-02-facts-and-last-execution.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/ready-02-facts-and-last-execution.json",
+      "sha256": "7C096978F5AFB33F444F1163184E4C5C2F153A744883B2B05161E6043F355C2B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\ready-02-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/ready-02-sql.json",
+      "sha256": "47092E6514A1B4910462FBCE67C7BD37EDA97F8E2316D4F514BC56C3E2A7A274"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\ready-02.wire.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/ready-02.wire.json",
+      "sha256": "FEA8EA3DF74DA0B33FDB23D085D69B5528D9C5F258122CDBDB98D07CA357E0AD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\schema-created.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/schema-created.json",
+      "sha256": "ECB1A5416E0FC97DA423EE0A46B73E30E14FA4CCF4F13DCB74C68DD67CAD78F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\seed-before.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/seed-before.json",
+      "sha256": "26CBB2FFFB15FB44A0A2D4B14CFA33ACA8AE64152BE7EB26C265278741C420B4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-177849431\\synthetic-inventory.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-177849431/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\execution-01.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/execution-01.json",
+      "sha256": "3AFA935C0C704E6C75697DA5390340EAB437742B68A56FB5D1CB9398C8CEDE5D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\foreign-ref-provenance.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/foreign-ref-provenance.json",
+      "sha256": "17E0ED52D65E763470C7251D4160B4B9DF0DC8141374126300E4A8ADD70FC1E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\publish-insert-before-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/publish-insert-before-sql.json",
+      "sha256": "C9A30D83C08DD70B19F57E052FA17A42AFE89C164743E8EA60223CC4108202C6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\publish-insert-conflict.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/publish-insert-conflict.json",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\publish-insert-pending.raw.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/publish-insert-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\publish-insert-resource-observation.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/publish-insert-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\publish-insert-retry-final-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/publish-insert-retry-final-sql.json",
+      "sha256": "EEC5F479B3DADC3D16367168FBB80D3E6D20E1A489FEB2F6B232CD95FA233174"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\publish-insert-rolled-back-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/publish-insert-rolled-back-sql.json",
+      "sha256": "C9A30D83C08DD70B19F57E052FA17A42AFE89C164743E8EA60223CC4108202C6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\ready-01-facts-and-last-execution.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/ready-01-facts-and-last-execution.json",
+      "sha256": "2B36A5959E208732EFD60AD2D2212B718B8233960740F6C5458210F926E8322C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\ready-01-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/ready-01-sql.json",
+      "sha256": "EEC5F479B3DADC3D16367168FBB80D3E6D20E1A489FEB2F6B232CD95FA233174"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\ready-01.wire.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/ready-01.wire.json",
+      "sha256": "9F2C292FB425B996E6ECC0C3EEE931142EA630F2DC993967BC2973185D28A60B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\ready-02-facts-and-last-execution.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/ready-02-facts-and-last-execution.json",
+      "sha256": "2B36A5959E208732EFD60AD2D2212B718B8233960740F6C5458210F926E8322C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\ready-02-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/ready-02-sql.json",
+      "sha256": "EEC5F479B3DADC3D16367168FBB80D3E6D20E1A489FEB2F6B232CD95FA233174"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\ready-02.wire.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/ready-02.wire.json",
+      "sha256": "9F2C292FB425B996E6ECC0C3EEE931142EA630F2DC993967BC2973185D28A60B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\schema-created.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/schema-created.json",
+      "sha256": "F8DBD5EC21BF30809591024622AAB42F5B228081B79DAF4ECF3483F487067E9E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\seed-before.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/seed-before.json",
+      "sha256": "1C1DCB4364E83F779B4569623149E26FA00177F379D528B37201F8979A0B85E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-3415506133\\synthetic-inventory.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-3415506133/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\different-backup-begin.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/different-backup-begin.json",
+      "sha256": "B40EA9C999113FBEFD82838DCA5774434486B33B256D873093CC37024C4400C2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\different-backup-final-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/different-backup-final-sql.json",
+      "sha256": "8BAC2E3DB8929B37CB46F44A16160113A57D4D54A152AC2EE4794445FB826C05"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\different-backup-lock-observed.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/different-backup-lock-observed.json",
+      "sha256": "221352FC701584B3C3A029AA1D5615BADE816ABA7C00E7000BDB1CDD356598A3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\different-backup-loser-read.raw.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/different-backup-loser-read.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\different-backup-loser-replay.raw.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/different-backup-loser-replay.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\ready-01-facts-and-last-execution.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/ready-01-facts-and-last-execution.json",
+      "sha256": "CB48A5E97752FAEAC60B3C65A322B42E197890CA210B0F2267FAA642EE20716B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\ready-01-sql.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/ready-01-sql.json",
+      "sha256": "8BAC2E3DB8929B37CB46F44A16160113A57D4D54A152AC2EE4794445FB826C05"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\ready-01.wire.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/ready-01.wire.json",
+      "sha256": "1F4FEA724121D970E6F60BF9F748CB88457988E2CEDFA1EB9B70BA2EC67C5615"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\schema-created.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/schema-created.json",
+      "sha256": "1C2C7C4C3219731D63A1A56DC5A044555C7E9AF889E691E2C64C2D639C0205DE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\seed-before.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/seed-before.json",
+      "sha256": "7F3BC1C21099FBCB35A2397DEC30FF41511268A42DD10DBC98426E0D49B74532"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\synthetic-backup-B.inventory.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/synthetic-backup-B.inventory.json",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\retained-temp\\han-s44-retained-4133488200\\synthetic-inventory.json",
+      "copy": "reviewer/normal/retained-temp/han-s44-retained-4133488200/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\started.json",
+      "copy": "reviewer/normal/started.json",
+      "sha256": "446B01646FAA61D81FA03F1567DC7A163B805983D743E64DBDC6C6E1D19458DB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\stderr.log",
+      "copy": "reviewer/normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\normal\\stdout.jsonl",
+      "copy": "reviewer/normal/stdout.jsonl",
+      "sha256": "A5B95500CD635C019E9BF6F41CA9DE75AC035B0FE9294B5F48CD6AECBC612D3F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\after.json",
+      "copy": "reviewer/preflight/after.json",
+      "sha256": "CDFCF450C84D3D8AC66E850D10F893E1913B7C958CA5BDEEC54AE854140FA8CA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\analysis.json",
+      "copy": "reviewer/preflight/analysis.json",
+      "sha256": "D039F071DA9237A84D3CA5AE30DDC4FBDE3D85C4B4CB83D78CCB3E4B915807E3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\before.json",
+      "copy": "reviewer/preflight/before.json",
+      "sha256": "43FF446368F58E44FA41C5BDABB26D1121EAA4F4C56D2CD5367A41C5CE55019F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\exit.json",
+      "copy": "reviewer/preflight/exit.json",
+      "sha256": "1ACC21233BE8C06024D153F6722C705231597DD040460700A7B6C8CEF2000230"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\invocation.json",
+      "copy": "reviewer/preflight/invocation.json",
+      "sha256": "A7CA140A3EF0B368659C4E451E02AA33BEB67466206E4613A1A35DE380709ADB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\meta.json",
+      "copy": "reviewer/preflight/meta.json",
+      "sha256": "50C0FD683F8BFACD4AE39B2C0394701686290360123445DFE74CF5AC8999F39B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\mode-index.json",
+      "copy": "reviewer/preflight/mode-index.json",
+      "sha256": "63BA33BC6CE423B55DA713434BBBBA7496FFA5E5575F2727F7369449F9712E09"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\started.json",
+      "copy": "reviewer/preflight/started.json",
+      "sha256": "572540C043D76B22E9B517717BA5C8EBC32862A6E7A7461C32F6313B91001EFF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\stderr.log",
+      "copy": "reviewer/preflight/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preflight\\stdout.jsonl",
+      "copy": "reviewer/preflight/stdout.jsonl",
+      "sha256": "E124204315A85469B6EA932F6AB26A025B17BC916FC744C89F31BDBCD4916531"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\preparation.json",
+      "copy": "reviewer/preparation.json",
+      "sha256": "F5459E037472CA83FF062D564C9AC213486C1F125782DC55B29229AC795146D2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\after.json",
+      "copy": "reviewer/race/after.json",
+      "sha256": "16D635B11758ECDF0FE2B26C0E72AFD32777F80DF88890D7E5A627D0100DFB80"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\analysis.json",
+      "copy": "reviewer/race/analysis.json",
+      "sha256": "4DC765C411C2D24CBA5A76B54F5E488609FA6874AEE6E79BA21D88D1F0B41AF3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\before.json",
+      "copy": "reviewer/race/before.json",
+      "sha256": "94B2E8545E91517FA9DFF04F53519EF61B45EB6EDCE92DC230CE05BFC53E6F99"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\exit.json",
+      "copy": "reviewer/race/exit.json",
+      "sha256": "6A307BB66FAD08607B13E8A25DD4C24300830FBBEB4F9C5A5C3B332D664751AA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\invocation.json",
+      "copy": "reviewer/race/invocation.json",
+      "sha256": "3FEF80CC41273B0CE34DDE2F080918A286163155C34F4499996D57A9BA59E496"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\meta.json",
+      "copy": "reviewer/race/meta.json",
+      "sha256": "46E2B92EA0AECBA8E92F8012BA0A99C1C11A98C19DDF6BEAE2E85EB9C4C4FB22"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\mode-index.json",
+      "copy": "reviewer/race/mode-index.json",
+      "sha256": "84FED68F47105BD112388DFFA396571F7D69A27C9183B60BBD908109F1E0C7AD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\execution-01.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/execution-01.json",
+      "sha256": "35E983F01A466E5F43F5F49AC5A1A79D1DEF598566B13E09338478BF438840D2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\publish-update-before-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/publish-update-before-sql.json",
+      "sha256": "D367BE75CC9005916C36572083F02E504DD93355349B17EDBEA3DCD84CD72889"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\publish-update-call-history.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/publish-update-call-history.json",
+      "sha256": "D0F16FD34B8991562D230FDCF370FA3410191C084B59FE315154B941829E2D63"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\publish-update-failure-witness.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/publish-update-failure-witness.json",
+      "sha256": "3BB3DD936EC446951000175E673F4FFDBA7A34CB9510C3CB2E15095FAB90975A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\publish-update-pending.raw.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/publish-update-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\publish-update-resource-observation.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/publish-update-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\publish-update-retry-final-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/publish-update-retry-final-sql.json",
+      "sha256": "CABB8E1BBC1B9E835D5B47E744B50165DC86603166818FBC1DB3A8B67DD6253E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\publish-update-rolled-back-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/publish-update-rolled-back-sql.json",
+      "sha256": "D367BE75CC9005916C36572083F02E504DD93355349B17EDBEA3DCD84CD72889"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\ready-01-facts-and-last-execution.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/ready-01-facts-and-last-execution.json",
+      "sha256": "59C4A9C58B64D219F582AC70F2B47A89014FCE180BAAB3F5E6D27846A2805D5C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\ready-01-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/ready-01-sql.json",
+      "sha256": "CABB8E1BBC1B9E835D5B47E744B50165DC86603166818FBC1DB3A8B67DD6253E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\ready-01.wire.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/ready-01.wire.json",
+      "sha256": "2B5E745FA1D7CB78AAEB897E7D9116850B303FD428BD0FC940E48146B447530F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\ready-02-facts-and-last-execution.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/ready-02-facts-and-last-execution.json",
+      "sha256": "59C4A9C58B64D219F582AC70F2B47A89014FCE180BAAB3F5E6D27846A2805D5C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\ready-02-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/ready-02-sql.json",
+      "sha256": "CABB8E1BBC1B9E835D5B47E744B50165DC86603166818FBC1DB3A8B67DD6253E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\ready-02.wire.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/ready-02.wire.json",
+      "sha256": "2B5E745FA1D7CB78AAEB897E7D9116850B303FD428BD0FC940E48146B447530F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\schema-created.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/schema-created.json",
+      "sha256": "490E7EFB0144435C98675E81D8DEC71C031D3AE90F1DD52332E037D46DA07E7D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\seed-before.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/seed-before.json",
+      "sha256": "06659F07D873070C52AC20B7833B4A44F4FF8D10D474A392D935DE0141A478E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2108997502\\synthetic-inventory.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2108997502/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\execution-01.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/execution-01.json",
+      "sha256": "B709769B8AC47871C1CB46B5A1A7A8427F46D5A65EF974DE0F0702C7E716E2F4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\foreign-ref-provenance.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/foreign-ref-provenance.json",
+      "sha256": "9132CCD57FF2FB994AB0834EC9ECC6CD12F1031FA1266384EF9C472B863071C5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\publish-insert-before-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/publish-insert-before-sql.json",
+      "sha256": "D4F8AC61473610EFBEBDD936809E4113F4FA3F14F6D696E08138447AB95E4B63"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\publish-insert-conflict.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/publish-insert-conflict.json",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\publish-insert-pending.raw.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/publish-insert-pending.raw.json",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\publish-insert-resource-observation.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/publish-insert-resource-observation.json",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\publish-insert-retry-final-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/publish-insert-retry-final-sql.json",
+      "sha256": "B426EB8B619E4F5A07D4053E6526E61A86713BBC1E24761C3578DD701391BED8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\publish-insert-rolled-back-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/publish-insert-rolled-back-sql.json",
+      "sha256": "D4F8AC61473610EFBEBDD936809E4113F4FA3F14F6D696E08138447AB95E4B63"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\ready-01-facts-and-last-execution.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/ready-01-facts-and-last-execution.json",
+      "sha256": "6E7BC9A7127002ABD4155084C3B1C3D5F8353803F24FAEFDFDE7B1A080138028"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\ready-01-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/ready-01-sql.json",
+      "sha256": "B426EB8B619E4F5A07D4053E6526E61A86713BBC1E24761C3578DD701391BED8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\ready-01.wire.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/ready-01.wire.json",
+      "sha256": "ED5E29B3CB5B0759BBAE639757FB85A1664B0B3949FFDB48E81299D4F54D86CB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\ready-02-facts-and-last-execution.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/ready-02-facts-and-last-execution.json",
+      "sha256": "6E7BC9A7127002ABD4155084C3B1C3D5F8353803F24FAEFDFDE7B1A080138028"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\ready-02-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/ready-02-sql.json",
+      "sha256": "B426EB8B619E4F5A07D4053E6526E61A86713BBC1E24761C3578DD701391BED8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\ready-02.wire.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/ready-02.wire.json",
+      "sha256": "ED5E29B3CB5B0759BBAE639757FB85A1664B0B3949FFDB48E81299D4F54D86CB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\schema-created.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/schema-created.json",
+      "sha256": "E9CE4E8A70F92D1ACEC2129F2B4FB2287FC449896A82635225D720E491C2BA50"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\seed-before.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/seed-before.json",
+      "sha256": "8B5066DCF5720A849833772AEF5FDC2C016D89D9A682BB5B1E2DA83673D0EB22"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-2381591762\\synthetic-inventory.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-2381591762/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\different-backup-begin.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/different-backup-begin.json",
+      "sha256": "35D3059967F94F57FFD2B0B7B5C73E4F15C9349F4C56306723D95A68E655861E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\different-backup-final-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/different-backup-final-sql.json",
+      "sha256": "E2B9A0C0AA88F752925265F29D0F2E0EB601942E7CFB549E0C29EB79023E59F0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\different-backup-lock-observed.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/different-backup-lock-observed.json",
+      "sha256": "34F379DC85D28DE2483A0D26A10328AA9613ACA6197C0B306AC2518ACB45C549"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\different-backup-loser-read.raw.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/different-backup-loser-read.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\different-backup-loser-replay.raw.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/different-backup-loser-replay.raw.json",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\ready-01-facts-and-last-execution.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/ready-01-facts-and-last-execution.json",
+      "sha256": "AEC571B07AE8B5D95FD858F4DFDF6FDAE88EF0AB43ABA52021E69832B049BE22"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\ready-01-sql.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/ready-01-sql.json",
+      "sha256": "E2B9A0C0AA88F752925265F29D0F2E0EB601942E7CFB549E0C29EB79023E59F0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\ready-01.wire.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/ready-01.wire.json",
+      "sha256": "245D420878036D5351DF52B34E121AF4439CFDA4B8E631899F6B3200500E559D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\schema-created.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/schema-created.json",
+      "sha256": "C6EAE3739BACD55C45EF5D5329162FC8EAEADBE6E8A4E32063F1B5B0172C3878"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\seed-before.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/seed-before.json",
+      "sha256": "9552BEEFB83FC513589AB8C937FA17F23166C171A39FBBD642D50C530628C319"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\synthetic-backup-B.inventory.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/synthetic-backup-B.inventory.json",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\retained-temp\\han-s44-retained-916534\\synthetic-inventory.json",
+      "copy": "reviewer/race/retained-temp/han-s44-retained-916534/synthetic-inventory.json",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\started.json",
+      "copy": "reviewer/race/started.json",
+      "sha256": "377D3ABC4031E68FC0ADE7BA8C3829BFED9549BC19EFAF140D0AAA209EBF8B78"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\stderr.log",
+      "copy": "reviewer/race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\race\\stdout.jsonl",
+      "copy": "reviewer/race/stdout.jsonl",
+      "sha256": "5927BF4FEDBE865AA0B6009E9C55DEA82A6BC58AD10C89F831032E05866B03A8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\readiness.json",
+      "copy": "reviewer/readiness.json",
+      "sha256": "B13A7F40B0382346302AE86BAB1464D4BBBF655B39038883AF3DBDE1DF883592"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\review-start-check.json",
+      "copy": "reviewer/review-start-check.json",
+      "sha256": "015A43732742DD33E71FF307B340838959561265F2439BA283F3FD7439B1FF3E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\runner.py",
+      "copy": "reviewer/runner.py.txt",
+      "sha256": "B37D6E1730B48AB46B0F50388B0FFDA891FA7E3B39DB7B03934261D830162E08"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\STOPPED.json",
+      "copy": "reviewer/STOPPED.json",
+      "sha256": "77DCC7DE1D6A02791EE6EA902498CCF7201158EF78AEED879006881064453689"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\verification.json",
+      "copy": "reviewer/verification.json",
+      "sha256": "B48BBA17F6C5A033185455E5116C11367E0807DEC916E6B0B430C51CBF930FAB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\after.json",
+      "copy": "reviewer/vet/after.json",
+      "sha256": "BFDDF768E9A49E53F74C1ECFB9605A96737DC1C2FE769F2573D29AA72E3AEFB3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\analysis.json",
+      "copy": "reviewer/vet/analysis.json",
+      "sha256": "D039F071DA9237A84D3CA5AE30DDC4FBDE3D85C4B4CB83D78CCB3E4B915807E3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\before.json",
+      "copy": "reviewer/vet/before.json",
+      "sha256": "338F63D3A299BD66C1D995E8D95E4AE4C0583D16F64853B20C7F93B1674A687C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\exit.json",
+      "copy": "reviewer/vet/exit.json",
+      "sha256": "891F2C1C23F7DAE3E988F3CD678E1B8919D927D8FA52C25984D9FD6506F4AA6E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\invocation.json",
+      "copy": "reviewer/vet/invocation.json",
+      "sha256": "A27C09823A5FCC2FAE9E953FE6B13758305C65073EF478E0962975725BAF3C5C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\meta.json",
+      "copy": "reviewer/vet/meta.json",
+      "sha256": "BEB9639EA3BDB4FF98B51E8C5D2AA33A117CEEEB8BC09E7E0288C20E707C1E0D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\mode-index.json",
+      "copy": "reviewer/vet/mode-index.json",
+      "sha256": "A0C6A698200846D1F06007080F59A16AB079C962B43C7CF81FA7A9681ED76518"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\started.json",
+      "copy": "reviewer/vet/started.json",
+      "sha256": "7BD0B6B04422EE2D167A0567B2C6C268A0C47E95B84C183AA5DB1605FD5E90F3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\stderr.log",
+      "copy": "reviewer/vet/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-independent-s44-update-review-38e629d70f714c3cb610e6657b7e9765\\vet\\stdout.jsonl",
+      "copy": "reviewer/vet/stdout.jsonl",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\git-status.final.txt",
+      "copy": "lead/git-status.final.txt",
+      "sha256": "8CB2A9A98A66F5F7E78877B430128856E90AF2B83783CCF466D4A661C6274EE0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-author-normal-ready.json",
+      "copy": "lead/lead-author-normal-ready.json",
+      "sha256": "421DF8FFA8A0B338192D3B92B5509E44EA59205F6A933507207D717DA4DB80F4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-author-race-ready.json",
+      "copy": "lead/lead-author-race-ready.json",
+      "sha256": "31273A19B53E829E66567764E7C34EC09C8CA34DDFA8F2F054816ED0CC35F3A2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-final-scope-verification.json",
+      "copy": "lead/lead-final-scope-verification.json",
+      "sha256": "8751754CF4F1CB0C182E35347AB8A3B73122A8CB83026BB1C01C2E018952FE99"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-reviewer-normal-ready.json",
+      "copy": "lead/lead-reviewer-normal-ready.json",
+      "sha256": "FC65052928B5B1E371DF414B8E3BC5C7E42BB813E0418DE68A643F5256098EB9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-reviewer-race-ready.json",
+      "copy": "lead/lead-reviewer-race-ready.json",
+      "sha256": "1105A71AD58BF116F880E4D6569D9F4FAF5B2211215EC8CF92B231C8CABD3046"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\lead-reviewer-verification.json",
+      "copy": "lead/lead-reviewer-verification.json",
+      "sha256": "62519CE9CB6876921355F7FDBB8166D34E15ADD42899FDA05CCF89A474E4A6AA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\metadata-scope-verification.json",
+      "copy": "lead/metadata-scope-verification.json",
+      "sha256": "8A1E64FAACF9B15FF4AD22FDD36DFAE9D11EA73CDB0346811B85A5FBC6D8238B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\plan.after.md",
+      "copy": "lead/plan.after.md",
+      "sha256": "321DEC29A06576DCEB121D3122AB51ECE056FAC403A368EF0628D8132B0B2E40"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\tasks.after.md",
+      "copy": "lead/tasks.after.md",
+      "sha256": "6FC16D0DC540CB0701103065031EBD7021812DB5ED73CF2037DD61921E5EC0D4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\update_metadata.py",
+      "copy": "lead/update_metadata.py.txt",
+      "sha256": "60D75F6F316C643D9A10C9CCCF27B44E50D2D1211284A3508C429AEB8622B5F1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-update-lead-jgbec4f1\\verify_ready_sql.py",
+      "copy": "lead/verify_ready_sql.py.txt",
+      "sha256": "91520090F96C9F58267DAE86137ACB40BA5AFA9302F6F3BF1A237C72318DDDC1"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\review-code-s4.4-current-update-r01.md",
+      "copy": "lead/review-code-s4.4-current-update-r01.md",
+      "sha256": "938C2EBE4907E9B1D85F529E3BF12CBF512277C8487A5FBC98919E3AA2027470"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\verification-s4.4.md",
+      "copy": "lead/verification-s4.4.after.md",
+      "sha256": "2E7CD10FA56F75F8F328B8FB40EE1D3D3795DFAF17550F3E912BCDF71A76D5C7"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\evidence-s4.4\\review-r01\\reviewer\\analyze.py.txt",
+      "copy": "lead/prior-ready-verifier.py.txt",
+      "sha256": "A6F6FF5E51F562E1AE193EEEFCBCE87A2F4439734ECC092B0BD8237CA20A918D"
+    }
+  ],
+  "shared_source_bindings": [
+    {
+      "input": "cmd/han-server/database_config.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/database_config.go.txt",
+      "sha256": "EF8C1077C58B2E240FE3424D775DA95446A38080B72E41E548F9AB62518CC2DB"
+    },
+    {
+      "input": "cmd/han-server/database_config_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/database_config_test.go.txt",
+      "sha256": "563EE0394521E23254D3A37EF1E2093650CE1E044007000FCFA15E636FAE5674"
+    },
+    {
+      "input": "cmd/han-server/http_config.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/http_config.go.txt",
+      "sha256": "A5F74D7CCA33C6681E8ACE4D90E072EBE87D73CF752F127F70BDC23AE0CFB297"
+    },
+    {
+      "input": "cmd/han-server/http_config_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/http_config_test.go.txt",
+      "sha256": "5C6E9C2A12EE16DCB2AE1B759DB776E80C2BAC8B1236B099E6402BF48963030F"
+    },
+    {
+      "input": "cmd/han-server/lifecycle.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/lifecycle.go.txt",
+      "sha256": "8F1FE0EFEEF230BED7EFDB02D93190415C072DD6F6CC3EE5EC80E4AAAFB62BEB"
+    },
+    {
+      "input": "cmd/han-server/lifecycle_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/lifecycle_test.go.txt",
+      "sha256": "662A2693547A687F33BEEAD581B937023F9525306B375F773D15FD4F1228FBB6"
+    },
+    {
+      "input": "cmd/han-server/main.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/main.go.txt",
+      "sha256": "6B45B5509A2D01C9F5DF0393CA00CAD5C8430353B5F849BF6E71BA3A47C52AC4"
+    },
+    {
+      "input": "cmd/han-server/main_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/main_test.go.txt",
+      "sha256": "B53DD34D57AD6A2797E9FC080FD90034FC52CB26675686CB075D3153F193A9BC"
+    },
+    {
+      "input": "go.mod",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/go.mod",
+      "sha256": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090"
+    },
+    {
+      "input": "go.sum",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/go.sum",
+      "sha256": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+    },
+    {
+      "input": "internal/article/admin_delete_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/admin_delete_test.go.txt",
+      "sha256": "3ADEB5C7BC7E64239C8574BDD8CB9A41060E04289F043C1C0B3D3DA2311905CA"
+    },
+    {
+      "input": "internal/article/admin_query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/admin_query_test.go.txt",
+      "sha256": "DBAF93B7600831D61DC74804D82905CAE0719014357A9107321DFCD8C3EF3F61"
+    },
+    {
+      "input": "internal/article/article_port.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/article_port.go.txt",
+      "sha256": "215A224CF416D81FA217F7524EDEEA671A25AC1110BA0147CC1D1BD6315CE044"
+    },
+    {
+      "input": "internal/article/author_projection_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/author_projection_test.go.txt",
+      "sha256": "47314C84B79B53A6476F91A6F728CBC521CD78DE36AF61D68DA7298C1B0192F7"
+    },
+    {
+      "input": "internal/article/backup_inventory.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/backup_inventory.go.txt",
+      "sha256": "B247DB0CC10723EB1D4464F59A9D543C6421AE296E7AADFF21A440F61C90B7EF"
+    },
+    {
+      "input": "internal/article/backup_inventory_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/backup_inventory_test.go.txt",
+      "sha256": "7260756A356795C913AAB391E8CF19F9C53EB779585D81DEB6C8A20BF6049B12"
+    },
+    {
+      "input": "internal/article/command_service.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/command_service.go.txt",
+      "sha256": "585BB51D19B3FCD7BFDC9C84465D2BB5D24F41BD8285553FC20BC10B161B4D68"
+    },
+    {
+      "input": "internal/article/create_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/create_test.go.txt",
+      "sha256": "90F0A53153A42CDAE4A8669606259C033089FDCB54E8010F4BC3D6FDE4D0535F"
+    },
+    {
+      "input": "internal/article/cursor_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/cursor_test.go.txt",
+      "sha256": "D73AB43280EC69FF9A2B2415ED48137157E092870D367F7C31FD96A0AA5514A8"
+    },
+    {
+      "input": "internal/article/deletion_coordinator.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_coordinator.go.txt",
+      "sha256": "6EEA01FB40FBD6B237B4E02600122708404EE1AF59626971D4CE40D72DB98481"
+    },
+    {
+      "input": "internal/article/deletion_filelock_flock.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_filelock_flock.go.txt",
+      "sha256": "C72AC42EAF78B279CB774C79B9024A7E330C1FCCE2D40D912782E5B0B50A5C96"
+    },
+    {
+      "input": "internal/article/deletion_filelock_unsupported.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_filelock_unsupported.go.txt",
+      "sha256": "BF140294B11D068B2971DFEFF4D3598FFAEC591FCF1F5BE0435640370C5FEB8B"
+    },
+    {
+      "input": "internal/article/deletion_finalizer.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_finalizer.go.txt",
+      "sha256": "546C69B7CC363453F6A4E866D4E3B1B68D9E6B611463159EDE69ACEC0D9B8750"
+    },
+    {
+      "input": "internal/article/deletion_journal.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_journal.go.txt",
+      "sha256": "0A3F2AE9AEADDDB85C62A1F7CA1BD284AACF149DA0D5ED02184F1E30F0EB4333"
+    },
+    {
+      "input": "internal/article/deletion_replay.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay.go.txt",
+      "sha256": "E5054A45B65D4D6C98F2855067A4DAD56DDDFA24FC6A1423429C458A79DB14D7"
+    },
+    {
+      "input": "internal/article/deletion_replay_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_integration_test.go.txt",
+      "sha256": "836799C0CB90251A06B3E63EE077703FB7DF98876C4FC3CC0C59C093150887B4"
+    },
+    {
+      "input": "internal/article/deletion_replay_source.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_source.go.txt",
+      "sha256": "E5586AFA43011072AAAE84F982A35BA0DA08A0D9E40B9588CBA6F36A4C5268CC"
+    },
+    {
+      "input": "internal/article/deletion_replay_source_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_source_test.go.txt",
+      "sha256": "8FB2A4B1C8FC8B54710D24A8305D8C283B9E50091F560F336EF7E2A1228A4F1C"
+    },
+    {
+      "input": "internal/article/deletion_replay_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_test.go.txt",
+      "sha256": "4C122C4D3CDC9D6F5E2D1E5E51B084B28C6ECF7AC70FA4FEDC7C14D39CC9D558"
+    },
+    {
+      "input": "internal/article/deletion_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_test.go.txt",
+      "sha256": "6D04CD35F0049E64FFEC6954B53EF0AB75256BF97C156E331BB5B019E87EA9C6"
+    },
+    {
+      "input": "internal/article/deletion_worker.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_worker.go.txt",
+      "sha256": "9E6BDD23089B41A3870DB0A35420589DD2210972C0610A43184D6E7C60F6612D"
+    },
+    {
+      "input": "internal/article/deletion_worker_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_worker_test.go.txt",
+      "sha256": "444C304EFFE624B65345C138C9BF75964AEFA9C52E6293341961DAAF59E107CA"
+    },
+    {
+      "input": "internal/article/etag_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/etag_test.go.txt",
+      "sha256": "5135568F014CE4D1420ACC5A7DA8F6CED1F3A18318549C03FFD3D0FAAFB6652E"
+    },
+    {
+      "input": "internal/article/handler.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/handler.go.txt",
+      "sha256": "C684B4C874083035C1BC6B1F22DF81833D8DF490544E8586719C028B203D3750"
+    },
+    {
+      "input": "internal/article/model.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/model.go.txt",
+      "sha256": "42B2BEEEAC0B4CB3B6E2138314956F2D1FCBD0E32D6E7B32BB2352C656E8851D"
+    },
+    {
+      "input": "internal/article/moderation_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/moderation_test.go.txt",
+      "sha256": "8094598605B8C8EB5AA5940A70BD2E3B03D3C3C3CEB3C0A81BAEB1C451933779"
+    },
+    {
+      "input": "internal/article/notice_dispatcher.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/notice_dispatcher.go.txt",
+      "sha256": "C49CF9D7C78E5DC99E2177B6F760BE5B191D2120F3FC47DBBE8A7BEF93BFFB97"
+    },
+    {
+      "input": "internal/article/notice_dispatcher_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/notice_dispatcher_test.go.txt",
+      "sha256": "7761947F288890CCC66125E7C5B0DF153F3568C72C7EF05ED9291A702F9D8ADD"
+    },
+    {
+      "input": "internal/article/orphan_canonical_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/orphan_canonical_test.go.txt",
+      "sha256": "9F7CFD3424450D74C30E1F039D4E0154C20BA03B715EE9539DBDDF82678D5D70"
+    },
+    {
+      "input": "internal/article/orphan_disposition_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/orphan_disposition_test.go.txt",
+      "sha256": "301A40FED868BFAB85D80C84888399DAAAF3B22E8CBBFBD7C754FC3B6E5265DE"
+    },
+    {
+      "input": "internal/article/policy.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/policy.go.txt",
+      "sha256": "6CD1543BC2E715F76EE7B6C5CDDDB3153A9A425B84C55A366648E600B78C8774"
+    },
+    {
+      "input": "internal/article/policy_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/policy_test.go.txt",
+      "sha256": "B67C708416E4CCBD988EBF43BAED45484177B6B6BCD54988E8EDE1461D7BB47E"
+    },
+    {
+      "input": "internal/article/query_service.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/query_service.go.txt",
+      "sha256": "D3151AC329C8C9EB8A1B8E00FF45A58CC467E06E1C9A00F9A63830048C0108B4"
+    },
+    {
+      "input": "internal/article/query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/query_test.go.txt",
+      "sha256": "DF40F63117A0C8F7569A255EABBF9DD95F81CA86FBAE17F88EE93A8F78A0C53E"
+    },
+    {
+      "input": "internal/article/replay_evidence.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/replay_evidence.go.txt",
+      "sha256": "ABFD682F1E068259172767DD2E0B00BA0D9B970AE899D0BB4FC0327390F15D99"
+    },
+    {
+      "input": "internal/article/replay_status_v1.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/replay_status_v1.go.txt",
+      "sha256": "CBC6EF89E28C23ADA950C3878A00A75F475AB163A181373FEB441503AC36D303"
+    },
+    {
+      "input": "internal/article/replay_status_v1_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/replay_status_v1_test.go.txt",
+      "sha256": "A787C956DBBDBA7D5D306584501E37CCCD757DDAE8EE164DB1B8CE4BA6F65FA0"
+    },
+    {
+      "input": "internal/article/repository.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/repository.go.txt",
+      "sha256": "80529712F7D62ACD4A5A976621FF1E7AB11069D11CDE2D73B5050CDCA58758F8"
+    },
+    {
+      "input": "internal/article/repository_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/repository_integration_test.go.txt",
+      "sha256": "3A15B7635D97D66AB4DE5CE69155C37E414F75BC3DBB0AD4F14D869019A0DCF4"
+    },
+    {
+      "input": "internal/article/update_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/update_test.go.txt",
+      "sha256": "D6EF18BF78C12DC438C03CDC05C6DEAF4D6CF6157718BFF92C0DA4EF29366EAA"
+    },
+    {
+      "input": "internal/audit/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/audit/store.go.txt",
+      "sha256": "091219E0FD2298C43474A7152C8300EB5CEFD5565C1F08D78DDD1E1387C5C24F"
+    },
+    {
+      "input": "internal/audit/store_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/audit/store_integration_test.go.txt",
+      "sha256": "4A3CC84CE6B620724692D696B705D74BC39C8E1EB28F044EDD136E166FF6138C"
+    },
+    {
+      "input": "internal/idempotency/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/idempotency/store.go.txt",
+      "sha256": "AA0483969B12B058B42DB70A9763501B60ED055AFB91E5ECD6AA7F5C45FDD657"
+    },
+    {
+      "input": "internal/idempotency/store_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/idempotency/store_integration_test.go.txt",
+      "sha256": "BAE146223ABADF5E3884962E2BDD119AE46964D694B3BE4A38B331DAA956CD5A"
+    },
+    {
+      "input": "internal/idempotency/store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/idempotency/store_test.go.txt",
+      "sha256": "3A6EF9313839ED19BE28D4FB635C016DF51F6C58213DDAE88D93A2A65CC49BE7"
+    },
+    {
+      "input": "internal/identity/account_status.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/account_status.go.txt",
+      "sha256": "C03B8D155580CECE26707863D24062FC54B6C3707F2C006F38C3DAB408C00FA0"
+    },
+    {
+      "input": "internal/identity/account_status_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/account_status_test.go.txt",
+      "sha256": "5E349230E58FE6F8EF1C899559B10DB9AD47050D9BD54660EA31B65599F26CCA"
+    },
+    {
+      "input": "internal/identity/administrator_create.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_create.go.txt",
+      "sha256": "DD1D1DA23CB9D9E13E3200E09867B2A2C2F6BCBF06894C46074F60AC94D75813"
+    },
+    {
+      "input": "internal/identity/administrator_create_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_create_test.go.txt",
+      "sha256": "AC9FE098FA3F1F09FA4944BB5BD7653BF375B23C08ED1E63F13DCEE45683EEAE"
+    },
+    {
+      "input": "internal/identity/administrator_governance.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_governance.go.txt",
+      "sha256": "DC43A60525D1A4B7E40587A40EB5EE85183FE4E46F79FE13020DA48AB0C5DBA3"
+    },
+    {
+      "input": "internal/identity/administrator_governance_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_governance_test.go.txt",
+      "sha256": "E64924FF592F1CA25F5158BB248A47530DF1C59E2AB5960B79F6C09C4902A122"
+    },
+    {
+      "input": "internal/identity/article_disposition.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_disposition.go.txt",
+      "sha256": "EB053611CE9346A9A51C0485DD9AE1003EA99C57AF0A3842A4621D67ECE04593"
+    },
+    {
+      "input": "internal/identity/article_disposition_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_disposition_test.go.txt",
+      "sha256": "A92E8C4D65C76361094B472F35BEDEAB77F15C2FC5E0ECA54854BCDDC640EDF4"
+    },
+    {
+      "input": "internal/identity/article_port.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_port.go.txt",
+      "sha256": "F12DB7648F36CD530879434A9B0D0E4231E955253614ADFA5F3999AF40A1ED10"
+    },
+    {
+      "input": "internal/identity/article_reader.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_reader.go.txt",
+      "sha256": "D9315AFA411CB8C4612459C8E97979BD2274780A7B7B32D78F3AB735C3F82B6B"
+    },
+    {
+      "input": "internal/identity/article_reader_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_reader_test.go.txt",
+      "sha256": "C6D2B246236D24FC27C9E2C66413DE03999EA98D61CD61B2054D0152206C28AC"
+    },
+    {
+      "input": "internal/identity/bootstrap.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/bootstrap.go.txt",
+      "sha256": "AEF53946AB8C55A3CC03DAE03DC1CD0E42BE12553D9619D45C7F491F154CAAA5"
+    },
+    {
+      "input": "internal/identity/bootstrap_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/bootstrap_test.go.txt",
+      "sha256": "C33C31A22C32DA0FFE57099C37C3E6EE4826F4F082359F2B7A7E2B1CB43E2B45"
+    },
+    {
+      "input": "internal/identity/cursor.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/cursor.go.txt",
+      "sha256": "E0514475A7ECA31E24A8092A51D2F814DCCB112F7D2022A3D903E2AA5A1A6FFD"
+    },
+    {
+      "input": "internal/identity/cursor_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/cursor_test.go.txt",
+      "sha256": "4F5D647E2EA29CC4D4EB2B837178895FD40E9F24E85D4976BC71BC9C26C4864D"
+    },
+    {
+      "input": "internal/identity/deletion.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/deletion.go.txt",
+      "sha256": "119D378C3508A790FFC6E7371C5AFC0D8CE100A33C2F47AFACD305F7683A2721"
+    },
+    {
+      "input": "internal/identity/deletion_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/deletion_test.go.txt",
+      "sha256": "2F5975867E74EC6B6E8A0AD1DFD128382EC5123FB308A7924A5B6D4294ED6687"
+    },
+    {
+      "input": "internal/identity/handler.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/handler.go.txt",
+      "sha256": "EC4533A6CAA6819255BF9FC7D19EEE3AEEAA90B9E3A9128A5D24B5017D1F1EA3"
+    },
+    {
+      "input": "internal/identity/handler_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/handler_test.go.txt",
+      "sha256": "7A32FEF8C9C94489D8D8E055C6B5ACEB7E2EA0304BCF028BDE0CF1D0BCA6373F"
+    },
+    {
+      "input": "internal/identity/login.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/login.go.txt",
+      "sha256": "FDB1ED13FB499A1219AE24884F053A3626567BB81CAAB56EC02B1FC197B6864C"
+    },
+    {
+      "input": "internal/identity/login_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/login_integration_test.go.txt",
+      "sha256": "15C28D7BA7EE39499D970E8C7AE53F7CE28A1A450D2530FD7697BF8BE4D407BA"
+    },
+    {
+      "input": "internal/identity/login_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/login_test.go.txt",
+      "sha256": "FB5483FB93649F9B01B060D54F35B5CC7B7A3305704D19DFCA445A2C7400414F"
+    },
+    {
+      "input": "internal/identity/model.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/model.go.txt",
+      "sha256": "4D17E1DBC264C69BAFE3330619098F0C57AD703EC5EA5E611BCE8E2BB548B5C7"
+    },
+    {
+      "input": "internal/identity/password_reset.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset.go.txt",
+      "sha256": "5F2D0E1B534E1A4F47AF25675FB94AA3B2830A01C408F6C615E41FAB74A81575"
+    },
+    {
+      "input": "internal/identity/password_reset_operator.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_operator.go.txt",
+      "sha256": "4DC973ECB2272E07083884224A898D0C7C38E4CFEE8B03E44DA14E9D9F951F42"
+    },
+    {
+      "input": "internal/identity/password_reset_operator_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_operator_test.go.txt",
+      "sha256": "9463D7B8B098A21BA3F68BDB190CFCF51C6FA47038BA0BD8A7E7505ADD210E02"
+    },
+    {
+      "input": "internal/identity/password_reset_store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_store.go.txt",
+      "sha256": "D1CB46D5BF038FCB8A7908FF06BA5FDAD6CB31903DCC66D9DBBF286D54D1FB62"
+    },
+    {
+      "input": "internal/identity/password_reset_store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_store_test.go.txt",
+      "sha256": "CEE5617805058F9204FF5F45DC0F03B90A006C1CC987CF2C52A3BDDFD69BC777"
+    },
+    {
+      "input": "internal/identity/password_reset_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_test.go.txt",
+      "sha256": "59AAC51742A61ADD318D8ADE5527231D4D5A198790687B101A35A5A843666E2A"
+    },
+    {
+      "input": "internal/identity/password_reset_worker.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_worker.go.txt",
+      "sha256": "9BF1A9B1230004422E9ABC563329C9C7E44BB48CC1E1452CB5DF18E20D704C90"
+    },
+    {
+      "input": "internal/identity/password_reset_worker_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_worker_test.go.txt",
+      "sha256": "DC6544C4390CC36FC93ED4B66D530E2E0FBC067A7C733FFF6692944CBC4801CD"
+    },
+    {
+      "input": "internal/identity/query.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/query.go.txt",
+      "sha256": "534E6E362431B669D271D689365161F95E843D9838D2DA03398F51806DD2C407"
+    },
+    {
+      "input": "internal/identity/query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/query_test.go.txt",
+      "sha256": "786B1A3ED94CC0DA5AF9B004250DE74FED67C92108436A0E18F1B6E7CF6886E9"
+    },
+    {
+      "input": "internal/identity/recovery_run_store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/recovery_run_store.go.txt",
+      "sha256": "519D7E98A4908A7AC4EF10C91D990575C4C8B3D3B621B4B69E6BD7589E722056"
+    },
+    {
+      "input": "internal/identity/recovery_run_store_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/recovery_run_store_integration_test.go.txt",
+      "sha256": "8EF68B57BC1CB0F459AD11BA7C0EDB2D42DAD8A25319FD8CB6C9DF56F8E43E4B"
+    },
+    {
+      "input": "internal/identity/registration.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/registration.go.txt",
+      "sha256": "29E8ED1208273E47C0D0393799E5365B49DFA70B6B42E56254CAA077A9442F0A"
+    },
+    {
+      "input": "internal/identity/registration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/registration_test.go.txt",
+      "sha256": "5EEC3977E99AEA9072B5C4E3CBA0BC7DF922C0D9880C876639FD288C42663B21"
+    },
+    {
+      "input": "internal/identity/repository.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/repository.go.txt",
+      "sha256": "9FC7F99D58E432E1807DE06C6B705A00CC736F99141EC3F95AF234EBA44DACE3"
+    },
+    {
+      "input": "internal/identity/repository_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/repository_integration_test.go.txt",
+      "sha256": "89E6284C41937C13BC2EECBFD509061A0FB5D7DB04EE0DC1E303C65F36A6B8EA"
+    },
+    {
+      "input": "internal/identity/service.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/service.go.txt",
+      "sha256": "7E5064E40447A35EFC4F6537ED845E6EBD4A7199169208302B63C5905643C70D"
+    },
+    {
+      "input": "internal/identity/temporary_credential.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential.go.txt",
+      "sha256": "66F11A1BD5E390D996C440BF21126AB8740356C43A4CDA49DD2FE16B66B23DF5"
+    },
+    {
+      "input": "internal/identity/temporary_credential_resend.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential_resend.go.txt",
+      "sha256": "EF7F9CBC121A18040BAA937E9217C53CE961C7072166019AB6863B4B1E9AD50C"
+    },
+    {
+      "input": "internal/identity/temporary_credential_resend_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential_resend_test.go.txt",
+      "sha256": "592D00E1CC28FE81B3E2362A4461654D60C1142A5B99A9DBC13D4DD252CD5465"
+    },
+    {
+      "input": "internal/identity/temporary_credential_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential_test.go.txt",
+      "sha256": "659199B79A481A04DF414DFDC30C5B616455BD4466FA471FA8D92BC2BDA6279D"
+    },
+    {
+      "input": "internal/mailer/mailer.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/mailer/mailer.go.txt",
+      "sha256": "A2F103D6AF3664288D0C4F460EC5733E33FA6461FB8554A189FBC3194C5B4D0D"
+    },
+    {
+      "input": "internal/mailer/smtp.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/mailer/smtp.go.txt",
+      "sha256": "28237089CE76B353CC01D36847378CF4775AA9281210175AAC59905DCC192853"
+    },
+    {
+      "input": "internal/mailer/smtp_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/mailer/smtp_test.go.txt",
+      "sha256": "9833F766F24CEA8067D9A2C46BB13C01DF2568DE5A7EA998675318EDCA2B964E"
+    },
+    {
+      "input": "internal/migration/runner.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/runner.go.txt",
+      "sha256": "DD473A94D645EAAFA04FC2E812EF1462B1E92CD0CC431E52F48C6F6EBB87924D"
+    },
+    {
+      "input": "internal/migration/runner_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/runner_integration_test.go.txt",
+      "sha256": "A6925A4A42BD0D29EF1210BA578B485458ADC51A3B39A037160D46F3A2EC800F"
+    },
+    {
+      "input": "internal/migration/runner_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/runner_test.go.txt",
+      "sha256": "769F08C0FB1F1DF58523765DF1EF825365A28861C32EB4D9E5705AD7EBD395E8"
+    },
+    {
+      "input": "internal/migration/sqlcheck.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/sqlcheck.go.txt",
+      "sha256": "C99977348271D1F7A0589992B3E6937C823F928CB21B9D9D49A6BBB0589A4F7A"
+    },
+    {
+      "input": "internal/migration/sqlcheck_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/sqlcheck_test.go.txt",
+      "sha256": "232E5CA353D2C4D7E46EDAFA9D81885E22FFD1497BA452819C70FB0274B426A8"
+    },
+    {
+      "input": "internal/migration/testdata/0001_create_probe.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/testdata/0001_create_probe.sql.txt",
+      "sha256": "1F45C267195BA60362D41FC8113DEECCA377B0E9B1B549107E03D019EA35BE04"
+    },
+    {
+      "input": "internal/migration/testdata/0002_fail_probe.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/testdata/0002_fail_probe.sql.txt",
+      "sha256": "465E611EC7CDF196B68AAF8A964FF7DF1F0BCD83909AA1672F1887A614111E45"
+    },
+    {
+      "input": "internal/migration/testdata/0003_after_failure.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/testdata/0003_after_failure.sql.txt",
+      "sha256": "C5FE526E68546A77DD638DFC228118DEFF69582AC6D375F7D17901DE5624DA7F"
+    },
+    {
+      "input": "internal/platform/config.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/config.go.txt",
+      "sha256": "3F5E28FE3404DC970374F39F16556C91E28AA9DBEC30E662109EFD58B8F866B0"
+    },
+    {
+      "input": "internal/platform/config_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/config_test.go.txt",
+      "sha256": "3A1DD70ECC3209A782CDD01C8F61E7AC941D15555450332B37298C9421950A46"
+    },
+    {
+      "input": "internal/platform/errors.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/errors.go.txt",
+      "sha256": "99B1094A6C15A6E86E45B43928F8AC1B4F3A4EE810857BE598E9AA4336D968E3"
+    },
+    {
+      "input": "internal/platform/errors_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/errors_test.go.txt",
+      "sha256": "5C8CEA67B738BE1AA11FB4AE206907604BEE7CC2CC0C646891CF4EF35A6D9237"
+    },
+    {
+      "input": "internal/platform/http.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/http.go.txt",
+      "sha256": "0890069CB559C7B8454A242B46736FC23D542B0D45E350B0D035C7012BB710C4"
+    },
+    {
+      "input": "internal/platform/http_security.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/http_security.go.txt",
+      "sha256": "3676B4C64BCF115C43845DC69D77F6875F3A7BBCD67DA6A91920B84594C3CFDA"
+    },
+    {
+      "input": "internal/platform/http_security_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/http_security_test.go.txt",
+      "sha256": "BF3DCEC73440B687ED2A1C68F2B30D0FCEA52A6BF9AF8300E82449B8499E5002"
+    },
+    {
+      "input": "internal/platform/logging.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/logging.go.txt",
+      "sha256": "F362D36954DF0119D5DC25040640C796069CC8E178A1D92B828C6D6149CF30A9"
+    },
+    {
+      "input": "internal/platform/metrics.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/metrics.go.txt",
+      "sha256": "517B232D76C877FF335354E95668EC1D84B84385C017FCD45A4C046C6E4BC33A"
+    },
+    {
+      "input": "internal/platform/metrics_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/metrics_test.go.txt",
+      "sha256": "FE97076376DBBABAA5B256BEFB92DAB527372AA652500F25EE0246B0D572EFB4"
+    },
+    {
+      "input": "internal/privacy/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/privacy/store.go.txt",
+      "sha256": "6E555D74E5210EA20CE0C33DB08DA40CD6BA4B7D1549B9A8031E0F4D82EEDD9D"
+    },
+    {
+      "input": "internal/privacy/store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/privacy/store_test.go.txt",
+      "sha256": "FE8D9C0DDD27ECEB6AF7EF7D03CA05A6FCE64F6061957C41B1F7246E03F48F70"
+    },
+    {
+      "input": "internal/recovery/coordinator.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/coordinator.go.txt",
+      "sha256": "6CBFF5B71D99CDCAC65751A446C4FB27267C76D651D6B46AD561684DCD0825A4"
+    },
+    {
+      "input": "internal/recovery/filelock_flock.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/filelock_flock.go.txt",
+      "sha256": "8C5666102271855F72C11A69478240DF7A690A608883E012BC4624E89424AE9B"
+    },
+    {
+      "input": "internal/recovery/filelock_flock_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/filelock_flock_test.go.txt",
+      "sha256": "EB528CD975C3177175B98D42E0F4B2C61B1297344D9BD2050425FA3952B19FCE"
+    },
+    {
+      "input": "internal/recovery/filelock_unsupported.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/filelock_unsupported.go.txt",
+      "sha256": "6C35F9C189EB09DF9DF52DAE609A7EA8BFDDEB167FA3E3CAD8B51D448ECCF17C"
+    },
+    {
+      "input": "internal/recovery/journal.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/journal.go.txt",
+      "sha256": "D61D5EA8E5C447B584E6C27CA60791D1266DF78E844E662DD51377832DC2B893"
+    },
+    {
+      "input": "internal/recovery/journal_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/journal_test.go.txt",
+      "sha256": "7521070A79788AE108095C8D55C0550DD74B163AF8C3CD1E8C896299B1A1A505"
+    },
+    {
+      "input": "internal/recovery/journal_windows_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/journal_windows_test.go.txt",
+      "sha256": "F2AE7CB58E2344196D66494DBCEC154B5F260FDAFB1F73FFBCF731F866D3B598"
+    },
+    {
+      "input": "internal/recovery/keyring.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/keyring.go.txt",
+      "sha256": "DDB9B972F83E9CA7A2CEBCB19745179C5BBFF9FCC1D8A29BBB80C62FBE45DEBF"
+    },
+    {
+      "input": "internal/recovery/replay_status_v1.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/replay_status_v1.go.txt",
+      "sha256": "2F2FFA4B7357D9E7D63B2F923B9F212D89CED112EB88E0B453D3C5E8E41FDA82"
+    },
+    {
+      "input": "internal/recovery/replay_status_v1_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/replay_status_v1_test.go.txt",
+      "sha256": "E174499CD4828A429E8FFBAA227FE6C1148F84C778A074A022D3AB593C0A3B9E"
+    },
+    {
+      "input": "internal/security/argon2.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/argon2.go.txt",
+      "sha256": "BF6B6E63D315832001A010C77FCBA2341C2E1FDBEA1E0D6471B15BC3B3D406B7"
+    },
+    {
+      "input": "internal/security/argon2_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/argon2_test.go.txt",
+      "sha256": "BEE56CE85531BDAC700B9B5A1A8E6A88CAAA48102BADD6708D8E00CB35257A33"
+    },
+    {
+      "input": "internal/security/password.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/password.go.txt",
+      "sha256": "59F3E886F7D8DD7409DEF141EB00415E6976B72C3F4450685E2F786E87259507"
+    },
+    {
+      "input": "internal/security/password_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/password_test.go.txt",
+      "sha256": "2CFF86C6DA9D1F9D9B046E9A0544FFE8B9350BECAF4892F98915651CA06002C7"
+    },
+    {
+      "input": "internal/session/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/session/store.go.txt",
+      "sha256": "4B12462E29D46B730F0DD58E6A0BAA57EC1D91B99D9F43FC91179319FF88E679"
+    },
+    {
+      "input": "internal/session/store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/session/store_test.go.txt",
+      "sha256": "3D32E65D407F24211355B642DAB3933F1AB36E10B60CAFC7F039B2F9B8201E09"
+    },
+    {
+      "input": "internal/testenv/env.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/testenv/env.go.txt",
+      "sha256": "5E5763F31CB24A90E7975A0CF60CEABA01506E56155C4D51D4B3A6781D965630"
+    },
+    {
+      "input": "internal/testenv/env_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/testenv/env_test.go.txt",
+      "sha256": "3F2916C6BE32AF0880AE4578BA2B62A474BA558F2676B6F26E22DA7CB7EE08DF"
+    },
+    {
+      "input": "migrations/0001_shared.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0001_shared.sql.txt",
+      "sha256": "CEE72F1470B49185B3B33C7655F792ADFFCBC1E030AF6669E0902775104B7A14"
+    },
+    {
+      "input": "migrations/0002_identity.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0002_identity.sql.txt",
+      "sha256": "F4EC1005EA72B1774DF5E370C5ABA57CA3ED7A0B13099DBBE2D16AA66AEB9D50"
+    },
+    {
+      "input": "migrations/0003_article.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0003_article.sql.txt",
+      "sha256": "FCAECE696DCE29D2F8D252EA36C4550F0C1736347E921F40703540B99E100D4A"
+    },
+    {
+      "input": "migrations/0004_idempotency.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0004_idempotency.sql.txt",
+      "sha256": "4794816AC2FDA4AD12522F2F324448A6F9EFB2E9E39677A595400E68148424A9"
+    },
+    {
+      "input": "migrations/0005_recovery_runs.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0005_recovery_runs.sql.txt",
+      "sha256": "66CA82109FF33BE7E4A3B349FE55A8CB88CBBF608939B8D7C5C12B06EDBDEC27"
+    },
+    {
+      "input": "migrations/0006_user_governance_indexes.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0006_user_governance_indexes.sql.txt",
+      "sha256": "6F93D99F6DFA0DE46DF8D891F8979039F679493932C28326EEB2AF28E2F24660"
+    },
+    {
+      "input": "migrations/0007_idempotency_response_snapshot_v1.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0007_idempotency_response_snapshot_v1.sql.txt",
+      "sha256": "9D3E642D4F5C5DE81113E23AEBD70E2E07BF583E140697D335DB4DDA35F01F9F"
+    },
+    {
+      "input": "migrations/0008_password_reset_durable.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0008_password_reset_durable.sql.txt",
+      "sha256": "37FB3077709462D62C763FE87D4E04B4BDA4CFC498C14C2860B27429D5036980"
+    },
+    {
+      "input": "migrations/0009_article_replay_attempt.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0009_article_replay_attempt.sql.txt",
+      "sha256": "4E10F50108A57D709C866044DE6678A00E11A4D6ACB589E708C7DC3779A9AA1D"
+    },
+    {
+      "input": "migrations/README.md",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/README.md",
+      "sha256": "DE436F62118EA74F48F15391BFC9AD5EAFC0EA6C557F89A4923E84AE72F15D73"
+    },
+    {
+      "input": "test/contract/article/internal_ports_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/article/internal_ports_test.go.txt",
+      "sha256": "DC6791D4793ABE67FE17B83736FC77E55C347859B13A4FB5071E6AC51BF64F25"
+    },
+    {
+      "input": "test/contract/article/projection_contract_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/article/projection_contract_test.go.txt",
+      "sha256": "D7585EE66538EECA4364BF01CC2BE3A4AC69D98C9818560D6533457E8A572033"
+    },
+    {
+      "input": "test/contract/article/replay_status_producer_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/test/contract/article/replay_status_producer_test.go.txt",
+      "sha256": "6EB4A677F6D5A4C6DA8B6B219A98C8BD4BC5026C5A3B428F73DE6D61D6C13957"
+    },
+    {
+      "input": "test/contract/article/rest_contract_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/article/rest_contract_test.go.txt",
+      "sha256": "CEBA105C2CBF70B91CB5DFF93D9D4FC37077153A7EDB4F9C2806C29E650E9533"
+    },
+    {
+      "input": "test/contract/identity/internal_ports_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/identity/internal_ports_test.go.txt",
+      "sha256": "F749E7185D660CBFEC481CB5C83B30BA730003383354F622C6128123F12BBB1D"
+    },
+    {
+      "input": "test/contract/identity/replay_status_consumer_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/identity/replay_status_consumer_test.go.txt",
+      "sha256": "9E9495C24D3212ADB34AEC199D90650CF99FA1E59C035CEA6ABB7DEC32C49752"
+    },
+    {
+      "input": "test/contract/identity/rest_contract_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/identity/rest_contract_test.go.txt",
+      "sha256": "86133EF48C35F704628100AE72C865D8526142791C3F7AE10FF1725230C994A5"
+    },
+    {
+      "input": "test/integration/article/admin_query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/admin_query_test.go.txt",
+      "sha256": "3ADC5BFA00410F2BF7B520C0035E0089B6E24889770BF6BD1F283A7E5B798263"
+    },
+    {
+      "input": "test/integration/article/audit_insert_rollback_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/audit_insert_rollback_test.go.txt",
+      "sha256": "468964647524860CEEF0167EC56A9C0033FBB40CFF340A5021FBCE66F2C89CD5"
+    },
+    {
+      "input": "test/integration/article/etag_concurrency_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/etag_concurrency_test.go.txt",
+      "sha256": "C7EAA2D8D9FB315926CE80049E15B3E7932A290D8CCF58BC123E32F97527F2FA"
+    },
+    {
+      "input": "test/integration/article/notice_crash_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/notice_crash_test.go.txt",
+      "sha256": "D2A75075C439D512896EC038A9E0EF8263CA5C11866A3F86B12FDB2E8C705479"
+    },
+    {
+      "input": "test/integration/article/notice_dispatcher_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/notice_dispatcher_test.go.txt",
+      "sha256": "54C74D6A014F37B257AADFF6D25C34B9776E50890A5BADFAA660CB27D8C8CEC0"
+    },
+    {
+      "input": "test/integration/article/notice_smtp_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/notice_smtp_test.go.txt",
+      "sha256": "9E96006CD8036A00DCB577CCA5975CECB27931224B34AE4C0B3441693201CF48"
+    },
+    {
+      "input": "test/integration/article/pagination_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/pagination_test.go.txt",
+      "sha256": "13B6F1B3A2625AFB9240A07188F928A63E307B009FF17ACC879811E51A4A498F"
+    },
+    {
+      "input": "test/integration/article/postgres_state_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/postgres_state_test.go.txt",
+      "sha256": "A77E5214BC4257088C03164BC9801384B13DF848D9679BA7716FF9D1DA433FD0"
+    },
+    {
+      "input": "test/integration/identity/faults_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/faults_test.go.txt",
+      "sha256": "900F5CBE83F80DAE2BAEDEDF108DE94283F364FD0AFAD2372D0A4DC454DB1F63"
+    },
+    {
+      "input": "test/integration/identity/fixtures.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/fixtures.sql.txt",
+      "sha256": "F6760020DE75F4E43FD758298FA7FFA2FA1E97B0ECA39543B28BB1469B9883BF"
+    },
+    {
+      "input": "test/integration/identity/orphan_disposition_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/orphan_disposition_test.go.txt",
+      "sha256": "7B38993E04D342F424C11C4D9E136DD3F06967D7E10A939C1103186F9B289D12"
+    },
+    {
+      "input": "test/integration/identity/postgres_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/postgres_test.go.txt",
+      "sha256": "C3A7F455C6AD40DC43557F578286CD53B1EB48A018DFAC699A43F152C0B9D1CB"
+    },
+    {
+      "input": "test/integration/identity/smtp_credentials_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/smtp_credentials_test.go.txt",
+      "sha256": "C9AED4062DB032DAE67A9F0AA683FC46184E91FBEA7386E6D68D473CE0F67EC1"
+    },
+    {
+      "input": "test/integration/identity/smtp_test_server.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/smtp_test_server.go.txt",
+      "sha256": "FEFF245A580D7D848A780EB63C5AD1D0E2B13582ADDCC3BE6C9506C9F82DFB26"
+    },
+    {
+      "input": "test/integration/recovery/article_fixtures_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/recovery/article_fixtures_test.go.txt",
+      "sha256": "88FD408A466CAF208E780112F82B6EB82BCCDB58D5CB1E848C07B52DFDC3C4F6"
+    },
+    {
+      "input": "test/integration/recovery/article_replay_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/new-pg-code-r01/article_replay.final.go.txt",
+      "sha256": "B65FAE92A2AE95E291C8CB2CC136769E22209C4E888546CEDF43CC68727F659A"
+    },
+    {
+      "input": "test/integration/recovery/fixtures_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/recovery/fixtures_test.go.txt",
+      "sha256": "0CD7471AD1574D05465CA3F29C8B967B631F520A2F3BA94E91BE5E346A485ACB"
+    },
+    {
+      "input": "testdata/contracts/article-deletion-replay/ready-v1.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/contracts/article-deletion-replay/ready-v1.json",
+      "sha256": "586A0B8F76ADE8B720E44094A0D13163C827D231AC9CBC786C6D4AF92E90F0F2"
+    },
+    {
+      "input": "testdata/contracts/article-deletion-replay/unavailable-v1.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/contracts/article-deletion-replay/unavailable-v1.json",
+      "sha256": "929193CD06BA566402F3F3C1D6321E57BDA95D0270DED666B5C951D97B21AC1B"
+    },
+    {
+      "input": "testdata/recovery/article-backup-inventory.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/article-backup-inventory.json",
+      "sha256": "1355094A5A6751E6E479F4769C9D6E41C993F2A054D23ACF948D3F7E5C4E9B8C"
+    },
+    {
+      "input": "testdata/recovery/article-deletion-fixtures.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/article-deletion-fixtures.json",
+      "sha256": "E86F32A1731E04F3B1590A87282F71F4332B488F2B6040E74AAF7F5876CF7D81"
+    },
+    {
+      "input": "testdata/recovery/backup-manifest.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/backup-manifest.json",
+      "sha256": "2F267BD497FC90D7B6D1B28F36F8E7B8B253F8E36153E5F50400BB2AC6DF856E"
+    },
+    {
+      "input": "testdata/recovery/keyring-fixtures.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/keyring-fixtures.json",
+      "sha256": "CB398B9E736694FEC77AA21BB08E056933591774BB3842046E63D710DD9212F0"
+    },
+    {
+      "input": "test/integration/recovery/replay_evidence_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/current-update-r01/lead/test.after.go.txt",
+      "sha256": "CF1B07C58F5A7DDCDEA256484CFC9E5F1C0E595B0A1A13B3B1B49DDB410E9048"
+    },
+    {
+      "input": "test/integration/crossmodule/canonical_delete_faults_test.go",
+      "durable_path": ".spec/wip/identity-auth/evidence-s9.2/code-r02/final/test/integration/crossmodule/canonical_delete_faults_test.go.txt",
+      "sha256": "AADA00B5314FD6CE312B84547E9DF20FEDE09CA97432A8822A0EA68264F8BF99"
+    },
+    {
+      "input": "test/integration/crossmodule/canonical_user_delete_test.go",
+      "durable_path": ".spec/wip/identity-auth/evidence-s9.2/code-r02/final/test/integration/crossmodule/canonical_user_delete_test.go.txt",
+      "sha256": "2C88891DCD6F2E7F2B1B256492679FC6F4341F2F0816451D38E5841E3FE9FA20"
+    },
+    {
+      "input": "test/integration/identity/auth_security_fixture_test.go",
+      "durable_path": ".spec/wip/identity-auth/evidence-s3.3-s3.5/s3.3-fixed185-r01/source/test/integration/identity/auth_security_fixture_test.go.txt",
+      "sha256": "0DF966B9F17AD4DAF3275F3BE6428A37A4E600619524C484279C9EE4E26ED088"
+    },
+    {
+      "input": "test/integration/identity/auth_security_postgres_test.go",
+      "durable_path": ".spec/wip/identity-auth/evidence-s3.3-s3.5/s3.3-fixed185-r01/source/test/integration/identity/auth_security_postgres_test.go.txt",
+      "sha256": "0A96A652CFBE74B7E222E1774BAAD4C50606588C298593982D0F9820A602A4AA"
+    }
+  ],
+  "source_manifest_sha256": "4A7687DEF84AC4DF78FAA6747A157E00E11911B9948708D1FC5986885EBEB4E5",
+  "target_sha256": "CF1B07C58F5A7DDCDEA256484CFC9E5F1C0E595B0A1A13B3B1B49DDB410E9048",
+  "review_sha256": "938C2EBE4907E9B1D85F529E3BF12CBF512277C8487A5FBC98919E3AA2027470",
+  "results": {
+    "author_normal_and_race_each": {
+      "nodes": 4,
+      "leaves": 3,
+      "fail": 0,
+      "skip": 0
+    },
+    "reviewer_normal_and_race_each": {
+      "nodes": 4,
+      "leaves": 3,
+      "fail": 0,
+      "skip": 0
+    },
+    "independent_review": "bounded PASS, zero findings",
+    "source185_lead_seven_checks": "newly executed all exit0; format empty",
+    "retained_schemas": 12,
+    "author_payloads": 92,
+    "reviewer_payloads": 92,
+    "lead_new_leaf_ready_sql_facts_checks": 8
+  },
+  "limits": "controlled Journal and synthetic inventories; excludes complete A-REC-07, real old backup/Unix journal, joint/global recovery, ACL, E2E and full task/Issue closure. All originals retained; no cleanup/deployment/commit."
+}

@@ -1,0 +1,1194 @@
+{
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Confucius",
+    "runtime_id": "01a1890f-a330-73d1-86fb-236777c54751"
+  },
+  "source_temp": "D:\\Temp\\han-b13f-s412-independent-12k4b0zg\\packet",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/author-current-matrix.received.json",
+      "source_name": "author-current-matrix.received.json",
+      "bytes": 9838,
+      "sha256": "3E085D8EA10673E27D02119614FA463D0B4B284DC580669D1BBAFB3EC5420672"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/author-current.diff.frozen",
+      "source_name": "author-current.diff.frozen",
+      "bytes": 95456,
+      "sha256": "89293711A0F20180F910AC943E7B3964FD0BC7F698C286C581FB89263CDA7341"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/author-failure-chain.received.json",
+      "source_name": "author-failure-chain.received.json",
+      "bytes": 1496,
+      "sha256": "5BA42A24C1F023CA3F6B214D45DCD4F0545274495E8649B6CD6B99D5BDF75DFC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/author-report.frozen.md",
+      "source_name": "author-report.frozen.md",
+      "bytes": 5810,
+      "sha256": "F461CA39D14048A06CF264F6237FC139725E77EC4DBDA72DF0C29FD60C7C90AD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/author-reuse-causal.json",
+      "source_name": "author-reuse-causal.json",
+      "bytes": 4169,
+      "sha256": "7574ABB76CBF9C1C0A6027D44413794A1BB6EF2A0E5B7942E0EC395C05FE34C3"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/checkpoint.json",
+      "source_name": "checkpoint.json",
+      "bytes": 455,
+      "sha256": "C23E8CDE8E195A5CCB203F88967B669BB5E92BD8E47DDBC6B67AEEF7FE47DEC7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/failure-markers.json",
+      "source_name": "failure-markers.json",
+      "bytes": 1135,
+      "sha256": "C0F3750416C324C484559CEDC8F091FF70035DA0A34D42EFC4ECED6EFFB76581"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/final-delta-reconciliation.json",
+      "source_name": "final-delta-reconciliation.json",
+      "bytes": 586,
+      "sha256": "C1CBF2667A4985F55D4929DD2AD6C9E2E0FEE3231F63F27ED2FD1F236CF95BAF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/final-text-validation.json",
+      "source_name": "final-text-validation.json",
+      "bytes": 652,
+      "sha256": "F6E514B9049B2771B728A31333C43645E608888CEA5AE32E28BD49F8E4922071"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/finding.json",
+      "source_name": "finding.json",
+      "bytes": 1693,
+      "sha256": "B547032D8146765DEBA1981F4C8C3D19299A9B51728E7ACAEA5C7D579D0D3D67"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/freeze36.received.json",
+      "source_name": "freeze36.received.json",
+      "bytes": 5289,
+      "sha256": "B3747BCC445C19CC35ADF1DBE93C10A83DA28FEAADED896BEC981D572E94FF80"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/grant.received.json",
+      "source_name": "grant.received.json",
+      "bytes": 7712,
+      "sha256": "162B6F23A26463346B94D9E901ED205151C6071A7EAA8378873CC604B906F98B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/guard-final.json",
+      "source_name": "guard-final.json",
+      "bytes": 8114,
+      "sha256": "ED0DF5CA9F2E40121D80897AC2431FB566423B856E54AF5960F8EA9EB6632BA2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/packet-manifest.json",
+      "source_name": "packet-manifest.json",
+      "bytes": 38090,
+      "sha256": "B4703025C8ED6AB902B1134EC76E13CCF534B8DCBE5D0CB87D3FC0CCE9DC7986"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/packet-manifest.sha256",
+      "source_name": "packet-manifest.sha256",
+      "bytes": 88,
+      "sha256": "26FCC87D340D46730C9C8DF4AD20A6801E106A649AD57BAE039EA90FB9728345"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/physical-analysis.json",
+      "source_name": "physical-analysis.json",
+      "bytes": 89690,
+      "sha256": "3E23D9D87077A34101F536CE86BC3463EB20A3A9C8759854FB11DBEB884D3C8B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/prefix-preservation.json",
+      "source_name": "prefix-preservation.json",
+      "bytes": 438,
+      "sha256": "908C5CC04BE3EEC0E7F5963780C8633A31280F45758364DE9E5B067366026CA6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/prepared-tests/recovery_auth_postgres_test.go.frozen",
+      "source_name": "prepared-tests/recovery_auth_postgres_test.go",
+      "bytes": 43701,
+      "sha256": "E445148F6B1EED711B7DAF3D3F57C927E4E9332F5772B8CA290C9500D7AD7191"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/prepared-tests/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "prepared-tests/recovery_password_reset_postgres_test.go",
+      "bytes": 40926,
+      "sha256": "88A6719FF285AC694234FBB3479DF35607ADF34832269A6DAB6F06C71A6C7C0E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/probes/generation-history-append.go.txt",
+      "source_name": "probes/generation-history-append.go.txt",
+      "bytes": 4917,
+      "sha256": "23925EB7228619D421EBAAE988E856C915CE3DECFA03429E2F15CE7C698F64A4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/go-version/command.json",
+      "source_name": "raw/go-version/command.json",
+      "bytes": 8856,
+      "sha256": "D54DE2EB2A3CE6233681EDA64E52FE22D9AA56EAB6D00DB4F58126DD61D4030B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/go-version/joins.json",
+      "source_name": "raw/go-version/joins.json",
+      "bytes": 535,
+      "sha256": "48B0B3533EE4F408DDF027222B3D20A3B1AF8053A52B979F2C153FB0E8E1B385"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/go-version/lifecycle-live.json",
+      "source_name": "raw/go-version/lifecycle-live.json",
+      "bytes": 88,
+      "sha256": "4BD6B722B6D8FDB8CBA6B8614D5C29808464B6B531DFFDDE78DF47EAE4ACBB03"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/go-version/result.json",
+      "source_name": "raw/go-version/result.json",
+      "bytes": 18070,
+      "sha256": "A90DBF0BF800927272277AD233BF3AEC9900EBC886FC786F8FBADDFA720610FE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/go-version/stderr.log",
+      "source_name": "raw/go-version/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/go-version/stdout.log",
+      "source_name": "raw/go-version/stdout.log",
+      "bytes": 34,
+      "sha256": "72A5DFF490C0ECCF85CC7495E937655D8D9FB44915C13A270D2119A7126427D9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/command.json",
+      "source_name": "raw/physical/command.json",
+      "bytes": 9034,
+      "sha256": "AF9265C8995C58F6E2465FC61BF68BBE2CAD8073D717E3FD8E940325E0A6D46A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/joins.json",
+      "source_name": "raw/physical/joins.json",
+      "bytes": 531,
+      "sha256": "807068D7A939BFC8A3385C198D6121128E2170DFF30555EDCC90676B0BD06D91"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/lifecycle-live.json",
+      "source_name": "raw/physical/lifecycle-live.json",
+      "bytes": 88,
+      "sha256": "D6B5B4A40215C6666C681BFF0A6A9DA9DE4E42CDC246274F933DBF0FE7A50950"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/physical-receipt.json",
+      "source_name": "raw/physical/physical-receipt.json",
+      "bytes": 70874,
+      "sha256": "5AB81D48C0067292D1778AC009F8B299AA8360FDDB945D623289BAEB36E7DDC7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/physical.sql",
+      "source_name": "raw/physical/physical.sql",
+      "bytes": 8266,
+      "sha256": "2ECF0CB4795A9BA05AE40B297821ABC323B26EA7427ED453FD95753E6CADF60E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/result.json",
+      "source_name": "raw/physical/result.json",
+      "bytes": 18244,
+      "sha256": "13BC62124741027035F4FBBDF5BD331982B717E523C3B117355A32FF12046C01"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/stderr.log",
+      "source_name": "raw/physical/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/physical/stdout.log",
+      "source_name": "raw/physical/stdout.log",
+      "bytes": 64590,
+      "sha256": "172058A98F667A16A7885529E3385A10FCC586CEE8C42000B53E31BC1DE2297E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/command.json",
+      "source_name": "raw/preflight/command.json",
+      "bytes": 9036,
+      "sha256": "865514C6C204B3F5D4340C3C0BF3664EF44C176EB2DFCE91C14E570EB42239A8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/joins.json",
+      "source_name": "raw/preflight/joins.json",
+      "bytes": 521,
+      "sha256": "39BEA04C08043568E2D02BB6DFC2BC74B07E23018E60EFF4B5D5C82640134BE5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/lifecycle-live.json",
+      "source_name": "raw/preflight/lifecycle-live.json",
+      "bytes": 88,
+      "sha256": "9892868546E79FDD3904527D3D2837A8A8237E2AC99D4A05F5821ABD6CD97F6E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/physical-receipt.json",
+      "source_name": "raw/preflight/physical-receipt.json",
+      "bytes": 278,
+      "sha256": "D9C4AFA11B8CA7853D953D60EB69D3703725F92396300C17C1E8751B690B9E44"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/physical.sql",
+      "source_name": "raw/preflight/physical.sql",
+      "bytes": 157,
+      "sha256": "8A201CAB3348F074CBEE32BFAA3B0D074EF94E5BC78F40AB44EFDD0CA57B4260"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/result.json",
+      "source_name": "raw/preflight/result.json",
+      "bytes": 18234,
+      "sha256": "F4FD235980348FC28E1E7F0639D827445EA26B279CC5FAD205D0C7519C0AF5C6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/stderr.log",
+      "source_name": "raw/preflight/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/preflight/stdout.log",
+      "source_name": "raw/preflight/stdout.log",
+      "bytes": 100,
+      "sha256": "07656100A08B7FF18B76D4F0160EA7EFEEE4B81140A8C662C4A4997C1AB42AED"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-normal/command.json",
+      "source_name": "raw/probe-normal/command.json",
+      "bytes": 9199,
+      "sha256": "7A5262A3204A821DA73E42B8DA655DAE84E2662B2D10939AE3C704D0C0BDB771"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-normal/joins.json",
+      "source_name": "raw/probe-normal/joins.json",
+      "bytes": 552,
+      "sha256": "856AE4EDE1B777E6F94CED4AF6D880C5ACB4F2F443F58D860ABDBD07227F7120"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-normal/lifecycle-live.json",
+      "source_name": "raw/probe-normal/lifecycle-live.json",
+      "bytes": 88,
+      "sha256": "9045B3FE301F1C77A25972D62DF6B441C793E4F2FA880633A0D9118A21B05446"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-normal/parsed.json",
+      "source_name": "raw/probe-normal/parsed.json",
+      "bytes": 718,
+      "sha256": "3E0AD06CAF8E7ADD6300FBA841E843B9A99F8E534FF1CC25C7F05A10ED8ABDEA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-normal/result.json",
+      "source_name": "raw/probe-normal/result.json",
+      "bytes": 18432,
+      "sha256": "B4EF3ED0525CAF034EFF3343986FA7A988EE0D9A2A66557D1C8F5F3230620545"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-normal/stderr.log",
+      "source_name": "raw/probe-normal/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-normal/stdout.log",
+      "source_name": "raw/probe-normal/stdout.log",
+      "bytes": 115995,
+      "sha256": "2EBC9559B72881C01FB5AEC56C5C7F156F8B67DCC6EAACA8599FCCFDB0B15483"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-race/command.json",
+      "source_name": "raw/probe-race/command.json",
+      "bytes": 9211,
+      "sha256": "8C3CC233D626307964EE165441EBA685F6E5F109F1AD46586C937F3A05F7303A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-race/joins.json",
+      "source_name": "raw/probe-race/joins.json",
+      "bytes": 584,
+      "sha256": "79962D1822768FE3B4C60B277A232CD9752F1C7FACE12A01C6F7FAAFD0B79701"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-race/lifecycle-live.json",
+      "source_name": "raw/probe-race/lifecycle-live.json",
+      "bytes": 71,
+      "sha256": "39CB2FB6361875F85CFFCCB3A65A0A5EE89BC9886AF0D5FF8B24650D185CFBFB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-race/parsed.json",
+      "source_name": "raw/probe-race/parsed.json",
+      "bytes": 718,
+      "sha256": "C1666CC78A6E7BED39E3F722A5CCD7C1C2F13EC8EFCC50204231D5DBC808F6FF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-race/result.json",
+      "source_name": "raw/probe-race/result.json",
+      "bytes": 18482,
+      "sha256": "D08ACA16BCA74C4A8A270536E9E0328CE734067FA7599E924AEC0C24A0002E79"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-race/stderr.log",
+      "source_name": "raw/probe-race/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/raw/probe-race/stdout.log",
+      "source_name": "raw/probe-race/stdout.log",
+      "bytes": 115981,
+      "sha256": "847404B5C3A412F0997E7C0F245287E916FFEB31B3D8B3B2353739411CD86513"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 12299,
+      "sha256": "D2CD8266AE97EB822B772ADEC7F1444FC2ACB8D71A51E417C83FFD64FC01DE24"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/receipt.md",
+      "source_name": "receipt.md",
+      "bytes": 702,
+      "sha256": "78F877596D16D233A5FF388644F5B3ABE57717CE33A1ADE4FA7FEFE4A2832F3D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/release.json",
+      "source_name": "release.json",
+      "bytes": 6131,
+      "sha256": "F049D753AF916A63F59932EC3FEB52B57E9CFE120486FB31F15AB3413DF431DD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/report.md",
+      "source_name": "report.md",
+      "bytes": 16311,
+      "sha256": "C65ADF3D3464D6061970ADF1A257A0754EC8CE4FC4FFCEDAD80FF592D83F4C5B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/resource-overlay-proof.json",
+      "source_name": "resource-overlay-proof.json",
+      "bytes": 729,
+      "sha256": "AA69B244DA0C1F9B0B2CF9AFDAFDCB0B38F8A008A597126D9AC01CD08147437B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/runner/config.json",
+      "source_name": "runner/config.json",
+      "bytes": 1518,
+      "sha256": "178E8FCC5E6E727D15D0F484D3B75F64C1C54E301F52A4A6F14939EC0F9DE93E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/runner/owned_windows.py",
+      "source_name": "runner/owned_windows.py",
+      "bytes": 10211,
+      "sha256": "6FD58BE2B28FDDDB47EC3F2F534EAFDAF7EE2CB5C4EC54772D18C357EE1085BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/runner/physical_read.py",
+      "source_name": "runner/physical_read.py",
+      "bytes": 1851,
+      "sha256": "CC5CACA134E417FFC438F37EF94332DC6BFF3B1F2E42AFFCA2A4B67DAEDBC39F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/runner/run_review.py",
+      "source_name": "runner/run_review.py",
+      "bytes": 12329,
+      "sha256": "5B3410A27FDC113F896B5FE2D9963A0C132BDBF6CEECAB4231BDEBF4EA8B377B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/schema-disjointness.json",
+      "source_name": "schema-disjointness.json",
+      "bytes": 441,
+      "sha256": "DFED25F2DE879E5F7627EBCC689ECB90A1F5D6E24E08662ECB0C3E684E9CC9EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/model.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/password_reset.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/go-version/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-after/go-version/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/model.go.frozen",
+      "source_name": "source-after/physical/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/password_reset.go.frozen",
+      "source_name": "source-after/physical/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-after/physical/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-after/physical/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-after/physical/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-after/physical/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-after/physical/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-after/physical/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-after/physical/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/physical/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-after/physical/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/model.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/password_reset.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/preflight/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-after/preflight/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/model.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/password_reset.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-normal/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-after/probe-normal/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/model.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/password_reset.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-after/probe-race/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-after/probe-race/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/model.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/password_reset.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/go-version/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-before/go-version/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/model.go.frozen",
+      "source_name": "source-before/physical/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/password_reset.go.frozen",
+      "source_name": "source-before/physical/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-before/physical/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-before/physical/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-before/physical/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-before/physical/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-before/physical/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-before/physical/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-before/physical/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/physical/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-before/physical/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/model.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/password_reset.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/preflight/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-before/preflight/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/model.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/password_reset.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-normal/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-before/probe-normal/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/model.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/password_reset.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-before/probe-race/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-before/probe-race/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/model.go.frozen",
+      "source_name": "source-final/internal/identity/model.go.frozen",
+      "bytes": 14818,
+      "sha256": "F5EAF92F4F74392B781F61340C692CF960F3D097889B4A97E2462CE7256C9E30"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/password_reset.go.frozen",
+      "source_name": "source-final/internal/identity/password_reset.go.frozen",
+      "bytes": 49164,
+      "sha256": "99EFF799CBBBB119DFC7F5DD7D5B00E9ACA5C108983F3A5500BCE9F0E4824DE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/password_reset_operator.go.frozen",
+      "source_name": "source-final/internal/identity/password_reset_operator.go.frozen",
+      "bytes": 79164,
+      "sha256": "D3BC9D822961E03D99FA72A5BD12089B145A16F27916101D4FB859D466BE92C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/password_reset_operator_test.go.frozen",
+      "source_name": "source-final/internal/identity/password_reset_operator_test.go.frozen",
+      "bytes": 72238,
+      "sha256": "C6285DDB71BB9FAA6D710DD0C105BE78399AC43702291C99128171F1B50573BE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/password_reset_store.go.frozen",
+      "source_name": "source-final/internal/identity/password_reset_store.go.frozen",
+      "bytes": 69357,
+      "sha256": "388CD8DF8E319E11E8D96B55574B11627A42960620386861AF2A1F4E2C638E89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/password_reset_store_test.go.frozen",
+      "source_name": "source-final/internal/identity/password_reset_store_test.go.frozen",
+      "bytes": 90494,
+      "sha256": "CE33D8CBCC527AB4024A3F1C4E7F87C264BB13E8D9CC4617DACA0F8DE0BE6543"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/password_reset_test.go.frozen",
+      "source_name": "source-final/internal/identity/password_reset_test.go.frozen",
+      "bytes": 98876,
+      "sha256": "1DCCB3BFA888E2C45F82DE4D848D67F6E0A5902A5B9433F018DBA735D4EB4570"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/recovery_password_reset.go.frozen",
+      "source_name": "source-final/internal/identity/recovery_password_reset.go.frozen",
+      "bytes": 31057,
+      "sha256": "B2C28DB6923FCAD3C16700BB87C998E805DA23B78C3188611F9207E9CC15A084"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "source_name": "source-final/internal/identity/recovery_password_reset_postgres_test.go.frozen",
+      "bytes": 36009,
+      "sha256": "CE187406384DD21D27525BB17DF0F6F970DFEADF244559B966D89A80F9754824"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-final/internal/identity/recovery_password_reset_test.go.frozen",
+      "source_name": "source-final/internal/identity/recovery_password_reset_test.go.frozen",
+      "bytes": 7601,
+      "sha256": "57E6DF483C8E19C85039C75E48A9B498E566ABB2BEBEAC4F68FD3B729B68811D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/source-sha256.json",
+      "source_name": "source-sha256.json",
+      "bytes": 5747,
+      "sha256": "6C4C9404A2D5B198A5F83C8A7609723C3C2734594C630AC25D3E1E7E3537FDE4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/author-snapshot-result-read.json",
+      "source_name": "static/author-snapshot-result-read.json",
+      "bytes": 1728,
+      "sha256": "75731C721B082C1A0D1F42C76FC81DD5BF98886240BEFC94243439FDA435E119"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/coverage.json",
+      "source_name": "static/coverage.json",
+      "bytes": 3861,
+      "sha256": "BEB36CA5505C6BB9A04EA1782BEA6C20B66B47D52FFDAED8AD2626887E060127"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/existing7.diff",
+      "source_name": "static/existing7.diff",
+      "bytes": 16823,
+      "sha256": "DB1556661CB7D15AAFB4FA6F7D8BBBB351C180EF804218D2C64B2644579675C1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/finding-F001.md",
+      "source_name": "static/finding-F001.md",
+      "bytes": 4457,
+      "sha256": "CC3E9A7338BB802CE8E7BACAF76072E75B101344157F6134FB4622789CDA7CC0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/full10-diff-reconstruction.json",
+      "source_name": "static/full10-diff-reconstruction.json",
+      "bytes": 1987,
+      "sha256": "AB32EF39482C2CF8758222FF5C117BB5A32C1FDB5191F9C01AD4DF9F268645C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/input-binding.json",
+      "source_name": "static/input-binding.json",
+      "bytes": 366,
+      "sha256": "D6C0702609CE070AB1EBABF768AF375913DCFFA422AEDB349637BFF451290BA6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/input-manifest.json",
+      "source_name": "static/input-manifest.json",
+      "bytes": 7271,
+      "sha256": "B85D0A9F17ABF5FF47352A44DDF5555E61FF290039EE0D89657AAD5CB92A873E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/input-objects36.json",
+      "source_name": "static/input-objects36.json",
+      "bytes": 4262,
+      "sha256": "AFB581896437F7380270CAEB68E5845680E0537173670C5547FAACE691B09D55"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/prior-contract-readset.jsonl",
+      "source_name": "static/prior-contract-readset.jsonl",
+      "bytes": 3392,
+      "sha256": "F5949D5921D03979DE51F158EB0DC0067A9E4B1B88F82EC0BD5045182AFA847A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/prior-g0-main-reception.received.json",
+      "source_name": "static/prior-g0-main-reception.received.json",
+      "bytes": 690,
+      "sha256": "15065664F505C56FCF87F9A534390F50417D92F6B18C0B78C4954280E89A5994"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/prior-methods-reuse.json",
+      "source_name": "static/prior-methods-reuse.json",
+      "bytes": 14353,
+      "sha256": "81A1CFDF3341C39EA42318247300D36461287E02EE4392C4512C865B024F5669"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/prior-preparation.md",
+      "source_name": "static/prior-preparation.md",
+      "bytes": 6657,
+      "sha256": "0B4CCE534EBDBF9E294EF7F6974BE68C529351EB1BAC770CA9BB671F167F944A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/prior-six-documents-sha.json",
+      "source_name": "static/prior-six-documents-sha.json",
+      "bytes": 823,
+      "sha256": "BF75E7E3F1DE12F624864D1529DBC2EEB7DB2D4EC2C4E6FF65C860D7B7A75FC7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/protected26-readonly-sha.json",
+      "source_name": "static/protected26-readonly-sha.json",
+      "bytes": 3080,
+      "sha256": "7BBD993B63353198E77DB566EFF0C3D4800B1AE60D4512BC4C5D842C39265BA5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/read.py",
+      "source_name": "static/read.py",
+      "bytes": 664,
+      "sha256": "9E9BE8C395CCA764CA6B19D5DFE5B47A6F54BA64F946025E420A4ED2A6011B29"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/readset.jsonl",
+      "source_name": "static/readset.jsonl",
+      "bytes": 10564,
+      "sha256": "70518732D9DA71D10FAD7E3407D4684308D2A866750F14F51D1117B1C06AB56F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/report-static.md",
+      "source_name": "static/report-static.md",
+      "bytes": 10509,
+      "sha256": "27B63958017DA67F3ADBE134427D5C56C35A8C5D10C187E6B4BE6335F33BE486"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/snapshot-verification.json",
+      "source_name": "static/snapshot-verification.json",
+      "bytes": 4864,
+      "sha256": "BD0A1A6B4D60F74547C429075DC25340EF33192458AD50BEBBC74A9085A7BEAC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/static/status.json",
+      "source_name": "static/status.json",
+      "bytes": 1989,
+      "sha256": "A06C14CA8D28DCB8267C0CF5B25107FDEFF2E8E1770F661A07116D0383695369"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-code-review-r01/test-only-overlay.json",
+      "source_name": "test-only-overlay.json",
+      "bytes": 430,
+      "sha256": "0E715F95B6F8D36E1BDD56AA6241B1567D1EDF024F59A3D9BFE8C8F24BB70631"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

@@ -1,0 +1,91 @@
+{
+    "evidence":  "article-management-S1.5 contract suite r01",
+    "generated_at":  "2026-10-31T22:36:10.4880427+08:00",
+    "authorization":  "ADR-0028 + user 2026-10-31 project-level authorization; AI proxy allowed; non-human signature not implied",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "scope":  "four contract tops and their subtests only; no root registration, no security chain, no real PostgreSQL",
+    "files":  [
+                  {
+                      "path":  "test/contract/article/rest_contract_test.go",
+                      "sha256_before":  "CEBA105C2CBF70B91CB5DFF93D9D4FC37077153A7EDB4F9C2806C29E650E9533",
+                      "sha256_after":  "CEBA105C2CBF70B91CB5DFF93D9D4FC37077153A7EDB4F9C2806C29E650E9533",
+                      "changed":  false
+                  },
+                  {
+                      "path":  "test/contract/article/internal_ports_test.go",
+                      "sha256_before":  "DC6791D4793ABE67FE17B83736FC77E55C347859B13A4FB5071E6AC51BF64F25",
+                      "sha256_after":  "DC6791D4793ABE67FE17B83736FC77E55C347859B13A4FB5071E6AC51BF64F25",
+                      "changed":  false
+                  },
+                  {
+                      "path":  "test/contract/article/projection_contract_test.go",
+                      "sha256_before":  "D7585EE66538EECA4364BF01CC2BE3A4AC69D98C9818560D6533457E8A572033",
+                      "sha256_after":  "D7585EE66538EECA4364BF01CC2BE3A4AC69D98C9818560D6533457E8A572033",
+                      "changed":  false
+                  },
+                  {
+                      "path":  "test/contract/article/replay_status_producer_test.go",
+                      "sha256_before":  "6EB4A677F6D5A4C6DA8B6B219A98C8BD4BC5026C5A3B428F73DE6D61D6C13957",
+                      "sha256_after":  "6EB4A677F6D5A4C6DA8B6B219A98C8BD4BC5026C5A3B428F73DE6D61D6C13957",
+                      "changed":  false
+                  }
+              ],
+    "commands":  [
+                     {
+                         "name":  "contract-list",
+                         "command":  "go test -tags=contract ./test/contract/article -list ^(TestArticleRESTContract|TestArticleInternalPortsContract|TestArticleProjectionContract|TestArticleReplayStatusProducerContract)$ -count=1",
+                         "exit_code":  0,
+                         "log":  ".spec/wip/article-management/evidence-s1.5/contract-suite-r01/contract-list.log",
+                         "bytes":  170
+                     },
+                     {
+                         "name":  "contract-normal-json",
+                         "command":  "go test -tags=contract ./test/contract/article -run ^(TestArticleRESTContract|TestArticleInternalPortsContract|TestArticleProjectionContract|TestArticleReplayStatusProducerContract)$ -count=1 -json",
+                         "exit_code":  0,
+                         "log":  ".spec/wip/article-management/evidence-s1.5/contract-suite-r01/contract-normal-json.log",
+                         "bytes":  262747
+                     },
+                     {
+                         "name":  "contract-race-json",
+                         "command":  "go test -race -tags=contract ./test/contract/article -run ^(TestArticleRESTContract|TestArticleInternalPortsContract|TestArticleProjectionContract|TestArticleReplayStatusProducerContract)$ -count=1 -json",
+                         "exit_code":  0,
+                         "log":  ".spec/wip/article-management/evidence-s1.5/contract-suite-r01/contract-race-json.log",
+                         "bytes":  262765
+                     },
+                     {
+                         "name":  "contract-vet",
+                         "command":  "go vet -tags=contract ./test/contract/article",
+                         "exit_code":  0,
+                         "log":  ".spec/wip/article-management/evidence-s1.5/contract-suite-r01/contract-vet.log",
+                         "bytes":  0
+                     }
+                 ],
+    "action_counts":  {
+                          "race_json":  {
+                                            "skip":  0,
+                                            "run":  286,
+                                            "pass":  287,
+                                            "fail":  0
+                                        },
+                          "normal_json":  {
+                                              "skip":  0,
+                                              "run":  286,
+                                              "pass":  287,
+                                              "fail":  0
+                                          }
+                      },
+    "source_stable":  true,
+    "changed_files":  [
+
+                      ],
+    "production_code_changed":  false,
+    "git_write_performed":  false,
+    "cleanup_performed":  false,
+    "boundaries":  [
+                       "contract tests only; root method/path and security-chain evidence must come from the real root test package",
+                       "no real PostgreSQL or real external environment was used",
+                       "no human business acceptance; AI proxy review/sign-off must be recorded separately"
+                   ]
+}

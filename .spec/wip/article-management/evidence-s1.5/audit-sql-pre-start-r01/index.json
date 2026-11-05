@@ -1,0 +1,67 @@
+{
+  "scope": "S1.5 real audit SQL rollback planning/preparation only; no new test execution",
+  "captured_at": "2026-10-27T20:36:16.511567+00:00",
+  "fixed_test_plan_sha256": "88296F772A19600A237CCA9F47A16D4B673828EF41E5C1D0C2D88924BE2C6F66",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-testplan-r19-f580e3ea855c46c18ac6f688d98c150c\\test-plan-r18-before.md.txt",
+      "copy": "test-plan-r18-before.md.txt",
+      "role": "Ohm",
+      "sha256": "BCBCFDD8CD1747540726A46C35D565FF1CC211AAB43F6059145474568841DE42"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-testplan-r19-f580e3ea855c46c18ac6f688d98c150c\\r18-to-r19.diff",
+      "copy": "r18-to-r19.diff",
+      "role": "Ohm",
+      "sha256": "D75CD57C0D4545AA5FAFAF4069133F4FC1FA3B72A372F0BC1E01B4DD3DBD3332"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-testplan-r19-f580e3ea855c46c18ac6f688d98c150c\\actual-readset-r19.json",
+      "copy": "actual-readset-r19.json",
+      "role": "Ohm",
+      "sha256": "7865DF8D68277BD799266D0023CAEF1DB1D3F1DCA5F6B5F1E7E19DD561459A9E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-testplan-r19-f580e3ea855c46c18ac6f688d98c150c\\handoff-s15-audit-plan-r19.json",
+      "copy": "handoff-s15-audit-plan-r19.json",
+      "role": "Ohm",
+      "sha256": "8203A38C1EDC3E5857739109B865F6108241E559DFD88C277043FE2EF8B7D129"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.add\\project\\knowledge\\design-workspace\\article-management\\test-plan.md",
+      "copy": "test-plan-r19.md.txt",
+      "role": "Ohm",
+      "sha256": "88296F772A19600A237CCA9F47A16D4B673828EF41E5C1D0C2D88924BE2C6F66"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\baseline.json",
+      "copy": "lead-baseline.json",
+      "role": "Lead",
+      "sha256": "B4DD1F32DCD727FEAB6C94C83B1257808BA29C2EF1B915E799B1FBD591CD5FB6"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-plan-r19-pre-review-check.json",
+      "copy": "lead-plan-r19-pre-review-check.json",
+      "role": "Lead",
+      "sha256": "63AE2ED16350DACDB50B51890CA14C7793A3427EECF57F0875BD52FC3620B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\manifest_runner.py",
+      "copy": "manifest_runner.py.txt",
+      "role": "Lead",
+      "sha256": "65DEDA45DF3CD10DF10828490D5E7637A6211D2704FD36742030EE5B7FB22B23"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-audit-pg-preflight-3306b04a60f940ee941b5b93d4c96f16\\preflight.go",
+      "copy": "lead-pg-preflight.go.txt",
+      "role": "Lead",
+      "sha256": "D8E85905136C7144F7E3E18F5BBDD9E26195E1F7540D6884DCC338669CBB5BA7"
+    },
+    {
+      "source": "Lead tool-response transcription",
+      "copy": "lead-pg-preflight-result.json",
+      "role": "Lead",
+      "sha256": "4BD1632673AA199BD5311E1C4CD82838E0CBAACEFA7ADE505A609095965476C3"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "scope": "Immutable first frozen FD delivery of existing two designs and corresponding Stories",
+  "agent": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "state": "Author frozen/draft; independent Review pending. Not implementation, tests or human acceptance.",
+  "main_reception": "All four exact deltas fully read in a preview; final frozen hashes matched those exact preview bytes; before bytes matched independent Main turn baseline.",
+  "line_endings": [
+    {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "before_CRLF": 169,
+      "after_CRLF": 169,
+      "before_LF": 4106,
+      "after_LF": 4520
+    },
+    {
+      "path": ".add/project/knowledge/design-workspace/article-management/design.md",
+      "before_CRLF": 0,
+      "after_CRLF": 0,
+      "before_LF": 2967,
+      "after_LF": 3118
+    },
+    {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/stories.md",
+      "before_CRLF": 11,
+      "after_CRLF": 11,
+      "before_LF": 438,
+      "after_LF": 446
+    },
+    {
+      "path": ".add/project/knowledge/design-workspace/article-management/stories.md",
+      "before_CRLF": 0,
+      "after_CRLF": 0,
+      "before_LF": 270,
+      "after_LF": 276
+    }
+  ],
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/baseline.json",
+      "sha256": "1D3A4ED77F94A025A8C3A49612BE5AE1A0FC35FF877C71F5F0CAEADAAFEB62F3",
+      "bytes": 24091
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/readset.json",
+      "sha256": "FF68F8CC9F3931716F9B2EFD2F9DE9924463B7C1E6687712E7BDCD2BA9B31084",
+      "bytes": 19867
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/verification.json",
+      "sha256": "F7F9430B68468263A82B1E4F02B41CFEE9AA25721D925E6A7CB04408A72F5683",
+      "bytes": 3919
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/template-coverage.json",
+      "sha256": "CB1E7D2F316BF924AE2A5ACC065AA408707B93B7B7DBAFD6863AA8AB688196AF",
+      "bytes": 792
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/identity-auth-design.md.before",
+      "sha256": "E884C84F4AABCA7ED321B9E4410EBAAFA0ED39CE6458986F92EA7C07D9BE4C43",
+      "bytes": 683521
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/identity-auth-design.md.diff",
+      "sha256": "DFFEF50280FF850953F94A308795455D2A67F324CAA614242ACDEAA3EC7A1337",
+      "bytes": 74463
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/frozen/.add/project/knowledge/design-workspace/identity-auth/design.md",
+      "sha256": "03D7A5BD87A1558A8CA26AAE93F3552B860AD2259921ED5BE9C57DD2B7D4A633",
+      "bytes": 744764
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/article-management-design.md.before",
+      "sha256": "8C6FEAEFDDC1234B550D8AFCD0E3B45B53527A5F688426CF93798724AA39F66E",
+      "bytes": 314129
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/article-management-design.md.diff",
+      "sha256": "F8C0F855AC60F591F46EA9F0D88C2169980A2051E895A630430B21595E0DA1A3",
+      "bytes": 36794
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/frozen/.add/project/knowledge/design-workspace/article-management/design.md",
+      "sha256": "436E323486F02E86BF985B92CB8B2DA096B9CC3440F629B1B2B0875B8EB2731D",
+      "bytes": 339740
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/identity-auth-stories.md.before",
+      "sha256": "8B2F13A7BA112C798E750E54AD9BFC7C9D4F20C88DB9BB2662CD43245D3FC6F7",
+      "bytes": 40213
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/identity-auth-stories.md.diff",
+      "sha256": "6B40E7719337E2DC27ABE0AA7940B08878E1AC540839309BA940852C1DC5947C",
+      "bytes": 5546
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/frozen/.add/project/knowledge/design-workspace/identity-auth/stories.md",
+      "sha256": "247887668F3F7F7DA056FC376A4C556B618884E44011564BA339AEE8061BEFC0",
+      "bytes": 42340
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/article-management-stories.md.before",
+      "sha256": "492657843DFB4B037C5A8BC31C36A0B08F2233FEFB937A9D39C401FE63307AF9",
+      "bytes": 20944
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/article-management-stories.md.diff",
+      "sha256": "9722138830C16B7ACDD1580726AFF47937402860BFF2C3620481D953BA6A3DBA",
+      "bytes": 6600
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r01/frozen/.add/project/knowledge/design-workspace/article-management/stories.md",
+      "sha256": "33E6A46AE28B3CB5DBB3B3C5559895167B1BAB0B1F29AE73C60878A9662902A4",
+      "bytes": 22746
+    }
+  ]
+}

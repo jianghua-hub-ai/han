@@ -1,0 +1,261 @@
+{
+  "synthetic_only": true,
+  "retained_copies": [
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1026518976\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1026518976/approved-original-publication.json",
+      "sha256": "FE1DE0CEE1575F53E40B66ECF3C5CD0DFF0F97E9009B9A5058758002D0184DEE"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1068295614\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1068295614/approved-original-publication.json",
+      "sha256": "FE1DE0CEE1575F53E40B66ECF3C5CD0DFF0F97E9009B9A5058758002D0184DEE"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1068773519\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1068773519/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1093448314\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1093448314/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1211161282\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1211161282/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1347759524\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1347759524/approved-original-publication.json",
+      "sha256": "FE1DE0CEE1575F53E40B66ECF3C5CD0DFF0F97E9009B9A5058758002D0184DEE"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1401936609\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1401936609/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1460074519\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1460074519/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1569861730\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1569861730/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1634207517\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1634207517/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1732924955\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1732924955/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-177813879\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-177813879/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-183578557\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-183578557/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1863678736\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1863678736/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-1900283575\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-1900283575/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2041991546\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2041991546/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2324974143\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2324974143/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2462700319\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2462700319/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2495414814\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2495414814/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2604504400\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2604504400/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2737976532\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2737976532/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2740063850\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2740063850/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-27692988\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-27692988/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2782785116\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2782785116/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-2811900772\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-2811900772/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-3032340789\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-3032340789/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-3051880666\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-3051880666/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-3246809642\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-3246809642/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-3249346041\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-3249346041/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-3348100055\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-3348100055/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-335851309\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-335851309/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-3499240731\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-3499240731/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-3515522873\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-3515522873/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-4072062834\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-4072062834/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-4117611744\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-4117611744/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-515351339\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-515351339/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-623862897\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-623862897/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-65442146\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-65442146/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-675869390\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-675869390/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-690320045\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-690320045/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-815754320\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-815754320/approved-original-publication.json",
+      "sha256": "FE1DE0CEE1575F53E40B66ECF3C5CD0DFF0F97E9009B9A5058758002D0184DEE"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-81772207\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-81772207/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-approved-checkpoint-903546748\\approved-original-publication.json",
+      "packet_path": "media/s413-approved-checkpoint-903546748/approved-original-publication.json",
+      "sha256": "F8B4E53920C963DA17F8813AF8CD347B4D5BBD505FB331F343CA27E3D0AD883C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-1003241844\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-1003241844/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-158607369\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-158607369/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-3016461885\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-3016461885/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-3301940448\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-3301940448/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-3673979491\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-3673979491/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-4001522944\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-4001522944/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-4050103017\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-4050103017/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    },
+    {
+      "original_own_path": "D:\\Temp\\han-b13e-s413-author-2a21e1b0cfd2\\tmp\\s413-deletion-media-972538099\\committed-synthetic-tombstone.json",
+      "packet_path": "media/s413-deletion-media-972538099/committed-synthetic-tombstone.json",
+      "sha256": "BFB79DE5E96E8F59E0AB2C8BE5F541F576152A85569349BEE7BB09F52F85F79C"
+    }
+  ],
+  "original_data_and_caches_retained": true
+}

@@ -1,0 +1,313 @@
+{
+  "schema": "add.evidence.design-decision/v1",
+  "item": "pending-B13J-D02",
+  "agent_role": "add-arch-designer",
+  "workflow": "development-delivery",
+  "phase": "architecture-decision-ADR",
+  "route_executed": false,
+  "recorded_at": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "bytes": 26452,
+      "role": "R reconciliation source defining A08, pending-B13J-D02 and U3"
+    },
+    {
+      "path": ".add/project/knowledge/decisions/framework.md#adr-0019",
+      "sha256": "5711F51016CBC091DCB8DEC4ABE1339158C713CD997980982A14D6D00938A38A",
+      "bytes": 126590,
+      "role": "hard boundary: independent fault domain, no PostgreSQL rollback, POSIX only, UTC microseconds, provider-neutral S4.2 seam and S4.5 ownership"
+    }
+  ],
+  "decision": {
+    "id": "ADR-0030",
+    "title": "首期不提供生产 CAS JournalHeadAnchor provider",
+    "outcome": "no-production-provider",
+    "summary": "S4.5 stays undelivered; production recovery enter/install stays closed; only the provider-neutral JournalHeadAnchor port, its call boundary and the deterministic test double remain; HAN_RECOVERY_ANCHOR_ADAPTER and HAN_RECOVERY_ANCHOR_CONFIG_PATH must both be explicit with no defaults and no inference; unset means no anchor capability and closed.",
+    "release_conditions": [
+      "specific product and deployment form selected, with evidence that its failure domain is independent from business PostgreSQL",
+      "credential source, least privilege/ACL, deployment topology, backup/restore/rotation and operational ownership approved and verifiable",
+      "config keys and startup assembly contract are explicit, with no implicit default or automatic fallback",
+      "real independent-fault-domain validation of CAS conflict, stale revision, missing/rollback, pending/committed, crash recovery and permission failure, with raw evidence retained",
+      "architecture and security independent review completed, ADR revised, and implementation/verification scope registered through formal task planning"
+    ],
+    "authorization_source": "user 2026-11-01 B13J D02 instruction authorizing the Arch-Designer to settle the product-selection decision; not a human artifact acceptance, independent review or production approval"
+  },
+  "continuation": {
+    "trigger": "Lead post-review findings on the same D02 scope; no re-route, no new batch, no Task status change and no redo of already-accepted parts",
+    "fixes": [
+      "design.md:38 design-version line whole-line replaced from identity-auth-design-ir01-r57 to identity-auth-design-ir01-r58; no other character on that line changed, 4924 lines kept, no control character introduced",
+      "framework.md ADR-0030 separator: inserted the blank line between --- (913) and <a id=adr-0030></a> (915) so the order matches ADR-0029 (859-862); the ADR heading moved to 916 and the file is 966 pure-CRLF lines",
+      "report.md: removed the single U+000C that had corrupted the word framework in section 4.2 and recorded the final line numbers; index.json evidence hash and bytes resynced to the final report.md",
+      "review-r01 rework: framework.md:924, :937 and :938 were the only changed lines; RV-01 now labels the pre-change unknown state and the post-change design wording separately, and RV-02 weakens the KMS and object-storage claims without changing the no-selection column or A/B/C/D trade-offs"
+    ],
+    "independent_review": {
+      "report": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r01/report.md",
+      "reviewer_role": "add-reviewer",
+      "verdict": "CHANGES REQUIRED",
+      "findings": ["B13J-D02-RV-01 MEDIUM: framework.md:924 cited design.md:3892 as recording unknown while that line was rewritten in this round, so the after-text stood in for the before-state", "B13J-D02-RV-02 LOW: two over-strong statements at framework.md:937 and :938"],
+      "disposition": "both findings fixed inside the same D02 scope; details in report.md section 7 and in the framework.md change list; the review alternative of rewriting design.md:3892 was not taken because design.md is outside this round write set",
+      "not_adopted": "the review suggestion to correct the tasks.md S4.5 line number; Lead measured the real registration line as tasks.md:656, so no document was changed on that basis"
+    }
+  },
+  "artifacts": [
+    {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "before": {
+        "sha256": "504966EADBB3D74C9D3BAD83FBA500624C8273A6462CCDD5987420EBE3B5307C",
+        "bytes": 842966,
+        "lines_terminated": 4924,
+        "crlf": 169,
+        "bare_lf": 4755,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)"
+      },
+      "after": {
+        "sha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+        "bytes": 844091,
+        "lines_terminated": 4924,
+        "crlf": 169,
+        "bare_lf": 4755,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf": 1,
+        "control_char_note": "the single TAB (0x09) is pre-existing in a Go fenced code block at offset 308573 and is present in the baseline reconstruction; this round introduced zero control characters"
+      },
+      "frontmatter_status": "draft",
+      "frontmatter_status_changed": false,
+      "changes": [
+        {
+          "line": 5,
+          "before": "revision: identity-auth-design-ir01-r57",
+          "after": "revision: identity-auth-design-ir01-r58"
+        },
+        {
+          "line": 7,
+          "before": "last_updated: 2026-10-30",
+          "after": "last_updated: 2026-11-01"
+        },
+        {
+          "line": 38,
+          "before": "**设计版本**：`identity-auth-design-ir01-r57`",
+          "after": "**设计版本**：`identity-auth-design-ir01-r58`"
+        },
+        {
+          "line": 83,
+          "kind": "same-line append",
+          "before_length": 744,
+          "after_length": 1184,
+          "after_excerpt": "r58 / B13J-D02 生产 CAS Anchor provider 选型边界（ADR-0030）... 不声明实现、独立故障域验证或生产可用。",
+          "reason": "decision trace entry for ADR-0030 while preserving the 4924-line invariant"
+        },
+        {
+          "line": 3577,
+          "kind": "in-place replacement",
+          "before_excerpt": "...适配。均为将来新实施责任，不借旧 task 写权 |",
+          "after_excerpt": "...适配。生产 CAS Anchor provider 首期不提供（ADR-0030），仅保留 provider-neutral port 与确定性测试替身，root 不得构造或注册隐式 adapter，生产 enter/install 继续 closed。均为将来新实施责任，不借旧 task 写权 |"
+        },
+        {
+          "line": 3892,
+          "kind": "in-place replacement",
+          "before_excerpt": "显式已登记 production adapter ID、受保护绝对配置路径；当前实际产品/凭据/独立故障域 unknown，未登记、不可达或验证不通过即 closed；无自动 fake/file/SQL fallback",
+          "after_excerpt": "生产必须显式指定已登记 adapter ID 与受保护绝对配置路径，二者无代码默认值、互不推断；未配置即不启动 anchor 相关能力、生产 enter/install 保持 closed。首期不提供生产 adapter（ADR-0030），当前无已登记产品/凭据/独立故障域，任何未登记、不可达或验证不通过均 closed；无自动 fake/file/SQL fallback，root 不得按环境或其他配置推导 adapter"
+        }
+      ]
+    },
+    {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "before": {
+        "sha256": "5711F51016CBC091DCB8DEC4ABE1339158C713CD997980982A14D6D00938A38A",
+        "bytes": 126590,
+        "lines_terminated": 911,
+        "crlf": 911,
+        "bare_lf": 0,
+        "bom": false,
+        "trailing_newline": "single CRLF (0x0d0a)"
+      },
+      "after": {
+        "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+        "bytes": 137491,
+        "lines_terminated": 966,
+        "crlf": 966,
+        "bare_lf": 0,
+        "bom": false,
+        "trailing_newline": "single CRLF (0x0d0a)",
+        "control_chars_non_crlf": 0
+      },
+      "changes": [
+        {
+          "kind": "append",
+          "lines": "912-966",
+          "added_lines": 55,
+          "adr_anchor_line": 915,
+          "adr_heading_line": 916,
+          "separator_lines": "912 blank, 913 ---, 914 blank, 915 anchor, 916 heading (matches ADR-0029 at 859-862)",
+          "reason": "append ADR-0030 only; the first 126590 bytes remain byte-identical to the before hash; the blank line between --- and the anchor was added in the Lead-review continuation so the separator style matches ADR-0029"
+        },
+        {
+          "kind": "review-r01 rework (B13J-D02-RV-01, B13J-D02-RV-02)",
+          "lines": [924, 937, 938],
+          "before_sha256": "31960C7A7BAE3EA3B2B250A6ED9DC1FB1E1F81464520E03A0D42C5E0B491C9BA",
+          "after_sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+          "byte_delta": 291,
+          "byte_delta_by_line": {"924": 164, "937": 81, "938": 46},
+          "rv_01_line_924": {"before_excerpt": "`identity-auth/design.md:3892` 记实际产品/凭据/独立故障域 unknown；生产 root 以空 registry 构造", "after_excerpt": "改动前 `identity-auth/design.md:3892` 记实际产品/凭据/独立故障域 unknown（本 ADR 同轮把 `design.md:3892` 改写为“当前无已登记产品/凭据/独立故障域”，不把改写后的原文当作改前状态证据）；生产 root 以空 registry 构造", "fix": "state the pre-change status and the post-change wording separately so the rewritten line is not used as evidence of the pre-change state"},
+          "rv_02_line_937": {"before": "KMS 本身不提供通用条件写", "after": "KMS 类服务通常只提供密钥管理/加解密与有限的条件性密钥操作，不提供通用 CAS 头存储"},
+          "rv_02_line_938": {"before": "对象存储天然独立于 PostgreSQL", "after": "对象存储可与业务 PostgreSQL 分组部署，但独立故障域须逐案证明"},
+          "conclusion_column_unchanged": true,
+          "reason": "apply the two review findings; no other line, table order or trailing newline was touched"
+        }
+      ]
+    },
+    {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "before": {
+        "sha256": "35A5623E7E3CFCC140DA0DE9C8B218210C0E34A850A26B5CDD450B81DA40CC63",
+        "bytes": 18948,
+        "lines_terminated": 104,
+        "crlf": 2,
+        "bare_lf": 102,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)"
+      },
+      "after": {
+        "sha256": "5075879AC7F3E31D83A06E843BCCE80CAA8DBA27F588E39D700E7F6C3765C10D",
+        "bytes": 19724,
+        "lines_terminated": 106,
+        "crlf": 2,
+        "bare_lf": 104,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf": 0
+      },
+      "line_count_note": "104 -> 106 because the global index and scenario query table each gained one LF-terminated row; the framework.md row was edited in place; the two pre-existing CRLF lines are unchanged",
+      "changes": [
+        {
+          "line": 38,
+          "kind": "new global index row",
+          "after_excerpt": "| ADR-0030 | [首期不提供生产 CAS JournalHeadAnchor provider](framework.md#adr-0030) | ... | 1 |"
+        },
+        {
+          "line": 44,
+          "kind": "in-place edit of framework.md domain row",
+          "before_excerpt": "...ADR-0028、ADR-0029 |",
+          "after_excerpt": "...ADR-0028、ADR-0029、ADR-0030 |"
+        },
+        {
+          "line": 69,
+          "kind": "new scenario query row",
+          "after_excerpt": "| 选择或调整生产 CAS Anchor provider 产品形态、独立故障域、`HAN_RECOVERY_ANCHOR_ADAPTER`/`HAN_RECOVERY_ANCHOR_CONFIG_PATH`、启动装配、首期不提供或解除条件 | [framework.md（ADR-0030）](framework.md#adr-0030)、framework.md（ADR-0019） |"
+        }
+      ]
+    }
+  ],
+  "round_delta": {
+    "changed_files": 3,
+    "design_changed_lines": [5, 7, 38, 83, 3577, 3892],
+    "design_changed_line_count": 6,
+    "design_byte_delta": 1125,
+    "framework_added_lines": 55,
+    "framework_byte_delta": 10610,
+    "framework_rv_rework_changed_lines": [924, 937, 938],
+    "framework_rv_rework_byte_delta": 291,
+    "framework_final_sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+    "framework_final_bytes": 137491,
+    "framework_total_byte_delta_since_before": 10901,
+    "readme_added_lines": 2,
+    "readme_modified_lines": 1,
+    "readme_byte_delta": 776,
+    "reverse_reconstruction_sha256": "504966EADBB3D74C9D3BAD83FBA500624C8273A6462CCDD5987420EBE3B5307C",
+    "reverse_reconstruction_bytes": 842966,
+    "reverse_reconstruction_result": "REVERSE-OK",
+    "framework_prefix_sha256": "5711F51016CBC091DCB8DEC4ABE1339158C713CD997980982A14D6D00938A38A",
+    "framework_prefix_matches_before": true,
+    "readme_expected_reconstruction_matches": true,
+    "line_diff_method": "split before and after on LF and compare element-wise; design differing indices are exactly 5, 7, 38, 83, 3577 and 3892"
+  },
+  "acceptance": [
+    {
+      "command": "Get-FileHash -Algorithm SHA256 + byte/line/CRLF/BOM/trailing-newline/control-char measurement on the three files",
+      "exit_code": 0,
+      "output": "all before and after values match the tables in report.md section 4; design keeps 4924 lines with crlf=169 and bareLF=4755; framework is 966 pure-CRLF lines; README is 106 lines with crlf=2 and bareLF=104"
+    },
+    {
+      "command": "git diff --check -- .add/project/knowledge/design-workspace/identity-auth/design.md .add/project/knowledge/decisions/framework.md .add/project/knowledge/decisions/README.md",
+      "exit_code": 0,
+      "output": "no whitespace errors; only two autocrlf advisory warnings"
+    },
+    {
+      "command": "search appended ADR-0030 for S4.22 / S4.23 / S4.24 / 已实现 / PASS",
+      "exit_code": 0,
+      "output": "all false; no unregistered task id and no implementation/PASS claim in the appended text"
+    },
+    {
+      "command": "reverse reconstruction of design.md from the after-state",
+      "exit_code": 0,
+      "output": "SHA256 504966EADBB3D74C9D3BAD83FBA500624C8273A6462CCDD5987420EBE3B5307C and 842966 bytes: REVERSE-OK; element-wise comparison of the before/after LF split finds differing indices exactly 5, 7, 38, 83, 3577, 3892"
+    },
+    {
+      "command": "reverse reconstruction of README.md and the framework.md prefix from the after-state",
+      "exit_code": 0,
+      "output": "README reverse yields SHA256 35A5623E7E3CFCC140DA0DE9C8B218210C0E34A850A26B5CDD450B81DA40CC63 and 18948 bytes; framework first 126590 bytes yield 5711F51016CBC091DCB8DEC4ABE1339158C713CD997980982A14D6D00938A38A; both match the before baseline"
+    },
+    {
+      "command": "keep the pre-rework framework.md copy and compare it with the reworked file, line-wise and byte-wise",
+      "exit_code": 0,
+      "output": "LF-split differing indices are exactly 924, 937 and 938; the other 963 lines are character-identical; the 127765 bytes before line 924 and the 5489 bytes after line 938 are byte-identical; byte delta 291 equals 164+81+46; still 966 lines with crlf=966, bareLF=0, BOM=false, single trailing CRLF and 0 control characters"
+    },
+    {
+      "command": "re-measure identity-auth/design.md and decisions/README.md after the RV rework",
+      "exit_code": 0,
+      "output": "both unchanged: design.md 30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC / 844091 bytes / 4924 lines; README.md 5075879AC7F3E31D83A06E843BCCE80CAA8DBA27F588E39D700E7F6C3765C10D / 19724 bytes / 106 lines; neither file was written in this round"
+    }
+  ],
+  "evidence": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/report.md",
+      "sha256": "16A47B381CB5BD023EA931432CE9A3CEA622125CB4CCA9641DE9EDDDC293CE7F",
+      "bytes": 20671,
+      "description": "D02 decision rationale, four-candidate comparison, line-level changes, before/after hash and format measurements, reverse reconstruction result, residual risks and section 7 review-r01 rework disposition (RV-01, RV-02)"
+    }
+  ],  "write_set": [
+    ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    ".add/project/knowledge/decisions/framework.md",
+    ".add/project/knowledge/decisions/README.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/index.json"
+  ],
+  "not_proven": [
+    "no human artifact acceptance, sign-off or checkpoint; the only independent review is review-r01, which returned CHANGES REQUIRED and is not a PASS",
+    "the RV-01 / RV-02 fixes are author self-disposition; no directed re-review, reviewer sign-off or human acceptance followed them",
+    "the review claim that the tasks.md S4.5 registration line had moved was not adopted: Lead measured the real registration line as tasks.md:656 and no document was changed on that basis",
+    "no production assembly approval and no production provider validation",
+    "no real independent-fault-domain test of CAS conflict, stale revision, missing/rollback, pending/committed, crash recovery or permission failure",
+    "no claim that any database, Vault/KMS or object storage product satisfies ADR-0019",
+    "no implementation, code, test, deployment or E2E execution in this round",
+    "no git add/commit/push/checkout/switch/stash/restore/clean performed",
+    "no changes to tasks.md, plans/, stories.md, test-plan.md or decisions/identity.md; no Task status changed and no candidate Task id registered",
+    "Case18 and S8.2 are not PASS; S4.5 remains undelivered and production recovery enter/install remains closed",
+    "design.md line 38 was synced to r58 in the Lead-review continuation; no r57 version residue was found in that file, but no audit of other documents was performed",
+    "no whole-document semantic audit; only the named ADR-0019 range, design lines and index sections were checked"
+  ],
+  "open_items": [
+    "no further version sync is known to be required for identity-auth/design.md; a full cross-document r57 audit was not performed",
+    "independent architecture/security review of ADR-0030 and design r58: review-r01 covered it and returned CHANGES REQUIRED; a directed re-review of the RV-01 / RV-02 rework is still pending",
+    "review-r01 also flagged that author report and ADR candidate-table wording must stay in sync; both were updated together in this round and must stay that way in later revisions",
+    "future product selection must satisfy all ADR-0030 release conditions before production closed can be lifted",
+    "formal task planning registration for any provider implementation and real independent-fault-domain validation",
+    "human precise acceptance of the design and decision remains unknown"
+  ],
+  "verdict": {
+    "state": "pass-reviewed-r02",
+    "approval_claimed": false,
+    "review_claimed": false,
+    "gate_claimed": false,
+    "production_claimed": false,
+    "summary": "ADR-0030 accepted on the user's D02 decision authorization; identity-auth design r58 and all three decision index locations updated; no production provider is provided; S4.5 stays undelivered and production enter/install stays closed; review-r01 returned CHANGES REQUIRED and its RV-01 / RV-02 fixes are applied as author disposition, not a PASS. Directed re-review review-r02 returned PASS (B13J-D02-RV-01 and RV-02 CLOSED; O-RV2-01 accepted non-blocking redundancy); ADR-0030 was later revised to adr-0030-r02 by the ADR prerequisite-node rework, which keeps this decision unchanged"
+  }
+}

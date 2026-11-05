@@ -1,0 +1,114 @@
+{
+  "owner": {
+    "role": "add-task-planner",
+    "nickname": "Nash",
+    "runtime_id": "01a18b95-c084-7f90-9952-a5462254cc15"
+  },
+  "source_temp": "D:\\Temp\\han-b13g-s415-scope-sync-7e54c45c2a0b",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/after-ir-01-content-community-batches.md",
+      "source_name": "beforeafter/after-ir-01-content-community-batches.md",
+      "bytes": 478565,
+      "sha256": "F87E05B5D701E8A57177DB1E3D017EA40E7594DFBDA2A837EBEE045CFC1062F0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/after-tasks.md",
+      "source_name": "beforeafter/after-tasks.md",
+      "bytes": 651791,
+      "sha256": "C1937D61298BB0CCCECEFFC960A6CFA1ED543A503632AF5B6B915ED6D9BDD7B0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/before-ir-01-content-community-batches.md",
+      "source_name": "beforeafter/before-ir-01-content-community-batches.md",
+      "bytes": 477205,
+      "sha256": "858D08074858A86CED6C1A87DCB0FE164D1DCCDF99742346492CF22D6C373D35"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/before-tasks.md",
+      "source_name": "beforeafter/before-tasks.md",
+      "bytes": 649399,
+      "sha256": "051FD4DDB50572AFBC4F2AEF1CFB14420FED6E6EB4B53745C456622E83104446"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/candidate-ir-01-content-community-batches.md",
+      "source_name": "beforeafter/candidate-ir-01-content-community-batches.md",
+      "bytes": 478565,
+      "sha256": "F87E05B5D701E8A57177DB1E3D017EA40E7594DFBDA2A837EBEE045CFC1062F0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/candidate-tasks.md",
+      "source_name": "beforeafter/candidate-tasks.md",
+      "bytes": 651791,
+      "sha256": "C1937D61298BB0CCCECEFFC960A6CFA1ED543A503632AF5B6B915ED6D9BDD7B0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/formal-edges-after.json",
+      "source_name": "beforeafter/formal-edges-after.json",
+      "bytes": 20474,
+      "sha256": "0CFF479BFDB832058332C97DA2FE4FE4B43D79667C9C005E45353F4BD75F6F6E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/formal-edges-before.json",
+      "source_name": "beforeafter/formal-edges-before.json",
+      "bytes": 20474,
+      "sha256": "0CFF479BFDB832058332C97DA2FE4FE4B43D79667C9C005E45353F4BD75F6F6E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/ir-01-content-community-batches.md.diff",
+      "source_name": "beforeafter/ir-01-content-community-batches.md.diff",
+      "bytes": 3390,
+      "sha256": "C80C0B0E86D4657C65FB953D8FA7258777F79EA30C4C257A4F98DF23E0422575"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/prewrite-validation.json",
+      "source_name": "beforeafter/prewrite-validation.json",
+      "bytes": 23815,
+      "sha256": "33050D0632A628B4302F9429D8629638340CA75888F83675D019882861C689BB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/tasks.md.diff",
+      "source_name": "beforeafter/tasks.md.diff",
+      "bytes": 3961,
+      "sha256": "7CCF82E9DDAF4A45B87AE47F4E0FFDBF6671E25E500B806CA21DAB8AFDDD9AE5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/beforeafter/validation.json",
+      "source_name": "beforeafter/validation.json",
+      "bytes": 23815,
+      "sha256": "33050D0632A628B4302F9429D8629638340CA75888F83675D019882861C689BB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/edits.json",
+      "source_name": "edits.json",
+      "bytes": 73347,
+      "sha256": "F08B48F2BD20C9491C3EA0ADE87E1D61FFD4FA88D6448C28F5ABED686445269F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/metadata-release.json",
+      "source_name": "metadata-release.json",
+      "bytes": 546,
+      "sha256": "64043C928984FDE8BFA492C8D01992D7E7E59234713CB8C8E7DF535B8FF5751A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 2377,
+      "sha256": "8541E836A91D27EAE8EE1F71F1519D65F7154BA5D6A6969EA8E5A6B713AA3AFB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/report.md",
+      "source_name": "report.md",
+      "bytes": 1826,
+      "sha256": "F0451108DBCAF89FC5FDBA3FA1EFA9B09CE6DE8A3FD8EBB2E849458260BD9643"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-scope-sync-plan-r01/sync.py",
+      "source_name": "sync.py",
+      "bytes": 17784,
+      "sha256": "4441D0844F7DFAAB6DD8AC50A423CD868BF429E504B016A0DEFBE6CBEA93C62E"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

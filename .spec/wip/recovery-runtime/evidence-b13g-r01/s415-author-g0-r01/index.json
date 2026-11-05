@@ -1,0 +1,42 @@
+{
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Sartre",
+    "runtime_id": "01a18b91-4da7-72c3-92c7-0e2b5dbe0823"
+  },
+  "source_temp": "D:\\Temp\\han-b13g-s415-cedar-g0-321268032485",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-author-g0-r01/git-after-summary.json",
+      "source_name": "git-after-summary.json",
+      "bytes": 742,
+      "sha256": "DDDF736707BCB2FA6A31C024AFB51296AF83BC72A1D85B8D66A317DA458A8149"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-author-g0-r01/git-before.json",
+      "source_name": "git-before.json",
+      "bytes": 3514850,
+      "sha256": "B4BFB83DC47421FED0DC4CE29183B465167B5458361DB775DB48656544DD3262"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-author-g0-r01/read.py",
+      "source_name": "read.py",
+      "bytes": 982,
+      "sha256": "F38034245B413FD71701BD5D66519560119E7E96A5997858FAB6FC7A54DAE638"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-author-g0-r01/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 37852,
+      "sha256": "40203A78B0CCEBEE18C961F4D35EF082C240834A22A3B8AE73C04003589797FB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-author-g0-r01/report.md",
+      "source_name": "report.md",
+      "bytes": 8539,
+      "sha256": "F0D780A6F37A94D9CFEAD3D74EBE723178570D4AE862877F1E8714226829607A"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

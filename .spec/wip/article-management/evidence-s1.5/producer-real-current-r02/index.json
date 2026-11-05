@@ -1,0 +1,478 @@
+{
+  "schema": "s1.5.producer-real-current.r02",
+  "observed_on": "2026-11-04",
+  "workspace": "D:/AID/VSCode/Codex/Han",
+  "branch": "main",
+  "head_observed": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "kind": "append_only_current_consumption_pointer",
+  "author": {
+    "name": "Singer",
+    "role": "add-steward",
+    "actual_id": "01a1a489-0aad-7390-8c82-d543b5154e22",
+    "id_provenance": "Lead / 用户于本轮补充的正式 ID"
+  },
+  "scope": "C18-COV-F005 producer evidence binding only",
+  "maintenance": {
+    "purpose": "为非作者针对 C18-COV-F005 复核提供追加消费索引；保留历史快照及版本差异",
+    "owner": "本轮 add-steward；交回 Lead，具体后续接收人待 Lead 指定",
+    "authorityRef": [
+      ".spec/wip/article-management/evidence-case18-coverage-r01/report.md",
+      ".add/project/knowledge/tasks/tasks.md — article-management-S1.5 / article-management-S8.2"
+    ],
+    "retentionCondition": "F005 独立复核、Lead 登记及审计追溯仍需本材料时保留；本轮无处置授权",
+    "exitCondition": "真实非作者复核与 Lead 登记后交回；任何后续清理另按具体授权",
+    "status": "pending",
+    "related_workflow": "development-delivery"
+  },
+  "authority_context": {
+    "tasks_path": ".add/project/knowledge/tasks/tasks.md",
+    "tasks_anchor": "按 article-management-S1.5 / article-management-S8.2 与 C18-COV-F005 内容定位；共享文档行号可漂移",
+    "finding_state_observed": "OPEN",
+    "s1_5_observed": "[-] active",
+    "s8_2_observed": "[-] active; blocked-upstream unchanged",
+    "this_package_independent_review": "NOT REVIEWED",
+    "closure": "F005 保持 OPEN，须真实非作者复核并由 Lead 登记；本包作者不关闭"
+  },
+  "report_binding": {
+    "legacy_index_ref": "legacy_index",
+    "legacy_report_declaration": {
+      "name": "report.md",
+      "bytes": 8023,
+      "sha256": "A9A4ECBB9DEF6C1862ECE1D151F085F179DE43A6A489FD94411B017978150BFF"
+    },
+    "current_report_ref": "current_consumption_report",
+    "bytes_delta": 244,
+    "legacy_report_preimage": "unknown; unavailable in bounded inputs; not reconstructed",
+    "relationship": "当前 report 是同一路径的评审后版本；旧 index 是保留的生成时点快照，不可作为当前目录完整性基线",
+    "known_reason_refs": [
+      "verification_context",
+      "producer_review_report"
+    ],
+    "known_reason": "记录称修订 shell 命令引用口径与不存在的 sentinel 路径描述；完整逐字差异未经旧原像证明",
+    "supersedes": "仅为当前消费新增指针，不覆盖旧索引、旧报告或历史评审"
+  },
+  "bindings": {
+    "legacy_index": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-r01/index.json",
+      "sha256": "F840BC2C385CFC918E9C9C2D41D2C7C31FB00286D828225BC5EEA73E2835908B",
+      "bytes": 19567
+    },
+    "current_consumption_report": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-r01/report.md",
+      "sha256": "1B2FB3CFBF6C504AA528D3843FB79B65F52627FCDE7670B74CB46B130B037749",
+      "bytes": 8267
+    },
+    "upstream_index_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/index.json",
+      "sha256": "968A8FBECD3F553D69728DD252D0C8F73C59F6A88C5B867142DFB08EE338BBD4",
+      "bytes": 32021
+    },
+    "upstream_report_md": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/report.md",
+      "sha256": "9C152CADFACA8A32156BE07B1B2C37F16DBF49F4C133A3BC2EE3B17FB1A8769C",
+      "bytes": 3749
+    },
+    "upstream_commands_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/commands.json",
+      "sha256": "A8890AB32BE29A1C2D68CC059A343625630588F1C4C87342152713228E289993",
+      "bytes": 34196
+    },
+    "upstream_source-protection_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/source-protection.json",
+      "sha256": "C9D35B0B4B32D0AF636FF8093C7BEBB92F7C839F5A13F24FC8651FD3822B196E",
+      "bytes": 49186
+    },
+    "upstream_source10-before-after_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/source10-before-after.json",
+      "sha256": "6AE6D329E52497CB2958870A26DF97F1CC347E4A679206523B6ECB3B6275AEC7",
+      "bytes": 2726
+    },
+    "upstream_checks_required-pg-normal_stdout_log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/stdout.log",
+      "sha256": "52BBB9828525F14DA8AC2E04DF7E437B9FAED5444E83880143B721E0058531F9",
+      "bytes": 275985
+    },
+    "upstream_checks_required-pg-normal_result_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/result.json",
+      "sha256": "A306259A59726C009161E73D4366F2F941461242ABCF02777F3BF1B1AEA4C160",
+      "bytes": 2135
+    },
+    "upstream_checks_required-pg-normal_leaves_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/leaves.json",
+      "sha256": "2F0F01CD9D2D3366E2A8CD56D043040747A37820CBDBCF0712769F3CFF8E1819",
+      "bytes": 21180
+    },
+    "upstream_checks_required-pg-race_stdout_log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/stdout.log",
+      "sha256": "2602BD3C6F679CFEDD7D649B4D0B8AB31B9181521C8CAFB5751A21D62FAAA8F9",
+      "bytes": 275949
+    },
+    "upstream_checks_required-pg-race_result_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/result.json",
+      "sha256": "A4449600EA0C84AA2ECE8227101731C38ED0B50DED255ECAB768B12BE8A7D6C0",
+      "bytes": 2149
+    },
+    "upstream_checks_required-pg-race_leaves_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/leaves.json",
+      "sha256": "B44F93D1F892B6239F525EFEF8562CD31A41D62A1F09AAE2411CE22A47AC3180",
+      "bytes": 21174
+    },
+    "original_finding": {
+      "path": ".spec/wip/article-management/evidence-case18-coverage-r01/report.md",
+      "sha256": "2C0848582BA524F244761A65CAF3D8C08E923B0FC56AB9B6D03CC254216C48F7",
+      "bytes": 20718
+    },
+    "early_producer_review": {
+      "path": ".spec/wip/article-management/review-code-s1.5-f008-producer-r01.md",
+      "sha256": "8437743308F17FA2187F8D1F2A232030591ADC6F8D13A18BA42B92E0AAA99DDD",
+      "bytes": 5067
+    },
+    "producer_review_report": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-review-r01/report.md",
+      "sha256": "B51E2F55CF03A408DFAE891C7F4C52595FEF35A5BA357236BE21CC297D0ED134",
+      "bytes": 14173
+    },
+    "producer_review_verdict": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-review-r01/verdict.md",
+      "sha256": "812A56FE8B80E9789BBBF3C41DC5C168CB0ED335E6CD482DD4D6F958CB79CB6E",
+      "bytes": 796
+    },
+    "producer_review_commands": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-review-r01/commands.log",
+      "sha256": "6FB81EE8A8770D588B4BD75D32754C6D4580DB8A38F04E5931326EA85FBFD5B4",
+      "bytes": 12824
+    },
+    "case18_original_report": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01/report.md",
+      "sha256": "C54E4EAB1AF5761F2F250CE51A1E0B4EAD63A22AC51B02AC60E99D20F46EEC3C",
+      "bytes": 7384
+    },
+    "case18_original_index": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01/index.json",
+      "sha256": "609CFBF075078808E1483B9F20E5EDBF5395AB426652EB756054CEF4E36DFCD2",
+      "bytes": 6640
+    },
+    "case18_append_correction": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01/registration-correction-r01.md",
+      "sha256": "CFDCE04CA654DA813129C9BA0929934EE23C35A7ED5989309E40258BD61EC84C",
+      "bytes": 4604
+    },
+    "case18_review_r01": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01-review-r01/report.md",
+      "sha256": "AAFFA18532814397036C5EF1066345B8B7DE1E6487D8D70776D369C1FEBC192C",
+      "bytes": 19588
+    },
+    "case18_review_r02": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01-review-r02/report.md",
+      "sha256": "C732752A552672FB432A3BA1908CF56B103A9DB1675FC46C767021D3B357B2A9",
+      "bytes": 10370
+    },
+    "case18_verdict_r02": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01-review-r02/verdict.md",
+      "sha256": "BB8E3B41AFA13B0D8D6DA2666DE35920FD3D90F9F645E653B070E31FDAE8A2B7",
+      "bytes": 2651
+    },
+    "required-pg-normal_stderr.log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    "required-pg-normal_processes.json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/processes.json",
+      "sha256": "47986134196E813EED8E692272C9FEA6F4181A9950A931ED469ADBFE4D35517B",
+      "bytes": 7198
+    },
+    "required-pg-race_stderr.log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    "required-pg-race_processes.json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/processes.json",
+      "sha256": "9D847F51BEFE15820B1A4E055E8C1869027606FF68779460E176E43E823BC3F1",
+      "bytes": 31490
+    },
+    "preflight_stdout.log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/preflight-r02/stdout.log",
+      "sha256": "8676CCEE4CFFE09033F3DC0252FBDB7D5CFE412D2F7F448EDAF441767D70B0C2",
+      "bytes": 1488
+    },
+    "preflight_result.json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/preflight-r02/result.json",
+      "sha256": "71A20A255B8250373A4492BF5121BE50CFAF984FF4E8564BCDF9F385EB440A21",
+      "bytes": 2190
+    },
+    "verification_context": {
+      "path": ".spec/wip/article-management/verification-s1.5.md",
+      "sha256": "1C7C0E45079AA2FEB284798DD6A712E3F1C5AC15104C4360761CE71F54BE95F6",
+      "bytes": 42439
+    }
+  },
+  "legacy_upstream_recalculation": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/index.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/report.md",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/commands.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/source-protection.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/source10-before-after.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/stdout.log",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/result.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/leaves.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/stdout.log",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/result.json",
+      "sha256_match": true,
+      "bytes_match": true
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/leaves.json",
+      "sha256_match": true,
+      "bytes_match": true
+    }
+  ],
+  "historical_runs": [
+    {
+      "run": "required-pg-normal",
+      "historical_only": true,
+      "started_utc": "2026-10-29T17:43:37.128000+00:00",
+      "finished_utc": "2026-10-29T17:44:14.572326+00:00",
+      "argv": [
+        "go",
+        "test",
+        "-p=1",
+        "-vet=off",
+        "-tags=integration",
+        "./internal/article",
+        "-run",
+        "^(TestReplayPublicationPostgres|TestDeletionReplayPostgres)$",
+        "-count=1",
+        "-json"
+      ],
+      "exit_code": 0,
+      "wait_returned": true,
+      "recalculated_leaves": {
+        "pass": 58,
+        "fail": 0,
+        "skip": 0
+      },
+      "saved_leaves_equal": true,
+      "command_argv_equal": true,
+      "stdout_hash_equal": true,
+      "targets": {
+        "TestReplayPublicationPostgres/PublicationCurrentEvidenceAtomic/RefreshOutsideRunAndRecheck/Publish": "pass",
+        "TestReplayPublicationPostgres/PublicationCurrentEvidenceAtomic/RefreshOutsideRunAndRecheck/ReadCurrent": "pass"
+      },
+      "overlay": false,
+      "race_diagnostic": false
+    },
+    {
+      "run": "required-pg-race",
+      "historical_only": true,
+      "started_utc": "2026-10-29T17:44:14.761255+00:00",
+      "finished_utc": "2026-10-29T17:45:00.783898+00:00",
+      "argv": [
+        "go",
+        "test",
+        "-race",
+        "-p=1",
+        "-vet=off",
+        "-tags=integration",
+        "./internal/article",
+        "-run",
+        "^(TestReplayPublicationPostgres|TestDeletionReplayPostgres)$",
+        "-count=1",
+        "-json"
+      ],
+      "exit_code": 0,
+      "wait_returned": true,
+      "recalculated_leaves": {
+        "pass": 58,
+        "fail": 0,
+        "skip": 0
+      },
+      "saved_leaves_equal": true,
+      "command_argv_equal": true,
+      "stdout_hash_equal": true,
+      "targets": {
+        "TestReplayPublicationPostgres/PublicationCurrentEvidenceAtomic/RefreshOutsideRunAndRecheck/Publish": "pass",
+        "TestReplayPublicationPostgres/PublicationCurrentEvidenceAtomic/RefreshOutsideRunAndRecheck/ReadCurrent": "pass"
+      },
+      "overlay": false,
+      "race_diagnostic": false
+    }
+  ],
+  "source10_observation": {
+    "kind": "read_only_byte_observation_not_test",
+    "matching": 9,
+    "drifted": 1,
+    "files": [
+      {
+        "path": "internal/article/replay_evidence.go",
+        "sha256": "7C14E74DCEF68A1B8067DCEC2BF50BA4D1FA9BA165AEE5C52B3828D0D60417FB",
+        "bytes": 34397,
+        "legacy_sha256": "7C14E74DCEF68A1B8067DCEC2BF50BA4D1FA9BA165AEE5C52B3828D0D60417FB",
+        "legacy_bytes": 34397,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/replay_publication.go",
+        "sha256": "34B698A231B32101ACBF1B91AB7843FF1710D529C748072CFDF27BA1CF180B8E",
+        "bytes": 37500,
+        "legacy_sha256": "34B698A231B32101ACBF1B91AB7843FF1710D529C748072CFDF27BA1CF180B8E",
+        "legacy_bytes": 37500,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/replay_publication_integration_test.go",
+        "sha256": "8F5DD24DD40BE6A1A6CD4FBB9EF5990EE7EDBCEB964FF9ACF6BD41E5967540FD",
+        "bytes": 65102,
+        "legacy_sha256": "8F5DD24DD40BE6A1A6CD4FBB9EF5990EE7EDBCEB964FF9ACF6BD41E5967540FD",
+        "legacy_bytes": 65102,
+        "matches_legacy": true
+      },
+      {
+        "path": "migrations/0011_article_replay_publication.sql",
+        "sha256": "7C7F1B1F0BEFDBF572B0EE768FAC3ADD987D58DF8CA4525072CD1EE269F84CC2",
+        "bytes": 2762,
+        "legacy_sha256": "7C7F1B1F0BEFDBF572B0EE768FAC3ADD987D58DF8CA4525072CD1EE269F84CC2",
+        "legacy_bytes": 2762,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/replay_publication_test.go",
+        "sha256": "412A145A50A374C689D29EA3050DE48BCB9C827E7D7DB4E927CE08A828F69B05",
+        "bytes": 20382,
+        "legacy_sha256": "412A145A50A374C689D29EA3050DE48BCB9C827E7D7DB4E927CE08A828F69B05",
+        "legacy_bytes": 20382,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay.go",
+        "sha256": "33AB20A7EB3A963889B9A8F027D89A8407C67F3D9C7DB85FC7814F9D1B3B577D",
+        "bytes": 16175,
+        "legacy_sha256": "33AB20A7EB3A963889B9A8F027D89A8407C67F3D9C7DB85FC7814F9D1B3B577D",
+        "legacy_bytes": 16175,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay_source.go",
+        "sha256": "485A4621FA22AD7442D9ACF36A9B36118C6CE3C96E37E6DA8EB2FCFA2293DF61",
+        "bytes": 10144,
+        "legacy_sha256": "485A4621FA22AD7442D9ACF36A9B36118C6CE3C96E37E6DA8EB2FCFA2293DF61",
+        "legacy_bytes": 10144,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay_test.go",
+        "sha256": "A4923E7B58D74EAB743C21F681F1010E8AAC592396A723E7BF3B3D0B181B02F4",
+        "bytes": 30151,
+        "legacy_sha256": "A4923E7B58D74EAB743C21F681F1010E8AAC592396A723E7BF3B3D0B181B02F4",
+        "legacy_bytes": 30151,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay_source_test.go",
+        "sha256": "5C63E4DF765B21006809D2E6E7A991BF57709F714DD228C47C6B504427D613FE",
+        "bytes": 15473,
+        "legacy_sha256": "2F8E38D81F4CC88E03E02AFC0602501ACC2241E40FC0270D94B270D756EA0695",
+        "legacy_bytes": 15341,
+        "matches_legacy": false
+      },
+      {
+        "path": "internal/article/deletion_replay_integration_test.go",
+        "sha256": "CB2E859535E0D8BC421298BDE13452271DC0B6B3EAE005BEA9CF76E8224A5F50",
+        "bytes": 15900,
+        "legacy_sha256": "CB2E859535E0D8BC421298BDE13452271DC0B6B3EAE005BEA9CF76E8224A5F50",
+        "legacy_bytes": 15900,
+        "matches_legacy": true
+      }
+    ],
+    "full_runtime_no_drift": "unknown",
+    "current_source_pass": "NOT ESTABLISHED",
+    "note": "当前十源已非全部匹配；不推翻既存原始运行，也不把历史 PASS 迁移到当前源码"
+  },
+  "review_chain": [
+    {
+      "ref": "early_producer_review",
+      "actual_id": "01a19285-8ece-7c20-a161-c0d7b8cce6aa",
+      "scope": "历史 producer 有限定接收，非 Review PASS；报告当时为 A9A4ECBB/8023"
+    },
+    {
+      "ref": "producer_review_report",
+      "verdict_ref": "producer_review_verdict",
+      "commands_ref": "producer_review_commands",
+      "actual_id": "01a1972f-65d8-76a1-8912-7bf5b437d291",
+      "scope": "Halley 历史 producer 子门禁 PASS WITH MINOR，评审对象为旧报告原像；不评本 r02 索引或当前源码"
+    },
+    {
+      "ref": "case18_append_correction",
+      "scope": "Case18 schema/状态词表追加更正，不是 producer 修复或 F005 关闭证据"
+    },
+    {
+      "ref": "case18_review_r01",
+      "scope": "Case18 补证独立评审，F005 OPEN"
+    },
+    {
+      "ref": "case18_review_r02",
+      "verdict_ref": "case18_verdict_r02",
+      "actual_id": "01a1a0b4-231d-7730-b702-a0aaad930a07",
+      "scope": "Anscombe 对 Case18 登记补正的复审，F005 仍 OPEN；非本 r02 索引复审"
+    }
+  ],
+  "unknowns": [
+    "旧 A9A4ECBB/8023 report 原始字节及完整逐字 diff",
+    "已记录两项措辞修订之外是否还有逐字变动，不能由摘要证明",
+    "deletion_replay_source_test.go 漂移的作者、原因、行为影响及当前源码运行结果",
+    "当前 PG/进程/环境状态与全 runtime 是否无漂移",
+    "来源包缺失的 source10-before.json 与包外 PG resource 的可恢复性；本轮不读凭据、不尝试重建",
+    "本新增索引的真实非作者复核与 Lead 登记尚未发生"
+  ],
+  "limits": [
+    "本轮仅离线读取、hash/字节和日志复算；未执行 Go 测试或 DB 操作",
+    "历史双轮不等于 S1.5 本轮运行或当前源码 PASS",
+    "177 项保护清单的历史 entry→exit 不证明当前全量稳定；Halley 当时已记 28 项漂移，本轮不重新扩扫",
+    "不证明真实 Journal/HMAC/keyring、旧备份恢复、Case18 全局隔离、应用 ACL、部署 E2E、容量/P95、production readiness 或人的接收",
+    "所有既有 source、raw、index、report、Tasks/Plan/verification 保留，不修改、不清理、不移动、不归档",
+    "无 Git 写、外网、凭据读取或下级委派"
+  ],
+  "local_artifacts": {
+    "report": "report.md",
+    "hash_manifest": "hash-manifest.json",
+    "hash_rule": "manifest 绑定本 index/report 与全部引用；manifest 不自哈希以避免循环，交付消息给出 manifest 哈希"
+  }
+}

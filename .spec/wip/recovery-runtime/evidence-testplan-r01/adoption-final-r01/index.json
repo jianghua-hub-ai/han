@@ -1,0 +1,91 @@
+{
+  "scope": "adoption-final-r01",
+  "agent": {
+    "role": "add-arch-designer",
+    "nickname": "Pascal",
+    "id": "01a17e3d-5550-7f91-bb7e-6e6fad3d082c"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-adr27-tp-planning-adoption-3n6gwcsz",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/after/.add/project/knowledge/decisions/framework.md",
+      "sha256": "902D6F066BE6B0F728C9946E1EE83B69608A92F37FF80C929431D7267A47B4F8",
+      "bytes": 101915,
+      "source_name": "after/.add/project/knowledge/decisions/framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/after/.add/project/knowledge/decisions/README.md",
+      "sha256": "7112FA46EF75F8130AA900CF46D5532521D9E5002160FB8BBBDB3031FFF6AFB4",
+      "bytes": 15477,
+      "source_name": "after/.add/project/knowledge/decisions/README.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/author-helper-note.json",
+      "sha256": "6264F5DF1563D47B2423B9028E05B7E7EF43AC99DB485850FBAF3025F76C7206",
+      "bytes": 403,
+      "source_name": "author-helper-note.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/baseline.json",
+      "sha256": "CACFEC8B97BC4C750758414557AEF28399E555C4F5695220A08B3479BAD4403D",
+      "bytes": 107848,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/before/.add/project/knowledge/decisions/framework.md",
+      "sha256": "36F4B49FD5C9B6FC0B351BAF326E03CF74889A5FA91CD052516D4B2542708B79",
+      "bytes": 96901,
+      "source_name": "before/.add/project/knowledge/decisions/framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/before/.add/project/knowledge/decisions/README.md",
+      "sha256": "157A549AD375B650479900A350464FCB842E828EFD296F3A50FA406A996FBAA1",
+      "bytes": 15477,
+      "source_name": "before/.add/project/knowledge/decisions/README.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/framework.md.diff",
+      "sha256": "641CDD6C8F3173BEC76534264D58B17716711A6EDE3241A246BB324E3EBEA48E",
+      "bytes": 7358,
+      "source_name": "framework.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/README.md.diff",
+      "sha256": "7466EC77DC936B523E6DB7298672E836C966793F30DF4F21FDF228875CA6B573",
+      "bytes": 1812,
+      "source_name": "README.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/readset.json",
+      "sha256": "775A6BDE61DD2302968EF211FDD9B92BD1CC0ECE9F3FEE289A3C69284CA36953",
+      "bytes": 7795,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/receipt.md",
+      "sha256": "A53E883A4409928BFA10446BC41D9B3D2E7E32DF595172F2BBDE6329F611CEA8",
+      "bytes": 3179,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/sha256sums.json",
+      "sha256": "0EF0249700B20FD526F4771F05855DD9D0911C1C20BD1D0DC1CB77143CC7368A",
+      "bytes": 1218,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/verification.json",
+      "sha256": "3D97EF3091A687A8AA60282862C4756361954E611042A3A9CE0DAC9A5626F385",
+      "bytes": 6272,
+      "source_name": "verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/adoption-final-r01/verify.py",
+      "sha256": "622243D0B7BA2224610DFB82713169CB64536532911A72A1F0335C18A308039B",
+      "bytes": 6390,
+      "source_name": "verify.py"
+    }
+  ]
+}

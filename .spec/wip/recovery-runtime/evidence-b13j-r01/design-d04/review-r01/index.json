@@ -1,0 +1,391 @@
+{
+  "schema": "add.review-index/v1",
+  "role": "add-reviewer",
+  "independence": "independent non-author review; reviewed artifacts not modified by reviewer",
+  "objectType": "design + adr + index (composite) + security review",
+  "item": "pending-B13J-D04",
+  "workflow": "development-delivery",
+  "phase": "non-author independent first review of B13J-D04",
+  "verdict": "CHANGES REQUIRED",
+  "verdicts": {
+    "design": "CHANGES REQUIRED",
+    "security": "PASS WITH MINOR",
+    "overall": "CHANGES REQUIRED",
+    "reason": "The 11-port set, ADR-0032 decision and release gates, article canonical-orphaning ownership, secret-candidate contract, traceability, format, and minimality pass. However identity-auth/design.md:3616 labels the exclusive port's production source as the unconstructed restoreDeploymentExclusive while the only production root resolves an empty registry to recoveryClosedPort, and recoveryAnchorAdapter.Exclusive / inputs.exclusive provide a second injection path. This breaks closure condition 1 ('unique production source can be listed') and therefore closure condition 5 (design review PASS). Production remains closed, so no live security exposure; the security review is PASS WITH MINOR, not a sign-off."
+  },
+  "rounds": {
+    "round1": "CHANGES REQUIRED"
+  },
+  "reviewedAt": "2026-11-01T23:58:04+08:00",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "artifact": {
+    "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r01/report.md",
+    "sha256": "51C91D48B55486375166267E0B1CED9CE2AFEB3878C94D79CB24427AF820751D",
+    "bytes": 26602,
+    "lines": 212,
+    "encoding": "utf-8",
+    "bom": false,
+    "line_endings": "LF only",
+    "trailing": "single LF (0x0a)",
+    "source": "independent first review report (this review)"
+  },
+  "object": {
+    "identity": {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "revision": "r60",
+      "baseline": {
+        "sha256": "B07BAFC7CE1265A42B4F9A79C0F1489D3FCAAB50F47F1C02F0A1FCDA3C23AF99",
+        "bytes": 847437,
+        "lines": 4924
+      },
+      "target": {
+        "sha256": "4D2FC4AC638094BEB1564DF041A973ABA29FE3E43B5D585117BCC586777994AB",
+        "bytes": 854160,
+        "lines": 4944
+      },
+      "deltaBytes": 6723,
+      "changedLines": [
+        5,
+        38,
+        83,
+        1055,
+        3601,
+        3602,
+        3603,
+        3604,
+        3605,
+        3606,
+        3607,
+        3608,
+        3609,
+        3610,
+        3611,
+        3612,
+        3613,
+        3614,
+        3615,
+        3616,
+        3617,
+        3618,
+        3908,
+        3916,
+        3918,
+        3922,
+        3923
+      ],
+      "declaredHunks": [
+        "-5 +5",
+        "-38 +38",
+        "-83 +83",
+        "-1055 +1055",
+        "-3600,0 +3601,18",
+        "-3890 +3908",
+        "-3898 +3916",
+        "-3900 +3918",
+        "-3903,0 +3922,2"
+      ],
+      "snapshot": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/identity-before-r60.md",
+      "snapshotMatchesBaseline": true,
+      "unchangedAnchors": [
+        ":7",
+        ":3874-:3902"
+      ]
+    },
+    "article": {
+      "path": ".add/project/knowledge/design-workspace/article-management/design.md",
+      "revision": "r28",
+      "baseline": {
+        "sha256": "4D46B307CB73C9F35A9146B35724970283B5A3BC7833F0B8EE8CC6854345128A",
+        "bytes": 374925,
+        "lines": 3257
+      },
+      "target": {
+        "sha256": "639D23262DE0D5D292B10FC29D371A9A908C33BD320E901E6BAE4BE9C5647F15",
+        "bytes": 377416,
+        "lines": 3267
+      },
+      "deltaBytes": 2491,
+      "changedLines": [
+        5,
+        7,
+        37,
+        69,
+        70,
+        2432,
+        2433,
+        2434,
+        2435,
+        2436,
+        2437,
+        2438,
+        2439
+      ],
+      "declaredHunks": [
+        "-5 +5",
+        "-7 +7",
+        "-37 +37",
+        "-68,0 +69,2",
+        "-2429,0 +2432,8"
+      ],
+      "snapshot": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/article-before-r28.md",
+      "snapshotMatchesBaseline": true
+    },
+    "framework": {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "adr": "ADR-0032",
+      "baseline": {
+        "sha256": "D74F09A0666AF86A77E55AAC8491DEF516CA81C181423E250F71A82CB9121C12",
+        "bytes": 155139,
+        "lines": 1049
+      },
+      "target": {
+        "sha256": "C1E5F80354A442D446E988AC60A45806ACC73F401563F19A17063B7B74A8B25C",
+        "bytes": 168354,
+        "lines": 1117
+      },
+      "deltaBytes": 13215,
+      "changedLines": "append-only +1050..+1117",
+      "prefixBytes": 155139,
+      "prefixSha256": "D74F09A0666AF86A77E55AAC8491DEF516CA81C181423E250F71A82CB9121C12",
+      "prefixMatchesBaseline": true,
+      "snapshot": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/framework-before-r32.md",
+      "snapshotMatchesBaseline": true
+    },
+    "readme": {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "baseline": {
+        "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+        "bytes": 20764,
+        "lines": 108
+      },
+      "target": {
+        "sha256": "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97",
+        "bytes": 21472,
+        "lines": 110
+      },
+      "changedLines": [
+        40,
+        46,
+        73
+      ],
+      "declaredHunks": [
+        "-39,0 +40",
+        "-45 +46",
+        "-71,0 +73"
+      ],
+      "snapshot": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/readme-before-r32.md",
+      "snapshotMatchesBaseline": true
+    }
+  },
+  "formatInvariants": {
+    "identity": {
+      "bom": false,
+      "lines": 4944,
+      "crlf": 169,
+      "bare_lf": 4775,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf": 1,
+      "only_control": "pre-existing TAB in Go fenced code block",
+      "tab_byte_offset": 468004,
+      "tab_line": 3303,
+      "tab_pre_existing": true
+    },
+    "article": {
+      "bom": false,
+      "lines": 3267,
+      "crlf": 0,
+      "bare_lf": 3267,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf": 0
+    },
+    "framework": {
+      "bom": false,
+      "lines": 1117,
+      "crlf": 1117,
+      "bare_lf": 0,
+      "trailing": "single CRLF (0x0d0a)",
+      "control_excluding_cr_lf": 0
+    },
+    "readme": {
+      "bom": false,
+      "lines": 110,
+      "crlf": 2,
+      "bare_lf": 108,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf": 0
+    }
+  },
+  "findings": {
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 1,
+      "LOW": 1
+    },
+    "total": 2,
+    "items": [
+      {
+        "id": "B13J-D04-RV-01",
+        "severity": "MEDIUM",
+        "status": "open",
+        "blocking": true,
+        "title": "The exclusive row's 'unique production source' does not match the production wiring and omits two alternate injection paths",
+        "location": [
+          "identity-auth/design.md:3616",
+          "decisions/framework.md:1060",
+          "decisions/framework.md:1113"
+        ],
+        "fact": "identity-auth/design.md:3616 names POSIX file lock / restoreDeploymentExclusive as the unique production source. But restoreDeploymentExclusive has no production construction site (only recovery_exclusive.go:15-42 and tests); main.go:634-636 leaves recoveryRootInputs.exclusive nil; recovery_runtime.go:551 uses newRecoveryAnchorRegistry(nil), :555 resolves it, and :647 injects recoveryClosedPort (recovery_sources.go:470-474, :523-531). A second path exists through recoveryAnchorAdapter.Exclusive (recovery_sources.go:425-430, :458-461, :485-491) and inputs.exclusive override (recovery_runtime.go:565-567).",
+        "impact": "Closure condition 1 (unique production source per port) is not satisfied at the contract level; S4.22 cannot determine a single injection path; a future registered adapter could change the deployment-lock source and violate ADR-0032's root/platform ownership. Production is still closed, so no live exposure, hence MEDIUM rather than HIGH.",
+        "recommendation": "State current production = empty-registry recoveryClosedPort; future sole authorized path = root injecting restoreDeploymentExclusive into recoveryRootInputs.exclusive; explicitly exclude recoveryAnchorAdapter.Exclusive as a production deployment-lock source (or record it as the sole path and reconcile ADR-0032 ownership). Align framework.md:1060 and :1113. Do not modify ADR-0019/0030/0031 text.",
+        "disposition": "must fix in this D04 round; blocking for design PASS"
+      },
+      {
+        "id": "B13J-D04-RV-02",
+        "severity": "LOW",
+        "status": "open",
+        "blocking": false,
+        "title": "article r28 traceability cites ADR-0032 although ADR-0032 explicitly excludes ArticleAccountPort",
+        "location": [
+          "article-management/design.md:69"
+        ],
+        "fact": "article-management/design.md:69 cites 'ADR-0032 and the 11-port list' as the basis for canonical orphaning. ADR-0032 framework.md:1109 explicitly says it does not apply to ArticleAccountPort ownership, and the 11-port list is in identity-auth/design.md:3601-3617, not in ADR-0032.",
+        "impact": "Traceability attribution is imprecise and could mislead a later reader into treating ADR-0032 as governing article-side ownership; no technical conclusion changes.",
+        "recommendation": "Cite identity-auth/design.md:3601-3617 (articleAccount row :3615), identity-auth/design.md:1055 and gap-map U6; do not cite ADR-0032, or label it as the same-round document set only.",
+        "disposition": "may fold into a later D04/D03 documentation round; non-blocking"
+      }
+    ]
+  },
+  "closureConditions": {
+    "1_uniqueProductionSources": "PARTIAL/FAIL: 10 rows match code; exclusive row does not (B13J-D04-RV-01)",
+    "2_deploymentLockPlatformAndRefusal": "PASS at contract level: ADR-0032:1064/:1088/:1093 and identity:3908/:3922; no runtime evidence",
+    "3_articleCanonicalOrphaningOwner": "PASS: article:2432-2439, identity:1055, code references verified",
+    "4_secretReadOnlyAndJournalVerified": "PASS at contract level: identity:3916/:3918, Journal.VerifyBeginSecret read-only path",
+    "5_designReviewPASS": "FAIL: this review is CHANGES REQUIRED",
+    "6_productionStillClosed": "PASS: recoveryClosedPort/recoveryClosed* placeholders; no production exclusive backend"
+  },
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "bytes": 26452,
+      "role": "reconciliation source; section 2.6 at :141-161 and U5/U6/U7 at :201-203"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/report.md",
+      "sha256": "C86A18C6D55248D072902076DB92FEDE7D70DB50BEFF5F402D2E7C38554B028E",
+      "bytes": 27049,
+      "role": "author evidence"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/index.json",
+      "sha256": "455ED4C1F105B30D4348F45505DE36F41B2A92A7DA9E5BD3EFC7DCB97EAFF2BD",
+      "bytes": 20701,
+      "role": "author evidence index"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/identity-before-r60.md",
+      "sha256": "B07BAFC7CE1265A42B4F9A79C0F1489D3FCAAB50F47F1C02F0A1FCDA3C23AF99",
+      "bytes": 847437,
+      "role": "pre-change snapshot"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/article-before-r28.md",
+      "sha256": "4D46B307CB73C9F35A9146B35724970283B5A3BC7833F0B8EE8CC6854345128A",
+      "bytes": 374925,
+      "role": "pre-change snapshot"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/framework-before-r32.md",
+      "sha256": "D74F09A0666AF86A77E55AAC8491DEF516CA81C181423E250F71A82CB9121C12",
+      "bytes": 155139,
+      "role": "pre-change snapshot"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/snapshots/readme-before-r32.md",
+      "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+      "bytes": 20764,
+      "role": "pre-change snapshot"
+    }
+  ],
+  "crossChecks": {
+    "elevenPorts": "identity:3605-3617 contains exactly journal/articleSnapshots/consumer/installation/restore/commitments/sources/anchor/articleAccount/exclusive/secretCandidate; recovery_runtime.go:456-491 likewise lists 11 seams.",
+    "exclusiveWiring": "main.go:634-636 -> recovery_runtime.go:551 newRecoveryAnchorRegistry(nil) -> :555 resolve -> :647 anchors.Exclusive; recoveryClosedPort implements DeploymentExclusive at recovery_sources.go:523-531.",
+    "secondExclusivePath": "recoveryAnchorAdapter.Exclusive at recovery_sources.go:425-430; non-nil validation :458-461; pass-through :485-491; override recovery_runtime.go:565-567.",
+    "adrBoundaries": "framework.md:1060 states no change to ADR-0019/0030/0031/0027; :1094 repeats; :1109 excludes ArticleAccountPort/secret candidate; framework prefix 155139 bytes is byte-identical to the pre-change snapshot.",
+    "traceability": "ADR-0032:1113 line references :3908/:3922/:3601/:3616/:83 match the actual lines; article:2434 code references were checked against the referenced files.",
+    "honesty": "No verified/implemented/wired/test-passed claim in the changed normative text; production remains closed; no Case18/S8.2 pass claim; no unregistered Task number added.",
+    "format": "All four files have no BOM and a single trailing newline in their established style; identity retains its one pre-existing TAB; framework is pure CRLF."
+  },
+  "commands": [
+    {
+      "command": "rg -n \"HAN_RECOVERY_RUNTIME_LOCK_PATH|ArticleAccountPort|HAN_RECOVERY_INITIAL_ADMIN_SECRET|生产 root 装配\" .add/project/knowledge/design-workspace/identity-auth/design.md",
+      "exit": 0,
+      "result": "15 matching lines, including :83, :1055, :2016, :3601, :3615, :3616, :3617, :3908, :3916, :3918"
+    },
+    {
+      "command": "rg -n \"ArticleAccountPort|OrphanArticlesCanonical|canonical\" .add/project/knowledge/design-workspace/article-management/design.md",
+      "exit": 0,
+      "result": "91 matching lines"
+    },
+    {
+      "command": "rg -n \"部署锁|文件锁|Windows|POSIX|ADR-\" .add/project/knowledge/decisions/framework.md",
+      "exit": 0,
+      "result": "102 matching lines"
+    },
+    {
+      "command": "git diff --check -- .add/project/knowledge/design-workspace/identity-auth/design.md .add/project/knowledge/design-workspace/article-management/design.md .add/project/knowledge/decisions/framework.md",
+      "exit": 0,
+      "result": "exit 0; core.autocrlf advisory warnings only, no whitespace errors"
+    },
+    {
+      "command": "rg -n \"restoreDeploymentExclusive\" --glob '!*.md' .",
+      "exit": 0,
+      "result": "definitions/tests only; no production construction site"
+    },
+    {
+      "command": "rg -n \"exclusive:\" --glob '!*_test.go' cmd internal",
+      "exit": 1,
+      "result": "no hit; production recoveryRootInputs does not set exclusive"
+    },
+    {
+      "command": "rg -n \"newRecoveryAnchorRegistry\" --glob '!*_test.go' cmd",
+      "exit": 0,
+      "result": ":551 nil registry in production and :455 definition"
+    }
+  ],
+  "writeSet": [
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r01/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r01/index.json"
+  ],
+  "notWritten": [
+    "all four reviewed design/decision files (read only)",
+    "design-d04 author evidence and snapshots (read only)",
+    "gap-map.md, tasks.md, plans, stories.md, test-plan.md, decisions/identity.md, decisions/content.md (read only)",
+    "no git write operation, no delete, no move"
+  ],
+  "notVerified": [
+    "Go tests, integration tests, a real service, or any restore/approval/ACL/process-isolation behavior",
+    "the OS file-lock backend, ACL evidence, two-process exclusion, crash release, and three-entry shared-lock evidence required by ADR-0032 release conditions 1-4",
+    "a real article canonical-orphaning connection, GRANT matrix, or recovery-secret read",
+    "workspace changes outside the four reviewed files and design-d04 evidence"
+  ],
+  "pendingDecisions": [
+    {
+      "id": "D04-RV-01",
+      "question": "How to make the exclusive port's single production source and injection ownership exact: current closed port plus future root-only restoreDeploymentExclusive injection, or a different documented sole path",
+      "owner": "Lead / Arch-Designer",
+      "blocking": true
+    },
+    {
+      "id": "D04-RV-02",
+      "question": "Whether to correct article-management/design.md:69 traceability now or fold it into the next documentation round",
+      "owner": "Lead / Arch-Designer",
+      "blocking": false
+    }
+  ],
+  "limitations": "Non-author first review only. The verdict is a contract-level review result, not human acceptance, a design Gate, security sign-off, production approval, or a claim that Case18/S8.2/E2E passed. It does not close pending-B13J-D04, release blocked-upstream, or unlock S4.22/S4.23/S4.24. Runtime and OS-level claims remain unverified."
+}

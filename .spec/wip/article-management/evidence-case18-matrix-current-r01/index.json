@@ -1,0 +1,139 @@
+{
+    "evidence":  "evidence-case18-matrix-current-r01",
+    "card":  "article-management-S8.2",
+    "finding":  "C18-COV-F002",
+    "kind":  "execution-evidence-supplement",
+    "author":  "Lead main session (no delegated Role output for this round)",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "generated_at":  "2026-11-01T21:44:58+08:00",
+    "single_execution_round":  true,
+    "counts_derived_from_logs":  true,
+    "scope":  "Re-execute the current-revision recovery isolation matrix and main-business dispatcher integration tests (normal and race) and record exact artifacts. Does not fix or close C18-COV-F002; only replaces \"possibly never executed\" with \"executed with limited coverage\".",
+    "env":  {
+                "go":  "go1.27.0 windows/amd64",
+                "GOOS":  "windows",
+                "GOARCH":  "amd64",
+                "CGO_ENABLED":  "1",
+                "HAN_TEST_POSTGRES_DSN":  "empty (no database used)",
+                "build_tags":  "integration"
+            },
+    "source":  {
+                   "cmd/han-server/main.go":  {
+                                                  "sha256":  "6D5373CA1535C41A5FA340D2B75834EB7E15AEEE39ABF9928BD0E0A210CF8727",
+                                                  "bytes":  173317,
+                                                  "stable_across_runs":  true
+                                              },
+                   "cmd/han-server/main_test.go":  {
+                                                       "sha256":  "3720652EF4774011732455D4901ADFC7D98096F0BECED4F8479F73819F9A7ECC",
+                                                       "bytes":  400312,
+                                                       "stable_across_runs":  true
+                                                   },
+                   "cmd/han-server/recovery_runtime.go":  {
+                                                              "sha256":  "1C6793779E444BD2A4EC2C6DB324551A20152A7EB1B7A1C65A9C9DB11D4396E5",
+                                                              "bytes":  37431,
+                                                              "stable_across_runs":  true
+                                                          },
+                   "cmd/han-server/recovery_main_dispatcher_integration_test.go":  {
+                                                                                       "sha256":  "BD71F41132DFCB2135390A6CCF7373DBD556BF4A898EE547B4B608C7D360651A",
+                                                                                       "bytes":  23693,
+                                                                                       "stable_across_runs":  true
+                                                                                   },
+                   "cmd/han-server/recovery_isolation_matrix_integration_test.go":  {
+                                                                                        "sha256":  "DA02943B9848C50E1960ECCDBF210C3E69D3AA8A64034F9A6321740E519E9115",
+                                                                                        "bytes":  8498,
+                                                                                        "stable_across_runs":  true
+                                                                                    }
+               },
+    "artifacts":  [
+                      {
+                          "name":  "run-normal",
+                          "command":  "go test -tags=integration -v -run ^(TestRecoveryIsolationMatrix|TestRecoveryMainBusinessDispatcher)$ -count=1 -json ./cmd/han-server",
+                          "exit":  0,
+                          "file":  "run-normal.json",
+                          "sha256":  "C8A03EA4B55C728CB7362B43D495F8463DEF7014C07334ED5DAB37E21781297F",
+                          "bytes":  56460
+                      },
+                      {
+                          "name":  "run-race",
+                          "command":  "go test -tags=integration -race -v -run ^(TestRecoveryIsolationMatrix|TestRecoveryMainBusinessDispatcher)$ -count=1 -json ./cmd/han-server",
+                          "exit":  0,
+                          "file":  "run-race.json",
+                          "sha256":  "74FA5868E359E9F3A23D97996867A37B4F44637D608D5B46395EFD03E06C8913",
+                          "bytes":  56534
+                      },
+                      {
+                          "name":  "go-vet",
+                          "command":  "go vet -tags=integration ./cmd/han-server",
+                          "exit":  0,
+                          "file":  "go-vet.log",
+                          "sha256":  "CC258D839E50D5E0CF220528399D5C29A6BCC5C3A9EE2616A915627E0363D91D",
+                          "bytes":  8
+                      },
+                      {
+                          "name":  "go-build",
+                          "command":  "go build ./...",
+                          "exit":  0,
+                          "file":  null,
+                          "sha256":  null,
+                          "bytes":  null
+                      }
+                  ],
+    "leaves":  {
+                   "normal":  {
+                                  "events":  265,
+                                  "run":  65,
+                                  "pass":  66,
+                                  "fail":  0,
+                                  "skip":  0,
+                                  "leaf":  65,
+                                  "package_elapsed":  "0.527s",
+                                  "data_race_lines":  0
+                              },
+                   "race":  {
+                                "events":  265,
+                                "run":  65,
+                                "pass":  66,
+                                "fail":  0,
+                                "skip":  0,
+                                "leaf":  65,
+                                "package_elapsed":  "1.805s",
+                                "data_race_lines":  0
+                            },
+                   "composition":  {
+                                       "matrix_closed":  25,
+                                       "matrix_unknown":  25,
+                                       "matrix_guard_open":  1,
+                                       "main_business_dispatcher":  14,
+                                       "total":  65
+                                   }
+               },
+    "covered":  [
+                    "matrix test executed on current revision with machine logs (normal and race)",
+                    "25 guarded business routes blocked under closed and unknown before authorization and origin",
+                    "livez/readyz stay outside the recovery guard",
+                    "guard_open control proves the observation points are reachable, not vacuously false",
+                    "race detector reported zero DATA RACE lines"
+                ],
+    "not_proven":  [
+                       "failed/expired/undetermined recovery states are not exercised; only closed, unknown and public_ready control",
+                       "matrix still uses newS419RecoveryRuntime fake runtime and zero-value pgxpool.Pool; this round does not change that",
+                       "no real PostgreSQL: HAN_TEST_POSTGRES_DSN empty, no schema, no real locks or transactions",
+                       "no real dual-system wiring (metrics/alerts/jobs)",
+                       "production Enter/Install paths referenced by F001/F003 remain closed and untouched",
+                       "production open-flow after complete recovery remains NOT COVERED (F004 unchanged)",
+                       "no deployment E2E",
+                       "no independent review of this round; F002 is not closed by this file"
+                   ],
+    "known_gaps":  [
+                       "C18-COV-F002 structural gaps remain open",
+                       "article-management-S8.2 stays blocked-upstream; no PASS claimed",
+                       "cmd/ is untracked in git, so absence of git diff is not evidence of no change; SHA256 and byte counts are authoritative"
+                   ],
+    "boundaries":  [
+                       "records one execution round only; does not assert stability over time",
+                       "does not replace independent review, human acceptance or deployment authorization",
+                       "does not reopen or alter S4.13/S4.16/S4.18/S4.19/S4.20/S4.21/S8.2 existing conclusions"
+                   ]
+}

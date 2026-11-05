@@ -1,0 +1,55 @@
+{
+  "scope": "s410-design-g0-r01",
+  "owner": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-design-g0-fvgppc_3",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-g0-r01/baseline.json",
+      "sha256": "E80CB76F7ABEBB6D06CBB5F8A1C1D9AE65E10967AD99F8AF4F2D3716089DB6F7",
+      "bytes": 1631,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-g0-r01/consult.md",
+      "sha256": "936E5F434CFF3DB8799F0290B397EA9D9ABBF9EDD11ED755E32474D16935FB8E",
+      "bytes": 13746,
+      "source_name": "consult.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-g0-r01/guard-after.json",
+      "sha256": "E65233BC4889C2B90BEDC7EB8E3CB84F2F889D7C177896EFE3C572FBF4B01B50",
+      "bytes": 1307,
+      "source_name": "guard-after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-g0-r01/hashes.json",
+      "sha256": "4FF13070CD964315A7561E59C02029498FA4DAE41D5E86A8B351194E809C2479",
+      "bytes": 533,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-g0-r01/methods-reused.json",
+      "sha256": "E616D5F104B456366B5993B20925A022C09079DA6EBEEFF7207A26354E13060C",
+      "bytes": 4827,
+      "source_name": "methods-reused.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-g0-r01/readset.json",
+      "sha256": "9DEF288925FF37268D50E1ECC17A1075A5F324536CFAA62B8FC642E9E1A9DE07",
+      "bytes": 5307,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-g0-r01/receipt.md",
+      "sha256": "764489EB784AAF0F45DB004815854CE24AA880028A7DAB45C451E2991831A187",
+      "bytes": 2411,
+      "source_name": "receipt.md"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

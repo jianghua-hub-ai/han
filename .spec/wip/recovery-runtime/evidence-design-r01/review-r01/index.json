@@ -1,0 +1,85 @@
+{
+  "scope": "Immutable two-round independent Recovery Design/Story R01; two HIGH findings OPEN",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "result": "CHANGES REQUIRED",
+  "metadata_result": "PASS - adoption refs/count only, not design acceptance",
+  "findings": [
+    {
+      "id": "RECOVERY-DES-R01-F001",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "target": "identity-auth/design.md:3556,3612",
+      "summary": "Maintenance login requires recovery_required=true but existing Session resolution rejects it; no controlled transition seam specified."
+    },
+    {
+      "id": "RECOVERY-DES-R01-F002",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "target": "identity-auth/design.md:3614",
+      "summary": "Restored path reuses daily password reset which rejects the required recovery_locked/recovery_required target."
+    }
+  ],
+  "main_reception": "Full report/receipt read. Session recovery flag/login condition and daily reset eligibility/repository SQL verified onsite; both technical findings accepted without risk waiver.",
+  "original_author_repair_submission": "01a183dd-a6b3-7f41-8b67-2f0fced81c37",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/audit.py",
+      "sha256": "E7EE631999D26FEB0748FCB7183DB60880CF999E233BD8BB41D28B674793C087",
+      "bytes": 5493
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/initial.json",
+      "sha256": "5E3577A98389C416CC974B571130B931F0AB666C7085B7D9A910D30C8871C651",
+      "bytes": 998
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/metadata-initial.json",
+      "sha256": "DA248031C257F438E0AE4300BCD453DB035003A6BF2D9E958CD731FD058F5BE4",
+      "bytes": 242
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/read.py",
+      "sha256": "B7ACDA8D93C765A15EEFB9038F75C866C360C4C3B925E53BDFAF1269A5B82521",
+      "bytes": 891
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/readset.jsonl",
+      "sha256": "13F203588FB05E19644956B4CA46D8FEF8DDC7E59652C05B42E377F8E06DB1D7",
+      "bytes": 23604
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/readset.md",
+      "sha256": "3052AFECBA84CF3CAC45E5DB47FD164291D947D44820C9E834E1C818943FDEA3",
+      "bytes": 10414
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/review-report.md",
+      "sha256": "69BB9C4DC548902EC2A72AA57D84386B75B57097B14EDF4927D005F43D117195",
+      "bytes": 19916
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/static-verification.json",
+      "sha256": "060D6EBFC9B884707C8991CB61D93ADD626BF97795838FA65A9B218BCF397338",
+      "bytes": 18662
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/receipt.json",
+      "sha256": "EA6CFDE172F0F46BDEF258F14065D3BCB24B3DCB34EE0ED386534DFD98528484",
+      "bytes": 6246
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/receipt.md",
+      "sha256": "28334886983FAC0C7B92972EB42AFF23BEE1AC525FF2AFB0EA045DA8EC4C1E08",
+      "bytes": 3619
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/review-r01/sha256sums.txt",
+      "sha256": "C774DBDF999ED780EFDC2052ACCE915538C5C1168F54328DCE02E6DEB0D61E11",
+      "bytes": 813
+    }
+  ]
+}

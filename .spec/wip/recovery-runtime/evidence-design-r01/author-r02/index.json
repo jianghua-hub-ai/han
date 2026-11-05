@@ -1,0 +1,89 @@
+{
+  "scope": "Original FD bounded design-only repair for RECOVERY-DES-R01-F001/F002",
+  "agent": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "authorization_submission": "01a183dd-a6b3-7f41-8b67-2f0fced81c37",
+  "recheck_submission": "01a183f4-ef5d-7090-b7d9-0007c798d3ba",
+  "main_reception": "Complete identity design and Story repair deltas read. All four R01 before bytes and repair-frozen hashes verified; article pair unchanged. Independent re-review pending.",
+  "state": "Author frozen/draft, both findings OPEN pending original Reviewer. No code/test/human acceptance.",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/baseline.json",
+      "sha256": "353FD7F1518C9704A7AFF404D3B9A6BD58D55427C7678502470DFBA7BFF086D1",
+      "bytes": 27817
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/readset.json",
+      "sha256": "99C2404C73523470F3CFBC0D23DB4E403029A244AAFB9AB0738CBAAA8F87D626",
+      "bytes": 13117
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/verification.json",
+      "sha256": "3B09424D0AA49CB4E477DA63E753902CD971B8A9269536646BABBCA49BD6BA73",
+      "bytes": 5974
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/identity-auth-design.md.before",
+      "sha256": "03D7A5BD87A1558A8CA26AAE93F3552B860AD2259921ED5BE9C57DD2B7D4A633",
+      "bytes": 744764
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/identity-auth-design.md.diff",
+      "sha256": "7116AC980020646C425515C4E3E3257CB858460350CC9D779AD87384B42C03ED",
+      "bytes": 39504
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/frozen/.add/project/knowledge/design-workspace/identity-auth/design.md",
+      "sha256": "5BB7994F3AAC309ADC913C9B032782694849BB3C084FF5852B7270B14B8E3DAD",
+      "bytes": 773401
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/article-management-design.md.before",
+      "sha256": "436E323486F02E86BF985B92CB8B2DA096B9CC3440F629B1B2B0875B8EB2731D",
+      "bytes": 339740
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/article-management-design.md.diff",
+      "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+      "bytes": 1
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/frozen/.add/project/knowledge/design-workspace/article-management/design.md",
+      "sha256": "436E323486F02E86BF985B92CB8B2DA096B9CC3440F629B1B2B0875B8EB2731D",
+      "bytes": 339740
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/identity-auth-stories.md.before",
+      "sha256": "247887668F3F7F7DA056FC376A4C556B618884E44011564BA339AEE8061BEFC0",
+      "bytes": 42340
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/identity-auth-stories.md.diff",
+      "sha256": "81494ABF87DA7CEED31FE667E72B1981B94995E5D57F34DA88AAC707D2CD215F",
+      "bytes": 4634
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/frozen/.add/project/knowledge/design-workspace/identity-auth/stories.md",
+      "sha256": "F386D2BCDE59845D1AF62F6B781B006E677E5487D7A970FFE3E66097DEDA73D0",
+      "bytes": 44175
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/article-management-stories.md.before",
+      "sha256": "33E6A46AE28B3CB5DBB3B3C5559895167B1BAB0B1F29AE73C60878A9662902A4",
+      "bytes": 22746
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/article-management-stories.md.diff",
+      "sha256": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B",
+      "bytes": 1
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/author-r02/frozen/.add/project/knowledge/design-workspace/article-management/stories.md",
+      "sha256": "33E6A46AE28B3CB5DBB3B3C5559895167B1BAB0B1F29AE73C60878A9662902A4",
+      "bytes": 22746
+    }
+  ]
+}

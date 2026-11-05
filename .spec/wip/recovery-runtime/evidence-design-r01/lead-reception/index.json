@@ -1,0 +1,101 @@
+{
+  "scope": "Main technical reception and concrete downstream inputs; not an independent test or human signoff",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/baseline.json",
+      "sha256": "5804E975618B85D09BED93AC1A07D0FE6B5790728D36D9C608049CD1631504E3",
+      "bytes": 193
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/source.before.json",
+      "sha256": "BA4F8818925665A4BB2BF01B036C2D51DA81806E74A6F261B20E261A1CB1CBEC",
+      "bytes": 21428
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/knowledge.before.json",
+      "sha256": "E919FCA4D9D3896E7CACCFFA3D1969721E6373873A84BBACE9157533EDEB6AFD",
+      "bytes": 4525
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/controls.before.json",
+      "sha256": "6FB2554E6162413EDE3BD7009E8A0FBA3EC32CF7E07E76888F4849E49E59EF1C",
+      "bytes": 270
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/allowed.json",
+      "sha256": "919848CA72D1EAC7AFAAC5C3791D72957695D4F20A3E1549D7D653B0B5881E0F",
+      "bytes": 390
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/verify_scope.py",
+      "sha256": "67BEC05C000104F3A8EAC0C9FB7C2B00A3A91D86D122942B9DB222A624D097A2",
+      "bytes": 2479
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/check_documents.py",
+      "sha256": "1D70E13952C86D5E52FFAD28DC6A15D000F0D91F52C78B9A2DC5D781F766E0AE",
+      "bytes": 3333
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/check_evidence.py",
+      "sha256": "D9A9F43BC60083D0D26DB89CF28645BA95279790E7736462F34FAC9327BFEAD3",
+      "bytes": 1272
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/capture_final_state.py",
+      "sha256": "2F95135CF7912B75EB78EB8D6FC5ADA049576294B1B39EA3988F16F966B41633",
+      "bytes": 1676
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/retain_author_status.py",
+      "sha256": "8242956C7C9826264306B65540B48F973D7C19854B33E40C7531D0AFB21BEDDB",
+      "bytes": 3126
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/retain_adoption_r02.py",
+      "sha256": "E6E178D63D151128B007B8D11552287F2EDEA680181B421EDF4B062AEE63464B",
+      "bytes": 2604
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/retain_review_r03.py",
+      "sha256": "B500BBEEAC87E9E4D4AE0B0866B9F4E4820B097DD923D4B466CE9242DF71FBAB",
+      "bytes": 2301
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/retain_lead_reception.py",
+      "sha256": "7E58A8AB366603DE731F98DFE989604A0D66F2692F598580D406881BA3AC0391",
+      "bytes": 4528
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/scope-final.json",
+      "sha256": "99783E8C353DD0C02F22F1F9D9DB5A391E9FE56C0B6508AB4B350B709D8AA307",
+      "bytes": 1524
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/documents-final.json",
+      "sha256": "77364E3804316E6D7C88D5C3D196A294B296729036D89F9C93845E8F3B0689A1",
+      "bytes": 4690
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/final-state-r02.json",
+      "sha256": "1EB62E384B868BAEFD5917A5F363F06172855CF426C613814AC2760AA1A60A5C",
+      "bytes": 19986
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/evidence-before-lead-reception.json",
+      "sha256": "1F0733C1A1D56BE65F5672E9243586B8CE98D33448BB6E6B12AA4EED4F8B74D6",
+      "bytes": 2344
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/verification-design-r50-r23-r01.md",
+      "sha256": "952B570EAE62003A75B4F973D86BB03092F80D22C20C9968D567C681E2A736E3",
+      "bytes": 7501
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-design-r01/lead-reception/decision.json",
+      "sha256": "D2D78696DC8C4EA60CE744395A0CFEC8AD35CCBC06D00FD7099022DBBDC0856A",
+      "bytes": 4269
+    }
+  ],
+  "integrity": "Payload hashes; index does not hash itself. Later integrity pass covers this index and every retained payload."
+}

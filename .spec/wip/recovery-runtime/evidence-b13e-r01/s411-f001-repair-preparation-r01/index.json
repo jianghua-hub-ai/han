@@ -1,0 +1,438 @@
+{
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Lorentz",
+    "runtime_id": "01a189aa-4e63-7d10-90c1-561fc6d70e8a"
+  },
+  "source_temp": "D:\\Temp\\han-b13e-s411-f001-preparation-20261030-r03\\packet",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/bootstrap.go.frozen",
+      "source_name": "before/internal/identity/bootstrap.go",
+      "bytes": 14689,
+      "sha256": "13414BA8F4964334145A3804428417191249A87857CCEC3AB08B709EC18C08D7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/bootstrap_test.go.frozen",
+      "source_name": "before/internal/identity/bootstrap_test.go",
+      "bytes": 49273,
+      "sha256": "92621DF5B2C157D3856D76164C79AC9DFFC8983EC271BDA808CF75253F59C5D2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/login.go.frozen",
+      "source_name": "before/internal/identity/login.go",
+      "bytes": 68677,
+      "sha256": "6B33FACCB8CADC0241A567D09B75C873B4BB3AEDBEDE2C18568C1BE23CFD5287"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/login_test.go.frozen",
+      "source_name": "before/internal/identity/login_test.go",
+      "bytes": 108659,
+      "sha256": "1F64B2820B2A23A7870F43BD2EC259FC48F9BEA60E4C4C063B8BDC236F10434D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/recovery_auth.go.frozen",
+      "source_name": "before/internal/identity/recovery_auth.go",
+      "bytes": 19609,
+      "sha256": "9615E41EA95E505AF66DC679D6D42CE372FE3BCEEF344383F45E903EF28B3ECB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/recovery_auth_postgres_test.go.frozen",
+      "source_name": "before/internal/identity/recovery_auth_postgres_test.go",
+      "bytes": 32651,
+      "sha256": "80D6A1220A5398A440D0418FAB3633F5E917D7F693B90D7C599EAF4DBF7E5245"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/recovery_auth_test.go.frozen",
+      "source_name": "before/internal/identity/recovery_auth_test.go",
+      "bytes": 6400,
+      "sha256": "9C5EBD507CAA8836DC09C51EEBDD66574C3A64D7DB5F5FC3AF7C1088FA9B9E39"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/identity/service.go.frozen",
+      "source_name": "before/internal/identity/service.go",
+      "bytes": 36909,
+      "sha256": "51D69D68885DF8B1CFCEDFC87E696CA384249D80F8358908F95A1F0F0A6BBE74"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/session/maintenance_store.go.frozen",
+      "source_name": "before/internal/session/maintenance_store.go",
+      "bytes": 11500,
+      "sha256": "CE3371A8AFDCCAC7B94F584A9C96A0F3B8FDF2124DAC50C00D0964DCC6CF9A50"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/session/maintenance_store_test.go.frozen",
+      "source_name": "before/internal/session/maintenance_store_test.go",
+      "bytes": 7288,
+      "sha256": "CAC1D5BE977C4E2334425D64A96D628C4E511A68352A8856353607296BB4CF1E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/session/store.go.frozen",
+      "source_name": "before/internal/session/store.go",
+      "bytes": 20715,
+      "sha256": "F0659DFA4D0D922FB2A9083182CC18357C7A8F496525695906A0950A5084CB4D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/before/internal/session/store_test.go.frozen",
+      "source_name": "before/internal/session/store_test.go",
+      "bytes": 28545,
+      "sha256": "62D1E53B38DFEECA7A17787D1453CF9D2541D12814C0213B65B697DAE15A3D6D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/bootstrap.go.frozen",
+      "source_name": "candidate/internal/identity/bootstrap.go",
+      "bytes": 14689,
+      "sha256": "13414BA8F4964334145A3804428417191249A87857CCEC3AB08B709EC18C08D7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/bootstrap_test.go.frozen",
+      "source_name": "candidate/internal/identity/bootstrap_test.go",
+      "bytes": 49273,
+      "sha256": "92621DF5B2C157D3856D76164C79AC9DFFC8983EC271BDA808CF75253F59C5D2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/login.go.frozen",
+      "source_name": "candidate/internal/identity/login.go",
+      "bytes": 68677,
+      "sha256": "6B33FACCB8CADC0241A567D09B75C873B4BB3AEDBEDE2C18568C1BE23CFD5287"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/login_test.go.frozen",
+      "source_name": "candidate/internal/identity/login_test.go",
+      "bytes": 108659,
+      "sha256": "1F64B2820B2A23A7870F43BD2EC259FC48F9BEA60E4C4C063B8BDC236F10434D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/recovery_auth.go.frozen",
+      "source_name": "candidate/internal/identity/recovery_auth.go",
+      "bytes": 20816,
+      "sha256": "3F146CB891917178630B596BC0656574D42C6DD899247979C2ABCA465E996E1A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/recovery_auth_postgres_test.go.frozen",
+      "source_name": "candidate/internal/identity/recovery_auth_postgres_test.go",
+      "bytes": 43701,
+      "sha256": "CEFDCAE570F26D63B1CED720806800448B3F93A42712EFE24EC25717E885D94A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/recovery_auth_test.go.frozen",
+      "source_name": "candidate/internal/identity/recovery_auth_test.go",
+      "bytes": 8772,
+      "sha256": "E20FCE94415AA24832D73AA264837C67A2647DEF3AF64DE7C20C96154CE86BB1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/identity/service.go.frozen",
+      "source_name": "candidate/internal/identity/service.go",
+      "bytes": 36909,
+      "sha256": "51D69D68885DF8B1CFCEDFC87E696CA384249D80F8358908F95A1F0F0A6BBE74"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/session/maintenance_store.go.frozen",
+      "source_name": "candidate/internal/session/maintenance_store.go",
+      "bytes": 11500,
+      "sha256": "CE3371A8AFDCCAC7B94F584A9C96A0F3B8FDF2124DAC50C00D0964DCC6CF9A50"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/session/maintenance_store_test.go.frozen",
+      "source_name": "candidate/internal/session/maintenance_store_test.go",
+      "bytes": 7288,
+      "sha256": "CAC1D5BE977C4E2334425D64A96D628C4E511A68352A8856353607296BB4CF1E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/session/store.go.frozen",
+      "source_name": "candidate/internal/session/store.go",
+      "bytes": 20715,
+      "sha256": "F0659DFA4D0D922FB2A9083182CC18357C7A8F496525695906A0950A5084CB4D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate/internal/session/store_test.go.frozen",
+      "source_name": "candidate/internal/session/store_test.go",
+      "bytes": 28545,
+      "sha256": "62D1E53B38DFEECA7A17787D1453CF9D2541D12814C0213B65B697DAE15A3D6D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate-changes-initial.json",
+      "source_name": "candidate-changes-initial.json",
+      "bytes": 888,
+      "sha256": "443486DB361F5BBED0B3E994BFFEE7C2C3F3A5D1D9EFEA8B944659403364D247"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate-changes.json",
+      "source_name": "candidate-changes.json",
+      "bytes": 888,
+      "sha256": "A935C11C4C176566D675899366FC36797F6A4AB8602326014C3F12B06458B01E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/candidate.diff",
+      "source_name": "candidate.diff",
+      "bytes": 17533,
+      "sha256": "5F5350C037E5BD2572F543031BFCA5A045D2E056076967E9CA21A4F282720783"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/guard-final.json",
+      "source_name": "finding-evidence/guard-final.json",
+      "bytes": 6834,
+      "sha256": "F28B7B51DF5C018ACBCDC98374C4D7BC7080330926AE638AF2B6E81DA22BA359"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/independent-result-and-physical.json",
+      "source_name": "finding-evidence/independent-result-and-physical.json",
+      "bytes": 37544,
+      "sha256": "37DB26909B09EE961320CE13EE1427848C40B62E2F8305CCFB7DCF2E3853209C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/Main/s411-code-review-main-reception-r01.json",
+      "source_name": "finding-evidence/Main/s411-code-review-main-reception-r01.json",
+      "bytes": 1203,
+      "sha256": "DB8C55EEC3782782AA25315859D2C1D86D009D827638946EDFE4B9DD31FA2C0B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/Main/s411-review-local-pg-main-release-r01.json",
+      "source_name": "finding-evidence/Main/s411-review-local-pg-main-release-r01.json",
+      "bytes": 5628,
+      "sha256": "8B332202BDBF95C3D5E45EC282BD7362CB89965A9CEAC89338A59DE875CF666D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/methods-reuse-sha.json",
+      "source_name": "finding-evidence/methods-reuse-sha.json",
+      "bytes": 8672,
+      "sha256": "3041DDF7B090BAE55FBF7A20CDF3D6AC67907367F3015D15B55D6821FFA30B9D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/prefix-preservation.json",
+      "source_name": "finding-evidence/prefix-preservation.json",
+      "bytes": 962,
+      "sha256": "8F7E39D9035D0F0E28A8AE0F3A29B83A4B52C2358DB213EF4E4675F027A0A6C7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/prepared-tests/login_test.go.frozen",
+      "source_name": "finding-evidence/prepared-tests/login_test.go",
+      "bytes": 110424,
+      "sha256": "FACD3950BDCE55F55DF24820E0937F7C6B01D0DFF5B8FC37F8B463A87F37FA01"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/prepared-tests/recovery_auth_postgres_test.go.frozen",
+      "source_name": "finding-evidence/prepared-tests/recovery_auth_postgres_test.go",
+      "bytes": 35791,
+      "sha256": "AD092F63BA4AACD0064F101F8357A3A42F1467D9A9D664D505F4631492450689"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-normal/parsed.json",
+      "source_name": "finding-evidence/raw/probe-normal/parsed.json",
+      "bytes": 889,
+      "sha256": "04FCAF6B29DF2C678C8232CD120D349D3BDB0D017C4DD624BD64C28115B7A0F7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-normal/result.json",
+      "source_name": "finding-evidence/raw/probe-normal/result.json",
+      "bytes": 12348,
+      "sha256": "0D5F2F47B2D3D9E46E6D8E3FD1956332DF85EC7581D094787AD22DA7E7E78320"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-normal/stderr.log",
+      "source_name": "finding-evidence/raw/probe-normal/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-normal/stdout.log",
+      "source_name": "finding-evidence/raw/probe-normal/stdout.log",
+      "bytes": 98319,
+      "sha256": "D12FEB34483DE92AE78E01463E0B5085CD0B614EF556910A868B30C709F573F4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-race/parsed.json",
+      "source_name": "finding-evidence/raw/probe-race/parsed.json",
+      "bytes": 889,
+      "sha256": "81004FDC1E8CE77106328A4DE9992B86D9BFC19E807C6084A196160BB2AF8468"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-race/result.json",
+      "source_name": "finding-evidence/raw/probe-race/result.json",
+      "bytes": 12357,
+      "sha256": "20806B8007AB979C0B9D3CCA14B468DB8118D5BDDC1B84D8A5253EC274E294F2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-race/stderr.log",
+      "source_name": "finding-evidence/raw/probe-race/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/raw/probe-race/stdout.log",
+      "source_name": "finding-evidence/raw/probe-race/stdout.log",
+      "bytes": 98297,
+      "sha256": "5B931DC68B3360DCC0071D460693656F94AA36F24BF5CD2A23BC9BFE539ACEB2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/release.json",
+      "source_name": "finding-evidence/release.json",
+      "bytes": 423,
+      "sha256": "9588948446763687715138D49E8FF4DEFEE44CF18ECCFAF6CA1210FBE0263B9A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/report.md",
+      "source_name": "finding-evidence/report.md",
+      "bytes": 9558,
+      "sha256": "861B055E39AA778BE713DA9EDDA86597DCB8B39743DFB7B78ED6049439E6A0F6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/finding-evidence/test-only-overlay.json",
+      "source_name": "finding-evidence/test-only-overlay.json",
+      "bytes": 376,
+      "sha256": "7D68F164B74B685A0AE4C2C92DF14CEAC90DAFD0BC2BCAC81324F685EC159980"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/green-reviewer-overlay/login_test.go.frozen",
+      "source_name": "green-reviewer-overlay/login_test.go",
+      "bytes": 110424,
+      "sha256": "FACD3950BDCE55F55DF24820E0937F7C6B01D0DFF5B8FC37F8B463A87F37FA01"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/green-reviewer-overlay/recovery_auth_postgres_test.go.frozen",
+      "source_name": "green-reviewer-overlay/recovery_auth_postgres_test.go",
+      "bytes": 46841,
+      "sha256": "0E06D73649DACECB63121173931AA305577CFC0A9373B523B14A7E1F8A223775"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/green-reviewer-overlay.json",
+      "source_name": "green-reviewer-overlay.json",
+      "bytes": 404,
+      "sha256": "8BEE82D265F46A12A14F1B08958B4FEA14AE1B6D5EE91099A3F948FBDCC0957E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/manifest.json",
+      "source_name": "manifest.json",
+      "bytes": 12268,
+      "sha256": "3ACD7565D48182E468559B804061B1AD38CA0F60464E723331D535A1AD579A99"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/planned-validation.json",
+      "source_name": "planned-validation.json",
+      "bytes": 7338,
+      "sha256": "4EB703DAE87B048433C34F561830CC93DCE0D40B282B00FDF48CA8F9053DA75E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-diagnostics.json",
+      "source_name": "preparation-diagnostics.json",
+      "bytes": 1089,
+      "sha256": "9DB4CFC8827472A2EC8B4032C4E0A54B61A6DE189DF2F797E41E7CC1334853C1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-receipt.json",
+      "source_name": "preparation-receipt.json",
+      "bytes": 3680,
+      "sha256": "2B8C9761162D37CB9E6B3203BEB0B5E69C561138EADCC1BAB54ACE2867BDE214"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-scripts/build_candidate.py",
+      "source_name": "preparation-scripts/build_candidate.py",
+      "bytes": 3511,
+      "sha256": "9E06266E77278D1AA238C6D0EEED5F90BA13B7A7C307A7F515DD809727A7F001"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-scripts/pg-append.txt",
+      "source_name": "preparation-scripts/pg-append.txt",
+      "bytes": 10872,
+      "sha256": "9D70542D66375AB24CCA6001901F7BB96AAEDF748252CC5F34ED66249B58123D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-scripts/prepare.py",
+      "source_name": "preparation-scripts/prepare.py",
+      "bytes": 6999,
+      "sha256": "DBA13BFDB97C1B6C52BB24D6F999B36BD6487FD25DB715FEC1B588E6C0DE0C7C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-scripts/production-replacement.txt",
+      "source_name": "preparation-scripts/production-replacement.txt",
+      "bytes": 1700,
+      "sha256": "4562FEBBBE8D16BFA3F1910F82CAFC48BAC435CDC7A70BC2AA65DE1B6A7827A4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-scripts/refine_and_verify.py",
+      "source_name": "preparation-scripts/refine_and_verify.py",
+      "bytes": 5212,
+      "sha256": "88EE2B730F85FA4F5E0D43DBCAB8D291BB2B34FCC6BFFB78A190BF89B8884A81"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-scripts/seal_preparation.py",
+      "source_name": "preparation-scripts/seal_preparation.py",
+      "bytes": 9001,
+      "sha256": "E6068E92D7C7A15D841C71FA9569AFF2C35805C68925BC2B0A2A59487C5BF405"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-scripts/unit-append.txt",
+      "source_name": "preparation-scripts/unit-append.txt",
+      "bytes": 2286,
+      "sha256": "B2398266AF09FB9135A27D49D0CF3BB4D6391793257B4DD5E923EC93223295B2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-selfcheck.json",
+      "source_name": "preparation-selfcheck.json",
+      "bytes": 6911,
+      "sha256": "754290668E0C1F708003269A87FD8462C73C10C09906127494726BD35DA328F1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/preparation-start.json",
+      "source_name": "preparation-start.json",
+      "bytes": 2349,
+      "sha256": "C0C162DCA2D0B7D18AA38855EBB4F4D2E14391C7B3718AB4CED6B18B4A942335"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/readset/actual-current.json",
+      "source_name": "readset/actual-current.json",
+      "bytes": 5755,
+      "sha256": "89864C6093750A8E892816E6C558FDD07AC5A3E90277064CC072583FAA55600D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/readset/same-version-provenance.json",
+      "source_name": "readset/same-version-provenance.json",
+      "bytes": 11983,
+      "sha256": "12C9376B7232E1A3A8D283AD4E9F750704A365BCC0D4A06766A8FCFD90ADE92F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/red-overlay/login_test.go.frozen",
+      "source_name": "red-overlay/login_test.go",
+      "bytes": 110424,
+      "sha256": "FACD3950BDCE55F55DF24820E0937F7C6B01D0DFF5B8FC37F8B463A87F37FA01"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/red-overlay/recovery_auth_postgres_test.go.frozen",
+      "source_name": "red-overlay/recovery_auth_postgres_test.go",
+      "bytes": 35791,
+      "sha256": "AD092F63BA4AACD0064F101F8357A3A42F1467D9A9D664D505F4631492450689"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/red-overlay.json",
+      "source_name": "red-overlay.json",
+      "bytes": 382,
+      "sha256": "EA443484AB4B75A884DA1B588E606A9848D0DE9A881E45BCAFF8D23649A0EAAB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/report.md",
+      "source_name": "report.md",
+      "bytes": 9050,
+      "sha256": "D7BF7DA9CA1C57A89F6E020A3FC3649842872A6E6CA288EAC23AC21BDD9954B8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/reviewer-probe-provenance.json",
+      "source_name": "reviewer-probe-provenance.json",
+      "bytes": 664,
+      "sha256": "18F3458E66A56D63F9DC304E45F8A76736DA1BAB46797979561164A011D948AC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/reviewer-probes/login_test.go.append",
+      "source_name": "reviewer-probes/login_test.go.append",
+      "bytes": 1765,
+      "sha256": "04D6159F22308693E40DBDBC14A8BD3EFE696DE61DC45C898CDA4674F70CE779"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s411-f001-repair-preparation-r01/reviewer-probes/recovery_auth_postgres_test.go.append",
+      "source_name": "reviewer-probes/recovery_auth_postgres_test.go.append",
+      "bytes": 3140,
+      "sha256": "A1820ABD5AC038B15120445926680F0114AFC5AAD9C4AFA0409CCE8519D6C48C"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

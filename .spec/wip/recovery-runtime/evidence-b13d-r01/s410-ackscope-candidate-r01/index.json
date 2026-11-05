@@ -1,0 +1,85 @@
+{
+  "scope": "s410-ackscope-candidate-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-ackscope-3br57o_o",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/candidate-delta.diff",
+      "sha256": "96E570705A1504D01C5CDA41D8E09E8107D968D4DBD3202BD85CC1D66730B006",
+      "bytes": 32381,
+      "source_name": "candidate-delta.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/guard.json",
+      "sha256": "299194E267A253D096D995552154893C7D2E0F028A96E9F8B6874356ADDCFBDA",
+      "bytes": 525,
+      "source_name": "guard.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/source-index.json",
+      "sha256": "B33F2FABC067632498F643873B7B3B851C93D9D40BAFC236B5518B6DE82767EE",
+      "bytes": 1235,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/internal/identity/recovery_execution.go.frozen",
+      "sha256": "21F2EB1D23496151F78C5C0776B82C6BCEE5845BBADE437A78C32BAEE1BAA6E0",
+      "bytes": 99386,
+      "source_name": "internal/identity/recovery_execution.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/internal/identity/recovery_execution_postgres_test.go.frozen",
+      "sha256": "5E8D66C2C97D0B945CA239D46A5C8187A01D247FE00A9777B3BF3C58FDB84E9E",
+      "bytes": 69589,
+      "source_name": "internal/identity/recovery_execution_postgres_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/internal/identity/recovery_execution_test.go.frozen",
+      "sha256": "B33A1E26F42A2735A8FF1CA33DBCA0356F3689471093F600CDA397F90158340F",
+      "bytes": 34046,
+      "source_name": "internal/identity/recovery_execution_test.go"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/methods-reused.json",
+      "sha256": "30385241B0A7281E1C0DB73294C1600A8B458A2D8826906420D6D2FCA13603C8",
+      "bytes": 7784,
+      "source_name": "methods-reused.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/old-packet-hashes.json",
+      "sha256": "6780C3B1D8D5959CE3C1494DF69603A33884133D3D9500010F6266FDDA68BA24",
+      "bytes": 1471,
+      "source_name": "old-packet-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/readset.json",
+      "sha256": "AC4EE16C6416D3F80859B59A06A7C1A2C14DCAF366677068E781909608D204C0",
+      "bytes": 2493,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/receipt.md",
+      "sha256": "686AD87590613908E96C4CB4D6F9CFE4C09254A2248397B9B6CA4AD60002ED29",
+      "bytes": 4277,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/source-hashes.json",
+      "sha256": "67B991A9C4A73B580BB8304B021E1939C375F5C53A1CBFD5E3EABA5059E7C5C6",
+      "bytes": 984,
+      "source_name": "source-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-ackscope-candidate-r01/text-inventory.json",
+      "sha256": "20752302BECA49C0CAD45A75BA766BE8355A546F8553DF1A9A3A92EF74001D3A",
+      "bytes": 457,
+      "source_name": "text-inventory.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

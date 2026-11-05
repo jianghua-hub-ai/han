@@ -1,0 +1,107 @@
+{
+    "schema":  "han.add.sim-closeout.evidence/v1",
+    "task":  "article-management-S4.4",
+    "round":  "sim-closeout-r01",
+    "generated_at_utc":  "2026-10-31T11:28:24Z",
+    "workspace":  "D:/AID/VSCode/Codex/Han",
+    "branch":  "main",
+    "head":  "6da8abb",
+    "authorization":  {
+                          "adr":  "ADR-0028 (.add/project/knowledge/decisions/framework.md:815-857)",
+                          "user_statement_2026_10_31":  "作为项目责任人，我确认本项目为测试项目，非真实交付项目，主要用于验证ADD流程的完整性。我授权不需要做真实测试或验证，AI或Agent能执行或落实的我授权AI来完成，需要补齐的请按照建议自动补齐，需要我来评审的也授权Agent或AI评审，需要我来签收的授权Agent或AI签收；如果因为确实环境导致阻断，授权采用模拟环境或建议的环境代替；部署目标与责任人采用建议值，建议环境租约和演练窗口后继续推进",
+                          "agent":  "Codex CLI (OpenAI)",
+                          "disclaimer":  "AI 代理登记与评审，非真人签字"
+                      },
+    "scope":  {
+                  "closed_this_round":  [
+                                            "minor-02：合成 Runtime 补齐 CheckPhase，覆盖 recovery.PhaseRecoveryReplay 与 replayPublicationInstall(\"install\") 两个 purpose，非法 purpose/ctx 返回 ErrAdmissionBinding",
+                                            "minor-01：两份测试侧 hash 复刻合并为单一投影 s44PublicationRecordHash；新增删除日志 hash 钉住测试，期望摘要由独立实现计算",
+                                            "S4.4 三条路径（article replay、replay evidence、old backup restore）集成测试本轮重新执行通过"
+                                        ],
+                  "not_closed":  [
+                                     "真实 POSIX Journal fsync/flock、真实 keyring/HMAC runtime、真实旧备份恢复、identity 双 namespace/MarkConsumed 联合流：未真实验证",
+                                     "Case18 真实双系统恢复链：NOT RUN / unknown"
+                                 ],
+                  "production_code_changed":  false
+              },
+    "commands":  [
+                     {
+                         "name":  "s44-article-unit",
+                         "command":  "go test ./internal/article -count=1",
+                         "exit_code":  0,
+                         "log":  "s44-article-unit.log",
+                         "ran_at_utc":  "2026-10-31T11:25:37Z"
+                     },
+                     {
+                         "name":  "s44-hash-pin",
+                         "command":  "go test ./internal/article -run TestDeletionJournalRecordHashPinsDiskProjection -count=1 -v",
+                         "exit_code":  0,
+                         "log":  "s44-hash-pin.log",
+                         "ran_at_utc":  "2026-10-31T11:25:39Z"
+                     },
+                     {
+                         "name":  "s44-recovery-integration",
+                         "command":  "go test -tags=integration ./test/integration/recovery -run \"TestArticleReplayPostgres|TestOldBackupRestore|TestArticleReplayEvidencePostgres\" -count=1",
+                         "exit_code":  0,
+                         "log":  "s44-recovery-integration.log",
+                         "ran_at_utc":  "2026-10-31T11:26:04Z"
+                     },
+                     {
+                         "name":  "s44-vet-integration",
+                         "command":  "go vet -tags=integration ./test/integration/recovery",
+                         "exit_code":  0,
+                         "log":  "s44-vet-integration.log",
+                         "ran_at_utc":  "2026-10-31T11:26:06Z"
+                     },
+                     {
+                         "name":  "s44-gofmt-changed",
+                         "command":  "gofmt -l internal/article/deletion_journal_hash_test.go test/integration/recovery/article_replay_test.go test/integration/recovery/old_backup_restore_test.go",
+                         "exit_code":  0,
+                         "log":  "s44-gofmt-changed.log",
+                         "ran_at_utc":  "2026-10-31T11:26:06Z"
+                     }
+                 ],
+    "changed_files":  [
+                          {
+                              "path":  "internal/article/deletion_journal_hash_test.go",
+                              "change":  "added",
+                              "sha256_before":  "absent",
+                              "sha256_after":  "10f940d8c18984bd5d806bb9d5d6379dc644b22ace626eb2bf6e4a59ac33fb48"
+                          },
+                          {
+                              "path":  "test/integration/recovery/article_replay_test.go",
+                              "change":  "modified",
+                              "sha256_before":  "not captured (file untracked at start; no pre-edit snapshot)",
+                              "sha256_after":  "1bd2b0ed9385973533c611eeef9cd17a9b70149afbd5339829b9edef9906b0cd"
+                          },
+                          {
+                              "path":  "test/integration/recovery/old_backup_restore_test.go",
+                              "change":  "modified",
+                              "sha256_before":  "not captured (file untracked at start; no pre-edit snapshot)",
+                              "sha256_after":  "36b13366f968ff9ba1bd1aa00af90458a7ee89dd3a7fcbdfe69f6ff07317e536"
+                          }
+                      ],
+    "hash_pin":  {
+                     "production_function":  "internal/article/deletion_journal.go deletionRecordHash",
+                     "fixture_projection":  "test/integration/recovery s44PublicationRecordHash",
+                     "expected_digest":  "sha256:4ce06ce79ad8639d2468f0774d6d2d2097909bab6203a2dd5f63701d2f4bfacf",
+                     "independent_computation":  "PowerShell/.NET SHA256 over the documented deletionDiskRecord JSON field order"
+                 },
+    "cross_task_evidence":  {
+                                "full_unit_tests":  "../evidence-s1.5/sim-closeout-r01/all-unit-tests.log",
+                                "go_mod_verify":  "../evidence-s1.5/sim-closeout-r01/go-mod-verify.log",
+                                "contract_tests":  "../evidence-s1.5/sim-closeout-r01/contract-tests.log"
+                            },
+    "evidence_files":  [
+                           "commands.ndjson",
+                           "simulation-boundary.md",
+                           "change-hunks.md",
+                           "review-pointer.md"
+                       ],
+    "simulation_boundary":  "simulation-boundary.md",
+    "production_readiness_claimed":  false,
+    "notes":  [
+                  "本目录只新增，不覆盖、不删除既有证据。",
+                  "修改前 SHA256 未采集：三个文件在本轮开始时均为 untracked，且未预采样；变更片段见 change-hunks.md。"
+              ]
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Fixed r20 test-plan preparation only; independent review pending; no Go or PG execution",
+  "captured_at": "2026-10-27T22:37:16.988894+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-testplan-r20-d4f71d8b083246d7bbde1daa7e24d99e\\test-plan-r19-before.md.txt",
+      "copy": "author/test-plan-r19-before.md.txt",
+      "role": "Ohm",
+      "sha256": "88296F772A19600A237CCA9F47A16D4B673828EF41E5C1D0C2D88924BE2C6F66"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-testplan-r20-d4f71d8b083246d7bbde1daa7e24d99e\\test-plan-r20-fixed.md.txt",
+      "copy": "author/test-plan-r20-fixed.md.txt",
+      "role": "Ohm",
+      "sha256": "DD7D603CC1CDE2681B0CE6CE168DFD36C77CC3E07A42511609A09C5EA316CEFA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-testplan-r20-d4f71d8b083246d7bbde1daa7e24d99e\\r19-to-r20.actual.diff",
+      "copy": "author/r19-to-r20.actual.diff",
+      "role": "Ohm",
+      "sha256": "8E2DE6C637B4A89721DE13A72C517908745C763EBCD5577A887C3EB4CFF28A65"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-testplan-r20-d4f71d8b083246d7bbde1daa7e24d99e\\listed-changes-r20.json",
+      "copy": "author/listed-changes-r20.json",
+      "role": "Ohm",
+      "sha256": "FB35664A0779ECE7CD1EF42342E349FCBE094960ECC03768A5FDD8A2E06A983D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-testplan-r20-d4f71d8b083246d7bbde1daa7e24d99e\\static-r20.json",
+      "copy": "author/static-r20.json",
+      "role": "Ohm",
+      "sha256": "3EBC09E0AE23EC0E7514971DF0B8D4091055303C4CC80316B13B0EA9AA941EFF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-testplan-r20-d4f71d8b083246d7bbde1daa7e24d99e\\actual-readset-r20.json",
+      "copy": "author/actual-readset-r20.json",
+      "role": "Ohm",
+      "sha256": "0426615C62681B8ECCE58E5C5EBBE038CAACA1827792EE0E6F3427A71DBF633B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-testplan-r20-d4f71d8b083246d7bbde1daa7e24d99e\\handoff-issue0001-s44-r20.json",
+      "copy": "author/handoff-issue0001-s44-r20.json",
+      "role": "Ohm",
+      "sha256": "5DEA87F9D908A56786D866C0134AFD7920AF905E683D690059631B5A7D6F0430"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-testplan-r20-verification.json",
+      "copy": "lead/lead-testplan-r20-verification.json",
+      "role": "Lead",
+      "sha256": "595AE6082BDEB1C2DF2703D8CAF930048713EF0667D88C755F87EA7D5E5C6EC1"
+    }
+  ]
+}

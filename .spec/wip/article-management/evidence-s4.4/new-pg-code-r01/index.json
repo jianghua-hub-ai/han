@@ -1,0 +1,66 @@
+{
+  "scope": "New PG file CODE only; gofmt/static; compile/PG not yet executed; old3 behavior assertions retained",
+  "captured_at": "2026-10-27T23:09:32.954173+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\stable-751.before.go.txt",
+      "copy": "stable-751.before.go.txt",
+      "role": "Hegel",
+      "sha256": "B71D378C91758BA4179E0C9103EC70D25CEDE2D9BF70BC0340D94C1EB2AD412B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\article_replay.final.go.txt",
+      "copy": "article_replay.final.go.txt",
+      "role": "Hegel",
+      "sha256": "B65FAE92A2AE95E291C8CB2CC136769E22209C4E888546CEDF43CC68727F659A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\single-file.actual.diff",
+      "copy": "single-file.actual.diff",
+      "role": "Hegel",
+      "sha256": "FD5740154CDF39ED6C73A039952D2EC89CA13DC25D09C6414750C834C0320B23"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\HANDOFF.md",
+      "copy": "HANDOFF.md",
+      "role": "Hegel",
+      "sha256": "E4A8A98B7B8FA030CD46348AD5FDDA02A56940C50C30F751656124C48886C0A6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\ready-stopped.json",
+      "copy": "ready-stopped.json",
+      "role": "Hegel",
+      "sha256": "ADD2728A898BDA32A273A029D2DDE4E8D6B873EDE67D7BD61603495D35CA6105"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\static-review.json",
+      "copy": "static-review.json",
+      "role": "Hegel",
+      "sha256": "420BFEB629C66523DEAEC282F285886E40462E8F203A0DC6D26E5733F22122E3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\actual-readset.json",
+      "copy": "actual-readset.json",
+      "role": "Hegel",
+      "sha256": "F0CFBCE1FB8E490DBC934B5C618BBF3EDE9AF185C1986F6498DFBA4D28BDEA26"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\merge-stable.json",
+      "copy": "merge-stable.json",
+      "role": "Hegel",
+      "sha256": "C35A85B6CA3FCDF50AFA776DC3BF10D4192273FD7FFA44DD8B31B837D3326142"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\G0.md",
+      "copy": "G0.md",
+      "role": "Hegel",
+      "sha256": "E0FB27E002C9C007F97A8AFF6E98AA1C797B90F4798A02ADFE7838A4D8395AEC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-integration-prep-eb3fb589aaa24ea59ee8ce7666508d23\\merge-contract.md",
+      "copy": "merge-contract.md",
+      "role": "Hegel",
+      "sha256": "10A074C4244AC693A20457D043272A0EA052CB5C83B3C2C02E7ECA09925CCBA8"
+    }
+  ]
+}

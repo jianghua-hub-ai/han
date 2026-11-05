@@ -1,0 +1,216 @@
+{
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "source_temp": "D:\\Temp\\han-b13e-s413-review-static-niafw96b",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/anchored-normal-restart-pg.fragment.frozen",
+      "source_name": "anchored-normal-restart-pg.fragment.frozen",
+      "bytes": 2525,
+      "sha256": "9EFC3A290B56C2243AEFF07F7E159011CCDE4C588105DA43EB9451C5967E3B71"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/author-raw-independent-parse.json",
+      "source_name": "author-raw-independent-parse.json",
+      "bytes": 151476,
+      "sha256": "9EE105CB5F7BAAB4CE640240DD5B142194B49D8C81A986DB7A476BBF61D73E6A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/bound-reader-kind.fragment.frozen",
+      "source_name": "bound-reader-kind.fragment.frozen",
+      "bytes": 2673,
+      "sha256": "18E1DAE072910A1BE1D858FF2D7CA6847664D1F8EB6F11F90AF9105F842D741C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/candidate-matrix-NOTRUN.json",
+      "source_name": "candidate-matrix-NOTRUN.json",
+      "bytes": 3216,
+      "sha256": "EBFA62DEE888B48E38045B4E6B270D6957B8B59805CD2FEE545923862EE01B0C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/identity-pg-current-prefix-reviewer.frozen",
+      "source_name": "identity-pg-current-prefix-reviewer.frozen",
+      "bytes": 32814,
+      "sha256": "A762B946FC9D03ACF913D36C80D42D15F42A122DF81BFCA5EC040C347F81ADD6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/manifest.json",
+      "source_name": "manifest.json",
+      "bytes": 5550,
+      "sha256": "3E62C757995F91B99B2C29D5289EF1CB126C095C4A575D57B4C1D362217CA2C5"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/manifest.sha256",
+      "source_name": "manifest.sha256",
+      "bytes": 81,
+      "sha256": "C91DA80689B294E797877FF478D280D879923B924C52C3F3F2F4D6AE9104AB26"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/methods-same-version.json",
+      "source_name": "methods-same-version.json",
+      "bytes": 4122,
+      "sha256": "DE2ED31756A9CA92467B3BC8900BB8880ECF25339D027A30C865B6DFC1219D63"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/miswired-writer.fragment.frozen",
+      "source_name": "miswired-writer.fragment.frozen",
+      "bytes": 1742,
+      "sha256": "1539B1BD0E7F64CE03012A9613E78E7B877498C2231A35D613D818587EBB561D"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/object11-entry.json",
+      "source_name": "object11-entry.json",
+      "bytes": 2659,
+      "sha256": "E90DDB0844561E3AE1D0497EDCD2B5D99006CA0B50623C681C5167EB436E61F9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/object11-static-entry-exit.json",
+      "source_name": "object11-static-entry-exit.json",
+      "bytes": 4045,
+      "sha256": "A72269B5152362B1C6AB4A8D1F65D9FD41F491F66D2F62668701670F90DB288E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/overlay-pg-NOTRUN.json",
+      "source_name": "overlay-pg-NOTRUN.json",
+      "bytes": 216,
+      "sha256": "0DA0115D9BD7836E880679A5DA38597F3949DE83ECF46F2B688516CFE7659D28"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/overlay-provenance-all-NOTRUN.json",
+      "source_name": "overlay-provenance-all-NOTRUN.json",
+      "bytes": 810,
+      "sha256": "DCDDDEEC5179BFC13CDDBD7D4FD2511441B6FBAA12436FC2ABFFCF945365A3AC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/overlay-provenance-NOTRUN.json",
+      "source_name": "overlay-provenance-NOTRUN.json",
+      "bytes": 1273,
+      "sha256": "2B3238F048830A86881C17FDBBCD66C1D2424B4A64BD80A16C4C8B8E30EF90B1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/overlay-reader-and-writer-NOTRUN.json",
+      "source_name": "overlay-reader-and-writer-NOTRUN.json",
+      "bytes": 200,
+      "sha256": "95DCDEE335DFA544EBA20AADB839CBA3E1079220163BF2F8CC88A10E53A9355F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/overlay-reader-NOTRUN.json",
+      "source_name": "overlay-reader-NOTRUN.json",
+      "bytes": 195,
+      "sha256": "A63ECF3F27C62192C5999C51B0021114BDCE70514621DD89F996AC6C09148DBE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/overlay-recovery-candidates-NOTRUN.json",
+      "source_name": "overlay-recovery-candidates-NOTRUN.json",
+      "bytes": 199,
+      "sha256": "DCEA1AC41AFC2723627588936E81AF6823D6E429CCCA5831D3FFE0F50DD8825E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/pending-validation-and-runner-plan.json",
+      "source_name": "pending-validation-and-runner-plan.json",
+      "bytes": 6141,
+      "sha256": "21EDD74722613A65213E8DFEA1525B273F5112068A100E9D7E17EBFFFB877ADA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/readset.json",
+      "source_name": "readset.json",
+      "bytes": 14161,
+      "sha256": "66591C1BEB3577318F1DC58EE216EA4F544244ACF1E7F06ACECBD2E969419D98"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 3883,
+      "sha256": "B8A24602AEC0442C2791E63957AF6D35447C6F33B4D15CD17223C63557CEE518"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/recovery-current-prefix-reviewer-all.frozen",
+      "source_name": "recovery-current-prefix-reviewer-all.frozen",
+      "bytes": 16400,
+      "sha256": "A4DD048F5FE40DD1EF78D66DE4EF20C4FDA28C894885AB04AAF95EF8BE9FBE4C"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/recovery-current-prefix-reviewer-both.frozen",
+      "source_name": "recovery-current-prefix-reviewer-both.frozen",
+      "bytes": 14684,
+      "sha256": "51B3C0821606F3FC0E89C1A33D228B2817724A6DB280970B87EA68B6AB817B89"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/recovery-current-prefix-reviewer.frozen",
+      "source_name": "recovery-current-prefix-reviewer.frozen",
+      "bytes": 12941,
+      "sha256": "AD0055BC844FD44453CE8B83F8DF3C68DE554D13F0BA354FD023E5BF9BB1ABB0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/refreshed-methods.json",
+      "source_name": "refreshed-methods.json",
+      "bytes": 1090,
+      "sha256": "194E53C779E5EB801C081C410BB83682682A717BB0AC9663FA6F995CC87C9D06"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/report-static.md",
+      "source_name": "report-static.md",
+      "bytes": 5649,
+      "sha256": "D8511BAF07EA8FDBD0109D5AEFCBE953E52CE7A341B07A2EAD285607F70D24F6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/source/internal/identity/recovery_installation.go.frozen",
+      "source_name": "source/internal/identity/recovery_installation.go.frozen",
+      "bytes": 12646,
+      "sha256": "3606BDB7E69FE457C1F930C8D97D1014FA60405B1F507F080F419D6C53555C3F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/source/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "source_name": "source/internal/identity/recovery_installation_postgres_test.go.frozen",
+      "bytes": 30288,
+      "sha256": "50D1E217E7242AABF7E9B9D3833F1718CC9F9CFC597E4106EF5E5718CFA159B9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/source/internal/identity/recovery_installation_test.go.frozen",
+      "source_name": "source/internal/identity/recovery_installation_test.go.frozen",
+      "bytes": 10151,
+      "sha256": "40FEC5E5437009A94F670A9F76AD07D4CBB2085D2F582556361C1F738BB5B3EB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/source/internal/recovery/installation.go.frozen",
+      "source_name": "source/internal/recovery/installation.go.frozen",
+      "bytes": 15973,
+      "sha256": "CDA87A7662071A0ADE6DA4527A3D8C1420BC1BCDFE616F060409EB8A597DA7B0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/source/internal/recovery/installation_test.go.frozen",
+      "source_name": "source/internal/recovery/installation_test.go.frozen",
+      "bytes": 10267,
+      "sha256": "2B70B5F8CAFDCDF726EA7E132B024B2917B051482C630CCC3AB9C471DD3FE814"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/source-diff-audit.json",
+      "source_name": "source-diff-audit.json",
+      "bytes": 2328,
+      "sha256": "1CE9570CCD4EE8A57E77532A8AE48BC5B3EACE5ADCE815316025E3A72D564F46"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/source-missing-not-fresh.fragment.frozen",
+      "source_name": "source-missing-not-fresh.fragment.frozen",
+      "bytes": 1715,
+      "sha256": "D82CE7344DF5899EBFEFF3E455DBD3BD55E76B46BAC7C5FE0FFE1A814B14CD7F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/static-package-import-boundary.json",
+      "source_name": "static-package-import-boundary.json",
+      "bytes": 4773,
+      "sha256": "5B112D3521D7386E97E546EC4DC9DD64BE2ABD4E69D4AD3F10C3143576E139B6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13e-r01/s413-review-static-r01/verify_prepared.py",
+      "source_name": "verify_prepared.py",
+      "bytes": 954,
+      "sha256": "6BD45BC75A82CF61B00ADAF3849DC5C3ACEB8C1E2C02845586592C78DAAD2BDA"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

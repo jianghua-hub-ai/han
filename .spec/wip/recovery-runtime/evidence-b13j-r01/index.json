@@ -1,0 +1,46 @@
+{
+    "artifact":  {
+                     "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+                     "sha256":  "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+                     "bytes":  26452
+                 },
+    "agent_role":  "add-task-planner",
+    "workflow":  "development-delivery",
+    "phase":  "plan/reconcile-stage1",
+    "baseline":  {
+                     "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+                     "sources":  {
+                                     "design.md":  "0FC3DE78C950661C2947680F678F92B7390843883FAD4F90362DB2C3F5A19277",
+                                     "stories.md":  "8B5EBCD5A78A20769FAF3D31492562C271F0DFB3B770E38383B87DF250559616",
+                                     "test-plan.md":  "34826759C79A58EB0B4A296D2DD5C9157014406859153DC6CA0FA6E2BD921DAB",
+                                     "tasks.md":  "F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34",
+                                     "plan":  "3FA19CDD4902F56B8C2F1DF59C570D96FAAE02D8AEE519B4B4165DCCA3637380",
+                                     "main.go":  "6D5373CA1535C41A5FA340D2B75834EB7E15AEEE39ABF9928BD0E0A210CF8727",
+                                     "recovery_runtime.go":  "1C6793779E444BD2A4EC2C6DB324551A20152A7EB1B7A1C65A9C9DB11D4396E5"
+                                 }
+                 },
+    "verdict":  {
+                    "status":  "stop-decomposition",
+                    "implementation_cards":  0,
+                    "design_handoff_items":  4,
+                    "proposed_batch":  "B13J — 生产装配",
+                    "batch_registered":  false,
+                    "labels":  {
+                                   "built":  6,
+                                   "todo":  5,
+                                   "needs_change":  2,
+                                   "obsolete":  2
+                               }
+                },
+    "not_proven":  [
+                       "未运行 Go/PG/HTTP/restore/E2E 或集成测试，未连接或创建数据库/schema。",
+                       "未全文读取 identity-auth/design.md，只定向读取相关章节与行段。",
+                       "未证明仓库外不存在可用的 anchor/CAS 产品，只证明当前仓库无生产注册/构造。",
+                       "未验证真实 Windows/POSIX 锁、fsync、keyring/HSM、provider/ACL 或进程级唯一 runtime。",
+                       "未重新对账 S04 bootstrap 全量与 article Story4 其余验收。",
+                       "未证明 enter 与 install 的完整行为差异，二者共用当前 precheck。",
+                       "未评估性能、容量、HA、多主机、RPO/RTO 或恢复时限。",
+                       "未对 article-management design/test-plan 做全文件哈希基线。",
+                       "人的业务接纳、部署授权、实施授权与 Git 写授权均 unknown；未关闭任何 finding 或 Task。"
+                   ]
+}

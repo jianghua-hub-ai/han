@@ -1,0 +1,206 @@
+{
+    "schema":  "han.add.sim-closeout.evidence/v1",
+    "task":  "article-management-S1.5",
+    "round":  "sim-closeout-r01",
+    "generated_at_utc":  "2026-10-31T11:28:24Z",
+    "workspace":  "D:/AID/VSCode/Codex/Han",
+    "branch":  "main",
+    "head":  "6da8abb",
+    "authorization":  {
+                          "adr":  "ADR-0028 (.add/project/knowledge/decisions/framework.md:815-857)",
+                          "user_statement_2026_10_31":  "作为项目责任人，我确认本项目为测试项目，非真实交付项目，主要用于验证ADD流程的完整性。我授权不需要做真实测试或验证，AI或Agent能执行或落实的我授权AI来完成，需要补齐的请按照建议自动补齐，需要我来评审的也授权Agent或AI评审，需要我来签收的授权Agent或AI签收；如果因为确实环境导致阻断，授权采用模拟环境或建议的环境代替；部署目标与责任人采用建议值，建议环境租约和演练窗口后继续推进",
+                          "agent":  "Codex CLI (OpenAI)",
+                          "disclaimer":  "AI 代理登记与评审，非真人签字"
+                      },
+    "scope":  {
+                  "closed_this_round":  [
+                                            "A-CON-03：应用身份对 append-only 表的有效 UPDATE/DELETE/TRUNCATE 拒绝，已由真实 PG ACL 的 insert_allowed + mutation_denied（SQLSTATE 42501）覆盖并本轮重新执行",
+                                            "全局恢复隔离矩阵：新增测试覆盖 25 条受保护业务路由 x closed/unknown 两态",
+                                            "探针豁免：/livez、/readyz 不进入 guard，且不计入 acquire"
+                                        ],
+                  "not_closed":  [
+                                     "Case18 真实双系统全局恢复隔离：NOT RUN / unknown（需要两套真实系统）",
+                                     "真实全局恢复锁、真实 Journal/HMAC/keyring 未在本项验证"
+                                 ],
+                  "production_code_changed":  false
+              },
+    "commands":  [
+                     {
+                         "name":  "s15-vet-all",
+                         "command":  "go vet ./...",
+                         "exit_code":  0,
+                         "log":  "s15-vet-all.log",
+                         "ran_at_utc":  "2026-10-31T11:25:21Z"
+                     },
+                     {
+                         "name":  "s15-build-all",
+                         "command":  "go build ./...",
+                         "exit_code":  0,
+                         "log":  "s15-build-all.log",
+                         "ran_at_utc":  "2026-10-31T11:25:25Z"
+                     },
+                     {
+                         "name":  "s15-dispatcher-and-matrix",
+                         "command":  "go test -tags=integration ./cmd/han-server -run \"TestRecoveryMainBusinessDispatcher|TestRecoveryIsolationMatrix\" -count=1",
+                         "exit_code":  0,
+                         "log":  "s15-dispatcher-and-matrix.log",
+                         "ran_at_utc":  "2026-10-31T11:25:28Z"
+                     },
+                     {
+                         "name":  "s15-acl-real-pg",
+                         "command":  "go test -tags=integration ./cmd/han-server -run TestAppendOnlyApplicationACL -count=1 -v",
+                         "exit_code":  0,
+                         "log":  "s15-acl-real-pg.log",
+                         "ran_at_utc":  "2026-10-31T11:25:33Z"
+                     },
+                     {
+                         "name":  "s15-vet-integration",
+                         "command":  "go vet -tags=integration ./cmd/han-server",
+                         "exit_code":  0,
+                         "log":  "s15-vet-integration.log",
+                         "ran_at_utc":  "2026-10-31T11:25:34Z"
+                     },
+                     {
+                         "name":  "s15-gofmt-changed",
+                         "command":  "gofmt -l cmd/han-server/recovery_isolation_matrix_integration_test.go",
+                         "exit_code":  0,
+                         "log":  "s15-gofmt-changed.log",
+                         "ran_at_utc":  "2026-10-31T11:25:34Z"
+                     },
+                     {
+                         "name":  "all-unit-tests",
+                         "command":  "go test ./... -count=1",
+                         "exit_code":  0,
+                         "log":  "all-unit-tests.log",
+                         "ran_at_utc":  "2026-10-31T11:27:04Z"
+                     },
+                     {
+                         "name":  "go-mod-verify",
+                         "command":  "go mod verify",
+                         "exit_code":  0,
+                         "log":  "go-mod-verify.log",
+                         "ran_at_utc":  "2026-10-31T11:27:05Z"
+                     },
+                     {
+                         "name":  "contract-tests",
+                         "command":  "go test -tags=contract ./... -count=1",
+                         "exit_code":  0,
+                         "log":  "contract-tests.log",
+                         "ran_at_utc":  "2026-10-31T11:28:05Z"
+                     },
+                     {
+                         "name":  "s15-build-all-r02",
+                         "command":  "go build ./...",
+                         "exit_code":  0,
+                         "log":  "s15-build-all-r02.log",
+                         "ran_at_utc":  "2026-10-31T11:40:46Z",
+                         "trigger":  "review S15-SIM-F001/F002 fix"
+                     },
+                     {
+                         "name":  "s15-vet-all-r02",
+                         "command":  "go vet ./...",
+                         "exit_code":  0,
+                         "log":  "s15-vet-all-r02.log",
+                         "ran_at_utc":  "2026-10-31T11:40:47Z",
+                         "trigger":  "review S15-SIM-F001/F002 fix"
+                     },
+                     {
+                         "name":  "s15-vet-integration-r02",
+                         "command":  "go vet -tags=integration ./cmd/han-server",
+                         "exit_code":  0,
+                         "log":  "s15-vet-integration-r02.log",
+                         "ran_at_utc":  "2026-10-31T11:40:48Z",
+                         "trigger":  "review S15-SIM-F001/F002 fix"
+                     },
+                     {
+                         "name":  "s15-dispatcher-and-matrix-r02",
+                         "command":  "go test -tags=integration ./cmd/han-server -run TestRecoveryMainBusinessDispatcher|TestRecoveryIsolationMatrix -count=1",
+                         "exit_code":  0,
+                         "log":  "s15-dispatcher-and-matrix-r02.log",
+                         "ran_at_utc":  "2026-10-31T11:40:51Z",
+                         "trigger":  "review S15-SIM-F001/F002 fix"
+                     },
+                     {
+                         "name":  "s15-matrix-stress-r02",
+                         "command":  "go test -tags=integration ./cmd/han-server -run ^TestRecoveryIsolationMatrix$ -count=25",
+                         "exit_code":  0,
+                         "log":  "s15-matrix-stress-r02.log",
+                         "ran_at_utc":  "2026-10-31T11:40:56Z",
+                         "trigger":  "flake regression check for S15-SIM-F001"
+                     },
+                     {
+                         "name":  "s15-gofmt-changed-r02",
+                         "command":  "gofmt -l cmd/han-server/recovery_isolation_matrix_integration_test.go",
+                         "exit_code":  0,
+                         "log":  "s15-gofmt-changed-r02.log",
+                         "ran_at_utc":  "2026-10-31T11:40:56Z",
+                         "trigger":  "review S15-SIM-F001/F002 fix"
+                     },
+                     {
+                         "name":  "s15-acl-real-pg-r02",
+                         "command":  "go test -tags=integration ./cmd/han-server -run TestAppendOnlyApplicationACL -count=1 -v",
+                         "exit_code":  0,
+                         "log":  "s15-acl-real-pg-r02.log",
+                         "ran_at_utc":  "2026-10-31T11:40:36Z",
+                         "trigger":  "re-confirm A-CON-03 after review"
+                     }
+                 ],
+    "changed_files":  [
+                          {
+                              "path":  "cmd/han-server/recovery_isolation_matrix_integration_test.go",
+                              "change":  "added",
+                              "sha256_before":  "absent",
+                              "sha256_after":  "da02943b9848c50e1960eccdbf210c3e69d3aa8a64034f9a6321740e519e9115",
+                              "sha256_r01":  "b11a93281fee1697b2e2520390056dbb34b827944409fe387af90ffc9659166e"
+                          }
+                      ],
+    "retained_resources":  {
+                               "registry":  ".spec/wip/article-management/evidence-s1.5/acl-r03/retained-resources.ndjson",
+                               "total_lines_after_round":  68,
+                               "appended_this_round":  12,
+                               "cleanup_performed":  false
+                           },
+    "evidence_files":  [
+                           "commands.ndjson",
+                           "simulation-boundary.md",
+                           "change-hunks.md",
+                           "retained-resources-snapshot.md",
+                           "review-pointer.md",
+                           "s15-build-all-r02.log",
+                           "s15-vet-all-r02.log",
+                           "s15-vet-integration-r02.log",
+                           "s15-dispatcher-and-matrix-r02.log",
+                           "s15-matrix-stress-r02.log",
+                           "s15-gofmt-changed-r02.log",
+                           "s15-acl-real-pg-r02.log"
+                       ],
+    "simulation_boundary":  "simulation-boundary.md",
+    "production_readiness_claimed":  false,
+    "notes":  [
+                  "本目录只新增，不覆盖、不删除既有证据。",
+                  "全量单测与模块校验日志在本目录（跨任务共用），S4.4 索引以相对路径引用。"
+              ],
+    "followup_r02":  {
+                         "trigger":  "独立评审 review-sim-closeout-r01：S15-SIM-F001 (MEDIUM) 与 S15-SIM-F002 (LOW)",
+                         "generated_at_utc":  "2026-10-31T11:41:00Z",
+                         "production_code_changed":  false,
+                         "changed_files":  [
+                                               {
+                                                   "path":  "cmd/han-server/recovery_isolation_matrix_integration_test.go",
+                                                   "sha256_before":  "b11a93281fee1697b2e2520390056dbb34b827944409fe387af90ffc9659166e",
+                                                   "sha256_after":  "da02943b9848c50e1960eccdbf210c3e69d3aa8a64034f9a6321740e519e9115",
+                                                   "bytes":  8498
+                                               }
+                                           ],
+                         "commands":  [
+                                          "s15-build-all-r02",
+                                          "s15-vet-all-r02",
+                                          "s15-vet-integration-r02",
+                                          "s15-dispatcher-and-matrix-r02",
+                                          "s15-matrix-stress-r02",
+                                          "s15-gofmt-changed-r02",
+                                          "s15-acl-real-pg-r02"
+                                      ],
+                         "summary":  "F001：掩码合法 Trace 后再做泄漏断言，消除 ref 随机命中；F002：装配 authorization/origin 记录器并新增 guard-open 正控。矩阵 -count=25 通过，ACL 12/12 通过。"
+                     }
+}

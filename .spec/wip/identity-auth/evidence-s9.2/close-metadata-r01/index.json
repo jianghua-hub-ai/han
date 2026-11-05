@@ -1,0 +1,168 @@
+{
+  "scope": "Only original identity-auth-S9.2 closed by Lead decision; other58 task cards and other batch content unchanged",
+  "captured_at": "2026-10-28T02:41:29.519884+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\apply-metadata.ps1",
+      "copy": "planner/apply-metadata.ps1.txt",
+      "role": "Task-Planner",
+      "sha256": "A2E22589F8C89060EFC0FC8BCBBE5F871DD824B76B898EADF8F9EDCED4D36B4F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\exactpatch.json",
+      "copy": "planner/exactpatch.json",
+      "role": "Task-Planner",
+      "sha256": "153507C6D4748B148431C60DC651F4C03A8B47C0722621092C4CA94E405BB61C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\plan.actual.diff",
+      "copy": "planner/plan.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "3E081C82E61C987D9F5E4D1938B76161009A0CECB734048BC2AF3496CCFD8F9E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\plan.after.md",
+      "copy": "planner/plan.after.md",
+      "role": "Task-Planner",
+      "sha256": "C9EACB04A51545DB77715C32B6F76C7B234C6407325CF61F87AFF9C66FBD6EBD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\plan.before.md",
+      "copy": "planner/plan.before.md",
+      "role": "Task-Planner",
+      "sha256": "8C13F9B9313921CB4E5FDF773B253A7AB8F4579FB2C203A3CD6E5CCD2001861F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\plan.candidate.diff",
+      "copy": "planner/plan.candidate.diff",
+      "role": "Task-Planner",
+      "sha256": "C142308D48DBAE590F45F2A10CD48CA64D6B33E36FC22C1B987CA36F17056204"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\plan.candidate.md",
+      "copy": "planner/plan.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "C9EACB04A51545DB77715C32B6F76C7B234C6407325CF61F87AFF9C66FBD6EBD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\precheck.json",
+      "copy": "planner/precheck.json",
+      "role": "Task-Planner",
+      "sha256": "DCF82FC821C251FE4BF3B3F9DBF080C82B0B29A5E9597C95144C221D32F243D8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\prepare-native-cas.py",
+      "copy": "planner/prepare-native-cas.py.txt",
+      "role": "Task-Planner",
+      "sha256": "16844AA3FE48F2BCD3A11B08312D154453A3B10BEC67CE0F5DC83F44819EA491"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\protected58-cards.json",
+      "copy": "planner/protected58-cards.json",
+      "role": "Task-Planner",
+      "sha256": "98BDD9A80A3DABB89C77D6BB78B0B4248BD0EB1A6AEA0798647BA092161A2ED8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\readback-scope-check.json",
+      "copy": "planner/readback-scope-check.json",
+      "role": "Task-Planner",
+      "sha256": "A7B50BDC561E908111B4AD92499A6E89459028CF98184F388F9FFB24D4EE24CA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\review.read.md",
+      "copy": "planner/review.read.md",
+      "role": "Task-Planner",
+      "sha256": "4AD92EE874C7FC2A688A5AABDDBBD6581D8873C650CD29C8BEB0126D320BB051"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\tasks.actual.diff",
+      "copy": "planner/tasks.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "8D0A2C2758A2F69C0CBADB7A9807EAB281239180D5E3158085A193F0DBA98385"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\tasks.after.md",
+      "copy": "planner/tasks.after.md",
+      "role": "Task-Planner",
+      "sha256": "22C4796844643688FEA82925966656CF51C6CD0FA2885190ADFBC712BAE7ACDA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\tasks.before.md",
+      "copy": "planner/tasks.before.md",
+      "role": "Task-Planner",
+      "sha256": "07749567612CE6F4989C009D96881220A8452AB483FB62B0C83C7FD02F0DA1BF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\tasks.candidate.diff",
+      "copy": "planner/tasks.candidate.diff",
+      "role": "Task-Planner",
+      "sha256": "5E2C8CD4F891629E5BCC3892FB2251730EBD21E0C8B3718C083D2FAA0A86EB53"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\tasks.candidate.md",
+      "copy": "planner/tasks.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "22C4796844643688FEA82925966656CF51C6CD0FA2885190ADFBC712BAE7ACDA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\verification.read.md",
+      "copy": "planner/verification.read.md",
+      "role": "Task-Planner",
+      "sha256": "6E25134E9FD50C6BB2BFE64CD4C2BF4F5C79B27A54DCF5E1CDCB91642BE6F849"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\verify-readback.py",
+      "copy": "planner/verify-readback.py.txt",
+      "role": "Task-Planner",
+      "sha256": "665E44230D088C59E7422B4A9F259DFF0C40647CD6F719E161DBF0397B48FB94"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-close-metadata-ec4f2622ca6c4040bfd3af99f60a5af9\\write-receipt.json",
+      "copy": "planner/write-receipt.json",
+      "role": "Task-Planner",
+      "sha256": "CD9F32FD71D3BE5F7BE04CC443305888816165FC66226391D94D919BD4280C82"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-final-scope-verification.json",
+      "copy": "lead/lead-final-scope-verification.json",
+      "role": "Lead",
+      "sha256": "5E7829881F0BD40EE5832CA1D1AC314C21B6C4B966CE6052C365BF18ADA048F3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-archives-verification.json",
+      "copy": "lead/lead-archives-verification.json",
+      "role": "Lead",
+      "sha256": "15E1AE61D78A068E1B275A60D5C494E1E4289805BDCAAB9DFED3BC6CC4D22D44"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\verify_closure.py",
+      "copy": "lead/verify_closure.py.txt",
+      "role": "Lead",
+      "sha256": "210698619B47C01C47B4AA637ACAA24CE600ECF94A65D765B4296A2DA2E736AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\capture_closure.py",
+      "copy": "lead/capture_closure.py.txt",
+      "role": "Lead",
+      "sha256": "7A8DCA637669DFDD2BA4D65993500584120AA898284D45810833418689A86EB5"
+    }
+  ],
+  "scoped_metadata_diff_check": {
+    "tasks": {
+      "no_index_exit": 1,
+      "whitespace_diagnostics_empty": true
+    },
+    "plan": {
+      "no_index_exit": 1,
+      "whitespace_diagnostics_empty": true
+    }
+  },
+  "source_binding_index": "../code-r02/index.json",
+  "counts_total_closed_active_todo": [
+    59,
+    45,
+    5,
+    9
+  ],
+  "limits": "Task-Planner metadata work is not independent test execution or a substitute for Lead closure decision. Existing broader E2E and real recovery scopes remain open."
+}

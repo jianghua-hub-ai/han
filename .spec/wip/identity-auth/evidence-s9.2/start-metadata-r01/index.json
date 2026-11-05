@@ -1,0 +1,204 @@
+{
+  "scope": "S9.2 preparation claim/CODE permission, original card+derived counts/B9A only; no PG execution",
+  "captured_at": "2026-10-28T01:47:40.182487+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\apply-metadata.ps1",
+      "copy": "apply-metadata.ps1.txt",
+      "role": "Task-Planner",
+      "sha256": "7089F90B4A8DBDB7E0F87C78B1C4957AAD2897A1E1C9ADB3999A591BDA2FFF92"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\exactpatch.json",
+      "copy": "exactpatch.json",
+      "role": "Task-Planner",
+      "sha256": "BF0B0DF3B54FD1B13A1149944AB6C75A8009B7ACCB10607513D58730B9BB745F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\final-readback-scope-check.json",
+      "copy": "final-readback-scope-check.json",
+      "role": "Task-Planner",
+      "sha256": "A53BC8EF4FB5BE5380B96FFB34D3A777D268EDE0930F70D8EF64226F54655C80"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\final-scope-patch.json",
+      "copy": "final-scope-patch.json",
+      "role": "Task-Planner",
+      "sha256": "428D6E2528AC4BDD34C9EC4E140C3644760674D75C6EF881230B5D994DECAD2A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\final-wording.py",
+      "copy": "final-wording.py.txt",
+      "role": "Task-Planner",
+      "sha256": "5B5B119C02DF451F1E3CFFC057C752BC88B22A5A6023CC39AF620413EDC23EFD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\plan.actual.diff",
+      "copy": "plan.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "2F211D8A03BDA42640C43351171314E288FC52C928A49EB224F27D33A40FFA54"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\plan.after.md",
+      "copy": "plan.after.md",
+      "role": "Task-Planner",
+      "sha256": "4C042071A0AAAF4C6756720256A7EADFA7ABBEDBC71B169B8311A39E279CDBD7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\plan.before.md",
+      "copy": "plan.before.md",
+      "role": "Task-Planner",
+      "sha256": "CBCC228146E5D260E5D47F70B0FD5B14E7E1B99DD4F7CFF6F26292A7C3BACB41"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\plan.candidate.md",
+      "copy": "plan.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "4C042071A0AAAF4C6756720256A7EADFA7ABBEDBC71B169B8311A39E279CDBD7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\plan.final.actual.diff",
+      "copy": "plan.final.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "54CECAFE320D81BBB3416E6DEAE604C68CB3DF599BBC93AA1B8C906D3B4C82FC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\precheck.json",
+      "copy": "precheck.json",
+      "role": "Task-Planner",
+      "sha256": "A6B8900EBC3FA37ED8DC77A71A9AF74096C6ABA08AC4EEF8ECD96EB2AD803273"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\prepare-final-verifier.py",
+      "copy": "prepare-final-verifier.py.txt",
+      "role": "Task-Planner",
+      "sha256": "899FA742E60A822EA5E9BD5252BA474B6F72961C5E1ACCB909B2B96C20D540EF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\readback-scope-check.json",
+      "copy": "readback-scope-check.json",
+      "role": "Task-Planner",
+      "sha256": "4BBF898DF4F2D2E1E6AA8DE1AE80CAE1C3AD1ED37F3AFEFBE520C58460CDCDBD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\refresh-prep.py",
+      "copy": "refresh-prep.py.txt",
+      "role": "Task-Planner",
+      "sha256": "69D238E3057F8094BA8F8AEFBDEF6EE2E556466DFEFF198ABCB1C6E7C3366FE3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\tasks.actual.diff",
+      "copy": "tasks.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "988C9CDD1C3E9CC5F00DA25DE026D11E9A83983EAC204944ADB8E5D025EE6038"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\tasks.after.md",
+      "copy": "tasks.after.md",
+      "role": "Task-Planner",
+      "sha256": "4B27B249C826A7A8DFDF4430DC812EBC71157E7D4E49BA63EBA0FE63C85CAD02"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\tasks.before.md",
+      "copy": "tasks.before.md",
+      "role": "Task-Planner",
+      "sha256": "1560602DE69EC52AA6AF087B45417FAC58BC8679ACC2C2A2EB0EB807BC8E126F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\tasks.candidate.md",
+      "copy": "tasks.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "4B27B249C826A7A8DFDF4430DC812EBC71157E7D4E49BA63EBA0FE63C85CAD02"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\tasks.final.actual.diff",
+      "copy": "tasks.final.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "E53B1F8868CC865092F6C59CB63CCD07CB223602B2193368CE7CD621B4B92B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\verify-final-readback.py",
+      "copy": "verify-final-readback.py.txt",
+      "role": "Task-Planner",
+      "sha256": "DCD59DBB47CC94B75A822A931C515CD3865652147EC601E1DF16CAC61B5284A5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\verify-readback.py",
+      "copy": "verify-readback.py.txt",
+      "role": "Task-Planner",
+      "sha256": "3AC5DA06EA1A55A3CB74690273A5E43585F618A4B5E97F1580C37025C5AAF9FA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\write-receipt.json",
+      "copy": "write-receipt.json",
+      "role": "Task-Planner",
+      "sha256": "C1F3767411BFF610727E1529039DF635A3C2BBEAD3B612A0741976444F2ACAC3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-prep.py",
+      "copy": "zeno-completion-prep.py.txt",
+      "role": "Task-Planner",
+      "sha256": "602F954231708CAF19E9E602E5898E92F40EA778E74DC64EDBEE9AEC30B9FEA5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\apply-metadata.ps1",
+      "copy": "zeno-completion-sync/apply-metadata.ps1.txt",
+      "role": "Task-Planner",
+      "sha256": "6BF96757104C3F395F0FB2F16A7104D8092392D0897261F9981AFE56228438A2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\exactpatch.json",
+      "copy": "zeno-completion-sync/exactpatch.json",
+      "role": "Task-Planner",
+      "sha256": "B118DF2DE69FEE1FF36FD9BD25027404090EF68A91CD83C5DC984B2C97884747"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\plan.after.md",
+      "copy": "zeno-completion-sync/plan.after.md",
+      "role": "Task-Planner",
+      "sha256": "8C13F9B9313921CB4E5FDF773B253A7AB8F4579FB2C203A3CD6E5CCD2001861F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\plan.before.md",
+      "copy": "zeno-completion-sync/plan.before.md",
+      "role": "Task-Planner",
+      "sha256": "4C042071A0AAAF4C6756720256A7EADFA7ABBEDBC71B169B8311A39E279CDBD7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\plan.candidate.md",
+      "copy": "zeno-completion-sync/plan.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "8C13F9B9313921CB4E5FDF773B253A7AB8F4579FB2C203A3CD6E5CCD2001861F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\tasks.after.md",
+      "copy": "zeno-completion-sync/tasks.after.md",
+      "role": "Task-Planner",
+      "sha256": "07749567612CE6F4989C009D96881220A8452AB483FB62B0C83C7FD02F0DA1BF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\tasks.before.md",
+      "copy": "zeno-completion-sync/tasks.before.md",
+      "role": "Task-Planner",
+      "sha256": "4B27B249C826A7A8DFDF4430DC812EBC71157E7D4E49BA63EBA0FE63C85CAD02"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\tasks.candidate.md",
+      "copy": "zeno-completion-sync/tasks.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "07749567612CE6F4989C009D96881220A8452AB483FB62B0C83C7FD02F0DA1BF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-prep-claim-metadata-95ae0fa8eb48435e8692d841edc8628f\\zeno-completion-sync\\write-receipt.json",
+      "copy": "zeno-completion-sync/write-receipt.json",
+      "role": "Task-Planner",
+      "sha256": "D6C4E167F134FF1C81F40992BA564D08D94B8AFBAD6384DA46C22BBEFF977E65"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-start-metadata-verification.json",
+      "copy": "lead-start-metadata-verification.json",
+      "role": "Lead",
+      "sha256": "03CD69842ED8A1B55F6314A3DC24CCEC46BFA48B19F2A6C63DC37B2D7F52F92F"
+    }
+  ]
+}

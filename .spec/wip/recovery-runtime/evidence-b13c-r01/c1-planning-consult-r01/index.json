@@ -1,0 +1,74 @@
+{
+  "scope": "c1-planning-consult-r01",
+  "owner": {
+    "role": "Task-Planner",
+    "nickname": "Goodall",
+    "runtime_id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-c1-task-consult-e2ed0cfdd9f141a3be6746b083527cff",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/baseline.json",
+      "sha256": "03D0D1771420802B8E716B7A85E9C6A923999C1BAEB03B93A698FDFBAFD17C22",
+      "bytes": 4189,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/consult.md",
+      "sha256": "DACBC35159A0DF3E7982FE03072225B61A5FBCEA9302E0E52F88FEBF89B1C20A",
+      "bytes": 17487,
+      "source_name": "consult.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/finalize.py",
+      "sha256": "22A185E5363B45C1AE14746BDE9284139347635976C81D2B03BA69743181E4AF",
+      "bytes": 20109,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/readset.json",
+      "sha256": "E8693155282CAB210B3D9476993998896C7E474DDE8B5115A60FF3F2E49E4F52",
+      "bytes": 6052,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/receipt.json",
+      "sha256": "2EE02C134E30984ECD645ABA3CD0C71A67447265C3791A211D7402E9ACDEB96D",
+      "bytes": 3241,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/receipt.md",
+      "sha256": "6975D793CF1CD5564F1D4320D9FC04895BA95B8FDF72F190F37EC26BA4FBEC08",
+      "bytes": 2521,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/sha256sums.json",
+      "sha256": "2B009DA0C11B51B59E2E976D96F4B169B146F6127F7AFB3A8E4EFAF593B376B5",
+      "bytes": 794,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/task-mapping.json",
+      "sha256": "78EBB78C1A792A72EC2901D47F877EAA997E079B583FF2EFD19E63468898C232",
+      "bytes": 11753,
+      "source_name": "task-mapping.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/tool-note.json",
+      "sha256": "62DE031271F95A8512B0B9802D0298ABD87C05EC17E5C6095A783CE79AE1982D",
+      "bytes": 477,
+      "source_name": "tool-note.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-consult-r01/verification.json",
+      "sha256": "82875696205C830B3565C69AA39F1D3CD83319DAC4099B62A9504C6B4F9878C7",
+      "bytes": 1974,
+      "source_name": "verification.json"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "scope": "review-prep",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-review-prep-259adddd4e8d4d5e90b44a2aa544df32",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/initial.json",
+      "sha256": "C12675B6A0F95972EDD13D78DB0899A0B3621E41B7BDF050795E21F21F5457B0",
+      "bytes": 2062
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/pending-review-checklist.md",
+      "sha256": "57F384FE7840E923E5A70DCA25C928C990BFF8434B9FEA670D0425BA9FF48A4C",
+      "bytes": 3283
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/prep-receipt.json",
+      "sha256": "B0F34A98CC50FC5F96833310DF68F855184542F4C838AE8D163E7588C4BE1739",
+      "bytes": 5268
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/prep-receipt.md",
+      "sha256": "1CAFD2572D579C5C99F55D1E37CB9E91E98F5E4B92C1733E8B7EE9D7311EA7C1",
+      "bytes": 2452
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/read.py",
+      "sha256": "CDE2B4C404D0DF44F02823CC9C0D1928118ACF9D483689C8E31DA4227C149934",
+      "bytes": 902
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/readset.jsonl",
+      "sha256": "91069D77C38B10B5B5C8FFF5FA79979201905A5AFA1C8F560AB87AC77BD1F1F0",
+      "bytes": 6244
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/readset.md",
+      "sha256": "E47C95442AF33040DC152586F2AC34183F8DD0D75AC763D8926A3E83DD9A9FAA",
+      "bytes": 4145
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/rules-reuse.json",
+      "sha256": "A7DD9DFA4D3AB7588169BB73C34726C3DE0E3A346CD2F0DC8F8DF32F7B45BB70",
+      "bytes": 1899
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/sha256sums.txt",
+      "sha256": "D4B5D9246552332C1C736C7CB98B9A5E7A04BE3079AD8662B477C559DE5F9BD2",
+      "bytes": 753
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-prep/taskplan-projection.json",
+      "sha256": "51F2181FA7258D7E6B2AA4E594862D94953919371BC11221D5215BB0BFBD8D60",
+      "bytes": 5812
+    }
+  ]
+}

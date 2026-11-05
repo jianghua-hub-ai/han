@@ -1,0 +1,63 @@
+{
+  "scope": "Lead onsite initial frozen architecture scope and static checks",
+  "role": "Main lead",
+  "source_author_index": {
+    "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r01/index.json",
+    "sha256": "547365C1927132F5C91ABE159ECE0F2E3EA1A70100BC9C178C3822575ADC1A51",
+    "bytes": 4165
+  },
+  "status": "Scope/byte/link/static receipt only; no independent Review or runtime validation.",
+  "independent_reviewer": {
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965",
+    "nickname": "Kuhn",
+    "status": "dispatched, pending"
+  },
+  "not_run": [
+    "Go tests (documentation only)",
+    "PostgreSQL",
+    "PlantUML syntax/render",
+    "deployed E2E"
+  ],
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/baseline.json",
+      "sha256": "F72CF51C69B358F44060E42F9DB2CFBAD5455CFCF2A4B0F0187529C7172BD53C",
+      "bytes": 192
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/source188.before.json",
+      "sha256": "C46A8D08C68EF70F0F7360D5C552E3FAC9C140AFFB897D0FB35C077111805A25",
+      "bytes": 21194
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/knowledge33.before.json",
+      "sha256": "C7FA1D2284F237A55372BE5B6AFE1F5C532E7354539B99074064DC250EEE0744",
+      "bytes": 4525
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/controls.before.json",
+      "sha256": "39A9295FC1B6C1AAE3C3026C19293CC3791FDD4C5EA42C1FC9EA7945821FD86D",
+      "bytes": 348
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/verify_scope.py",
+      "sha256": "06321774AD23C61B1EECAB5ED7929922B939727A700F69B536495FFB42F7D11A",
+      "bytes": 2038
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/check_documents.py",
+      "sha256": "74493D035A33E9B6626008684A8B62C4E19EC111A47DF723AF4AE61CB5BCD2BE",
+      "bytes": 2772
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/scope-frozen-r01.json",
+      "sha256": "CC0D0A1CB7A6DA81A46845DCDC515F62C831C70E21485854BF096506642ABA38",
+      "bytes": 826
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/lead-frozen-r01/documents-frozen-r01.json",
+      "sha256": "B67A95D70683FB98D6C08F8BC74F343CE48F25041133511E3D40D5651720D980",
+      "bytes": 1502
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "schema": "add.review-index/v1",
+  "role": "add-reviewer",
+  "independence": "independent non-author review; reviewed artifacts not modified by reviewer",
+  "objectType": "design + adr + index (composite) + security review",
+  "item": "pending-B13J-D03",
+  "workflow": "development-delivery",
+  "phase": "architecture-decision-ADR / non-author design and security review r01",
+  "verdict": "CHANGES REQUIRED",
+  "verdicts": {
+    "design": "CHANGES REQUIRED",
+    "security": "CHANGES REQUIRED",
+    "overall": "CHANGES REQUIRED",
+    "reason": "ADR-0031 core decision (no production restore tool in phase one) is sound and honest, and boundary, minimality, format and traceability all pass; but the permission invariant 'execution identity must not write Journal/keyring/lock/Store binding' is absent from design.md:3862 and has no enforcement mechanism (no DB role/GRANT/schema scope) anywhere in ADR-0031, while design.md:3864 hands the target DSN to the executor and design.md:3866 has root writing binding/audit into the same Store. gap-map section 2.5 requires a security review PASS, so neither design nor security can be concluded PASS."
+  },
+  "rounds": {
+    "round1": "CHANGES REQUIRED"
+  },
+  "reviewedAt": "2026-11-01T23:11:04+08:00",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "artifact": {
+    "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/report.md",
+    "sha256": "EEC401E4613EFFC1AA4DD89639A32FA04C71C826F7874C32880224819655EBE3",
+    "bytes": 25493,
+    "encoding": "utf-8",
+    "bom": false,
+    "line_endings": "LF only",
+    "trailing": "single LF (0x0a)",
+    "source": "independent review report (this review)"
+  },
+  "object": {
+    "design": {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "baseline": {
+        "sha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+        "bytes": 844091,
+        "lines": 4924
+      },
+      "target": {
+        "sha256": "79F226D5BB152C7A2DF359548CBFE24C306DF54A1B2EFD8BED71A80F488B2037",
+        "bytes": 846117,
+        "lines": 4924
+      },
+      "declaredChangedLines": [
+        5,
+        83,
+        3858,
+        3862,
+        3870
+      ],
+      "declaredChangedLinesWithVersionPair": [
+        5,
+        38,
+        83,
+        3858,
+        3862,
+        3870
+      ],
+      "deltaBytes": 2026,
+      "deltaProvenExact": true,
+      "deltaMethod": "reverse-substituted four before blocks taken from the author report plus r59->r58 on :5/:38 in memory, re-encoded UTF-8, recomputed SHA256",
+      "reconstructedBytes": 844091,
+      "reconstructedSha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+      "deltaBreakdown": {
+        "line83": 760,
+        "line3858": 94,
+        "line3862": 666,
+        "line3870": 506
+      },
+      "unchangedWindows": [
+        ":7 last_updated unchanged",
+        ":3874-3902 command/ENV contract unchanged"
+      ]
+    },
+    "framework": {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "baseline": {
+        "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+        "bytes": 137491,
+        "lines": 966
+      },
+      "target": {
+        "sha256": "A80F5DD3F542AD15EC9BB717BAF20C4CA43EC83EB1B215171E1DA41516EB0589",
+        "bytes": 153033,
+        "lines": 1048
+      },
+      "prefixBytes": 137491,
+      "prefixSha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+      "prefixMatchesBaseline": true,
+      "addedRange": "framework.md:968-1048 (separator + ADR-0031; anchor at :970, body :971-1048)",
+      "adr0019RangeChecked": "framework.md:418-494 (unchanged, covered by prefix hash)",
+      "adr0030RangeChecked": "framework.md:915-966 (unchanged, covered by prefix hash)"
+    },
+    "readme": {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "baseline": {
+        "sha256": "5075879AC7F3E31D83A06E843BCCE80CAA8DBA27F588E39D700E7F6C3765C10D",
+        "bytes": 19724,
+        "lines": 106
+      },
+      "target": {
+        "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+        "bytes": 20764,
+        "lines": 108
+      },
+      "changedLines": [
+        39,
+        45,
+        71
+      ],
+      "deltaProvenExact": true,
+      "deltaMethod": "removed the ADR-0031 global-index line, the domain-table suffix and the scenario-query line in memory, re-encoded UTF-8, recomputed SHA256",
+      "reconstructedBytes": 19724,
+      "reconstructedSha256": "5075879AC7F3E31D83A06E843BCCE80CAA8DBA27F588E39D700E7F6C3765C10D"
+    }
+  },
+  "formatInvariants": {
+    "framework": {
+      "bom": false,
+      "lines": 1048,
+      "crlf": 1048,
+      "bare_lf": 0,
+      "lf_total": 1048,
+      "bare_cr": 0,
+      "trailing": "CRLF (0d0a)",
+      "control_excluding_cr_lf_tab": 0
+    },
+    "design": {
+      "bom": false,
+      "lines": 4924,
+      "crlf": 169,
+      "bare_lf": 4755,
+      "lf_total": 4924,
+      "bare_cr": 0,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf_tab": 0,
+      "tab_count": 1,
+      "tab_byte_offset": 466829,
+      "tab_character_offset": 309035,
+      "tab_line": 3303,
+      "tab_pre_existing": true,
+      "tab_before_offset": 466069,
+      "tab_context": "existing Go fenced code block (CheckLockedUser)"
+    },
+    "readme": {
+      "bom": false,
+      "lines": 108,
+      "crlf": 2,
+      "bare_lf": 106,
+      "lf_total": 108,
+      "bare_cr": 0,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf_tab": 0
+    }
+  },
+  "findings": {
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 1,
+      "LOW": 4
+    },
+    "total": 5,
+    "items": [
+      {
+        "id": "B13J-D03-RV-01",
+        "severity": "MEDIUM",
+        "category": "security-permission-boundary",
+        "location": ".add/project/knowledge/decisions/framework.md:1007; :1034; :1044; .add/project/knowledge/design-workspace/identity-auth/design.md:3862; :3864; :3866",
+        "summary": "ADR-0031 forbids the execution identity from writing Journal/keyring/lock/Store binding, but design.md:3862 only forbids transmission, design.md:3864 gives the executor the target DSN, design.md:3866 has root writing binding/audit into the same Store, and ADR-0031 contains no GRANT, DB role or schema-scope restriction; the release condition merely defers an approved permission matrix. ADR adoption record :1044 also claims :3862 already fixes the root permission boundary.",
+        "impact": "Production remains closed (recoveryClosedRestoreDriver refuses Prepare/Replace/VerifyRestored), so no live exposure; but the permission/ACL part of gap-map section 2.5 cannot be objectively verified, so security review cannot be PASS and design cannot be PASS.",
+        "blocking": true,
+        "requiredFix": "Add to design.md:3862 the write-side negative matrix plus an enforcement mechanism (DB role limited to the application schema, or restore into an isolated database then a root-controlled switch, or explicit exclusion of recovery Store/Journal schema from the artifact); add a negative verification gate to ADR section 8 (executor credentials writing Journal/keyring/lock/Store binding must fail); clarify that 'must not write Store binding' means producing no authoritative binding/audit rows and define how root re-establishes and checks them after replacement; make :1044 match the design text."
+      },
+      {
+        "id": "B13J-D03-RV-02",
+        "severity": "LOW",
+        "category": "design-adr-sync",
+        "location": ".add/project/knowledge/decisions/framework.md:1004; :1006; :1035; .add/project/knowledge/design-workspace/identity-auth/design.md:3862",
+        "summary": "design.md:3862 omits three ADR negatives: tool-supplier self-approval ban, root must not substitute execution/enter shell/replay, and no network beyond the target connection.",
+        "impact": "ADR stays authoritative and production is closed, so this is not blocking alone; an implementer reading only the design could miss egress restriction and the supplier self-approval ban.",
+        "blocking": false,
+        "requiredFix": "Sync the three negatives into design.md:3862, preferably in the same revision as RV-01."
+      },
+      {
+        "id": "B13J-D03-RV-03",
+        "severity": "LOW",
+        "category": "scope-wording",
+        "location": ".add/project/knowledge/decisions/framework.md:981; .add/project/knowledge/design-workspace/identity-auth/design.md:3858; .add/project/knowledge/decisions/framework.md:926",
+        "summary": "ADR-0031 and design scope the closed state to the production enter/resume DB replacement, while ADR-0030:926 says production recovery enter/install keep returning closed.",
+        "impact": "Combined state is still fully closed (ADR-0030 unchanged, design :3892 keeps enter/install closed without an anchor), but a reader of ADR-0031 alone could infer enter outside DB replacement is available.",
+        "blocking": false,
+        "requiredFix": "Unify the wording or add an explicit ADR-0030 cross-reference; may be carried into D04 or a later revision."
+      },
+      {
+        "id": "B13J-D03-RV-04",
+        "severity": "LOW",
+        "category": "evidence-accuracy",
+        "location": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/report.md:81 (contradicts :86 and :92)",
+        "summary": "Author report says line 83 kept its first 744 characters unchanged; measured common prefix is 1184 characters and the whole before text is a prefix, with a 462-character / 760-byte tail appended.",
+        "impact": "Does not change the reviewed files; the reviewer's own reverse reconstruction passed. Only the evidence arithmetic is inconsistent.",
+        "blocking": false,
+        "requiredFix": "Change 744 to 1184 and state 'whole before text retained, 462 characters / 760 bytes appended'."
+      },
+      {
+        "id": "B13J-D03-RV-05",
+        "severity": "LOW",
+        "category": "implementation-interface",
+        "location": ".add/project/knowledge/decisions/framework.md:1006; :1012; .add/project/knowledge/design-workspace/identity-auth/design.md:3862",
+        "summary": "No POSIX identity-switch mechanism is specified; su/sudo or script wrappers would contradict 'no shell, no extra argv'.",
+        "impact": "Assembly could pick a mechanism that violates the isolation contract.",
+        "blocking": false,
+        "requiredFix": "Fix fork + setgroups/setgid/setuid + exec (or an approved single launcher) in D04 or the formal implementation task, and forbid su/sudo-style wrapping."
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "bytes": 26452,
+      "role": "reconciliation source defining D03 and recording section 2.5 closure conditions at :121-139"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/report.md",
+      "sha256": "72517E391DD19AF73BF6512A2C304262886F0B3BBEEF8FB9C516F99DFDAC8C03",
+      "bytes": 85277,
+      "role": "author design report; before/after blocks used for independent reverse reconstruction"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/index.json",
+      "sha256": "A38614C359ECDB1321FB1432D6CE7E7299D37E5C84FEA992123FE06C2F7B02E2",
+      "bytes": 21611,
+      "role": "author evidence index"
+    }
+  ],
+  "crossChecks": {
+    "tasksMd": {
+      ".add/project/knowledge/tasks/tasks.md:656": "S4.5 registration is still unchecked: '- [ ] identity-auth-S4.5 选择并交付生产 CAS JournalHeadAnchor provider 与独立故障域验证 [P]'"
+    },
+    "scopeExclusions": {
+      "ADR-0031 or B13J-D03 in tasks/plans/stories/test-plan/decisions-identity": "no hits found",
+      "S4.22/S4.23/S4.24 in framework.md or design.md": "no hits found",
+      "mtimeEvidence": "tasks.md 21:45 and plans 20:07 predate the three reviewed files (22:51-22:52); stories/test-plan/identity.md older still"
+    },
+    "readmeIndex": {
+      "globalIndex": "README.md:39 contains ADR-0031",
+      "domainTable": "README.md:45 appends ADR-0031",
+      "scenarioTable": "README.md:71 contains ADR-0031",
+      "anchor": "all links use framework.md#adr-0031, matching framework.md:970 <a id=adr-0031>",
+      "referenceCount": "1, consistent with ADR-0030/ADR-0028/ADR-0024 rows and the sole adoption record at framework.md:1044"
+    },
+    "adrBoundaries": {
+      "adr0019PrefixUnchanged": "true; framework.md first 137491 bytes hash equals the pre-change whole-file hash",
+      "fallbackForbidden": "shell, extra argv, manifest-injected args, auto replay, auto fallback, file/SQL/fake, environment probing and newest-binary-in-directory remain forbidden",
+      "restoreSoftwareContract": "restore-v1/verify-v1 argv, private stdin, receipt fields, no-follow stable fd, minimal ENV allowlist, Begin precheck and restore_unknown all retained",
+      "configKeys": "HAN_RECOVERY_RESTORE_EXECUTABLE, HAN_RECOVERY_RESTORE_EXECUTABLE_SHA256 and HAN_RECOVERY_RESTORE_MANIFEST_PATH keep no defaults and no inference; design :3896 unchanged",
+      "case18AndS82": "ADR explicitly does not claim Case18, S8.2, or restore E2E passed"
+    },
+    "runtimeCode": {
+      "closedDriver": "cmd/han-server/recovery_sources.go:557-573 rejects Prepare/Replace/VerifyRestored with ErrAdmissionClosed",
+      "assembly": "cmd/han-server/recovery_runtime.go:596-599 injects the closed driver when nil",
+      "meaning": "production DB replacement is actually closed today; RV-01 is a gate defect, not a live exposure"
+    }
+  },
+  "commands": [
+    "python sha256/byte scans on the three reviewed files, reviewer report, author report/index, gap-map",
+    "reverse-substitution of design.md :5/:38/:83/:3858/:3862/:3870 -> 844091 B, 30B122A0...7D47BC, match=true, changed lines [5,38,83,3858,3862,3870]",
+    "reverse-substitution of README.md additions -> 19724 B, 5075879A...5C10D, match=true",
+    "sha256 on framework.md first 137491 B -> 33281CB5...1CF532, equal to pre-change whole-file hash",
+    "rg -n \"restore-v1|verify-v1|批准者|批准主体|执行主体|进程树|no-follow|restore_unknown\" design.md -> exit 0, concrete hits",
+    "rg -n \"restore|恢复工具|批准|进程隔离|no-follow\" framework.md -> exit 0, 69 matching lines",
+    "git diff --check -- design.md framework.md -> exit 0 (autocrlf advisory only)",
+    "rg \"GRANT|数据库角色|DB 角色|写权限\" in ADR-0031 -> 0 hits (RV-01 evidence)",
+    "rg \"ADR-0031|B13J-D03\" in tasks/plans/stories/test-plan/identity-decision -> 0 hits; rg \"S4.22|S4.23|S4.24\" in framework/design -> 0 hits",
+    "git rev-parse HEAD -> 6da8abb...; no Git write commands executed"
+  ],
+  "writeSet": [
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/index.json"
+  ],
+  "notWritten": [
+    ".add/project/knowledge/decisions/framework.md",
+    ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    ".add/project/knowledge/decisions/README.md",
+    "tasks.md",
+    "plans/",
+    "stories.md",
+    "test-plan.md",
+    "decisions/identity.md",
+    "any code/tests/config",
+    "git index/history"
+  ],
+  "notVerified": [
+    "No restore tool, backup system, database, ACL, process-isolation or real old-backup drill was executed; no native durable receipt sample was obtained",
+    "No approval role, execution identity, read-only mount or host isolation was verified to exist; ADR and design mark them unknown",
+    "framework.md and design.md were not read in full; semantic conclusions cover the named windows and the byte-proven unchanged regions",
+    "Byte-identity of tasks.md/plans/stories/test-plan/identity.md against a D03 pre-change snapshot was not verified (no such snapshot); evidence is the declared write set, zero content hits and mtimes",
+    "No markdown render or lint run"
+  ],
+  "pendingDecisions": [
+    {
+      "id": "D-RV-01",
+      "question": "Fix RV-01 this round: add the write-side negative matrix plus enforcement mechanism to design.md:3862 and a negative verification gate to ADR section 8, and align :1044",
+      "owner": "Lead / Arch-Designer",
+      "blocking": "true; security review cannot pass until the permission invariant is enforceable and verifiable"
+    },
+    {
+      "id": "D-RV-02",
+      "question": "Sync the three ADR negatives into design.md:3862 in the same revision",
+      "owner": "Lead / Arch-Designer",
+      "blocking": "false; recommended same round"
+    },
+    {
+      "id": "D-RV-03",
+      "question": "Unify the closed-scope wording with ADR-0030:926",
+      "owner": "Lead / Architect",
+      "blocking": "false; may be carried into D04 or a later revision"
+    },
+    {
+      "id": "D-RV-04",
+      "question": "Correct the 744-character claim to 1184 in the author report",
+      "owner": "Arch-Designer",
+      "blocking": "false; evidence correction"
+    },
+    {
+      "id": "D-RV-05",
+      "question": "Fix the POSIX identity-switch mechanism and forbid su/sudo-style wrapping",
+      "owner": "Lead / Architect in D04 or the implementation task",
+      "blocking": "false; may be carried into D04"
+    }
+  ],
+  "limitations": "Reviewer verdict does not close pending-B13J-D03, does not grant a design Gate or security sign-off, does not authorize implementation, does not claim Case18/S8.2 or any restore tool/backup verification, does not release blocked-upstream, does not unlock S4.24, and does not constitute human acceptance."
+}

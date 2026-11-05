@@ -1,0 +1,1158 @@
+{
+  "scope": "S9.2 two-file CODE r01->r02, static list/empty compile and Lead183 freeze; no PG results in this index",
+  "captured_at": "2026-10-28T02:19:23.372815+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\artifact-index.json",
+      "copy": "author-code-r01/artifact-index.json",
+      "role": "Rawls",
+      "sha256": "CD74BBC29C6644BD4C899CE534CC517714F871985A54DB262ECC060D7A8D159A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\candidate183.json",
+      "copy": "author-code-r01/candidate183.json",
+      "role": "Rawls",
+      "sha256": "FD54C78B374962D9D5B707CE671E3B6609F689A861B0CCEF955A4DC9BCEBA182"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\canonical_delete_faults_test.diff",
+      "copy": "author-code-r01/canonical_delete_faults_test.diff",
+      "role": "Rawls",
+      "sha256": "50B2B202C1E3D4E37C7130A5EA22B1E9615D00F26FBF70CFD37BED54A48B62F3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\canonical_user_delete_test.diff",
+      "copy": "author-code-r01/canonical_user_delete_test.diff",
+      "role": "Rawls",
+      "sha256": "60490051B7203C13CBDBC34D9881C6CCE6668A9217DC37AB4281F9EEF6AD67DA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\compile-only.raw.log",
+      "copy": "author-code-r01/compile-only.raw.log",
+      "role": "Rawls",
+      "sha256": "91722C732C1E5DA5DB6D34938EA86156BD50963F03AB95FBB2B92FAC08B21534"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\evidence-step1-error.transcript-copy.log",
+      "copy": "author-code-r01/evidence-step1-error.transcript-copy.log",
+      "role": "Rawls",
+      "sha256": "8C2B45A3475E851D2FC58C216A63F42066E1BCF0CB1821AA0BD1C831B433992B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\first-compile-error.transcript-copy.log",
+      "copy": "author-code-r01/first-compile-error.transcript-copy.log",
+      "role": "Rawls",
+      "sha256": "4933715D240BDCF4EB00933B65F1E88B95F01AB0DA05DA0EFD2A473914065B83"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\go-list.raw.json",
+      "copy": "author-code-r01/go-list.raw.json",
+      "role": "Rawls",
+      "sha256": "8D95ED433DF4327FE69132721F75FFFEA6CA7C117CD2399DCE5E9175FE32CF27"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\handoff.json",
+      "copy": "author-code-r01/handoff.json",
+      "role": "Rawls",
+      "sha256": "9FDED6447313B431F677E136F9F6E8671F15A5EBA678C3434D92E8AABDAF62A7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\leaf-plan.json",
+      "copy": "author-code-r01/leaf-plan.json",
+      "role": "Rawls",
+      "sha256": "1B9DD39D0256625B83F74F62CE18EDAC1D96C581A34E4264CDF326341D45E26E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\source-beforeafter181.json",
+      "copy": "author-code-r01/source-beforeafter181.json",
+      "role": "Rawls",
+      "sha256": "6F5292C43CCB2D7223527DF793A4916774C3BD6F0B804B6C7A1ABC111BE94D38"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\static-raw-meta.json",
+      "copy": "author-code-r01/static-raw-meta.json",
+      "role": "Rawls",
+      "sha256": "4C084741C324FB909F77AFD5A6E046884EDDD3D178DC74852275E0F2EB01467A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\tagged-list.raw.log",
+      "copy": "author-code-r01/tagged-list.raw.log",
+      "role": "Rawls",
+      "sha256": "DFBAF6437E34AF9271D30E30D49C2DF668A5E95C966476DA804EBA4472B2F764"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r01\\worktree-status.raw.log",
+      "copy": "author-code-r01/worktree-status.raw.log",
+      "role": "Rawls",
+      "sha256": "6DAD1C3052D24A8F1DD8F77A65DC4B0D917A0CB0CFBBAFDBF31A9C6F6153DEF2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\artifact-index.json",
+      "copy": "author-code-r02/artifact-index.json",
+      "role": "Rawls",
+      "sha256": "661259BBF9ED104B50842A5E14FDCD7AE91FD663F6C03EC63F9A9B0D8552E8AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\candidate183.json",
+      "copy": "author-code-r02/candidate183.json",
+      "role": "Rawls",
+      "sha256": "5688F8ADCEE7F75504E924101D7314F1D72AAF4B7A9A37B5F82A95D4E2B510E8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\canonical_delete_faults_test.full-new.diff",
+      "copy": "author-code-r02/canonical_delete_faults_test.full-new.diff",
+      "role": "Rawls",
+      "sha256": "0A7EE1C271FD2CE52C90910EEE26B039E4F867768233052C3E29A25BD7FFCAC4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\canonical_delete_faults_test.r01-to-r02.diff",
+      "copy": "author-code-r02/canonical_delete_faults_test.r01-to-r02.diff",
+      "role": "Rawls",
+      "sha256": "10781650CEB5B6704502170A68DF0C0C804B22B5F0EC2E5E3FDB14A01BE0457E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\canonical_user_delete_test.full-new.diff",
+      "copy": "author-code-r02/canonical_user_delete_test.full-new.diff",
+      "role": "Rawls",
+      "sha256": "CC445DC9ED91D50803F528C42C29A04A6F40E528676093F77A98117BB420DCD4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\canonical_user_delete_test.r01-to-r02.diff",
+      "copy": "author-code-r02/canonical_user_delete_test.r01-to-r02.diff",
+      "role": "Rawls",
+      "sha256": "FAA76BE628B78993C0443F650C2235AA23472FC401D73C45F7D3C6FD159FBDD6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\compile-only.raw.log",
+      "copy": "author-code-r02/compile-only.raw.log",
+      "role": "Rawls",
+      "sha256": "A0071F44C28F21C9CBD785C5B0BB08DBB3A1943D3E912C5DB1917E4A1B8B0168"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\go-list.raw.json",
+      "copy": "author-code-r02/go-list.raw.json",
+      "role": "Rawls",
+      "sha256": "97591477F3922FAAC6F48B896ACC322EBFE27B22798885235BFA80DB0FA56495"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\handoff.json",
+      "copy": "author-code-r02/handoff.json",
+      "role": "Rawls",
+      "sha256": "094C35CD7277E302466F102AB3B751C96B1AD855F93FC99E98165BDB8BF72889"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\leaf-plan.json",
+      "copy": "author-code-r02/leaf-plan.json",
+      "role": "Rawls",
+      "sha256": "7961638D519697A5CC7FDFEF8D82F38F18AFEA05785C89D12DE00EDFA74EB69B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\r01-source-before\\canonical_delete_faults_test.go",
+      "copy": "author-code-r02/r01-source-before/canonical_delete_faults_test.go.txt",
+      "role": "Rawls",
+      "sha256": "423E5D69C29E6C68E93205A1FE39FC665D8A54790B00967F827AC14E37E2A64E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\r01-source-before\\canonical_user_delete_test.go",
+      "copy": "author-code-r02/r01-source-before/canonical_user_delete_test.go.txt",
+      "role": "Rawls",
+      "sha256": "FBDB5072C520F4FD2E3238C0014DF1FC8361A680030DF375C4D2DEF69625E7CC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\source-before181.json",
+      "copy": "author-code-r02/source-before181.json",
+      "role": "Rawls",
+      "sha256": "E1393057A8D1CE8F91DE2F4D90C5B26186DD741D8E8AE8D77E906D456B704A5C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\source-beforeafter181.json",
+      "copy": "author-code-r02/source-beforeafter181.json",
+      "role": "Rawls",
+      "sha256": "28B2471D21FCDEC9435F10688E1D44A9F5B0321083BBC2B05E983AA54F2BF7FE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\static-raw-meta.json",
+      "copy": "author-code-r02/static-raw-meta.json",
+      "role": "Rawls",
+      "sha256": "C1976BFD2356C7ED4C6ECD614D2342685838E0A3BFAA48370D60EC2711F618E4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\tagged-list-final.raw.log",
+      "copy": "author-code-r02/tagged-list-final.raw.log",
+      "role": "Rawls",
+      "sha256": "3CF98F6E1EDDF22A0899A6AC4F623E3F2DF46A30C07E127CDB883137C2E72947"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\tagged-list.raw.log",
+      "copy": "author-code-r02/tagged-list.raw.log",
+      "role": "Rawls",
+      "sha256": "31254CF811AFDDF09E057A63D3055D5ACECC5BC8D344B951341D7EDA6C16114C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\author-code-r02\\worktree-status.raw.log",
+      "copy": "author-code-r02/worktree-status.raw.log",
+      "role": "Rawls",
+      "sha256": "6DAD1C3052D24A8F1DD8F77A65DC4B0D917A0CB0CFBBAFDBF31A9C6F6153DEF2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\source183-r02.flat.json",
+      "copy": "lead/source183-r02.flat.json",
+      "role": "Lead",
+      "sha256": "03594FB126EB3E2493A14876E33AE5C1475E2F66C908BDB3D484B6E61CCBB73E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\source183-r02.json",
+      "copy": "lead/source183-r02.json",
+      "role": "Lead",
+      "sha256": "634B16F9BB5EFE0860B90F27AE0718F3AEAEDBF04DC498F379EEC686436D327E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\source183-r02.overlay.json",
+      "copy": "lead/source183-r02.overlay.json",
+      "role": "Lead",
+      "sha256": "68AC1D8F7FE84BEE094C984A447B6D8F97305C22D8D74C71DBA8E4040527232B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\freeze183-r02.json",
+      "copy": "lead/freeze183-r02.json",
+      "role": "Lead",
+      "sha256": "DFA4E5CF7A87E92B01063B6FA58EA943AB434DEDA053A124A1E0BF4F5D977162"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\required-runtime-nodes-r02.json",
+      "copy": "lead/required-runtime-nodes-r02.json",
+      "role": "Lead",
+      "sha256": "A289FB62D5AB4738A17318454572F88A3191CB09477DF19402EA82114AF64FE6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\fixed183-r02\\test\\integration\\crossmodule\\canonical_delete_faults_test.go",
+      "copy": "final/test/integration/crossmodule/canonical_delete_faults_test.go.txt",
+      "role": "Rawls",
+      "sha256": "AADA00B5314FD6CE312B84547E9DF20FEDE09CA97432A8822A0EA68264F8BF99"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\fixed183-r02\\test\\integration\\crossmodule\\canonical_user_delete_test.go",
+      "copy": "final/test/integration/crossmodule/canonical_user_delete_test.go.txt",
+      "role": "Rawls",
+      "sha256": "2C88891DCD6F2E7F2B1B256492679FC6F4341F2F0816451D38E5841E3FE9FA20"
+    }
+  ],
+  "shared_source_bindings": [
+    {
+      "input": "cmd/han-server/database_config.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/database_config.go.txt",
+      "sha256": "EF8C1077C58B2E240FE3424D775DA95446A38080B72E41E548F9AB62518CC2DB"
+    },
+    {
+      "input": "cmd/han-server/database_config_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/database_config_test.go.txt",
+      "sha256": "563EE0394521E23254D3A37EF1E2093650CE1E044007000FCFA15E636FAE5674"
+    },
+    {
+      "input": "cmd/han-server/http_config.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/http_config.go.txt",
+      "sha256": "A5F74D7CCA33C6681E8ACE4D90E072EBE87D73CF752F127F70BDC23AE0CFB297"
+    },
+    {
+      "input": "cmd/han-server/http_config_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/http_config_test.go.txt",
+      "sha256": "5C6E9C2A12EE16DCB2AE1B759DB776E80C2BAC8B1236B099E6402BF48963030F"
+    },
+    {
+      "input": "cmd/han-server/lifecycle.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/lifecycle.go.txt",
+      "sha256": "8F1FE0EFEEF230BED7EFDB02D93190415C072DD6F6CC3EE5EC80E4AAAFB62BEB"
+    },
+    {
+      "input": "cmd/han-server/lifecycle_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/lifecycle_test.go.txt",
+      "sha256": "662A2693547A687F33BEEAD581B937023F9525306B375F773D15FD4F1228FBB6"
+    },
+    {
+      "input": "cmd/han-server/main.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/main.go.txt",
+      "sha256": "6B45B5509A2D01C9F5DF0393CA00CAD5C8430353B5F849BF6E71BA3A47C52AC4"
+    },
+    {
+      "input": "cmd/han-server/main_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/cmd/han-server/main_test.go.txt",
+      "sha256": "B53DD34D57AD6A2797E9FC080FD90034FC52CB26675686CB075D3153F193A9BC"
+    },
+    {
+      "input": "go.mod",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/go.mod",
+      "sha256": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090"
+    },
+    {
+      "input": "go.sum",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/go.sum",
+      "sha256": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+    },
+    {
+      "input": "internal/article/admin_delete_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/admin_delete_test.go.txt",
+      "sha256": "3ADEB5C7BC7E64239C8574BDD8CB9A41060E04289F043C1C0B3D3DA2311905CA"
+    },
+    {
+      "input": "internal/article/admin_query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/admin_query_test.go.txt",
+      "sha256": "DBAF93B7600831D61DC74804D82905CAE0719014357A9107321DFCD8C3EF3F61"
+    },
+    {
+      "input": "internal/article/article_port.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/article_port.go.txt",
+      "sha256": "215A224CF416D81FA217F7524EDEEA671A25AC1110BA0147CC1D1BD6315CE044"
+    },
+    {
+      "input": "internal/article/author_projection_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/author_projection_test.go.txt",
+      "sha256": "47314C84B79B53A6476F91A6F728CBC521CD78DE36AF61D68DA7298C1B0192F7"
+    },
+    {
+      "input": "internal/article/backup_inventory.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/backup_inventory.go.txt",
+      "sha256": "B247DB0CC10723EB1D4464F59A9D543C6421AE296E7AADFF21A440F61C90B7EF"
+    },
+    {
+      "input": "internal/article/backup_inventory_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/backup_inventory_test.go.txt",
+      "sha256": "7260756A356795C913AAB391E8CF19F9C53EB779585D81DEB6C8A20BF6049B12"
+    },
+    {
+      "input": "internal/article/command_service.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/command_service.go.txt",
+      "sha256": "585BB51D19B3FCD7BFDC9C84465D2BB5D24F41BD8285553FC20BC10B161B4D68"
+    },
+    {
+      "input": "internal/article/create_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/create_test.go.txt",
+      "sha256": "90F0A53153A42CDAE4A8669606259C033089FDCB54E8010F4BC3D6FDE4D0535F"
+    },
+    {
+      "input": "internal/article/cursor_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/cursor_test.go.txt",
+      "sha256": "D73AB43280EC69FF9A2B2415ED48137157E092870D367F7C31FD96A0AA5514A8"
+    },
+    {
+      "input": "internal/article/deletion_coordinator.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_coordinator.go.txt",
+      "sha256": "6EEA01FB40FBD6B237B4E02600122708404EE1AF59626971D4CE40D72DB98481"
+    },
+    {
+      "input": "internal/article/deletion_filelock_flock.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_filelock_flock.go.txt",
+      "sha256": "C72AC42EAF78B279CB774C79B9024A7E330C1FCCE2D40D912782E5B0B50A5C96"
+    },
+    {
+      "input": "internal/article/deletion_filelock_unsupported.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_filelock_unsupported.go.txt",
+      "sha256": "BF140294B11D068B2971DFEFF4D3598FFAEC591FCF1F5BE0435640370C5FEB8B"
+    },
+    {
+      "input": "internal/article/deletion_finalizer.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_finalizer.go.txt",
+      "sha256": "546C69B7CC363453F6A4E866D4E3B1B68D9E6B611463159EDE69ACEC0D9B8750"
+    },
+    {
+      "input": "internal/article/deletion_journal.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_journal.go.txt",
+      "sha256": "0A3F2AE9AEADDDB85C62A1F7CA1BD284AACF149DA0D5ED02184F1E30F0EB4333"
+    },
+    {
+      "input": "internal/article/deletion_replay.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay.go.txt",
+      "sha256": "E5054A45B65D4D6C98F2855067A4DAD56DDDFA24FC6A1423429C458A79DB14D7"
+    },
+    {
+      "input": "internal/article/deletion_replay_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_integration_test.go.txt",
+      "sha256": "836799C0CB90251A06B3E63EE077703FB7DF98876C4FC3CC0C59C093150887B4"
+    },
+    {
+      "input": "internal/article/deletion_replay_source.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_source.go.txt",
+      "sha256": "E5586AFA43011072AAAE84F982A35BA0DA08A0D9E40B9588CBA6F36A4C5268CC"
+    },
+    {
+      "input": "internal/article/deletion_replay_source_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_source_test.go.txt",
+      "sha256": "8FB2A4B1C8FC8B54710D24A8305D8C283B9E50091F560F336EF7E2A1228A4F1C"
+    },
+    {
+      "input": "internal/article/deletion_replay_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/deletion_replay_test.go.txt",
+      "sha256": "4C122C4D3CDC9D6F5E2D1E5E51B084B28C6ECF7AC70FA4FEDC7C14D39CC9D558"
+    },
+    {
+      "input": "internal/article/deletion_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_test.go.txt",
+      "sha256": "6D04CD35F0049E64FFEC6954B53EF0AB75256BF97C156E331BB5B019E87EA9C6"
+    },
+    {
+      "input": "internal/article/deletion_worker.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_worker.go.txt",
+      "sha256": "9E6BDD23089B41A3870DB0A35420589DD2210972C0610A43184D6E7C60F6612D"
+    },
+    {
+      "input": "internal/article/deletion_worker_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/deletion_worker_test.go.txt",
+      "sha256": "444C304EFFE624B65345C138C9BF75964AEFA9C52E6293341961DAAF59E107CA"
+    },
+    {
+      "input": "internal/article/etag_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/etag_test.go.txt",
+      "sha256": "5135568F014CE4D1420ACC5A7DA8F6CED1F3A18318549C03FFD3D0FAAFB6652E"
+    },
+    {
+      "input": "internal/article/handler.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/handler.go.txt",
+      "sha256": "C684B4C874083035C1BC6B1F22DF81833D8DF490544E8586719C028B203D3750"
+    },
+    {
+      "input": "internal/article/model.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/model.go.txt",
+      "sha256": "42B2BEEEAC0B4CB3B6E2138314956F2D1FCBD0E32D6E7B32BB2352C656E8851D"
+    },
+    {
+      "input": "internal/article/moderation_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/moderation_test.go.txt",
+      "sha256": "8094598605B8C8EB5AA5940A70BD2E3B03D3C3C3CEB3C0A81BAEB1C451933779"
+    },
+    {
+      "input": "internal/article/notice_dispatcher.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/notice_dispatcher.go.txt",
+      "sha256": "C49CF9D7C78E5DC99E2177B6F760BE5B191D2120F3FC47DBBE8A7BEF93BFFB97"
+    },
+    {
+      "input": "internal/article/notice_dispatcher_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/notice_dispatcher_test.go.txt",
+      "sha256": "7761947F288890CCC66125E7C5B0DF153F3568C72C7EF05ED9291A702F9D8ADD"
+    },
+    {
+      "input": "internal/article/orphan_canonical_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/orphan_canonical_test.go.txt",
+      "sha256": "9F7CFD3424450D74C30E1F039D4E0154C20BA03B715EE9539DBDDF82678D5D70"
+    },
+    {
+      "input": "internal/article/orphan_disposition_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/orphan_disposition_test.go.txt",
+      "sha256": "301A40FED868BFAB85D80C84888399DAAAF3B22E8CBBFBD7C754FC3B6E5265DE"
+    },
+    {
+      "input": "internal/article/policy.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/policy.go.txt",
+      "sha256": "6CD1543BC2E715F76EE7B6C5CDDDB3153A9A425B84C55A366648E600B78C8774"
+    },
+    {
+      "input": "internal/article/policy_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/policy_test.go.txt",
+      "sha256": "B67C708416E4CCBD988EBF43BAED45484177B6B6BCD54988E8EDE1461D7BB47E"
+    },
+    {
+      "input": "internal/article/query_service.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/query_service.go.txt",
+      "sha256": "D3151AC329C8C9EB8A1B8E00FF45A58CC467E06E1C9A00F9A63830048C0108B4"
+    },
+    {
+      "input": "internal/article/query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/query_test.go.txt",
+      "sha256": "DF40F63117A0C8F7569A255EABBF9DD95F81CA86FBAE17F88EE93A8F78A0C53E"
+    },
+    {
+      "input": "internal/article/replay_evidence.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/replay_evidence.go.txt",
+      "sha256": "ABFD682F1E068259172767DD2E0B00BA0D9B970AE899D0BB4FC0327390F15D99"
+    },
+    {
+      "input": "internal/article/replay_status_v1.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/replay_status_v1.go.txt",
+      "sha256": "CBC6EF89E28C23ADA950C3878A00A75F475AB163A181373FEB441503AC36D303"
+    },
+    {
+      "input": "internal/article/replay_status_v1_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/internal/article/replay_status_v1_test.go.txt",
+      "sha256": "A787C956DBBDBA7D5D306584501E37CCCD757DDAE8EE164DB1B8CE4BA6F65FA0"
+    },
+    {
+      "input": "internal/article/repository.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/repository.go.txt",
+      "sha256": "80529712F7D62ACD4A5A976621FF1E7AB11069D11CDE2D73B5050CDCA58758F8"
+    },
+    {
+      "input": "internal/article/repository_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/repository_integration_test.go.txt",
+      "sha256": "3A15B7635D97D66AB4DE5CE69155C37E414F75BC3DBB0AD4F14D869019A0DCF4"
+    },
+    {
+      "input": "internal/article/update_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/article/update_test.go.txt",
+      "sha256": "D6EF18BF78C12DC438C03CDC05C6DEAF4D6CF6157718BFF92C0DA4EF29366EAA"
+    },
+    {
+      "input": "internal/audit/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/audit/store.go.txt",
+      "sha256": "091219E0FD2298C43474A7152C8300EB5CEFD5565C1F08D78DDD1E1387C5C24F"
+    },
+    {
+      "input": "internal/audit/store_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/audit/store_integration_test.go.txt",
+      "sha256": "4A3CC84CE6B620724692D696B705D74BC39C8E1EB28F044EDD136E166FF6138C"
+    },
+    {
+      "input": "internal/idempotency/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/idempotency/store.go.txt",
+      "sha256": "AA0483969B12B058B42DB70A9763501B60ED055AFB91E5ECD6AA7F5C45FDD657"
+    },
+    {
+      "input": "internal/idempotency/store_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/idempotency/store_integration_test.go.txt",
+      "sha256": "BAE146223ABADF5E3884962E2BDD119AE46964D694B3BE4A38B331DAA956CD5A"
+    },
+    {
+      "input": "internal/idempotency/store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/idempotency/store_test.go.txt",
+      "sha256": "3A6EF9313839ED19BE28D4FB635C016DF51F6C58213DDAE88D93A2A65CC49BE7"
+    },
+    {
+      "input": "internal/identity/account_status.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/account_status.go.txt",
+      "sha256": "C03B8D155580CECE26707863D24062FC54B6C3707F2C006F38C3DAB408C00FA0"
+    },
+    {
+      "input": "internal/identity/account_status_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/account_status_test.go.txt",
+      "sha256": "5E349230E58FE6F8EF1C899559B10DB9AD47050D9BD54660EA31B65599F26CCA"
+    },
+    {
+      "input": "internal/identity/administrator_create.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_create.go.txt",
+      "sha256": "DD1D1DA23CB9D9E13E3200E09867B2A2C2F6BCBF06894C46074F60AC94D75813"
+    },
+    {
+      "input": "internal/identity/administrator_create_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_create_test.go.txt",
+      "sha256": "AC9FE098FA3F1F09FA4944BB5BD7653BF375B23C08ED1E63F13DCEE45683EEAE"
+    },
+    {
+      "input": "internal/identity/administrator_governance.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_governance.go.txt",
+      "sha256": "DC43A60525D1A4B7E40587A40EB5EE85183FE4E46F79FE13020DA48AB0C5DBA3"
+    },
+    {
+      "input": "internal/identity/administrator_governance_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/administrator_governance_test.go.txt",
+      "sha256": "E64924FF592F1CA25F5158BB248A47530DF1C59E2AB5960B79F6C09C4902A122"
+    },
+    {
+      "input": "internal/identity/article_disposition.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_disposition.go.txt",
+      "sha256": "EB053611CE9346A9A51C0485DD9AE1003EA99C57AF0A3842A4621D67ECE04593"
+    },
+    {
+      "input": "internal/identity/article_disposition_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_disposition_test.go.txt",
+      "sha256": "A92E8C4D65C76361094B472F35BEDEAB77F15C2FC5E0ECA54854BCDDC640EDF4"
+    },
+    {
+      "input": "internal/identity/article_port.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_port.go.txt",
+      "sha256": "F12DB7648F36CD530879434A9B0D0E4231E955253614ADFA5F3999AF40A1ED10"
+    },
+    {
+      "input": "internal/identity/article_reader.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_reader.go.txt",
+      "sha256": "D9315AFA411CB8C4612459C8E97979BD2274780A7B7B32D78F3AB735C3F82B6B"
+    },
+    {
+      "input": "internal/identity/article_reader_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/article_reader_test.go.txt",
+      "sha256": "C6D2B246236D24FC27C9E2C66413DE03999EA98D61CD61B2054D0152206C28AC"
+    },
+    {
+      "input": "internal/identity/bootstrap.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/bootstrap.go.txt",
+      "sha256": "AEF53946AB8C55A3CC03DAE03DC1CD0E42BE12553D9619D45C7F491F154CAAA5"
+    },
+    {
+      "input": "internal/identity/bootstrap_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/bootstrap_test.go.txt",
+      "sha256": "C33C31A22C32DA0FFE57099C37C3E6EE4826F4F082359F2B7A7E2B1CB43E2B45"
+    },
+    {
+      "input": "internal/identity/cursor.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/cursor.go.txt",
+      "sha256": "E0514475A7ECA31E24A8092A51D2F814DCCB112F7D2022A3D903E2AA5A1A6FFD"
+    },
+    {
+      "input": "internal/identity/cursor_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/cursor_test.go.txt",
+      "sha256": "4F5D647E2EA29CC4D4EB2B837178895FD40E9F24E85D4976BC71BC9C26C4864D"
+    },
+    {
+      "input": "internal/identity/deletion.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/deletion.go.txt",
+      "sha256": "119D378C3508A790FFC6E7371C5AFC0D8CE100A33C2F47AFACD305F7683A2721"
+    },
+    {
+      "input": "internal/identity/deletion_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/deletion_test.go.txt",
+      "sha256": "2F5975867E74EC6B6E8A0AD1DFD128382EC5123FB308A7924A5B6D4294ED6687"
+    },
+    {
+      "input": "internal/identity/handler.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/handler.go.txt",
+      "sha256": "EC4533A6CAA6819255BF9FC7D19EEE3AEEAA90B9E3A9128A5D24B5017D1F1EA3"
+    },
+    {
+      "input": "internal/identity/handler_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/handler_test.go.txt",
+      "sha256": "7A32FEF8C9C94489D8D8E055C6B5ACEB7E2EA0304BCF028BDE0CF1D0BCA6373F"
+    },
+    {
+      "input": "internal/identity/login.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/login.go.txt",
+      "sha256": "FDB1ED13FB499A1219AE24884F053A3626567BB81CAAB56EC02B1FC197B6864C"
+    },
+    {
+      "input": "internal/identity/login_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/login_integration_test.go.txt",
+      "sha256": "15C28D7BA7EE39499D970E8C7AE53F7CE28A1A450D2530FD7697BF8BE4D407BA"
+    },
+    {
+      "input": "internal/identity/login_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/login_test.go.txt",
+      "sha256": "FB5483FB93649F9B01B060D54F35B5CC7B7A3305704D19DFCA445A2C7400414F"
+    },
+    {
+      "input": "internal/identity/model.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/model.go.txt",
+      "sha256": "4D17E1DBC264C69BAFE3330619098F0C57AD703EC5EA5E611BCE8E2BB548B5C7"
+    },
+    {
+      "input": "internal/identity/password_reset.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset.go.txt",
+      "sha256": "5F2D0E1B534E1A4F47AF25675FB94AA3B2830A01C408F6C615E41FAB74A81575"
+    },
+    {
+      "input": "internal/identity/password_reset_operator.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_operator.go.txt",
+      "sha256": "4DC973ECB2272E07083884224A898D0C7C38E4CFEE8B03E44DA14E9D9F951F42"
+    },
+    {
+      "input": "internal/identity/password_reset_operator_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_operator_test.go.txt",
+      "sha256": "9463D7B8B098A21BA3F68BDB190CFCF51C6FA47038BA0BD8A7E7505ADD210E02"
+    },
+    {
+      "input": "internal/identity/password_reset_store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_store.go.txt",
+      "sha256": "D1CB46D5BF038FCB8A7908FF06BA5FDAD6CB31903DCC66D9DBBF286D54D1FB62"
+    },
+    {
+      "input": "internal/identity/password_reset_store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_store_test.go.txt",
+      "sha256": "CEE5617805058F9204FF5F45DC0F03B90A006C1CC987CF2C52A3BDDFD69BC777"
+    },
+    {
+      "input": "internal/identity/password_reset_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_test.go.txt",
+      "sha256": "59AAC51742A61ADD318D8ADE5527231D4D5A198790687B101A35A5A843666E2A"
+    },
+    {
+      "input": "internal/identity/password_reset_worker.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_worker.go.txt",
+      "sha256": "9BF1A9B1230004422E9ABC563329C9C7E44BB48CC1E1452CB5DF18E20D704C90"
+    },
+    {
+      "input": "internal/identity/password_reset_worker_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/password_reset_worker_test.go.txt",
+      "sha256": "DC6544C4390CC36FC93ED4B66D530E2E0FBC067A7C733FFF6692944CBC4801CD"
+    },
+    {
+      "input": "internal/identity/query.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/query.go.txt",
+      "sha256": "534E6E362431B669D271D689365161F95E843D9838D2DA03398F51806DD2C407"
+    },
+    {
+      "input": "internal/identity/query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/query_test.go.txt",
+      "sha256": "786B1A3ED94CC0DA5AF9B004250DE74FED67C92108436A0E18F1B6E7CF6886E9"
+    },
+    {
+      "input": "internal/identity/recovery_run_store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/recovery_run_store.go.txt",
+      "sha256": "519D7E98A4908A7AC4EF10C91D990575C4C8B3D3B621B4B69E6BD7589E722056"
+    },
+    {
+      "input": "internal/identity/recovery_run_store_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/recovery_run_store_integration_test.go.txt",
+      "sha256": "8EF68B57BC1CB0F459AD11BA7C0EDB2D42DAD8A25319FD8CB6C9DF56F8E43E4B"
+    },
+    {
+      "input": "internal/identity/registration.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/registration.go.txt",
+      "sha256": "29E8ED1208273E47C0D0393799E5365B49DFA70B6B42E56254CAA077A9442F0A"
+    },
+    {
+      "input": "internal/identity/registration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/registration_test.go.txt",
+      "sha256": "5EEC3977E99AEA9072B5C4E3CBA0BC7DF922C0D9880C876639FD288C42663B21"
+    },
+    {
+      "input": "internal/identity/repository.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/repository.go.txt",
+      "sha256": "9FC7F99D58E432E1807DE06C6B705A00CC736F99141EC3F95AF234EBA44DACE3"
+    },
+    {
+      "input": "internal/identity/repository_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/repository_integration_test.go.txt",
+      "sha256": "89E6284C41937C13BC2EECBFD509061A0FB5D7DB04EE0DC1E303C65F36A6B8EA"
+    },
+    {
+      "input": "internal/identity/service.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/service.go.txt",
+      "sha256": "7E5064E40447A35EFC4F6537ED845E6EBD4A7199169208302B63C5905643C70D"
+    },
+    {
+      "input": "internal/identity/temporary_credential.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential.go.txt",
+      "sha256": "66F11A1BD5E390D996C440BF21126AB8740356C43A4CDA49DD2FE16B66B23DF5"
+    },
+    {
+      "input": "internal/identity/temporary_credential_resend.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential_resend.go.txt",
+      "sha256": "EF7F9CBC121A18040BAA937E9217C53CE961C7072166019AB6863B4B1E9AD50C"
+    },
+    {
+      "input": "internal/identity/temporary_credential_resend_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential_resend_test.go.txt",
+      "sha256": "592D00E1CC28FE81B3E2362A4461654D60C1142A5B99A9DBC13D4DD252CD5465"
+    },
+    {
+      "input": "internal/identity/temporary_credential_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/identity/temporary_credential_test.go.txt",
+      "sha256": "659199B79A481A04DF414DFDC30C5B616455BD4466FA471FA8D92BC2BDA6279D"
+    },
+    {
+      "input": "internal/mailer/mailer.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/mailer/mailer.go.txt",
+      "sha256": "A2F103D6AF3664288D0C4F460EC5733E33FA6461FB8554A189FBC3194C5B4D0D"
+    },
+    {
+      "input": "internal/mailer/smtp.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/mailer/smtp.go.txt",
+      "sha256": "28237089CE76B353CC01D36847378CF4775AA9281210175AAC59905DCC192853"
+    },
+    {
+      "input": "internal/mailer/smtp_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/mailer/smtp_test.go.txt",
+      "sha256": "9833F766F24CEA8067D9A2C46BB13C01DF2568DE5A7EA998675318EDCA2B964E"
+    },
+    {
+      "input": "internal/migration/runner.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/runner.go.txt",
+      "sha256": "DD473A94D645EAAFA04FC2E812EF1462B1E92CD0CC431E52F48C6F6EBB87924D"
+    },
+    {
+      "input": "internal/migration/runner_integration_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/runner_integration_test.go.txt",
+      "sha256": "A6925A4A42BD0D29EF1210BA578B485458ADC51A3B39A037160D46F3A2EC800F"
+    },
+    {
+      "input": "internal/migration/runner_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/runner_test.go.txt",
+      "sha256": "769F08C0FB1F1DF58523765DF1EF825365A28861C32EB4D9E5705AD7EBD395E8"
+    },
+    {
+      "input": "internal/migration/sqlcheck.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/sqlcheck.go.txt",
+      "sha256": "C99977348271D1F7A0589992B3E6937C823F928CB21B9D9D49A6BBB0589A4F7A"
+    },
+    {
+      "input": "internal/migration/sqlcheck_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/sqlcheck_test.go.txt",
+      "sha256": "232E5CA353D2C4D7E46EDAFA9D81885E22FFD1497BA452819C70FB0274B426A8"
+    },
+    {
+      "input": "internal/migration/testdata/0001_create_probe.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/testdata/0001_create_probe.sql.txt",
+      "sha256": "1F45C267195BA60362D41FC8113DEECCA377B0E9B1B549107E03D019EA35BE04"
+    },
+    {
+      "input": "internal/migration/testdata/0002_fail_probe.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/testdata/0002_fail_probe.sql.txt",
+      "sha256": "465E611EC7CDF196B68AAF8A964FF7DF1F0BCD83909AA1672F1887A614111E45"
+    },
+    {
+      "input": "internal/migration/testdata/0003_after_failure.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/migration/testdata/0003_after_failure.sql.txt",
+      "sha256": "C5FE526E68546A77DD638DFC228118DEFF69582AC6D375F7D17901DE5624DA7F"
+    },
+    {
+      "input": "internal/platform/config.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/config.go.txt",
+      "sha256": "3F5E28FE3404DC970374F39F16556C91E28AA9DBEC30E662109EFD58B8F866B0"
+    },
+    {
+      "input": "internal/platform/config_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/config_test.go.txt",
+      "sha256": "3A1DD70ECC3209A782CDD01C8F61E7AC941D15555450332B37298C9421950A46"
+    },
+    {
+      "input": "internal/platform/errors.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/errors.go.txt",
+      "sha256": "99B1094A6C15A6E86E45B43928F8AC1B4F3A4EE810857BE598E9AA4336D968E3"
+    },
+    {
+      "input": "internal/platform/errors_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/errors_test.go.txt",
+      "sha256": "5C8CEA67B738BE1AA11FB4AE206907604BEE7CC2CC0C646891CF4EF35A6D9237"
+    },
+    {
+      "input": "internal/platform/http.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/http.go.txt",
+      "sha256": "0890069CB559C7B8454A242B46736FC23D542B0D45E350B0D035C7012BB710C4"
+    },
+    {
+      "input": "internal/platform/http_security.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/http_security.go.txt",
+      "sha256": "3676B4C64BCF115C43845DC69D77F6875F3A7BBCD67DA6A91920B84594C3CFDA"
+    },
+    {
+      "input": "internal/platform/http_security_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/http_security_test.go.txt",
+      "sha256": "BF3DCEC73440B687ED2A1C68F2B30D0FCEA52A6BF9AF8300E82449B8499E5002"
+    },
+    {
+      "input": "internal/platform/logging.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/logging.go.txt",
+      "sha256": "F362D36954DF0119D5DC25040640C796069CC8E178A1D92B828C6D6149CF30A9"
+    },
+    {
+      "input": "internal/platform/metrics.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/metrics.go.txt",
+      "sha256": "517B232D76C877FF335354E95668EC1D84B84385C017FCD45A4C046C6E4BC33A"
+    },
+    {
+      "input": "internal/platform/metrics_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/platform/metrics_test.go.txt",
+      "sha256": "FE97076376DBBABAA5B256BEFB92DAB527372AA652500F25EE0246B0D572EFB4"
+    },
+    {
+      "input": "internal/privacy/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/privacy/store.go.txt",
+      "sha256": "6E555D74E5210EA20CE0C33DB08DA40CD6BA4B7D1549B9A8031E0F4D82EEDD9D"
+    },
+    {
+      "input": "internal/privacy/store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/privacy/store_test.go.txt",
+      "sha256": "FE8D9C0DDD27ECEB6AF7EF7D03CA05A6FCE64F6061957C41B1F7246E03F48F70"
+    },
+    {
+      "input": "internal/recovery/coordinator.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/coordinator.go.txt",
+      "sha256": "6CBFF5B71D99CDCAC65751A446C4FB27267C76D651D6B46AD561684DCD0825A4"
+    },
+    {
+      "input": "internal/recovery/filelock_flock.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/filelock_flock.go.txt",
+      "sha256": "8C5666102271855F72C11A69478240DF7A690A608883E012BC4624E89424AE9B"
+    },
+    {
+      "input": "internal/recovery/filelock_flock_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/filelock_flock_test.go.txt",
+      "sha256": "EB528CD975C3177175B98D42E0F4B2C61B1297344D9BD2050425FA3952B19FCE"
+    },
+    {
+      "input": "internal/recovery/filelock_unsupported.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/filelock_unsupported.go.txt",
+      "sha256": "6C35F9C189EB09DF9DF52DAE609A7EA8BFDDEB167FA3E3CAD8B51D448ECCF17C"
+    },
+    {
+      "input": "internal/recovery/journal.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/journal.go.txt",
+      "sha256": "D61D5EA8E5C447B584E6C27CA60791D1266DF78E844E662DD51377832DC2B893"
+    },
+    {
+      "input": "internal/recovery/journal_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/journal_test.go.txt",
+      "sha256": "7521070A79788AE108095C8D55C0550DD74B163AF8C3CD1E8C896299B1A1A505"
+    },
+    {
+      "input": "internal/recovery/journal_windows_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/journal_windows_test.go.txt",
+      "sha256": "F2AE7CB58E2344196D66494DBCEC154B5F260FDAFB1F73FFBCF731F866D3B598"
+    },
+    {
+      "input": "internal/recovery/keyring.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/keyring.go.txt",
+      "sha256": "DDB9B972F83E9CA7A2CEBCB19745179C5BBFF9FCC1D8A29BBB80C62FBE45DEBF"
+    },
+    {
+      "input": "internal/recovery/replay_status_v1.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/replay_status_v1.go.txt",
+      "sha256": "2F2FFA4B7357D9E7D63B2F923B9F212D89CED112EB88E0B453D3C5E8E41FDA82"
+    },
+    {
+      "input": "internal/recovery/replay_status_v1_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/recovery/replay_status_v1_test.go.txt",
+      "sha256": "E174499CD4828A429E8FFBAA227FE6C1148F84C778A074A022D3AB593C0A3B9E"
+    },
+    {
+      "input": "internal/security/argon2.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/argon2.go.txt",
+      "sha256": "BF6B6E63D315832001A010C77FCBA2341C2E1FDBEA1E0D6471B15BC3B3D406B7"
+    },
+    {
+      "input": "internal/security/argon2_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/argon2_test.go.txt",
+      "sha256": "BEE56CE85531BDAC700B9B5A1A8E6A88CAAA48102BADD6708D8E00CB35257A33"
+    },
+    {
+      "input": "internal/security/password.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/password.go.txt",
+      "sha256": "59F3E886F7D8DD7409DEF141EB00415E6976B72C3F4450685E2F786E87259507"
+    },
+    {
+      "input": "internal/security/password_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/security/password_test.go.txt",
+      "sha256": "2CFF86C6DA9D1F9D9B046E9A0544FFE8B9350BECAF4892F98915651CA06002C7"
+    },
+    {
+      "input": "internal/session/store.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/session/store.go.txt",
+      "sha256": "4B12462E29D46B730F0DD58E6A0BAA57EC1D91B99D9F43FC91179319FF88E679"
+    },
+    {
+      "input": "internal/session/store_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/session/store_test.go.txt",
+      "sha256": "3D32E65D407F24211355B642DAB3933F1AB36E10B60CAFC7F039B2F9B8201E09"
+    },
+    {
+      "input": "internal/testenv/env.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/testenv/env.go.txt",
+      "sha256": "5E5763F31CB24A90E7975A0CF60CEABA01506E56155C4D51D4B3A6781D965630"
+    },
+    {
+      "input": "internal/testenv/env_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/internal/testenv/env_test.go.txt",
+      "sha256": "3F2916C6BE32AF0880AE4578BA2B62A474BA558F2676B6F26E22DA7CB7EE08DF"
+    },
+    {
+      "input": "migrations/0001_shared.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0001_shared.sql.txt",
+      "sha256": "CEE72F1470B49185B3B33C7655F792ADFFCBC1E030AF6669E0902775104B7A14"
+    },
+    {
+      "input": "migrations/0002_identity.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0002_identity.sql.txt",
+      "sha256": "F4EC1005EA72B1774DF5E370C5ABA57CA3ED7A0B13099DBBE2D16AA66AEB9D50"
+    },
+    {
+      "input": "migrations/0003_article.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0003_article.sql.txt",
+      "sha256": "FCAECE696DCE29D2F8D252EA36C4550F0C1736347E921F40703540B99E100D4A"
+    },
+    {
+      "input": "migrations/0004_idempotency.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0004_idempotency.sql.txt",
+      "sha256": "4794816AC2FDA4AD12522F2F324448A6F9EFB2E9E39677A595400E68148424A9"
+    },
+    {
+      "input": "migrations/0005_recovery_runs.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0005_recovery_runs.sql.txt",
+      "sha256": "66CA82109FF33BE7E4A3B349FE55A8CB88CBBF608939B8D7C5C12B06EDBDEC27"
+    },
+    {
+      "input": "migrations/0006_user_governance_indexes.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0006_user_governance_indexes.sql.txt",
+      "sha256": "6F93D99F6DFA0DE46DF8D891F8979039F679493932C28326EEB2AF28E2F24660"
+    },
+    {
+      "input": "migrations/0007_idempotency_response_snapshot_v1.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0007_idempotency_response_snapshot_v1.sql.txt",
+      "sha256": "9D3E642D4F5C5DE81113E23AEBD70E2E07BF583E140697D335DB4DDA35F01F9F"
+    },
+    {
+      "input": "migrations/0008_password_reset_durable.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0008_password_reset_durable.sql.txt",
+      "sha256": "37FB3077709462D62C763FE87D4E04B4BDA4CFC498C14C2860B27429D5036980"
+    },
+    {
+      "input": "migrations/0009_article_replay_attempt.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/0009_article_replay_attempt.sql.txt",
+      "sha256": "4E10F50108A57D709C866044DE6678A00E11A4D6ACB589E708C7DC3779A9AA1D"
+    },
+    {
+      "input": "migrations/README.md",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/migrations/README.md",
+      "sha256": "DE436F62118EA74F48F15391BFC9AD5EAFC0EA6C557F89A4923E84AE72F15D73"
+    },
+    {
+      "input": "test/contract/article/internal_ports_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/article/internal_ports_test.go.txt",
+      "sha256": "DC6791D4793ABE67FE17B83736FC77E55C347859B13A4FB5071E6AC51BF64F25"
+    },
+    {
+      "input": "test/contract/article/projection_contract_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/article/projection_contract_test.go.txt",
+      "sha256": "D7585EE66538EECA4364BF01CC2BE3A4AC69D98C9818560D6533457E8A572033"
+    },
+    {
+      "input": "test/contract/article/replay_status_producer_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/repair-nine-r01/after9/test/contract/article/replay_status_producer_test.go.txt",
+      "sha256": "6EB4A677F6D5A4C6DA8B6B219A98C8BD4BC5026C5A3B428F73DE6D61D6C13957"
+    },
+    {
+      "input": "test/contract/article/rest_contract_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/article/rest_contract_test.go.txt",
+      "sha256": "CEBA105C2CBF70B91CB5DFF93D9D4FC37077153A7EDB4F9C2806C29E650E9533"
+    },
+    {
+      "input": "test/contract/identity/internal_ports_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/identity/internal_ports_test.go.txt",
+      "sha256": "F749E7185D660CBFEC481CB5C83B30BA730003383354F622C6128123F12BBB1D"
+    },
+    {
+      "input": "test/contract/identity/replay_status_consumer_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/identity/replay_status_consumer_test.go.txt",
+      "sha256": "9E9495C24D3212ADB34AEC199D90650CF99FA1E59C035CEA6ABB7DEC32C49752"
+    },
+    {
+      "input": "test/contract/identity/rest_contract_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/contract/identity/rest_contract_test.go.txt",
+      "sha256": "86133EF48C35F704628100AE72C865D8526142791C3F7AE10FF1725230C994A5"
+    },
+    {
+      "input": "test/integration/article/admin_query_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/admin_query_test.go.txt",
+      "sha256": "3ADC5BFA00410F2BF7B520C0035E0089B6E24889770BF6BD1F283A7E5B798263"
+    },
+    {
+      "input": "test/integration/article/audit_insert_rollback_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/audit_insert_rollback_test.go.txt",
+      "sha256": "468964647524860CEEF0167EC56A9C0033FBB40CFF340A5021FBCE66F2C89CD5"
+    },
+    {
+      "input": "test/integration/article/etag_concurrency_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/etag_concurrency_test.go.txt",
+      "sha256": "C7EAA2D8D9FB315926CE80049E15B3E7932A290D8CCF58BC123E32F97527F2FA"
+    },
+    {
+      "input": "test/integration/article/notice_crash_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/notice_crash_test.go.txt",
+      "sha256": "D2A75075C439D512896EC038A9E0EF8263CA5C11866A3F86B12FDB2E8C705479"
+    },
+    {
+      "input": "test/integration/article/notice_dispatcher_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/notice_dispatcher_test.go.txt",
+      "sha256": "54C74D6A014F37B257AADFF6D25C34B9776E50890A5BADFAA660CB27D8C8CEC0"
+    },
+    {
+      "input": "test/integration/article/notice_smtp_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/notice_smtp_test.go.txt",
+      "sha256": "9E96006CD8036A00DCB577CCA5975CECB27931224B34AE4C0B3441693201CF48"
+    },
+    {
+      "input": "test/integration/article/pagination_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/pagination_test.go.txt",
+      "sha256": "13B6F1B3A2625AFB9240A07188F928A63E307B009FF17ACC879811E51A4A498F"
+    },
+    {
+      "input": "test/integration/article/postgres_state_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/article/postgres_state_test.go.txt",
+      "sha256": "A77E5214BC4257088C03164BC9801384B13DF848D9679BA7716FF9D1DA433FD0"
+    },
+    {
+      "input": "test/integration/identity/faults_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/faults_test.go.txt",
+      "sha256": "900F5CBE83F80DAE2BAEDEDF108DE94283F364FD0AFAD2372D0A4DC454DB1F63"
+    },
+    {
+      "input": "test/integration/identity/fixtures.sql",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/fixtures.sql.txt",
+      "sha256": "F6760020DE75F4E43FD758298FA7FFA2FA1E97B0ECA39543B28BB1469B9883BF"
+    },
+    {
+      "input": "test/integration/identity/orphan_disposition_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/orphan_disposition_test.go.txt",
+      "sha256": "7B38993E04D342F424C11C4D9E136DD3F06967D7E10A939C1103186F9B289D12"
+    },
+    {
+      "input": "test/integration/identity/postgres_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/postgres_test.go.txt",
+      "sha256": "C3A7F455C6AD40DC43557F578286CD53B1EB48A018DFAC699A43F152C0B9D1CB"
+    },
+    {
+      "input": "test/integration/identity/smtp_credentials_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/smtp_credentials_test.go.txt",
+      "sha256": "C9AED4062DB032DAE67A9F0AA683FC46184E91FBEA7386E6D68D473CE0F67EC1"
+    },
+    {
+      "input": "test/integration/identity/smtp_test_server.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/identity/smtp_test_server.go.txt",
+      "sha256": "FEFF245A580D7D848A780EB63C5AD1D0E2B13582ADDCC3BE6C9506C9F82DFB26"
+    },
+    {
+      "input": "test/integration/recovery/article_fixtures_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/recovery/article_fixtures_test.go.txt",
+      "sha256": "88FD408A466CAF208E780112F82B6EB82BCCDB58D5CB1E848C07B52DFDC3C4F6"
+    },
+    {
+      "input": "test/integration/recovery/article_replay_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/new-pg-code-r01/article_replay.final.go.txt",
+      "sha256": "B65FAE92A2AE95E291C8CB2CC136769E22209C4E888546CEDF43CC68727F659A"
+    },
+    {
+      "input": "test/integration/recovery/fixtures_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/test/integration/recovery/fixtures_test.go.txt",
+      "sha256": "0CD7471AD1574D05465CA3F29C8B967B631F520A2F3BA94E91BE5E346A485ACB"
+    },
+    {
+      "input": "testdata/contracts/article-deletion-replay/ready-v1.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/contracts/article-deletion-replay/ready-v1.json",
+      "sha256": "586A0B8F76ADE8B720E44094A0D13163C827D231AC9CBC786C6D4AF92E90F0F2"
+    },
+    {
+      "input": "testdata/contracts/article-deletion-replay/unavailable-v1.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/contracts/article-deletion-replay/unavailable-v1.json",
+      "sha256": "929193CD06BA566402F3F3C1D6321E57BDA95D0270DED666B5C951D97B21AC1B"
+    },
+    {
+      "input": "testdata/recovery/article-backup-inventory.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/article-backup-inventory.json",
+      "sha256": "1355094A5A6751E6E479F4769C9D6E41C993F2A054D23ACF948D3F7E5C4E9B8C"
+    },
+    {
+      "input": "testdata/recovery/article-deletion-fixtures.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/article-deletion-fixtures.json",
+      "sha256": "E86F32A1731E04F3B1590A87282F71F4332B488F2B6040E74AAF7F5876CF7D81"
+    },
+    {
+      "input": "testdata/recovery/backup-manifest.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/backup-manifest.json",
+      "sha256": "2F267BD497FC90D7B6D1B28F36F8E7B8B253F8E36153E5F50400BB2AC6DF856E"
+    },
+    {
+      "input": "testdata/recovery/keyring-fixtures.json",
+      "durable_path": ".spec/wip/article-management/evidence-s1.5/audit-sql-implementation-r01/author/fixed-inputs-179/testdata/recovery/keyring-fixtures.json",
+      "sha256": "CB398B9E736694FEC77AA21BB08E056933591774BB3842046E63D710DD9212F0"
+    },
+    {
+      "input": "test/integration/recovery/replay_evidence_test.go",
+      "durable_path": ".spec/wip/article-management/evidence-s4.4/evidence-followup-prep-r01/replay_evidence.final.go.txt",
+      "sha256": "BE6C689273783CFCB4939EE987397E09DB175B30506D9C0E49881FA8CE83A925"
+    },
+    {
+      "input": "test/integration/crossmodule/canonical_delete_faults_test.go",
+      "durable_path": ".spec/wip/identity-auth/evidence-s9.2/code-r02/final/test/integration/crossmodule/canonical_delete_faults_test.go.txt",
+      "sha256": "AADA00B5314FD6CE312B84547E9DF20FEDE09CA97432A8822A0EA68264F8BF99"
+    },
+    {
+      "input": "test/integration/crossmodule/canonical_user_delete_test.go",
+      "durable_path": ".spec/wip/identity-auth/evidence-s9.2/code-r02/final/test/integration/crossmodule/canonical_user_delete_test.go.txt",
+      "sha256": "2C88891DCD6F2E7F2B1B256492679FC6F4341F2F0816451D38E5841E3FE9FA20"
+    }
+  ],
+  "limits": "Compile failure transcript copies are not product RED; 64 leaves/76 nodes are static expectations, not runtime PASS; r02 fixes fixture fixed-verifier wiring and persists redacted SQL stages"
+}

@@ -1,0 +1,30 @@
+{
+  "owner": {
+    "role": "Main",
+    "nickname": "Main",
+    "runtime_id": "unknown-main-session-id"
+  },
+  "source_temp": "D:\\Temp\\han-b13f-lead-20261030-r01\\Main-final-Pspot-physical-r02",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-four-spots-physical-raw-r02/query.sql",
+      "source_name": "query.sql",
+      "bytes": 33961,
+      "sha256": "F1C150838807CF3AE6B8A0BD3DE933EB0ABE56856076CB177EDDC13A73887AEA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-four-spots-physical-raw-r02/stderr.log",
+      "source_name": "stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-four-spots-physical-raw-r02/stdout.log",
+      "source_name": "stdout.log",
+      "bytes": 155826,
+      "sha256": "457BEFC3571DF3A6887E85F8AF878C84BEA9ACD8245C2AA82C97900AE626975B"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

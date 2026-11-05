@@ -1,0 +1,126 @@
+{
+  "scope": "S1.5 real audit SQL start synchronization",
+  "captured_at": "2026-10-27T20:47:09.326718+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-g0-9af5740949da4bdfa45a746e1749e8be\\g0-plan.md",
+      "copy": "author/g0-plan.md",
+      "role": "Dalton",
+      "sha256": "9A01A91D9B657CF3837B0A028714437A39B26143E0ED02147943B6D5D38DD56B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-g0-9af5740949da4bdfa45a746e1749e8be\\actual-readset.json",
+      "copy": "author/actual-readset.json",
+      "role": "Dalton",
+      "sha256": "3B23C4E63B3E438A1A8AA547EABFF24139B47BB0889804ED60D5C313499A4EA5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-g0-9af5740949da4bdfa45a746e1749e8be\\ready-stopped.json",
+      "copy": "author/ready-stopped.json",
+      "role": "Dalton",
+      "sha256": "3F45DF19476648CB76A951A79CF591C3EB3A592CF03E9CCA4AB38A014224906A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-g0-9af5740949da4bdfa45a746e1749e8be\\source178-before.json",
+      "copy": "author/source178-before.json",
+      "role": "Dalton",
+      "sha256": "E88DC26D92259E3C147F644E27FDE4E4079899A3428B9A7D74FB8A16E70D470E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-g0-9af5740949da4bdfa45a746e1749e8be\\source178-after.json",
+      "copy": "author/source178-after.json",
+      "role": "Dalton",
+      "sha256": "1FADCAB3EE8159239B67CA25D49312CD2BB8AFE840521D7BD3A7E5D85C1B7D81"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\tasks.before.md",
+      "copy": "planner/tasks.before.md",
+      "role": "Ptolemy",
+      "sha256": "3B1EE1F9BD6A89A3F9B0A82C666A6E6251EB423E14D352A7A5C137292F75B373"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\tasks.after.md",
+      "copy": "planner/tasks.after.md",
+      "role": "Ptolemy",
+      "sha256": "76CB9A763792D862F4ADB3B21C85493B0351C8F5BEEF4A594109CD04F35B7B0D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\plan.before.md",
+      "copy": "planner/plan.before.md",
+      "role": "Ptolemy",
+      "sha256": "DE377B618B1FF3E31C9CBF1F778ACED31B275CB7605DB9BB338EAA04A6C787A1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\plan.after.md",
+      "copy": "planner/plan.after.md",
+      "role": "Ptolemy",
+      "sha256": "C0F34ECA6FD50DF6B310296FA402C03F6790495C0D4B346874C4F3F0B86BC854"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\tasks.actual.diff",
+      "copy": "planner/tasks.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "B31BBC9B7C8BA6CDE54B294775FFFC1B80F797039D5EA79184D6993A3AE749BF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\plan.actual.diff",
+      "copy": "planner/plan.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "AEFC2792144CD6B4A0697FB251CA7250F188A44BB808327179191C716C0A4B92"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\write-receipt.json",
+      "copy": "planner/write-receipt.json",
+      "role": "Ptolemy",
+      "sha256": "B4958C493A2B45DB4BD33E800C5E114F683F35333896BFF84320F68BF45D3CAA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-r19-metadata-478dd79347f74fb2ad994502819e338b\\readback-scope-check.json",
+      "copy": "planner/readback-scope-check.json",
+      "role": "Ptolemy",
+      "sha256": "BB73E99DE00658548AD14AAB40E470FC06A749F66C6D371A5C20F2F69BDBB05D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-audit-r19-review-cf283a4b308348dcbd98884ca3c3784c\\readset-start.json",
+      "copy": "review/readset-start.json",
+      "role": "Pauli",
+      "sha256": "C99D807C2597B9C632B270FDD8B9A66B6F6FBF93DCFD15A5A64987673D61CDFF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-audit-r19-review-cf283a4b308348dcbd98884ca3c3784c\\independent-static.json",
+      "copy": "review/independent-static.json",
+      "role": "Pauli",
+      "sha256": "534CE4912D0F42372B5325FD47CC7C5EEBB7C6D20B911BF2340892D39A605CD7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-audit-r19-review-cf283a4b308348dcbd98884ca3c3784c\\end-check.json",
+      "copy": "review/end-check.json",
+      "role": "Pauli",
+      "sha256": "32A983A357E4DA5554555C6808003E0773810118AFC69A3635A1C7F94FEA351E"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\review-test-plan-r19-audit-sql-r01.md",
+      "copy": "review/review-test-plan-r19-audit-sql-r01.md",
+      "role": "Pauli",
+      "sha256": "A89FF3A126980C7DC1CB85F9468084ACAD716FE47F33F9C80619DE0278013F1B"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-pre-code-start.json",
+      "copy": "lead/lead-pre-code-start.json",
+      "role": "Lead",
+      "sha256": "4B71929C532A602AE7C90B2E7B972891B5B328373A6B0FCD7152BAB67D97E204"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\audit_target_json.py",
+      "copy": "lead/audit_target_json.py.txt",
+      "role": "Lead",
+      "sha256": "A88E183AA4E3A94085F252445F7A37F970150E7E39CABEBF53E588DFF1EE262C"
+    },
+    {
+      "source": "Lead actual dispatch metadata",
+      "copy": "lead/start-signal.json",
+      "role": "Lead",
+      "sha256": "76A116483A00CFC02EE7DC80C1282504AA7B0814E5B88D93A0AD6A2ECEDB1033"
+    }
+  ]
+}

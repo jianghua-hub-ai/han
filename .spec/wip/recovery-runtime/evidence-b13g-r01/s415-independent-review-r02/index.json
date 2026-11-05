@@ -1,0 +1,228 @@
+{
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18bbe-e72e-7d62-a3fc-8748bf262fb0"
+  },
+  "source_temp": "D:\\Temp\\han-b13g-lead-20261030-r01\\s415-independent-final-packet-r02",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/actual-release.json",
+      "source_name": "actual-release.json",
+      "bytes": 6253,
+      "sha256": "893E47DD44399D4CBD9BAEC9A52DD7DC842864808638371E7E90893E1AA4EC2E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/analyze.py",
+      "source_name": "analyze.py",
+      "bytes": 4978,
+      "sha256": "4A8E64D4B6A31B0A188643768AAB9F79914ED8DC881316C853085CBA5D65C359"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/final-repair4.diff",
+      "source_name": "final-repair4.diff",
+      "bytes": 30093,
+      "sha256": "55084DDCFB263221E9173312D84C626ED7D15278C8F6F4CA7918CA1A92E3FDE9"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/final-runtime2-delta.diff",
+      "source_name": "final-runtime2-delta.diff",
+      "bytes": 7427,
+      "sha256": "5567B76010C8E62FBFEA2F8B815106AB0CE3E0CAB08055D8144FBDEBFB2BC8FA"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/final-static-input-checks.json",
+      "source_name": "final-static-input-checks.json",
+      "bytes": 5323,
+      "sha256": "23F54CE2900F5ABF50D124BAE18E31A895832DB3C7EADD12B07D255683F3E733"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/final-static-review.md",
+      "source_name": "final-static-review.md",
+      "bytes": 6601,
+      "sha256": "426180DFAE8ADF7539B9C6C0BA97E9BCD00D1C1E2033C29D7D0972607EF6582A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/fixed48.json",
+      "source_name": "fixed48.json",
+      "bytes": 5598,
+      "sha256": "62A3857DF431AEBE2A4A636A7BD7AA62FBF78BCC0DB5E73E5C97B9E2BE67A6E4"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/grant.json",
+      "source_name": "grant.json",
+      "bytes": 10348,
+      "sha256": "0A03572EF6855281D80E45A4335D4A3777406DF8C454DDAD233FB86C3A810EFE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/independent-leaves.json",
+      "source_name": "independent-leaves.json",
+      "bytes": 216354,
+      "sha256": "9CB38C3DBE698C5BDD7B42E8F33F664469CD64A89A76645F4129821E8CFE9714"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/inherited-final-static-readset.json",
+      "source_name": "inherited-final-static-readset.json",
+      "bytes": 20470,
+      "sha256": "B236C4B98546BFCDAC5796493C82F6DD93CC27C061E60CE244EB2B03F6036834"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/input-receipt.json",
+      "source_name": "input-receipt.json",
+      "bytes": 6516,
+      "sha256": "74C332FD2604F8C28D1C36E27DF4F2719A3E9FB5D7D787B850BE13149E00063A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/owned_windows.py",
+      "source_name": "owned_windows.py",
+      "bytes": 10211,
+      "sha256": "6FD58BE2B28FDDDB47EC3F2F534EAFDAF7EE2CB5C4EC54772D18C357EE1085BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/packet-manifest.json",
+      "source_name": "packet-manifest.json",
+      "bytes": 5025,
+      "sha256": "BE44A4D22DACB5A3FDF320C92764F737CA9785F488B7E6A3FF12557729B6D40E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/probes/overlay.json",
+      "source_name": "probes/overlay.json",
+      "bytes": 205,
+      "sha256": "529969E8890E82DAF0CBC7C2708BD3F73609DF4FB7B9A8ECDC007672E421F17F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/probes/s415_independent_test.go.frozen",
+      "source_name": "probes/s415_independent_test.go",
+      "bytes": 5455,
+      "sha256": "FFBA89E89C08248B03C193B6B638973165B1947C0CD23B27D9319787C78E2E63"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/r57-metadata3.diff",
+      "source_name": "r57-metadata3.diff",
+      "bytes": 15280,
+      "sha256": "A2536599581BF5EE5780706AE146AA5ECDE433BD6487AAFFBF16129AF9197DBF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-normal/command.json",
+      "source_name": "raw/independent-final48-normal/command.json",
+      "bytes": 11613,
+      "sha256": "24D7C4BD024A179059FD21D8FADEB9A3F15F09C2DFF5EDD044F5A9F3B171360E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-normal/heartbeat.json",
+      "source_name": "raw/independent-final48-normal/heartbeat.json",
+      "bytes": 188,
+      "sha256": "49D80127DD696695F27BD504865EB89401B50D083AD27160414627620BF13134"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-normal/heartbeat.jsonl",
+      "source_name": "raw/independent-final48-normal/heartbeat.jsonl",
+      "bytes": 319,
+      "sha256": "631CAB9EFFB3682672B358155F90620DAE84E64564C260B350A99860ECBFC107"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-normal/result.json",
+      "source_name": "raw/independent-final48-normal/result.json",
+      "bytes": 18463,
+      "sha256": "24AA227BEBEA6C880306C841978CC56164A887D3711D75770E08C5D9DB277331"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-normal/stderr.log",
+      "source_name": "raw/independent-final48-normal/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-normal/stdout.jsonl",
+      "source_name": "raw/independent-final48-normal/stdout.jsonl",
+      "bytes": 598020,
+      "sha256": "516AF98687177FAB2FAF1AC0C5D8AC911F047195C09BA607201AC04EE662ECFC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-race/command.json",
+      "source_name": "raw/independent-final48-race/command.json",
+      "bytes": 11625,
+      "sha256": "3D8C806DE56AE3D588D52D38E10A72AB54EF31C06AE9E008DE092BF99B7865FB"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-race/heartbeat.json",
+      "source_name": "raw/independent-final48-race/heartbeat.json",
+      "bytes": 186,
+      "sha256": "62B1E4CE4B2CA31B3DB7842BD57DCEEC8B72F2A5AA4C71A572D9DB25806AF662"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-race/heartbeat.jsonl",
+      "source_name": "raw/independent-final48-race/heartbeat.jsonl",
+      "bytes": 645,
+      "sha256": "9CF83011608B9554F4BCD8564E3D25BCB58230500E38C3445942D4FD6B6D66A7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-race/result.json",
+      "source_name": "raw/independent-final48-race/result.json",
+      "bytes": 18513,
+      "sha256": "DAE780DA2D045A028703EF5E3D7772AF4638734864EB806A1E7E02AE3EF1A040"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-race/stderr.log",
+      "source_name": "raw/independent-final48-race/stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/raw/independent-final48-race/stdout.jsonl",
+      "source_name": "raw/independent-final48-race/stdout.jsonl",
+      "bytes": 598500,
+      "sha256": "1AFD37F03C7526268B4563F48C3DC93F1B097A25CDC2CF07BE7132356F9DF2B3"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/readset.json",
+      "source_name": "readset.json",
+      "bytes": 1158,
+      "sha256": "F0B8280E8861020DE55D31E0CD6B70C6AF4C384D7B1DB62022B84BF486AD2F26"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 4246,
+      "sha256": "2F8EFF47ABA1B31963085B7BB8A85ADB57F682BDF68E68FCDC9D990F823FA513"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/report.md",
+      "source_name": "report.md",
+      "bytes": 9663,
+      "sha256": "9F0F5791556FA861177ED7BE661AA28B19C33EED22B7EDA504F8F187A26DF112"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/run_final48.py",
+      "source_name": "run_final48.py",
+      "bytes": 7102,
+      "sha256": "E7ED64467C626B4A9277163C02526A33499F65A8D16F193CE67D411956217CB0"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/seal.py",
+      "source_name": "seal.py",
+      "bytes": 7493,
+      "sha256": "04E2D55A666F1E103C95E6AB1CEEEDAD91E02B679CA3FA64419D5A1A6AADF6DC"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/STOP.json",
+      "source_name": "STOP.json",
+      "bytes": 505,
+      "sha256": "67BB626B92CBC17A3BBF3CFF4876705AA3CE17E4D50593426F42AB44C7BAB866"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/verification-summary.json",
+      "source_name": "verification-summary.json",
+      "bytes": 10005,
+      "sha256": "8B62E095756C7E29FDE1117E4B425A9AF3E756DD9FEEAFBE88D6CB74B490501E"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13g-r01/s415-independent-review-r02/window-at-start.json",
+      "source_name": "window-at-start.json",
+      "bytes": 722,
+      "sha256": "C3B7B0CBAFA6963D593302829EF9CA08819DB3A86E2E3A98264D07677128AEC8"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

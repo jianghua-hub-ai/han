@@ -1,0 +1,94 @@
+{
+  "scope": "Architecture r32 / ADR-0027 r02 original author repair for ARCH-R32-R01-F001",
+  "agent": {
+    "role": "add-arch-designer",
+    "nickname": "Pascal",
+    "id": "01a17e3d-5550-7f91-bb7e-6e6fad3d082c"
+  },
+  "authorization_submission": "01a18367-875a-7e93-95df-f61f6a9c1b9d",
+  "failure_propagation_followup": "01a1836e-2b9c-71b2-a09e-dd9c646e12f3",
+  "status": "Author STOP/frozen; F001 independent R02 pending, no implementation or human acceptance.",
+  "review_recheck_submission": "01a18378-3720-7c60-87bd-f215ec005e49",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/handoff.md",
+      "sha256": "B7EB4AE4BFFF2F41AEDBC64065B43B01CA7C68948417C37CC5FE8CF43F251B64",
+      "bytes": 3660
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/verification.json",
+      "sha256": "BDD578B2C8295B0657D75D9414A971A90EC29063431D6EDFD3797AB583920FBF",
+      "bytes": 4985
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/readset.json",
+      "sha256": "8872EF6ECAD63405CD2C66373265C496D2CEB3F9589EFA4C62254E69009EC7E8",
+      "bytes": 7939
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/before.json",
+      "sha256": "10714B2396995E6BDDB9AD5025FF849409FD639D9DA0E30D5C236CC8678F7611",
+      "bytes": 4099714
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/targets.json",
+      "sha256": "C92FEF0414268CD3621E4D535CCA673801B2A252B3BDDD12F9A2577A780F36C5",
+      "bytes": 356
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/architecture.md.before",
+      "sha256": "676234D255B2453FA462B11B998F27E51685C373DDDE5172082014D840702961",
+      "bytes": 222871
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/framework.md.before",
+      "sha256": "15A6333B9B89B86CF70A6C9596141CD4700A8519B71107AD3DA276AB8BBE6AA0",
+      "bytes": 91170
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/README.md.before",
+      "sha256": "AA09924A20534C6CF28EA200F78711ED0F01ABC7986726DB603BECE6B044777F",
+      "bytes": 15221
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/architecture.md.actual.diff",
+      "sha256": "19FC078DF9A8328BFE6E7085A22DD869C7C3B1AC6A26AD124682AC06F5838807",
+      "bytes": 26158
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/framework.md.actual.diff",
+      "sha256": "E7ECD60A557B61126F562E4FF26B215DFCAB176F7B5AA831F258A2F55E3C48C7",
+      "bytes": 10282
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/README.md.actual.diff",
+      "sha256": "77DBD6A1B78474AF48C809AE67B7B93FD412D4EFBDFB7EA17ED13BCBE8872E19",
+      "bytes": 3120
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/verify.py",
+      "sha256": "791FDB9630A6146FF8533CB4320F3236F2E1B965F4FADFEEFB2DDD226F8267E7",
+      "bytes": 6859
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/snapshot.py",
+      "sha256": "DD36D09E98D77B042550665927698DD32ED54BCBAD75AE545916ECFF9326453D",
+      "bytes": 2491
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/frozen/.add/project/knowledge/design/architecture.md",
+      "sha256": "F0D1334187A5E7533CF31C88EFCE4E3BB84F36EE484B01A1BDD9B7DB0D382CBA",
+      "bytes": 233199
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/frozen/.add/project/knowledge/decisions/framework.md",
+      "sha256": "2825D595FFC6C347DAC41142B23AB22DC29B543A1E2924D6C42744A76E7A7C71",
+      "bytes": 94431
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/author-r02/frozen/.add/project/knowledge/decisions/README.md",
+      "sha256": "2F2F3B2C70D07218A06217AA8D1A15B3CC2C67C7F35BB99583F0A0E4EEC90C6E",
+      "bytes": 15302
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "Lead fixed Domain2 after actual integrated normal PASS, not author API-ready/Review/PG. Original author remains carrier writer.",
+  "objects": {
+    "internal/identity/password_reset_operator.go": "A1C2039503A748F82529A01EA57E4EB14C478B9ACD34329770D7474E546D98B5",
+    "internal/identity/password_reset_operator_test.go": "5923422EFB2F81518ACA07FF178DC3FFFB63310CFE2A75F034EEDA530672C31D"
+  },
+  "payloads": {
+    "lead-unit/1.stderr.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "lead-unit/1.stdout.txt": "DA5B01F3DE9E01265AFB66126957DA91FB5A319BE4859458CA3385667F87DA39",
+    "lead-unit/source.before.json": "E225644C9F8196FFA6AF75DF56F863B24CFED7A0A581C2CC3393D861D212FB82",
+    "fixed/internal/identity/password_reset_operator.go": "A1C2039503A748F82529A01EA57E4EB14C478B9ACD34329770D7474E546D98B5",
+    "fixed/internal/identity/password_reset_operator_test.go": "5923422EFB2F81518ACA07FF178DC3FFFB63310CFE2A75F034EEDA530672C31D"
+  }
+}

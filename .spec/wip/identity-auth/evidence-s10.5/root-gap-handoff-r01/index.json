@@ -1,0 +1,11 @@
+{
+  "scope": "Original author stopped-gap explanation; no Root-ready, not independent review",
+  "payloads": {
+    "GAP-root-cleanup-r01.md": "609C67E068947FBB03161C0C736F505B9BA732E704E012300AC6F868C9A9A658",
+    "source-test-freeze.json": "3FB8D799EE64C5759F6A9EDD32CB5D731F1753DA850F6D22C20812FF37D95C7C",
+    "freeze-summary.json": "1C7365DD644D65F0FC103B318EB2701BFD5FE4A553739324CF9CE784B720DE3C",
+    "artifact-hashes.json": "2A4C6A01333ED34E44763DF106FDEF07C1306E127A329D2818BA979810B78154"
+  },
+  "related_code_and_raw_index": ".spec/wip/identity-auth/evidence-s10.5/root-gap-r01/index.json",
+  "related_independent_review": ".spec/wip/identity-auth/review-code-s10.5-cleanup-r01.md"
+}

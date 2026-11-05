@@ -1,0 +1,108 @@
+{
+  "owner": {
+    "role": "add-task-planner",
+    "nickname": "Boole",
+    "runtime_id": "01a18c20-a70c-7972-b634-9520991a7bbc"
+  },
+  "source_temp": "D:\\Temp\\han-b13h-task-planner-20261030-r01-7c29e6b4\\support-scope-r02",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/actual-release.json",
+      "source_name": "actual-release.json",
+      "bytes": 957,
+      "sha256": "6EC73276F9275801EBC087A7E37118803198579C87C1E8AF355F2E0150EA743A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/after/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "source_name": "after/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "bytes": 480755,
+      "sha256": "1602B04140B985EA682B82CBD8CDF29CA75F42EF27A8F8421CCB2F80BC0DE007"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/after/.add/project/knowledge/tasks/tasks.md",
+      "source_name": "after/.add/project/knowledge/tasks/tasks.md",
+      "bytes": 655690,
+      "sha256": "8BE0887359F641A7C6D707D6A84BC5DBEFBEE92C4A67671FB32EA57B9EE6B350"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "source_name": "before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "bytes": 480106,
+      "sha256": "7779776E6067DD35627A4434D89DE31895B705702B11850B7EE54F774BF39F52"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/before/.add/project/knowledge/tasks/tasks.md",
+      "source_name": "before/.add/project/knowledge/tasks/tasks.md",
+      "bytes": 654710,
+      "sha256": "86DD9FE2E8B859C95B0164EF94822EB67AF9E9E07C1BD60FF4A9189DA7717448"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/byte-edits.json",
+      "source_name": "byte-edits.json",
+      "bytes": 4731,
+      "sha256": "E4C1DD5DA9490DBF8E3958DA3BF4D52C7246A69C03AEA0CEF3EC1EC1916E9D10"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/ir-01-content-community-batches.md.diff",
+      "source_name": "ir-01-content-community-batches.md.diff",
+      "bytes": 1601,
+      "sha256": "57BD3DEFF548A2405BFC440FA5B80A141A45C0F27182DAF79DBC0FD00E263FB2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/prepare.py",
+      "source_name": "prepare.py",
+      "bytes": 1974,
+      "sha256": "FEA7EC96E0BFF800E80ECEBD5A14EC2E3A2406A000DD7285E17893E88EC3F232"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/prepared-before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "source_name": "prepared-before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "bytes": 480106,
+      "sha256": "7779776E6067DD35627A4434D89DE31895B705702B11850B7EE54F774BF39F52"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/prepared-before/.add/project/knowledge/tasks/tasks.md",
+      "source_name": "prepared-before/.add/project/knowledge/tasks/tasks.md",
+      "bytes": 654710,
+      "sha256": "86DD9FE2E8B859C95B0164EF94822EB67AF9E9E07C1BD60FF4A9189DA7717448"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/prepared.json",
+      "source_name": "prepared.json",
+      "bytes": 1389,
+      "sha256": "396F7189504E14E58AC7CA30CB8B001A291D420FB4B7A515812C1B68FF0752B6"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/proof.json",
+      "source_name": "proof.json",
+      "bytes": 21447,
+      "sha256": "4023F69B21C3E0BE3F843AC00CC711AAB25D8B0614D55AC0B1D520DB67F45882"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/readset.json",
+      "source_name": "readset.json",
+      "bytes": 4402,
+      "sha256": "828CE2B25C4A3741970FB3C89DCDFA7F4941FEC395B79872684AACA06FF3812B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/receipt.json",
+      "source_name": "receipt.json",
+      "bytes": 2214,
+      "sha256": "F035B4D71C329B4B75278A6DF39560D2F763D52A4762DA337F3B20277518F507"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/sync.py",
+      "source_name": "sync.py",
+      "bytes": 14672,
+      "sha256": "6C8E5E3ACB2E73122929204EAB516DE11F9190337FD079E1B3ADFF6E97274047"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-support-scope-plan-r01/tasks.md.diff",
+      "source_name": "tasks.md.diff",
+      "bytes": 1615,
+      "sha256": "E717615A9080C531CEA930DF5E06FF75BF28DD961AA8C0B897435FB10C0BA01E"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original data retained; copy only, no cleanup/move"
+}

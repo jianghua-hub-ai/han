@@ -1,0 +1,297 @@
+{
+  "schema": "add.planning-review-index/v1",
+  "role": "add-reviewer",
+  "independence": {
+    "nonAuthor": true,
+    "designAuthors": "Singer for D01-D04",
+    "d04Reviewer": "Sagan for design-d04 review",
+    "statement": "本评审未参与设计或 D04 review 产出；独立核对原始制品与字节，不默认接受作者或 D04 reviewer 的结论。"
+  },
+  "objectType": "planning",
+  "item": "pending-B13J",
+  "workflow": "development-delivery",
+  "phase": "planning-review-r01",
+  "workspace": "D:/AID/VSCode/Codex/Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "recorded_at": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "verdict": {
+    "status": "CHANGES REQUIRED",
+    "reason": "复审链和诚实性成立，但 U1-U9 无统一确认记录、候选 Task 卡未达到可登记/可实施粒度、ADR-0030/0031/0032 前置修订节点缺失、D04 两条 LOW 无承接；现在登记 B13J Plan 批次会产生假引用。",
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 5,
+      "MEDIUM": 2,
+      "LOW": 3,
+      "OPEN": 10,
+      "CLOSED": 0
+    }
+  },
+  "reviewedObjects": {
+    "baseline": [
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md", "bytes": 26452, "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F"},
+      {"path": ".add/project/knowledge/design-workspace/identity-auth/design.md", "bytes": 854991, "sha256": "FED48FA9908F9EADD970A3E57B0B448181C51030A4460B437852009722F34D8D"},
+      {"path": ".add/project/knowledge/design-workspace/article-management/design.md", "bytes": 377424, "sha256": "690015BB5C3B4800539F98C5B75115A5A20B5C161ECE7422F9F271840F7C55A7"},
+      {"path": ".add/project/knowledge/decisions/framework.md", "bytes": 169890, "sha256": "58C97FC06361022AA48EF737189EF3EB069A7AAD25772BCA4C80FE4D1D5E1F8E"},
+      {"path": ".add/project/knowledge/decisions/README.md", "bytes": 21472, "sha256": "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97"},
+      {"path": ".add/project/knowledge/plans/ir-01-content-community-batches.md", "bytes": 497542, "sha256": "3FA19CDD4902F56B8C2F1DF59C570D96FAAE02D8AEE519B4B4165DCCA3637380"},
+      {"path": ".add/project/knowledge/tasks/tasks.md", "bytes": 823187, "sha256": "F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34"},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r02/report.md", "bytes": 19858, "sha256": "ECE706E0B30A3569B21B37C353F76A9A1546E5EC73841B029CCE31D9BF9BE876"}
+    ],
+    "authorReports": [
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/report.md", "bytes": 10548, "sha256": "565D1547F8B75A4E60EB8073AA52326E3C8ADB620F71E2D999E60C40506BE89A", "boundBy": "design-revision-r01/review-r01/index.json inputs"},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/report.md", "bytes": 20671, "sha256": "16A47B381CB5BD023EA931432CE9A3CEA622125CB4CCA9641DE9EDDDC293CE7F", "boundBy": "design-d02/index.json artifacts"},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/report.md", "bytes": 108987, "sha256": "27AC38D34E4A814B97F9056FE203BEB40E7AD96DC1E874F87B960F5C2BA69685", "boundBy": "design-d03/index.json artifacts"},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/report.md", "bytes": 39426, "sha256": "FDAEE534E9EFE65D659877984DDCF9F7AE22DE4BD3128A5257C2EF17CCAD3ACB", "boundBy": "design-d04/index.json artifacts"}
+    ],
+    "reviewReports": [
+      {"revision": "D01", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/review-r01/report.md", "bytes": 17113, "sha256": "977022446B3B8ECD3DA03DC64C86A3FE911F16F8DF5AB78DB9F7F734E170DEFE"},
+      {"revision": "D02-r01", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r01/report.md", "bytes": 18497, "sha256": "DAC90356F102F5E7AF18BFCDAFA153AD369D1F796923B5A42B8B6BC79606FF5E"},
+      {"revision": "D02-r02", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r02/report.md", "bytes": 8406, "sha256": "957CACC5280E1287D519FB775A76CE602F98550B92DEB711023742651E84DC0B"},
+      {"revision": "D03-r01", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/report.md", "bytes": 25493, "sha256": "EEC401E4613EFFC1AA4DD89639A32FA04C71C826F7874C32880224819655EBE3"},
+      {"revision": "D03-r02", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r02/report.md", "bytes": 15997, "sha256": "7F357D6AE3C5E23FD9A19EFA808D1F86C6986668A34CC0E4B811A3A0742D18C6"},
+      {"revision": "D03-r03", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r03/report.md", "bytes": 16101, "sha256": "37D4E811D252D8F584970F0B40B75403C0CF75015D67BBA66FFE89C14408A79A"},
+      {"revision": "D04-r01", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r01/report.md", "bytes": 26602, "sha256": "51C91D48B55486375166267E0B1CED9CE2AFEB3878C94D79CB24427AF820751D"},
+      {"revision": "D04-r02", "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r02/report.md", "bytes": 19858, "sha256": "ECE706E0B30A3569B21B37C353F76A9A1546E5EC73841B029CCE31D9BF9BE876"}
+    ],
+    "evidenceIndexes": [
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/index.json", "bytes": 3034, "sha256": "FDBBEAE20FB02BBA18AD1999147503CB93147801B2B832C75DC6EA24DE0824F2", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/index.json", "bytes": 7914, "sha256": "4E1C4008E69938211F3D2544DF63236985B3503DFBEEE88EF80C943A6893875B", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/review-r01/index.json", "bytes": 8137, "sha256": "2AAFC080FA9B83412780582ACC529ACC9BFD80B003992950F0078D9DB5F8819D", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/index.json", "bytes": 19856, "sha256": "4DF391ACD942F6747EE8B6623677B9A4678A3BB493EB83A46FD00690AC28073B", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r01/index.json", "bytes": 11625, "sha256": "9A94E08DF7A1A626FF75546BB5974733170DE35162A315BAA54C66BF49EE7D90", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r02/index.json", "bytes": 9299, "sha256": "586B470D6624F035FCECC17303E2418194060190201621F63A1B8E2680C8BEAF", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/index.json", "bytes": 45671, "sha256": "DF0E3ED84CE3D4160DACF6588AD6F999A537202DFFDF8108B698F07F7F89C73C", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/index.json", "bytes": 17744, "sha256": "064828176473FFD1E04150D2C45213B03EFBAF2BA54B96EECA87E833514C2A69", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r02/index.json", "bytes": 18666, "sha256": "8A3C8CA123BA05E06760C1656DEE3F836648815C371615F88DEB654158AF3250", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r03/index.json", "bytes": 14650, "sha256": "5C4B73F56AEB8C68358D629FFE13C0B109C4647C967C70EA970E4958AB0DE922", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/index.json", "bytes": 55596, "sha256": "400CF60D65163CFD02102DF54A07B365E4019135303297207AF5793A7BDB8046", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r01/index.json", "bytes": 17332, "sha256": "3805B7DF3AE62D37BCFB2C36AEAA3F2CBEC6B0F297E6ECC41C699359E05F0B34", "jsonValid": true},
+      {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r02/index.json", "bytes": 24007, "sha256": "65E40D60D09BA36DD2532173266E36DD6A4A15327A079125B0B3CDBA5F5626FF", "jsonValid": true}
+    ]
+  },
+  "reviewChain": [
+    {"revision": "D01", "review": "design-revision-r01/review-r01", "verdict": "PASS WITH MINOR", "anchor": ":214", "reportSha256": "977022446B3B8ECD3DA03DC64C86A3FE911F16F8DF5AB78DB9F7F734E170DEFE", "reportBytes": 17113},
+    {"revision": "D02-r01", "review": "design-d02/review-r01", "verdict": "CHANGES REQUIRED", "anchor": ":148", "reportSha256": "DAC90356F102F5E7AF18BFCDAFA153AD369D1F796923B5A42B8B6BC79606FF5E", "reportBytes": 18497},
+    {"revision": "D02-r02", "review": "design-d02/review-r02", "verdict": "PASS", "anchor": ":82", "reportSha256": "957CACC5280E1287D519FB775A76CE602F98550B92DEB711023742651E84DC0B", "reportBytes": 8406},
+    {"revision": "D03-r01", "review": "design-d03/review-r01", "verdict": "CHANGES REQUIRED", "anchor": ":147", "reportSha256": "EEC401E4613EFFC1AA4DD89639A32FA04C71C826F7874C32880224819655EBE3", "reportBytes": 25493},
+    {"revision": "D03-r02", "review": "design-d03/review-r02", "verdict": "CHANGES REQUIRED", "anchor": ":147", "reportSha256": "7F357D6AE3C5E23FD9A19EFA808D1F86C6986668A34CC0E4B811A3A0742D18C6", "reportBytes": 15997},
+    {"revision": "D03-r03", "review": "design-d03/review-r03", "verdict": "PASS", "anchor": ":112", "reportSha256": "37D4E811D252D8F584970F0B40B75403C0CF75015D67BBA66FFE89C14408A79A", "reportBytes": 16101},
+    {"revision": "D04-r01", "review": "design-d04/review-r01", "verdict": "CHANGES REQUIRED", "anchor": ":149", "reportSha256": "51C91D48B55486375166267E0B1CED9CE2AFEB3878C94D79CB24427AF820751D", "reportBytes": 26602},
+    {"revision": "D04-r02", "review": "design-d04/review-r02", "verdict": "PASS WITH MINOR", "anchor": ":149,:153,:157", "reportSha256": "ECE706E0B30A3569B21B37C353F76A9A1546E5EC73841B029CCE31D9BF9BE876", "reportBytes": 19858}
+  ],
+  "authorIndexStates": {
+    "D01": "applied-draft-unreviewed",
+    "D02": "rework-applied-pending-directed-re-review",
+    "D03": "decision-recorded-rework-pending-review-r03",
+    "D04": "delivered-for-independent-review",
+    "note": "这些状态是作者索引的历史/交付状态，未反映最终复审链；见 B13J-PLAN-F010。"
+  },
+  "findings": [
+    {
+      "id": "B13J-PLAN-F001",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "location": "gap-map.md:178, :207; Plan:1300-1310",
+      "basis": "gap-map 自述 S4.22/23/24 只是候选编号形状，不是已登记 Task，不进入 DAG/计数/写权；U 表明确未确认前不得据此登记 Task/Plan。",
+      "trigger": "现在新增 B13J 外层行并在原任务引用列写 S4.22/S4.23/S4.24。",
+      "impact": "产生死链接/假引用，DAG、计数、所有权表看似已有任务，实际没有。",
+      "recommendation": "先确认 U1-U9/ADR 前置，再登记真实 Task 卡，再做 Planning Review，最后登记 Plan 行；候选只能标注未登记且不得链接。",
+      "evidence": "rg -n S4\\.2[234] tasks.md Plan -> exit 1; gap-map:178/:207; Plan:1300-1310",
+      "closureCondition": "Plan B13J 行引用列只含已登记 Task；候选说明明确未登记且不参与 DAG/计数。"
+    },
+    {
+      "id": "B13J-PLAN-F002",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "location": "gap-map.md:191, :195-207; design-revision-r01/report.md:148; design-revision-r01/review-r01/report.md:169",
+      "basis": "gap-map 明确 U1-U9 以上均为建议值，不是已取得的用户确认；未确认前不得据此登记 Task/Plan。",
+      "trigger": "以 U1-U9 建议值直接登记 B13J 或 Task 卡。",
+      "impact": "批次命名、是否停止拆批、是否重开 S4.16、root 装配/锁/secret 范围等关键选择被当作已确认；后续返工与假声明风险高。",
+      "recommendation": "建立 dated U1-U9 逐项确认/延期记录，或明确缩小本次只登记已确认子集。",
+      "evidence": "gap-map:207; rg 未发现统一确认记录，只发现建议值与按建议值书写的说明。",
+      "closureCondition": "U1-U9 每项有确认或明确延期记录，登记内容与确认范围逐项对应。"
+    },
+    {
+      "id": "B13J-PLAN-F003",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "location": "gap-map.md:178-182; tasks.md/Plan 无登记（rg exit 1）",
+      "basis": "候选仅一行形状描述，缺少可复核 Task 卡的文件清单/写集、验收命令、关闭条件、requires、负向测试等必要字段。",
+      "trigger": "Planner 直接把候选形状转成 Task 卡，或实施者按一行描述开工。",
+      "impact": "无法确定写集/所有权、验收命令、关闭条件与依赖；共享文件冲突、漏负向测试、无法判断关闭。",
+      "recommendation": "为每个候选补精确文件清单/写集、硬/软 requires、验收命令+退出码、负向测试/失败 oracle、关闭条件、证据落点/责任人/不宣称边界、停止条件；S4.24 拆分 restore 与部署锁子范围。",
+      "evidence": "gap-map:180-182; Plan/tasks 无候选登记。",
+      "closureCondition": "三张 Task 卡均具备上述字段，且能通过一次 Planning Review 的边界/验收检查。"
+    },
+    {
+      "id": "B13J-PLAN-F004",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "location": "framework.md:926, :939, :951, :981; gap-map.md:180-182",
+      "basis": "ADR-0030 首期不提供生产 CAS provider、S4.5 未交付、生产 enter/install closed；ADR-0031 首期不提供生产 restore 工具/批准主体。候选 S4.23/S4.24 是生产实现，当前无 ADR 修订/新增决策前置。",
+      "trigger": "把 S4.23/S4.24 作为普通实施卡登记并派发。",
+      "impact": "计划与已接受 ADR 冲突；实施者要么违反 ADR，要么启动即停止；ADR 解除条件无法被规划满足。",
+      "recommendation": "在 S4.23/S4.24 之前增加 ADR-0030/0031 修订或新增 ADR 节点；Task 卡 requires 指向该决策；决策未接受前不登记生产实现。",
+      "evidence": "framework 原文；README:38-40 均标已接受；无 ADR 修订任务登记。",
+      "closureCondition": "ADR 修订/新增决策已接受并与 Task 卡 requires 连接；S4.23/S4.24 不再与首期不提供冲突。"
+    },
+    {
+      "id": "B13J-PLAN-F005",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "location": "framework.md:1096, :1100-1106; identity design:3616; gap-map.md:167-175, :182",
+      "basis": "ADR-0032 要求先有已登记 anchor adapter bundle，再实现 POSIX 锁后端并取得隔离/ACL 证据；设计明确生产 exclusive 只能来自 bundle，否则 recoveryClosedPort。当前 S4.24 无 requires S4.23，DAG 无 ADR-0030 修订节点。",
+      "trigger": "按当前 DAG 直接实施 S4.24 锁后端，或认为 ADR-0032 解除条件可在没有 bundle 时满足。",
+      "impact": "exclusive 无法从 closed 变为非 closed；解除路径不可达；若以合成/测试注入替代则违反唯一来源。",
+      "recommendation": "补 ADR-0030 修订 -> S4.23 bundle -> ADR-0032 锁后端/证据 -> S4.24 锁接线 -> S4.22 root 装配 -> 联合验证/E2E 的顺序与边；S4.24 requires S4.23 与 ADR 修订。",
+      "evidence": "framework:1096; gap-map:167-175; 候选:182; 无 requires 登记。",
+      "closureCondition": "DAG 含上述节点/边，Task 卡 requires 可核，且不存在独立锁来源。"
+    },
+    {
+      "id": "B13J-PLAN-F006",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "location": "design-d04/review-r02/report.md:133-138; cmd/han-server/recovery_runtime.go:565-567; gap-map.md:180",
+      "basis": "review 明确建议在 S4.22 验收中加负向要求；当前没有 S4.22 Task 卡或其他承接处。",
+      "trigger": "S4.22 实施时直接设置 recoveryRootInputs.exclusive，或没有负向测试。",
+      "impact": "绕过唯一 registry 来源；代码不会失败；设计约束只停留在文本。",
+      "recommendation": "S4.22 关闭条件加入生产装配不得设置 recoveryRootInputs.exclusive，或显式仅测试构建开关隔离；提供可失败负向测试并记录证据。",
+      "evidence": "D04 r02:133-138; 代码路径; rg 未见承接卡。",
+      "closureCondition": "S4.22 卡面含该负向验收，测试可失败并在关闭时留存结果。"
+    },
+    {
+      "id": "B13J-PLAN-F007",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "location": "design-d04/review-r02/report.md:140-145; framework.md:1096, :1100-1106",
+      "basis": "顺序约束只在不变量与约束第 9 条，解除条件 1-7 未包含经 registry 唯一来源接线并可核；当前无 ADR 修订任务或收口条目。",
+      "trigger": "后续按解除条件 1-4 判 ADR-0032 可解除，但 exclusive 仍未接线。",
+      "impact": "解除条件清单可被满足而生产仍 closed；规划漏项。",
+      "recommendation": "ADR-0032 修订把该条并入解除条件清单或条件 5 子项，或登记专门 ADR 修订任务；与 S4.22/S4.24 关闭条件互链。",
+      "evidence": "D04 r02:140-145; framework:1096/:1100-1106。",
+      "closureCondition": "ADR-0032 修订已接受或专门任务已登记；解除条件清单含该可勾选项。"
+    },
+    {
+      "id": "B13J-PLAN-F008",
+      "severity": "LOW",
+      "status": "OPEN",
+      "location": "design-d04/review-r02/index.json artifact.trailing; design-d04/review-r02/report.md 末尾字节",
+      "basis": "索引声明 trailing=single LF (0x0a)；实测最后 8 字节为 89 B9 E5 87 86 E3 80 82，末尾是句号的 UTF-8 字节，不是换行；报告有 207 个 LF 终止符 / 208 逻辑行。",
+      "trigger": "自动化按索引声明检查末尾换行。",
+      "impact": "证据元数据不准确；不影响报告语义或 verdict。",
+      "recommendation": "在获授权的元数据修订中改为 no trailing newline 或实际值；本评审不修改被评对象。",
+      "evidence": "末尾字节实测; index artifact 字段。",
+      "closureCondition": "索引与实际字节一致，或明确记录为已知差异。"
+    },
+    {
+      "id": "B13J-PLAN-F009",
+      "severity": "LOW",
+      "status": "OPEN",
+      "location": "tasks.md:18; byte offsets 12676, 12691",
+      "basis": "两个 0x0C form feed 控制字符；上下文显示是把 test/、fixtures、defaults 等词切断的既有损坏，不是本轮引入。",
+      "trigger": "文本处理、diff、检索或渲染工具按控制字符处理。",
+      "impact": "轻微可读性/工具兼容问题；不影响本规划结论。",
+      "recommendation": "另行取得授权后替换为原词并复核哈希；本评审不修改 tasks.md。",
+      "evidence": "byte scan controls=2 at offsets 12676,12691 (0x0C)。",
+      "closureCondition": "授权修复完成或明确接受为已知限制。"
+    },
+    {
+      "id": "B13J-PLAN-F010",
+      "severity": "LOW",
+      "status": "OPEN",
+      "location": "design-revision-r01/index.json; design-d02/index.json; design-d03/index.json; design-d04/index.json",
+      "basis": "作者索引状态仍停在评审前/待复审：D01 applied-draft-unreviewed、D02 rework-applied-pending-directed-re-review、D03 decision-recorded-rework-pending-review-r03、D04 delivered-for-independent-review；最终复审链为 D01 PASS WITH MINOR、D02 PASS、D03 PASS、D04 PASS WITH MINOR。D01 的 B13J-D01-RV-01 也无正式 CLOSED 记录。",
+      "trigger": "下游把作者索引状态当作当前门禁状态。",
+      "impact": "元数据与最终复审链不一致；不影响技术 verdict，但会误导后续规划/交接。",
+      "recommendation": "在获授权的元数据修订中更新作者索引到最终状态，并为 D01 LOW 增加 CLOSED/处置记录；不要改写历史 review 报告。",
+      "evidence": "四个索引状态值; D01/D04 review 报告。",
+      "closureCondition": "作者索引状态与最终复审链一致，D01 LOW 有明确处置。"
+    }
+  ],
+  "questions": {
+    "Q1": "复审链完成：D01 PASS WITH MINOR、D02 PASS、D03 PASS、D04 PASS WITH MINOR；哈希/字节/JSON 与 verdict 行锚均可核，历史 FAIL 保留。但不等于全 finding/门禁闭合：D04 两条 LOW OPEN，D01 LOW 无正式 CLOSED 记录，作者索引状态陈旧。",
+    "Q2": "ADR-0030/0031/0032 在 framework 正文与 README 索引一致登记，无第二权威，未与 ADR-0019/0027/0029 直接冲突；但候选生产实现与 ADR-0030/0031 的首期不提供冲突，需先修订/新增 ADR。",
+    "Q3": "诚实性成立：production enter/install 保持 closed，无 file/SQL/fake 自动 fallback，无生产可用正向宣称，S8.2/Case18 未被宣称 PASS。",
+    "Q4": "B13J 作为新批次方向成立，不应挂已闭 B13H 或验证批 B13I；正确顺序是先确认 U1-U9/ADR 前置，再登记 Task 卡，再 Planning Review，最后登记 Plan 行。Plan 引用未登记候选不可接受，只能标注未登记且不进入 DAG/计数/引用列。",
+    "Q5": "候选边界不足：缺文件清单/写集、验收命令+退出码、关闭条件、requires、负向测试、证据落点；S4.24 跨 restore 与锁两个 ADR 域，应拆分；含 exclusive 时必须 requires S4.23。",
+    "Q6": "B13J-D04-RV2-01 必须并入 S4.22 负向验收；B13J-D04-RV2-02 必须有 ADR-0032 修订/专门收口任务；当前二者均无承接处。",
+    "Q7": "不是逻辑死锁，但当前规划不可满足：ADR-0030 registry 恒空 -> 无 bundle -> exclusive 只能 recoveryClosedPort；ADR-0032 要求 bundle 先行；需补 ADR-0030 修订 -> S4.23 -> ADR-0032 锁后端/证据 -> S4.24 -> S4.22 -> 联合验证/E2E 的可核顺序。",
+    "Q8": "tasks.md/Plan 哈希与基线一致、未修改；rg S4.2[234] 与 B13J 在 tasks/Plan 均 exit 1；评审前 planning-review-r01 不存在；未发现越界新增产物。"
+  },
+  "commands": [
+    {"command": "git rev-parse HEAD", "exitCode": 0, "result": "6da8abbceb0fa197364810a92a8fa2d97b38ddca"},
+    {"command": "git rev-parse --abbrev-ref HEAD", "exitCode": 0, "result": "main"},
+    {"command": "git status --porcelain | Measure-Object -Line", "exitCode": 0, "result": "293"},
+    {"command": "Get-FileHash -Algorithm SHA256 + Get-Item Length on 8 baseline files", "exitCode": 0, "result": "all hashes/bytes match the task baseline"},
+    {"command": "[IO.File]::ReadAllText(path, UTF8) | ConvertFrom-Json on 13 evidence index.json", "exitCode": 0, "result": "13/13 OK"},
+    {"command": "review index artifact bindings (8 review reports)", "exitCode": 0, "result": "8/8 match (hash + bytes)"},
+    {"command": "top-level gap-map binding", "exitCode": 0, "result": "1/1 match"},
+    {"command": "author report bindings", "exitCode": 0, "result": "D02/D03/D04 index match; D01 author report bound in review-r01 inputs and hash matches"},
+    {"command": "rg -n 'S4\\.2[234]' .add/project/knowledge/tasks/tasks.md .add/project/knowledge/plans/ir-01-content-community-batches.md", "exitCode": 1, "result": "no hit"},
+    {"command": "rg -n 'B13J' .add/project/knowledge/tasks/tasks.md .add/project/knowledge/plans/ir-01-content-community-batches.md", "exitCode": 1, "result": "no hit"},
+    {"command": "rg -n '^## ADR-003[012]' .add/project/knowledge/decisions/framework.md", "exitCode": 0, "result": "one heading each at 916/971/1054"},
+    {"command": "rg -n 'ADR-003[012]' .add/project/knowledge/decisions -g '!framework.md' -g '!README.md'", "exitCode": 1, "result": "no second authority"},
+    {"command": "rg -n 'B13J-D01-RV-01|B13J-D04-RV2-0[12]' evidence + knowledge", "exitCode": 0, "result": "only original review reports/indexes; no closure record"},
+    {"command": "byte scan: line endings / BOM / trailing / control chars", "exitCode": 0, "result": "see formatInvariants"},
+    {"command": "D04 review-r02 report last 8 bytes", "exitCode": 0, "result": "89 B9 E5 87 86 E3 80 82 (no trailing newline)"},
+    {"command": "tasks.md control scan", "exitCode": 0, "result": "controls=2 at offsets 12676,12691 (0x0C)"},
+    {"command": "Test-Path planning-review-r01 (before write)", "exitCode": 0, "result": "False"}
+  ],
+  "formatInvariants": [
+    {"path": ".add/project/knowledge/design-workspace/identity-auth/design.md", "lines": 4944, "crlf": 169, "bareLF": 4775, "bom": false, "trailing": "LF", "controlExcludingTab": 0, "tabCount": 1, "tabByteOffset": 468004, "tabLine": 3303},
+    {"path": ".add/project/knowledge/design-workspace/article-management/design.md", "lines": 3267, "crlf": 0, "bareLF": 3267, "bom": false, "trailing": "LF", "controlExcludingTab": 0},
+    {"path": ".add/project/knowledge/decisions/framework.md", "lines": 1118, "crlf": 1118, "bareLF": 0, "bom": false, "trailing": "CRLF", "controlExcludingTab": 0},
+    {"path": ".add/project/knowledge/decisions/README.md", "lines": 110, "crlf": 2, "bareLF": 108, "bom": false, "trailing": "LF", "controlExcludingTab": 0},
+    {"path": ".add/project/knowledge/plans/ir-01-content-community-batches.md", "lines": 1628, "crlf": 1628, "bareLF": 0, "bom": false, "trailing": "CRLF", "controlExcludingTab": 0},
+    {"path": ".add/project/knowledge/tasks/tasks.md", "lines": 3034, "crlf": 3034, "bareLF": 0, "bom": false, "trailing": "CRLF", "controlExcludingTab": 2, "controlOffsets": [12676, 12691], "controlByte": "0x0C"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md", "lfTerminators": 218, "logicalLines": 219, "crlf": 0, "bareLF": 218, "bom": false, "trailing": "none", "controlExcludingTab": 0},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r02/report.md", "lfTerminators": 207, "logicalLines": 208, "crlf": 0, "bareLF": 207, "bom": false, "trailing": "none", "controlExcludingTab": 0}
+  ],
+  "boundaryChecks": {
+    "tasksMd": {"hash": "F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34", "bytes": 823187, "unchanged": true},
+    "plan": {"hash": "3FA19CDD4902F56B8C2F1DF59C570D96FAAE02D8AEE519B4B4165DCCA3637380", "bytes": 497542, "unchanged": true},
+    "rgS4_22_24": {"exitCode": 1, "hits": 0},
+    "rgB13J": {"exitCode": 1, "hits": 0},
+    "planningReviewDirExistedBefore": false,
+    "newOutOfScopeProducts": "none observed under .spec",
+    "gitWrites": "none",
+    "existingFilesModifiedOrDeleted": "none",
+    "writtenFiles": [
+      ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r01/report.md",
+      ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r01/index.json"
+    ]
+  },
+  "writeSet": [
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r01/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r01/index.json"
+  ],
+  "report": {
+    "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r01/report.md",
+    "bytes": 28901,
+    "sha256": "6918A79C1E5A7426037A47E8DA5CEDC5E9F839B39BF0053B1DFE26712254D4AC",
+    "lines": 321,
+    "lfTerminators": 320,
+    "trailing": "none"
+  },
+  "pendingDecisions": [
+    {"id": "D-01", "decision": "U1-U9 逐项确认记录或明确缩小登记范围", "owner": "Lead/user", "blocking": true},
+    {"id": "D-02", "decision": "ADR-0030/0031 的生产 CAS/restore 修订或新增决策", "owner": "Architect/Lead", "blocking": true},
+    {"id": "D-03", "decision": "ADR-0032 解除条件是否补入 registry 唯一来源接线条目", "owner": "Architect/Lead", "blocking": true},
+    {"id": "D-04", "decision": "S4.22/S4.23/S4.24 Task 卡字段与 S4.24 是否拆分", "owner": "Planner/Architect", "blocking": true},
+    {"id": "D-05", "decision": "F008-F010 元数据/格式修订是否单独授权", "owner": "Lead/author", "blocking": false},
+    {"id": "D-06", "decision": "tasks.md:18 既有控制字符是否另行修复", "owner": "Lead/knowledge curator", "blocking": false}
+  ],
+  "notVerified": [
+    "No Go tests, PostgreSQL, HTTP, service, restore or E2E were run.",
+    "No real POSIX lock, ACL, two-process exclusion, crash release, Windows refusal or three-entry shared lock was verified.",
+    "No real anchor/CAS provider, independent fault domain, restore tool/approver, host isolation or native durable receipt was verified.",
+    "Production enter/install reachability was not proven.",
+    "Not all 12 historical review snapshots or every old line anchor were rehydrated; the chain, current key anchors and report bytes were checked.",
+    "No full-repo semantic audit; D01-D04 technical conclusions were not re-adjudicated.",
+    "No Markdown lint or render was run."
+  ],
+  "limitations": "This index and report cover planning readiness only. They do not authorize implementation, do not close pending-B13J-D04, do not lift blocked-upstream, do not grant a design gate, and are not a human sign-off.",
+  "boundaryStatement": "AI agent non-author independent review output. Not a human signature, not implementation authorization, not deployment authorization, not Git write authorization. Does not close pending-B13J-D04 or release blocked-upstream."
+}

@@ -1,0 +1,65 @@
+{
+  "review": "Independent R09 actual leaked-transaction evidence; bounded runner delta",
+  "gate": "PASS limited to actual leak target, normal cleanup and original F005 minimum contract",
+  "original_finding_update": {
+    "S24-CODE-R01-F005": "CLOSED"
+  },
+  "cumulative_original_18": {
+    "closed": [
+      "F001",
+      "F003",
+      "F004",
+      "F005",
+      "F008",
+      "F010",
+      "F018"
+    ],
+    "pending": [
+      "F002",
+      "F006",
+      "F007",
+      "F009",
+      "F011",
+      "F012",
+      "F013",
+      "F014",
+      "F015",
+      "F016",
+      "F017"
+    ]
+  },
+  "E001": "CLOSED unchanged",
+  "new_findings": [],
+  "offline_checks_passed": 111,
+  "all_consumed_inputs_stable_at_finalization": true,
+  "actual_Go_exit": 1,
+  "Go_status": "FAIL preserved, not GREEN",
+  "full_calibration_small_medium": "PERMANENT NRU for this attempt; old complete performance NRU retained",
+  "N9": "not authorized; not received; pending",
+  "task": "S2.4 active; no Tasks/Plan write",
+  "execution": "No Go/PG/SQL/author helper/Git/credentials/adoption/source/cleanup/delegation; own offline audit only",
+  "files": {
+    "verdict.md": {
+      "bytes": 2276,
+      "sha256": "E347F89A7935501D9CEFB47EABCB0BA7C82F9700A20CFAE8DEA2C1AA02FB6DAB"
+    },
+    "report.md": {
+      "bytes": 11393,
+      "sha256": "29534FCE5BC7875ACAD95005E8E99454813D77F9F9015394A4F4CB640C0059C7"
+    },
+    "evidenceaudit.json": {
+      "bytes": 52021,
+      "sha256": "2762328EF30F3638ADEA0CBC2FDAF1A765007A03997D647DE393F24ED7741571"
+    },
+    "offline-audit.py": {
+      "bytes": 15678,
+      "sha256": "17D5D107217217955E1A83DB7D870D8DE2074E669DDEC648D3F2EE8B41930C81"
+    },
+    "runner-r02-to-r03.patch": {
+      "bytes": 4821,
+      "sha256": "F86BF4D4013306ED3044D9D6F82C812481D44CA4A2B5F55904B9D787F38859AD"
+    }
+  },
+  "actual_STOP_utc": "2026-11-04T11:43:07.906129+00:00",
+  "actual_STOP_Asia_Shanghai": "2026-11-04T19:43:07.906129+08:00"
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Main own isolatedPG actualstop/join with all data retained",
+  "owner": {
+    "actor": "Main actual environmental operation, not Role/human test signoff"
+  },
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/postgres-final-stop-r01/receipt.json",
+      "sha256": "C9925224BD1771657C7C893B8EC45731722ACE1604022EA0CA7FADB3A3E21C1B",
+      "bytes": 893
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/postgres-final-stop-r01/stop.result.json",
+      "sha256": "DBF186155FA309678FAA11A4254E3A391567EB7B077F85EA85A6D9A8CD53865D",
+      "bytes": 357
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/postgres-final-stop-r01/stop.stdout.log",
+      "sha256": "DD269CCB43C508088B5A167E486992F22CA81C73E544EF93EA8ED842549AC2D8",
+      "bytes": 50
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/postgres-final-stop-r01/stop.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/postgres-final-stop-r01/postgres-stopped.json",
+      "sha256": "DFC0184EEFEC4407B9213DDD68C4A063FC6B8E1FA4554E7787CA548F2FDF7A3D",
+      "bytes": 230
+    }
+  ]
+}

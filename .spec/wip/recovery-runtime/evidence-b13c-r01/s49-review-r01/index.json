@@ -1,0 +1,284 @@
+{
+  "scope": "s49-review-r01",
+  "owner": {
+    "role": "Reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-s49-review-r01-k3oyrff9",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-list/result.json",
+      "sha256": "8A8217388001F96627431125714203A0EA6C54C1333A3B6295E91B064E6748DD",
+      "bytes": 795,
+      "source_name": "checks/review-s49-encoding-list/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-list/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-encoding-list/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-list/stdout.log",
+      "sha256": "8A15E139D0B250676ED5CF46C65B699B683A1399EB285C2470F4EEA81FC9D50F",
+      "bytes": 69,
+      "source_name": "checks/review-s49-encoding-list/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-normal/result.json",
+      "sha256": "426A72EF9B6AF2D7576714DDBE7B83963FA253F79F441A028482761444C74E30",
+      "bytes": 967,
+      "source_name": "checks/review-s49-encoding-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-encoding-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-normal/stdout.log",
+      "sha256": "4D9C9F8B7F1F942AABED41A9532BECD0F16A8609D14CF2774FE96B804AFE773B",
+      "bytes": 55269,
+      "source_name": "checks/review-s49-encoding-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-race/result.json",
+      "sha256": "71E5F415BACC5038B6EE313B3882143802347292B5DAAD8F7C8E5D9A3C0D6D5B",
+      "bytes": 977,
+      "source_name": "checks/review-s49-encoding-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-encoding-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-race/stdout.log",
+      "sha256": "008504E7E146B078C7A8B4254C7BB1F0B78E03573643D1AFE69CF47F0F30335B",
+      "bytes": 59424,
+      "source_name": "checks/review-s49-encoding-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-race-r2/result.json",
+      "sha256": "C49E6125E107D69C5F629E0C97E7BD3DB558D59C4B435C7F76A421CB8A470C55",
+      "bytes": 1009,
+      "source_name": "checks/review-s49-encoding-race-r2/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-race-r2/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-encoding-race-r2/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-encoding-race-r2/stdout.log",
+      "sha256": "24D1BC29F74C68A99580CA257544704C8B3561F656425941A2CD836AF74C5864",
+      "bytes": 55255,
+      "source_name": "checks/review-s49-encoding-race-r2/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-pg-list/result.json",
+      "sha256": "740011D987006CA04AE93C9DE7A38FE5B029C18B2D3DFCE019E7C244FEE775F6",
+      "bytes": 810,
+      "source_name": "checks/review-s49-pg-list/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-pg-list/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-pg-list/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-pg-list/stdout.log",
+      "sha256": "FBF15B19478092C37EBF91BB71608AE6550579BCFA56A5BC48E5A4CC401C10DC",
+      "bytes": 69,
+      "source_name": "checks/review-s49-pg-list/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-normal/result.json",
+      "sha256": "C64CDF64B1AE7E199B8A08BC25999E52B106EAD87E3420CD329102875D1974A0",
+      "bytes": 1035,
+      "source_name": "checks/review-s49-postgres-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-postgres-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-normal/stdout.log",
+      "sha256": "13856A8D97BE620DEA0A772461940123A9AAAF688DA259573C5F9258BD1C0D4E",
+      "bytes": 58969,
+      "source_name": "checks/review-s49-postgres-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-normal-r2/result.json",
+      "sha256": "FB211F193140B860E4BD6D68A83BD0BF5B4A1B21C5F76A5FC91BAF6938DBA1B7",
+      "bytes": 1067,
+      "source_name": "checks/review-s49-postgres-normal-r2/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-normal-r2/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-postgres-normal-r2/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-normal-r2/stdout.log",
+      "sha256": "6BEB86879A61F09D0DB86FD207F187737F53B70A3697AEAF9FCDCFEEF4666D7C",
+      "bytes": 43583,
+      "source_name": "checks/review-s49-postgres-normal-r2/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-race/result.json",
+      "sha256": "81ED59F33AB0B44EB379F4F551F052E1828785FACA113AEF0D9CCB4DC4014889",
+      "bytes": 1045,
+      "source_name": "checks/review-s49-postgres-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-postgres-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-race/stdout.log",
+      "sha256": "B5E1C166F76B2BB02187FEE041CD0216E87EE05F8BC340D8A8C5E673DD2F0E09",
+      "bytes": 67156,
+      "source_name": "checks/review-s49-postgres-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-race-r2/result.json",
+      "sha256": "499F7BCFF2096F780E9D38765B83057B08530AC2E66C811E76ED9A8C1962A3B0",
+      "bytes": 1076,
+      "source_name": "checks/review-s49-postgres-race-r2/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-race-r2/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/review-s49-postgres-race-r2/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/checks/review-s49-postgres-race-r2/stdout.log",
+      "sha256": "2BB4EBA38152D97AC8034E98EC4D829CBBF7B8AFE177D491512D2FDDBEDE8F76",
+      "bytes": 43573,
+      "source_name": "checks/review-s49-postgres-race-r2/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/encoding-test-overlay.frozen",
+      "sha256": "C66F3E7CFD1902D89B27DA1C91E47453E4FF6B340603BD516D5343B88E1E8E79",
+      "bytes": 18403,
+      "source_name": "encoding-test-overlay.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/entry-audit.json",
+      "sha256": "D0224110E0A8D00E0C5B3E14DF40BD9DE90644AD27F6AF264C0F5363AC433C6F",
+      "bytes": 3756,
+      "source_name": "entry-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/entry-source.json",
+      "sha256": "B5033E79F7692F874220E6A6DFBA55E6EF37262B86C6CE0E52B5AC46D711F0F0",
+      "bytes": 1970,
+      "source_name": "entry-source.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/finalize.py",
+      "sha256": "D889DAE82895004ED9648B8FCAC76252F6FB697550F262EE59A0995412C381ED",
+      "bytes": 28712,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/pg-probes.frozen",
+      "sha256": "8D5AAD393068492BC4ADF45098B07C808E2EE86A4578F3B92C6EEB03B4392286",
+      "bytes": 8845,
+      "source_name": "pg-probes.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/postgres-test-overlay.frozen",
+      "sha256": "ECB88C3C57BF0B8DBD7418557BC07340E9789A1826E73DA2C4346C5A0F786F62",
+      "bytes": 47487,
+      "source_name": "postgres-test-overlay.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/prepare.py",
+      "sha256": "17CDD6CA86396148C18B54227FB6E32753F380730B94DF48572EEFA7BC282CA6",
+      "bytes": 5921,
+      "source_name": "prepare.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/probe-overlay.json",
+      "sha256": "B25E978CA1B60C3DDE626C34965E4B05347DAA8EA01C3BDC24147FCE1D3A8653",
+      "bytes": 435,
+      "source_name": "probe-overlay.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/probe-summary.json",
+      "sha256": "64A1AECD898DD4889944D40BD3D53EE5463DFFBB5B5F4D32794082BF344F8590",
+      "bytes": 63514,
+      "source_name": "probe-summary.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/projection-oracle.json",
+      "sha256": "799759E5973DC88CADA42374BA08999BD4DF61261126C3245C22E6F2D16A92D7",
+      "bytes": 4561,
+      "source_name": "projection-oracle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/readset.md",
+      "sha256": "1E0977E87AF2F68CA211A6399DB7D3AF8EA88DBC33CB82B034F6508A27828339",
+      "bytes": 4321,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/receipt.json",
+      "sha256": "B931706B908895E19325E2445ABB4DD2935C4758E8F3B407B03717BF84B7466F",
+      "bytes": 12697,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/resource-diagnostic.md",
+      "sha256": "4244862C29C21968BE5E885CF64E6EA4284EC1B96A0CE74818018706A2AEB90E",
+      "bytes": 796,
+      "source_name": "resource-diagnostic.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/retained-schemas.json",
+      "sha256": "06C3936D1D94F14A08FBDCDB540F0882E04AE1B9F91C367702E3DFF131180FA0",
+      "bytes": 11029,
+      "source_name": "retained-schemas.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/review-report.md",
+      "sha256": "AC7343C08BE794E59F3C6A3E7526893C59D7B268CDC54C922FC614DBB769382A",
+      "bytes": 15624,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/run_local.py",
+      "sha256": "62F3CBD5ABB4D04E654E4B7D960389C7AAD4E68D7543FD703BE4F884806C0123",
+      "bytes": 3136,
+      "source_name": "run_local.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/runner-prelaunch-diagnostic.md",
+      "sha256": "52C22788CE9563EC65C0958DAA2A6DBAFEC65EEEB3FC4E5C946142602E717FD8",
+      "bytes": 974,
+      "source_name": "runner-prelaunch-diagnostic.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s49-review-r01/unit-probes.frozen",
+      "sha256": "618506D82D89E8C00DE61DB34D0A900FBD28F045D8B39B5BA28488EC8D70BF73",
+      "bytes": 1571,
+      "source_name": "unit-probes.frozen"
+    }
+  ]
+}

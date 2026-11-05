@@ -1,0 +1,388 @@
+{
+  "schema": "s1.5.producer-real-current.r03",
+  "scope": "C18-COV-F005 delta: replace mutable whole verification binding with a fixed local snapshot",
+  "workspace": "D:/AID/VSCode/Codex/Han",
+  "branch": "main",
+  "author": {
+    "name": "Singer",
+    "role": "add-steward",
+    "actual_id": "01a1a489-0aad-7390-8c82-d543b5154e22",
+    "provenance": "本会话 Lead / 用户明确提供"
+  },
+  "captured_at_utc": "2026-11-04T03:40:28.638564+00:00",
+  "maintenance": {
+    "purpose": "修复 r02 活 verification 追加后固定消费校验失效；为 Carver 提供 delta 复审对象",
+    "owner": "Singer / add-steward；交回 Lead",
+    "authorityRef": ".spec/wip/article-management/evidence-case18-coverage-r01/report.md — C18-COV-F005",
+    "retentionCondition": "保留 r03 与全部旧证据供复审、接收及审计追溯；本轮无清理授权",
+    "exitCondition": "作者核验后 STOP；Carver delta 复审与 Lead 登记另行发生",
+    "status": "pending"
+  },
+  "delta": {
+    "historical_r02_review": "Carver PASS / F005 CLOSED，仅此前当前消费绑定；Lead 已接收，记录原样保留",
+    "current_r02_validation": {
+      "entries": 43,
+      "matched": 42,
+      "mismatched": 1,
+      "only_mismatch": ".spec/wip/article-management/verification-s1.5.md",
+      "expected": {
+        "path": ".spec/wip/article-management/verification-s1.5.md",
+        "sha256": "1C7C0E45079AA2FEB284798DD6A712E3F1C5AC15104C4360761CE71F54BE95F6",
+        "bytes": 42439
+      },
+      "actual_at_capture": {
+        "path": ".spec/wip/article-management/verification-s1.5.md",
+        "sha256": "7997E1ADF37D82FB663B40B41BD43BE4AF191120E66A60BC7E6C1C25CA1F4AF9",
+        "bytes": 45600
+      },
+      "prefix_42439_matches_old": true
+    },
+    "repair": "仅把 r03 verification_context 改为同目录 whole-file snapshot；不改 r02，不使旧 r02 伪称当前 43/43",
+    "review_status": "r03 PENDING independent delta review; no author closure",
+    "next_action": "Lead 安排原非作者 Carver 复核后登记；本轮不改旧关闭记录/Tasks/verification"
+  },
+  "snapshot_provenance": {
+    "captured_at_utc": "2026-11-04T03:40:28.638564+00:00",
+    "snapshot": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r03/verification-context.snapshot.md",
+      "sha256": "7997E1ADF37D82FB663B40B41BD43BE4AF191120E66A60BC7E6C1C25CA1F4AF9",
+      "bytes": 45600
+    },
+    "mode": "whole_file_raw_bytes",
+    "source": ".spec/wip/article-management/verification-s1.5.md",
+    "source_prefix_sha256": "1C7C0E45079AA2FEB284798DD6A712E3F1C5AC15104C4360761CE71F54BE95F6",
+    "source_at_capture": {
+      "path": ".spec/wip/article-management/verification-s1.5.md",
+      "sha256": "7997E1ADF37D82FB663B40B41BD43BE4AF191120E66A60BC7E6C1C25CA1F4AF9",
+      "bytes": 45600
+    },
+    "choice": "whole 45600-byte file, including appended Carver/Lead reception context; old 42439-byte prefix verified exactly",
+    "source_is_mutable": true,
+    "source_navigation_only": true,
+    "hard_binding_ref": "verification_context",
+    "links": {
+      "base": ".spec/wip/article-management",
+      "meaning": "snapshot 保留原始字节及原始相对链接；链接按来源文档目录解析，只作导航、不递归硬绑定",
+      "strip_editor_line_suffix": true
+    }
+  },
+  "bindings": {
+    "legacy_index": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-r01/index.json",
+      "sha256": "F840BC2C385CFC918E9C9C2D41D2C7C31FB00286D828225BC5EEA73E2835908B",
+      "bytes": 19567
+    },
+    "current_consumption_report": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-r01/report.md",
+      "sha256": "1B2FB3CFBF6C504AA528D3843FB79B65F52627FCDE7670B74CB46B130B037749",
+      "bytes": 8267
+    },
+    "upstream_index_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/index.json",
+      "sha256": "968A8FBECD3F553D69728DD252D0C8F73C59F6A88C5B867142DFB08EE338BBD4",
+      "bytes": 32021
+    },
+    "upstream_report_md": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/report.md",
+      "sha256": "9C152CADFACA8A32156BE07B1B2C37F16DBF49F4C133A3BC2EE3B17FB1A8769C",
+      "bytes": 3749
+    },
+    "upstream_commands_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/commands.json",
+      "sha256": "A8890AB32BE29A1C2D68CC059A343625630588F1C4C87342152713228E289993",
+      "bytes": 34196
+    },
+    "upstream_source-protection_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/source-protection.json",
+      "sha256": "C9D35B0B4B32D0AF636FF8093C7BEBB92F7C839F5A13F24FC8651FD3822B196E",
+      "bytes": 49186
+    },
+    "upstream_source10-before-after_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/source10-before-after.json",
+      "sha256": "6AE6D329E52497CB2958870A26DF97F1CC347E4A679206523B6ECB3B6275AEC7",
+      "bytes": 2726
+    },
+    "upstream_checks_required-pg-normal_stdout_log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/stdout.log",
+      "sha256": "52BBB9828525F14DA8AC2E04DF7E437B9FAED5444E83880143B721E0058531F9",
+      "bytes": 275985
+    },
+    "upstream_checks_required-pg-normal_result_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/result.json",
+      "sha256": "A306259A59726C009161E73D4366F2F941461242ABCF02777F3BF1B1AEA4C160",
+      "bytes": 2135
+    },
+    "upstream_checks_required-pg-normal_leaves_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/leaves.json",
+      "sha256": "2F0F01CD9D2D3366E2A8CD56D043040747A37820CBDBCF0712769F3CFF8E1819",
+      "bytes": 21180
+    },
+    "upstream_checks_required-pg-race_stdout_log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/stdout.log",
+      "sha256": "2602BD3C6F679CFEDD7D649B4D0B8AB31B9181521C8CAFB5751A21D62FAAA8F9",
+      "bytes": 275949
+    },
+    "upstream_checks_required-pg-race_result_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/result.json",
+      "sha256": "A4449600EA0C84AA2ECE8227101731C38ED0B50DED255ECAB768B12BE8A7D6C0",
+      "bytes": 2149
+    },
+    "upstream_checks_required-pg-race_leaves_json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/leaves.json",
+      "sha256": "B44F93D1F892B6239F525EFEF8562CD31A41D62A1F09AAE2411CE22A47AC3180",
+      "bytes": 21174
+    },
+    "original_finding": {
+      "path": ".spec/wip/article-management/evidence-case18-coverage-r01/report.md",
+      "sha256": "2C0848582BA524F244761A65CAF3D8C08E923B0FC56AB9B6D03CC254216C48F7",
+      "bytes": 20718
+    },
+    "early_producer_review": {
+      "path": ".spec/wip/article-management/review-code-s1.5-f008-producer-r01.md",
+      "sha256": "8437743308F17FA2187F8D1F2A232030591ADC6F8D13A18BA42B92E0AAA99DDD",
+      "bytes": 5067
+    },
+    "producer_review_report": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-review-r01/report.md",
+      "sha256": "B51E2F55CF03A408DFAE891C7F4C52595FEF35A5BA357236BE21CC297D0ED134",
+      "bytes": 14173
+    },
+    "producer_review_verdict": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-review-r01/verdict.md",
+      "sha256": "812A56FE8B80E9789BBBF3C41DC5C168CB0ED335E6CD482DD4D6F958CB79CB6E",
+      "bytes": 796
+    },
+    "producer_review_commands": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-review-r01/commands.log",
+      "sha256": "6FB81EE8A8770D588B4BD75D32754C6D4580DB8A38F04E5931326EA85FBFD5B4",
+      "bytes": 12824
+    },
+    "case18_original_report": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01/report.md",
+      "sha256": "C54E4EAB1AF5761F2F250CE51A1E0B4EAD63A22AC51B02AC60E99D20F46EEC3C",
+      "bytes": 7384
+    },
+    "case18_original_index": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01/index.json",
+      "sha256": "609CFBF075078808E1483B9F20E5EDBF5395AB426652EB756054CEF4E36DFCD2",
+      "bytes": 6640
+    },
+    "case18_append_correction": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01/registration-correction-r01.md",
+      "sha256": "CFDCE04CA654DA813129C9BA0929934EE23C35A7ED5989309E40258BD61EC84C",
+      "bytes": 4604
+    },
+    "case18_review_r01": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01-review-r01/report.md",
+      "sha256": "AAFFA18532814397036C5EF1066345B8B7DE1E6487D8D70776D369C1FEBC192C",
+      "bytes": 19588
+    },
+    "case18_review_r02": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01-review-r02/report.md",
+      "sha256": "C732752A552672FB432A3BA1908CF56B103A9DB1675FC46C767021D3B357B2A9",
+      "bytes": 10370
+    },
+    "case18_verdict_r02": {
+      "path": ".spec/wip/article-management/evidence-s8.2/case18-current-r01-review-r02/verdict.md",
+      "sha256": "BB8E3B41AFA13B0D8D6DA2666DE35920FD3D90F9F645E653B070E31FDAE8A2B7",
+      "bytes": 2651
+    },
+    "required-pg-normal_stderr.log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    "required-pg-normal_processes.json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-normal/processes.json",
+      "sha256": "47986134196E813EED8E692272C9FEA6F4181A9950A931ED469ADBFE4D35517B",
+      "bytes": 7198
+    },
+    "required-pg-race_stderr.log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    "required-pg-race_processes.json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/required-pg-race/processes.json",
+      "sha256": "9D847F51BEFE15820B1A4E055E8C1869027606FF68779460E176E43E823BC3F1",
+      "bytes": 31490
+    },
+    "preflight_stdout.log": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/preflight-r02/stdout.log",
+      "sha256": "8676CCEE4CFFE09033F3DC0252FBDB7D5CFE412D2F7F448EDAF441767D70B0C2",
+      "bytes": 1488
+    },
+    "preflight_result.json": {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-f001-repair-author-r02/checks/preflight-r02/result.json",
+      "sha256": "71A20A255B8250373A4492BF5121BE50CFAF984FF4E8564BCDF9F385EB440A21",
+      "bytes": 2190
+    },
+    "r02_index": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r02/index.json",
+      "sha256": "E7DF162F0716558369DFA996DB7FE38FAD20E0AF340B4873685538C900A54E56",
+      "bytes": 21133
+    },
+    "r02_report": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r02/report.md",
+      "sha256": "F8CC9692736A87C0B524E4C4FFA17F60D92C20E5798D83B4C862A40987CB9625",
+      "bytes": 9666
+    },
+    "r02_manifest": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r02/hash-manifest.json",
+      "sha256": "996EE23E23F48F4988DC583EF0C9A4F4CC85C11815BC8C608E3359EB56B901B9",
+      "bytes": 10312
+    },
+    "r02_independent_report": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r02-review-r01/report.md",
+      "sha256": "F5F8CF5B0EDC53AD89C7AC8714FB95DA634A01F55EA751DA225DC2302512C7AF",
+      "bytes": 12090
+    },
+    "r02_independent_verdict": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r02-review-r01/verdict.md",
+      "sha256": "053C3CBD3C5F837D9C52C5F01EC7BFA7DF4126E3FC866F18E5446DC873917161",
+      "bytes": 1782
+    },
+    "r02_lead_reception": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r02-lead-r01.md",
+      "sha256": "31792BDC56E309CBD0DF614934856C7B492E99811D48CE74F4D5DF597B99CC99",
+      "bytes": 2788
+    },
+    "verification_context": {
+      "path": ".spec/wip/article-management/evidence-s1.5/producer-real-current-r03/verification-context.snapshot.md",
+      "sha256": "7997E1ADF37D82FB663B40B41BD43BE4AF191120E66A60BC7E6C1C25CA1F4AF9",
+      "bytes": 45600
+    }
+  },
+  "report_binding": {
+    "legacy_index_ref": "legacy_index",
+    "legacy_report_declaration": {
+      "name": "report.md",
+      "bytes": 8023,
+      "sha256": "A9A4ECBB9DEF6C1862ECE1D151F085F179DE43A6A489FD94411B017978150BFF"
+    },
+    "current_report_ref": "current_consumption_report",
+    "bytes_delta": 244,
+    "legacy_report_preimage": "unknown; unavailable in bounded inputs; not reconstructed",
+    "relationship": "当前 report 是同一路径的评审后版本；旧 index 是保留的生成时点快照，不可作为当前目录完整性基线",
+    "known_reason_refs": [
+      "verification_context",
+      "producer_review_report"
+    ],
+    "known_reason": "记录称修订 shell 命令引用口径与不存在的 sentinel 路径描述；完整逐字差异未经旧原像证明",
+    "supersedes": "r03 提供当前消费入口；r02 与旧 r01 保留各自历史字节及评审。r02 manifest 仅作为不递归消费的历史文件固定。"
+  },
+  "source10_observation": {
+    "kind": "read_only_byte_observation_not_test",
+    "matching": 9,
+    "drifted": 1,
+    "files": [
+      {
+        "path": "internal/article/replay_evidence.go",
+        "sha256": "7C14E74DCEF68A1B8067DCEC2BF50BA4D1FA9BA165AEE5C52B3828D0D60417FB",
+        "bytes": 34397,
+        "legacy_sha256": "7C14E74DCEF68A1B8067DCEC2BF50BA4D1FA9BA165AEE5C52B3828D0D60417FB",
+        "legacy_bytes": 34397,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/replay_publication.go",
+        "sha256": "34B698A231B32101ACBF1B91AB7843FF1710D529C748072CFDF27BA1CF180B8E",
+        "bytes": 37500,
+        "legacy_sha256": "34B698A231B32101ACBF1B91AB7843FF1710D529C748072CFDF27BA1CF180B8E",
+        "legacy_bytes": 37500,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/replay_publication_integration_test.go",
+        "sha256": "8F5DD24DD40BE6A1A6CD4FBB9EF5990EE7EDBCEB964FF9ACF6BD41E5967540FD",
+        "bytes": 65102,
+        "legacy_sha256": "8F5DD24DD40BE6A1A6CD4FBB9EF5990EE7EDBCEB964FF9ACF6BD41E5967540FD",
+        "legacy_bytes": 65102,
+        "matches_legacy": true
+      },
+      {
+        "path": "migrations/0011_article_replay_publication.sql",
+        "sha256": "7C7F1B1F0BEFDBF572B0EE768FAC3ADD987D58DF8CA4525072CD1EE269F84CC2",
+        "bytes": 2762,
+        "legacy_sha256": "7C7F1B1F0BEFDBF572B0EE768FAC3ADD987D58DF8CA4525072CD1EE269F84CC2",
+        "legacy_bytes": 2762,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/replay_publication_test.go",
+        "sha256": "412A145A50A374C689D29EA3050DE48BCB9C827E7D7DB4E927CE08A828F69B05",
+        "bytes": 20382,
+        "legacy_sha256": "412A145A50A374C689D29EA3050DE48BCB9C827E7D7DB4E927CE08A828F69B05",
+        "legacy_bytes": 20382,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay.go",
+        "sha256": "33AB20A7EB3A963889B9A8F027D89A8407C67F3D9C7DB85FC7814F9D1B3B577D",
+        "bytes": 16175,
+        "legacy_sha256": "33AB20A7EB3A963889B9A8F027D89A8407C67F3D9C7DB85FC7814F9D1B3B577D",
+        "legacy_bytes": 16175,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay_source.go",
+        "sha256": "485A4621FA22AD7442D9ACF36A9B36118C6CE3C96E37E6DA8EB2FCFA2293DF61",
+        "bytes": 10144,
+        "legacy_sha256": "485A4621FA22AD7442D9ACF36A9B36118C6CE3C96E37E6DA8EB2FCFA2293DF61",
+        "legacy_bytes": 10144,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay_test.go",
+        "sha256": "A4923E7B58D74EAB743C21F681F1010E8AAC592396A723E7BF3B3D0B181B02F4",
+        "bytes": 30151,
+        "legacy_sha256": "A4923E7B58D74EAB743C21F681F1010E8AAC592396A723E7BF3B3D0B181B02F4",
+        "legacy_bytes": 30151,
+        "matches_legacy": true
+      },
+      {
+        "path": "internal/article/deletion_replay_source_test.go",
+        "sha256": "5C63E4DF765B21006809D2E6E7A991BF57709F714DD228C47C6B504427D613FE",
+        "bytes": 15473,
+        "legacy_sha256": "2F8E38D81F4CC88E03E02AFC0602501ACC2241E40FC0270D94B270D756EA0695",
+        "legacy_bytes": 15341,
+        "matches_legacy": false
+      },
+      {
+        "path": "internal/article/deletion_replay_integration_test.go",
+        "sha256": "CB2E859535E0D8BC421298BDE13452271DC0B6B3EAE005BEA9CF76E8224A5F50",
+        "bytes": 15900,
+        "legacy_sha256": "CB2E859535E0D8BC421298BDE13452271DC0B6B3EAE005BEA9CF76E8224A5F50",
+        "legacy_bytes": 15900,
+        "matches_legacy": true
+      }
+    ],
+    "full_runtime_no_drift": "unknown",
+    "current_source_pass": "NOT ESTABLISHED",
+    "note": "本轮逐项 hash/bytes 与 r02 十项观察一致；相对原 run 仍 9 匹配/1 漂移，非源码 Review 或运行 PASS"
+  },
+  "historical_runs": {
+    "evidence_ref": "r02_index",
+    "semantics": "两轮各 58/0/0 为既存运行及 r02 离线复算结论。本轮仅复核原 run 绑定 hash/bytes 未变，不执行或声称重跑 Go/PG。"
+  },
+  "navigation_only": {
+    "verification": ".spec/wip/article-management/verification-s1.5.md",
+    "tasks": ".add/project/knowledge/tasks/tasks.md",
+    "plan": ".add/project/knowledge/plans/ir-01-content-community-batches.md",
+    "note": "活文档不进入 r03 manifest；历史 r02 manifest 的内部引用不递归验证"
+  },
+  "validation_contract": {
+    "manifest": "hash-manifest.json",
+    "checker": "check.py",
+    "mode": "只检查本 manifest 的直接固定条目；不递归展开旧 index/manifest 或 snapshot 导航目标",
+    "context_append_isolation": "snapshot 原始字节固定且活 verification 不在硬依赖集合；后续仅追加 verification 不改变 r03 hash 校验",
+    "manifest_self_hash": "不循环自哈希，由交付返回 manifest 自身 SHA256/bytes"
+  },
+  "limits": [
+    "旧 A9A4ECBB/8023 report 原像及完整 diff 仍 unknown",
+    "十源中 deletion_replay_source_test.go 相对原 run 漂移的原因、影响及当前运行结果 unknown",
+    "不执行 Go/DB，不读取凭据或外网，不做 Git 写或下级委派",
+    "不外推当前源码 PASS、runtime 无漂移、Case18/root/整卡、真实 Journal/HMAC/keyring/旧备份/ACL/部署 E2E/容量/P95/production readiness/人的接收",
+    "本轮仅新建 r03；旧 r02/Review/Lead 接收/Tasks/Plan/verification/source/raw 全保留，无删除/移动/归档/合并"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "scope": "s410-design-r56-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-r56-review-e4b0ba8efe",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/findings.json",
+      "sha256": "68E9DBFC19CEF7CEDDC5D1282BF1C82680AA5F0647405DBE57AC6F220B5CC240",
+      "bytes": 475,
+      "source_name": "findings.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/hashes.json",
+      "sha256": "5A0409E2A9BE0FAA986815D6B16EE97999ACFB5EC6534F97CC5DEA8B5B554D6D",
+      "bytes": 1153,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/methods.json",
+      "sha256": "D43A7DA5F62B7319FED7B39209F4E4FC1CE563599E92F9EFCEC2651FCEAF2152",
+      "bytes": 2190,
+      "source_name": "methods.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/object-entry.json",
+      "sha256": "67D16C7BA8469F9C721624CC2295004D7F4043E3009EB14A134BE1ADD2E9D4CC",
+      "bytes": 300,
+      "source_name": "object-entry.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/object-exit.json",
+      "sha256": "8D9ADC07EA077D703D86E62E63D7AE51867CFC47305F5D9F27354F6C58C82C2B",
+      "bytes": 242,
+      "source_name": "object-exit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/object-hashes.json",
+      "sha256": "6161A32A87FE6F27586559CDA3452DFB0002EF5A6E6494F28645E794F4489AD9",
+      "bytes": 428,
+      "source_name": "object-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/read.py",
+      "sha256": "FA22D9B02D4B05A0237A6060798CB4A2E97F3B5BCA7ED97859C907F7B2DC2117",
+      "bytes": 867,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/readset.json",
+      "sha256": "E7C727DA9F4DF270167EDEFE65E069D792967F91E6CD05C5E4C9B288FE9514D3",
+      "bytes": 20042,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/readset.jsonl",
+      "sha256": "FC51857835465ED7E86B3CD5B6986BE02541E4B85F27B99DDEEDC625EC534089",
+      "bytes": 13149,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/receipt.json",
+      "sha256": "6C8986652C032E2A6E23EA83DBF736ADC16EC7AADDDD73A1CF2076A4370F11DB",
+      "bytes": 1874,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/review-report.md",
+      "sha256": "7C271911A16D0FC1860DF15E0362FC97FF1D6E71FD9F6D8172114D60D308C934",
+      "bytes": 5620,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/seal.py",
+      "sha256": "3935D5940CCE1BE3EDEB6AB5C2581BF0EDEF824E01E4A26E51400328482BA17C",
+      "bytes": 5395,
+      "source_name": "seal.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/static-proof.json",
+      "sha256": "E88C6E367413592CACB72B59A8F5582FEC227B646768039FD5750D8FC4BCD35B",
+      "bytes": 2521,
+      "source_name": "static-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-design-r56-review-r01/static_proof.py",
+      "sha256": "91634BEBF8EE967E1E996698B118CD9EB528B94F222D9EE87D21727BEB17B985",
+      "bytes": 3713,
+      "source_name": "static_proof.py"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

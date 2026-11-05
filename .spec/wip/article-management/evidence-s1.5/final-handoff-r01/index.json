@@ -1,0 +1,101 @@
+{
+  "scope": "Final local component handoff only; task stays active and full gates retained",
+  "files": [
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\exact-patch.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/exact-patch.json",
+      "sha256": "25CCEA8D047B88C505A0003F1149CB32EAF3732C9EAFE8A7DEB5FB621745A8EE"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\plan.actual.diff",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/plan.actual.diff",
+      "sha256": "0552524E4118CE7D0B59C4B24A80DF89915D6012E71CD8998DC9E99EE773DE29"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\plan.after.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/plan.after.md",
+      "sha256": "DE377B618B1FF3E31C9CBF1F778ACED31B275CB7605DB9BB338EAA04A6C787A1"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\plan.before.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/plan.before.md",
+      "sha256": "602E1FE63F302AA6A4850C63AA8F7FA44BAE1FAF0695E696EDF75C9A10889A33"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\plan.candidate.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/plan.candidate.md",
+      "sha256": "DE377B618B1FF3E31C9CBF1F778ACED31B275CB7605DB9BB338EAA04A6C787A1"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\plan.preview-before.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/plan.preview-before.md",
+      "sha256": "602E1FE63F302AA6A4850C63AA8F7FA44BAE1FAF0695E696EDF75C9A10889A33"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\plan.preview.diff",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/plan.preview.diff",
+      "sha256": "E5717873B0AD8F7B273D493E334BDBAFD7848DB6CCB537E3D30D8E46E48B466A"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\readback-scope-check.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/readback-scope-check.json",
+      "sha256": "AA7D7F36D773D133AC7D7EC60B2825E446159A70B3DAC8C1732EFA756F652525"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\tasks.actual.diff",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/tasks.actual.diff",
+      "sha256": "9353F41CA5CEE64F5B16A9E7A6A1AEFA2255541CB85AD726C786995C59B50A87"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\tasks.after.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/tasks.after.md",
+      "sha256": "3B1EE1F9BD6A89A3F9B0A82C666A6E6251EB423E14D352A7A5C137292F75B373"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\tasks.before.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/tasks.before.md",
+      "sha256": "8ED183BFD9752695FBFE3EB828C6EE57EE454B7FD668F290E5A6CE74A165B2A0"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\tasks.candidate.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/tasks.candidate.md",
+      "sha256": "3B1EE1F9BD6A89A3F9B0A82C666A6E6251EB423E14D352A7A5C137292F75B373"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\tasks.preview-before.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/tasks.preview-before.md",
+      "sha256": "8ED183BFD9752695FBFE3EB828C6EE57EE454B7FD668F290E5A6CE74A165B2A0"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\tasks.preview.diff",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/tasks.preview.diff",
+      "sha256": "2B856AF29F42E59EAE0D8F9776FD1A06C7703AC9652F7C2A7A191BDF80ECA561"
+    },
+    {
+      "owner": "actual Planner Ptolemy final metadata handoff",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-final-local-apply-f0e01eb9815a42f8b221b36b0c4dd352\\write-receipt.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/write-receipt.json",
+      "sha256": "A980BBBD66965261E0D4DEEE6B8DCE8F230E353DF690BE9F8ECDA1744BA5F6FF"
+    },
+    {
+      "owner": "Lead actual final verification",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\lead-final-state-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/final-handoff-r01/lead-final-state-verification.json",
+      "sha256": "BE60873945E86482E4ECCAAF4A6A6D5F1F49FC6CC62B6A9DF24FEF8D528E90E6"
+    }
+  ]
+}

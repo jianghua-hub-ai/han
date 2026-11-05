@@ -1,0 +1,26 @@
+{
+  "scope": "review-prep",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-review-prep-5849e965d6ac4aa5a5fba4b304be0171",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-prep/readset.md",
+      "sha256": "BA58C98E7A84C0040BB4E403AA6721A68BE34C4F5DC2EC9F884773EAFC2085FA",
+      "bytes": 6245,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-prep/receipt.md",
+      "sha256": "0143B2D5A1702F5893834B59B02AAF008CA95AD997F2CC8C6F0997ED08FA90CE",
+      "bytes": 6095,
+      "source_name": "receipt.md"
+    }
+  ]
+}

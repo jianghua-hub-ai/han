@@ -1,0 +1,15 @@
+{
+  "actor": "Main intermediate test inspection, not final frozen receipt or independent Role Review",
+  "files": [
+    {
+      "path": "journal_snapshot_test.go",
+      "sha256": "D6C25CEE829B0E06819C97A53D926B5B2DA17C48E2E647069963095539655C10",
+      "bytes": 12260
+    },
+    {
+      "path": "coordinator_context_test.go",
+      "sha256": "0A344F32A4FF10C89703FA7FACE56E12FE7E4D9DCA5AD882D2D72F805957A790",
+      "bytes": 18131
+    }
+  ]
+}

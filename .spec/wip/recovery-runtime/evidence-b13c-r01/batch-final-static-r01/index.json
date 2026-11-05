@@ -1,0 +1,122 @@
+{
+  "scope": "batch-final-static-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-final-static-6402ac29b8d64e0da32d0513a9cfd1d6",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/applicability-matrix.json",
+      "sha256": "51B1EEA48157E7E488BD2932F551852ABF730FA1BEA813FB0CC042878935C403",
+      "bytes": 3755,
+      "source_name": "applicability-matrix.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/author-final-raw-audit.json",
+      "sha256": "1C1E83709957E260793D2E59A9DB2B5F4C1A5AF8D487864A0ECA311FEE89A26F",
+      "bytes": 50562,
+      "source_name": "author-final-raw-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/deleted-lines.json",
+      "sha256": "E1C925A2F75B3663CF219C811B0733A915D4488B2D7EB64C4A6B78976B0F0C13",
+      "bytes": 2894,
+      "source_name": "deleted-lines.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/entry-hashes.json",
+      "sha256": "AAED70B866CCF785B9AFCF4D726295BB72B062E052EF34B79377CFD87E72F7F2",
+      "bytes": 6180,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/exit-hashes.json",
+      "sha256": "70606553BFB9C6A609E8EB0F7D8933FFB79146E58D9E66A19FCE78F7D26CB57C",
+      "bytes": 6936,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/hashes.json",
+      "sha256": "2DF445782C041C17163E2017644DEDFB5B7493E509C8C72383726E36A9228138",
+      "bytes": 1575,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/inspect_diff.py",
+      "sha256": "9B837AFC685237596D8152D2411914D4E553C5626362D446DEA32F393FA0EBFC",
+      "bytes": 553,
+      "source_name": "inspect_diff.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/inspect_structures.py",
+      "sha256": "42326F2D0391AA880120995AC11734661CF4DD95EF64F759DA977741AA6BABBC",
+      "bytes": 546,
+      "source_name": "inspect_structures.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/matrix.py",
+      "sha256": "79B967235D485F56F047419DA1CA460F28E6F089C0AB3015F110AB2E554CBD20",
+      "bytes": 3804,
+      "source_name": "matrix.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/read.ps1",
+      "sha256": "BF014CDD97C3C8DA7AC84A7042122007A3F8BFC2F082CE2C6C5987E3C67FCC5D",
+      "bytes": 535,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/readset.jsonl",
+      "sha256": "12E5B79D628E7EB7E9EB6B5A0C56DFAC61B0127F57006F67A8ADCF3CE4F1A3E7",
+      "bytes": 7841,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/receipt.json",
+      "sha256": "29E76379301303650CC9361EC5DA5C053A10468105B4D1B6AA0A1123D936D4E0",
+      "bytes": 3171,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/reused-methods.json",
+      "sha256": "C6A7589474726F6CAD131D89E893826FC0FEC4835F083078B3D3F11868A8CBCF",
+      "bytes": 10250,
+      "source_name": "reused-methods.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/seal_packet.py",
+      "sha256": "6DF3EE0F488A353CA14C484B2CBF7BCAF3947D205FD426BA9FD357E21C2C8BD1",
+      "bytes": 4979,
+      "source_name": "seal_packet.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/static-batch-review-report.md",
+      "sha256": "6B85814801134E88B0457A08C478178C2C97CF57A1D6943E547D1AF687F40C88",
+      "bytes": 9796,
+      "source_name": "static-batch-review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/static-proof.json",
+      "sha256": "5E8341D18B28EC8CDE20F76AA2E01D4A6B68A3B9149AAC817B72E82DC091B985",
+      "bytes": 7865,
+      "source_name": "static-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/static-readset.jsonl",
+      "sha256": "055656DCC15179E8DD41642455B4EB8186846794C59D9AE87613652157E3DE46",
+      "bytes": 33481,
+      "source_name": "static-readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-final-static-r01/static_proof.py",
+      "sha256": "CC988E9CE02E3D199A2CC2F5E5CDA15A0E6A3B4B52C568C9B08B0A57AE5DF716",
+      "bytes": 8385,
+      "source_name": "static_proof.py"
+    }
+  ]
+}

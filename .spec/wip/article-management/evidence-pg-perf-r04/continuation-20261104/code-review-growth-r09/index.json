@@ -1,0 +1,32 @@
+{
+  "review": "R09 bounded actual growth evidence",
+  "gate": "PASS limited to growth negative target and normal closure",
+  "new_findings": [],
+  "checks_passed": 138,
+  "checks_failed": 0,
+  "files": {
+    "report.md": {
+      "bytes": 10354,
+      "sha256": "52A96556841C5F9AFCBED2F278DFC98D57985E6B69A76444E6631ACA770D741A"
+    },
+    "verdict.md": {
+      "bytes": 2463,
+      "sha256": "297683D305BB6703B9F27C0CE4AF174B45CE5B726451C89C9A71C702BF7FA704"
+    },
+    "evidenceaudit.json": {
+      "bytes": 57966,
+      "sha256": "23C6A5600062E6F08D5C46F95962DE86B71725ACDEB4399FE542C3CAB097A69F"
+    },
+    "offline-audit.py": {
+      "bytes": 15878,
+      "sha256": "846EBE885EC6F351BB8316DDC2517FDF61620F294C28B69DD5DCC1ABA621BEE9"
+    }
+  },
+  "original_findings": "6 CLOSED / 12 PENDING unchanged",
+  "full_calibration_small_medium": "PERMANENT NOT RUN for this attempt; old complete performance NRU retained",
+  "leak_N9_remaining_W": "PENDING; no execution/adoption authorization by Reviewer",
+  "actual_STOP_utc": "2026-11-04T11:24:17.738490+00:00",
+  "actual_STOP_Asia_Shanghai": "2026-11-04T19:24:17.738490+08:00",
+  "write_scope": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\evidence-pg-perf-r04\\continuation-20261104\\code-review-growth-r09",
+  "execution": "offline reads/hashes/own audit only; no Go/PG/author helper/Git/credentials"
+}

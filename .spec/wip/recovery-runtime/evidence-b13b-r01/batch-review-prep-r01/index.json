@@ -1,0 +1,62 @@
+{
+  "scope": "batch-review-prep-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Curie",
+    "runtime_id": "01a18579-fde7-7a12-a3b1-9017a86b98c3"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13b-batch-review-prep-jywl59ds",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/finalize.py",
+      "sha256": "9F64459914157FF39BD92166740534CC2F613C3F831932E934250A9F08DAC38F",
+      "bytes": 3521,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/initial.json",
+      "sha256": "41E8A5568D70CDC96A1561B9A5EF1B49085EEE76D61F9A3D1B1973F6D79B8F31",
+      "bytes": 559,
+      "source_name": "initial.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/prep.md",
+      "sha256": "17E53F92C6B89470CC9C30914D9B4CA9B5B830C90D78DE1FFAEE9F087D1DAE3C",
+      "bytes": 8708,
+      "source_name": "prep.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/read.py",
+      "sha256": "3253BAF958403E5B8B965700C3E05A8C479C6880ABB3F40BF83F9AFA545F88E2",
+      "bytes": 625,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/readset.json",
+      "sha256": "CE62624DE030C22FA59D52937622E79C29001FA0EA8E11888C7FC406405DE012",
+      "bytes": 13154,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/readset.jsonl",
+      "sha256": "B1BB13044C1A8B89F1375D35EA3D6DBD565672E75AFE445117BDF527C3E22698",
+      "bytes": 3247,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/receipt.json",
+      "sha256": "997C4E029F4A4B4C67B712FA74F158C4832B44776A345675E064730DF1BA5F5E",
+      "bytes": 590,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-prep-r01/reused-document-hashes.json",
+      "sha256": "B2128D38B2B8FA33841C71B2245AEAB6C171875E4B942BE333122FAB6E708164",
+      "bytes": 973,
+      "source_name": "reused-document-hashes.json"
+    }
+  ]
+}

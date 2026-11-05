@@ -1,0 +1,173 @@
+{
+  "schema": "add.review-index/v1",
+  "role": "add-reviewer",
+  "independence": "independent review; reviewed artifact not modified by reviewer",
+  "objectType": "design",
+  "item": "pending-B13J-D01",
+  "workflow": "development-delivery",
+  "phase": "design-activity-5-incremental-revision / non-author design review r01",
+  "verdict": "PASS WITH MINOR",
+  "rounds": {
+    "round1": "PASS",
+    "round2": "PASS WITH MINOR"
+  },
+  "reviewedAt": "2026-11-01T22:10:21+08:00",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "artifact": {
+    "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/review-r01/report.md",
+    "sha256": "977022446B3B8ECD3DA03DC64C86A3FE911F16F8DF5AB78DB9F7F734E170DEFE",
+    "bytes": 17113,
+    "encoding": "utf-8",
+    "bom": false,
+    "line_endings": "LF only",
+    "source": "independent review report (this review)"
+  },
+  "object": {
+    "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    "baseline": {
+      "sha256": "0FC3DE78C950661C2947680F678F92B7390843883FAD4F90362DB2C3F5A19277",
+      "bytes": 842580
+    },
+    "target": {
+      "sha256": "504966EADBB3D74C9D3BAD83FBA500624C8273A6462CCDD5987420EBE3B5307C",
+      "bytes": 842966
+    },
+    "declaredChangedLines": [
+      3989,
+      4447,
+      4449
+    ],
+    "deltaBytes": 386,
+    "deltaProvenExact": true,
+    "deltaMethod": "reverse-substituted the three after-phrases back to their before-phrases in memory, re-encoded UTF-8, recomputed SHA256",
+    "reconstructedBytes": 842580,
+    "reconstructedSha256": "0FC3DE78C950661C2947680F678F92B7390843883FAD4F90362DB2C3F5A19277"
+  },
+  "formatInvariants": {
+    "bom": false,
+    "crlf": 169,
+    "bare_lf": 4755,
+    "lf_total": 4924,
+    "lines_terminated": 4924,
+    "trailing": "single LF (0x0a)",
+    "bare_cr": 0
+  },
+  "findings": {
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 1
+    },
+    "total": 1,
+    "items": [
+      {
+        "id": "B13J-D01-RV-01",
+        "severity": "LOW",
+        "category": "traceability",
+        "location": "design.md:5 revision / :7 last_updated / :83 decision-trace top entry",
+        "summary": "Content changed to target hash but revision identity not bumped (still identity-auth-design-ir01-r57, last_updated 2026-10-30, no r58 decision-trace entry); 174 occurrences across 85 files under .add and .spec still pin baseline hash 0FC3DE78, so SSOT version identity and downstream pins no longer match content.",
+        "impact": "No semantic or production-behaviour impact; affects change traceability, downstream hash pinning and future review baseline selection.",
+        "notBlocking": true
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "bytes": 26452,
+      "role": "reconciliation source defining D01 (A03/A04/A15)"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/report.md",
+      "sha256": "565D1547F8B75A4E60EB8073AA52326E3C8ADB620F71E2D999E60C40506BE89A",
+      "bytes": 10548,
+      "role": "author revision report (declares no independent review, no design gate)"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/index.json",
+      "sha256": "4E1C4008E69938211F3D2544DF63236985B3503DFBEEE88EF80C943A6893875B",
+      "bytes": 7914,
+      "role": "author evidence index, state=applied-draft-unreviewed"
+    }
+  ],
+  "crossChecks": {
+    "tasksMd": {
+      ".add/project/knowledge/tasks/tasks.md:2667": "S4.16 anchor present; :2669 checkbox [x] whose wording is broader than the :2731 closure record",
+      ".add/project/knowledge/tasks/tasks.md:2724-2725": "S4.16 in-scope deliverables InstallRootDrainAndSingleBinding / LongLivedControlHandleTrueJoin",
+      ".add/project/knowledge/tasks/tasks.md:2731": "S4.16 closure: production CAS/anchor, installation commitment, source verifier, deployment lease, keyring loader, restore adapter, real provider/ACL NOT delivered; recovery explicitly closed",
+      ".add/project/knowledge/tasks/tasks.md:2967": "S4.21 [x] closed port list + injectable seams + secret candidate seam",
+      ".add/project/knowledge/tasks/tasks.md:3034": "S4.21 closure: production Enter/Install still ErrAdmissionClosed"
+    },
+    "code": {
+      "cmd/han-server/recovery_runtime.go:456-492": "11 nil seams enumerated (journal, articleSnapshots, restore, consumer, installation, articleAccount, commitments, sources, anchor, exclusive, secretCandidate)",
+      "cmd/han-server/recovery_runtime.go:494-496": "wraps recovery.ErrAdmissionClosed"
+    }
+  },
+  "commands": [
+    "Get-FileHash + python recompute on design.md -> 842966 B, 504966EA...5307C, crlf=169 bare_lf=4755 lf_total=4924 bom=False tail=66 20 2d 2d 3e 0a",
+    "python reverse-substitution of the 3 after-phrases -> 842580 B, 0FC3DE78...A19277, match=True",
+    "Get-FileHash gap-map.md -> 3AA5B959...8ED10F, 26452 B",
+    "git rev-parse HEAD -> 6da8abb...; git rev-parse --abbrev-ref HEAD -> main; git status --porcelain design.md -> M (pre-existing)",
+    "git diff --check -- design.md -> exit 0 (autocrlf advisory only)",
+    "rg -n \"?? production ??? S4\\.16\" design.md -> 0 hits, exit 1",
+    "rg -n \"??????|?? S4\\.16 ??|S4\\.21 ?|production ? closed\" design.md -> hit line 3989, exit 0",
+    "rg -n \"?? production ??\" design.md -> only 3989/4447/4449",
+    "rg -n \"task-identity-auth-s4-2[2-9]|identity-auth-S4\\.2[2-9]|S4\\.2[2-9]\" design.md -> 0 hits, exit 1",
+    "python overclaim scan on lines 3989/4447/4449 for ??/???/????/???/??? -> none",
+    "rg -n \"B13J|r58|504966EA\" design.md -> 0 hits, exit 1",
+    "rg -o baseline hash under .add .spec -> 174 occurrences in 85 files"
+  ],
+  "writeSet": [
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/review-r01/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/review-r01/index.json"
+  ],
+  "notWritten": [
+    "design.md",
+    "tasks.md",
+    "plans/",
+    "decisions/",
+    "stories.md",
+    "test-plan.md",
+    "any code/tests/config",
+    "git index/history"
+  ],
+  "notVerified": [
+    "No Go / PostgreSQL / HTTP / restore / E2E / integration execution; production reachability not re-measured",
+    "design.md not read in full (842966 B); scope limited to the allowed line windows",
+    "S4.16/S4.21 closure records read as text only, not re-executed",
+    "No markdown render or lint run; git diff --check covers whitespace class only",
+    "Human acceptance and design Gate remain unknown; frontmatter status still draft"
+  ],
+  "pendingDecisions": [
+    {
+      "id": "D-RV-01",
+      "question": "Accept the current state where the r57 label is unchanged while content is updated, or authorize bumping to r58 plus a decision-trace line",
+      "owner": "Lead / user",
+      "blocking": "see B13J-D01-RV-01; without a decision the SSOT version identity stays ambiguous"
+    },
+    {
+      "id": "D-RV-02",
+      "question": "Confirm gap-map U2 (do not reopen S4.16, open a separate follow-on scope)",
+      "owner": "user / Lead",
+      "blocking": "this revision is written per the suggested value; reopening requires reverting the three phrases"
+    },
+    {
+      "id": "D-RV-03",
+      "question": "Registration batch/card and timing for the follow-on production assembly activity",
+      "owner": "Planner / Lead",
+      "blocking": "design gives only the activity class and the Planner reconciliation path, no number"
+    },
+    {
+      "id": "D-RV-04",
+      "question": "Whether to converge the single-instance assembly wording at lines 4436/4438 in a later authorized round",
+      "owner": "Lead",
+      "blocking": "no substantive contradiction today, readability risk only"
+    }
+  ],
+  "limitations": "Reviewer verdict does not close pending-B13J-D01, does not grant design Gate, does not authorize implementation, and does not constitute human acceptance."
+}

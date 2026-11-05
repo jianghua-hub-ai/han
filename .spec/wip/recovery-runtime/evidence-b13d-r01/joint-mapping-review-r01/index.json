@@ -1,0 +1,217 @@
+{
+  "scope": "joint-mapping-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-joint-mapping-review-abtv872n",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/card-protection-independent.json",
+      "sha256": "849FFFF8E88FD0206508D9C31771C603A7030DAC52DBD5B7D5F2240C785B7F75",
+      "bytes": 7631,
+      "source_name": "card-protection-independent.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/entry-hashes.json",
+      "sha256": "95E2FD7D466965CDD061C68A8671AC25DCE5F228CDCC4B3CE8F22BBC929345A2",
+      "bytes": 680,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/exit-hashes.json",
+      "sha256": "B4DBE138D818216556210A6870AB86F0DF8520E71618B07D97C5818395CFF70B",
+      "bytes": 1058,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/findings.json",
+      "sha256": "6985A531A2AB93AE4C8ACF6B5974D76E4E18FFFC04E2E48E951FB398FD597CF6",
+      "bytes": 673,
+      "source_name": "findings.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/four-object-hashes.json",
+      "sha256": "BC3448E02D5E7357823A082D47DC4C748413BB74D64664D55A00809662194D28",
+      "bytes": 542,
+      "source_name": "four-object-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/graph-independent.json",
+      "sha256": "9562167DB713FB7CE91705A977A695AAB81609152A7F7C4C1DCFA01971CCE730",
+      "bytes": 13009,
+      "source_name": "graph-independent.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/hashes.json",
+      "sha256": "F6026D6B2EA21FD3633926D3B8623C862B9B6259CB69F27291F0E37A0AECB940",
+      "bytes": 3447,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/methods-read-reuse.json",
+      "sha256": "162D74D39EDE7D42F9FAB0D2D06FCD450100946BF5AED5AFF40B4B87B65F89EE",
+      "bytes": 3983,
+      "source_name": "methods-read-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/plan.before.reconstructed.md",
+      "sha256": "FDBF3E26BD9B8063C3158299EF8056E3AE60427D44D46D11D670E2DEC8E71736",
+      "bytes": 468454,
+      "source_name": "plan.before.reconstructed.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-1c10363937d54a40b2a63238cce9a821.json",
+      "sha256": "5E5AE0A743A47A9940746C65269EF71AD05D9B054F7C85D876691A67794B5C00",
+      "bytes": 266,
+      "source_name": "read-1c10363937d54a40b2a63238cce9a821.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-23f37aa4e5054ff5bd74a0b1d08a4d15.json",
+      "sha256": "2B082E30D43419A5BB8A7EA6661BCFBE34E3D7C4A0F0D1155D4D448B3C055615",
+      "bytes": 260,
+      "source_name": "read-23f37aa4e5054ff5bd74a0b1d08a4d15.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-303f03ec98f54979ab7eea1140304742.json",
+      "sha256": "ACC74CF195854525655AC99BDD99CB5C76DA1B603C668488891187D6E3F6EA74",
+      "bytes": 245,
+      "source_name": "read-303f03ec98f54979ab7eea1140304742.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-308090e76ed345a3865b7deeb3e160bd.json",
+      "sha256": "479CB24D975DAFCD265D76909F3E66E0335CD92F59CD51C35E914A2248F104B4",
+      "bytes": 259,
+      "source_name": "read-308090e76ed345a3865b7deeb3e160bd.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-3883392a3cbe407f88548dc05351bda2.json",
+      "sha256": "E902DA80E3DB159DE97B602DBE6BBB2F4D77442084AFEBF3C8B7FF429AC1C8EE",
+      "bytes": 267,
+      "source_name": "read-3883392a3cbe407f88548dc05351bda2.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-3a6c1f7a42be48f1a9be686b17fe7981.json",
+      "sha256": "020DEB7CD5F7ECE53C327D352B10B102D1C4724CB02D2A7DE87F852164EBEB3F",
+      "bytes": 266,
+      "source_name": "read-3a6c1f7a42be48f1a9be686b17fe7981.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-3dc46bbb1411408a82c32cbec74f6458.json",
+      "sha256": "0AA1A710AD3C17B2D7200D234F4DBA38F35E3937E773CE2424EB41E7F9FE804B",
+      "bytes": 263,
+      "source_name": "read-3dc46bbb1411408a82c32cbec74f6458.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-4b5d8dc1da33443f9479ea3fd8744898.json",
+      "sha256": "92DE06176EC33CCBA34E81F25335D52A1C8853A7DD3B7BBB0E3C36085EAA47DE",
+      "bytes": 292,
+      "source_name": "read-4b5d8dc1da33443f9479ea3fd8744898.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-57177881b1a140fcaa1c9ec5dceeffbc.json",
+      "sha256": "2B4D160AA8E2B78D7A1DBF73210337EE8079866758081D5D59E928C2AE6BE5A8",
+      "bytes": 271,
+      "source_name": "read-57177881b1a140fcaa1c9ec5dceeffbc.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-8254498836314433bae270b6672a2c33.json",
+      "sha256": "D550FA74A2C0BC7BE84B082B4570D961C6A27DA3C53475A2FB654D14B1B9D2A1",
+      "bytes": 220,
+      "source_name": "read-8254498836314433bae270b6672a2c33.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-8dac1b1a8a904cc5b2a5abc05f61ca20.json",
+      "sha256": "720109A846976880ED78619F6F91835C90459E907BD34A73BDD9C5EDDB95ABD8",
+      "bytes": 258,
+      "source_name": "read-8dac1b1a8a904cc5b2a5abc05f61ca20.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-a4f2a843b11449a7b10626cd732f3934.json",
+      "sha256": "D23939EA03DEA877A7C27444FF883847EE17CB2CD0C83213B21DFEF294FD684D",
+      "bytes": 256,
+      "source_name": "read-a4f2a843b11449a7b10626cd732f3934.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-a772b31288fe4e9f90e364947817eb48.json",
+      "sha256": "ADDAD9AFCB883741D715689254DF10B1A4117EA3AFB7791596CA39C5B6C82769",
+      "bytes": 273,
+      "source_name": "read-a772b31288fe4e9f90e364947817eb48.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-ab7483d8ca8f494f91c81b1eb75d76fb.json",
+      "sha256": "91829C77F7090DE5B75A64972E440E9732640D87D1F36D34463803F8A922372F",
+      "bytes": 269,
+      "source_name": "read-ab7483d8ca8f494f91c81b1eb75d76fb.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read-f9b2db65ed234db0a1d98f0f2396d825.json",
+      "sha256": "35286CB82B0E2E06E9D0212BFD85D6DB4A296B80DC09B006CF9A9D378487E888",
+      "bytes": 277,
+      "source_name": "read-f9b2db65ed234db0a1d98f0f2396d825.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/read.ps1",
+      "sha256": "53F5DA77D075143FAC17F90B0BEA331D0B952E24528B6D832884DB53BE208E9A",
+      "bytes": 534,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/readset.json",
+      "sha256": "3E63AB1AEF21986F547EDDAD9219C54F7E9BC2C631A1731FEBEB75B0F6BA3318",
+      "bytes": 5926,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/receipt.json",
+      "sha256": "CB7EDF425162747B41E3046D3BF7578F700DA6B7335D291339CD7CED24EBE4B2",
+      "bytes": 3897,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/review-report.md",
+      "sha256": "A094447D06E2C5CFCFE3B055F5E41B00C70BD5A8FE9BA1ECBABEF963AEB6766A",
+      "bytes": 5090,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/seal_review.py",
+      "sha256": "56D1D05642A51CFE66B1EA28143475EABB0D1E8918D44104E1C05E32F93E4D45",
+      "bytes": 5873,
+      "source_name": "seal_review.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/static-proof.json",
+      "sha256": "CC44DEEE779D2566C70EAB0C2963B11BB8F7925C621CD02DB5D39836266588B2",
+      "bytes": 1867,
+      "source_name": "static-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/static-readset.json",
+      "sha256": "8B5B7C46BA51751C9E2A439A57B4BFC66ABA7999E4C23128813E57798B0384A5",
+      "bytes": 3918,
+      "source_name": "static-readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/static_mapping.py",
+      "sha256": "B20D181AAD4EC88BCDA4E623D6D99A29AB46B00834D2F7B671DFFFFFE274A37C",
+      "bytes": 9668,
+      "source_name": "static_mapping.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/tasks.before.reconstructed.md",
+      "sha256": "ED7B2E51DAF509B3292BC57347373A7708C8E28D2DAC940F5DEC608F2793BE25",
+      "bytes": 611265,
+      "source_name": "tasks.before.reconstructed.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/joint-mapping-review-r01/upstream-reuse.json",
+      "sha256": "E763966328CCD81A00D6F1EAF32DF7071101B1E06596518676C3ABF807DAEEB2",
+      "bytes": 1440,
+      "source_name": "upstream-reuse.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

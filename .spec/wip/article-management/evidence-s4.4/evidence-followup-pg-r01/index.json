@@ -1,0 +1,549 @@
+{
+  "scope": "Author actual two-leaf PG normal/race + tagged vet and Lead raw/SQL image verification; four retained schemas; INSERT23505 subset only",
+  "captured_at": "2026-10-28T01:11:41.545147+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\case-evidence.json",
+      "copy": "author/case-evidence.json",
+      "role": "Hegel",
+      "sha256": "3AF3A55CE93D483FA5A11D77EF691FE9325967DC704F808EAE64675AD03ADDC5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\collate.py",
+      "copy": "author/collate.py.txt",
+      "role": "Hegel",
+      "sha256": "909EF962CC482407380E2FF3FAF04BBB613EC5A03BCB8E43E23E640D5019EA5C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\evidence-index.json",
+      "copy": "author/evidence-index.json",
+      "role": "Hegel",
+      "sha256": "F8C17426B1D9CB7E66D0DD56954C047BB20D6C2F9043216BA84F1E8B6169A2D4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\EXECUTION-HANDOFF.json",
+      "copy": "author/EXECUTION-HANDOFF.json",
+      "role": "Hegel",
+      "sha256": "411AF473966EA8C7A3B6D111BDD756A6486654CD88B60FF94E89962C65963175"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\input-binding.json",
+      "copy": "author/input-binding.json",
+      "role": "Hegel",
+      "sha256": "7843634BF49BCFE0658B4D5C83C4BBF7042AA3D165713A2F6C2470BB1668D314"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\normal\\argv.json",
+      "copy": "author/normal/argv.json",
+      "role": "Hegel",
+      "sha256": "C2C62A5C2B35B5A89DD03A956B60D6DF9F76875279F8D35B785EB1503F5307FC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\normal\\result.json",
+      "copy": "author/normal/result.json",
+      "role": "Hegel",
+      "sha256": "AFD09169DBCB2B5C79B4466B07E19E6E6E666789E8E160BF0C4C159245A18213"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\normal\\source181-after.json",
+      "copy": "author/normal/source181-after.json",
+      "role": "Hegel",
+      "sha256": "6BFD96A5560B9288AB7CCAC1264A44A4ECF3A293C6F8B10922F2BDC7013ECF90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\normal\\source181-before.json",
+      "copy": "author/normal/source181-before.json",
+      "role": "Hegel",
+      "sha256": "6BFD96A5560B9288AB7CCAC1264A44A4ECF3A293C6F8B10922F2BDC7013ECF90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\normal\\stderr.raw",
+      "copy": "author/normal/stderr.raw",
+      "role": "Hegel",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\normal\\stdout.raw",
+      "copy": "author/normal/stdout.raw",
+      "role": "Hegel",
+      "sha256": "AF98B998A99381816AB33700081E48029CA7145816A64801E48257AB96D69A0A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\race\\argv.json",
+      "copy": "author/race/argv.json",
+      "role": "Hegel",
+      "sha256": "943DC769182FD539B7A6DD606F1C23DD779DDF90927C7F2EEB2CAC3531FAB792"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\race\\result.json",
+      "copy": "author/race/result.json",
+      "role": "Hegel",
+      "sha256": "7711FFF3A168ED3908B1D9650F6823CD25DF50B51FA759F169745BA01EAB3266"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\race\\source181-after.json",
+      "copy": "author/race/source181-after.json",
+      "role": "Hegel",
+      "sha256": "6BFD96A5560B9288AB7CCAC1264A44A4ECF3A293C6F8B10922F2BDC7013ECF90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\race\\source181-before.json",
+      "copy": "author/race/source181-before.json",
+      "role": "Hegel",
+      "sha256": "6BFD96A5560B9288AB7CCAC1264A44A4ECF3A293C6F8B10922F2BDC7013ECF90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\race\\stderr.raw",
+      "copy": "author/race/stderr.raw",
+      "role": "Hegel",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\race\\stdout.raw",
+      "copy": "author/race/stdout.raw",
+      "role": "Hegel",
+      "sha256": "266DB21DE28BF84E693E0C4560795856B17C50AB953421E37815FCD0017B9A31"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\run_frozen181.py",
+      "copy": "author/run_frozen181.py.txt",
+      "role": "Hegel",
+      "sha256": "C49CDCC50DE67F84A5FC07436E140723C004DE1684236FC6DEC614051287EDE3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\STOPPED.json",
+      "copy": "author/STOPPED.json",
+      "role": "Hegel",
+      "sha256": "0752ECEFA42ECE639BCB31D4B47CC731F9605154AA5AB0D5A30FC5F643F71363"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\vet\\argv.json",
+      "copy": "author/vet/argv.json",
+      "role": "Hegel",
+      "sha256": "14AC873289C246549E570B501F183F5504F78498328308AA8049BE63007861F4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\vet\\result.json",
+      "copy": "author/vet/result.json",
+      "role": "Hegel",
+      "sha256": "77A3D0FE549D98C82ACC8F9EB1F7B8C79ACF6027BEEE02A584DA72CFA111C63C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\vet\\source181-after.json",
+      "copy": "author/vet/source181-after.json",
+      "role": "Hegel",
+      "sha256": "6BFD96A5560B9288AB7CCAC1264A44A4ECF3A293C6F8B10922F2BDC7013ECF90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\vet\\source181-before.json",
+      "copy": "author/vet/source181-before.json",
+      "role": "Hegel",
+      "sha256": "6BFD96A5560B9288AB7CCAC1264A44A4ECF3A293C6F8B10922F2BDC7013ECF90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\vet\\stderr.raw",
+      "copy": "author/vet/stderr.raw",
+      "role": "Hegel",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-run-c88bf4eed95b4dd2ad34ae521fef8385\\vet\\stdout.raw",
+      "copy": "author/vet/stdout.raw",
+      "role": "Hegel",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\different-backup-begin.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/different-backup-begin.json",
+      "role": "Hegel",
+      "sha256": "3BDA53DF9DC415E228CD937AF0401F5652FF3D0C10229C3EE570BB18C4B3A0D2"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\different-backup-final-sql.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/different-backup-final-sql.json",
+      "role": "Hegel",
+      "sha256": "8F8E423F1DD58E79EB5694236C45C21DD9BA01974FA84B2BFF8AAF85D63BA05D"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\different-backup-lock-observed.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/different-backup-lock-observed.json",
+      "role": "Hegel",
+      "sha256": "39B8E761B3E34CD8026277C24BD32C2377575CC1B0C4ACFAD4203E8071F6D506"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\different-backup-loser-read.raw.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/different-backup-loser-read.raw.json",
+      "role": "Hegel",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\different-backup-loser-replay.raw.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/different-backup-loser-replay.raw.json",
+      "role": "Hegel",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/ready-01-facts-and-last-execution.json",
+      "role": "Hegel",
+      "sha256": "652EC14AA4126A02C07A8D04D8F3F825EB67F548D7C36E27DDF8BA7A76FF22E5"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\ready-01-sql.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/ready-01-sql.json",
+      "role": "Hegel",
+      "sha256": "8F8E423F1DD58E79EB5694236C45C21DD9BA01974FA84B2BFF8AAF85D63BA05D"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\ready-01.wire.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/ready-01.wire.json",
+      "role": "Hegel",
+      "sha256": "DB33AFAF8C93C720447DF920F62E7B770D6B8A3B26336345DD74E916A5E333B8"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\schema-created.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/schema-created.json",
+      "role": "Hegel",
+      "sha256": "550BADCA1DBB2369BFB1785F1752ABCECA2CCBD3F3AB14216046B81F5ED80D80"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\seed-before.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/seed-before.json",
+      "role": "Hegel",
+      "sha256": "38A0167478AF56DB311C2F565BFD23DFC5133F9AC3D681E6CA62FA8BB871AED4"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\synthetic-backup-B.inventory.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/synthetic-backup-B.inventory.json",
+      "role": "Hegel",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574\\synthetic-inventory.json",
+      "copy": "cases/normal/han_s44red_1f6a5764281c271326af2b86/synthetic-inventory.json",
+      "role": "Hegel",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\execution-01.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/execution-01.json",
+      "role": "Hegel",
+      "sha256": "3EA438516E6F5245F45A23858388A612B56F35112865F47D126F98B3A88FA989"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\foreign-ref-provenance.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/foreign-ref-provenance.json",
+      "role": "Hegel",
+      "sha256": "6A65C0DB000AE5C7E4006556DDA0796395B89B41BAAAABDEBF05694BF1B8105B"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\publish-insert-before-sql.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/publish-insert-before-sql.json",
+      "role": "Hegel",
+      "sha256": "A64C6544F999926B66907C60C1474FD5CC6A3E243FEDB04D0A3EACFB1F10EBAB"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\publish-insert-conflict.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/publish-insert-conflict.json",
+      "role": "Hegel",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\publish-insert-pending.raw.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/publish-insert-pending.raw.json",
+      "role": "Hegel",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\publish-insert-resource-observation.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/publish-insert-resource-observation.json",
+      "role": "Hegel",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\publish-insert-retry-final-sql.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/publish-insert-retry-final-sql.json",
+      "role": "Hegel",
+      "sha256": "CBBF28BB4179B743BCDAA8B1CA0746A08F31C0114444985ECBEC7C15584D4DD1"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\publish-insert-rolled-back-sql.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/publish-insert-rolled-back-sql.json",
+      "role": "Hegel",
+      "sha256": "A64C6544F999926B66907C60C1474FD5CC6A3E243FEDB04D0A3EACFB1F10EBAB"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/ready-01-facts-and-last-execution.json",
+      "role": "Hegel",
+      "sha256": "1387603908F40C7394CA2FF990BC7C0F2CCB6F472068CC437A1EFBC202E3DD55"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\ready-01-sql.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/ready-01-sql.json",
+      "role": "Hegel",
+      "sha256": "CBBF28BB4179B743BCDAA8B1CA0746A08F31C0114444985ECBEC7C15584D4DD1"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\ready-01.wire.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/ready-01.wire.json",
+      "role": "Hegel",
+      "sha256": "90407120992B29D28E899C5D0D8F8CB074AF00A4CFF96AD9E5E2DD2827C2F6C0"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\ready-02-facts-and-last-execution.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/ready-02-facts-and-last-execution.json",
+      "role": "Hegel",
+      "sha256": "1387603908F40C7394CA2FF990BC7C0F2CCB6F472068CC437A1EFBC202E3DD55"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\ready-02-sql.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/ready-02-sql.json",
+      "role": "Hegel",
+      "sha256": "CBBF28BB4179B743BCDAA8B1CA0746A08F31C0114444985ECBEC7C15584D4DD1"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\ready-02.wire.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/ready-02.wire.json",
+      "role": "Hegel",
+      "sha256": "90407120992B29D28E899C5D0D8F8CB074AF00A4CFF96AD9E5E2DD2827C2F6C0"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\schema-created.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/schema-created.json",
+      "role": "Hegel",
+      "sha256": "1DD2A2730D1F0D9FBD7667CB869F838DA0FD560A3F1743E7E16FE6CF12B03B03"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\seed-before.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/seed-before.json",
+      "role": "Hegel",
+      "sha256": "06177A8CD594AA4ACC814CEB852EF7EB4D59D8AF41D04C268EEF1977D1492D38"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773\\synthetic-inventory.json",
+      "copy": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8/synthetic-inventory.json",
+      "role": "Hegel",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\different-backup-begin.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/different-backup-begin.json",
+      "role": "Hegel",
+      "sha256": "E4B25FAE7D312AA48866898FB19CD7C274DA1341B1B41CFEF44B89C26F0F8749"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\different-backup-final-sql.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/different-backup-final-sql.json",
+      "role": "Hegel",
+      "sha256": "656B4ABC50F84378C18CEAA8767791E009FD7A29AA7EB55F41825A24B3E7C885"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\different-backup-lock-observed.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/different-backup-lock-observed.json",
+      "role": "Hegel",
+      "sha256": "3FF06E63946077ABC66809E54ABA5BFAF3213DEDE4955EC727FE607CE5D94448"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\different-backup-loser-read.raw.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/different-backup-loser-read.raw.json",
+      "role": "Hegel",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\different-backup-loser-replay.raw.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/different-backup-loser-replay.raw.json",
+      "role": "Hegel",
+      "sha256": "A0921CF802123DE3F0C81C0ADB1D7CA919F6D2D781EE79E8594EF94DA3C90500"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/ready-01-facts-and-last-execution.json",
+      "role": "Hegel",
+      "sha256": "FC4C452F032389C44558CB4DCB4A5885F160909B621031B06BDEAC0E056A73A4"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\ready-01-sql.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/ready-01-sql.json",
+      "role": "Hegel",
+      "sha256": "656B4ABC50F84378C18CEAA8767791E009FD7A29AA7EB55F41825A24B3E7C885"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\ready-01.wire.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/ready-01.wire.json",
+      "role": "Hegel",
+      "sha256": "F52C605A15849F7C17943546970FFF9AC506EE3F60AC8BCD0DDA8ED6036759F1"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\schema-created.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/schema-created.json",
+      "role": "Hegel",
+      "sha256": "D1DA9689E9F4177250DC31CC38538DAB97B088EFA5B209B30EA1C921149E4C5F"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\seed-before.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/seed-before.json",
+      "role": "Hegel",
+      "sha256": "30EF32E1D0CAF716EF6B1AD778AB42150636211C875CC12DF124AC17379BB325"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\synthetic-backup-B.inventory.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/synthetic-backup-B.inventory.json",
+      "role": "Hegel",
+      "sha256": "A3731E4927CB064C68F4F6A4481D4F8410A2BF87679FB73CC12B09867516196A"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474\\synthetic-inventory.json",
+      "copy": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8/synthetic-inventory.json",
+      "role": "Hegel",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\execution-01.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/execution-01.json",
+      "role": "Hegel",
+      "sha256": "4D340AF208D4A0D632959096F51F23E1D12E1F7C8EE6A49D638E0227E25077BA"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\foreign-ref-provenance.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/foreign-ref-provenance.json",
+      "role": "Hegel",
+      "sha256": "03F8A4F246CBE1A04553EA3621987ABDFBCDCB6EF6D5C7FEBF509DE8D8E17DCA"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\publish-insert-before-sql.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/publish-insert-before-sql.json",
+      "role": "Hegel",
+      "sha256": "4056CA44F3164E9B556211BC6BA72D467481B22FDC0B3DC51406D7D6420F346C"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\publish-insert-conflict.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/publish-insert-conflict.json",
+      "role": "Hegel",
+      "sha256": "E3BCC1BBC46CEA750BF9983062218294F11E17DEFE4A0DECE9B4781F5E9FBDBE"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\publish-insert-pending.raw.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/publish-insert-pending.raw.json",
+      "role": "Hegel",
+      "sha256": "107E6AE5F94D6B9AA6410C77212A6FA9171C0E1C2B9DB5B0E66E28B19A483B8A"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\publish-insert-resource-observation.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/publish-insert-resource-observation.json",
+      "role": "Hegel",
+      "sha256": "2150D711AB0DF9F363DD57F13E851FA9C103A99A6006E12F5B125CC94259FAA6"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\publish-insert-retry-final-sql.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/publish-insert-retry-final-sql.json",
+      "role": "Hegel",
+      "sha256": "84FF87693EEA44A7810B81D3F74A8149FE19F866B785B5BA273E11033643E94F"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\publish-insert-rolled-back-sql.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/publish-insert-rolled-back-sql.json",
+      "role": "Hegel",
+      "sha256": "4056CA44F3164E9B556211BC6BA72D467481B22FDC0B3DC51406D7D6420F346C"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\ready-01-facts-and-last-execution.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/ready-01-facts-and-last-execution.json",
+      "role": "Hegel",
+      "sha256": "C706F7D5CB421110B7BB41B8BA187CF0497D962FACDF03030046C129FD300D89"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\ready-01-sql.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/ready-01-sql.json",
+      "role": "Hegel",
+      "sha256": "84FF87693EEA44A7810B81D3F74A8149FE19F866B785B5BA273E11033643E94F"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\ready-01.wire.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/ready-01.wire.json",
+      "role": "Hegel",
+      "sha256": "BEC2005D729BB5CAF9976ECAAE15D1FC4D488575B7082A369F416808F78AFA6E"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\ready-02-facts-and-last-execution.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/ready-02-facts-and-last-execution.json",
+      "role": "Hegel",
+      "sha256": "C706F7D5CB421110B7BB41B8BA187CF0497D962FACDF03030046C129FD300D89"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\ready-02-sql.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/ready-02-sql.json",
+      "role": "Hegel",
+      "sha256": "84FF87693EEA44A7810B81D3F74A8149FE19F866B785B5BA273E11033643E94F"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\ready-02.wire.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/ready-02.wire.json",
+      "role": "Hegel",
+      "sha256": "BEC2005D729BB5CAF9976ECAAE15D1FC4D488575B7082A369F416808F78AFA6E"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\schema-created.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/schema-created.json",
+      "role": "Hegel",
+      "sha256": "1C7DB8A17EF1135CF4682E0818AFA0096487E458876F7675515319ED701D0A1D"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\seed-before.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/seed-before.json",
+      "role": "Hegel",
+      "sha256": "811BA97494ACA8811F9E0460243FBC2DE0C679A37C34390B84C5CC3E4063FDB8"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343\\synthetic-inventory.json",
+      "copy": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9/synthetic-inventory.json",
+      "role": "Hegel",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\lead-author-json-structure.json",
+      "copy": "lead/lead-author-json-structure.json",
+      "role": "Lead",
+      "sha256": "1A115A5D78C3AFBC58997C216A4FF1B2025BD9F73AC0DB4C65CC2198CC4EB150"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-evidence-lead-v1ryhjrc\\lead-author-pg-verification.json",
+      "copy": "lead/lead-author-pg-verification.json",
+      "role": "Lead",
+      "sha256": "A6346FFEF315D9EDF2722423D639BF088D635240D11B230EDAB015FCC58C8FDB"
+    }
+  ],
+  "cases": [
+    {
+      "mode": "normal",
+      "leaf": "TestArticleReplayEvidencePostgres/DifferentBackupFirstBinding",
+      "schema": "han_s44red_1f6a5764281c271326af2b86",
+      "durable_directory": "cases/normal/han_s44red_1f6a5764281c271326af2b86",
+      "original_directory": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1720681574"
+    },
+    {
+      "mode": "normal",
+      "leaf": "TestArticleReplayEvidencePostgres/PublishRollback",
+      "schema": "han_s44red_6bf493b2f36423ef05ddc8d8",
+      "durable_directory": "cases/normal/han_s44red_6bf493b2f36423ef05ddc8d8",
+      "original_directory": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1563611773"
+    },
+    {
+      "mode": "race",
+      "leaf": "TestArticleReplayEvidencePostgres/DifferentBackupFirstBinding",
+      "schema": "han_s44red_1daa1a532e9c7576b8fae4d8",
+      "durable_directory": "cases/race/han_s44red_1daa1a532e9c7576b8fae4d8",
+      "original_directory": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-3083963474"
+    },
+    {
+      "mode": "race",
+      "leaf": "TestArticleReplayEvidencePostgres/PublishRollback",
+      "schema": "han_s44red_b8de2feeac4a349fbe10c8f9",
+      "durable_directory": "cases/race/han_s44red_b8de2feeac4a349fbe10c8f9",
+      "original_directory": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-retained-1863647343"
+    }
+  ],
+  "source_binding_index": "../evidence-followup-prep-r01/index.json",
+  "source_binding_index_sha256": "2AB5AF916504D0F0848E5AA803E2453817808588CE379E1DA7027974E367B683",
+  "limits": "Controlled Journal and synthetic inventories/foreign preload. No post-successful-INSERT current UPDATE failure, real old backup, FileJournal or global recovery proof."
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "c2-join-design-author-r01",
+  "owner": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-c2-join-design-1blkg1ez",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/article-management.after.md",
+      "sha256": "443C55E3E89EDBE4CF0870036BB662ED2E64B1A70F8BC5609F18025DBA71D267",
+      "bytes": 362666,
+      "source_name": "article-management.after.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/article-management.before.md",
+      "sha256": "1D1CEE350E4FD93B3B8700FD2D48F00BA2E70561FDCD8D0630B2741CF7A45F31",
+      "bytes": 353227,
+      "source_name": "article-management.before.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/article-management.diff",
+      "sha256": "473BADA79D7E724288C2151A8C4286F711B37FC8E6C1BB01DFCA167AF602C4C3",
+      "bytes": 16497,
+      "source_name": "article-management.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/baseline.json",
+      "sha256": "6D5439516DFF018984D77680011609096138ECE98D6669542BDC71CB233453F5",
+      "bytes": 817,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/c1-unchanged-proof.json",
+      "sha256": "F8C43998852CC9845A578044A4480A7145E16FB5F45917FE8156358815302477",
+      "bytes": 584,
+      "source_name": "c1-unchanged-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/hashes.json",
+      "sha256": "D5905BD7A39B5FFED5684B2C4DF8D8B31D423E383B2781600D97206E97E0045B",
+      "bytes": 1038,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/identity-auth.after.md",
+      "sha256": "E823D25D9CDDFD4F2D7E3A869FBB6B15EAF5275E55147A21546D4C2836472522",
+      "bytes": 815810,
+      "source_name": "identity-auth.after.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/identity-auth.before.md",
+      "sha256": "DD61F4B89C94CE91F1E1317056ACAC1D7F8F464B2963DFDC59FF9C358590A6F0",
+      "bytes": 810886,
+      "source_name": "identity-auth.before.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/identity-auth.diff",
+      "sha256": "F55B87ECEAEC638CC0329B4A0037FAF7C0C05C3E5C37132E327E3B62C5D1169C",
+      "bytes": 13726,
+      "source_name": "identity-auth.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/readset.json",
+      "sha256": "BD59BEA3B3BF7B6E5EA708728446B0443DEB2E9CD46250829D03353D17614DF7",
+      "bytes": 9002,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/receipt.md",
+      "sha256": "87B92BC19EC8C6868CDCB240FF7CF3803629F7B37CA3553F42E24EFB9A1D9274",
+      "bytes": 2969,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-join-design-author-r01/static.json",
+      "sha256": "E89EB957639C00A3BE2F5730ECED0F9C20028CFECC72BA4CF1968B6781AB5EFC",
+      "bytes": 5438,
+      "source_name": "static.json"
+    }
+  ]
+}

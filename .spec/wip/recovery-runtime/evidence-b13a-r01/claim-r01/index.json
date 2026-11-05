@@ -1,0 +1,116 @@
+{
+  "scope": "claim-r01",
+  "owner": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "runtime_id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-claim-27afbdfb95264ae0a1af69abcd25ef57",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/after/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "A3521E61C7177DEFECD587FD030A0D279BF32582F7563E0FD12E0CF6C21073C3",
+      "bytes": 446777,
+      "source_name": "after/.add/project/knowledge/plans/ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/after/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "7FAE9D9A6B4A495FD9B2FAFCBE11E66FA5B9DB631EBE7EC38EC06D83664A302B",
+      "bytes": 542720,
+      "source_name": "after/.add/project/knowledge/tasks/tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/baseline.json",
+      "sha256": "F7A648CE9C7043E48B4D9772C2B718F62C75D9DFD9EA9D65684EEA0AA44278CB",
+      "bytes": 188642,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "1B2540B5F59756FF3D4B397B90FE44E6111700DCA8F8538A75BE863B99CCF9C7",
+      "bytes": 446481,
+      "source_name": "before/.add/project/knowledge/plans/ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/before/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "D7059350422894480AE2B0E10F310E973B3CAAC27FA6B49B2AE5DFEB5A7C5993",
+      "bytes": 542311,
+      "source_name": "before/.add/project/knowledge/tasks/tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/claim.py",
+      "sha256": "B7E18637E3FBE9404EF6525C4994362D6CD9DF354CA62307AF6C6D783D4AD044",
+      "bytes": 13437,
+      "source_name": "claim.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/ir-01-content-community-batches.md.diff",
+      "sha256": "2DC0093AF75F7D167F606BBAEBAD845E4C1CB59464EADEED02D30D24B39D351C",
+      "bytes": 1685,
+      "source_name": "ir-01-content-community-batches.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/preparation-note.json",
+      "sha256": "83FAE93A36D24CF7FD7C02D4408064339862E408236937996BC589379B206EEF",
+      "bytes": 247,
+      "source_name": "preparation-note.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/prewrite-verification.json",
+      "sha256": "39E2D52A6CB84F81EC2B3F751E4B3D92CDFDB4BCAFE8A6106D0F3EFB3036CC23",
+      "bytes": 461,
+      "source_name": "prewrite-verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/readset.json",
+      "sha256": "356EAB61D4068C632CEF8ABD54527D64D948A1896377968C92C0E86EA884247F",
+      "bytes": 2615,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/receipt.json",
+      "sha256": "3B80DA6E007395F64A89E708D8A55160656FBB6C0C4B9D2CA565EF6A68F92F87",
+      "bytes": 2294,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/receipt.md",
+      "sha256": "2BC60646D677E6C172122465FE9A11049588659602C79E9A706EB51D61E691B0",
+      "bytes": 2012,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/replacements.json",
+      "sha256": "2875FF53A33E9B7F4C9BD5D483DA8C0C4BA6FF8556412E264E6E6D2B89159D1C",
+      "bytes": 2173,
+      "source_name": "replacements.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/sha256sums.json",
+      "sha256": "32127C3BCE4924CAB6C77A78E54C7598E23617AC3826EB48AF95369E02B1503D",
+      "bytes": 1637,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/tasks.md.diff",
+      "sha256": "8815E869BB94DC78A3CED20D367E14E3A4EC3A24D30470FB213C6A97691AE45C",
+      "bytes": 3209,
+      "source_name": "tasks.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/validation-note.json",
+      "sha256": "1400121B1896698F6120A826C745B8EE74DA75848F67EB15FCFB80F923E946FE",
+      "bytes": 456,
+      "source_name": "validation-note.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/claim-r01/verification.json",
+      "sha256": "6AF7D3B2EA45E8CB9C4CE9C710D91F2E7F3EC50C98DB51D6FE79C425CDA4A506",
+      "bytes": 1696,
+      "source_name": "verification.json"
+    }
+  ]
+}

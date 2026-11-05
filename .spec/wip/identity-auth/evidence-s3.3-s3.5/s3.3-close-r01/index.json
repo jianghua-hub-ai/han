@@ -1,0 +1,128 @@
+{
+  "scope": "Only original S3.3 task closed by Lead decision; originalS35 separately closed, other57 turn-start cards unchanged",
+  "at": "2026-10-28T04:41:37.887481+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\apply-close-metadata.ps1",
+      "copy": "planner/apply-close-metadata.ps1.txt",
+      "sha256": "7148F56BDD7C244D6171589B46728CF13E12B81A0FCFA424AA0836D9294CCA9D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\exactpatch.json",
+      "copy": "planner/exactpatch.json",
+      "sha256": "9F6EE152C55C45823BB1B07C130D1A7A5F41881C76F2E983989009E28FFE55FD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\lead-verification.read.md",
+      "copy": "planner/lead-verification.read.md",
+      "sha256": "42B61C7A130AD697E6D00420B98ACCE748A7AAA7A7A52E18D8E6C9EFCFB8A114"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\plan.actual.diff",
+      "copy": "planner/plan.actual.diff",
+      "sha256": "9471757B83CA9FEA6DDCE555B8A887C8FFFE899B59F3D016375021533F17FA17"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\plan.after.md",
+      "copy": "planner/plan.after.md",
+      "sha256": "9CC777D62256EBCB93EE1DED5DE2D94E9E41A90943DE356AB93BB0924AE14964"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\plan.before.md",
+      "copy": "planner/plan.before.md",
+      "sha256": "1E04EEF5E010D56C8DAB7AEAF6257312DFF0D959AF0BF58B14D44E0C9B6E380C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\plan.candidate.diff",
+      "copy": "planner/plan.candidate.diff",
+      "sha256": "DFBC5393399CA47EA887653D1B2F5D3B15BBF8DD0447523D92FCFFF996C82769"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\plan.candidate.md",
+      "copy": "planner/plan.candidate.md",
+      "sha256": "9CC777D62256EBCB93EE1DED5DE2D94E9E41A90943DE356AB93BB0924AE14964"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\precheck.json",
+      "copy": "planner/precheck.json",
+      "sha256": "CCC7D6E7C18F3972E377A042D51E0D2183620A755777D0768BF3FC80EBEEC5EF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\prepare-native-cas.py",
+      "copy": "planner/prepare-native-cas.py.txt",
+      "sha256": "2243A61F17593614B1D3E8F06883F5C39531F689B0CCF3E7A867AA3CBC5A72C2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\protected58-cards.json",
+      "copy": "planner/protected58-cards.json",
+      "sha256": "7528AF0014049B5B35A1C4B68695AAF44C2CE6EE9E619DED28C26E07D5CC2E96"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\readback-scope-check.json",
+      "copy": "planner/readback-scope-check.json",
+      "sha256": "5DD28E4A896775A2DC2802CF396D2146297EBFE4C6E7201D241BDC1336CCD5FA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\review.read.md",
+      "copy": "planner/review.read.md",
+      "sha256": "2FDAEA71618E280CE4301E7B4AA5591F3B8F500A37014CFE8EF50C0F09001F45"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\tasks.actual.diff",
+      "copy": "planner/tasks.actual.diff",
+      "sha256": "C28EDAE6E97B45F8083C5960EC0229BC06A0E447CB3AF3C0015207658CDCA3F7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\tasks.after.md",
+      "copy": "planner/tasks.after.md",
+      "sha256": "29D18DEB95042CAE05BECFD1276DC189AFB3547D92213136CFAF40686AE088A1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\tasks.before.md",
+      "copy": "planner/tasks.before.md",
+      "sha256": "044700F2619618739E5CB6B42327982DBFD92926E21F8615EB0693C2171895BF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\tasks.candidate.diff",
+      "copy": "planner/tasks.candidate.diff",
+      "sha256": "3F560D80171BCEBBB42A79D52873944F4FBA738877FD6FFC53F9AA6DE1FEE4D2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\tasks.candidate.md",
+      "copy": "planner/tasks.candidate.md",
+      "sha256": "29D18DEB95042CAE05BECFD1276DC189AFB3547D92213136CFAF40686AE088A1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\verify-readback.py",
+      "copy": "planner/verify-readback.py.txt",
+      "sha256": "9CB5A0128D67EBA56EC419C12EBC3035AFB94119B44FE73A74BF08F66D2783AA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-close-metadata-1685e9ac6bf24b9087723ca32944aaaa\\write-receipt.json",
+      "copy": "planner/write-receipt.json",
+      "sha256": "CB10786381555867F76B880E83C7107298AAEBCA74681D4A7C4BAAE9609418FC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-s35-lead-k2hnhmtu\\lead-s33-final-scope-verification.json",
+      "copy": "lead/lead-s33-final-scope-verification.json",
+      "sha256": "1892D5F511BB28547735A165A6694B2D8B793741C009325E1882560C0D89097B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-s35-lead-k2hnhmtu\\verify_s33_closure.py",
+      "copy": "lead/verify_s33_closure.py.txt",
+      "sha256": "0ADA69D03C2CE1CD022F6C49A823D3A1D9CB7D664F5AEC45E551BAAE07646810"
+    }
+  ],
+  "counts": [
+    59,
+    47,
+    3,
+    9
+  ],
+  "scoped_whitespace_check": {
+    "no_index_exit": 1,
+    "diagnostics_empty": true
+  },
+  "complete_source_binding_index": "../s3.3-fixed185-r01/index.json",
+  "browser": "WAIVED/NOT RUN"
+}

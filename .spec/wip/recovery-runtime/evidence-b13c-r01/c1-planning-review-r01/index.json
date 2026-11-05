@@ -1,0 +1,110 @@
+{
+  "scope": "c1-planning-review-r01",
+  "owner": {
+    "role": "Reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-planning-review-92ba1e8dd48340248c35f6970fb42507",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/dependency_probe.py",
+      "sha256": "D363C83E7F94F38BF0B005E0E1A75FD27F547A5737CDBC3EAFD18E36D43762F9",
+      "bytes": 389,
+      "source_name": "dependency_probe.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/diff_diagnostic.py",
+      "sha256": "7F170FEDC9D4005BD9DB024D6D945892EC43AC2AA50A116C976794CF37FFED13",
+      "bytes": 888,
+      "source_name": "diff_diagnostic.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/hashes.json",
+      "sha256": "18130BA38685E15EEB4CC849CC4FF573E0576F0B3224A3A16631FF6DC10D6608",
+      "bytes": 2493,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/independent-static.json",
+      "sha256": "C33D23784AF4456E815D3C72E8230AC6B89DC3D952DE370FEAC882F86747737D",
+      "bytes": 16112,
+      "source_name": "independent-static.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/independent_static.py",
+      "sha256": "2BC050BFF971908D7DB71F39358B3569CBEC0600E3EC3F1999D7A686E5A078A3",
+      "bytes": 8756,
+      "source_name": "independent_static.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/locate.py",
+      "sha256": "ED30AD7E06BF0A451E3A568FD9EF2DAF5366CFE61BEF779D070C6D5220F1D3AB",
+      "bytes": 743,
+      "source_name": "locate.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/packet_structure.py",
+      "sha256": "F3A57E8F021BF05079094976372745C3678589215A97CE36F9055B9A0DE4D9A4",
+      "bytes": 560,
+      "source_name": "packet_structure.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/patch-proof.json",
+      "sha256": "3D6573441D51C5839BA11AB03A7FFF74D6F5565D20D58C61617CB59034652544",
+      "bytes": 5117,
+      "source_name": "patch-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/patch_proof.py",
+      "sha256": "4C4B0D7B8F0C6B476F2AF2D3081BEF9502DC8E51314D7778BE3AF64CC0F12BC0",
+      "bytes": 3949,
+      "source_name": "patch_proof.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/read.ps1",
+      "sha256": "1FB45B83A9DCCE835C5E61A7633D6869672C4B83635A9096B50CF0C4239D252C",
+      "bytes": 717,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/readset.jsonl",
+      "sha256": "ECCEDD540FE479DD7CF6AC004BC8F4287E0E615AD7F97D4D30BD0B2513BB879D",
+      "bytes": 11500,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/receipt.json",
+      "sha256": "172888F342D47D7D7EF3311977B767D91E3AEDAF709258F2D1C12A3218A407AC",
+      "bytes": 7442,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/reused-methods.json",
+      "sha256": "9DE53715B8D64D8DB11EE0E6E9080D2039AE8F62A26B80359C0A7DEC079BC85C",
+      "bytes": 3092,
+      "source_name": "reused-methods.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/review-report.md",
+      "sha256": "1C93F539D94869C34AC7217F37FE68C635CF4EC25FE8405E7F966A32835DCB00",
+      "bytes": 15558,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/static-readset.jsonl",
+      "sha256": "67C47788D6D1934316D44AD192EBCF317B6815E587282D3C372BD617CE28ED6D",
+      "bytes": 4100,
+      "source_name": "static-readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-planning-review-r01/supplemental-readset.json",
+      "sha256": "598876E474131448715473CD08C66F332C9BBBA6F3238783AA430DA6C6502B71",
+      "bytes": 2487,
+      "source_name": "supplemental-readset.json"
+    }
+  ]
+}

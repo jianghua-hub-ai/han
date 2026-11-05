@@ -1,0 +1,97 @@
+{
+  "scope": "planning-review-r02",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-planning-independent-r02-ce1983c495384019a9276e8cb2e650dc",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/check.py",
+      "sha256": "02EBB0156AA7CC52E7DC531EB73375771D6C037A03A463E0F0F21E63A62BE8C2",
+      "bytes": 4011,
+      "source_name": "check.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/finalize.py",
+      "sha256": "AC082F8810D4907F0363263437B464361305AA3B535270E529CD282F1AFBB937",
+      "bytes": 6250,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/four-scope-verification.json",
+      "sha256": "8F4BE610AE7499E507C83D72875A2A88A6A848628EBDC84048AB50FCB7BE1603",
+      "bytes": 1145,
+      "source_name": "four-scope-verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/initial-and-four-checks.json",
+      "sha256": "B96BAF0F81FD77B74C0B07795F7C417BCA2B6AA028F14DA50E7959B42E1A8530",
+      "bytes": 1087,
+      "source_name": "initial-and-four-checks.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/meta-check.py",
+      "sha256": "E39A55CA357214F18489ABC56242508E7A08A83E58B1A65CD51F2C72764415F6",
+      "bytes": 3509,
+      "source_name": "meta-check.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/metadata-verification.json",
+      "sha256": "3697A4107F8121B9F98FF1965C95E9B8217960502E66C70527944AE477C74A10",
+      "bytes": 809,
+      "source_name": "metadata-verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/readset.jsonl",
+      "sha256": "51B1E444F57844D4E94E484DDFAA17AF9B1B913EC86939B93B7CF711956E0CB9",
+      "bytes": 6412,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/readset.md",
+      "sha256": "DAA8600D0B636B29BFA6C311A8F71648331AD9DFB38EA6F722A86D44E45C334C",
+      "bytes": 5646,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/receipt.json",
+      "sha256": "49765F8CA96E09B7A77482E8D9124E97BE26A78EE3A78E9B724FD29935709666",
+      "bytes": 4354,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/receipt.md",
+      "sha256": "A70EB0576E9A8467FDDA5D397FCFC03CEB8AC4BAD38C2713B0029FF81FD01A9E",
+      "bytes": 1569,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/review-report.md",
+      "sha256": "4D64F4862FC874849B94CE2BE1555974DB72A6CCF0E18AE5749A75AB4E2D5B93",
+      "bytes": 5923,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/scope-check.py",
+      "sha256": "8F7E42F932BD48F81C6C4FA692479103E26E76CEE0FCFE4DE480C911D8F8C3CC",
+      "bytes": 3036,
+      "source_name": "scope-check.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/sha256sums.txt",
+      "sha256": "235B03076D83DDD9935803D927DDA3B6F1E8653139F70E37B9CF4FCCA967BB50",
+      "bytes": 1084,
+      "source_name": "sha256sums.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/static-verification.json",
+      "sha256": "6A3C615BAD36FA156A1CB8D2C47B97D43CDB016734297DFAF1E1D1D427F0742B",
+      "bytes": 4009,
+      "source_name": "static-verification.json"
+    }
+  ]
+}

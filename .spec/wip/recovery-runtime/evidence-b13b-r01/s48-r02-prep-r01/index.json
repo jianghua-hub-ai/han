@@ -1,0 +1,44 @@
+{
+  "scope": "s48-r02-prep-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13b-s48-r02-prep-4vvpci90",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-r02-prep-r01/baseline.json",
+      "sha256": "F9C84803CD92E01FCBB8949A461EED46CAD7845D6452AA2E4555F5E4132C27E6",
+      "bytes": 7090,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-r02-prep-r01/source-index.json",
+      "sha256": "1EB58D4E11BCB071543747EF5509CDEB2E488CC33BAF6D7281BE4C902111D9F6",
+      "bytes": 554,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-r02-prep-r01/readset.json",
+      "sha256": "C7BE11D2FBC878928F16594ABCE03CFEC85E0F530018A503C9E67E7A6990ECF5",
+      "bytes": 4000,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-r02-prep-r01/repair-plan.md",
+      "sha256": "C53A15086A07CBC4D672E84A589FFEF66874850C94851E4B510BD305809CD9FD",
+      "bytes": 6375,
+      "source_name": "repair-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-r02-prep-r01/review-red-observation.json",
+      "sha256": "0801B3D5D0CA1FA905B2AE0FDC078AD1D88DE8970C94742BE32F547E0477BE66",
+      "bytes": 7427,
+      "source_name": "review-red-observation.json"
+    }
+  ]
+}

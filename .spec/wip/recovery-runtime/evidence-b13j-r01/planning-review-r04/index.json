@@ -1,0 +1,395 @@
+{
+    "schema":  "add.evidence.planning-review/v1",
+    "item":  "B13J planning review r04 closeout: closure status of B13J-PLAN-R03-F001..F007",
+    "agent_role":  "add-reviewer (non-author)",
+    "review_round":  "r04",
+    "scope":  "targeted re-review: 7 LOW findings closure + new-issue scan; not a full re-review",
+    "recorded_at":  "2026-11-02",
+    "timezone":  "Asia/Shanghai",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "inputs":  [
+                   {
+                       "tab":  0,
+                       "bom":  false,
+                       "path":  ".add/project/knowledge/decisions/framework.md",
+                       "crlf":  1141,
+                       "trailing":  "single CRLF",
+                       "bare_lf":  0,
+                       "role":  "ADR-0030 r04 / ADR-0031 r04 closeout (ADR-0032 unchanged at r03)",
+                       "sha256":  "39BD3A797B0FA2F5CDF944ACCF4129BB0B7F7A23FABC743B7E5CCC9F7B9BD704",
+                       "bytes":  182488,
+                       "lines":  1141,
+                       "control":  0
+                   },
+                   {
+                       "bom":  false,
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+                       "crlf":  0,
+                       "trailing":  "none",
+                       "bare_lf":  218,
+                       "role":  "line 182 rewritten with pipe separators; line count preserved",
+                       "sha256":  "D6AA33B6787774117E57448E3008C58DC9983E887C9CE078E5A6F07DE426F214",
+                       "bytes":  26821,
+                       "lines":  218,
+                       "control":  0
+                   },
+                   {
+                       "bom":  false,
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/u-adoption-record-r01.md",
+                       "crlf":  0,
+                       "trailing":  "none",
+                       "bare_lf":  38,
+                       "role":  "ADR anchors now #adr-00xx + dated line numbers",
+                       "sha256":  "4E4201DDAF5C8354969713DB1E4850C6DC4EF6EE98702C37C0F8F2D72B2D4678",
+                       "bytes":  5572,
+                       "lines":  38,
+                       "control":  0
+                   },
+                   {
+                       "bom":  false,
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/report.md",
+                       "crlf":  0,
+                       "trailing":  "none",
+                       "bare_lf":  205,
+                       "role":  "author-side r04 evidence report",
+                       "sha256":  "EF87DAB2B881D9BE60D2ED0438DFB080DC29E14615CEF868290E6851D2E36380",
+                       "bytes":  17103,
+                       "lines":  205,
+                       "control":  0
+                   },
+                   {
+                       "sha256":  "027C9009E2F2C07F63A41A391B5F6621DD3042A32A3CC3494B97162A07151498",
+                       "bytes":  17741,
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/index.json",
+                       "trailing":  "single LF",
+                       "role":  "author-side machine index; verdict=applied-draft-unreviewed; all *_claimed=false",
+                       "bom":  false,
+                       "lines":  324
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r04/snapshots/framework-before-r04.md",
+                       "sha256":  "9B9A0D7A62DAE9B62F4CF292E9B85888903352E39D06C70B04D303C40D6D53B8",
+                       "bytes":  179565,
+                       "role":  "byte-exact pre-change snapshot"
+                   },
+                   {
+                       "sha256":  "C1E02277905EA65823C8ACC41E29178F11D174ADFC70490FC40DF11173378500",
+                       "bytes":  2733,
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/correction-r01.md",
+                       "trailing":  "single LF",
+                       "role":  "errata correcting adr-r03 index finding ids/severities",
+                       "bom":  false,
+                       "lines":  38
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/index.json",
+                       "sha256":  "4BA08EA7876C6EB01B18B4769A20C9A295B2895DEC9CE5802DABAAE01C101BC1",
+                       "bytes":  28898,
+                       "role":  "correction target; body left byte-identical"
+                   },
+                   {
+                       "sha256":  "3FC6A611EE3ACCBCBDBE33AAD77506B7A0AED7158691CF842229669AF201EC19",
+                       "bytes":  27104,
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r03/report.md",
+                       "trailing":  "single LF",
+                       "role":  "input: r03 review carrying R03-F001..F007 (author index records 259 lines; see R04-F003)",
+                       "bom":  false,
+                       "lines":  258
+                   },
+                   {
+                       "path":  ".add/project/knowledge/tasks/tasks.md",
+                       "sha256":  "F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34",
+                       "bytes":  823187,
+                       "role":  "unchanged this round; no S4.22/23/24a/24b registration"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/plans/ir-01-content-community-batches.md",
+                       "sha256":  "3FA19CDD4902F56B8C2F1DF59C570D96FAAE02D8AEE519B4B4165DCCA3637380",
+                       "bytes":  497542,
+                       "role":  "unchanged this round"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/decisions/README.md",
+                       "sha256":  "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97",
+                       "bytes":  21472,
+                       "role":  "decisions index; unchanged (no revision field)"
+                   }
+               ],
+    "findings_r03_closure":  [
+                                 {
+                                     "status":  "CLOSED",
+                                     "evidence":  "u-adoption-record-r01.md:18-20 + :10",
+                                     "basis":  "anchor #adr-00xx plus 2026-11-02 r04 timestamped line numbers :915/:975/:1065; measured anchors \u003ca id=adr-0030\u003e at 915, adr-0031 at 975, adr-0032 at 1065; record declares anchors authoritative",
+                                     "id":  "B13J-PLAN-R03-F001",
+                                     "severity":  "LOW"
+                                 },
+                                 {
+                                     "id":  "B13J-PLAN-R03-F002",
+                                     "note":  "non-blocking residual readability observation; splitting would shift numeric anchors for all consumers",
+                                     "basis":  "single 270-char line, three cards start with backticked ids separated by full-width pipe; line count preserved to protect :201/:207 referenced by ADR-0032:1138 and ADR-0031:1057",
+                                     "evidence":  "gap-map.md:182",
+                                     "severity":  "LOW",
+                                     "status":  "CLOSED"
+                                 },
+                                 {
+                                     "status":  "CLOSED",
+                                     "evidence":  "framework.md:960",
+                                     "basis":  "constraint 9(c) no longer embeds :957/:958 (0 hits file-wide); uses symbolic references to the constraint 7 fault-domain verification item and the formal Task registration item; r04 added no new numeric anchor",
+                                     "id":  "B13J-PLAN-R03-F003",
+                                     "severity":  "LOW"
+                                 },
+                                 {
+                                     "status":  "CLOSED",
+                                     "evidence":  "adr-r03/correction-r01.md",
+                                     "basis":  "errata lists the 4 wrong rows and the correct set (R02-F001..F005 with HIGH/HIGH/LOW/LOW/LOW; R02-F006/F009 are r01 F006 MEDIUM and F009 LOW); adr-r03 index/report left byte-identical; errata explicitly says it does not close the finding itself",
+                                     "id":  "B13J-PLAN-R03-F004",
+                                     "severity":  "LOW"
+                                 },
+                                 {
+                                     "status":  "CLOSED",
+                                     "evidence":  "framework.md:960(b), :1050",
+                                     "basis":  "both sentences state independent-review acceptance is not human decision acceptance and produces no human approval; production usability/release still requires explicit human production approval; residual misattribution recorded as R04-F001",
+                                     "id":  "B13J-PLAN-R03-F005",
+                                     "severity":  "LOW"
+                                 },
+                                 {
+                                     "id":  "B13J-PLAN-R03-F006",
+                                     "note":  "closure removes the misreading space only; S4.24a implementation card still needs the substantive ADR-0031 decision revision accepted first",
+                                     "basis":  "now contains the same-shaped negation (not full constraint 8 release) and limits acceptance to lifting the implementation/verification card registration limit",
+                                     "evidence":  "framework.md:1050",
+                                     "severity":  "LOW",
+                                     "status":  "CLOSED"
+                                 },
+                                 {
+                                     "status":  "CLOSED",
+                                     "evidence":  "framework.md:953, :960(c)",
+                                     "basis":  "constraint 7 now enumerates all three card categories as non-gated for registration; 9(c) states registration of a production assembly/release card is not blocked by unmet constraint 7 items",
+                                     "id":  "B13J-PLAN-R03-F007",
+                                     "severity":  "LOW"
+                                 }
+                             ],
+    "carried_r01":  [
+                        {
+                            "status":  "OPEN",
+                            "note":  "no Task card registered; tasks.md/Plan unchanged; belongs to the registration round",
+                            "id":  "B13J-PLAN-F003",
+                            "severity":  "HIGH"
+                        },
+                        {
+                            "status":  "CLOSED-planning-level",
+                            "note":  "closed in r03 at planning level only; runtime reachability not claimed",
+                            "id":  "B13J-PLAN-F005",
+                            "severity":  "HIGH"
+                        },
+                        {
+                            "status":  "OPEN",
+                            "note":  "D04-RV2-01 has no accepting task; still not in S4.22 negative acceptance",
+                            "id":  "B13J-PLAN-F006",
+                            "severity":  "MEDIUM"
+                        },
+                        {
+                            "status":  "OPEN",
+                            "note":  "tasks.md 0x0C at 12676/12691; historical damage, not repaired, not authorized",
+                            "id":  "B13J-PLAN-F009",
+                            "severity":  "LOW"
+                        }
+                    ],
+    "new_findings":  [
+                         {
+                             "id":  "B13J-PLAN-R04-F001",
+                             "basis":  "(b) cites constraint 7 \"explicit human production approval\" item, but constraint 7 sub-items :954-:958 contain no such item; phrase occurs only at :960, :1045 (ADR-0031 constraint 8), :1117 (ADR-0032 condition 6); (c) uses additive wording instead",
+                             "impact":  "traceability/precision only; no approval bypass because (c) still requires human approval",
+                             "location":  "framework.md:960 (b)",
+                             "close_condition":  "(b) and (c) aligned and author evidence no longer attributes the item to constraint 7",
+                             "status":  "OPEN",
+                             "severity":  "LOW",
+                             "suggestion":  "reword (b) as \"in addition to all constraint 7 items, explicit human production approval is separately required\"; fix adr-r04/index.json R03-F005 note"
+                         },
+                         {
+                             "impact":  "registration-order readability; no deadlock because decision cards and S4.23 can proceed",
+                             "id":  "B13J-PLAN-R04-F002",
+                             "suggestion":  "next ADR-0032 revision add \"this ordering governs obtaining the lock, implementation and production release, not registration; card registration follows ADR-0030 constraint 9\"",
+                             "severity":  "LOW",
+                             "basis":  "clause \"finally the formal Task planning registers assembly and verification\" sits inside the invariant/constraint chapter and can be read as a registration precondition for S4.22/S4.24b, while ADR-0030:960(c) says such registration is not blocked; author rationale holds for the release-condition item 8 (:1119-:1126) but not for :1108",
+                             "close_condition":  "ADR-0032 revision adds the qualifier, or Lead records acceptance of the release-only reading",
+                             "location":  "framework.md:1108 (ADR-0032 invariant 9 last clause)",
+                             "status":  "OPEN",
+                             "pre_existing":  true
+                         },
+                         {
+                             "id":  "B13J-PLAN-R04-F003",
+                             "basis":  "records 259 lines for planning-review-r03/report.md; measured 27104 B / 258 LF / ReadAllLines=258 / single trailing LF, hash matches",
+                             "impact":  "metadata precision only",
+                             "location":  "adr-r04/report.md:19 and adr-r04/index.json inputs[0].lines",
+                             "close_condition":  "metadata corrected or convention documented",
+                             "status":  "OPEN",
+                             "severity":  "LOW",
+                             "suggestion":  "correct to 258 or note the counting convention"
+                         }
+                     ],
+    "verdict":  "PASS WITH MINOR",
+    "registration_round":  "allowed: decision cards (ADR-0030 r05 product selection; ADR-0031 r05 restore conclusions) may be registered immediately; S4.23 implementation card after ADR-0030 r05 is accepted by architecture/security independent review; S4.24a after ADR-0031 r05 is accepted; S4.24b after S4.23 delivers the bundle (ADR-0032 :1108/:1123); S4.22 registration itself is not blocked by constraint 7 (:960(c)) but its release requires constraint 7 full set plus explicit human production approval",
+    "ordering":  [
+                     "decision card ADR-0030 r05 (no precondition)",
+                     "decision card ADR-0031 r05 (no precondition)",
+                     "S4.23 implementation card after ADR-0030 r05 independent-review acceptance",
+                     "S4.24a implementation card after ADR-0031 r05 acceptance",
+                     "S4.24b after S4.23 bundle delivery",
+                     "S4.22 registration per :960(c); release per ADR-0032 :1125 plus constraint 7 and human approval"
+                 ],
+    "new_issue_scan":  {
+                           "r02-F001 three-tier ordering semantics unchanged":  "confirmed: (a)/(b)/(c) definitions and the ordering sentence are verbatim; only two limiting sentences were added and the numeric anchor was replaced (git diff hunks :953 :960)",
+                           "bypass of human approval":  "not possible: :960(c), :1050, :1045, :1117 all require explicit human production approval; author index has all *_claimed=false",
+                           "duplicate or mutually exclusive gates":  "none: :960 (ADR-0030 three tiers), :1050 (ADR-0031 single implementation gate), :1119-:1126 (ADR-0032 release order) are different layers; r04 added no gate to ADR-0032",
+                           "gap-map:182 readability":  "acceptable with full-width pipe separators; non-blocking residual (R03-F002 closed with observation)",
+                           "ADR-0032 same-shaped negation omitted":  "author rationale holds for release-condition item 8 (:1119-:1126 under the release chapter) but not for the :1108 invariant clause; recorded as R04-F002",
+                           "numeric inline anchors reintroduced":  "no: r04 new text uses symbolic references only"
+                       },
+    "honesty_check":  "production enter/install and enter/resume DB replacement remain closed (ADR-0030 :926/:939/:950/:951, ADR-0031 :986 unchanged); no file/SQL/fake fallback; no production-ready claim; tasks.md and Plan unchanged so S8.2 [-] and Case18 remain not PASS",
+    "commands":  [
+                     {
+                         "result":  "all bytes and SHA256 match the Lead baseline (see inputs)",
+                         "cmd":  "Get-FileHash + Length on framework/gap-map/u-adoption/tasks/Plan/README"
+                     },
+                     {
+                         "result":  "framework CRLF 1141 bareLF 0 ctrl 0 tab 0 no BOM tail CRLF; gap-map LF 218 tail none; u-adoption LF 38 tail none; adr-r04/report LF 205 tail none; adr-r04/index LF 324 tail LF; correction-r01 LF 38 tail LF",
+                         "cmd":  "byte scan (CR/LF/CRLF/ctrl/TAB/BOM/trailing)"
+                     },
+                     {
+                         "cmd":  "git diff --no-index --unified=0 adr-r04/snapshots/framework-before-r04.md framework.md",
+                         "result":  "7 hunks: 6 replacements + 2 insertions at :918 :953 :960 :971 :978 :1050 :1061; nothing else",
+                         "exit":  1
+                     },
+                     {
+                         "result":  "0 hits",
+                         "cmd":  "Select-String \u0027:957|:958\u0027 framework.md"
+                     },
+                     {
+                         "result":  "3 hits: :960 :1045 :1117",
+                         "cmd":  "Select-String \u0027取得人的明确生产批准\u0027 framework.md"
+                     },
+                     {
+                         "result":  "adr-0029 :862, adr-0030 :915, adr-0031 :975, adr-0032 :1065",
+                         "cmd":  "Select-String \u0027\u003ca id=adr-00(19|27|29|30|31|32)\u0027 framework.md"
+                     },
+                     {
+                         "result":  "character-identical (ADR-0030 constraint 10 unchanged)",
+                         "cmd":  "line :961 compare against snapshot"
+                     },
+                     {
+                         "result":  "270 chars; bare S4.24 0 hits; S4.24 total 6 all a/b forms",
+                         "cmd":  "gap-map.md:182 length and bare S4.24 scan"
+                     },
+                     {
+                         "result":  "all real authorization/basis lines (2026-10-31 ADR-0028 verification authorization; 2026-10-26; 2026-10-27; 2026-10-31 standing suggestion authorization)",
+                         "cmd":  "read tasks.md:8/:140/:1956/:2876"
+                     },
+                     {
+                         "cmd":  "rg -n \u0027S4\\.2[234]\u0027 tasks.md plans/ir-01-content-community-batches.md",
+                         "result":  "zero hits, no candidate registered",
+                         "exit":  1
+                     },
+                     {
+                         "result":  "valid; verdict=applied-draft-unreviewed; review/approval/production/gate_claimed all false",
+                         "cmd":  "ConvertFrom-Json adr-r04/index.json"
+                     },
+                     {
+                         "result":  "body unchanged at 4BA08EA7...C101BC1 / 28898 B; correction co-located and listed in adr-r04/index.json evidence_files",
+                         "cmd":  "ConvertFrom-Json adr-r03/correction-r01.md target adr-r03/index.json"
+                     },
+                     {
+                         "result":  "HEAD 6da8abbceb0fa197364810a92a8fa2d97b38ddca; 293 porcelain lines (same as r03)",
+                         "cmd":  "git rev-parse HEAD; git status --porcelain | Measure-Object -Line"
+                     }
+                 ],
+    "format":  {
+                   "adr_r04_report":  {
+                                          "crlf":  0,
+                                          "bytes":  17103,
+                                          "bare_lf":  205,
+                                          "trailing":  "none",
+                                          "bom":  false,
+                                          "lines":  205
+                                      },
+                   "adr_r03_correction":  {
+                                              "lines":  38,
+                                              "bytes":  2733,
+                                              "trailing":  "single LF",
+                                              "bom":  false
+                                          },
+                   "index_json":  {
+                                      "written_with":  "UTF8Encoding(false), CRLF normalised to LF, single trailing LF",
+                                      "json_valid":  true
+                                  },
+                   "report_md":  {
+                                     "tab":  0,
+                                     "bom":  false,
+                                     "crlf":  0,
+                                     "trailing":  "single LF",
+                                     "bare_lf":  157,
+                                     "control":  0,
+                                     "bytes":  21187,
+                                     "lines":  157,
+                                     "sha256":  "38DE303B432921C9A369C08F7BF4DD1999C08EBA72CACF8A99BFDEBE9174E352"
+                                 },
+                   "u_adoption_record":  {
+                                             "crlf":  0,
+                                             "bytes":  5572,
+                                             "bare_lf":  38,
+                                             "trailing":  "none",
+                                             "bom":  false,
+                                             "lines":  38
+                                         },
+                   "framework_md":  {
+                                        "trailing":  "single CRLF",
+                                        "bare_lf":  0,
+                                        "bom":  false,
+                                        "control":  0,
+                                        "tab":  0,
+                                        "lines":  1141,
+                                        "crlf":  1141,
+                                        "bytes":  182488
+                                    },
+                   "gap_map_md":  {
+                                      "crlf":  0,
+                                      "bytes":  26821,
+                                      "bare_lf":  218,
+                                      "trailing":  "none",
+                                      "bom":  false,
+                                      "lines":  218
+                                  },
+                   "adr_r04_index":  {
+                                         "lines":  324,
+                                         "json_valid":  true,
+                                         "bytes":  17741,
+                                         "trailing":  "single LF",
+                                         "bom":  false
+                                     }
+               },
+    "not_covered":  [
+                        "no Go/PG/service/restore/E2E execution",
+                        "no runtime behaviour, lock backend, adapter or product selection verified",
+                        "ADR-0019/0027/0029 bodies not re-read line by line (unchanged, proven by prefix and region hashes)",
+                        "r01/r02 CLOSED items not re-reviewed",
+                        "card-level implementability fields for S4.22/S4.23/S4.24a/S4.24b not judged (r01 F003/F006 remain OPEN)",
+                        "adr-r04/report.md read in part (conclusion, self-check, disclosures)"
+                    ],
+    "boundaries":  [
+                       "no implementation authorization",
+                       "no Task or Plan entry registered (S4.22/S4.23/S4.24a/S4.24b remain candidates)",
+                       "does not close pending-B13J-D04",
+                       "does not lift blocked-upstream",
+                       "not a human sign-off or production approval",
+                       "does not claim Case18 or article-management-S8.2 pass"
+                   ],
+    "files":  [
+                  {
+                      "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r04/report.md",
+                      "sha256":  "38DE303B432921C9A369C08F7BF4DD1999C08EBA72CACF8A99BFDEBE9174E352",
+                      "bytes":  21187
+                  }
+              ],
+    "self_hash_note":  "index.json is the container for this review; its own bytes/SHA256 are reported in the delivery message and must be recomputed by any consumer (a file cannot embed its own hash)"
+}

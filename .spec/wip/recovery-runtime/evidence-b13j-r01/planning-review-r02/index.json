@@ -1,0 +1,170 @@
+{
+  "schema": "add.planning-review-index/v1",
+  "role": "add-reviewer",
+  "review_round": "r02",
+  "objectType": "planning",
+  "item": "pending-B13J",
+  "workflow": "development-delivery",
+  "phase": "planning-review-r02",
+  "workspace": "D:/AID/VSCode/Codex/Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "recorded_at": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "independence": {
+    "nonAuthor": true,
+    "designAuthors": "Singer for D01-D04",
+    "d04Reviewer": "Sagan for design-d04 review",
+    "statement": "本评审未参与 D01-D04 设计或 D04 review 产出；独立核对原始制品与字节，不默认接受作者或 Sagan 的结论。"
+  },
+  "scope": "r02 targeted re-review: dispose r01 ten findings and detect issues introduced by the r02 revisions; not a full re-review.",
+  "verdict": {
+    "status": "CHANGES REQUIRED",
+    "reason": "r01 F003/F005/F006/F009 remain OPEN; ADR-0030 constraint 9 creates a registration deadlock (R02-F001); candidate S4.24 has conflicting identities across ADR-0031/ADR-0032/gap-map (R02-F002); plus three LOW new issues. A decision-card registration round may proceed after fixing constraint 9, but S4.22/S4.23/S4.24 implementation cards must not be registered.",
+    "counts": {
+      "r01_CLOSED": 6,
+      "r01_OPEN": 4,
+      "new_HIGH": 2,
+      "new_LOW": 3,
+      "open_HIGH": 4,
+      "open_MEDIUM": 1,
+      "open_LOW": 4,
+      "total_open": 9
+    }
+  },
+  "r01_findings": [
+    {"id": "B13J-PLAN-F001", "severity": "HIGH", "status": "CLOSED", "note": "No Plan violation this round; sequence conclusion retained and must add a decision-card step (see R02-F001).", "location": "r01 report:77-78; tasks.md/Plan unchanged; rg S4.2[234] exit 1"},
+    {"id": "B13J-PLAN-F002", "severity": "HIGH", "status": "CLOSED", "note": "Record-level adoption only, not human business sign-off; satisfies r01 unified itemized record requirement.", "location": "u-adoption-record-r01.md:5-7, :12-22; residual R02-F003/F004"},
+    {"id": "B13J-PLAN-F003", "severity": "HIGH", "status": "OPEN", "note": "No Task card registered; tasks.md and Plan hashes unchanged; awaiting card round.", "location": "tasks.md F1D65B0D/823187; Plan 3FA19CDD/497542; rg exit 1"},
+    {"id": "B13J-PLAN-F004", "severity": "HIGH", "status": "CLOSED", "note": "Precondition nodes now exist in all three ADRs; node content issue is R02-F001.", "location": "framework.md:960, :1046-1048, :1115-1122"},
+    {"id": "B13J-PLAN-F005", "severity": "HIGH", "status": "OPEN", "note": "Order formalized but entry inherits ADR-0030 constraint 7 real-verification gate; chain cannot start.", "location": "framework.md:960, :953-958, :1115-1122"},
+    {"id": "B13J-PLAN-F006", "severity": "MEDIUM", "status": "OPEN", "note": "No S4.22 card; correction-r01 explicitly says insufficient to close.", "location": "D04 review-r02:133-138; correction-r01.md:47"},
+    {"id": "B13J-PLAN-F007", "severity": "MEDIUM", "status": "CLOSED", "note": "Order constraint added to ADR-0032 release-condition condition 8.", "location": "framework.md:1104, :1115-1122"},
+    {"id": "B13J-PLAN-F008", "severity": "LOW", "status": "CLOSED", "note": "Errata accurate; original report/index untouched; machine consumers still see the stale index value by design.", "location": "correction-r01.md; review-r02/index.json:33; report.md 19858 B / E3 80 82"},
+    {"id": "B13J-PLAN-F009", "severity": "LOW", "status": "OPEN", "note": "Historical 0x0C in tasks.md; unchanged and unauthorized to fix.", "location": "tasks.md offsets 12676, 12691"},
+    {"id": "B13J-PLAN-F010", "severity": "LOW", "status": "CLOSED", "note": "Four author index states are real; report section 7 is append-only (prefix hash equals original report hash).", "location": "D01 index:139; D02 index:306; D03 index:601; D04 index:596; design-revision-r01/report.md prefix 0..10547 = 565D1547"}
+  ],
+  "new_findings": [
+    {
+      "id": "B13J-PLAN-R02-F001",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "title": "ADR-0030 constraint 9 creates a registration deadlock",
+      "location": "framework.md:960 (constraint 9); framework.md:953-958 (constraint 7, esp. :957); framework.md:1116",
+      "basis": "Constraint 9 requires a new ADR revision AND that constraint 7 be released (which requires real independent-failure-domain verification at :957 and a formal Task registration at :958) before an implementation card may be registered.",
+      "impact": "S4.23/S4.24 implementation cards are permanently unregisterable; ADR-0032 :1122 claim of no architecture deadlock only covers the pre-revision case; F005 is substantively unresolved.",
+      "recommendation": "Split into decision card (produces ADR-0030 r03, documentation only), implementation/verification card (registerable after r03 acceptance, produces real evidence), and production-release card (after full constraint 7 evidence + human approval). Change constraint 9 entry to 'decision revision accepted'.",
+      "closureCondition": "Revised text yields an acyclic registerable sequence with verifiable preconditions, and implementation/verification cards are registerable after r03."
+    },
+    {
+      "id": "B13J-PLAN-R02-F002",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "title": "Candidate S4.24 has conflicting identities",
+      "location": "framework.md:1048 (ADR-0031: restore implementation card); framework.md:1119-1120 (ADR-0032: exclusive lock wiring, requires S4.23); gap-map.md:182 (restore + deployed exclusive OS backend)",
+      "basis": "The same candidate number is assigned different implementation scopes and gates in three places; ADR-0032 release chain :1116-1121 omits the restore half entirely.",
+      "impact": "No single S4.24 card can satisfy both ADR-0031 and ADR-0032 gates; registering it creates a contract conflict and the restore half has no release-chain承接.",
+      "recommendation": "Split into S4.24a (restore source/target/tool) and S4.24b (deployment exclusive lock wiring), rename consistently in ADR-0031/0032 and gap-map; S4.24b requires S4.23; S4.22 after both.",
+      "closureCondition": "Three definitions agree and the release chain covers both restore and lock-wiring nodes."
+    },
+    {
+      "id": "B13J-PLAN-R02-F003",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "Adoption record has swapped section/line anchors",
+      "location": "u-adoption-record-r01.md:7",
+      "basis": "Writes section 4 :191 and section 3.2 :207, but gap-map section 3.2 starts at :185 (:191 in 3.2) and section 4 starts at :193 (:207 in 4); anchors and quoted text are swapped.",
+      "impact": "Readers checking the anchors land on the wrong section; adoption conclusion unaffected.",
+      "recommendation": "Change to section 3.2 :191 and section 4 :207.",
+      "closureCondition": "Anchors match sections and quoted text."
+    },
+    {
+      "id": "B13J-PLAN-R02-F004",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "Standing authorization source date/location not verifiable in evidence",
+      "location": "u-adoption-record-r01.md:6",
+      "basis": "Claims the user repeated the standing authorization in a 2026-11-02 session, but no dated/located record exists in the evidence dir; the repo only shows a 2026-10-31 instance.",
+      "impact": "The adoption record source cannot be independently replayed; weakens auditability but does not reopen F002.",
+      "recommendation": "Add the concrete session/message pointer or cite the verifiable 2026-10-31 instance.",
+      "closureCondition": "A verifiable dated source pointer is recorded."
+    },
+    {
+      "id": "B13J-PLAN-R02-F005",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "ADR r02 revision date precedes its triggering report",
+      "location": "framework.md:969, :1057, :1135; adr-r02/report.md:6",
+      "basis": "All say 2026-11-01 r02 revision, but the triggering planning-review-r01/report.md:8 is dated 2026-11-02; actual mtimes are 2026-11-02 00:50:59 and 00:55:17.",
+      "impact": "Traceability shows revision before trigger; audit ordering may be misread.",
+      "recommendation": "Change to 2026-11-02 or state decision date 2026-11-01 / revision date 2026-11-02.",
+      "closureCondition": "Revision dates are not earlier than the triggering report."
+    }
+  ],
+  "reviewed_objects": [
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r01/report.md", "bytes": 28901, "sha256": "6918A79C1E5A7426037A47E8DA5CEDC5E9F839B39BF0053B1DFE26712254D4AC"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r01/index.json", "bytes": 28780, "sha256": "5825DDD2C9483034015BB948036763156CC3C7ED9BCD3EDD30680792667597E0"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/u-adoption-record-r01.md", "bytes": 4665, "sha256": "1DD59523B3FB0FF336E7204F3EAC764F29CE7D0DDAF0F1BE633F88B2F646FDBD"},
+    {"path": ".add/project/knowledge/decisions/framework.md", "bytes": 175141, "sha256": "DA77EA1332DB69CB94B90960DEA58B35CABDA76C712EDAE23F2CCF6A1F45B5C1"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r02/report.md", "bytes": 29335, "sha256": "D66E898C5DEF97767FA735390D95558923F941F633CD2A23009051A8FFE8315C"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r02/index.json", "bytes": 24032, "sha256": "CA19DD735D4A0B0F5F7EAE3109388A8F3C8C03C6B841DF6A9414882E8A8248AA"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r02/snapshots/framework-before-r02.md", "bytes": 169890, "sha256": "58C97FC06361022AA48EF737189EF3EB069A7AAD25772BCA4C80FE4D1D5E1F8E"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r02/snapshots/readme-before-r02.md", "bytes": 21472, "sha256": "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r02/correction-r01.md", "bytes": 6204, "sha256": "F806AA28F9F51B782313C0C8CE119776F1AC1661B719571816FAF70633950CD8"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/report.md", "bytes": 11998, "sha256": "6D8B28A47F12A51A483E9660D19BA8D4DF1564CC4DA3DC3A334E8BD1F36264E4"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/index.json", "bytes": 8224, "sha256": "218EF70836BE69EBE9D6A2C7485AB9D638E20F7070421DEB48B86265B785A9EF"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/index.json", "bytes": 20071, "sha256": "1F2A1D19ED1FA74CB987BDA38442D94DE2BD725315CA72A0F07DCC469D748476"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/index.json", "bytes": 45798, "sha256": "DAB0013E113B8AE2417016AF93162E2CD51A6C94DF148E52616790B5FBBB790B"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/index.json", "bytes": 55974, "sha256": "AD4EA53C4C3FF6C6F6238320B4973F0D4D27259650D2F0B5DA638CC757AC346D"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r02/report.md", "bytes": 19858, "sha256": "ECE706E0B30A3569B21B37C353F76A9A1546E5EC73841B029CCE31D9BF9BE876"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d04/review-r02/index.json", "bytes": 24007, "sha256": "65E40D60D09BA36DD2532173266E36DD6A4A15327A079125B0B3CDBA5F5626FF"},
+    {"path": ".add/project/knowledge/decisions/README.md", "bytes": 21472, "sha256": "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97"},
+    {"path": ".add/project/knowledge/tasks/tasks.md", "bytes": 823187, "sha256": "F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34"},
+    {"path": ".add/project/knowledge/plans/ir-01-content-community-batches.md", "bytes": 497542, "sha256": "3FA19CDD4902F56B8C2F1DF59C570D96FAAE02D8AEE519B4B4165DCCA3637380"},
+    {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md", "bytes": 26452, "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F"},
+    {"path": ".add/project/knowledge/design-workspace/identity-auth/design.md", "bytes": 854991, "sha256": "FED48FA9908F9EADD970A3E57B0B448181C51030A4460B437852009722F34D8D"},
+    {"path": ".add/project/knowledge/design-workspace/article-management/design.md", "bytes": 377424, "sha256": "690015BB5C3B4800539F98C5B75115A5A20B5C161ECE7422F9F271840F7C55A7"}
+  ],
+  "commands": [
+    {"cmd": "git rev-parse --abbrev-ref HEAD", "exit": 0, "result": "main"},
+    {"cmd": "git rev-parse HEAD", "exit": 0, "result": "6da8abbceb0fa197364810a92a8fa2d97b38ddca"},
+    {"cmd": "git status --porcelain | Measure-Object -Line", "exit": 0, "result": "293"},
+    {"cmd": "rg 'S4\\.2[234]' tasks.md Plan", "exit": 1, "result": "no match"},
+    {"cmd": "rg 'B13J' tasks.md Plan", "exit": 1, "result": "no match"},
+    {"cmd": "rg 'S4\\.2[234]' framework.md", "exit": 0, "result": "prose mentions of unregistered candidates at :960,:1048,:1117,:1119,:1120,:1122,:1135"},
+    {"cmd": "rg 'S4\\.2[234]' identity/article design", "exit": 1, "result": "no match"},
+    {"cmd": "SHA256 framework.md", "exit": 0, "result": "DA77EA1332DB69CB94B90960DEA58B35CABDA76C712EDAE23F2CCF6A1F45B5C1 / 175141 B"},
+    {"cmd": "SHA256 framework[0..126598] (126599 B)", "exit": 0, "result": "8C93C47AE57BED1C8390C07D41210183814185A68B148DCEEF180BDB8AE1C9EB"},
+    {"cmd": "SHA256 framework[31305..126598] (95294 B)", "exit": 0, "result": "607827B08F64D2ADD88DCB815F428575BA214EED3780D67C28DE7DEA6C18D2B6"},
+    {"cmd": "framework format scan", "exit": 0, "result": "bytes=175141 lines=1135 crlf=1135 barelf=0 barecr=0 bom=False endCRLF=True ctrl=0 tab=0"},
+    {"cmd": "tasks.md 0x0C scan", "exit": 0, "result": "2 at offsets 12676,12691"},
+    {"cmd": "SHA256 design-revision-r01/report.md[0..10547]", "exit": 0, "result": "565D1547F8B75A4E60EB8073AA52326E3C8ADB620F71E2D999E60C40506BE89A (= original report, append-only)"},
+    {"cmd": "D04 review-r02 report last bytes", "exit": 0, "result": "19858 B, 207 LF, 0 CR, last3=E3 80 82 (U+3002)"},
+    {"cmd": "D04 review-r02 index artifact.trailing", "exit": 0, "result": "single LF (0x0a) (still stale; errata corrects it)"},
+    {"cmd": "JSON parse (explicit UTF-8) adr-r02/r01/review-r02/D01-D04 indexes", "exit": 0, "result": "all OK"},
+    {"cmd": "rg '生产可用|production.ready|生产就绪' framework ADR-0030..0032", "exit": 0, "result": "only negated forms; no positive production-ready claim"},
+    {"cmd": "file mtimes framework/r01 report/adr-r02 report", "exit": 0, "result": "2026-11-02 00:50:59 / 00:44:44 / 00:55:17"}
+  ],
+  "format_invariants": {
+    "report": {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r02/report.md", "bytes": 18538, "lines": 164, "crlf": 0, "bare_lf": 164, "bare_cr": 0, "bom": false, "trailing": "single LF (0x0a)", "control_chars_non_lf_cr": 0, "tab": 0, "sha256": "0462EC08AD8BCFECC24AB0BDDC8A9627700DF8D72DEE0441781BF6CFD930C155"},
+    "framework": {"bytes": 175141, "lines": 1135, "crlf": 1135, "bare_lf": 0, "bare_cr": 0, "bom": false, "trailing": "single CRLF (0x0d0a)", "control_chars": 0, "tab": 0}
+  },
+  "report": {"path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r02/report.md", "bytes": 18538, "sha256": "0462EC08AD8BCFECC24AB0BDDC8A9627700DF8D72DEE0441781BF6CFD930C155"},
+  "boundaryChecks": {
+    "tasks_md_unchanged": "F1D65B0D...900E34 / 823187 B",
+    "plan_unchanged": "3FA19CDD...637380 / 497542 B",
+    "framework_revised_by_author_not_reviewer": "DA77EA13...B5C1 / 175141 B (author r02; reviewer read-only)",
+    "readme_unchanged": "2EE124AE...6B97 / 21472 B",
+    "new_evidence_only": "planning-review-r02/ is the only directory created by this review",
+    "git_write": "none"
+  },
+  "boundaryStatement": "This review only judges whether to enter a Task card registration round. It does not authorize implementation, does not close pending-B13J-D04, does not lift blocked-upstream, is not human sign-off, and does not authorize registering S4.22/S4.23/S4.24.",
+  "not_verified": [
+    "No full r01 re-review; only targeted disposal and r02 revision checks.",
+    "No Go tests, PostgreSQL, service, E2E, restore or deployment run.",
+    "No runtime verification of exclusive, real independent failure domain, ACL or OS lock.",
+    "No human business sign-off and no dated standing-authorization source (R02-F004).",
+    "No absolute baseline for new .spec artifacts (spec is untracked); tree listing used instead.",
+    "README status column does not reflect r02 trace (readability limitation only, no revision field, conclusions unchanged)."
+  ]
+}

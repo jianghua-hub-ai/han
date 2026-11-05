@@ -1,0 +1,24 @@
+{
+  "objectType": "design",
+  "object_SHA256": "C0698534C555ABE7DFBC5C54545BE1235549098FCCC2D9830B0599C1AD6473B2",
+  "gate": "PASS limited plan delta",
+  "new_findings": [],
+  "files": {
+    "report.md": {
+      "bytes": 4573,
+      "sha256": "50C0BCDC97F0E5DEFF33DD6156D82A3AD2A83EE904D3BE209556DB750701826A"
+    },
+    "verdict.md": {
+      "bytes": 983,
+      "sha256": "31518C3CF3A465B9ACF52623709C7F0C2E5261572580F51DB5467308413F4AEC"
+    },
+    "evidenceaudit.json": {
+      "bytes": 1388,
+      "sha256": "0F6EDBD5653D5AB24508466EC3022848B85E1F519EDBC2F0060946C80060ED9C"
+    }
+  },
+  "actual_STOP_utc": "2026-11-04T12:16:26.361471+00:00",
+  "actual_STOP_Asia_Shanghai": "2026-11-04T20:16:26.361471+08:00",
+  "old_R09_semantics_review": "STOP 12:13:36.290301Z; 9 CLOSED / 9 PENDING; EV001 retained",
+  "execution_permission": "NONE; latest start 12:15:37.932710Z and all implementation/source/review/adoption/grant gates still apply"
+}

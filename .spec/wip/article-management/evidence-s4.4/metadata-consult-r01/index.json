@@ -1,0 +1,84 @@
+{
+  "scope": "S4.4 preparation metadata and adopted feature consultation; no implementation or runtime PASS",
+  "captured_at": "2026-10-27T22:07:15.489566+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-consult-cab76436c9aa47f7b75b1c027ef0b8d3\\consult.md",
+      "copy": "designer/consult.md",
+      "role": "Hubble",
+      "sha256": "E94FD56824D9C7854481946363B7A4A89407F598A7B8ED9B8E4D631FEB5D9CAF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-consult-cab76436c9aa47f7b75b1c027ef0b8d3\\actual-readset.json",
+      "copy": "designer/actual-readset.json",
+      "role": "Hubble",
+      "sha256": "18CFD4644BED326124229CEDE7810A027BB3040D1F9B9E208007E3DCC239CA3F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-consult-cab76436c9aa47f7b75b1c027ef0b8d3\\hashes.json",
+      "copy": "designer/hashes.json",
+      "role": "Hubble",
+      "sha256": "D9891936C04B16128D98EDB7BEB6DF50B0601DE027E3904CA0EE39A4095DF288"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\tasks.before.md",
+      "copy": "planner/tasks.before.md",
+      "role": "Ptolemy",
+      "sha256": "53AE60BC1FD05B8ED0DBEE3E4BF0439E4C39A1F20626E172D985238797A6804F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\tasks.after.md",
+      "copy": "planner/tasks.after.md",
+      "role": "Ptolemy",
+      "sha256": "95E71CC3993ADA0EAAD90E456962C73DCE1AA9082DE611C3C2D604CAAD1D7BE3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\plan.before.md",
+      "copy": "planner/plan.before.md",
+      "role": "Ptolemy",
+      "sha256": "C7D75A021E5C0677B93B456A6DA72083D3E1367DCB88CA4079631BCB92B8A0CA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\plan.after.md",
+      "copy": "planner/plan.after.md",
+      "role": "Ptolemy",
+      "sha256": "A8C232A96A0D20A4729DD00DB61284F9689EAF1917B9AA5636F3BD634FBE8C8E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\tasks.actual.diff",
+      "copy": "planner/tasks.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "CC8BDC43F60B1E1C68C5EE965599CA20083B5A95DADF5A38F4C05DB564EC17D5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\plan.actual.diff",
+      "copy": "planner/plan.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "4B27660BBAF830CD098C6FC96FAC89AF88E95D8E09A1B6107439EDA77542192E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\write-receipt.json",
+      "copy": "planner/write-receipt.json",
+      "role": "Ptolemy",
+      "sha256": "85C65DCAFAEA8D2B0BA34AC858139AE3172C48E8BBF1E45EB4D57B6E73777422"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-prep-metadata-95d6e83a03e84ebf9c0431ac4b6c4c2d\\readback-scope-check.json",
+      "copy": "planner/readback-scope-check.json",
+      "role": "Ptolemy",
+      "sha256": "EC81BAD900055EFDE86A7FD959BF188AD69975FCA5D3AC7E6D36ABCA8FC1DB04"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-prep-metadata-verification.json",
+      "copy": "lead-prep-metadata-verification.json",
+      "role": "Lead",
+      "sha256": "DFA8D349EABA11BC6D78EE8B113C2A75E7A306B8B6AE5921316FED7B194AB5EB"
+    },
+    {
+      "source": "Lead actual adoption and design signal",
+      "copy": "adoption.json",
+      "role": "Lead",
+      "sha256": "B25EC7CB6FC3B2DFC345A0E0868D040E3D56BD7C8A1A70B9B09461AC373355A8"
+    }
+  ]
+}

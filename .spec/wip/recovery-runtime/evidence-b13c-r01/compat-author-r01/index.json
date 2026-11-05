@@ -1,0 +1,368 @@
+{
+  "scope": "compat-author-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-compat-author-ef0h9ms9",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/auth_security_fixture_test.go.before.frozen",
+      "sha256": "0DF966B9F17AD4DAF3275F3BE6428A37A4E600619524C484279C9EE4E26ED088",
+      "bytes": 31011,
+      "source_name": "auth_security_fixture_test.go.before.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/auth_security_fixture_test.go.final.frozen",
+      "sha256": "ECBFA61C9531AE51BFD7211D25EE282A841EE4BF08CB674134C6E2B1BAAB8B6F",
+      "bytes": 35358,
+      "source_name": "auth_security_fixture_test.go.final.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/auth_security_fixture_test.go.red.frozen",
+      "sha256": "3DCACEE7218C5D29466E1736968C5BBF9DCC313DF8241EC41BC21C3407486F99",
+      "bytes": 34762,
+      "source_name": "auth_security_fixture_test.go.red.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/authorization.frozen",
+      "sha256": "53541A7F4A91E87A45620BF61F8F724E213AA87402FD66070CF94CA8FAFC408C",
+      "bytes": 1817,
+      "source_name": "authorization.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/before.json",
+      "sha256": "D8E41B7B8EF45833551A6BD8E367252A87770F0727878BB3F6912C07D456FA07",
+      "bytes": 22457,
+      "source_name": "before.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/canonical_user_delete_test.go.before.frozen",
+      "sha256": "2C88891DCD6F2E7F2B1B256492679FC6F4341F2F0816451D38E5841E3FE9FA20",
+      "bytes": 49265,
+      "source_name": "canonical_user_delete_test.go.before.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/canonical_user_delete_test.go.final.frozen",
+      "sha256": "30D0C3628AEE8AFE9A43E2998FBF7E9FD66FF715F9F188022420BDAF48A405B7",
+      "bytes": 53851,
+      "source_name": "canonical_user_delete_test.go.final.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/canonical_user_delete_test.go.red.frozen",
+      "sha256": "5C0AC5A54AAFED12D7B6C31C2ADBD31634D2FE7AFC45CA7134C5FDA82B6708A4",
+      "bytes": 52967,
+      "source_name": "canonical_user_delete_test.go.red.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-canonical-normal/result.json",
+      "sha256": "1CC4D9CE888C631236F85FA8C8A1DF0CCE4613F450F220456384A8C203892254",
+      "bytes": 819,
+      "source_name": "checks/green-canonical-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-canonical-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/green-canonical-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-canonical-normal/stdout.log",
+      "sha256": "E229F762679D6055B1FB5199153B25D290EA8ED6AA45F0785A3CFFC07AF2576C",
+      "bytes": 9869,
+      "source_name": "checks/green-canonical-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-canonical-race/result.json",
+      "sha256": "4BC95F96B28D3B653A40589A1921960FA79415BB1036E97BDF70BD28654C4BE3",
+      "bytes": 829,
+      "source_name": "checks/green-canonical-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-canonical-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/green-canonical-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-canonical-race/stdout.log",
+      "sha256": "96021B7ED14BFD069E405801F21B6F8BE22D5F64FA56F04EA14378195BA1D50B",
+      "bytes": 9893,
+      "source_name": "checks/green-canonical-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-identity-normal/result.json",
+      "sha256": "98CE011681A25BE9D351BE938A6E122C84F85DC50130B18E2C263D05B4B670E4",
+      "bytes": 807,
+      "source_name": "checks/green-identity-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-identity-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/green-identity-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-identity-normal/stdout.log",
+      "sha256": "BE9F5CD3540DFCE5EE711853F00268C234DA95D9BB0E37BF06441A02C38BCCCE",
+      "bytes": 9334,
+      "source_name": "checks/green-identity-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-identity-race/result.json",
+      "sha256": "8023B2D112200898DBEC9503F0E1BB7B118B690A018ED2F51F5CC3D45158C5FB",
+      "bytes": 817,
+      "source_name": "checks/green-identity-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-identity-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/green-identity-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/green-identity-race/stdout.log",
+      "sha256": "32A54B48ACE8AABC321D69643A2F4CBFB5EE1A6A563E837BF7733973875CEE60",
+      "bytes": 9338,
+      "source_name": "checks/green-identity-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/integration-static-vet/result.json",
+      "sha256": "D4B763E6B9E30D222720B4E053F069F14151D3E8A22A282A616FB6DD282BB56D",
+      "bytes": 739,
+      "source_name": "checks/integration-static-vet/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/integration-static-vet/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/integration-static-vet/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/integration-static-vet/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/integration-static-vet/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/list-canonical/result.json",
+      "sha256": "D9DF9211175EE0001887587AB92263EF71ADF4EF36968E4C2E723DB1968F5D23",
+      "bytes": 752,
+      "source_name": "checks/list-canonical/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/list-canonical/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/list-canonical/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/list-canonical/stdout.log",
+      "sha256": "2EE37D2B15357DBC06608DEED6138440E63B342BA16F27D5DD77404995F0589E",
+      "bytes": 85,
+      "source_name": "checks/list-canonical/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/list-identity/result.json",
+      "sha256": "A89C624D0A8F7FC41A194943AC840EB770D1E8108CA973A54521205130BAACAF",
+      "bytes": 740,
+      "source_name": "checks/list-identity/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/list-identity/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/list-identity/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/list-identity/stdout.log",
+      "sha256": "0C1974F8ACC93EEA93288D0058261572DCF9671B829A6FAC3B31DB22C5DAD604",
+      "bytes": 75,
+      "source_name": "checks/list-identity/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/red-canonical/result.json",
+      "sha256": "277571865D7F253091CF9166C15A089F08BF254FC4166C50D8AD9F4C3BA6DBF6",
+      "bytes": 800,
+      "source_name": "checks/red-canonical/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/red-canonical/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/red-canonical/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/red-canonical/stdout.log",
+      "sha256": "FC04CD627E0F351EA3171BC56CD796DFD727508F3C9AF1393625CBBA6D31A92D",
+      "bytes": 11845,
+      "source_name": "checks/red-canonical/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/red-identity/result.json",
+      "sha256": "12EC1F069CACD58B49C52B6762844516A9F13A40AE5841B9EF2DCA29E21CDD07",
+      "bytes": 789,
+      "source_name": "checks/red-identity/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/red-identity/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/red-identity/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/red-identity/stdout.log",
+      "sha256": "5A8253AACC5F1F6618412C80D0877A8A8457EE4503853F2A589545AD80098DFC",
+      "bytes": 11222,
+      "source_name": "checks/red-identity/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/source3-format/result.json",
+      "sha256": "65EF1F921BB2FDBCD36B80A35C7AE237CA1D0E2C4292A4CB888D0E8B3137F16C",
+      "bytes": 824,
+      "source_name": "checks/source3-format/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/source3-format/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/source3-format/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/source3-format/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/source3-format/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/source3-format-check/result.json",
+      "sha256": "A3E19FFE1D0B4FA99B2AEE1AB1B57E0C50A844E12F3D41106FD0E02925C5831D",
+      "bytes": 836,
+      "source_name": "checks/source3-format-check/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/source3-format-check/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/source3-format-check/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks/source3-format-check/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/source3-format-check/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/checks-summary.json",
+      "sha256": "56CF31136256CFADB283C052288F648875D1B1EC814507B6D49DE4EAB501D0A1",
+      "bytes": 8565,
+      "source_name": "checks-summary.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/final-guard.json",
+      "sha256": "A811B9DCD9176FD589AB52E5CCE13D1409E52D5DA0E12A61AD7C321E032463FB",
+      "bytes": 796,
+      "source_name": "final-guard.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/freeze.py",
+      "sha256": "9E5D5FC9AD5A8E3D9E02CE43C569ABC7EBC42C9D08C8194A06EBDD68553BEFCE",
+      "bytes": 5974,
+      "source_name": "freeze.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/function-size.json",
+      "sha256": "375D3293A78AE8E79478B8CA8CE716597C7FD49A2C80F1D05234AEE6961BF344",
+      "bytes": 2445,
+      "source_name": "function-size.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/source-index.json",
+      "sha256": "AFE72924A3F9888B62D0F0768A02097420DF1089A8ECEF2595A0DFABF0492F8B",
+      "bytes": 6161,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/original-assertions-preserved.json",
+      "sha256": "88906E7BA5F9CBE3DB75555A6DECFFFECE335180A23B0B556D94DE5964BE43D8",
+      "bytes": 670,
+      "source_name": "original-assertions-preserved.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/password_reset_maintenance_test.go.before.frozen",
+      "sha256": "D4B0C837F27E2654784C779A3C08065F0CE4ECCE78B4ED63072B69125DEA2204",
+      "bytes": 95658,
+      "source_name": "password_reset_maintenance_test.go.before.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/password_reset_maintenance_test.go.final.frozen",
+      "sha256": "FED5C115DFF1DB5F140D6BEBF46B406768EB77566B647D0F46C426ECB584EE75",
+      "bytes": 95631,
+      "source_name": "password_reset_maintenance_test.go.final.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/password_reset_maintenance_test.go.red.frozen",
+      "sha256": "FED5C115DFF1DB5F140D6BEBF46B406768EB77566B647D0F46C426ECB584EE75",
+      "bytes": 95631,
+      "source_name": "password_reset_maintenance_test.go.red.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/prepare.py",
+      "sha256": "95E5EBBFCCAA5ACEDDC0ACC4ED99E3E682E667097954A346334E8DD5EA05463A",
+      "bytes": 2113,
+      "source_name": "prepare.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/readset.md",
+      "sha256": "6482ED0A66BBCFD925544F3E74F2A7E55C967BE87DDB5D99368BCA6341749D68",
+      "bytes": 1946,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/receipt.md",
+      "sha256": "84518109EF4C66A64F66C6A9FD6C1C72C38C746E563840CCCDBD55935A5C1651",
+      "bytes": 7028,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/risk-leaves.json",
+      "sha256": "C230F047B8FB0FCA17BFF70D4B60EEE5091761443295345AB1B71656C4C865F1",
+      "bytes": 2569,
+      "source_name": "risk-leaves.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/run_local.py",
+      "sha256": "8502BE2B83EFE26D42B5FA7FAAF8A9C16CD99E18C6AD2755881A257A54B4C3F6",
+      "bytes": 2224,
+      "source_name": "run_local.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/source-sha256.json",
+      "sha256": "2FF56FDC21F391062C4A9B8B150B7C2F9B459764CCD840B4E8B978490E112FCE",
+      "bytes": 715,
+      "source_name": "source-sha256.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/source3.diff",
+      "sha256": "8C4436AB14E4C4EF4A64B8576FC1BBFE27FC32085371B5865DB1A7856C711A07",
+      "bytes": 11811,
+      "source_name": "source3.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/write_green.py",
+      "sha256": "5E94226E7ADEA8CF007044ACE0B4EE73EEE679F67E0C2309CAA180D2D2C25F7F",
+      "bytes": 2372,
+      "source_name": "write_green.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/compat-author-r01/write_red.py",
+      "sha256": "6060FE5CDF508BC3A442363092FE7D6ADFB530DD3147E1294FE5648B9FB40435",
+      "bytes": 4624,
+      "source_name": "write_red.py"
+    }
+  ]
+}

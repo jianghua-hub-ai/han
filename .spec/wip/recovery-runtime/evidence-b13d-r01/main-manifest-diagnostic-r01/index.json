@@ -1,0 +1,61 @@
+{
+  "scope": "main-manifest-diagnostic-r01",
+  "owner": {
+    "role": "Lead-verification-not-Role",
+    "nickname": "Main",
+    "runtime_id": "Main runtime ID not exposed"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-lead-gz6d1yr8\\checks\\main-manifest-current-r01",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-format/result.json",
+      "sha256": "07D8AF66D50AD97E2B145D56EC745B15294ED4A5A3CF572EB998B4CF69264D0D",
+      "bytes": 609,
+      "source_name": "manifest-format/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-format/running.json",
+      "sha256": "A8D8DE483339C0AC37FFE5CCBB51DAD88004D4BC0303830082A98439E8500387",
+      "bytes": 235,
+      "source_name": "manifest-format/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-format/stderr.log",
+      "sha256": "53258F7B21EF40C6BE7E8E671216EEF5DD0441B27314FA806AE24F5C2CB010FD",
+      "bytes": 1133,
+      "source_name": "manifest-format/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-format/stdout.log",
+      "sha256": "D01225B146C06C238B38AEA344662D8253842CEE671EF68137BCC4B66C9379A8",
+      "bytes": 1631,
+      "source_name": "manifest-format/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-modules/result.json",
+      "sha256": "96E45DE65E275555ED7FCACD80B74D3AB64F19C0AAEBEAB296204BC83A2E51DB",
+      "bytes": 613,
+      "source_name": "manifest-modules/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-modules/running.json",
+      "sha256": "F4C8B4B912232552050F49A7462596A0B32640754BDD4FD574D482ACC6064122",
+      "bytes": 239,
+      "source_name": "manifest-modules/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-modules/stderr.log",
+      "sha256": "B732CA8065F846488D7FD58CFB632D67E12CBA5FF2CD798E61EDD93AEEB30B41",
+      "bytes": 123,
+      "source_name": "manifest-modules/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-diagnostic-r01/manifest-modules/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-modules/stdout.log"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

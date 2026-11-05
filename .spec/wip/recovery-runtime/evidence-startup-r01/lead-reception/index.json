@@ -1,0 +1,9 @@
+{
+  "scope": "Final Lead technical reception of bounded startup refusal, under scoped immutable-evidence formatter exception. No new independent review/human acceptance.",
+  "payloads": {
+    "diff-check.stderr.txt": "B5EB9EB288CA9F4F10C81172E314C32DD0715AD57BA8DA664A0FE21213F6B736",
+    "diff-check.stdout.txt": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "status.stdout.txt": "09513FDF0FB0429D1448287C3BB158E37BF7512028A2921C0094E2DF0A7BB901",
+    "verification.json": "65B515CEACE7BAF5C05859BC59C2F11FAA7136919B1CE8BAD82F558823C2D1C5"
+  }
+}

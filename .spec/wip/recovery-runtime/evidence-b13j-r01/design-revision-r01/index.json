@@ -1,0 +1,145 @@
+{
+  "schema": "add.evidence.design-revision/v1",
+  "item": "pending-B13J-D01",
+  "agent_role": "add-feature-designer",
+  "workflow": "development-delivery",
+  "phase": "design-activity-5-incremental-revision",
+  "route_executed": false,
+  "recorded_at": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "bytes": 26452,
+      "role": "R reconciliation source that defines D01 (A03/A04/A15)"
+    }
+  ],
+  "artifact": {
+    "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    "before": {
+      "sha256": "0FC3DE78C950661C2947680F678F92B7390843883FAD4F90362DB2C3F5A19277",
+      "bytes": 842580,
+      "crlf": 169,
+      "bare_lf": 4755,
+      "bom": false,
+      "trailing_newline": "single LF (0x0a)",
+      "lines_terminated": 4924
+    },
+    "after": {
+      "sha256": "504966EADBB3D74C9D3BAD83FBA500624C8273A6462CCDD5987420EBE3B5307C",
+      "bytes": 842966,
+      "crlf": 169,
+      "bare_lf": 4755,
+      "bom": false,
+      "trailing_newline": "single LF (0x0a)",
+      "lines_terminated": 4924
+    },
+    "frontmatter_status": "draft",
+    "frontmatter_status_changed": false
+  },
+  "baseline": {
+    "head_commit": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "head_design_sha256": "F7B2B6D2FFBD726CF312A70051730F24C923F1EC682A61385851F947A47C528C",
+    "head_design_bytes": 166893,
+    "head_design_lines": 1833,
+    "design_pre_sha256": "0FC3DE78C950661C2947680F678F92B7390843883FAD4F90362DB2C3F5A19277",
+    "design_pre_bytes": 842580,
+    "note": "design.md was already modified in the worktree before this round, so git diff --stat against HEAD reflects prior uncommitted design evolution rather than this revision"
+  },
+  "changes": [
+    {
+      "line": 3989,
+      "section": "4.2 r53 single-instance assembly paragraph, final sentence",
+      "before_excerpt": "最终 production 装配归 S4.16，组件 C 在原 article 测试范围",
+      "after_excerpt": "最终 production 装配所需端口的生产来源与构造尚无任务承接，须作为后续生产装配活动的责任经 Planner 对账后登记；已关闭的 S4.16 只交付其卡面范围内的同实例装配与 normal/resume/verify 开流顺序，不含这些生产端口。组件 C 在原 article 测试范围",
+      "reason": "S4.16 closed on a narrowed scope that explicitly left production CAS/anchor, installation commitment, source verifier, deployment lease, keyring loader, restore adapter and real provider/ACL undelivered (tasks.md:2731); S4.21 delivered only the explicit closed port list and injectable seams (tasks.md:2967, tasks.md:3034). Attributing the final production assembly to a closed card is the deprecated premise A04.",
+      "candidate_task_id_written": false
+    },
+    {
+      "line": 4447,
+      "section": "9.1 handoff table row identity-auth-S4.16",
+      "before_excerpt": "同实例装配与出口后最终开流顺序；root不写身份SQL",
+      "after_excerpt": "同实例装配与出口后最终开流顺序（限其卡面范围，不含 enter/install 生产端口与最终 production 装配）；root不写身份SQL",
+      "reason": "The row could be read as S4.16 having delivered the final production assembly; the scope qualifier aligns it with line 3989 and with the card's actual closed scope.",
+      "candidate_task_id_written": false
+    },
+    {
+      "line": 4449,
+      "section": "9.1 current-card delta explanation",
+      "before_excerpt": "S4.16 原文未给上述精确新 port，r52 的 S4.8 verifier亦需",
+      "after_excerpt": "S4.16 原文未给上述精确新 port、其最终 production 装配也不属已闭范围，r52 的 S4.8 verifier亦需",
+      "reason": "Keeps the Planner wording-sync action while removing the implication that S4.16 will own the final production assembly.",
+      "candidate_task_id_written": false
+    }
+  ],
+  "unchanged_allowed_position": [
+    {
+      "line": 4451,
+      "reason": "Story-level scope and reception wording; it does not present the undelivered ports as delivered, so no consistency edit was needed"
+    }
+  ],
+  "round_delta": {
+    "changed_lines": [3989, 4447, 4449],
+    "changed_line_count": 3,
+    "byte_delta": 386,
+    "reverse_reconstruction_sha256": "0FC3DE78C950661C2947680F678F92B7390843883FAD4F90362DB2C3F5A19277",
+    "reverse_reconstruction_bytes": 842580,
+    "line_diff_method": "split both versions on LF and compare element-wise; the differing indices are exactly 3989, 4447 and 4449",
+    "changed_lines_end_with_cr": false
+  },
+  "acceptance": [
+    {
+      "command": "rg -n '最终 production 装配归 S4\\.16' .add/project/knowledge/design-workspace/identity-auth/design.md",
+      "exit_code": 1,
+      "output": "no matching line (0 hits), as expected"
+    },
+    {
+      "command": "git diff --check -- .add/project/knowledge/design-workspace/identity-auth/design.md",
+      "exit_code": 0,
+      "output": "no whitespace errors; git printed only an autocrlf advisory warning"
+    },
+    {
+      "command": "git diff --stat -- .add/project/knowledge/design-workspace/identity-auth/design.md",
+      "exit_code": 0,
+      "output": "1 file changed, 2958 insertions(+), 310 deletions(-)",
+      "note": "diff base is HEAD (166893 B / 1833 lines); the large figure is pre-existing uncommitted design work, not this revision"
+    },
+    {
+      "command": "rg -n '尚无任务承接|不含这些生产端口|不属已闭范围|后续生产装配活动' .add/project/knowledge/design-workspace/identity-auth/design.md",
+      "exit_code": 0,
+      "output": "hits at lines 3989 and 4449; the line 4447 qualifier uses different wording"
+    }
+  ],
+  "write_set": [
+    ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-revision-r01/index.json"
+  ],
+  "not_proven": [
+    "no non-author review performed",
+    "no design gate obtained; frontmatter status remains draft and human acceptance is unknown",
+    "production behavior unchanged: enter/install still return recovery.ErrAdmissionClosed; this round ran no Go, PostgreSQL, HTTP or E2E command, so the claim cites existing tasks.md records only",
+    "frontmatter last_updated and the decision-trace status row were not updated because they are outside the allowed write set",
+    "design.md lines 4436 and 4438 still describe S4.16 as continuing to own root, command and single-instance assembly; they are outside the allowed write set and remain in tension with line 3989",
+    "no whole-document consistency audit; only the 4.2 r53 and 9.1 ranges named by the gap map were checked",
+    "no rendering or lint verification; git diff --check covers whitespace only"
+  ],
+  "open_items": [
+    "U2: confirm S4.16 stays closed and the follow-up scope is established separately; the three edits assume this",
+    "D02-D04 upstream architecture choices (anchor/CAS product, restore tool and approver, deployment lock platform) remain undecided and were deliberately not named",
+    "whether lines 4436 and 4438 should be narrowed in a later authorized round",
+    "registration timing of the forward production-assembly responsibility is left to Planner reconciliation",
+    "permission to update frontmatter last_updated and the decision-trace status row"
+  ],
+  "verdict": {
+    "state": "pass-with-minor-reviewed-r01",
+    "approval_claimed": false,
+    "review_claimed": false,
+    "gate_claimed": false,
+    "summary": "three inline wording corrections applied; format invariants preserved; no task, ADR, plan, test-plan, code or Git write performed. Non-author review r01 returned PASS WITH MINOR with one LOW B13J-D01-RV-01 (version identity/trace); the LOW is recorded CLOSED in report.md section 7 because later design revisions r58/r59/r60 advanced the revision identity and decision trace while the bytes recorded for this artifact stay as delivered"
+  }
+}

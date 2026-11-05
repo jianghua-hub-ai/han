@@ -1,0 +1,61 @@
+{
+  "scope": "s410-idempotency-design-g0-r01",
+  "owner": {
+    "role": "add-feature-designer",
+    "nickname": "Banach",
+    "runtime_id": "01a18389-57ab-7b70-8c86-82a61e7729f1"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-idempotency-g0-fguppt54",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/baseline.json",
+      "sha256": "21BBF13038B049BA04BEF2223C53E73A89D410C83DC75AFD96496D3FCA96B7D0",
+      "bytes": 3960,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/consult.md",
+      "sha256": "820E98AD1DD6AA40440E78DF13F78CFFC65E4ACF15F6B2661F909E95862B98E8",
+      "bytes": 18515,
+      "source_name": "consult.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/guard-after.json",
+      "sha256": "1F8A39611AC35B60ED35C025429DD9B35F5F02ACC58C83F892AFEC64E605BD29",
+      "bytes": 3955,
+      "source_name": "guard-after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/hashes.json",
+      "sha256": "8A3C75C83638D61F73883B21238A2A5176EDD290B36C56E25D292EE46EF37496",
+      "bytes": 621,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/methods-reused.json",
+      "sha256": "D941501E21FD751FC31CD3A92BBC0F99B092B44424E55DCD4383738FABA67EAC",
+      "bytes": 6293,
+      "source_name": "methods-reused.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/readset.json",
+      "sha256": "0626F469D4FDC28A63EF1B0CB63AA367BB36A1EDEDAFD2716FD526A3C33DF364",
+      "bytes": 5897,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/receipt.md",
+      "sha256": "D370277AFBD533A542A9E5A991BB31765F25A5153C99682D9DE8DF44CD5B60C6",
+      "bytes": 3727,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-idempotency-design-g0-r01/static.json",
+      "sha256": "F478DD5FDC14E3BB6E5BEE5B6BEC3FBE85E68D13414373004078237C1817B6C8",
+      "bytes": 203,
+      "source_name": "static.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

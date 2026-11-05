@@ -1,0 +1,85 @@
+{
+  "scope": "review-r01",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-independent-r01-87d45c18926a4badb032c051090d161c",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/audit.py",
+      "sha256": "965B1E13BFAD43540F26BDE0C0653F434A958E46E90122C88C3223A5FE480BEB",
+      "bytes": 6740,
+      "source_name": "audit.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/commands.md",
+      "sha256": "4BE54F068447B0D6EEBDC951F7F6C3FF66929DDBC506FAE2FC81043878098554",
+      "bytes": 7538,
+      "source_name": "commands.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/finalize.py",
+      "sha256": "737CC127879B78CED8D700D6ECA7FEBE5A8AE3B728ED9FB61DCABB1B4132DB54",
+      "bytes": 6415,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/initial.json",
+      "sha256": "04C0FB969EB1896EE6537AFC19F5C5AA76F25674A8FDEE9C4CB666B8986279CC",
+      "bytes": 686,
+      "source_name": "initial.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/read.py",
+      "sha256": "4B004AC60F4441CD3E24A1B013BA37A4CE5643E9E1B103211155698541C4CDB2",
+      "bytes": 895,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/readset.jsonl",
+      "sha256": "3EDA3C87BA81600A554645932169667D852EC0A275A894419A91E0D60D5F0A0D",
+      "bytes": 17379,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/readset.md",
+      "sha256": "575CB5FDA1F5C6B93DB22D95C603FDC2A1A8D9A605D43038570D6106F2C0C0E6",
+      "bytes": 9610,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/receipt.json",
+      "sha256": "624BC2655B7ACCA46FDA96F1D27A337FDB38C62C791B1A1874A7FDCA51971A5E",
+      "bytes": 3228,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/receipt.md",
+      "sha256": "ED9447D1EEDF475D2957062D322E240EA59F0FF0D172339F74931F00D26160E2",
+      "bytes": 1527,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/review-report.md",
+      "sha256": "A4C5D32A0E7BDF03FD9F2F492355AFDE0ED22F2A3A67D2E3B7F61590470D8503",
+      "bytes": 13341,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/sha256sums.txt",
+      "sha256": "73030FE02B5F109962141F2FAF4A8A32617320BDAA6015CCD68E6D1BAF1FE0C3",
+      "bytes": 871,
+      "source_name": "sha256sums.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/review-r01/static-verification.json",
+      "sha256": "6FDA183152DFAC37F72CA99A1A5071D3DC6C61E079B5CE6D13DFCA990C8507D5",
+      "bytes": 13255,
+      "source_name": "static-verification.json"
+    }
+  ]
+}

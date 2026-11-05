@@ -1,0 +1,86 @@
+{
+  "scope": "batch-review-r01-partial",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Curie",
+    "runtime_id": "01a18579-fde7-7a12-a3b1-9017a86b98c3"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13b-cross-review-wadvd1ty",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/evidence-index.json",
+      "sha256": "99ADB9E97E615CF1F2C811F5CE2FF2A04835C209EFBBF9D0F2228C0F2A229F5E",
+      "bytes": 1594,
+      "source_name": "evidence-index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/execution-ledger.json",
+      "sha256": "2EECD5BBC8F0083995946999863100EE566DA4800DE809658116D9AE131F73B9",
+      "bytes": 310,
+      "source_name": "execution-ledger.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/fixed-source11.json",
+      "sha256": "4760A3FD0302ED1D27BA69B4A0B810757D82B501CB71ED621A3E28C7AB2DDCAC",
+      "bytes": 2875,
+      "source_name": "fixed-source11.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/initial.json",
+      "sha256": "BCC474BC72E415B9D2380721719DD2F961511712C556D501FDB51C8287EF9875",
+      "bytes": 662,
+      "source_name": "initial.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/read.py",
+      "sha256": "3253BAF958403E5B8B965700C3E05A8C479C6880ABB3F40BF83F9AFA545F88E2",
+      "bytes": 625,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/readset.json",
+      "sha256": "3081FA40BD32FACE613A724C94804DE8EABFDF16DF77BABE0667815ACD38F98B",
+      "bytes": 13369,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/readset.jsonl",
+      "sha256": "0ED809C9D18F8570331236D6BD7C32A64E2438425AD88C5DB795FB279F7DBC6B",
+      "bytes": 5770,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/receipt.json",
+      "sha256": "FC9BC2C2517AD917442E5E21429398C0A6E4A50A180C263CAA7EAEF5A82A4143",
+      "bytes": 1076,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/review-report.md",
+      "sha256": "08446934F5697015888263312A578F05DB4FA6BAB861152B0D3AE385569580FD",
+      "bytes": 9447,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/run_local.py",
+      "sha256": "135EEF50DDB4E78924FA97FD20896745DC83C194164C2A30473989F8D0401685",
+      "bytes": 1661,
+      "source_name": "run_local.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/stop.py",
+      "sha256": "751A9DF61E3C16705DB31A83941783E8BE9CBBBBBCEE8E6C5369ECED5DE3FEC4",
+      "bytes": 11352,
+      "source_name": "stop.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/batch-review-r01-partial/upstream-review-reference.json",
+      "sha256": "FE325EAFB552FF79C0C47C7954E1EFA9AC7E5CA9989FA7786CF48F01F9216C23",
+      "bytes": 438,
+      "source_name": "upstream-review-reference.json"
+    }
+  ]
+}

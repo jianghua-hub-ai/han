@@ -1,0 +1,54 @@
+{
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Gibbs",
+    "runtime_id": "01a18c1e-6c1e-77a2-a274-752e748d3c8d"
+  },
+  "source_temp": "D:\\Temp\\han-b13h-lead-20261030-r01\\s416-author-G0-packet-r01",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-author-G0-r01/author-baseline-verification.json",
+      "source_name": "author-baseline-verification.json",
+      "bytes": 3166,
+      "sha256": "9BD6DD503AB84ED1CC5D780F4C21B3691F45A40C97237FF04DD63B99618897D7"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-author-G0-r01/author-source13.json",
+      "source_name": "author-source13.json",
+      "bytes": 2085,
+      "sha256": "FC89131A77EBD362B5A4F1299EB365A27E6BF90AFA745ABCD52EC2B67FCFC852"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-author-G0-r01/original-progress.md",
+      "source_name": "original-progress.md",
+      "bytes": 575,
+      "sha256": "1D71FC21B9A0515B9AC8042909D0B4C9DB41AAA8F2475303F3A890976F6ABD14"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-author-G0-r01/progress.json",
+      "source_name": "progress.json",
+      "bytes": 11887,
+      "sha256": "EA2EC4333F3FF15E2AB108B1451AE842F1AC4A62CEE0D81A7622FF1ECFC842BF"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-author-G0-r01/readset-index.csv",
+      "source_name": "readset-index.csv",
+      "bytes": 8602,
+      "sha256": "4E17011410842E1438F4C6EE4809452661F18382F69CE03C97252F8E0DD1D214"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-author-G0-r01/readset.jsonl",
+      "source_name": "readset.jsonl",
+      "bytes": 22822,
+      "sha256": "7358E8E8AA06C539A64ECFC368E63F86D14FF12183AB7A483658CC94C9846A44"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13h-r01/s416-author-G0-r01/superseded-g0-short.md",
+      "source_name": "superseded-g0-short.md",
+      "bytes": 9998,
+      "sha256": "B5474A291B5527F01A04973A2615032A1AFF5BED196C955A1FF4E8C57C742334"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original data retained; copy only, no cleanup/move"
+}

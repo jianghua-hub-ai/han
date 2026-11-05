@@ -1,0 +1,169 @@
+{
+  "scope": "a48-temp-preparation-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Noether",
+    "runtime_id": "01a1861b-9405-7942-8dd2-2db8b8d39eb2"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-a48-prep-kyggih5y",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/0011_article_replay_publication.sql.proposed",
+      "sha256": "9363C51CCC2205C7230EA09F9B9C7ACA28BB92F5A2EBFFDFEA8CA0310BF95955",
+      "bytes": 2691,
+      "source_name": "0011_article_replay_publication.sql.proposed"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/assembly-proposal.md",
+      "sha256": "903E773C866F0A51439ACCEEC2E688E2DC6E23B6AA6286057D169CC3243AAD5E",
+      "bytes": 7980,
+      "source_name": "assembly-proposal.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/AtomicBigintBoundary.canonical.json",
+      "sha256": "7E57B0F333510069886C4823069144E1DF87C13164052508A9501F4E2A83238E",
+      "bytes": 843,
+      "source_name": "AtomicBigintBoundary.canonical.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/AtomicBigintBoundary.source-array.json",
+      "sha256": "CCDD5690DCC298DC4EAF2AFDC8B1306FF41233E12F3DC440E8BCC2CCD33D083F",
+      "bytes": 177,
+      "source_name": "AtomicBigintBoundary.source-array.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/AtomicUnicodeAndEscapes.canonical.json",
+      "sha256": "1A481C431EEFBF70D03D794E3915C74E00C0F83A97D154130628A278D1EA7365",
+      "bytes": 820,
+      "source_name": "AtomicUnicodeAndEscapes.canonical.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/AtomicUnicodeAndEscapes.source-array.json",
+      "sha256": "7FA2B2AA6C1314CFDC2B3BAE3E689E01C25EB1E14CCB2E28A1C25B128467B3DD",
+      "bytes": 184,
+      "source_name": "AtomicUnicodeAndEscapes.source-array.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/canonical-golden.json",
+      "sha256": "29CE5635A908BCF9A7F6014542810FDCABF12FB33E2CE95A2DC209AB32908A58",
+      "bytes": 11139,
+      "source_name": "canonical-golden.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/freeze.py",
+      "sha256": "05B10BF806A25EB455CFE0D68BCCE435C1E9EB1250DB741572F4C800615F09AB",
+      "bytes": 5517,
+      "source_name": "freeze.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/source-index.json",
+      "sha256": "68C9B182EB23D40BFE117679FF4F1F71BE729C1EC313BAC50CE925F4066AC991",
+      "bytes": 4227,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/LegacyImportCodecOnly.canonical.json",
+      "sha256": "24F8D20FA66A73091E4966EC4C95F5B15533A5702116DC1DC3C066BCE59F0F10",
+      "bytes": 804,
+      "source_name": "LegacyImportCodecOnly.canonical.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/method-hash-reuse.json",
+      "sha256": "B0BCD99098542518826CFDD80E2BC63B73DAE1654D4BF42F89E8D331094EA3EE",
+      "bytes": 6563,
+      "source_name": "method-hash-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/oracle-result.json",
+      "sha256": "9EEDF30964EFA5FC1FB9D5D25D1C3797BD401FD26422DC024BBFBD7E54EB25A1",
+      "bytes": 982,
+      "source_name": "oracle-result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/patch-status.json",
+      "sha256": "A93D5543D0947886AA52C539485FE94661DEBBC7394E9148053ED7D8AC228B6F",
+      "bytes": 1271,
+      "source_name": "patch-status.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/prepare.py",
+      "sha256": "C01B27B35716534A3C73FA8661CE8EE5096FBAAA8DFEAB0107F18B4DE824CD47",
+      "bytes": 19400,
+      "source_name": "prepare.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/prepare.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "prepare.stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/prepare.stdout.log",
+      "sha256": "030EA4E7A3AAFB8BBCBDBD49725F8A2FB0AA27FEAE41E810389B6AF7B92C055F",
+      "bytes": 498,
+      "source_name": "prepare.stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/prepared-codec-schema.diff",
+      "sha256": "FF7EBD5099FA9EF0E70AC1456C83E0565B78C873234EF9BF9148C2B90EC4DE76",
+      "bytes": 17390,
+      "source_name": "prepared-codec-schema.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/readset.json",
+      "sha256": "C9287E63A3D2E34E25FF5593D39B2D3B085153C9D0C37E213F500C61AE6E2D6D",
+      "bytes": 5316,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/receipt.md",
+      "sha256": "350D80808AB2903419DED8981BA3D13276F6A229DF6FD2B129D93D1638DA52D8",
+      "bytes": 3846,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/replay_publication.go.codec-proposed",
+      "sha256": "1A500D692C470CB2CAC4D21B9ACF030B211C48DECD2538455C27FC75646B6376",
+      "bytes": 5910,
+      "source_name": "replay_publication.go.codec-proposed"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/replay_publication_test.go.codec-proposed",
+      "sha256": "B3B72AE25C770576BEB467C93EBAE89AB2088E4654CF514850C4BA73D5021915",
+      "bytes": 8230,
+      "source_name": "replay_publication_test.go.codec-proposed"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/selftest-draft.md",
+      "sha256": "0209EF85F164E3BBDF30A469C9D7D5942F69AB8DEB322D6DD7072A0767F07427",
+      "bytes": 6403,
+      "source_name": "selftest-draft.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/source10-before.json",
+      "sha256": "AF47897D7A005F64785BF173FB1D2710FFAA694363AD8F2C78C761D4ED207638",
+      "bytes": 1592,
+      "source_name": "source10-before.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/source10-entry-exit.json",
+      "sha256": "B34FF51E02890F6BC2B2A8158751AD6465DA3BC1FCF88B8AFAF07F8E2E3A2EB8",
+      "bytes": 2780,
+      "source_name": "source10-entry-exit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/verification.json",
+      "sha256": "C36ED0BADC91E4810CCE05DB93890D38F84C05F2C6A9472EDC8EB12DF8B39604",
+      "bytes": 1226,
+      "source_name": "verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/a48-temp-preparation-r01/verifier-signature.proposal.go.txt",
+      "sha256": "7F813A83BA5627F14C71828640B931C35F3DAE145B825BFB0300697DFE33D8D4",
+      "bytes": 608,
+      "source_name": "verifier-signature.proposal.go.txt"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

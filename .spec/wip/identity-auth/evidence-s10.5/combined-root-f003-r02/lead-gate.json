@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-28",
+  "scope": "Existing identity-auth-S10.5 combined verification, final Root F003/F004 author repair",
+  "authority": "Standing user authorization to adopt recommendations and continue; original combined-authorization-r49-r01 authority and restrictions remain effective.",
+  "workspace": "D:/AID/VSCode/Codex/Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "root4_readonly": {
+    "cmd/han-server/main.go": "833D3E1ECBC39C6CED1E91D59E63651A32A4AD3A1D04C1CC7662560244BDA6AD",
+    "cmd/han-server/main_test.go": "4EF46AA9AF542C15FEF8D4688208ABDD75A6674C0A6F134D6645C86F4068D73E",
+    "cmd/han-server/maintenance_stdin_windows.go": "620583ABAEB1551761359F93EAA7A4D0B79BE8A4E312B2FFD9C1D69A82663A43",
+    "cmd/han-server/maintenance_stdin_other.go": "A711C46F5D0AD017CA54569BC8862F30EFCDF2989EA13B0C856A47F615D854D9"
+  },
+  "domain2_readonly": {
+    "internal/identity/password_reset_operator.go": "A1C2039503A748F82529A01EA57E4EB14C478B9ACD34329770D7474E546D98B5",
+    "internal/identity/password_reset_operator_test.go": "5923422EFB2F81518ACA07FF178DC3FFFB63310CFE2A75F034EEDA530672C31D"
+  },
+  "lead_checked": "Exact live Root4, minimal three-line production gate, actual normal/race 153 leaves each and vet0, retained historical failures, exact three-comment-only final test bridge verified byte-for-byte; source188/other181, controls, six and planning identity checked.",
+  "author_evidence_index_sha256": "247E40BEF1BD1D42496635FE65AA15223B7A9961340627D9877FDFFA1CE83E95",
+  "combined_run": "RESTORED for original Dalton owner; fresh binary must use this Root4 plus frozen Domain2. Carrier-only edits, fresh retained schemas, all migrations, current SID/native pipe/actual joins and fixture-only ACK-loss rules remain unchanged.",
+  "review": "Original Dewey resumed for independent F003/F004 recheck and necessary F001/F002 regression. No finding closure inferred from author tests or this execution signal.",
+  "format_disposition": "Keep exact whole-workspace gofmt failure and immutable evidence untouched. Supplement with explicit seven-delivery-source gofmt; continue other six manifest checks. Historical empty absent-file preimages and overlay formatting are evidence limitations, never a whole-workspace formatting PASS.",
+  "not_claimed": "No current combined PG/CLI PASS, whole CodeGate, E2E, deployment, production readiness or human result acceptance.",
+  "forbidden": "No commit/push/branch switch, deletion/cleanup/archival move, production deployment, other schemas/roles/grants, external mail, public API/ENV/dependency changes, eighth source or overwriting existing han-server.exe."
+}

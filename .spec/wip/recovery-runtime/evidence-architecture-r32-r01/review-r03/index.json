@@ -1,0 +1,38 @@
+{
+  "scope": "Independent final metadata-only R03; technical closure remains R02",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "result": "PASS - metadata only",
+  "new_findings": [],
+  "documents_at_review": {
+    ".add/project/knowledge/design/architecture.md": "89605FAF5D0C7C663791086112E6BD1A33FC5C309A01E6DBCAA2C91795B0A27E",
+    ".add/project/knowledge/decisions/framework.md": "329631B71E692E96D8B8FA918686E7942AE549B492E1B3A4B69F03C889F81F5C",
+    ".add/project/knowledge/decisions/README.md": "92B7598534B934FD7214F30B46A9BFBAAD8A500617561873DBD13BDF965848AC"
+  },
+  "main_reception": "Full report/receipt read, final frozen hashes and exact metadata diff verified; no implementation or human acceptance.",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r03/review-report.md",
+      "sha256": "7D2856818F2F16B7A4576A3FDBB32BFB241779A42B3975C96DA88B7288DB23BC",
+      "bytes": 2282
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r03/readset.json",
+      "sha256": "C7033C5E634049AABC1A19EAF9DC2D8BDA502F569AC28B4A023095B82B0B6679",
+      "bytes": 4948
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r03/verification.json",
+      "sha256": "E2F872C1C13F835E96F38FA13C0B8DF18041DF3343CEBF4921647E8AAC5AE2C3",
+      "bytes": 6686
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r03/receipt.json",
+      "sha256": "34564357E6470F455E1AB50202A828935CE42FBEBB82D9232A1D5517C8F984FF",
+      "bytes": 2172
+    }
+  ]
+}

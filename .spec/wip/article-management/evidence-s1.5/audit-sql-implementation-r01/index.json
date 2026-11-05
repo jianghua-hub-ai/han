@@ -1,0 +1,2190 @@
+{
+  "scope": "Frozen audit SQL source468964...; author results and Lead verification pending independent CodeReview",
+  "captured_at": "2026-10-27T21:08:01.356393+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\actual-readset.json",
+      "copy": "author/actual-readset.json",
+      "role": "Dalton",
+      "sha256": "DA6DBAD79140F695900FE428C8EED52430DE915F95C9593DA50CBBBC7BCB3BE3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\audit_insert_rollback_test.go.txt",
+      "copy": "author/audit_insert_rollback_test.go.txt",
+      "role": "Dalton",
+      "sha256": "468964647524860CEEF0167EC56A9C0033FBB40CFF340A5021FBCE66F2C89CD5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\baseline178.json",
+      "copy": "author/baseline178.json",
+      "role": "Dalton",
+      "sha256": "E88DC26D92259E3C147F644E27FDE4E4079899A3428B9A7D74FB8A16E70D470E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\case_map.json",
+      "copy": "author/case_map.json",
+      "role": "Dalton",
+      "sha256": "419D9D6449243E191416DC2E78F0CD669B039C7DC61483D44AF913D64DDFCA37"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\diff-check.meta.json",
+      "copy": "author/diff-check.meta.json",
+      "role": "Dalton",
+      "sha256": "92F5ADDF02D9799C87C22E0DAE2EC8F8433858E4F68E73F612F553397A0FE123"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\diff-check.stderr.log",
+      "copy": "author/diff-check.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\diff-check.stdout.jsonl",
+      "copy": "author/diff-check.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\empty-before.txt",
+      "copy": "author/empty-before.txt",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\failure-chain-and-limits.md",
+      "copy": "author/failure-chain-and-limits.md",
+      "role": "Dalton",
+      "sha256": "5908486197B2AA7CC1B3351F6E409DC10CA261FBE0B98AA400F567DAB17EB6CB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-branch.meta.json",
+      "copy": "author/final-branch.meta.json",
+      "role": "Dalton",
+      "sha256": "42163F2E07B5501293A43F9FE04075F3DC4026C5BBA9F7656D93E4B435CAFCB7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-branch.stderr.log",
+      "copy": "author/final-branch.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-branch.stdout.jsonl",
+      "copy": "author/final-branch.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "6403203DD5A0867EB14D104EE8A73730BD72DD9AD92E78D996A6DBA0A5DCFC01"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-head.meta.json",
+      "copy": "author/final-head.meta.json",
+      "role": "Dalton",
+      "sha256": "F7189B919BCCAE715DA4396E1C59A5157FA903D2E0468BFA18B8A900D2D23C2A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-head.stderr.log",
+      "copy": "author/final-head.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-head.stdout.jsonl",
+      "copy": "author/final-head.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "33F42A45651AD8819857B3638603AD470179BC4A4ED4018D523E435CF6189368"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-staged.meta.json",
+      "copy": "author/final-staged.meta.json",
+      "role": "Dalton",
+      "sha256": "F602FC5F5E1678CAA5074EEE2C70EA8B0C43321D81ED5C076F308DEEB0DC63DC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-staged.stderr.log",
+      "copy": "author/final-staged.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-staged.stdout.jsonl",
+      "copy": "author/final-staged.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-status.meta.json",
+      "copy": "author/final-status.meta.json",
+      "role": "Dalton",
+      "sha256": "901FD8F1019A00C8E55977C62BAC5ACE3E7DCE99759DB9F9AAF328955B9DE2DD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-status.stderr.log",
+      "copy": "author/final-status.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\final-status.stdout.jsonl",
+      "copy": "author/final-status.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "FF0A69642CF91AFAABA59196B900900FD4B9E929B835C30B9EF7E0E63E271B4E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\finalize.py",
+      "copy": "author/finalize.py.txt",
+      "role": "Dalton",
+      "sha256": "67CDF53C245F72033E55FC54CC645FA396BB1D7EEA8260973589552B266F0C7E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed179.json",
+      "copy": "author/fixed179.json",
+      "role": "Dalton",
+      "sha256": "F253083287B30E43305459E0B146B9E439376DA27B94ADBDB9C194C59C17A700"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-01.meta.json",
+      "copy": "author/format-01.meta.json",
+      "role": "Dalton",
+      "sha256": "7B2F115630EB75AC4214BC7CCAEC99A569B9D9E7F6DB620870A4E7C03D4A3FEB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-01.stderr.log",
+      "copy": "author/format-01.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-01.stdout.jsonl",
+      "copy": "author/format-01.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-02.meta.json",
+      "copy": "author/format-02.meta.json",
+      "role": "Dalton",
+      "sha256": "3AB3221B6D1EB7D461F0A7D56F3CFFCB751BD97B02E3A711A10E790CECC09C7E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-02.stderr.log",
+      "copy": "author/format-02.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-02.stdout.jsonl",
+      "copy": "author/format-02.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-check.meta.json",
+      "copy": "author/format-check.meta.json",
+      "role": "Dalton",
+      "sha256": "CE519D0ACBEA4D30880481A7371AD3CB3D9EC86034AFA670C86DCD34619F0ED2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-check.stderr.log",
+      "copy": "author/format-check.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\format-check.stdout.jsonl",
+      "copy": "author/format-check.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\go-version.meta.json",
+      "copy": "author/go-version.meta.json",
+      "role": "Dalton",
+      "sha256": "72A0DC4DA0E377405B5BE9B0B00ABB4C2B81A9336DDD0814D298305FE9132B0B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\go-version.stderr.log",
+      "copy": "author/go-version.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\go-version.stdout.jsonl",
+      "copy": "author/go-version.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "72A5DFF490C0ECCF85CC7495E937655D8D9FB44915C13A270D2119A7126427D9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\init.py",
+      "copy": "author/init.py.txt",
+      "role": "Dalton",
+      "sha256": "9F023E273A613A4534C4FA49CA9C8D1A49E62E46A3190DEA8E7BACFFCCE8554D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\input-bindings.json",
+      "copy": "author/input-bindings.json",
+      "role": "Dalton",
+      "sha256": "B7C41696EB8CDFC70C9D10E55FBBBDB7FC1984724FF327AFF40A0707A92C69F2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\inspect.py",
+      "copy": "author/inspect.py.txt",
+      "role": "Dalton",
+      "sha256": "4988DA92217F9C4AAD218B22884C1DA010ADF5509AF86F6315EB8445E5E4034A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\list-01.meta.json",
+      "copy": "author/list-01.meta.json",
+      "role": "Dalton",
+      "sha256": "282B3A59EC700BC8882789F49F3FF1E7FDD61216DC3381B8A667816B751BCAFD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\list-01.stderr.log",
+      "copy": "author/list-01.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\list-01.stdout.jsonl",
+      "copy": "author/list-01.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "3CA4D58C71E00B404FF1DF844A2C8ACA486EDDCA9B237854617FDBB2F7EEB39F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\list-final.meta.json",
+      "copy": "author/list-final.meta.json",
+      "role": "Dalton",
+      "sha256": "913284BD2F98ADEA0DF753A88B04BCCE203BDBE5F6F60D13E0CC3E95BB4BCE9C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\list-final.stderr.log",
+      "copy": "author/list-final.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\list-final.stdout.jsonl",
+      "copy": "author/list-final.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "186C14CBF1D9DE21179CAEE922E39B28E728788EFF9154235CB1C1041F7ED747"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\missing-dsn-negative.meta.json",
+      "copy": "author/missing-dsn-negative.meta.json",
+      "role": "Dalton",
+      "sha256": "BD8DDC4A58D2C5B06FF9F60989EE765073470DDF4D485C40835D1417AEB6CB2F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\missing-dsn-negative.stderr.log",
+      "copy": "author/missing-dsn-negative.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\missing-dsn-negative.stdout.jsonl",
+      "copy": "author/missing-dsn-negative.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "990FF69553D20BC057CDB6FED658D000682FB00B4F77C6ABF31EBCB4E3F26B33"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain.meta.json",
+      "copy": "author/mutant-error-chain.meta.json",
+      "role": "Dalton",
+      "sha256": "698E5047A1FC452D3E41E7761838DB2631439696BDC5DA6415524D1F99E83D25"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain.stderr.log",
+      "copy": "author/mutant-error-chain.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain.stdout.jsonl",
+      "copy": "author/mutant-error-chain.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "4C5F5A4B5B4565994D658D5287F03D26FB5ACA5552BC95169D5E595561415EA8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\negative-controls.json",
+      "copy": "author/negative-controls.json",
+      "role": "Dalton",
+      "sha256": "994313971C448FE2DE0AF3478532086968589FBC5192967AD1D5ECDE291BB524"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\new-file.patch",
+      "copy": "author/new-file.patch",
+      "role": "Dalton",
+      "sha256": "E4488A3AD656902440BFA7BE53538739E76ADCF8C6C4911E84B283878713049C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\normal-race-analysis.json",
+      "copy": "author/normal-race-analysis.json",
+      "role": "Dalton",
+      "sha256": "D227EE8FEEAE94A873933394725F5BBEF84638C820B0A3693FEF89CC5D8F43CD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01.meta.json",
+      "copy": "author/pg-first-01.meta.json",
+      "role": "Dalton",
+      "sha256": "8E0362D897B653999CE34685670940B22C2CE9F03497B058DF6C12AB0DEF2686"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01.stderr.log",
+      "copy": "author/pg-first-01.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01.stdout.jsonl",
+      "copy": "author/pg-first-01.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "F724A5273FE3746E472C3DA8D7DA9CDBF41FCFFD8D208023BBB10CFEEF9EB5B3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final.meta.json",
+      "copy": "author/pg-normal-final.meta.json",
+      "role": "Dalton",
+      "sha256": "00BE6A65D7AD23CB19CAF3E66F04CB1BA9823DC06C24814927277168CA44E549"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final.stderr.log",
+      "copy": "author/pg-normal-final.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final.stdout.jsonl",
+      "copy": "author/pg-normal-final.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "CCF1AB61D80D51A4D2002125ABB944D93C684AC78B003490EA4813300F5EB529"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final.meta.json",
+      "copy": "author/pg-race-final.meta.json",
+      "role": "Dalton",
+      "sha256": "65061DB4FE13D28C79AD3810A776E483778579595D3DAF3F0C67DA2EF3AC9EE8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final.stderr.log",
+      "copy": "author/pg-race-final.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final.stdout.jsonl",
+      "copy": "author/pg-race-final.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "F6098CEB7CA4C56CF41124AB6C1966FD4C016817826F5777F89258578EB9A69E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\prepare-overlay.py",
+      "copy": "author/prepare-overlay.py.txt",
+      "role": "Dalton",
+      "sha256": "92B82966DE1A55F453F7145485697AFAEE315AF755DA586ACDC5B96D822A2F56"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\raw-meta-index.json",
+      "copy": "author/raw-meta-index.json",
+      "role": "Dalton",
+      "sha256": "D6E44A4CA9217893861CF94BD97E6B579ACC08D002F3C166D61796B18332EE1C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\retained-schema-stage-map.json",
+      "copy": "author/retained-schema-stage-map.json",
+      "role": "Dalton",
+      "sha256": "956FC844296A504D8FAC844DE38DD34B159239A4BDA1C51B5489BA41592DD6BD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\run.py",
+      "copy": "author/run.py.txt",
+      "role": "Dalton",
+      "sha256": "2AA9E0DE45493E8CFCE3ABED03F89B63FA728EFE5CE8D530AAE771517A914A1B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\scope-before-after.json",
+      "copy": "author/scope-before-after.json",
+      "role": "Dalton",
+      "sha256": "4119258F544843AA9BA99EBFC8B7E67FA8ADCE4AE8EE5FD54FA59DBA3A691BA1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\stopped.json",
+      "copy": "author/stopped.json",
+      "role": "Dalton",
+      "sha256": "3F468D37BE890C60DD83CCD2A818E502E0A57A6BB6298C9C216512909E7BC262"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\vet-final.meta.json",
+      "copy": "author/vet-final.meta.json",
+      "role": "Dalton",
+      "sha256": "8C152D8C6D4E57CE322E13E10847681BA3ACC79B7D5231FD5E185A21495C8B38"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\vet-final.stderr.log",
+      "copy": "author/vet-final.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\vet-final.stdout.jsonl",
+      "copy": "author/vet-final.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\database_config.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/database_config.go.txt",
+      "role": "Dalton",
+      "sha256": "EF8C1077C58B2E240FE3424D775DA95446A38080B72E41E548F9AB62518CC2DB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\database_config_test.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/database_config_test.go.txt",
+      "role": "Dalton",
+      "sha256": "563EE0394521E23254D3A37EF1E2093650CE1E044007000FCFA15E636FAE5674"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\http_config.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/http_config.go.txt",
+      "role": "Dalton",
+      "sha256": "A5F74D7CCA33C6681E8ACE4D90E072EBE87D73CF752F127F70BDC23AE0CFB297"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\http_config_test.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/http_config_test.go.txt",
+      "role": "Dalton",
+      "sha256": "5C6E9C2A12EE16DCB2AE1B759DB776E80C2BAC8B1236B099E6402BF48963030F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\lifecycle.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/lifecycle.go.txt",
+      "role": "Dalton",
+      "sha256": "8F1FE0EFEEF230BED7EFDB02D93190415C072DD6F6CC3EE5EC80E4AAAFB62BEB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\lifecycle_test.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/lifecycle_test.go.txt",
+      "role": "Dalton",
+      "sha256": "662A2693547A687F33BEEAD581B937023F9525306B375F773D15FD4F1228FBB6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\main.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/main.go.txt",
+      "role": "Dalton",
+      "sha256": "6B45B5509A2D01C9F5DF0393CA00CAD5C8430353B5F849BF6E71BA3A47C52AC4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\cmd\\han-server\\main_test.go",
+      "copy": "author/fixed-inputs-179/cmd/han-server/main_test.go.txt",
+      "role": "Dalton",
+      "sha256": "B53DD34D57AD6A2797E9FC080FD90034FC52CB26675686CB075D3153F193A9BC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\go.mod",
+      "copy": "author/fixed-inputs-179/go.mod",
+      "role": "Dalton",
+      "sha256": "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\go.sum",
+      "copy": "author/fixed-inputs-179/go.sum",
+      "role": "Dalton",
+      "sha256": "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\admin_delete_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/admin_delete_test.go.txt",
+      "role": "Dalton",
+      "sha256": "3ADEB5C7BC7E64239C8574BDD8CB9A41060E04289F043C1C0B3D3DA2311905CA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\admin_query_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/admin_query_test.go.txt",
+      "role": "Dalton",
+      "sha256": "DBAF93B7600831D61DC74804D82905CAE0719014357A9107321DFCD8C3EF3F61"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\article_port.go",
+      "copy": "author/fixed-inputs-179/internal/article/article_port.go.txt",
+      "role": "Dalton",
+      "sha256": "215A224CF416D81FA217F7524EDEEA671A25AC1110BA0147CC1D1BD6315CE044"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\author_projection_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/author_projection_test.go.txt",
+      "role": "Dalton",
+      "sha256": "47314C84B79B53A6476F91A6F728CBC521CD78DE36AF61D68DA7298C1B0192F7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\backup_inventory.go",
+      "copy": "author/fixed-inputs-179/internal/article/backup_inventory.go.txt",
+      "role": "Dalton",
+      "sha256": "B247DB0CC10723EB1D4464F59A9D543C6421AE296E7AADFF21A440F61C90B7EF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\backup_inventory_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/backup_inventory_test.go.txt",
+      "role": "Dalton",
+      "sha256": "7260756A356795C913AAB391E8CF19F9C53EB779585D81DEB6C8A20BF6049B12"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\command_service.go",
+      "copy": "author/fixed-inputs-179/internal/article/command_service.go.txt",
+      "role": "Dalton",
+      "sha256": "585BB51D19B3FCD7BFDC9C84465D2BB5D24F41BD8285553FC20BC10B161B4D68"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\create_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/create_test.go.txt",
+      "role": "Dalton",
+      "sha256": "90F0A53153A42CDAE4A8669606259C033089FDCB54E8010F4BC3D6FDE4D0535F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\cursor_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/cursor_test.go.txt",
+      "role": "Dalton",
+      "sha256": "D73AB43280EC69FF9A2B2415ED48137157E092870D367F7C31FD96A0AA5514A8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_coordinator.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_coordinator.go.txt",
+      "role": "Dalton",
+      "sha256": "6EEA01FB40FBD6B237B4E02600122708404EE1AF59626971D4CE40D72DB98481"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_filelock_flock.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_filelock_flock.go.txt",
+      "role": "Dalton",
+      "sha256": "C72AC42EAF78B279CB774C79B9024A7E330C1FCCE2D40D912782E5B0B50A5C96"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_filelock_unsupported.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_filelock_unsupported.go.txt",
+      "role": "Dalton",
+      "sha256": "BF140294B11D068B2971DFEFF4D3598FFAEC591FCF1F5BE0435640370C5FEB8B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_finalizer.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_finalizer.go.txt",
+      "role": "Dalton",
+      "sha256": "546C69B7CC363453F6A4E866D4E3B1B68D9E6B611463159EDE69ACEC0D9B8750"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_journal.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_journal.go.txt",
+      "role": "Dalton",
+      "sha256": "0A3F2AE9AEADDDB85C62A1F7CA1BD284AACF149DA0D5ED02184F1E30F0EB4333"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_replay.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_replay.go.txt",
+      "role": "Dalton",
+      "sha256": "1A77C574BD134B59C8203702B022FD1F510BBC23689CE4B0ED8FA4448D34C446"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_replay_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_replay_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "F132361840952A2B4111FDC5289807DB993737F72D536C86D01423C21C8EFA0B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_replay_source.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_replay_source.go.txt",
+      "role": "Dalton",
+      "sha256": "0D53B7FF460FF6923EF6E8B6134B3FB40F9D921EE0498C45AD63F1B77B04492C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_replay_source_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_replay_source_test.go.txt",
+      "role": "Dalton",
+      "sha256": "DB669095E4C77ACB30FFFBD610BE99BCC8B169C88386D1059349CB5395B66B9A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_replay_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_replay_test.go.txt",
+      "role": "Dalton",
+      "sha256": "2E0BDD1E7B5081364C6412F53269658BF159AE17F39772F3CE992FBE4D7D3194"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_test.go.txt",
+      "role": "Dalton",
+      "sha256": "6D04CD35F0049E64FFEC6954B53EF0AB75256BF97C156E331BB5B019E87EA9C6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_worker.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_worker.go.txt",
+      "role": "Dalton",
+      "sha256": "9E6BDD23089B41A3870DB0A35420589DD2210972C0610A43184D6E7C60F6612D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\deletion_worker_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/deletion_worker_test.go.txt",
+      "role": "Dalton",
+      "sha256": "444C304EFFE624B65345C138C9BF75964AEFA9C52E6293341961DAAF59E107CA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\etag_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/etag_test.go.txt",
+      "role": "Dalton",
+      "sha256": "5135568F014CE4D1420ACC5A7DA8F6CED1F3A18318549C03FFD3D0FAAFB6652E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\handler.go",
+      "copy": "author/fixed-inputs-179/internal/article/handler.go.txt",
+      "role": "Dalton",
+      "sha256": "C684B4C874083035C1BC6B1F22DF81833D8DF490544E8586719C028B203D3750"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\model.go",
+      "copy": "author/fixed-inputs-179/internal/article/model.go.txt",
+      "role": "Dalton",
+      "sha256": "42B2BEEEAC0B4CB3B6E2138314956F2D1FCBD0E32D6E7B32BB2352C656E8851D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\moderation_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/moderation_test.go.txt",
+      "role": "Dalton",
+      "sha256": "8094598605B8C8EB5AA5940A70BD2E3B03D3C3C3CEB3C0A81BAEB1C451933779"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\notice_dispatcher.go",
+      "copy": "author/fixed-inputs-179/internal/article/notice_dispatcher.go.txt",
+      "role": "Dalton",
+      "sha256": "C49CF9D7C78E5DC99E2177B6F760BE5B191D2120F3FC47DBBE8A7BEF93BFFB97"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\notice_dispatcher_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/notice_dispatcher_test.go.txt",
+      "role": "Dalton",
+      "sha256": "7761947F288890CCC66125E7C5B0DF153F3568C72C7EF05ED9291A702F9D8ADD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\orphan_canonical_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/orphan_canonical_test.go.txt",
+      "role": "Dalton",
+      "sha256": "9F7CFD3424450D74C30E1F039D4E0154C20BA03B715EE9539DBDDF82678D5D70"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\orphan_disposition_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/orphan_disposition_test.go.txt",
+      "role": "Dalton",
+      "sha256": "301A40FED868BFAB85D80C84888399DAAAF3B22E8CBBFBD7C754FC3B6E5265DE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\policy.go",
+      "copy": "author/fixed-inputs-179/internal/article/policy.go.txt",
+      "role": "Dalton",
+      "sha256": "6CD1543BC2E715F76EE7B6C5CDDDB3153A9A425B84C55A366648E600B78C8774"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\policy_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/policy_test.go.txt",
+      "role": "Dalton",
+      "sha256": "B67C708416E4CCBD988EBF43BAED45484177B6B6BCD54988E8EDE1461D7BB47E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\query_service.go",
+      "copy": "author/fixed-inputs-179/internal/article/query_service.go.txt",
+      "role": "Dalton",
+      "sha256": "D3151AC329C8C9EB8A1B8E00FF45A58CC467E06E1C9A00F9A63830048C0108B4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\query_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/query_test.go.txt",
+      "role": "Dalton",
+      "sha256": "DF40F63117A0C8F7569A255EABBF9DD95F81CA86FBAE17F88EE93A8F78A0C53E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\replay_evidence.go",
+      "copy": "author/fixed-inputs-179/internal/article/replay_evidence.go.txt",
+      "role": "Dalton",
+      "sha256": "54FAB8529DB4275E10FEB65A5ADBBF64B8CB79E82B39B21AFDD7538079774351"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\replay_status_v1.go",
+      "copy": "author/fixed-inputs-179/internal/article/replay_status_v1.go.txt",
+      "role": "Dalton",
+      "sha256": "244D606F45DC4BC885083F52A3ACCFD065A2F3148ED04B0AECBF7C0F8C62FA16"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\replay_status_v1_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/replay_status_v1_test.go.txt",
+      "role": "Dalton",
+      "sha256": "9788B89EA4590F87AA5D99798A670F13A5D416DB1D8CC0DDB8DE65FED7B3E8CD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\repository.go",
+      "copy": "author/fixed-inputs-179/internal/article/repository.go.txt",
+      "role": "Dalton",
+      "sha256": "80529712F7D62ACD4A5A976621FF1E7AB11069D11CDE2D73B5050CDCA58758F8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\repository_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/repository_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "3A15B7635D97D66AB4DE5CE69155C37E414F75BC3DBB0AD4F14D869019A0DCF4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\article\\update_test.go",
+      "copy": "author/fixed-inputs-179/internal/article/update_test.go.txt",
+      "role": "Dalton",
+      "sha256": "D6EF18BF78C12DC438C03CDC05C6DEAF4D6CF6157718BFF92C0DA4EF29366EAA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\audit\\store.go",
+      "copy": "author/fixed-inputs-179/internal/audit/store.go.txt",
+      "role": "Dalton",
+      "sha256": "091219E0FD2298C43474A7152C8300EB5CEFD5565C1F08D78DDD1E1387C5C24F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\audit\\store_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/audit/store_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "4A3CC84CE6B620724692D696B705D74BC39C8E1EB28F044EDD136E166FF6138C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\idempotency\\store.go",
+      "copy": "author/fixed-inputs-179/internal/idempotency/store.go.txt",
+      "role": "Dalton",
+      "sha256": "AA0483969B12B058B42DB70A9763501B60ED055AFB91E5ECD6AA7F5C45FDD657"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\idempotency\\store_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/idempotency/store_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "BAE146223ABADF5E3884962E2BDD119AE46964D694B3BE4A38B331DAA956CD5A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\idempotency\\store_test.go",
+      "copy": "author/fixed-inputs-179/internal/idempotency/store_test.go.txt",
+      "role": "Dalton",
+      "sha256": "3A6EF9313839ED19BE28D4FB635C016DF51F6C58213DDAE88D93A2A65CC49BE7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\account_status.go",
+      "copy": "author/fixed-inputs-179/internal/identity/account_status.go.txt",
+      "role": "Dalton",
+      "sha256": "C03B8D155580CECE26707863D24062FC54B6C3707F2C006F38C3DAB408C00FA0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\account_status_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/account_status_test.go.txt",
+      "role": "Dalton",
+      "sha256": "5E349230E58FE6F8EF1C899559B10DB9AD47050D9BD54660EA31B65599F26CCA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\administrator_create.go",
+      "copy": "author/fixed-inputs-179/internal/identity/administrator_create.go.txt",
+      "role": "Dalton",
+      "sha256": "DD1D1DA23CB9D9E13E3200E09867B2A2C2F6BCBF06894C46074F60AC94D75813"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\administrator_create_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/administrator_create_test.go.txt",
+      "role": "Dalton",
+      "sha256": "AC9FE098FA3F1F09FA4944BB5BD7653BF375B23C08ED1E63F13DCEE45683EEAE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\administrator_governance.go",
+      "copy": "author/fixed-inputs-179/internal/identity/administrator_governance.go.txt",
+      "role": "Dalton",
+      "sha256": "DC43A60525D1A4B7E40587A40EB5EE85183FE4E46F79FE13020DA48AB0C5DBA3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\administrator_governance_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/administrator_governance_test.go.txt",
+      "role": "Dalton",
+      "sha256": "E64924FF592F1CA25F5158BB248A47530DF1C59E2AB5960B79F6C09C4902A122"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\article_disposition.go",
+      "copy": "author/fixed-inputs-179/internal/identity/article_disposition.go.txt",
+      "role": "Dalton",
+      "sha256": "EB053611CE9346A9A51C0485DD9AE1003EA99C57AF0A3842A4621D67ECE04593"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\article_disposition_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/article_disposition_test.go.txt",
+      "role": "Dalton",
+      "sha256": "A92E8C4D65C76361094B472F35BEDEAB77F15C2FC5E0ECA54854BCDDC640EDF4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\article_port.go",
+      "copy": "author/fixed-inputs-179/internal/identity/article_port.go.txt",
+      "role": "Dalton",
+      "sha256": "F12DB7648F36CD530879434A9B0D0E4231E955253614ADFA5F3999AF40A1ED10"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\article_reader.go",
+      "copy": "author/fixed-inputs-179/internal/identity/article_reader.go.txt",
+      "role": "Dalton",
+      "sha256": "D9315AFA411CB8C4612459C8E97979BD2274780A7B7B32D78F3AB735C3F82B6B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\article_reader_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/article_reader_test.go.txt",
+      "role": "Dalton",
+      "sha256": "C6D2B246236D24FC27C9E2C66413DE03999EA98D61CD61B2054D0152206C28AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\bootstrap.go",
+      "copy": "author/fixed-inputs-179/internal/identity/bootstrap.go.txt",
+      "role": "Dalton",
+      "sha256": "AEF53946AB8C55A3CC03DAE03DC1CD0E42BE12553D9619D45C7F491F154CAAA5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\bootstrap_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/bootstrap_test.go.txt",
+      "role": "Dalton",
+      "sha256": "C33C31A22C32DA0FFE57099C37C3E6EE4826F4F082359F2B7A7E2B1CB43E2B45"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\cursor.go",
+      "copy": "author/fixed-inputs-179/internal/identity/cursor.go.txt",
+      "role": "Dalton",
+      "sha256": "E0514475A7ECA31E24A8092A51D2F814DCCB112F7D2022A3D903E2AA5A1A6FFD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\cursor_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/cursor_test.go.txt",
+      "role": "Dalton",
+      "sha256": "4F5D647E2EA29CC4D4EB2B837178895FD40E9F24E85D4976BC71BC9C26C4864D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\deletion.go",
+      "copy": "author/fixed-inputs-179/internal/identity/deletion.go.txt",
+      "role": "Dalton",
+      "sha256": "119D378C3508A790FFC6E7371C5AFC0D8CE100A33C2F47AFACD305F7683A2721"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\deletion_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/deletion_test.go.txt",
+      "role": "Dalton",
+      "sha256": "2F5975867E74EC6B6E8A0AD1DFD128382EC5123FB308A7924A5B6D4294ED6687"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\handler.go",
+      "copy": "author/fixed-inputs-179/internal/identity/handler.go.txt",
+      "role": "Dalton",
+      "sha256": "EC4533A6CAA6819255BF9FC7D19EEE3AEEAA90B9E3A9128A5D24B5017D1F1EA3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\handler_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/handler_test.go.txt",
+      "role": "Dalton",
+      "sha256": "7A32FEF8C9C94489D8D8E055C6B5ACEB7E2EA0304BCF028BDE0CF1D0BCA6373F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\login.go",
+      "copy": "author/fixed-inputs-179/internal/identity/login.go.txt",
+      "role": "Dalton",
+      "sha256": "FDB1ED13FB499A1219AE24884F053A3626567BB81CAAB56EC02B1FC197B6864C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\login_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/login_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "15C28D7BA7EE39499D970E8C7AE53F7CE28A1A450D2530FD7697BF8BE4D407BA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\login_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/login_test.go.txt",
+      "role": "Dalton",
+      "sha256": "FB5483FB93649F9B01B060D54F35B5CC7B7A3305704D19DFCA445A2C7400414F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\model.go",
+      "copy": "author/fixed-inputs-179/internal/identity/model.go.txt",
+      "role": "Dalton",
+      "sha256": "4D17E1DBC264C69BAFE3330619098F0C57AD703EC5EA5E611BCE8E2BB548B5C7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset.go.txt",
+      "role": "Dalton",
+      "sha256": "5F2D0E1B534E1A4F47AF25675FB94AA3B2830A01C408F6C615E41FAB74A81575"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset_operator.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset_operator.go.txt",
+      "role": "Dalton",
+      "sha256": "4DC973ECB2272E07083884224A898D0C7C38E4CFEE8B03E44DA14E9D9F951F42"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset_operator_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset_operator_test.go.txt",
+      "role": "Dalton",
+      "sha256": "9463D7B8B098A21BA3F68BDB190CFCF51C6FA47038BA0BD8A7E7505ADD210E02"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset_store.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset_store.go.txt",
+      "role": "Dalton",
+      "sha256": "D1CB46D5BF038FCB8A7908FF06BA5FDAD6CB31903DCC66D9DBBF286D54D1FB62"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset_store_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset_store_test.go.txt",
+      "role": "Dalton",
+      "sha256": "CEE5617805058F9204FF5F45DC0F03B90A006C1CC987CF2C52A3BDDFD69BC777"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset_test.go.txt",
+      "role": "Dalton",
+      "sha256": "59AAC51742A61ADD318D8ADE5527231D4D5A198790687B101A35A5A843666E2A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset_worker.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset_worker.go.txt",
+      "role": "Dalton",
+      "sha256": "9BF1A9B1230004422E9ABC563329C9C7E44BB48CC1E1452CB5DF18E20D704C90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\password_reset_worker_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/password_reset_worker_test.go.txt",
+      "role": "Dalton",
+      "sha256": "DC6544C4390CC36FC93ED4B66D530E2E0FBC067A7C733FFF6692944CBC4801CD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\query.go",
+      "copy": "author/fixed-inputs-179/internal/identity/query.go.txt",
+      "role": "Dalton",
+      "sha256": "534E6E362431B669D271D689365161F95E843D9838D2DA03398F51806DD2C407"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\query_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/query_test.go.txt",
+      "role": "Dalton",
+      "sha256": "786B1A3ED94CC0DA5AF9B004250DE74FED67C92108436A0E18F1B6E7CF6886E9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\recovery_run_store.go",
+      "copy": "author/fixed-inputs-179/internal/identity/recovery_run_store.go.txt",
+      "role": "Dalton",
+      "sha256": "519D7E98A4908A7AC4EF10C91D990575C4C8B3D3B621B4B69E6BD7589E722056"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\recovery_run_store_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/recovery_run_store_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "8EF68B57BC1CB0F459AD11BA7C0EDB2D42DAD8A25319FD8CB6C9DF56F8E43E4B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\registration.go",
+      "copy": "author/fixed-inputs-179/internal/identity/registration.go.txt",
+      "role": "Dalton",
+      "sha256": "29E8ED1208273E47C0D0393799E5365B49DFA70B6B42E56254CAA077A9442F0A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\registration_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/registration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "5EEC3977E99AEA9072B5C4E3CBA0BC7DF922C0D9880C876639FD288C42663B21"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\repository.go",
+      "copy": "author/fixed-inputs-179/internal/identity/repository.go.txt",
+      "role": "Dalton",
+      "sha256": "9FC7F99D58E432E1807DE06C6B705A00CC736F99141EC3F95AF234EBA44DACE3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\repository_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/repository_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "89E6284C41937C13BC2EECBFD509061A0FB5D7DB04EE0DC1E303C65F36A6B8EA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\service.go",
+      "copy": "author/fixed-inputs-179/internal/identity/service.go.txt",
+      "role": "Dalton",
+      "sha256": "7E5064E40447A35EFC4F6537ED845E6EBD4A7199169208302B63C5905643C70D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\temporary_credential.go",
+      "copy": "author/fixed-inputs-179/internal/identity/temporary_credential.go.txt",
+      "role": "Dalton",
+      "sha256": "66F11A1BD5E390D996C440BF21126AB8740356C43A4CDA49DD2FE16B66B23DF5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\temporary_credential_resend.go",
+      "copy": "author/fixed-inputs-179/internal/identity/temporary_credential_resend.go.txt",
+      "role": "Dalton",
+      "sha256": "EF7F9CBC121A18040BAA937E9217C53CE961C7072166019AB6863B4B1E9AD50C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\temporary_credential_resend_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/temporary_credential_resend_test.go.txt",
+      "role": "Dalton",
+      "sha256": "592D00E1CC28FE81B3E2362A4461654D60C1142A5B99A9DBC13D4DD252CD5465"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\identity\\temporary_credential_test.go",
+      "copy": "author/fixed-inputs-179/internal/identity/temporary_credential_test.go.txt",
+      "role": "Dalton",
+      "sha256": "659199B79A481A04DF414DFDC30C5B616455BD4466FA471FA8D92BC2BDA6279D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\mailer\\mailer.go",
+      "copy": "author/fixed-inputs-179/internal/mailer/mailer.go.txt",
+      "role": "Dalton",
+      "sha256": "A2F103D6AF3664288D0C4F460EC5733E33FA6461FB8554A189FBC3194C5B4D0D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\mailer\\smtp.go",
+      "copy": "author/fixed-inputs-179/internal/mailer/smtp.go.txt",
+      "role": "Dalton",
+      "sha256": "28237089CE76B353CC01D36847378CF4775AA9281210175AAC59905DCC192853"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\mailer\\smtp_test.go",
+      "copy": "author/fixed-inputs-179/internal/mailer/smtp_test.go.txt",
+      "role": "Dalton",
+      "sha256": "9833F766F24CEA8067D9A2C46BB13C01DF2568DE5A7EA998675318EDCA2B964E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\runner.go",
+      "copy": "author/fixed-inputs-179/internal/migration/runner.go.txt",
+      "role": "Dalton",
+      "sha256": "DD473A94D645EAAFA04FC2E812EF1462B1E92CD0CC431E52F48C6F6EBB87924D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\runner_integration_test.go",
+      "copy": "author/fixed-inputs-179/internal/migration/runner_integration_test.go.txt",
+      "role": "Dalton",
+      "sha256": "A6925A4A42BD0D29EF1210BA578B485458ADC51A3B39A037160D46F3A2EC800F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\runner_test.go",
+      "copy": "author/fixed-inputs-179/internal/migration/runner_test.go.txt",
+      "role": "Dalton",
+      "sha256": "769F08C0FB1F1DF58523765DF1EF825365A28861C32EB4D9E5705AD7EBD395E8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\sqlcheck.go",
+      "copy": "author/fixed-inputs-179/internal/migration/sqlcheck.go.txt",
+      "role": "Dalton",
+      "sha256": "C99977348271D1F7A0589992B3E6937C823F928CB21B9D9D49A6BBB0589A4F7A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\sqlcheck_test.go",
+      "copy": "author/fixed-inputs-179/internal/migration/sqlcheck_test.go.txt",
+      "role": "Dalton",
+      "sha256": "232E5CA353D2C4D7E46EDAFA9D81885E22FFD1497BA452819C70FB0274B426A8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\testdata\\0001_create_probe.sql",
+      "copy": "author/fixed-inputs-179/internal/migration/testdata/0001_create_probe.sql.txt",
+      "role": "Dalton",
+      "sha256": "1F45C267195BA60362D41FC8113DEECCA377B0E9B1B549107E03D019EA35BE04"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\testdata\\0002_fail_probe.sql",
+      "copy": "author/fixed-inputs-179/internal/migration/testdata/0002_fail_probe.sql.txt",
+      "role": "Dalton",
+      "sha256": "465E611EC7CDF196B68AAF8A964FF7DF1F0BCD83909AA1672F1887A614111E45"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\migration\\testdata\\0003_after_failure.sql",
+      "copy": "author/fixed-inputs-179/internal/migration/testdata/0003_after_failure.sql.txt",
+      "role": "Dalton",
+      "sha256": "C5FE526E68546A77DD638DFC228118DEFF69582AC6D375F7D17901DE5624DA7F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\config.go",
+      "copy": "author/fixed-inputs-179/internal/platform/config.go.txt",
+      "role": "Dalton",
+      "sha256": "3F5E28FE3404DC970374F39F16556C91E28AA9DBEC30E662109EFD58B8F866B0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\config_test.go",
+      "copy": "author/fixed-inputs-179/internal/platform/config_test.go.txt",
+      "role": "Dalton",
+      "sha256": "3A1DD70ECC3209A782CDD01C8F61E7AC941D15555450332B37298C9421950A46"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\errors.go",
+      "copy": "author/fixed-inputs-179/internal/platform/errors.go.txt",
+      "role": "Dalton",
+      "sha256": "99B1094A6C15A6E86E45B43928F8AC1B4F3A4EE810857BE598E9AA4336D968E3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\errors_test.go",
+      "copy": "author/fixed-inputs-179/internal/platform/errors_test.go.txt",
+      "role": "Dalton",
+      "sha256": "5C8CEA67B738BE1AA11FB4AE206907604BEE7CC2CC0C646891CF4EF35A6D9237"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\http.go",
+      "copy": "author/fixed-inputs-179/internal/platform/http.go.txt",
+      "role": "Dalton",
+      "sha256": "0890069CB559C7B8454A242B46736FC23D542B0D45E350B0D035C7012BB710C4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\http_security.go",
+      "copy": "author/fixed-inputs-179/internal/platform/http_security.go.txt",
+      "role": "Dalton",
+      "sha256": "3676B4C64BCF115C43845DC69D77F6875F3A7BBCD67DA6A91920B84594C3CFDA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\http_security_test.go",
+      "copy": "author/fixed-inputs-179/internal/platform/http_security_test.go.txt",
+      "role": "Dalton",
+      "sha256": "BF3DCEC73440B687ED2A1C68F2B30D0FCEA52A6BF9AF8300E82449B8499E5002"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\logging.go",
+      "copy": "author/fixed-inputs-179/internal/platform/logging.go.txt",
+      "role": "Dalton",
+      "sha256": "F362D36954DF0119D5DC25040640C796069CC8E178A1D92B828C6D6149CF30A9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\metrics.go",
+      "copy": "author/fixed-inputs-179/internal/platform/metrics.go.txt",
+      "role": "Dalton",
+      "sha256": "517B232D76C877FF335354E95668EC1D84B84385C017FCD45A4C046C6E4BC33A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\platform\\metrics_test.go",
+      "copy": "author/fixed-inputs-179/internal/platform/metrics_test.go.txt",
+      "role": "Dalton",
+      "sha256": "FE97076376DBBABAA5B256BEFB92DAB527372AA652500F25EE0246B0D572EFB4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\privacy\\store.go",
+      "copy": "author/fixed-inputs-179/internal/privacy/store.go.txt",
+      "role": "Dalton",
+      "sha256": "6E555D74E5210EA20CE0C33DB08DA40CD6BA4B7D1549B9A8031E0F4D82EEDD9D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\privacy\\store_test.go",
+      "copy": "author/fixed-inputs-179/internal/privacy/store_test.go.txt",
+      "role": "Dalton",
+      "sha256": "FE8D9C0DDD27ECEB6AF7EF7D03CA05A6FCE64F6061957C41B1F7246E03F48F70"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\coordinator.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/coordinator.go.txt",
+      "role": "Dalton",
+      "sha256": "6CBFF5B71D99CDCAC65751A446C4FB27267C76D651D6B46AD561684DCD0825A4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\filelock_flock.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/filelock_flock.go.txt",
+      "role": "Dalton",
+      "sha256": "8C5666102271855F72C11A69478240DF7A690A608883E012BC4624E89424AE9B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\filelock_flock_test.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/filelock_flock_test.go.txt",
+      "role": "Dalton",
+      "sha256": "EB528CD975C3177175B98D42E0F4B2C61B1297344D9BD2050425FA3952B19FCE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\filelock_unsupported.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/filelock_unsupported.go.txt",
+      "role": "Dalton",
+      "sha256": "6C35F9C189EB09DF9DF52DAE609A7EA8BFDDEB167FA3E3CAD8B51D448ECCF17C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\journal.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/journal.go.txt",
+      "role": "Dalton",
+      "sha256": "D61D5EA8E5C447B584E6C27CA60791D1266DF78E844E662DD51377832DC2B893"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\journal_test.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/journal_test.go.txt",
+      "role": "Dalton",
+      "sha256": "7521070A79788AE108095C8D55C0550DD74B163AF8C3CD1E8C896299B1A1A505"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\journal_windows_test.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/journal_windows_test.go.txt",
+      "role": "Dalton",
+      "sha256": "F2AE7CB58E2344196D66494DBCEC154B5F260FDAFB1F73FFBCF731F866D3B598"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\keyring.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/keyring.go.txt",
+      "role": "Dalton",
+      "sha256": "DDB9B972F83E9CA7A2CEBCB19745179C5BBFF9FCC1D8A29BBB80C62FBE45DEBF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\replay_status_v1.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/replay_status_v1.go.txt",
+      "role": "Dalton",
+      "sha256": "2F2FFA4B7357D9E7D63B2F923B9F212D89CED112EB88E0B453D3C5E8E41FDA82"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\recovery\\replay_status_v1_test.go",
+      "copy": "author/fixed-inputs-179/internal/recovery/replay_status_v1_test.go.txt",
+      "role": "Dalton",
+      "sha256": "E174499CD4828A429E8FFBAA227FE6C1148F84C778A074A022D3AB593C0A3B9E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\security\\argon2.go",
+      "copy": "author/fixed-inputs-179/internal/security/argon2.go.txt",
+      "role": "Dalton",
+      "sha256": "BF6B6E63D315832001A010C77FCBA2341C2E1FDBEA1E0D6471B15BC3B3D406B7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\security\\argon2_test.go",
+      "copy": "author/fixed-inputs-179/internal/security/argon2_test.go.txt",
+      "role": "Dalton",
+      "sha256": "BEE56CE85531BDAC700B9B5A1A8E6A88CAAA48102BADD6708D8E00CB35257A33"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\security\\password.go",
+      "copy": "author/fixed-inputs-179/internal/security/password.go.txt",
+      "role": "Dalton",
+      "sha256": "59F3E886F7D8DD7409DEF141EB00415E6976B72C3F4450685E2F786E87259507"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\security\\password_test.go",
+      "copy": "author/fixed-inputs-179/internal/security/password_test.go.txt",
+      "role": "Dalton",
+      "sha256": "2CFF86C6DA9D1F9D9B046E9A0544FFE8B9350BECAF4892F98915651CA06002C7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\session\\store.go",
+      "copy": "author/fixed-inputs-179/internal/session/store.go.txt",
+      "role": "Dalton",
+      "sha256": "4B12462E29D46B730F0DD58E6A0BAA57EC1D91B99D9F43FC91179319FF88E679"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\session\\store_test.go",
+      "copy": "author/fixed-inputs-179/internal/session/store_test.go.txt",
+      "role": "Dalton",
+      "sha256": "3D32E65D407F24211355B642DAB3933F1AB36E10B60CAFC7F039B2F9B8201E09"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\testenv\\env.go",
+      "copy": "author/fixed-inputs-179/internal/testenv/env.go.txt",
+      "role": "Dalton",
+      "sha256": "5E5763F31CB24A90E7975A0CF60CEABA01506E56155C4D51D4B3A6781D965630"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\internal\\testenv\\env_test.go",
+      "copy": "author/fixed-inputs-179/internal/testenv/env_test.go.txt",
+      "role": "Dalton",
+      "sha256": "3F2916C6BE32AF0880AE4578BA2B62A474BA558F2676B6F26E22DA7CB7EE08DF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0001_shared.sql",
+      "copy": "author/fixed-inputs-179/migrations/0001_shared.sql.txt",
+      "role": "Dalton",
+      "sha256": "CEE72F1470B49185B3B33C7655F792ADFFCBC1E030AF6669E0902775104B7A14"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0002_identity.sql",
+      "copy": "author/fixed-inputs-179/migrations/0002_identity.sql.txt",
+      "role": "Dalton",
+      "sha256": "F4EC1005EA72B1774DF5E370C5ABA57CA3ED7A0B13099DBBE2D16AA66AEB9D50"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0003_article.sql",
+      "copy": "author/fixed-inputs-179/migrations/0003_article.sql.txt",
+      "role": "Dalton",
+      "sha256": "FCAECE696DCE29D2F8D252EA36C4550F0C1736347E921F40703540B99E100D4A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0004_idempotency.sql",
+      "copy": "author/fixed-inputs-179/migrations/0004_idempotency.sql.txt",
+      "role": "Dalton",
+      "sha256": "4794816AC2FDA4AD12522F2F324448A6F9EFB2E9E39677A595400E68148424A9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0005_recovery_runs.sql",
+      "copy": "author/fixed-inputs-179/migrations/0005_recovery_runs.sql.txt",
+      "role": "Dalton",
+      "sha256": "66CA82109FF33BE7E4A3B349FE55A8CB88CBBF608939B8D7C5C12B06EDBDEC27"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0006_user_governance_indexes.sql",
+      "copy": "author/fixed-inputs-179/migrations/0006_user_governance_indexes.sql.txt",
+      "role": "Dalton",
+      "sha256": "6F93D99F6DFA0DE46DF8D891F8979039F679493932C28326EEB2AF28E2F24660"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0007_idempotency_response_snapshot_v1.sql",
+      "copy": "author/fixed-inputs-179/migrations/0007_idempotency_response_snapshot_v1.sql.txt",
+      "role": "Dalton",
+      "sha256": "9D3E642D4F5C5DE81113E23AEBD70E2E07BF583E140697D335DB4DDA35F01F9F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0008_password_reset_durable.sql",
+      "copy": "author/fixed-inputs-179/migrations/0008_password_reset_durable.sql.txt",
+      "role": "Dalton",
+      "sha256": "37FB3077709462D62C763FE87D4E04B4BDA4CFC498C14C2860B27429D5036980"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\0009_article_replay_attempt.sql",
+      "copy": "author/fixed-inputs-179/migrations/0009_article_replay_attempt.sql.txt",
+      "role": "Dalton",
+      "sha256": "4E10F50108A57D709C866044DE6678A00E11A4D6ACB589E708C7DC3779A9AA1D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\migrations\\README.md",
+      "copy": "author/fixed-inputs-179/migrations/README.md",
+      "role": "Dalton",
+      "sha256": "DE436F62118EA74F48F15391BFC9AD5EAFC0EA6C557F89A4923E84AE72F15D73"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\contract\\identity\\internal_ports_test.go",
+      "copy": "author/fixed-inputs-179/test/contract/identity/internal_ports_test.go.txt",
+      "role": "Dalton",
+      "sha256": "F749E7185D660CBFEC481CB5C83B30BA730003383354F622C6128123F12BBB1D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\contract\\identity\\replay_status_consumer_test.go",
+      "copy": "author/fixed-inputs-179/test/contract/identity/replay_status_consumer_test.go.txt",
+      "role": "Dalton",
+      "sha256": "9E9495C24D3212ADB34AEC199D90650CF99FA1E59C035CEA6ABB7DEC32C49752"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\contract\\identity\\rest_contract_test.go",
+      "copy": "author/fixed-inputs-179/test/contract/identity/rest_contract_test.go.txt",
+      "role": "Dalton",
+      "sha256": "86133EF48C35F704628100AE72C865D8526142791C3F7AE10FF1725230C994A5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\admin_query_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/admin_query_test.go.txt",
+      "role": "Dalton",
+      "sha256": "3ADC5BFA00410F2BF7B520C0035E0089B6E24889770BF6BD1F283A7E5B798263"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\etag_concurrency_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/etag_concurrency_test.go.txt",
+      "role": "Dalton",
+      "sha256": "C7EAA2D8D9FB315926CE80049E15B3E7932A290D8CCF58BC123E32F97527F2FA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\notice_crash_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/notice_crash_test.go.txt",
+      "role": "Dalton",
+      "sha256": "D2A75075C439D512896EC038A9E0EF8263CA5C11866A3F86B12FDB2E8C705479"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\notice_dispatcher_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/notice_dispatcher_test.go.txt",
+      "role": "Dalton",
+      "sha256": "54C74D6A014F37B257AADFF6D25C34B9776E50890A5BADFAA660CB27D8C8CEC0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\notice_smtp_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/notice_smtp_test.go.txt",
+      "role": "Dalton",
+      "sha256": "9E96006CD8036A00DCB577CCA5975CECB27931224B34AE4C0B3441693201CF48"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\pagination_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/pagination_test.go.txt",
+      "role": "Dalton",
+      "sha256": "13B6F1B3A2625AFB9240A07188F928A63E307B009FF17ACC879811E51A4A498F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\postgres_state_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/postgres_state_test.go.txt",
+      "role": "Dalton",
+      "sha256": "A77E5214BC4257088C03164BC9801384B13DF848D9679BA7716FF9D1DA433FD0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\identity\\faults_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/identity/faults_test.go.txt",
+      "role": "Dalton",
+      "sha256": "900F5CBE83F80DAE2BAEDEDF108DE94283F364FD0AFAD2372D0A4DC454DB1F63"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\identity\\fixtures.sql",
+      "copy": "author/fixed-inputs-179/test/integration/identity/fixtures.sql.txt",
+      "role": "Dalton",
+      "sha256": "F6760020DE75F4E43FD758298FA7FFA2FA1E97B0ECA39543B28BB1469B9883BF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\identity\\orphan_disposition_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/identity/orphan_disposition_test.go.txt",
+      "role": "Dalton",
+      "sha256": "7B38993E04D342F424C11C4D9E136DD3F06967D7E10A939C1103186F9B289D12"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\identity\\postgres_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/identity/postgres_test.go.txt",
+      "role": "Dalton",
+      "sha256": "C3A7F455C6AD40DC43557F578286CD53B1EB48A018DFAC699A43F152C0B9D1CB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\identity\\smtp_credentials_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/identity/smtp_credentials_test.go.txt",
+      "role": "Dalton",
+      "sha256": "C9AED4062DB032DAE67A9F0AA683FC46184E91FBEA7386E6D68D473CE0F67EC1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\identity\\smtp_test_server.go",
+      "copy": "author/fixed-inputs-179/test/integration/identity/smtp_test_server.go.txt",
+      "role": "Dalton",
+      "sha256": "FEFF245A580D7D848A780EB63C5AD1D0E2B13582ADDCC3BE6C9506C9F82DFB26"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\recovery\\article_fixtures_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/recovery/article_fixtures_test.go.txt",
+      "role": "Dalton",
+      "sha256": "88FD408A466CAF208E780112F82B6EB82BCCDB58D5CB1E848C07B52DFDC3C4F6"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\recovery\\fixtures_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/recovery/fixtures_test.go.txt",
+      "role": "Dalton",
+      "sha256": "0CD7471AD1574D05465CA3F29C8B967B631F520A2F3BA94E91BE5E346A485ACB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\testdata\\contracts\\article-deletion-replay\\ready-v1.json",
+      "copy": "author/fixed-inputs-179/testdata/contracts/article-deletion-replay/ready-v1.json",
+      "role": "Dalton",
+      "sha256": "586A0B8F76ADE8B720E44094A0D13163C827D231AC9CBC786C6D4AF92E90F0F2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\testdata\\contracts\\article-deletion-replay\\unavailable-v1.json",
+      "copy": "author/fixed-inputs-179/testdata/contracts/article-deletion-replay/unavailable-v1.json",
+      "role": "Dalton",
+      "sha256": "929193CD06BA566402F3F3C1D6321E57BDA95D0270DED666B5C951D97B21AC1B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\testdata\\recovery\\article-backup-inventory.json",
+      "copy": "author/fixed-inputs-179/testdata/recovery/article-backup-inventory.json",
+      "role": "Dalton",
+      "sha256": "1355094A5A6751E6E479F4769C9D6E41C993F2A054D23ACF948D3F7E5C4E9B8C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\testdata\\recovery\\article-deletion-fixtures.json",
+      "copy": "author/fixed-inputs-179/testdata/recovery/article-deletion-fixtures.json",
+      "role": "Dalton",
+      "sha256": "E86F32A1731E04F3B1590A87282F71F4332B488F2B6040E74AAF7F5876CF7D81"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\testdata\\recovery\\backup-manifest.json",
+      "copy": "author/fixed-inputs-179/testdata/recovery/backup-manifest.json",
+      "role": "Dalton",
+      "sha256": "2F267BD497FC90D7B6D1B28F36F8E7B8B253F8E36153E5F50400BB2AC6DF856E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\testdata\\recovery\\keyring-fixtures.json",
+      "copy": "author/fixed-inputs-179/testdata/recovery/keyring-fixtures.json",
+      "role": "Dalton",
+      "sha256": "CB398B9E736694FEC77AA21BB08E056933591774BB3842046E63D710DD9212F0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\contract\\article\\rest_contract_test.go",
+      "copy": "author/fixed-inputs-179/test/contract/article/rest_contract_test.go.txt",
+      "role": "Dalton",
+      "sha256": "CEBA105C2CBF70B91CB5DFF93D9D4FC37077153A7EDB4F9C2806C29E650E9533"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\contract\\article\\internal_ports_test.go",
+      "copy": "author/fixed-inputs-179/test/contract/article/internal_ports_test.go.txt",
+      "role": "Dalton",
+      "sha256": "DC6791D4793ABE67FE17B83736FC77E55C347859B13A4FB5071E6AC51BF64F25"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\contract\\article\\projection_contract_test.go",
+      "copy": "author/fixed-inputs-179/test/contract/article/projection_contract_test.go.txt",
+      "role": "Dalton",
+      "sha256": "D7585EE66538EECA4364BF01CC2BE3A4AC69D98C9818560D6533457E8A572033"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\contract\\article\\replay_status_producer_test.go",
+      "copy": "author/fixed-inputs-179/test/contract/article/replay_status_producer_test.go.txt",
+      "role": "Dalton",
+      "sha256": "B519DDE178CB3F4357560681490FD00639549E8CA0B369E2EFB01785488D8FDC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\fixed-inputs-179\\test\\integration\\article\\audit_insert_rollback_test.go",
+      "copy": "author/fixed-inputs-179/test/integration/article/audit_insert_rollback_test.go.txt",
+      "role": "Dalton",
+      "sha256": "468964647524860CEEF0167EC56A9C0033FBB40CFF340A5021FBCE66F2C89CD5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_94a53b6fa9d24ca98aa3e1293bf48ef0\\before-append-813659cd-04ff-4a52-b7c8-2b5900ee49c7.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_94a53b6fa9d24ca98aa3e1293bf48ef0/before-append-813659cd-04ff-4a52-b7c8-2b5900ee49c7.json",
+      "role": "Dalton",
+      "sha256": "01528F0ECFDB425E0FFA1FA57BDB86A9CDC45C1374AADB8ED1C13E8BE6821142"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_94a53b6fa9d24ca98aa3e1293bf48ef0\\before.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_94a53b6fa9d24ca98aa3e1293bf48ef0/before.json",
+      "role": "Dalton",
+      "sha256": "1F53273483B94566F7C42E2096F4ADCE95FF49F7F52156FAD42605C639C97FA8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_94a53b6fa9d24ca98aa3e1293bf48ef0\\claim-committed.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_94a53b6fa9d24ca98aa3e1293bf48ef0/claim-committed.json",
+      "role": "Dalton",
+      "sha256": "2A46582EEE977AD6E5D24A891ADBD7AA52E7B371E9E51B5F0043A873C50FF4A7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_97975140e7e446aabbeaa83a5904d71f\\before-append-05028ffd-74c3-4b44-a0f8-0cd00ffa1720.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_97975140e7e446aabbeaa83a5904d71f/before-append-05028ffd-74c3-4b44-a0f8-0cd00ffa1720.json",
+      "role": "Dalton",
+      "sha256": "6E7E0F7E9D88DB4A1AE2D069B423758B1659655E903C5EC2AB8FD776B5A0BFA2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_97975140e7e446aabbeaa83a5904d71f\\before.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_97975140e7e446aabbeaa83a5904d71f/before.json",
+      "role": "Dalton",
+      "sha256": "07E213C2EBE6B725D3EB4A14CAFC06196B414B34F51F2472FC3F0C9B69B905B3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_d851e8a30a64406ab886edf9c5cc2c7c\\before-append-13fe39d5-f4c7-4a83-b404-b659d7427245.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_d851e8a30a64406ab886edf9c5cc2c7c/before-append-13fe39d5-f4c7-4a83-b404-b659d7427245.json",
+      "role": "Dalton",
+      "sha256": "0ECB32650D24BE281CEB9472D09C367C43952FF5ED034FBD0DFE6E087A708C44"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_d851e8a30a64406ab886edf9c5cc2c7c\\before.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_d851e8a30a64406ab886edf9c5cc2c7c/before.json",
+      "role": "Dalton",
+      "sha256": "49A53F5531372E8484C68227FA9ACBC6130CDCB9E71DD5A511CA357DA0ACA921"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_e813a00f8eb446b2ba4c098b63bd75a2\\before-append-cc8c8196-9a48-4790-b553-1ba053f6cb95.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_e813a00f8eb446b2ba4c098b63bd75a2/before-append-cc8c8196-9a48-4790-b553-1ba053f6cb95.json",
+      "role": "Dalton",
+      "sha256": "E579035E7522036FE0F54D1C096159BE478458B886CB2D44D0E94AD5BA4CEC16"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\mutant-error-chain-evidence\\han_s15audit_e813a00f8eb446b2ba4c098b63bd75a2\\before.json",
+      "copy": "author/mutant-error-chain-evidence/han_s15audit_e813a00f8eb446b2ba4c098b63bd75a2/before.json",
+      "role": "Dalton",
+      "sha256": "47E5B326B78B0EBE2CEBC10317D3CC5A5CB2F1626EB8CDFFD94B28B2D506B796"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_2fc11a72c6374b048cf0dc13374b035a\\after-failure.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_2fc11a72c6374b048cf0dc13374b035a/after-failure.json",
+      "role": "Dalton",
+      "sha256": "69915085D75CB9E413572FE7EE8D35EAD7D32AC074D581FBEA9BE8F6ED5AA7AF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_2fc11a72c6374b048cf0dc13374b035a\\after-retry.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_2fc11a72c6374b048cf0dc13374b035a/after-retry.json",
+      "role": "Dalton",
+      "sha256": "988F1B6B31E7912283B4CEB5CA955C3C263FD1B00CEF74266C747FA410C8BABF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_2fc11a72c6374b048cf0dc13374b035a\\before-append-362c3d1b-7910-4e2c-a1a9-b399e79c6635.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_2fc11a72c6374b048cf0dc13374b035a/before-append-362c3d1b-7910-4e2c-a1a9-b399e79c6635.json",
+      "role": "Dalton",
+      "sha256": "1F1A539A3FD5EEAC7A66E266B38EAEE05E1554AB19EBB2A2F4E622D5CD58E23B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_2fc11a72c6374b048cf0dc13374b035a\\before-append-def01f15-4d6e-4eb2-9107-9c118f2bf20b.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_2fc11a72c6374b048cf0dc13374b035a/before-append-def01f15-4d6e-4eb2-9107-9c118f2bf20b.json",
+      "role": "Dalton",
+      "sha256": "1F1A539A3FD5EEAC7A66E266B38EAEE05E1554AB19EBB2A2F4E622D5CD58E23B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_2fc11a72c6374b048cf0dc13374b035a\\before.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_2fc11a72c6374b048cf0dc13374b035a/before.json",
+      "role": "Dalton",
+      "sha256": "69915085D75CB9E413572FE7EE8D35EAD7D32AC074D581FBEA9BE8F6ED5AA7AF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_2fc11a72c6374b048cf0dc13374b035a\\collision.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_2fc11a72c6374b048cf0dc13374b035a/collision.json",
+      "role": "Dalton",
+      "sha256": "75B03EE5E7733679CEE714F5D7F1052C85D94DB5C0035AE7C49ED4AD1309E883"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_3e40e905aabb4b08ad8512999495ae96\\after-failure.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_3e40e905aabb4b08ad8512999495ae96/after-failure.json",
+      "role": "Dalton",
+      "sha256": "81AD2D4BDDA9264DCEC595C49AD9616A18CD83F96AE4A8CDF4E1312307EA8C27"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_3e40e905aabb4b08ad8512999495ae96\\after-retry.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_3e40e905aabb4b08ad8512999495ae96/after-retry.json",
+      "role": "Dalton",
+      "sha256": "318C617F8B33BFC051AD51B89D6CE310AB027D5D7A7ECEA90DD4F95A069317C9"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_3e40e905aabb4b08ad8512999495ae96\\before-append-382423b7-f07f-4ec6-ad94-3a5647bb09c2.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_3e40e905aabb4b08ad8512999495ae96/before-append-382423b7-f07f-4ec6-ad94-3a5647bb09c2.json",
+      "role": "Dalton",
+      "sha256": "1DDF9107754C79C5E6E638CBDAE4B25F6A79C93C876B6AF7E6B80D82C436FB3F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_3e40e905aabb4b08ad8512999495ae96\\before-append-796bee56-1670-4cba-9b53-1097b4a06710.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_3e40e905aabb4b08ad8512999495ae96/before-append-796bee56-1670-4cba-9b53-1097b4a06710.json",
+      "role": "Dalton",
+      "sha256": "60DE3101FAD6EDF0341279CCAD4B8A8670997FF35BB4F66FD08D38F841DB98C0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_3e40e905aabb4b08ad8512999495ae96\\before.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_3e40e905aabb4b08ad8512999495ae96/before.json",
+      "role": "Dalton",
+      "sha256": "81AD2D4BDDA9264DCEC595C49AD9616A18CD83F96AE4A8CDF4E1312307EA8C27"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_3e40e905aabb4b08ad8512999495ae96\\collision.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_3e40e905aabb4b08ad8512999495ae96/collision.json",
+      "role": "Dalton",
+      "sha256": "D7A287C6EEE8ED57040C5F0DAB7187D66D08A3BC282BA41B2013FBD681F4F785"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_be1b46a0d2764177a56bee6d5115579a\\after-failure.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_be1b46a0d2764177a56bee6d5115579a/after-failure.json",
+      "role": "Dalton",
+      "sha256": "7B05449DF9F90E731C7E31A820E83CAE72B0917F16E16D0B2EF4BA3E7A4ADB0E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_be1b46a0d2764177a56bee6d5115579a\\after-retry.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_be1b46a0d2764177a56bee6d5115579a/after-retry.json",
+      "role": "Dalton",
+      "sha256": "3BC240FF6468DC849B0E8DFA162893EF38AB375CA000B65E2188F5495F310334"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_be1b46a0d2764177a56bee6d5115579a\\before-append-46241fc5-9103-4639-bc23-9854ec99249d.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_be1b46a0d2764177a56bee6d5115579a/before-append-46241fc5-9103-4639-bc23-9854ec99249d.json",
+      "role": "Dalton",
+      "sha256": "7F56F1766DE3D7B6E647CAD355E7A961A2AF1FE84E3E362389487A935FE4F050"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_be1b46a0d2764177a56bee6d5115579a\\before-append-6b350462-cd49-43c1-a676-7241923db34b.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_be1b46a0d2764177a56bee6d5115579a/before-append-6b350462-cd49-43c1-a676-7241923db34b.json",
+      "role": "Dalton",
+      "sha256": "126802565AA6F23B620D8564BF57BF21BE28A5B35BCA101263F8D12181360B80"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_be1b46a0d2764177a56bee6d5115579a\\before.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_be1b46a0d2764177a56bee6d5115579a/before.json",
+      "role": "Dalton",
+      "sha256": "25F47892D94AD9EF98FED2EFBC3248486DCE7095D1E4E487A5D9723F26EB7B3A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_be1b46a0d2764177a56bee6d5115579a\\claim-committed.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_be1b46a0d2764177a56bee6d5115579a/claim-committed.json",
+      "role": "Dalton",
+      "sha256": "7B05449DF9F90E731C7E31A820E83CAE72B0917F16E16D0B2EF4BA3E7A4ADB0E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_be1b46a0d2764177a56bee6d5115579a\\collision.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_be1b46a0d2764177a56bee6d5115579a/collision.json",
+      "role": "Dalton",
+      "sha256": "B75C65939891A6F39124F8844E1CBA0DBC60F7887EC14E637C1E4D75E90D5B41"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_f53e3162a0a743a1ad179637644b00d1\\after-failure.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_f53e3162a0a743a1ad179637644b00d1/after-failure.json",
+      "role": "Dalton",
+      "sha256": "C3C29A8352A70525E2CE1635369CBE8C600E0B7CD42F18BFA02BABAFD26B2728"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_f53e3162a0a743a1ad179637644b00d1\\after-retry.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_f53e3162a0a743a1ad179637644b00d1/after-retry.json",
+      "role": "Dalton",
+      "sha256": "899707121CA66897F2AEEA1A70ECF49CE61E1446FCB27FEF3F62A78D101BAC22"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_f53e3162a0a743a1ad179637644b00d1\\before-append-f1146a32-a6c7-48d7-83db-63a519dc308a.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_f53e3162a0a743a1ad179637644b00d1/before-append-f1146a32-a6c7-48d7-83db-63a519dc308a.json",
+      "role": "Dalton",
+      "sha256": "FCB009F434F15313342C39B1BDFD59C35D2FA94B1477D155757AC28EE1DAF142"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_f53e3162a0a743a1ad179637644b00d1\\before-append-fec6363c-9ac9-46f4-9022-22d19fd7380b.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_f53e3162a0a743a1ad179637644b00d1/before-append-fec6363c-9ac9-46f4-9022-22d19fd7380b.json",
+      "role": "Dalton",
+      "sha256": "FCB009F434F15313342C39B1BDFD59C35D2FA94B1477D155757AC28EE1DAF142"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_f53e3162a0a743a1ad179637644b00d1\\before.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_f53e3162a0a743a1ad179637644b00d1/before.json",
+      "role": "Dalton",
+      "sha256": "C3C29A8352A70525E2CE1635369CBE8C600E0B7CD42F18BFA02BABAFD26B2728"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-first-01-evidence\\han_s15audit_f53e3162a0a743a1ad179637644b00d1\\collision.json",
+      "copy": "author/pg-first-01-evidence/han_s15audit_f53e3162a0a743a1ad179637644b00d1/collision.json",
+      "role": "Dalton",
+      "sha256": "5E1CFB91984E7CC8D627CD16A15426584DD4E8A6F6BB4D0140B9AD748D60ABA3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f\\after-failure.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f/after-failure.json",
+      "role": "Dalton",
+      "sha256": "F31E668A91D08EDCC9307B5A47C7F74479E05C9CFE9F0894D9B7DB38437705C8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f\\after-retry.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f/after-retry.json",
+      "role": "Dalton",
+      "sha256": "3E457CECC8F66C73366BF968B30214F0BC89AD6A673DE754C58C3FD88F769859"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f\\before-append-261bf7ed-e308-4b9a-a399-959cd406aeca.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f/before-append-261bf7ed-e308-4b9a-a399-959cd406aeca.json",
+      "role": "Dalton",
+      "sha256": "6304CBF998D3B472CA7ED860D2C20C1EA0F795CE7CBE0A0CFA5276F46A27556A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f\\before-append-dec47f0b-d6f9-439b-bbac-6b006585a852.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f/before-append-dec47f0b-d6f9-439b-bbac-6b006585a852.json",
+      "role": "Dalton",
+      "sha256": "6304CBF998D3B472CA7ED860D2C20C1EA0F795CE7CBE0A0CFA5276F46A27556A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f\\before.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f/before.json",
+      "role": "Dalton",
+      "sha256": "F31E668A91D08EDCC9307B5A47C7F74479E05C9CFE9F0894D9B7DB38437705C8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f\\collision.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_16fe7cdfdf964eb7ab49b92d63ec8c0f/collision.json",
+      "role": "Dalton",
+      "sha256": "E5A0A2F6B0073D81FFC4A1834A5675BBF28EA62A8BF80BCBEF1CFA7BA0917112"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2\\after-failure.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2/after-failure.json",
+      "role": "Dalton",
+      "sha256": "04803487C0EFFFB8200416B747FE42CC329A167EC62A1DB0A7C594D0D589B028"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2\\after-retry.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2/after-retry.json",
+      "role": "Dalton",
+      "sha256": "ABDFB3C2FA640F4D8ED046473CEC34D2CA86E6DDB2F07451CCA849273B10971E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2\\before-append-4d3597c2-0e73-4333-b337-500ee4b80f85.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2/before-append-4d3597c2-0e73-4333-b337-500ee4b80f85.json",
+      "role": "Dalton",
+      "sha256": "2287CCC570048BFF3EC9286B1F12832A180CBC81FCC2300D75B1772CF3020E88"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2\\before-append-bd934cbb-31e4-4df0-a9b6-97b1c4bc9476.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2/before-append-bd934cbb-31e4-4df0-a9b6-97b1c4bc9476.json",
+      "role": "Dalton",
+      "sha256": "2287CCC570048BFF3EC9286B1F12832A180CBC81FCC2300D75B1772CF3020E88"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2\\before.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2/before.json",
+      "role": "Dalton",
+      "sha256": "04803487C0EFFFB8200416B747FE42CC329A167EC62A1DB0A7C594D0D589B028"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2\\collision.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_33fa1643b2ce47e6b48337294e2ec8b2/collision.json",
+      "role": "Dalton",
+      "sha256": "5EADFEF90B5650710EB86DC87AEF24B8664D9594AD7B764A4CE279CF7E81D41D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_38daa52d161247da9fcbe50985bc992c\\after-failure.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_38daa52d161247da9fcbe50985bc992c/after-failure.json",
+      "role": "Dalton",
+      "sha256": "7DC28950F838A482F3925702EBBBBB275E7FF07E8234DA8F999499098BBC046E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_38daa52d161247da9fcbe50985bc992c\\after-retry.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_38daa52d161247da9fcbe50985bc992c/after-retry.json",
+      "role": "Dalton",
+      "sha256": "930BD4F141B7E1F7D3A0611AACD26854CA364BAD6A70798EAA8DE41E90B9618B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_38daa52d161247da9fcbe50985bc992c\\before-append-b7210e99-2c08-4092-8091-1768c56befc2.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_38daa52d161247da9fcbe50985bc992c/before-append-b7210e99-2c08-4092-8091-1768c56befc2.json",
+      "role": "Dalton",
+      "sha256": "04D5D9F950FA5D21DB2F869E1933348B3BEAE6E01DC83720E055E8F11F6D74BD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_38daa52d161247da9fcbe50985bc992c\\before-append-d2e58f82-e431-4a34-9707-80af6314c1f6.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_38daa52d161247da9fcbe50985bc992c/before-append-d2e58f82-e431-4a34-9707-80af6314c1f6.json",
+      "role": "Dalton",
+      "sha256": "906CE53D709CD05A5C576B14B0590EC3EB0A29D627177942D4C08D9CED07E93C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_38daa52d161247da9fcbe50985bc992c\\before.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_38daa52d161247da9fcbe50985bc992c/before.json",
+      "role": "Dalton",
+      "sha256": "3EBBFD6F096466A6A6341683CFF1626264DC1B31588B113C334A3589F1A63997"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_38daa52d161247da9fcbe50985bc992c\\claim-committed.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_38daa52d161247da9fcbe50985bc992c/claim-committed.json",
+      "role": "Dalton",
+      "sha256": "7DC28950F838A482F3925702EBBBBB275E7FF07E8234DA8F999499098BBC046E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_38daa52d161247da9fcbe50985bc992c\\collision.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_38daa52d161247da9fcbe50985bc992c/collision.json",
+      "role": "Dalton",
+      "sha256": "13EC0BCC4F5C766C66013331C85415823422108D3460059757FCE9F68DC5420D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_eb7ae52d375c450b83444d5775256c33\\after-failure.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_eb7ae52d375c450b83444d5775256c33/after-failure.json",
+      "role": "Dalton",
+      "sha256": "26BB3BE978B3711CF21B4BD99CA6EC90BBA673F30BF8AFEF1A1C978085B3AF2D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_eb7ae52d375c450b83444d5775256c33\\after-retry.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_eb7ae52d375c450b83444d5775256c33/after-retry.json",
+      "role": "Dalton",
+      "sha256": "A6A93944C04FCA94E8CAAA842806AC3A623BC05192938D3F68E4CA52D267ED89"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_eb7ae52d375c450b83444d5775256c33\\before-append-6b58730a-13fc-4034-862c-11ce8ca296be.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_eb7ae52d375c450b83444d5775256c33/before-append-6b58730a-13fc-4034-862c-11ce8ca296be.json",
+      "role": "Dalton",
+      "sha256": "20CE89CE5E28ADD114CA8F2A0BF1EE610DCA876A361D812D19587A34478A8521"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_eb7ae52d375c450b83444d5775256c33\\before-append-ae5315c0-ccf2-4f40-961e-a32542d81f24.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_eb7ae52d375c450b83444d5775256c33/before-append-ae5315c0-ccf2-4f40-961e-a32542d81f24.json",
+      "role": "Dalton",
+      "sha256": "B8B52254CCA54E888D45A7B51B58F104B42E13454CB37B13D983C6FE24A6353D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_eb7ae52d375c450b83444d5775256c33\\before.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_eb7ae52d375c450b83444d5775256c33/before.json",
+      "role": "Dalton",
+      "sha256": "26BB3BE978B3711CF21B4BD99CA6EC90BBA673F30BF8AFEF1A1C978085B3AF2D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-normal-final-evidence\\han_s15audit_eb7ae52d375c450b83444d5775256c33\\collision.json",
+      "copy": "author/pg-normal-final-evidence/han_s15audit_eb7ae52d375c450b83444d5775256c33/collision.json",
+      "role": "Dalton",
+      "sha256": "9265148B50AB5703F86112131C95F36A66311123BDAC5435E408B9B039DFA6F7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_51c0d528cce648db9f2e10c398751a57\\after-failure.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_51c0d528cce648db9f2e10c398751a57/after-failure.json",
+      "role": "Dalton",
+      "sha256": "25134BE8D918F6049D1C1D35180911BA78957B5E14D613FDE185E443DA443707"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_51c0d528cce648db9f2e10c398751a57\\after-retry.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_51c0d528cce648db9f2e10c398751a57/after-retry.json",
+      "role": "Dalton",
+      "sha256": "5962190AEF650DD521E0064A76BFFE333786EE8430243702B488546B8B4374FD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_51c0d528cce648db9f2e10c398751a57\\before-append-55c6aa4c-a121-4292-9190-8636ac1ac6fa.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_51c0d528cce648db9f2e10c398751a57/before-append-55c6aa4c-a121-4292-9190-8636ac1ac6fa.json",
+      "role": "Dalton",
+      "sha256": "6579D181904773CB47562CFF143C5007346352200DB5F07AC54F93E0FC441A0F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_51c0d528cce648db9f2e10c398751a57\\before-append-e6be8a14-0a01-427d-8b82-19d800b3e664.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_51c0d528cce648db9f2e10c398751a57/before-append-e6be8a14-0a01-427d-8b82-19d800b3e664.json",
+      "role": "Dalton",
+      "sha256": "C64CED4B10BEFEC6284D81503B528904908E411B776D47F0ABB4B342BC5D6F9F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_51c0d528cce648db9f2e10c398751a57\\before.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_51c0d528cce648db9f2e10c398751a57/before.json",
+      "role": "Dalton",
+      "sha256": "9A231E0C2F00FD0275FEF92E35234DCE65CCBF32369C8CFB295E34CDB935BE36"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_51c0d528cce648db9f2e10c398751a57\\claim-committed.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_51c0d528cce648db9f2e10c398751a57/claim-committed.json",
+      "role": "Dalton",
+      "sha256": "25134BE8D918F6049D1C1D35180911BA78957B5E14D613FDE185E443DA443707"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_51c0d528cce648db9f2e10c398751a57\\collision.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_51c0d528cce648db9f2e10c398751a57/collision.json",
+      "role": "Dalton",
+      "sha256": "0FA71E912C4866BD79010FC0A9136C7A692465A3384A3E963F6B338CE3F9508C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_716eec5f8d6340cdaaba573d7af8ea72\\after-failure.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_716eec5f8d6340cdaaba573d7af8ea72/after-failure.json",
+      "role": "Dalton",
+      "sha256": "C3DB151352F5A81A6B32F902D06DC9D58C1F4712A1D7180AECAB4A4F929CA18D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_716eec5f8d6340cdaaba573d7af8ea72\\after-retry.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_716eec5f8d6340cdaaba573d7af8ea72/after-retry.json",
+      "role": "Dalton",
+      "sha256": "CD498F2CA0D0AE91DA20DF8979CB6FF30CB55C4F67DC80A661615C08E072D125"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_716eec5f8d6340cdaaba573d7af8ea72\\before-append-4420277a-db2a-4120-89f1-067ef467d2ba.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_716eec5f8d6340cdaaba573d7af8ea72/before-append-4420277a-db2a-4120-89f1-067ef467d2ba.json",
+      "role": "Dalton",
+      "sha256": "53F78C7E7D40F559AFC8EBE2579A31DCD3DD45FF692C77015CE42B148280A275"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_716eec5f8d6340cdaaba573d7af8ea72\\before-append-7842c26e-a837-4b14-9452-1f6530460993.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_716eec5f8d6340cdaaba573d7af8ea72/before-append-7842c26e-a837-4b14-9452-1f6530460993.json",
+      "role": "Dalton",
+      "sha256": "53F78C7E7D40F559AFC8EBE2579A31DCD3DD45FF692C77015CE42B148280A275"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_716eec5f8d6340cdaaba573d7af8ea72\\before.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_716eec5f8d6340cdaaba573d7af8ea72/before.json",
+      "role": "Dalton",
+      "sha256": "C3DB151352F5A81A6B32F902D06DC9D58C1F4712A1D7180AECAB4A4F929CA18D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_716eec5f8d6340cdaaba573d7af8ea72\\collision.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_716eec5f8d6340cdaaba573d7af8ea72/collision.json",
+      "role": "Dalton",
+      "sha256": "4FB1667D54D8F096D27E9E924BF8A0391684660DE45B4A934B0AB97446903894"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_8bbde9f07aca4935864b82798399edee\\after-failure.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_8bbde9f07aca4935864b82798399edee/after-failure.json",
+      "role": "Dalton",
+      "sha256": "AB5B4EB97DA7073EA91662A5B3D89A9C52BE50D9705DA7717870123D5EEBBAC2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_8bbde9f07aca4935864b82798399edee\\after-retry.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_8bbde9f07aca4935864b82798399edee/after-retry.json",
+      "role": "Dalton",
+      "sha256": "D57AE9C621AD5A4035DAFCC170C17ACD8B7946ECAAF253661CEBE94391A70568"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_8bbde9f07aca4935864b82798399edee\\before-append-05dff281-8d37-4816-8001-ac15e17bce2e.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_8bbde9f07aca4935864b82798399edee/before-append-05dff281-8d37-4816-8001-ac15e17bce2e.json",
+      "role": "Dalton",
+      "sha256": "1CC958CA4D61EE45D3609665BE9933F8C98515D3994339456F4D3EA3F372F038"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_8bbde9f07aca4935864b82798399edee\\before-append-42757918-ea41-43c6-a853-eb2afd2a114d.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_8bbde9f07aca4935864b82798399edee/before-append-42757918-ea41-43c6-a853-eb2afd2a114d.json",
+      "role": "Dalton",
+      "sha256": "1CC958CA4D61EE45D3609665BE9933F8C98515D3994339456F4D3EA3F372F038"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_8bbde9f07aca4935864b82798399edee\\before.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_8bbde9f07aca4935864b82798399edee/before.json",
+      "role": "Dalton",
+      "sha256": "AB5B4EB97DA7073EA91662A5B3D89A9C52BE50D9705DA7717870123D5EEBBAC2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_8bbde9f07aca4935864b82798399edee\\collision.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_8bbde9f07aca4935864b82798399edee/collision.json",
+      "role": "Dalton",
+      "sha256": "1BE69F02B150536773DF50368D0081025DF8A556B192BE61664E2DDA982FD580"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_be1597bf30764ec49b25ed0c50c15cf2\\after-failure.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_be1597bf30764ec49b25ed0c50c15cf2/after-failure.json",
+      "role": "Dalton",
+      "sha256": "01A368B4964E93AAC6F965DE3D5CD82BD6D58172E9045C263A87B940F1AAE124"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_be1597bf30764ec49b25ed0c50c15cf2\\after-retry.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_be1597bf30764ec49b25ed0c50c15cf2/after-retry.json",
+      "role": "Dalton",
+      "sha256": "E1FE125BB43D87707024A486362E4B74282361234467E9E894D80AC364CCA62E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_be1597bf30764ec49b25ed0c50c15cf2\\before-append-0ea82ec1-b907-493e-96ec-b102bd412c4f.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_be1597bf30764ec49b25ed0c50c15cf2/before-append-0ea82ec1-b907-493e-96ec-b102bd412c4f.json",
+      "role": "Dalton",
+      "sha256": "F6736C670C343BE1B6B00EAF7EA5AE0162F02674C8C97C8D9ED395FD8F1172A3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_be1597bf30764ec49b25ed0c50c15cf2\\before-append-362fff3a-703b-4da4-8276-ce5c21b709d5.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_be1597bf30764ec49b25ed0c50c15cf2/before-append-362fff3a-703b-4da4-8276-ce5c21b709d5.json",
+      "role": "Dalton",
+      "sha256": "F5FCC474630979694340ED02D8D0FD2D7AEA6F76269BC422B16A948A90D55E9B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_be1597bf30764ec49b25ed0c50c15cf2\\before.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_be1597bf30764ec49b25ed0c50c15cf2/before.json",
+      "role": "Dalton",
+      "sha256": "01A368B4964E93AAC6F965DE3D5CD82BD6D58172E9045C263A87B940F1AAE124"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\pg-race-final-evidence\\han_s15audit_be1597bf30764ec49b25ed0c50c15cf2\\collision.json",
+      "copy": "author/pg-race-final-evidence/han_s15audit_be1597bf30764ec49b25ed0c50c15cf2/collision.json",
+      "role": "Dalton",
+      "sha256": "700F328FAA09D4065DEA89E8260051069B34D66A8D56ED8BCAAD9A19C8DA58F5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\error-chain-mutant\\mutation.json",
+      "copy": "author/error-chain-mutant/mutation.json",
+      "role": "Dalton",
+      "sha256": "892516BF2FD04B97F6E177C2F842C2C4EBCE945AF3611A19DCE94174E8785648"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\error-chain-mutant\\mutation.patch",
+      "copy": "author/error-chain-mutant/mutation.patch",
+      "role": "Dalton",
+      "sha256": "264FD1329129435C6AB45690D4B8E0C9FFBE0CE85577BCF2BAD593D41FFA6C0D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\error-chain-mutant\\overlay.json",
+      "copy": "author/error-chain-mutant/overlay.json",
+      "role": "Dalton",
+      "sha256": "F23D01B372703D67AF5B17C280820811623CAFC6940B3192978528C11A0EEE1C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\error-chain-mutant\\store.go",
+      "copy": "author/error-chain-mutant/store.go.txt",
+      "role": "Dalton",
+      "sha256": "6287A96BE78FF9464168DB746EDF1B38199DE84CE635E6AD9A0B259A561DC695"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\inputs-468964647524860C\\test\\integration\\article\\audit_insert_rollback_test.go",
+      "copy": "author/historical-target-versions/inputs-468964647524860C.go.txt",
+      "role": "Dalton",
+      "sha256": "468964647524860CEEF0167EC56A9C0033FBB40CFF340A5021FBCE66F2C89CD5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\inputs-2DBC4CD2213C93DD\\test\\integration\\article\\audit_insert_rollback_test.go",
+      "copy": "author/historical-target-versions/inputs-2DBC4CD2213C93DD.go.txt",
+      "role": "Dalton",
+      "sha256": "2DBC4CD2213C93DDB75863C41581FD4C36CEA59238BD1CAF93798A30B21D4FCF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\inputs-0A512018BE635610\\test\\integration\\article\\audit_insert_rollback_test.go",
+      "copy": "author/historical-target-versions/inputs-0A512018BE635610.go.txt",
+      "role": "Dalton",
+      "sha256": "0A512018BE635610F6A347072AC43342D0757DBA68C837664B066BBFA26857CC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-impl-3468c1e54fe74fc8a36de31fb0cf62a5\\inputs-26F76D4B8CA12459\\test\\integration\\article\\audit_insert_rollback_test.go",
+      "copy": "author/historical-target-versions/inputs-26F76D4B8CA12459.go.txt",
+      "role": "Dalton",
+      "sha256": "26F76D4B8CA12459F874A9EF93DD27E35E4F1894B9B0DCDE2A248D2BE08417ED"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\audit_author.py",
+      "copy": "lead/audit_author.py.txt",
+      "role": "Lead",
+      "sha256": "D1F2D2D94F31C5BF99CEF34B438210005FFBA4F373F2EB5FA5F63106B3356DCC"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\author-normal-hit-check.json",
+      "copy": "lead/author-normal-hit-check.json",
+      "role": "Lead",
+      "sha256": "4424439C2C92A68AA77BFAD6A9EC4970320885E3244FB3824F7AAA1AA433443B"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\author-race-hit-check.json",
+      "copy": "lead/author-race-hit-check.json",
+      "role": "Lead",
+      "sha256": "9FCE156F1F56219370D26E47F4105C7EA0985EF99A91C0BA20702FA74531828F"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\fixed179.json",
+      "copy": "lead/fixed179.json",
+      "role": "Lead",
+      "sha256": "43FDA5D8BDEC3682F5DA7AD50770C9A1A4C1B2E53EF2EEF9C93B14455FB1D463"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-author-audit-r03.json",
+      "copy": "lead/lead-author-audit-r03.json",
+      "role": "Lead",
+      "sha256": "C7AA82110508A6F38D87D0DB77ABAB7C13997BD788B7655304EC96D0B669F5D6"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-build.stderr.log",
+      "copy": "lead/lead-manifest-audit-r01-build.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-build.stdout.log",
+      "copy": "lead/lead-manifest-audit-r01-build.stdout.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-contract.stderr.log",
+      "copy": "lead/lead-manifest-audit-r01-contract.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-contract.stdout.log",
+      "copy": "lead/lead-manifest-audit-r01-contract.stdout.log",
+      "role": "Lead",
+      "sha256": "86170FB20E2BFD87D89E545132E9CB1BABC53935049AD0A17F3AE70D51C34321"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-format.stderr.log",
+      "copy": "lead/lead-manifest-audit-r01-format.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-format.stdout.log",
+      "copy": "lead/lead-manifest-audit-r01-format.stdout.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-modules.stderr.log",
+      "copy": "lead/lead-manifest-audit-r01-modules.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-modules.stdout.log",
+      "copy": "lead/lead-manifest-audit-r01-modules.stdout.log",
+      "role": "Lead",
+      "sha256": "B4537ED75F533F993F371954DE47E42A793B8E5B0587577DE7E27FB3E50696BD"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-race.stderr.log",
+      "copy": "lead/lead-manifest-audit-r01-race.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-race.stdout.log",
+      "copy": "lead/lead-manifest-audit-r01-race.stdout.log",
+      "role": "Lead",
+      "sha256": "A3601DD2CD3EBCA063A88B650D3E4938A3EB85D6C84D0096AB4162BE7FB5C948"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-results.json",
+      "copy": "lead/lead-manifest-audit-r01-results.json",
+      "role": "Lead",
+      "sha256": "B6570C3E41B639BB36A2366182B9CBDA2D0B99FFC439264663B9C7C968067931"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-unit.stderr.log",
+      "copy": "lead/lead-manifest-audit-r01-unit.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-unit.stdout.log",
+      "copy": "lead/lead-manifest-audit-r01-unit.stdout.log",
+      "role": "Lead",
+      "sha256": "A3601DD2CD3EBCA063A88B650D3E4938A3EB85D6C84D0096AB4162BE7FB5C948"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-vet.stderr.log",
+      "copy": "lead/lead-manifest-audit-r01-vet.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-manifest-audit-r01-vet.stdout.log",
+      "copy": "lead/lead-manifest-audit-r01-vet.stdout.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "Lead normalized binding from verified original maps",
+      "copy": "historical-snapshot-bindings.json",
+      "role": "Lead",
+      "sha256": "1A300EFED0457DAB2A725143F073F55EC8684D8747F50DA547FF87B844692153"
+    },
+    {
+      "source": "Lead normalized binding from verified original maps",
+      "copy": "overlay-relative.json",
+      "role": "Lead",
+      "sha256": "64FF2443082B17F34B2FCDC39C1293FB2164FB7E41243652BE0053D0FA8D66DB"
+    }
+  ]
+}

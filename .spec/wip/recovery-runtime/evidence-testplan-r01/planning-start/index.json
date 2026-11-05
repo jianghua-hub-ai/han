@@ -1,0 +1,56 @@
+{
+  "scope": "Actual Task-Planner write start after R01 failure -> original-author repair -> independent R02 closure and Main reception",
+  "author": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "submission": "01a1843a-fd83-7872-99ba-243c205915df",
+  "allowed": [
+    ".add/project/knowledge/tasks/tasks.md",
+    ".add/project/knowledge/plans/ir-01-content-community-batches.md",
+    ".add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+    ".add/project/knowledge/design-workspace/article-management/test-plan.md"
+  ],
+  "source_author_handoff": "Jason close_agent returned completed; no future testplan scenario writing transferred, only mappings and state metadata",
+  "task_and_batch_implementation": "NOT STARTED; no Go/PG/services, no new claims or closures",
+  "human_acceptance": "unknown",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/planning-authorization.json",
+      "sha256": "6D8523295C42B33CFDA572CA370BC882B960FE1D2D48211292E8E05B8C02D2E8"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/check_planning_scope.py",
+      "sha256": "D9AF7CE1601C560522500FC753E822C66D91AB5E401D6323DB56057935CB4F73"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/body-preservation.json",
+      "sha256": "352399198854B160B1875FE927D04C66688862B796A1717019B471D8A3205191"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/one-row-repair-proof.json",
+      "sha256": "40DD6AD3A9D79E6A883D9CCD2B4C85670E42797FF00C4D99228D992A352FD5BD"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/scope-repair-r01.json",
+      "sha256": "22FC031786B30FF2761A5269FE0AD592A7CC64A0B4AC7A47CCBDD09ACF2100DE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "8AA8A2ED4F1C295903F75A6CF9591C3F5C567A6F79DA4431A9A3D21C774B647F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/before/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "EC9563D6B3A9921DE217ECE92D0F1B421644C4ED3FCF570D8B768B10A128E183"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/before/.add/project/knowledge/design-workspace/article-management/test-plan.md",
+      "sha256": "E39C980C041CAC0C0A5441A9DDC52E51024C75E1911A7EE22B5332EDE66B9EDE"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-start/before/.add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+      "sha256": "E6906617E51CC349B783896A3A1D828DA4AA8A03716D0C104E77E9AB40680CF6"
+    }
+  ]
+}

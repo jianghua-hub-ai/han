@@ -1,0 +1,158 @@
+{
+  "scope": "design-review-r02",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "runtime_id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-design-review-r02-17b4cbb6b1f14e009d75e9b1e083b2e7",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/audit.py",
+      "sha256": "B919D04F16E6EC8604445348C99B4351786926728124BC5F160257FB29146A6B",
+      "bytes": 4550,
+      "source_name": "audit.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/commands.md",
+      "sha256": "6BAEF6997E0032E3527119BA8D3C1898DB322C6E05D3D93CBD16E926653ECF5F",
+      "bytes": 1875,
+      "source_name": "commands.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/finalize.py",
+      "sha256": "2E9A727BD87FCFA1A9694DCC8EDD906CF54EAEE8EFB3344D2849790E93AEFBAD",
+      "bytes": 6104,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/initial.json",
+      "sha256": "724921A5EE6B1D6C9DCB7E29AF57453FAC5DCB19C87F74984666941AF905DF5B",
+      "bytes": 716,
+      "source_name": "initial.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/initialize.py",
+      "sha256": "7E3ED0BD45139B11DA64D026068B0863C285D6E3D37B38CBFF747055F15EA322",
+      "bytes": 1235,
+      "source_name": "initialize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-0bc7552bcbb14f08af0d2a4d3d3a2cf0.json",
+      "sha256": "20CC16F35EDD6CF38CAAC9A6CF902707B507931BD68F086772F2D58C048459D2",
+      "bytes": 369,
+      "source_name": "read-0bc7552bcbb14f08af0d2a4d3d3a2cf0.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-19b35e35ac4549bbaed16e033ef27fef.json",
+      "sha256": "FACBDE94DFD7C4DB37A1297B0B22F48261306B5FD534DEAEB65C5BA7ADD41B0A",
+      "bytes": 377,
+      "source_name": "read-19b35e35ac4549bbaed16e033ef27fef.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-455a0d6628704303bbb4caffa833501f.json",
+      "sha256": "9252F3A6F22DEAD10FB7C06539D5C567E60A05C5625EC1683086B8C816925650",
+      "bytes": 279,
+      "source_name": "read-455a0d6628704303bbb4caffa833501f.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-5bef332c945840b1aed2f872394c3fc3.json",
+      "sha256": "0D79F3AA1516EE26FB9DBBE39D83071D1B58FD67DBE12FDF76C4BF09D462E11D",
+      "bytes": 371,
+      "source_name": "read-5bef332c945840b1aed2f872394c3fc3.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-5d2582e5297d425993ed2144d0b0452b.json",
+      "sha256": "8EF86C975B5E4166B5FB7693A8242A17860DF20EE117F5BB4D8101A90FA448DE",
+      "bytes": 359,
+      "source_name": "read-5d2582e5297d425993ed2144d0b0452b.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-8946c2e1c01d453587ddc604070a7567.json",
+      "sha256": "A0E79576EFC9345259019A3B31E2F55FE53B9A3C3BDD4A17A1DDDE74A36B250C",
+      "bytes": 369,
+      "source_name": "read-8946c2e1c01d453587ddc604070a7567.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-8fcd166163574ba589c0244b6e8ef5d9.json",
+      "sha256": "E3624DED1EC342E8A880EFA49564868EB9634DCF6C6BF9B6538147D0584DE109",
+      "bytes": 309,
+      "source_name": "read-8fcd166163574ba589c0244b6e8ef5d9.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-a5327fdf891245cd98429e6d14a48ebf.json",
+      "sha256": "0623DFF4F5335088A35C4D2DC6E803599A90B8E15A841927A8A6C8D87AB2EDAF",
+      "bytes": 320,
+      "source_name": "read-a5327fdf891245cd98429e6d14a48ebf.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-ab4f29c10757428582ad6e993e13b5bb.json",
+      "sha256": "65B32CDB576816311D8A8F5BE95251B52CF4A08EB785E3E798B675CCC940DAB3",
+      "bytes": 359,
+      "source_name": "read-ab4f29c10757428582ad6e993e13b5bb.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-afcea16dd4c048df84b0e7ae529f4727.json",
+      "sha256": "5463525D6D555D58633F8B4D35B3B52F2D195F81911445320F4BEA1A5DFDAD4A",
+      "bytes": 385,
+      "source_name": "read-afcea16dd4c048df84b0e7ae529f4727.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read-ebefd99afafa4431b353a23c204d0d08.json",
+      "sha256": "97405C647F4ECC5E16DE0589583F028DE72F95369AF969BF367D9938BC55E6CD",
+      "bytes": 356,
+      "source_name": "read-ebefd99afafa4431b353a23c204d0d08.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/read.py",
+      "sha256": "3622562D0230501A29DFF62BA92E6C135F08153FA48BE7889E00564E9DE71FB2",
+      "bytes": 1140,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/readset.jsonl",
+      "sha256": "7414C2213E3644D779EFE4842FACD8025172FA4596E65AA9E352553165BA8B9A",
+      "bytes": 3550,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/readset.md",
+      "sha256": "C40EC8D10D301E23E6187C097BDC536EA76ECFEE0DF1601D9155C97DA258833C",
+      "bytes": 2508,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/receipt.json",
+      "sha256": "329ECED99937C929DCCA03249ECB59DABC7F8F053470962895A993A468D18B9A",
+      "bytes": 3008,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/receipt.md",
+      "sha256": "68C0E32237FCE7F0E26804D6DB97CABA910D3F1211282C834C0079B6F884DCE3",
+      "bytes": 1014,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/review-report.md",
+      "sha256": "21408124976E38F96C07DFF4444CA52602EBB7AC93740E9D6905A20EE66C26FF",
+      "bytes": 5411,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/sha256sums.txt",
+      "sha256": "B4FF0098D9A7094D271567DEE31A5C0053997AAD50B07C3169492A67D63140BC",
+      "bytes": 2150,
+      "source_name": "sha256sums.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/design-review-r02/static-verification.json",
+      "sha256": "87137E7A3A39D1DB0152E17369BEFEB959E2A9B3FD0CDCAA1D6D3E1A2A87A979",
+      "bytes": 2850,
+      "source_name": "static-verification.json"
+    }
+  ]
+}

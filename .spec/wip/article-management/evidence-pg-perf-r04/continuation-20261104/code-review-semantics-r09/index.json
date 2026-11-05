@@ -1,0 +1,62 @@
+{
+  "scope": "R09 N9 execution evidence only",
+  "gate": "PARTIAL/PENDING, eight actual subtest PASS and one seed failure; 10k drain NOT REACHED",
+  "baseline": "7 CLOSED / 11 PENDING",
+  "updates": {
+    "F015": "CLOSED",
+    "F016": "CLOSED"
+  },
+  "closed": [
+    "F001",
+    "F003",
+    "F004",
+    "F005",
+    "F008",
+    "F010",
+    "F015",
+    "F016",
+    "F018"
+  ],
+  "pending": [
+    "F002",
+    "F006",
+    "F007",
+    "F009",
+    "F011",
+    "F012",
+    "F013",
+    "F014",
+    "F017"
+  ],
+  "evidence_gap": {
+    "id": "SEM-R09-EV001",
+    "severity": "MEDIUM evidence gap, not confirmed residual source bug",
+    "scope": "F011/F012 participant results and final article/audit raw snapshots missing"
+  },
+  "old_E001": "CLOSED unchanged",
+  "checks_passed": 932,
+  "actual_Go_exit": 1,
+  "all_consumed_inputs_stable_at_closeout": true,
+  "full_performance": "PERMANENT NRU; no stage authorized by this review",
+  "files": {
+    "report.md": {
+      "bytes": 14946,
+      "sha256": "604C08C44DE2A21E6A6B22EDF5D7ADC074B781EBFF6B90A8B7A14413CCDCF581"
+    },
+    "verdict.md": {
+      "bytes": 2411,
+      "sha256": "8D4054F0D2A2C858170C3C2E0A5CB44A4E12609BDD44A9EFE1348C7D28786470"
+    },
+    "evidenceaudit.json": {
+      "bytes": 355177,
+      "sha256": "E54969DB08E3699B7F5313E702FA386AF5817DD966DC0D47D7C0163CF7BC4F65"
+    },
+    "offline-audit.py": {
+      "bytes": 16514,
+      "sha256": "6805206CB4D9E1B468CACD8359F73C77D36E92D20D0B5089417950F65B6E6759"
+    }
+  },
+  "actual_STOP_utc": "2026-11-04T12:13:36.290301+00:00",
+  "actual_STOP_Asia_Shanghai": "2026-11-04T20:13:36.290301+08:00",
+  "boundary": "STOP R09 N9 evidence review; any newly delegated seed design review is separate and does not change this record; no Go/PG/Git/source/Tasks/Plan/author-material writes"
+}

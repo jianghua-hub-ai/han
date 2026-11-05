@@ -1,0 +1,45 @@
+{
+  "actor": "Main actual C2 observation and escalation",
+  "role_source": "Noether/add-backend-dev/01a1861b-9405-7942-8dd2-2db8b8d39eb2",
+  "actual_reads": "c2-gap.json full; both result metadata and final raw failure diagnostics; actual Append/withLock/appendNew and both regression tests; Runtime Complete/Fault/drain consumers",
+  "finding": "Successful Complete clears own cause before subsequent context/media/namespace validation/Close can still fail; actual ordinary Acquire succeeds after Append fails",
+  "status": "OPEN, affected completion slice stopped; design owner formally notified; unrelated core/S49 continues",
+  "not": "Not independent Review or reopening historical findings; no final source binding/PG/full-card PASS",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-main-observation-r01/c2-gap.json",
+      "sha256": "E5CC5228CB6C4FDDCA3C9ADDF62F380C48A7CCC0278E1FD55C0A2FC0CB77F50D",
+      "provenance": "Noether own implementation probe; copied by Main, not independent Review"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-main-observation-r01/late-close-probe-r01.json",
+      "sha256": "213D794D39770E02BFF3E681225729CC2D5F6B0E5956AB0C3104B72C32845CED",
+      "provenance": "Noether own implementation probe; copied by Main, not independent Review"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-main-observation-r01/late-close-probe-r01.raw",
+      "sha256": "BD30E3CF1EABCEB4434A4D10EFE900F15DDAF7ABCC78EDD82941A538905A64FF",
+      "provenance": "Noether own implementation probe; copied by Main, not independent Review"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-main-observation-r01/late-cancel-probe-r01.json",
+      "sha256": "6EFAF6C0E3F62DA804343D72916F24790C46D9E32B0744261F049C4A914CC352",
+      "provenance": "Noether own implementation probe; copied by Main, not independent Review"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-main-observation-r01/late-cancel-probe-r01.raw",
+      "sha256": "9F323D9EEDF413D387EF95D2A038031BD7C6D4B1D4E3DD1F785F4F9344CCE0D0",
+      "provenance": "Noether own implementation probe; copied by Main, not independent Review"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-main-observation-r01/deletion_journal_anchor.go.frozen",
+      "sha256": "659ECACE9F2906BCAF8E363AD6EAF68AA1DEEB3AC43CE989EC0E258C49C4EB28",
+      "provenance": "Main active intermediate snapshot only, NOT final frozen author delivery"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-main-observation-r01/deletion_journal_anchor_test.go.frozen",
+      "sha256": "74E0A3FB5BC6156B172A8C29CF4EBC1FAF98DC0F511416E7CF0CE630371906A2",
+      "provenance": "Main active intermediate snapshot only, NOT final frozen author delivery"
+    }
+  ]
+}

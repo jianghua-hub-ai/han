@@ -1,0 +1,135 @@
+{
+  "scope": "s3.3-g0-r01",
+  "at": "2026-10-28T03:43:35.492506+00:00",
+  "original_index_sha256": "10E8F767E161F7225D577C50AA500A5533B043B55AAE136E55781BCA9D9BC942",
+  "records": [
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\candidate-selection.json",
+      "copy": "candidate-selection.json",
+      "sha256": "7E27BC46EB01EB25FC263BA37B8241F7FD15B752B88339D628A870D4E45141AD",
+      "bytes": 1590
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\documents-guard-before.json",
+      "copy": "documents-guard-before.json",
+      "sha256": "AF1EFA7F45BB8CF1A3727D79B2C3D3940EB31BC298D7C63770D27D35BBDBB7F4",
+      "bytes": 37
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\encoding-failure.snapshot",
+      "copy": "encoding-failure.snapshot",
+      "sha256": "54C434AF41C668540B4A58061B52CB7A94B9FB17C6B8ABA979BDD9E03DDDE2CB",
+      "bytes": 14801
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\g0-handoff.txt",
+      "copy": "g0-handoff.txt",
+      "sha256": "B70CF44E82A247DCA290338AE4EB709C94E2E85C12ACCFB097FA763AFCE0AF53",
+      "bytes": 3344
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\g0-prep-english.superseded.txt",
+      "copy": "g0-prep-english.superseded.txt",
+      "sha256": "E06F947D9A7549CB4BF8D5C690311769EBBA2566862B6C65B570E5C77C8D8376",
+      "bytes": 16090
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\g0-prep.md",
+      "copy": "g0-prep.md",
+      "sha256": "54C434AF41C668540B4A58061B52CB7A94B9FB17C6B8ABA979BDD9E03DDDE2CB",
+      "bytes": 14801
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\materials5-guard-before.json",
+      "copy": "materials5-guard-before.json",
+      "sha256": "4E15A36A793A74DEF3775DA962C2088CFE1040A412FBD0A4CBE0EC7F2DE7B77F",
+      "bytes": 37
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\materials5guard-final.json",
+      "copy": "materials5guard-final.json",
+      "sha256": "31DA78B727E1A1A5731F39E12730027DA85D7B9936899A42903DAF97F778EEC6",
+      "bytes": 1146
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\plan-peer-diff.txt",
+      "copy": "plan-peer-diff.txt",
+      "sha256": "F0A544F229C8EC243E568A57DBC18133F6058292DD103E3F196A8977D813BD41",
+      "bytes": 6777
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\prior-raw-analysis.json",
+      "copy": "prior-raw-analysis.json",
+      "sha256": "0831630E2A0B533BE1D2E676FE88616E81731A5DE32B099535BEF81FC269EB66",
+      "bytes": 11472
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\protection-final.json",
+      "copy": "protection-final.json",
+      "sha256": "4134F69D98241EEEDB0E0EB79E1B58EC2897C1B35F7240B594A1F8366AFE852E",
+      "bytes": 1566
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\read.py",
+      "copy": "read.py.txt",
+      "sha256": "DC7454F893E48B27F718B75B33E7CC7F7DF0C6559A8BB633DE91C5D38A1EB815",
+      "bytes": 638
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\readset.jsonl",
+      "copy": "readset.jsonl",
+      "sha256": "56332F246394045F0B080F30846D686CF6006D89775045ED00AB7A2C56F91571",
+      "bytes": 19448
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\s33-card.before.bin",
+      "copy": "s33-card.before.bin",
+      "sha256": "486581BD23D56280476072C4CB0AE20023DB2CF4DC34E0CDC73887BBA95C8517",
+      "bytes": 3063
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\s33-card.final.bin",
+      "copy": "s33-card.final.bin",
+      "sha256": "486581BD23D56280476072C4CB0AE20023DB2CF4DC34E0CDC73887BBA95C8517",
+      "bytes": 3063
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\source183-guard-before.json",
+      "copy": "source183-guard-before.json",
+      "sha256": "1DE4CFBB56ED000EF279CA353DD5C9AF6B650DF9E2F088FB7E44AD72CF8FE175",
+      "bytes": 39
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\source183guard-final.json",
+      "copy": "source183guard-final.json",
+      "sha256": "B4DC64D023DA0139F98DE1D8C0DB276F1B99880587B74B7C9353E6DBB41EA5CB",
+      "bytes": 40143
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\status-before.txt",
+      "copy": "status-before.txt",
+      "sha256": "4C575834E55AA0052E5B40B66CBD89FC4AF6E1944599E4FDA0DE1B2289D7B309",
+      "bytes": 15135
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\status-final.txt",
+      "copy": "status-final.txt",
+      "sha256": "06FE87ED6341B1C86A46CCFD79C4B501565578D2A620C9003E0D250FDE2E6BC2",
+      "bytes": 15248
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\tasks-peer-diff.txt",
+      "copy": "tasks-peer-diff.txt",
+      "sha256": "C733482C60A293522BA7B593ADF90F12036F2714439277FE82765D1B279CA701",
+      "bytes": 6930
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-g0-backend-w85drin0\\index.json",
+      "copy": "original-index.json",
+      "sha256": "10E8F767E161F7225D577C50AA500A5533B043B55AAE136E55781BCA9D9BC942",
+      "bytes": 4524
+    }
+  ],
+  "source_binding_index": "../prep-r01/index.json",
+  "limits": "No cache or live credentials copied. Scope waivers are NOT RUN, not platform/browser PASS; seven application checks are same-source evidence from the previous run, not newly executed."
+}

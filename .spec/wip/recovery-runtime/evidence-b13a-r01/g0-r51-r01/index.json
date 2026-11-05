@@ -1,0 +1,20 @@
+{
+  "scope": "g0-r51-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-g0-r51-w75a6t1j",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/g0-r51-r01/receipt.json",
+      "sha256": "52C82EED8F1985F1D6AFDDADD4A16C6B655AACADE2FF2D8DE32F2A712984D998",
+      "bytes": 3940,
+      "source_name": "receipt.json"
+    }
+  ]
+}

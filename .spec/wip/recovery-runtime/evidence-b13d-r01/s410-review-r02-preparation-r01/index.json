@@ -1,0 +1,97 @@
+{
+  "scope": "s410-review-r02-preparation-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Confucius",
+    "runtime_id": "01a1890f-a330-73d1-86fb-236777c54751"
+  },
+  "source_temp": "D:\\Temp\\han-s410-review-r02-prep-63cddxb4",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/config.preparation.json",
+      "sha256": "35B6FA246815D9001688C2704B9CE1EC7C1DB974605372F9B5986FE2AA8B3EFE",
+      "bytes": 2525,
+      "source_name": "config.preparation.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/oracles/r01-invented-exact.go.txt",
+      "sha256": "F5315963322D0AB79C0730B7439383FEFD8E9B954F3342E15505342C15961EFB",
+      "bytes": 1407,
+      "source_name": "oracles/r01-invented-exact.go.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/oracles/r01-nine-exact.go.txt",
+      "sha256": "2A6860D19683E890C6AA7EAF451B3E52D4DECF6E02ECA3F98BF54D24764F1FC3",
+      "bytes": 10335,
+      "source_name": "oracles/r01-nine-exact.go.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/oracles/r01-ten-exact.go.txt",
+      "sha256": "1C83617D965512AAAAA012AACE12DFABC955F7A21D19F8038BA5F6C475651359",
+      "bytes": 11742,
+      "source_name": "oracles/r01-ten-exact.go.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/oracles/r02-legal-contracts.go.txt",
+      "sha256": "996CCE3A3AF9CC72D8D5596DE61A7DB4313E2300EE0F40FC61D426BD6BC4F2B0",
+      "bytes": 5591,
+      "source_name": "oracles/r02-legal-contracts.go.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/owned_windows.py",
+      "sha256": "6FD58BE2B28FDDDB47EC3F2F534EAFDAF7EE2CB5C4EC54772D18C357EE1085BD",
+      "bytes": 10211,
+      "source_name": "owned_windows.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/packet/preparation-checks.json",
+      "sha256": "8C6754037227B669BD8A3B8B7034DE37B44194E9D85070F5567FF8AD118E124B",
+      "bytes": 1485,
+      "source_name": "packet/preparation-checks.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/packet/r01-input-immutability.json",
+      "sha256": "5D821F6ACF1F861DF96BA0E5901700EC295E888EA0BE2FFD0F6A2BDDE8C884E7",
+      "bytes": 1303,
+      "source_name": "packet/r01-input-immutability.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/packet/readiness.md",
+      "sha256": "D8DECD76C3A12007E22D846EF7FB9EAA0928B0D785A26DFC210F4A13AC29DEE7",
+      "bytes": 6487,
+      "source_name": "packet/readiness.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/packet/receipt.json",
+      "sha256": "B6DF42B317E28AC7181738F081412FD65CAC8C430FDA499791BE8B8893F33D1E",
+      "bytes": 1334,
+      "source_name": "packet/receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/preparation-manifest.json",
+      "sha256": "8D12A10EBFB3CFF93590432B41594C9D5C9FCD4A2E52F55CA07E48C07C7FD8C6",
+      "bytes": 2134,
+      "source_name": "preparation-manifest.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/preparation-manifest.sha256",
+      "sha256": "6059EEE81F219F2B97E6FF971E7336EE7A6A2033A43F6FC22E9A5AD862EB90A8",
+      "bytes": 93,
+      "source_name": "preparation-manifest.sha256"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/run_r02.py",
+      "sha256": "4105F9A7A465A6A0162DC846E9DD5E7DCB4A27D3F34C3583CE1F800B450967CB",
+      "bytes": 9779,
+      "source_name": "run_r02.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-review-r02-preparation-r01/runner_common.py",
+      "sha256": "2311B857022FA6FC781C801F048CE2CDD8879190DECA2689C19328793DBC21CB",
+      "bytes": 6918,
+      "source_name": "runner_common.py"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

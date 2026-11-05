@@ -1,0 +1,360 @@
+{
+  "scope": "Real compiled component counter mismatch; controlled Journal/Replayer/facts and existing memory Store, not PG/real Journal/old backup",
+  "captured_at": "2026-10-27T21:51:18.233597+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\actual-readset.json",
+      "copy": "author/actual-readset.json",
+      "role": "Dalton",
+      "sha256": "30C594228F005C6DD22E432E8CE343E09FF8D7F6BCEAA5931F187C7927022126"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\append-only.patch",
+      "copy": "author/append-only.patch",
+      "role": "Dalton",
+      "sha256": "781A009AF4D3C3737A2A2BC3D9E8030E61030C673AA04901534167741C5EB6B3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\append.raw.go.txt",
+      "copy": "author/append.raw.go.txt",
+      "role": "Dalton",
+      "sha256": "80736DF71368469FAB1C52BA90EF3F36BE1C723F5626272D1D6FA0BB9F1F4D6C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\build-overlay.py",
+      "copy": "author/build-overlay.py.txt",
+      "role": "Dalton",
+      "sha256": "4B515D85131B6E8F5524ECD33F4D74E09122C18566D5CA965D369B976C616E97"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\deletion_replay_source_test.overlay.go.txt",
+      "copy": "author/deletion_replay_source_test.overlay.go.txt",
+      "role": "Dalton",
+      "sha256": "DF7B88B10543D51E47C246D4E85130DE7ECFC7E7CA3A855B6334C084011B97D3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\diagnosis.md",
+      "copy": "author/diagnosis.md",
+      "role": "Dalton",
+      "sha256": "F455CFF61D674491C2FCE1D9A5A932B608B183AEEFE6ECE7E0C56B81DAC15D86"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\finalize.py",
+      "copy": "author/finalize.py.txt",
+      "role": "Dalton",
+      "sha256": "24BF9AA0AB96924CC6CA66345748C83D8A5EDFA844607B27B3E69F30C2665933"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\frozen179.json",
+      "copy": "author/frozen179.json",
+      "role": "Dalton",
+      "sha256": "F253083287B30E43305459E0B146B9E439376DA27B94ADBDB9C194C59C17A700"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\go-process-at-stop.json",
+      "copy": "author/go-process-at-stop.json",
+      "role": "Dalton",
+      "sha256": "AFF57988C4F06D728B989BDBAD73061DFE47347766B87246918751DDCFD29562"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\init.py",
+      "copy": "author/init.py.txt",
+      "role": "Dalton",
+      "sha256": "32EB56C3ECF7451F1DD8F91CEDEAAA04FBDDB72CDF4D19EBE8AF700B1DEA3E35"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\launch.ps1",
+      "copy": "author/launch.ps1.txt",
+      "role": "Dalton",
+      "sha256": "A9967E843B362988E11E98D29CBF2A8F4B1FF7EB62E586A2962B901613F89F64"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\observations.json",
+      "copy": "author/observations.json",
+      "role": "Dalton",
+      "sha256": "1299FBC15ABEBFC5DC580F348D48D741E234A846F70F1790A000DE7E61E27C7B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\overlay-binding.json",
+      "copy": "author/overlay-binding.json",
+      "role": "Dalton",
+      "sha256": "1D97BECC27E94020AA8B9A0C424ECA9760C286371605E6C7F483298B80780C3A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\overlay.json",
+      "copy": "author/overlay.json",
+      "role": "Dalton",
+      "sha256": "1C11F9C1C40AFEE2C28B9D4B8D2CE6CA642DD467A0F80B99D4D0D84EFFE4D331"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\raw-meta-index.json",
+      "copy": "author/raw-meta-index.json",
+      "role": "Dalton",
+      "sha256": "2AA10C7E94359B4E9186564E5F2FBF032890480FD68A3732E57427D33BA657E7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-01.meta.json",
+      "copy": "author/reproduce-01.meta.json",
+      "role": "Dalton",
+      "sha256": "6D44DD2FC4E765D351A8354BF6AA7BCC0558BE82A5FA03A3504CD2FB89C2D32D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-01.stderr.log",
+      "copy": "author/reproduce-01.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-01.stdout.jsonl",
+      "copy": "author/reproduce-01.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "191F8BC643640FDEF5E89D16B92C243B5A5E1807497554A5CCF460B2DFC2176E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-02.meta.json",
+      "copy": "author/reproduce-02.meta.json",
+      "role": "Dalton",
+      "sha256": "EC15C2C0AC2BEDD8FE9B4B536DC3E8AD0D0EEC1C05C648F38DCD3285668D776D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-02.stderr.log",
+      "copy": "author/reproduce-02.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-02.stdout.jsonl",
+      "copy": "author/reproduce-02.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "E22AD94093E19BF82B486E8B082697A372CBF5953C75977A124713ACB0EA45D2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-03.meta.json",
+      "copy": "author/reproduce-03.meta.json",
+      "role": "Dalton",
+      "sha256": "32F0EC157733E5B64DDAFF8FE5BE80017EE17BB245785682090ABB0FCCFEA18F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-03.stderr.log",
+      "copy": "author/reproduce-03.stderr.log",
+      "role": "Dalton",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\reproduce-03.stdout.jsonl",
+      "copy": "author/reproduce-03.stdout.jsonl",
+      "role": "Dalton",
+      "sha256": "3BDC0277A85142085A2D41F7A5FE2FE51CF16E36B4125CB6B45483FA97AA9364"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1381495677\\inventory.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1381495677/inventory.json",
+      "role": "Dalton",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1381495677\\ReadStatus.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1381495677/ReadStatus.json",
+      "role": "Dalton",
+      "sha256": "3F318A55A6E766BD89CFD59ECB7CE0065E5027E7F5729956ACB327942F5B00F1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1381495677\\replay-canonical.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1381495677/replay-canonical.json",
+      "role": "Dalton",
+      "sha256": "0FB9835E2F692F82BDEE5BD30A170B50AD6A6AE0CF26FFAB40FD12CB4A6CAC12"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1381495677\\ReplayAndVerify.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1381495677/ReplayAndVerify.json",
+      "role": "Dalton",
+      "sha256": "C4C50B07050F0FE21030423F9ECF775B89BFC4E03D38BC374F9521451C399F90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1381495677\\snapshot-canonical.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1381495677/snapshot-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1993721621\\inventory.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1993721621/inventory.json",
+      "role": "Dalton",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1993721621\\ReadStatus.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1993721621/ReadStatus.json",
+      "role": "Dalton",
+      "sha256": "3F318A55A6E766BD89CFD59ECB7CE0065E5027E7F5729956ACB327942F5B00F1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1993721621\\replay-canonical.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1993721621/replay-canonical.json",
+      "role": "Dalton",
+      "sha256": "0FB9835E2F692F82BDEE5BD30A170B50AD6A6AE0CF26FFAB40FD12CB4A6CAC12"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1993721621\\ReplayAndVerify.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1993721621/ReplayAndVerify.json",
+      "role": "Dalton",
+      "sha256": "C4C50B07050F0FE21030423F9ECF775B89BFC4E03D38BC374F9521451C399F90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-1993721621\\snapshot-canonical.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-1993721621/snapshot-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-3585331527\\inventory.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-3585331527/inventory.json",
+      "role": "Dalton",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-3585331527\\ReadStatus.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-3585331527/ReadStatus.json",
+      "role": "Dalton",
+      "sha256": "3F318A55A6E766BD89CFD59ECB7CE0065E5027E7F5729956ACB327942F5B00F1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-3585331527\\replay-canonical.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-3585331527/replay-canonical.json",
+      "role": "Dalton",
+      "sha256": "0FB9835E2F692F82BDEE5BD30A170B50AD6A6AE0CF26FFAB40FD12CB4A6CAC12"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-3585331527\\ReplayAndVerify.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-3585331527/ReplayAndVerify.json",
+      "role": "Dalton",
+      "sha256": "C4C50B07050F0FE21030423F9ECF775B89BFC4E03D38BC374F9521451C399F90"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\CompletedAlreadyAbsent-3585331527\\snapshot-canonical.json",
+      "copy": "author/retained-fixtures/CompletedAlreadyAbsent-3585331527/snapshot-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-1734925510\\inventory.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-1734925510/inventory.json",
+      "role": "Dalton",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-1734925510\\ReadStatus.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-1734925510/ReadStatus.json",
+      "role": "Dalton",
+      "sha256": "CFD6410427522F537772D1ED930E14E84F8AAE41D2866990A3F20CC39DCBBDEC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-1734925510\\replay-canonical.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-1734925510/replay-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-1734925510\\ReplayAndVerify.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-1734925510/ReplayAndVerify.json",
+      "role": "Dalton",
+      "sha256": "CFD6410427522F537772D1ED930E14E84F8AAE41D2866990A3F20CC39DCBBDEC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-1734925510\\snapshot-canonical.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-1734925510/snapshot-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-398890283\\inventory.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-398890283/inventory.json",
+      "role": "Dalton",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-398890283\\ReadStatus.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-398890283/ReadStatus.json",
+      "role": "Dalton",
+      "sha256": "CFD6410427522F537772D1ED930E14E84F8AAE41D2866990A3F20CC39DCBBDEC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-398890283\\replay-canonical.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-398890283/replay-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-398890283\\ReplayAndVerify.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-398890283/ReplayAndVerify.json",
+      "role": "Dalton",
+      "sha256": "CFD6410427522F537772D1ED930E14E84F8AAE41D2866990A3F20CC39DCBBDEC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-398890283\\snapshot-canonical.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-398890283/snapshot-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-4291625030\\inventory.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-4291625030/inventory.json",
+      "role": "Dalton",
+      "sha256": "FA2A327C9632C711F150FF91094674974E51C9D4990CB856FF934848E750D991"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-4291625030\\ReadStatus.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-4291625030/ReadStatus.json",
+      "role": "Dalton",
+      "sha256": "CFD6410427522F537772D1ED930E14E84F8AAE41D2866990A3F20CC39DCBBDEC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-4291625030\\replay-canonical.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-4291625030/replay-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-4291625030\\ReplayAndVerify.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-4291625030/ReplayAndVerify.json",
+      "role": "Dalton",
+      "sha256": "CFD6410427522F537772D1ED930E14E84F8AAE41D2866990A3F20CC39DCBBDEC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\retained-fixtures\\DeletedCounterControl-4291625030\\snapshot-canonical.json",
+      "copy": "author/retained-fixtures/DeletedCounterControl-4291625030/snapshot-canonical.json",
+      "role": "Dalton",
+      "sha256": "769B97F01C2D50CD38F0F89B26DCD0CBAD60B023C41DBD7D7AB1CDD50880DDB2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\run.py",
+      "copy": "author/run.py.txt",
+      "role": "Dalton",
+      "sha256": "BEF747D2977ECE1D9174A80F4BD88C665A822D6E720ABDD92F53027484E85775"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\source179-after.json",
+      "copy": "author/source179-after.json",
+      "role": "Dalton",
+      "sha256": "C7359ECB2E701FAC88F99201ACB70A5C915F57B6794B2460D2F9FE7BBEED8B91"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-counter-diag-81a599b6539545049aa712811de495831\\stopped.json",
+      "copy": "author/stopped.json",
+      "role": "Dalton",
+      "sha256": "BBAD7C82E9C085FAAB1BFB8DA44B8EB83D8FCB2C6A92A8E19682E2093856EDA9"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-diagnostic-evidence-verification.json",
+      "copy": "lead-evidence-verification.json",
+      "role": "Lead",
+      "sha256": "ACB2C0F74C0A2225F0A36876AAFAD96AECE2091CA44830AC54520A6B6AD4DDB6"
+    },
+    {
+      "source": "Lead normalized binding of verified179 and original overlay",
+      "copy": "snapshot-overlay-binding.json",
+      "role": "Lead",
+      "sha256": "E0A387458A80B85056871C9ACF2A9CD89118F823D5DE25F19AA02C4C514E14D1"
+    }
+  ]
+}

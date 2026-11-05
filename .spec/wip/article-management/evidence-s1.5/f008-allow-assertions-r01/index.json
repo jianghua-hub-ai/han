@@ -1,0 +1,103 @@
+{
+    "schema":  "s1.5.f008-allow-assertions.r01",
+    "generated_at":  "2026-10-31T23:12:08+08:00",
+    "finding":  "S15-RE-F008",
+    "revision_semantics":  {
+                               "kind":  "worktree_snapshot",
+                               "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+                               "head_contains_go_code":  false,
+                               "reconstructable_via_checkout":  false,
+                               "note":  "HEAD 提交不含 Go 代码；cmd/ 未跟踪，一致性只用 SHA256/字节核对。"
+                           },
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "authorization":  "用户 2026-10-31 持续授权“对待确认或决策项采用建议值并继续本项目”；ADR-0028 AI 代理执行，非真人签收。",
+    "source_review":  {
+                          "path":  ".spec/wip/article-management/review-code-s1.5-root-endpoints-r01.md",
+                          "sha256":  "DA2BD8D786C13A951343C095EBF48BEA2A14973322B9F0FB53CB5ABE375D34B4",
+                          "finding":  "S15-RE-F008：三条 orphan 路由仅断言 405，缺 Allow 精确值与仅 trace 事件断言"
+                      },
+    "change":  {
+                   "file":  "cmd/han-server/main_test.go",
+                   "before":  {
+                                  "sha256":  "0E61F4A37D314D2D35B80EA8184BEF17EB6227FCAF1CA0F57C09736005185820",
+                                  "bytes":  399522
+                              },
+                   "after":  {
+                                 "sha256":  "220A49CD813C02C2224293EDE2E5D4B9350F550C118552D302B5A24DC6DE453B",
+                                 "bytes":  400192
+                             },
+                   "helper":  "requireOrphanProductionRejection 内 method 分支新增 Allow 精确断言与 events/resolver 断言；新增 mainOrphanAllow"
+               },
+    "expectations":  {
+                         "list":  "GET",
+                         "detail":  "GET, DELETE",
+                         "delete":  "GET, DELETE",
+                         "publish":  "POST",
+                         "transfer":  "POST"
+                     },
+    "production_routes":  {
+                              "main.go:3612":  "GET /api/v1/admin/orphan-articles -\u003e handlers[13], allow GET",
+                              "main.go:3614":  "publish -\u003e handlers[15], allow POST",
+                              "main.go:3616":  "transfer -\u003e handlers[16], allow POST",
+                              "main.go:3652":  "orphan detail/delete -\u003e allow GET, DELETE",
+                              "main.go:3668-3675":  "405 时 Set(\"Allow\", allow) 后立即 WriteError 返回"
+                          },
+    "runs":  [
+                 {
+                     "name":  "targeted-normal",
+                     "command":  "go test ./cmd/han-server -run \u0027TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity\u0027 -count=1 -v",
+                     "exit":  0,
+                     "result":  "PASS，33 leaves，1.36s",
+                     "log":  "f008-targeted-normal.log",
+                     "sha256":  "E41F06EB6B47D1E7D0B6E60901DF764D291CC86C45AE06F06FDB92EC2DBF4BC2",
+                     "bytes":  7111
+                 },
+                 {
+                     "name":  "targeted-race",
+                     "command":  "go test ./cmd/han-server -run \u0027orphan|Orphan\u0027 -count=1 -race",
+                     "exit":  0,
+                     "result":  "ok han/cmd/han-server 2.891s",
+                     "log":  "f008-targeted-race.log",
+                     "sha256":  "041EC8C927FB9F1DC1D97ACE734677A984A1475612BEFDA51480FFC5E940AD3F",
+                     "bytes":  35
+                 },
+                 {
+                     "name":  "full-package-normal",
+                     "command":  "go test ./cmd/han-server -count=1",
+                     "exit":  0,
+                     "result":  "ok han/cmd/han-server 40.455s",
+                     "log":  "full-package-normal.log",
+                     "sha256":  "D0B8E639A7E0901A4F349270CCEA02EC71A65C62B9E910EABC9757159721DFD3",
+                     "bytes":  36
+                 },
+                 {
+                     "name":  "go-vet",
+                     "command":  "go vet ./cmd/han-server",
+                     "exit":  0,
+                     "result":  "无输出",
+                     "log":  "go-vet.log",
+                     "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                     "bytes":  0
+                 }
+             ],
+    "artifacts":  [
+                      {
+                          "name":  "report.md",
+                          "sha256":  "941F321F3674E0DD5DE712FAEEE01BE155172EFC338535ACD4EC60C56E16705D",
+                          "bytes":  4055
+                      }
+                  ],
+    "production_untouched":  {
+                                 "cmd/han-server/main.go":  {
+                                                                "sha256":  "6D5373CA1535C41A5FA340D2B75834EB7E15AEEE39ABF9928BD0E0A210CF8727",
+                                                                "bytes":  173317
+                                                            }
+                             },
+    "boundaries":  [
+                       "仅证明进程内真实业务 root 的 method/Allow/事件次序",
+                       "不证明真实 Session/SQL、真实 PostgreSQL、Journal/旧备份、Case18、ACL、部署 E2E",
+                       "尚未经非作者独立复审与人的接收；不关闭 S1.5 整卡",
+                       "未做 Git 写，未清理任何文件"
+                   ]
+}

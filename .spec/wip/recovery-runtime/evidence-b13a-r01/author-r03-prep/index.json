@@ -1,0 +1,26 @@
+{
+  "scope": "author-r03-prep",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-author-r03-prep-_yv6pwbz",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/author-r03-prep/prep.json",
+      "sha256": "753704BD6DF1C8A514D05F883FFAD1D111C83FC01432348F2C33D0FE29C8BA33",
+      "bytes": 3903,
+      "source_name": "prep.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/author-r03-prep/receipt.md",
+      "sha256": "908A14D5999E2949DF3FC12D5336EB0109A5F094842E302BC3DE1963C032FD75",
+      "bytes": 6372,
+      "source_name": "receipt.md"
+    }
+  ]
+}

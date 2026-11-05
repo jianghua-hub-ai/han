@@ -1,0 +1,121 @@
+{
+  "scope": "s410-tp-r25-author-r01",
+  "owner": {
+    "role": "add-test-engineer",
+    "nickname": "Jason",
+    "runtime_id": "01a18395-a83b-7512-b7d1-824b073ab907"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-identity-tp-jason-d7c2b491",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/baseline.json",
+      "sha256": "1BBC49FE7CC6CEA834AFD2B19047F7713E9D78ED90C8EB98F99AD177C03E20F2",
+      "bytes": 4304,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/build_check.py",
+      "sha256": "57A41FF3DD933AF07BB4BB6ADE0900CF215D3F3DE660FD1B3380B8B794C91112",
+      "bytes": 5061,
+      "source_name": "build_check.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/identity-test-plan.after.md",
+      "sha256": "5AEA4284B0E903A3E12FE4065E53778A252B0EC006F8E91E854870AF156FAD57",
+      "bytes": 318936,
+      "source_name": "identity-test-plan.after.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/identity-test-plan.before.md",
+      "sha256": "468864D2FBA7281CABDCA0C771D56E1316BAFAE8B0F9B524269435E544BDF41D",
+      "bytes": 306129,
+      "source_name": "identity-test-plan.before.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/identity-test-plan.diff",
+      "sha256": "4664E9D838F8C3AF17DF052095ADA9AF956A27E878E7F5ACCDCFD139515C9BFD",
+      "bytes": 16486,
+      "source_name": "identity-test-plan.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/increment.md",
+      "sha256": "95BD6286AA635115D7FBF6F805008204A29D87522838DD0840F33D2297C1233F",
+      "bytes": 12320,
+      "source_name": "increment.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/source-index.json",
+      "sha256": "D18D1A6F22EF20948DB1DBE8908EFF607F8AD6FF2B00CE51C7509DEB4742F34F",
+      "bytes": 1561,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/init.py",
+      "sha256": "9856E24FDAAF614ABDC4542C89944F7396B1386E35DDE0DA36881785335DFA8B",
+      "bytes": 3301,
+      "source_name": "init.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/protection-after.json",
+      "sha256": "27C0F40D9255E87B77C87CFEA05E2DCA40F48E204AF1F245E4FA8726A498FCB8",
+      "bytes": 2385,
+      "source_name": "protection-after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/protection-prewrite.json",
+      "sha256": "27C0F40D9255E87B77C87CFEA05E2DCA40F48E204AF1F245E4FA8726A498FCB8",
+      "bytes": 2385,
+      "source_name": "protection-prewrite.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/read.py",
+      "sha256": "0FF7868693626D73BEA74633DAC5F231B6379DC608D0D97220CE8D5AC93B9BF1",
+      "bytes": 832,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/readset.json",
+      "sha256": "D369A1A701FBE981AAE7CB498672E197EF220A2DB3434C9E8B649EA41C65FC10",
+      "bytes": 7888,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/readset.jsonl",
+      "sha256": "6F0296B47A394971F0B67A89792984C4E4CA4C50D4D2915D5FC8FB31DCC8B374",
+      "bytes": 4059,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/receipt.json",
+      "sha256": "7DF16475D962D667A7094E18AC2CCFD639982589A3F0159558E5F79FE200AE85",
+      "bytes": 3999,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/receipt.md",
+      "sha256": "6195F013732BD7DB09634DB0EE5AD5284901B993DC1BAA4922D17675B6C64745",
+      "bytes": 1331,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/verification-prewrite.json",
+      "sha256": "6C31FFB5E1ED431FACD64BF22E1DAC1B71128201C4F4725BFFEA6C4EBB189704",
+      "bytes": 2818,
+      "source_name": "verification-prewrite.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/verification.json",
+      "sha256": "1E9C9FFD537E083D7D383BD00D48979458B9A8355B2A75D51E3EDEF4728084C2",
+      "bytes": 3126,
+      "source_name": "verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-tp-r25-author-r01/write_freeze.py",
+      "sha256": "C0A639E2BD8F2FC59F844B237DFA52F25273544642471653A7242E5D0990D2CE",
+      "bytes": 7666,
+      "source_name": "write_freeze.py"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

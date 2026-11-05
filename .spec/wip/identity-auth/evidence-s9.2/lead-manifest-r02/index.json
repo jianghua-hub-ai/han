@@ -1,0 +1,105 @@
+{
+  "scope": "lead-manifest-r02",
+  "captured_at": "2026-10-28T02:26:21.179552+00:00",
+  "records": [
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-format.stdout.log",
+      "copy": "lead-s92-r02-format.stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-format.stderr.log",
+      "copy": "lead-s92-r02-format.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-modules.stdout.log",
+      "copy": "lead-s92-r02-modules.stdout.log",
+      "sha256": "B4537ED75F533F993F371954DE47E42A793B8E5B0587577DE7E27FB3E50696BD",
+      "bytes": 21
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-modules.stderr.log",
+      "copy": "lead-s92-r02-modules.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-vet.stdout.log",
+      "copy": "lead-s92-r02-vet.stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-vet.stderr.log",
+      "copy": "lead-s92-r02-vet.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-build.stdout.log",
+      "copy": "lead-s92-r02-build.stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-build.stderr.log",
+      "copy": "lead-s92-r02-build.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-contract.stdout.log",
+      "copy": "lead-s92-r02-contract.stdout.log",
+      "sha256": "86170FB20E2BFD87D89E545132E9CB1BABC53935049AD0A17F3AE70D51C34321",
+      "bytes": 548
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-contract.stderr.log",
+      "copy": "lead-s92-r02-contract.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-race.stdout.log",
+      "copy": "lead-s92-r02-race.stdout.log",
+      "sha256": "A3601DD2CD3EBCA063A88B650D3E4938A3EB85D6C84D0096AB4162BE7FB5C948",
+      "bytes": 467
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-race.stderr.log",
+      "copy": "lead-s92-r02-race.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-unit.stdout.log",
+      "copy": "lead-s92-r02-unit.stdout.log",
+      "sha256": "A3601DD2CD3EBCA063A88B650D3E4938A3EB85D6C84D0096AB4162BE7FB5C948",
+      "bytes": 467
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-unit.stderr.log",
+      "copy": "lead-s92-r02-unit.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\lead-s92-r02-results.json",
+      "copy": "results.json",
+      "sha256": "0DCF064C0982FADE0C5BF116303703C77E9533E87AFE785C93DBD9D723DF1B5D",
+      "bytes": 46769
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s92-lead-guoi9beq\\manifest_runner.py",
+      "copy": "manifest_runner.py.txt",
+      "sha256": "7BC97C4263595E811326D156E7923AFF34843EFB6EAB0D92719324E87AF75CC5",
+      "bytes": 4306
+    }
+  ],
+  "source_binding_index": "../code-r02/index.json",
+  "source_manifest_sha256": "03594FB126EB3E2493A14876E33AE5C1475E2F66C908BDB3D484B6E61CCBB73E",
+  "limits": "No caches copied; original Temp artifacts and schemas retained. SQL stage files contain hashed credential fields; raw SQL image digests depend on executed in-memory assertions, not reconstruction from redacted values."
+}

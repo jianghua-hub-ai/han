@@ -1,0 +1,39 @@
+{
+  "objectType": "code",
+  "scope": "R09-to-R10 frozen H-only narrow source review",
+  "gate": "PASS source only",
+  "manifest_sha256": "D4047EA1977948017B9B919054F9C3FDBC3415586136E130F76546F22BE6DD1C",
+  "H_sha256": "1C90DF0DF6726346F7987D11E430C5D2083C0DA3D3A205466A9DD560198AB7C5",
+  "binary_sha256": "318EBF7A70220B4319C420A1643CFDFE9B1E1BE38122E97E07BBD0118CF52EF0",
+  "new_findings": [],
+  "checks_passed": 83,
+  "all_consumed_inputs_stable_at_finalization": true,
+  "actual_Go_PG_by_Reviewer": "NONE",
+  "PG_status": "PERMANENT NRU for R10 group; new SQL never executed",
+  "original_findings": "9 CLOSED / 9 PENDING unchanged; SEM-R09-EV001 remains pending",
+  "execution_authorization": "NONE; original Tnew/stop/hard preserved",
+  "files": {
+    "report.md": {
+      "bytes": 8729,
+      "sha256": "B388B761680BC6954CDDEFDE8810B44D3A87096EB344AC36DFE00CE27E006DBB"
+    },
+    "verdict.md": {
+      "bytes": 1078,
+      "sha256": "8FB152E96F8CAD1EF898CDC23F70C693FEACD8D6222A708395CF9B954C000611"
+    },
+    "evidenceaudit.json": {
+      "bytes": 41243,
+      "sha256": "C88EFA91116EE31BBD11D4A68EB9C7D6C133CF53159D94ED4BE13789FE316624"
+    },
+    "offline-audit.py": {
+      "bytes": 7772,
+      "sha256": "0729C97FE7014A2FA8E1E9DE611447648BEA51CF8F5DA18A1A9DC0CCA2567DFA"
+    },
+    "r09-to-r10.offline.patch": {
+      "bytes": 17210,
+      "sha256": "DE2D203687120DE0BD7DB27D6E9821D92818F37CDD31A0A1711156E3526D19D5"
+    }
+  },
+  "actual_STOP_utc": "2026-11-04T12:38:27.889322+00:00",
+  "actual_STOP_Asia_Shanghai": "2026-11-04T20:38:27.889322+08:00"
+}

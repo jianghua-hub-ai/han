@@ -1,0 +1,225 @@
+{
+  "review_gate": "CHANGES REQUIRED",
+  "finding": "AM-S15-COMP-R01-F001 MEDIUM OPEN",
+  "report": ".spec/wip/article-management/review-code-s1.5-components-r01.md",
+  "report_sha256": "D88CCCC9B6448E154266B00E480E2D998F763E64D87E8660463D2A2795A01938",
+  "scope": "Independent R01 normal/race and fixed-wire counterfactual proof; no production bug in current source claimed",
+  "files": [
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\author-basic-binding.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/author-basic-binding.json",
+      "sha256": "CA9820E620EC8C9D38388A1F78D0C9B3786AD98BEEF80A700069E13E6D948810"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\final-eight-checks.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/final-eight-checks.json",
+      "sha256": "6FB260896A0522DD7172B08F5B12762B1F3E8130410FF6A6C235F27506367856"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\independent-four-new.patch",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/independent-four-new.patch",
+      "sha256": "D8B1010889D073D5BBEEC4BF8F2B81216BBBF4E940C952A62D578396C830F834"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\normal.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/normal.meta.json",
+      "sha256": "798AF3B4AFCFAC696528BFF95F853CE65B1C8CD8D9C72272ACCAB9E53A326C41"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\normal.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/normal.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\normal.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/normal.stdout.jsonl",
+      "sha256": "69D7F0D8AB796188C4262EF18317556FE65F2DED71D7DB812767D5C067FFE495"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\race.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/race.meta.json",
+      "sha256": "28031EE7A04786B7DC51D9A0257AFC3A2F719A0562A5E96E11850270DCE3E476"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\race.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/race.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\race.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/race.stdout.jsonl",
+      "sha256": "2BCEAF16EA4E2F75D092CFBC4CF793A90D47D1E54343F4B7A0A14ED44131FC75"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\raw-index.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/raw-index.json",
+      "sha256": "B5E9F643502753AE4F5D06A1FAAD4EF8E72EF1B546AB62493AF0EAF93A4EAC03"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\readset-source-binding.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/readset-source-binding.json",
+      "sha256": "2A9613DC5F7D44DD516B70F03E567AA84AF0783E4AD88F5D6750CBD7D15591EC"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\report-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/report-verification.json",
+      "sha256": "07F3051BB7F347A7105C9C39C087C7AEA17B5970C7FBE4BB6B317227F89D4237"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\run-review.py",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/run-review.py.txt",
+      "sha256": "C710CC166852C12F941B0A8F76CFF9A40EC57BE4467B6BB1EB150B3CFCCD276A"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\run-set-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/run-set-verification.json",
+      "sha256": "52179A7C0EB541FA08782B3910606AB069E0A3513473DAB73D8D6ED8EA9C1556"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\run-wire-negative.py",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/run-wire-negative.py.txt",
+      "sha256": "CC5BE728AADC1A4D3E7E18DC1E334C45C07F50890DCD39B31613A20993DE8D93"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\source-after-178.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/source-after-178.json",
+      "sha256": "1AC33FD29B54CA9A0F70D4D772592ACC1C4496FB01CB06D39CBFF69A8AF6ED89"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\source-before-178.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/source-before-178.json",
+      "sha256": "1AC33FD29B54CA9A0F70D4D772592ACC1C4496FB01CB06D39CBFF69A8AF6ED89"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\vet.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/vet.meta.json",
+      "sha256": "F7FB33958B1132ED0222C4D4160B1E9D3DFC846AC56A1E4C9F893F7A98F48C34"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\vet.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/vet.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\vet.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/vet.stdout.jsonl",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-control-witness.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-control-witness.meta.json",
+      "sha256": "6E20D500E16B95B79C47F1CEE03BF73A06479CC69330E666F1C608218A80FBC3"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-control-witness.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-control-witness.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-control-witness.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-control-witness.stdout.jsonl",
+      "sha256": "C453C71BF8A08C48B94728974E157C34045CAE536FB96ED179C40BC0B15BA8B9"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-limit-mutant\\control-witness.overlay.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-limit-mutant/control-witness.overlay.json",
+      "sha256": "51F783CE656AA12A045814E3AA991ABE35BCAF66F4313B417AEECC640F9905D4"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-limit-mutant\\handler.go",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-limit-mutant/handler.go.txt",
+      "sha256": "D8E7B2324EBC131F0C8967C180FCB4C35039B9F0724D17ADB3AD83A3A9F66F90"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-limit-mutant\\mutant-original-tests.overlay.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-limit-mutant/mutant-original-tests.overlay.json",
+      "sha256": "EBBE6A259D17A7FEABA6DBA23D9F8C966333DEFF2CCA3EFEE7BF934D84187071"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-limit-mutant\\mutant-witness.overlay.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-limit-mutant/mutant-witness.overlay.json",
+      "sha256": "E41D5D8BDA46246B215DC0E7EB381DA404818AD93D4955274FFA66A30C38DC8F"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-limit-mutant\\mutation.patch",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-limit-mutant/mutation.patch",
+      "sha256": "862B4DAEFB87769A1B8E45ADDA081681AA4B78D709D2123220F52579DB008FEA"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-limit-mutant\\proof.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-limit-mutant/proof.json",
+      "sha256": "582210666DF5B24C20738CA1935E2D98941594A01960CFB16CA480B15B672E9B"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-limit-mutant\\reviewer_wire_boundary_test.go",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-limit-mutant/reviewer_wire_boundary_test.go.txt",
+      "sha256": "1465E96B6C8ABFC8CCB998ED45DAD20154693C1C43DB3C3FE0FA0F317AD38C3D"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-mutant-suite.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-mutant-suite.meta.json",
+      "sha256": "082BAEB500E6BBC17D4C5C914E3A14FA0AE9F3F587B674F272FEFC84144146B1"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-mutant-suite.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-mutant-suite.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-mutant-suite.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-mutant-suite.stdout.jsonl",
+      "sha256": "6FE7C98CCC08EB0E5AC76F5C2369DB83627444EC3CCF784BF7920AE6693B9F60"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-mutant-witness.meta.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-mutant-witness.meta.json",
+      "sha256": "865B2D7723C1F5F5F3C2B5B3561ED79500916AC45CC7781A7FFB89CE113AE45E"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-mutant-witness.stderr.log",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-mutant-witness.stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "owner": "actual independent Reviewer Erdos",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-candidate-c63dac5fc52d4ea0af1d51efb9c76c18\\review-components-r01\\wire-mutant-witness.stdout.jsonl",
+      "copy": ".spec/wip/article-management/evidence-s1.5/review-r01/wire-mutant-witness.stdout.jsonl",
+      "sha256": "B9ABB0ADC50DA198C13378678DA728853ABFC123A6E10271C83EDB420C8538B4"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "schema": "add.review-index/v1",
+  "role": "add-reviewer",
+  "independence": "independent non-author directed re-review; reviewed artifacts not modified by reviewer",
+  "objectType": "design + adr + index (composite)",
+  "item": "pending-B13J-D02",
+  "workflow": "development-delivery",
+  "phase": "architecture-decision-ADR / directed re-review r02",
+  "verdict": "PASS",
+  "rounds": {
+    "round1": "PASS",
+    "round2": "PASS"
+  },
+  "reviewedAt": "2026-11-01T22:47:24+08:00",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "artifact": {
+    "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r02/report.md",
+    "sha256": "957CACC5280E1287D519FB775A76CE602F98550B92DEB711023742651E84DC0B",
+    "bytes": 8406,
+    "encoding": "utf-8",
+    "bom": false,
+    "line_endings": "LF only",
+    "trailing": "single LF (0x0a)",
+    "source": "independent directed re-review report (this review)"
+  },
+  "object": {
+    "framework": {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "baseline": {
+        "sha256": "31960C7A7BAE3EA3B2B250A6ED9DC1FB1E1F81464520E03A0D42C5E0B491C9BA",
+        "bytes": 137200,
+        "lines": 966
+      },
+      "target": {
+        "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+        "bytes": 137491,
+        "lines": 966
+      },
+      "changedLines": [924, 937, 938],
+      "changedLineCount": 3,
+      "deltaBytes": 291,
+      "lineDeltas": {
+        "924": 164,
+        "937": 81,
+        "938": 46
+      },
+      "deltaProvenExact": true,
+      "deltaMethod": "reverse-substituted the three after phrases with the author-recorded before phrases in memory, rejoined with CRLF, recomputed SHA256",
+      "reconstructedBytes": 137200,
+      "reconstructedSha256": "31960C7A7BAE3EA3B2B250A6ED9DC1FB1E1F81464520E03A0D42C5E0B491C9BA",
+      "prefixBytes": 126590,
+      "prefixSha256": "5711F51016CBC091DCB8DEC4ABE1339158C713CD997980982A14D6D00938A38A",
+      "prefixMatchesBaseline": true
+    },
+    "design": {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "sha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+      "bytes": 844091,
+      "unchangedFromReviewR01": true
+    },
+    "readme": {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "sha256": "5075879AC7F3E31D83A06E843BCCE80CAA8DBA27F588E39D700E7F6C3765C10D",
+      "bytes": 19724,
+      "unchangedFromReviewR01": true
+    }
+  },
+  "formatInvariants": {
+    "framework": {
+      "bom": false,
+      "lines": 966,
+      "crlf": 966,
+      "bare_lf": 0,
+      "lf_total": 966,
+      "bare_cr": 0,
+      "trailing": "CRLF (0d0a)",
+      "control_excluding_cr_lf_tab": 0
+    },
+    "design": {
+      "bom": false,
+      "lines": 4924,
+      "crlf": 169,
+      "bare_lf": 4755,
+      "lf_total": 4924,
+      "bare_cr": 0,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf_tab": 0,
+      "tab_count": 1,
+      "tab_byte_offset": 466069,
+      "tab_character_offset": 308573,
+      "tab_pre_existing": true
+    },
+    "readme": {
+      "bom": false,
+      "lines": 106,
+      "crlf": 2,
+      "bare_lf": 104,
+      "lf_total": 106,
+      "bare_cr": 0,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf_tab": 0
+    }
+  },
+  "originalFindings": [
+    {
+      "id": "B13J-D02-RV-01",
+      "originalSeverity": "MEDIUM",
+      "status": "CLOSED",
+      "location": ".add/project/knowledge/decisions/framework.md:924",
+      "closureEvidence": "The line now says the pre-change design.md:3892 recorded actual product/credential/failure-domain as unknown, states that this ADR rewrote the line in the same round, and explicitly says the rewritten text is not evidence of the pre-change state. No self-reference or ambiguity remains."
+    },
+    {
+      "id": "B13J-D02-RV-02",
+      "originalSeverity": "LOW",
+      "status": "CLOSED",
+      "location": ".add/project/knowledge/decisions/framework.md:937-938",
+      "closureEvidence": "KMS is now qualified as usually providing key management/crypto and limited conditional key operations rather than a general CAS header store; object storage is described as potentially separated in deployment but requiring case-by-case proof of independent failure domain. A/B/C remain not selected, D remains selected, and :952 still denies product/environment verification."
+    }
+  ],
+  "findings": {
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0
+    },
+    "total": 0,
+    "items": []
+  },
+  "observations": [
+    {
+      "id": "O-RV2-01",
+      "severity": "LOW",
+      "blocking": false,
+      "location": ".add/project/knowledge/decisions/framework.md:937",
+      "summary": "The implementation-mechanism column and the disadvantage column both state that KMS is not a general CAS header store. The statements are consistent but redundant.",
+      "disposition": "Acceptable and non-blocking; consolidate in a later ADR revision if convenient."
+    }
+  ],
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/report.md",
+      "sha256": "16A47B381CB5BD023EA931432CE9A3CEA622125CB4CCA9641DE9EDDDC293CE7F",
+      "bytes": 20671,
+      "role": "updated author report with RV-01/RV-02 disposition and round delta"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/index.json",
+      "sha256": "4DF391ACD942F6747EE8B6623677B9A4678A3BB493EB83A46FD00690AC28073B",
+      "bytes": 19856,
+      "role": "updated author evidence index"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r01/report.md",
+      "sha256": "DAC90356F102F5E7AF18BFCDAFA153AD369D1F796923B5A42B8B6BC79606FF5E",
+      "bytes": 18497,
+      "role": "original independent review defining RV-01 and RV-02"
+    }
+  ],
+  "crossChecks": {
+    "tasksMd": {
+      ".add/project/knowledge/tasks/tasks.md:656": "actual S4.5 registration remains unchecked: '- [ ] identity-auth-S4.5 选择并交付生产 CAS JournalHeadAnchor provider 与独立故障域验证 [P]'",
+      "reviewR01Correction": "review-r01 incorrectly cited :658; this review confirms the author's :656 correction and records the correction without reopening the original findings"
+    },
+    "zeroDrift": {
+      "designMd": "hash and bytes identical to review-r01 target",
+      "readmeMd": "hash and bytes identical to review-r01 target",
+      "mtimeOrder": "design.md and README.md are older than the reworked framework.md",
+      "gitStatusCount": 293,
+      "newUntrackedScope": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/ only"
+    },
+    "rv01": {
+      "preChangeFactRetained": true,
+      "sameRoundRewriteDisclosed": true,
+      "postChangeTextNotUsedAsPreChangeProof": true
+    },
+    "rv02": {
+      "kmsClaimQualified": true,
+      "objectStorageIndependenceQualified": true,
+      "abcStillNotSelected": true,
+      "dStillSelected": true,
+      "verificationDisclaimerAt952Retained": true
+    },
+    "newAssertions": "No implemented, verified, real-failure-domain, or production-ready claim found in the three changed lines."
+  },
+  "commands": [
+    "Get-FileHash and UTF-8 byte scans on framework.md, design.md and README.md",
+    "reverse-substitution of framework.md lines 924/937/938 -> 137200 B, 31960C7A...B491C9BA, diff lines [924,937,938]",
+    "SHA256 of framework.md first 126590 B -> 5711F510...38A38A",
+    "Get-FileHash on updated author report/index and review-r01 report",
+    "Get-Content on framework.md:918-966, tasks.md:654-660 and author report section 7",
+    "git status --porcelain (read-only); no Git write command executed"
+  ],
+  "writeSet": [
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r02/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r02/index.json"
+  ],
+  "notWritten": [
+    ".add/project/knowledge/decisions/framework.md",
+    ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    ".add/project/knowledge/decisions/README.md",
+    "tasks.md",
+    "plans/",
+    "stories.md",
+    "test-plan.md",
+    "decisions/identity.md",
+    "any code/tests/config",
+    "git index/history"
+  ],
+  "notVerified": [
+    "No Go, PostgreSQL, HTTP, restore, Case18, S8.2, E2E, integration, or real CAS provider execution",
+    "No full-document semantic audit of framework.md or design.md",
+    "No markdown render or lint run",
+    "Real independent failure domain, product, credential, ACL, deployment and operations were not verified",
+    "Human exact acceptance, design Gate and Task registration remain unknown"
+  ],
+  "pendingDecisions": [
+    {
+      "id": "D-RV2-01",
+      "question": "Whether to consolidate the duplicated KMS wording at framework.md:937 in a later authorized revision",
+      "owner": "Lead / Architect",
+      "blocking": "false; observation O-RV2-01 only"
+    }
+  ],
+  "limitations": "This PASS closes the directed review of RV-01 and RV-02 only. It does not close pending-B13J-D02, grant a design Gate, authorize implementation, claim Case18/S8.2 or any real provider verification, release blocked-upstream, or constitute human acceptance."
+}

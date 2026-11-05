@@ -1,0 +1,278 @@
+{
+    "schema":  "s1.5.root-16-endpoint.r01",
+    "generated_at":  "2026-10-31T22:39:00+08:00",
+    "revised_at":  "2026-10-31T23:02:17+08:00",
+    "revision_semantics":  {
+                               "kind":  "worktree_snapshot",
+                               "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+                               "head_contains_go_code":  false,
+                               "reconstructable_via_checkout":  false,
+                               "note":  "HEAD 提交不含 Go 代码；cmd/、internal/、go.sum 未跟踪，go.mod 已修改。SOURCE_STABLE 只覆盖 source 中列出的文件，不表示整棵被审代码树未变。"
+                           },
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "source":  {
+                   "cmd/han-server/main.go":  {
+                                                  "sha256":  "6D5373CA1535C41A5FA340D2B75834EB7E15AEEE39ABF9928BD0E0A210CF8727",
+                                                  "bytes":  173317,
+                                                  "git":  "untracked"
+                                              },
+                   "cmd/han-server/main_test.go":  {
+                                                       "sha256":  "0E61F4A37D314D2D35B80EA8184BEF17EB6227FCAF1CA0F57C09736005185820",
+                                                       "bytes":  399522,
+                                                       "git":  "untracked"
+                                                   },
+                   "internal/platform/http.go":  {
+                                                     "sha256":  "0890069CB559C7B8454A242B46736FC23D542B0D45E350B0D035C7012BB710C4",
+                                                     "bytes":  11494,
+                                                     "git":  "untracked"
+                                                 },
+                   "internal/platform/http_security.go":  {
+                                                              "sha256":  "3676B4C64BCF115C43845DC69D77F6875F3A7BBCD67DA6A91920B84594C3CFDA",
+                                                              "bytes":  11962,
+                                                              "git":  "untracked"
+                                                          },
+                   "internal/session/store.go":  {
+                                                     "sha256":  "F0659DFA4D0D922FB2A9083182CC18357C7A8F496525695906A0950A5084CB4D",
+                                                     "bytes":  20715,
+                                                     "git":  "untracked"
+                                                 },
+                   "internal/session/maintenance_store.go":  {
+                                                                 "sha256":  "CE3371A8AFDCCAC7B94F584A9C96A0F3B8FDF2124DAC50C00D0964DCC6CF9A50",
+                                                                 "bytes":  11500,
+                                                                 "git":  "untracked"
+                                                             },
+                   "go.mod":  {
+                                  "sha256":  "304B677A229D0DF642A1A1215EEAE8655C06115D44BAFE598A6B9D07B7EB9090",
+                                  "bytes":  400,
+                                  "git":  "modified"
+                              },
+                   "go.sum":  {
+                                  "sha256":  "EE18CBC7B35B29D77C5CAE7A41D4E7E3B300D306BD81119F35FDE0AD72097B38",
+                                  "bytes":  2031,
+                                  "git":  "untracked"
+                              }
+               },
+    "source_stable":  true,
+    "source_stable_scope":  "仅上述 8 个文件在运行前后哈希与字节一致",
+    "runs":  [
+                 {
+                     "run":  "r01-normal",
+                     "command":  "go test ./cmd/han-server -run \u0027^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$\u0027 -count=1 -timeout 25m -json",
+                     "run_expression":  "^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$",
+                     "run_expression_origin":  "reconstructed_from_log",
+                     "exit":  0,
+                     "pass":  314,
+                     "fail":  0,
+                     "skip":  0,
+                     "run_events":  313,
+                     "top_level_tests":  19,
+                     "log":  "root-normal-json.log"
+                 },
+                 {
+                     "run":  "r01-race",
+                     "command":  "go test -race ./cmd/han-server -run \u0027^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$\u0027 -count=1 -timeout 25m -json",
+                     "run_expression":  "^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$",
+                     "run_expression_origin":  "reconstructed_from_log",
+                     "exit":  0,
+                     "pass":  314,
+                     "fail":  0,
+                     "skip":  0,
+                     "run_events":  313,
+                     "top_level_tests":  19,
+                     "log":  "root-race-json.log"
+                 },
+                 {
+                     "run":  "r02-normal",
+                     "command":  "go test ./cmd/han-server -run \u0027^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)|TestProductionBusinessHandler_AWIRERTR05ThreeDeleteRoutesCarryRoleAndStatus)$\u0027 -count=1 -timeout 25m -json",
+                     "run_expression":  "^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)|TestProductionBusinessHandler_AWIRERTR05ThreeDeleteRoutesCarryRoleAndStatus)$",
+                     "run_expression_origin":  "verbatim",
+                     "exit":  0,
+                     "pass":  321,
+                     "fail":  0,
+                     "skip":  0,
+                     "run_events":  320,
+                     "top_level_tests":  20,
+                     "log":  "root-normal-json-r02.log"
+                 },
+                 {
+                     "run":  "r02-race",
+                     "command":  "go test -race ./cmd/han-server -run \u0027^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)|TestProductionBusinessHandler_AWIRERTR05ThreeDeleteRoutesCarryRoleAndStatus)$\u0027 -count=1 -timeout 25m -json",
+                     "run_expression":  "^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)|TestProductionBusinessHandler_AWIRERTR05ThreeDeleteRoutesCarryRoleAndStatus)$",
+                     "run_expression_origin":  "verbatim",
+                     "exit":  0,
+                     "pass":  321,
+                     "fail":  0,
+                     "skip":  0,
+                     "run_events":  320,
+                     "top_level_tests":  20,
+                     "log":  "root-race-json-r02.log"
+                 },
+                 {
+                     "run":  "vet",
+                     "command":  "go vet ./cmd/han-server",
+                     "exit":  0,
+                     "log":  null
+                 },
+                 {
+                     "run":  "replay-r01-normal",
+                     "command":  "go test ./cmd/han-server -run \u0027^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$\u0027 -count=1 -timeout 25m -json",
+                     "run_expression":  "^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$",
+                     "run_expression_origin":  "reconstructed_verified",
+                     "exit":  0,
+                     "pass":  314,
+                     "fail":  0,
+                     "skip":  0,
+                     "run_events":  313,
+                     "top_level_tests":  19,
+                     "log":  "replay-r01-normal-json.log"
+                 },
+                 {
+                     "run":  "replay-r01-race",
+                     "command":  "go test -race ./cmd/han-server -run \u0027^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$\u0027 -count=1 -timeout 25m -json",
+                     "run_expression":  "^(TestProductionArticleAuthorRoutes_[A-Za-z0-9_]+|TestProductionAdminArticleQuery|TestModeration_Router_RegistersExactPOSTPaths|TestModeration_Production_RealHandlerSecurityAndRouting|TestOrphanDispositionRouter_ListRoute_IsRegistered|TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter|TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths|TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist|TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer)$",
+                     "run_expression_origin":  "reconstructed_verified",
+                     "exit":  0,
+                     "pass":  314,
+                     "fail":  0,
+                     "skip":  0,
+                     "run_events":  313,
+                     "top_level_tests":  19,
+                     "log":  "replay-r01-race-json.log"
+                 }
+             ],
+    "run_expression_note":  "r02 为评审现场实际字面量；r01 原始字面量未保留，表中表达式按 r01 日志的 19 个顶层测试重建，并于 2026-10-31 以普通与 -race 各回放一次验证（replay-r01-*，314 pass / 313 run / 19 top / 0 fail / 0 skip）。",
+    "top_level_tests":  {
+                            "r01":  [
+                                        "TestProductionAdminArticleQuery",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_SuccessResponses",
+                                        "TestProductionArticleAuthorRoutes_ProductionConstructors_ShareActualReferences",
+                                        "TestProductionArticleAuthorRoutes_SecurityChain_StopsEveryRejectedLayer",
+                                        "TestProductionArticleAuthorRoutes_ExactRouting_RejectsBeforeSecurity",
+                                        "TestProductionArticleAuthorRoutes_ExactRouting_UnknownPathsDoNotRedirect",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_RestrictedAuthorView",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_ExactWireLimitContinues",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_DownstreamErrorsPropagate",
+                                        "TestProductionArticleAuthorRoutes_RealHandlers_RejectInvalidWritesBeforeDownstream",
+                                        "TestProductionArticleAuthorRoutes_SecurityEntry_UsesProductionRoot",
+                                        "TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity",
+                                        "TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter",
+                                        "TestOrphanDispositionRouter_ListRoute_IsRegistered",
+                                        "TestModeration_Router_RegistersExactPOSTPaths",
+                                        "TestModeration_Production_RealHandlerSecurityAndRouting",
+                                        "TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths",
+                                        "TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer",
+                                        "TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist"
+                                    ],
+                            "r02":  [
+                                        "TestProductionAdminArticleQuery",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_SuccessResponses",
+                                        "TestProductionArticleAuthorRoutes_ProductionConstructors_ShareActualReferences",
+                                        "TestProductionArticleAuthorRoutes_SecurityChain_StopsEveryRejectedLayer",
+                                        "TestProductionArticleAuthorRoutes_ExactRouting_RejectsBeforeSecurity",
+                                        "TestProductionArticleAuthorRoutes_ExactRouting_UnknownPathsDoNotRedirect",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_RestrictedAuthorView",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_ExactWireLimitContinues",
+                                        "TestProductionArticleAuthorRoutes_ControlledRealHandlers_DownstreamErrorsPropagate",
+                                        "TestProductionArticleAuthorRoutes_RealHandlers_RejectInvalidWritesBeforeDownstream",
+                                        "TestProductionArticleAuthorRoutes_SecurityEntry_UsesProductionRoot",
+                                        "TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity",
+                                        "TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter",
+                                        "TestOrphanDispositionRouter_ListRoute_IsRegistered",
+                                        "TestModeration_Router_RegistersExactPOSTPaths",
+                                        "TestModeration_Production_RealHandlerSecurityAndRouting",
+                                        "TestArticleBusinessRouter_AWIRERTR01RTR02RTR04UsesExactDeletePaths",
+                                        "TestProductionBusinessHandler_AWIRERTR03RTR05OrdersAndStopsEverySecurityLayer",
+                                        "TestProductionArticleQueryRoutesUseTraceSessionPrincipalAndCoexist",
+                                        "TestProductionBusinessHandler_AWIRERTR05ThreeDeleteRoutesCarryRoleAndStatus"
+                                    ]
+                        },
+    "artifacts":  [
+                      {
+                          "name":  "16-endpoint-map.md",
+                          "bytes":  16611,
+                          "sha256":  "2F10C202F89EDAE5BF577B4DD48164713B032B36DC5D26C849CD511C84475F9C"
+                      },
+                      {
+                          "name":  "lead-verification.md",
+                          "bytes":  2978,
+                          "sha256":  "8E6FD8A020B8ACC4663E688966D4A5B301896950A4C220EA33B260FCB4201F82"
+                      },
+                      {
+                          "name":  "root-normal-json.log",
+                          "bytes":  325529,
+                          "sha256":  "1D00130C86142DE585AE683DC73C9972D263118DD7B7B759A6DDB8EDE73E73ED"
+                      },
+                      {
+                          "name":  "root-normal-json-r02.log",
+                          "bytes":  333414,
+                          "sha256":  "B30D7329CE750B5041839A63FE474896ABEC3B9DF4137897A3C863108530D723"
+                      },
+                      {
+                          "name":  "root-race-json.log",
+                          "bytes":  325501,
+                          "sha256":  "E475A8E0749654117785037DBA9D626E2CE0BC119E9451FAF43730778E9D25D7"
+                      },
+                      {
+                          "name":  "root-race-json-r02.log",
+                          "bytes":  333365,
+                          "sha256":  "AED0882E5D66A26F0727108EEC75E3B03DF2F45A474F8A02B90432D8CC2D27C9"
+                      },
+                      {
+                          "name":  "source-hashes-after.txt",
+                          "bytes":  209,
+                          "sha256":  "10EFE4B42A0D964D544676DDBABF4DD51CD4115D4F03AC19491195330F67BC9D"
+                      },
+                      {
+                          "name":  "source-hashes-before.txt",
+                          "bytes":  211,
+                          "sha256":  "CAC695B6E0D410FB71605B3EA401E925622BCF46A20EEE7FB58B006EDAC9C5F5"
+                      },
+                      {
+                          "name":  "replay-r01-normal-json.log",
+                          "bytes":  325461,
+                          "sha256":  "B432FF313447035A6F80635CAA29A7ED2ED6C58CEBFF0335AFC80F29C4B88B0C"
+                      },
+                      {
+                          "name":  "replay-r01-race-json.log",
+                          "bytes":  325539,
+                          "sha256":  "78A0043A42F251589D6383147B32AF3936347D4BCBAE4490AD9A7C3F56863905"
+                      }
+                  ],
+    "scope":  "16 endpoint real business-API root method/path + Allow + 404/405 + platform-boundary security chain ordering, in-process only",
+    "not_proven":  [
+                       "real Session/SQL",
+                       "real PostgreSQL",
+                       "real Journal/legacy backup",
+                       "application role ACL",
+                       "producer real ReadCurrent/Publish",
+                       "Case18 global recovery isolation",
+                       "deployed E2E",
+                       "S1.5 card closure",
+                       "production readiness"
+                   ],
+    "known_gaps":  [
+                       {
+                           "id":  "S15-RE-F008",
+                           "level":  "LOW",
+                           "state":  "open",
+                           "detail":  "GET /api/v1/admin/orphan-articles、POST .../publish、POST .../transfer 仅有 405 状态断言，缺 Allow 精确值与仅 trace 事件断言",
+                           "needs":  "修改 cmd/han-server/main_test.go，需共享 root 写窗释放与用户明确授权"
+                       }
+                   ],
+    "independent_review":  {
+                               "status":  "PASS WITH MINOR",
+                               "reviewer":  "Lorentz / add-reviewer (non-author)",
+                               "actual_id":  "01a19267-1404-7050-b09d-56e91fd57ddd",
+                               "report":  ".spec/wip/article-management/review-code-s1.5-root-endpoints-r01.md",
+                               "report_bytes":  21470,
+                               "report_sha256":  "DA2BD8D786C13A951343C095EBF48BEA2A14973322B9F0FB53CB5ABE375D34B4",
+                               "findings":  {
+                                                "high":  0,
+                                                "medium":  0,
+                                                "low":  8
+                                            },
+                               "disposition":  "F001/F002/F003/F004/F005/F006/F007 已在本目录文档修正；F008 保留 open"
+                           },
+    "writes_outside_this_directory":  false
+}

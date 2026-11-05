@@ -1,0 +1,10 @@
+### build | exit=0 | 3.1s
+### vet | exit=0 | 1.3s
+### vet-integration | exit=0 | 1.2s
+### gofmt | exit=0 | 0.1s
+### unit | exit=0 | 43.8s
+ok  	han/cmd/han-server	41.973s
+### pg-normal | exit=0 | 4.6s
+ok  	han/cmd/han-server	2.570s
+### pg-race | exit=0 | 8.8s
+ok  	han/cmd/han-server	3.466s

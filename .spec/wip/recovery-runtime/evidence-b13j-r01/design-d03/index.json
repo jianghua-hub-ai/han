@@ -1,0 +1,608 @@
+{
+  "schema": "add.evidence.design-decision/v1",
+  "item": "pending-B13J-D03",
+  "agent_role": "add-arch-designer",
+  "workflow": "development-delivery",
+  "phase": "architecture-decision-ADR",
+  "route_executed": false,
+  "recorded_at": "2026-11-01",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "bytes": 26452,
+      "role": "R reconciliation source; section 2.5 pending-B13J-D03 at :121-139 and U4 require concrete tool, approver, executor, ACL/process isolation, native receipt and unknown pause"
+    },
+    {
+      "path": ".add/project/knowledge/decisions/framework.md#adr-0019",
+      "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+      "bytes": 137491,
+      "role": "hard boundary as of the D03 baseline: independent CAS JournalHeadAnchor fault domain, keyring, no PostgreSQL rollback, POSIX only, Windows production unsupported, UTC microseconds; ADR-0019 body unchanged"
+    },
+    {
+      "path": ".add/project/knowledge/decisions/framework.md#adr-0030",
+      "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+      "bytes": 137491,
+      "role": "adjacent decision as of the D03 baseline: no production CAS Anchor provider in phase one, S4.5 undelivered, production enter/install closed; ADR-0030 body unchanged"
+    },
+    {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "sha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+      "bytes": 844091,
+      "role": "D03 initial baseline of the design being revised; restore driver section :3856-3872 and command/config section :3874-3902"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/report.md",
+      "sha256": "EEC401E4613EFFC1AA4DD89639A32FA04C71C826F7874C32880224819655EBE3",
+      "bytes": 25493,
+      "role": "independent review-r01 input: design review CHANGES REQUIRED and security review CHANGES REQUIRED; 12 of 14 checks PASS; blocking item B13J-D03-RV-01 (permission-matrix invariant), plus RV-02 to RV-05"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r02/report.md",
+      "sha256": "7F357D6AE3C5E23FD9A19EFA808D1F86C6986668A34CC0E4B811A3A0742D18C6",
+      "bytes": 15997,
+      "role": "independent review-r02 input: design review CHANGES REQUIRED and security review CHANGES REQUIRED; RV-01 to RV-05 all CLOSED; blocking item B13J-D03-RV2-01 (design :3862 boundary sentence conflicts with :3864/:3866/:3870 and framework :1036 gate is unsatisfiable under full-database restore), plus RV2-02 (:1045 attribution of process-group/no-follow) and RV2-03 (pre-change snapshots)"
+    }
+  ],
+  "decision": {
+    "id": "ADR-0031",
+    "title": "首期不提供生产 restore 工具与批准主体，固定受批准执行与宿主隔离合同",
+    "outcome": "no-production-restore",
+    "summary": "No production restore tool and no production approval role in phase one; production enter/resume DB replacement stays closed before Begin; ADR-0031 states the merged position with ADR-0030 that both production enter/install and the enter/resume DB replacement path stay closed, as different entry points rather than a narrowing. Only the existing restore-v1/verify-v1 software contract, deterministic test doubles and restore_unknown remain. The three HAN_RECOVERY_RESTORE_* keys keep no defaults and no inference. Any future production form must satisfy all six invariants and every release condition.",
+    "approval_subject": "Named deployment-side recovery approval role issues two independent records: backup source approval (SourceApprovalRef/Digest, artifact digest, source installation) and executable approval (absolute path, SHA256, owner/ACL, controlled read-only mount). The approver may not self-approve, may not be the executor or the run initiator, and may not be the tool/backup supplier approving its own artifact. No such role is appointed today.",
+    "executor_subject": "An independent non-interactive child process started by root, running under a dedicated execution identity distinct from root. Root does not execute in its place, does not enter a shell and does not replay; it keeps the deployment lock, Journal/keyring, Store binding/audit writes, recovery secret, Begin and final VerifyRestored. The execution identity gets only the read-only artifact fd, target connection via private stdin, minimal ENV allowlist and target DB network, and its target connection must be an independent DB role. The write boundary has two satisfiable layers: outside the replacement window that role privileges may not cover any write to Journal/keyring, deployment lock, Store authoritative binding or audit; inside the window the only writes to the target DB may come from the approved full-database artifact restore itself, the execution identity may not construct, inject or declare any authoritative binding and may not write Journal/keyring or the deployment lock, and root alone creates or verifies this run's running row and immutable binding through the same Store short transaction (design :3866); historical rows inside the artifact never count as this run's authority. Protected objects (Journal, keyring, deployment lock, Store authoritative binding, audit) form a checkable checklist fixed by the approval record and are only a post-restore cross-check item: full-database restore semantics are unchanged and no schema-level exclusion or root data migration is introduced. Identity switching and program launch must not be implemented through shell scripts, su or sudo wrappers; the concrete mechanism is fixed by the approval record and must be proven by isolation measurement at implementation time.",
+    "host_isolation": "Fixed argv direct exec of the single approved program with no shell and no extra argv; separate process group/session with full child-tree join/reap; no-follow stable fd/handle with pre/post fstat and path identity checks; minimal ENV allowlist with zero inherited business secrets or approval keys; no network beyond the target DB connection; any precheck failure rejects before Begin. POSIX is the only production candidate but remains closed in phase one; Windows production is unsupported and must return unsupported (exit code 2) before any state change, with test doubles and software trials only.",
+    "release_conditions": [
+      "named recovery approval role appointed, with two independent approval records for backup source and executable (role, person, time, basis)",
+      "approved binary has verifiable SHA256, owner/ACL, controlled read-only mount, and update/rollback ownership",
+      "dedicated execution identity and permission matrix approved: outside the replacement window the role may not write Journal/keyring/deployment lock/Store authoritative binding/audit; inside the window writes may only come from the approved full-database artifact restore and only root writes this run authoritative binding; no server/requeue/migration/worker",
+      "POSIX host isolation measured: fixed argv without shell, separate process group with full child-tree join/reap, no-follow stable fd, minimal ENV allowlist, no network beyond the target connection",
+      "negative verification gate passes: outside the replacement window, writes with the execution identity credential or its target DB role into Journal/keyring/deployment lock/Store authoritative binding/audit must be rejected; inside the window, no Store authoritative binding or Journal/keyring/deployment-lock write may occur other than the approved full-database artifact restore itself, and any binding constructed, injected or declared by the execution identity must be rejected",
+      "real native durable receipt sample written by the tool or its backup system and independently readable, cross-checked against artifact digest, target and source installation",
+      "real old-backup drill for source installation/schema digest/VerifyRestored consistency with raw evidence, not a synthetic fixture",
+      "architecture and security independent review completed, ADR revised, and implementation/verification scope registered through formal task planning",
+      "explicit human production approval; Agent output, review verdict or test pass does not replace it"
+    ],
+    "authorization_source": "user 2026-11-01 B13J D03 instruction authorizing the Arch-Designer to settle the restore tool, approver and host-isolation decision; not a human artifact acceptance, independent review, security review or production approval"
+  },
+  "inheritance": {
+    "adr_0019": "unchanged: independent fault domain CAS anchor, keyring, no PostgreSQL rollback, POSIX only, Windows production unsupported, UTC microseconds, fail-closed classification",
+    "adr_0030": "unchanged: no production CAS Anchor provider in phase one, S4.5 undelivered, production enter/install closed",
+    "adr_0027": "unchanged: runtime orchestration, single Store and forward-admission proof",
+    "restore_software_contract": "unchanged and not weakened: restore-v1/verify-v1 argv, private stdin, no-follow stable fd, minimal ENV allowlist, receipt fields, restore_unknown pause, Begin precheck rejection",
+    "out_of_scope": "deployment exclusivity, ArticleAccountPort and recovery secret candidate remain D04; no unregistered task id is reserved"
+  },
+  "artifacts": [
+    {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "before": {
+        "sha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+        "bytes": 844091,
+        "lines_terminated": 4924,
+        "crlf": 169,
+        "bare_lf": 4755,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf": 1
+      },
+      "rework_before": {
+        "sha256": "79F226D5BB152C7A2DF359548CBFE24C306DF54A1B2EFD8BED71A80F488B2037",
+        "bytes": 846117,
+        "lines_terminated": 4924,
+        "crlf": 169,
+        "bare_lf": 4755,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf": 1,
+        "note": "state after the D03 initial delivery, i.e. the baseline that review-r01 evaluated"
+      },
+      "review_r02_before": {
+        "sha256": "B452E38E7074B1D483CB8A0EB511A7EF858B3F35C13CC0841A75118E4B7F013C",
+        "bytes": 846941,
+        "lines_terminated": 4924,
+        "crlf": 169,
+        "bare_lf": 4755,
+        "note": "state after the review-r01 rework, i.e. the baseline that review-r02 evaluated; retained byte-for-byte as snapshots/design-before-r03.md"
+      },
+      "after": {
+        "sha256": "B07BAFC7CE1265A42B4F9A79C0F1489D3FCAAB50F47F1C02F0A1FCDA3C23AF99",
+        "bytes": 847437,
+        "lines_terminated": 4924,
+        "crlf": 169,
+        "bare_lf": 4755,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf": 1,
+        "control_char_note": "the single TAB (0x09) is pre-existing at byte offset 466829 inside a Go code block and is present in both baseline reconstructions; neither the review-r01 nor the review-r02 rework introduced any control character"
+      },
+      "frontmatter_status": "draft",
+      "frontmatter_status_changed": false,
+      "changes": [
+        {
+          "round": "initial-delivery",
+          "line": 5,
+          "kind": "whole-line replacement",
+          "before": "revision: identity-auth-design-ir01-r58",
+          "after": "revision: identity-auth-design-ir01-r59"
+        },
+        {
+          "round": "initial-delivery",
+          "line": 38,
+          "kind": "whole-line replacement",
+          "before": "**设计版本**：`identity-auth-design-ir01-r58`",
+          "after": "**设计版本**：`identity-auth-design-ir01-r59`"
+        },
+        {
+          "round": "initial-delivery",
+          "line": 83,
+          "kind": "same-line append",
+          "before_length": 1184,
+          "after_length": 1646,
+          "appended_chars": 462,
+          "appended_bytes_utf8": 760,
+          "prefix_identical": true,
+          "appended_excerpt": "**r59 / B13J-D03 restore 工具、批准主体与宿主隔离（ADR-0031）**：输入 r58 SHA256 `30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC`。依据 accepted ADR-0031，首期不提供生产 restore 工具与生产批准主体……实际产出者 Arch-Designer（Agent，非人的签字）；仍 draft、人的精确接纳 unknown，不声明实现、工具/备份/演练验证或生产可用。",
+          "reason": "decision trace entry for ADR-0031 while keeping the 4924-line invariant"
+        },
+        {
+          "round": "initial-delivery",
+          "line": 3858,
+          "kind": "whole-line replacement",
+          "before_excerpt": "……软件合同先固定，实际工具/备份批准者/执行主体 unknown 时生产 enter 在 Begin 前预检失败。……",
+          "after_excerpt": "……软件合同先固定，首期不提供生产 restore 工具与生产批准主体（ADR-0031），生产 enter/resume 的 DB 替换在 Begin 前以 closed 拒绝，仅保留软件合同与确定性测试替身。……",
+          "full_text_in": "report.md section 4.1"
+        },
+        {
+          "round": "review-rework",
+          "line": 3862,
+          "kind": "whole-line replacement",
+          "before_length": 681,
+          "after_length": 1043,
+          "before_excerpt": "生产 adapter 只允许执行配置中唯一批准程序……root 保留部署锁、Journal/keyring 与恢复 secret，不向子进程传递……POSIX 是唯一生产候选且首期仍 closed；Windows 生产 unsupported……仅允许软件合同测试。",
+          "after_excerpt": "生产 adapter 只允许执行配置中唯一批准程序：……批准者不得同时是执行者、本次 run 发起者或工具/备份供应方自批；执行主体是 root 启动的独立非交互子进程……root 不代替执行、不进入 shell、不重放，并保留部署锁、Journal/keyring、Store 绑定/审计写入与恢复 secret……执行身份权限边界：只允许对目标 DB 执行 restore 与只读验证，不得写 Journal/keyring、部署锁、Store 绑定或审计，不得自行建立权威 binding；其目标连接凭据必须属于独立数据库角色，该角色权限不得覆盖 identity/recovery 表写入，数据库角色与 GRANT 矩阵由批准记录固定、未证明即保持 closed……执行身份切换不得经 shell 脚本、su、sudo 等包装实现，具体机制由批准记录固定并在实现阶段以隔离实测证明……执行身份除目标 DB 连接外无网络出口……",
+          "rv": ["RV-01", "RV-02", "RV-05"],
+          "full_text_in": "report.md section 4.1"
+        },
+        {
+          "round": "initial-delivery",
+          "line": 3870,
+          "kind": "whole-line replacement",
+          "before_excerpt": "……禁止验完 hash 再按可替换路径重新打开。工具/ACL/进程隔离的真实信任未证明时，这个软件协议仍不足以启用生产替换。",
+          "after_excerpt": "……原生耐久回执只能由 restore 工具或其备份系统原生写入、独立于本次进程可重读的持久记录……不接受 stdout receipt、exit=0、DB 可连接或本次 run 行自证……当前无批准工具、批准记录、隔离与原生回执证据，生产替换保持 closed。",
+          "full_text_in": "report.md section 4.1"
+        },
+        {
+          "round": "unchanged-check",
+          "line": 7,
+          "kind": "unchanged check",
+          "value": "last_updated: 2026-11-01",
+          "reason": "same-day multiple increments keep the date unchanged"
+        },
+        {
+          "round": "review-r02-rework",
+          "line": 83,
+          "kind": "in-place term fix",
+          "rv": ["RV2-02"],
+          "before_excerpt": "……同步 restore driver 段的批准记录、专用执行身份、root 权限边界、进程组/no-follow/ENV allowlist 隔离、原生耐久回执来源与 POSIX/Windows 矩阵。……",
+          "after_excerpt": "……同步 restore driver 段的批准记录、专用执行身份、root 权限边界、进程树/no-follow/ENV allowlist 隔离、原生耐久回执来源与 POSIX/Windows 矩阵。……",
+          "length_note": "进程组 -> 进程树 is an equal-length, equal-byte substitution; the line stays 1646 chars / 2508 bytes and the 4924-line invariant is untouched"
+        },
+        {
+          "round": "review-r02-rework",
+          "line": 3862,
+          "kind": "whole-line replacement",
+          "rv": ["RV2-01"],
+          "before_length": 1043,
+          "after_length": 1265,
+          "before_bytes_utf8": 2105,
+          "after_bytes_utf8": 2601,
+          "removed": "整库 artifact 与这些受保护表的边界（排除相应 schema 或经隔离库后由 root 受控切换）同由批准记录固定。",
+          "after_excerpt": "……执行身份权限边界：只允许对目标 DB 执行 restore 与只读验证；目标连接凭据必须属于独立数据库角色，数据库角色与 GRANT 矩阵由批准记录固定、未证明即保持 closed；替换窗口之外，该角色权限不得覆盖 Journal/keyring、部署锁、Store 权威绑定与审计记录的任何写入；替换窗口之内，对目标库的写入只能来自已批准 artifact 的整库还原本身，执行身份不得自行构造、注入或声明任何权威 binding，也不得写 Journal/keyring 或部署锁，替换完成后由 root 以独立读取路径与同一 Store 短事务创建/核本次 running 与不可变 binding（同下文 Replace 合同），artifact 内既有历史行不得当作本次权威；受保护对象以批准记录固定的可检清单（Journal、keyring、部署锁、Store 权威绑定与审计记录）作为 restore 完成后的核对项，不改变 restore 的整库语义，也不引入 schema 级排除或 root 数据搬移。……",
+          "reason": "remove the sentence that conflicted with :3864/:3866/:3870 and with full-database restore; make the write boundary two satisfiable layers and demote the protected-object list to a post-restore cross-check item",
+          "full_text_in": "report.md section 4.1"
+        }
+      ],
+      "untouched_range": "3874-3902 command/ENV tables unchanged; HAN_RECOVERY_RESTORE_EXECUTABLE, HAN_RECOVERY_RESTORE_EXECUTABLE_SHA256 and HAN_RECOVERY_RESTORE_MANIFEST_PATH keep no defaults"
+    },
+    {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "before": {
+        "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+        "bytes": 137491,
+        "lines_terminated": 966,
+        "crlf": 966,
+        "bare_lf": 0,
+        "bom": false,
+        "trailing_newline": "single CRLF (0x0d0a)"
+      },
+      "rework_before": {
+        "sha256": "A80F5DD3F542AD15EC9BB717BAF20C4CA43EC83EB1B215171E1DA41516EB0589",
+        "bytes": 153033,
+        "lines_terminated": 1048,
+        "crlf": 1048,
+        "bare_lf": 0,
+        "bom": false,
+        "trailing_newline": "single CRLF (0x0d0a)",
+        "note": "state after the D03 initial delivery, i.e. the baseline that review-r01 evaluated"
+      },
+      "review_r02_before": {
+        "sha256": "3A3B2B214D9732BB61A0C8768CEF701B08F65ED3D8161C85F254A0F4B37275B8",
+        "bytes": 154074,
+        "lines_terminated": 1049,
+        "crlf": 1049,
+        "bare_lf": 0,
+        "note": "state after the review-r01 rework, i.e. the baseline that review-r02 evaluated; retained byte-for-byte as snapshots/framework-before-r03.md"
+      },
+      "after": {
+        "sha256": "D74F09A0666AF86A77E55AAC8491DEF516CA81C181423E250F71A82CB9121C12",
+        "bytes": 155139,
+        "lines_terminated": 1049,
+        "crlf": 1049,
+        "bare_lf": 0,
+        "bom": false,
+        "trailing_newline": "single CRLF (0x0d0a)",
+        "control_chars_non_crlf": 0
+      },
+      "changes": [
+        {
+          "round": "initial-delivery",
+          "kind": "append",
+          "lines": "967-1048",
+          "added_lines": 82,
+          "separator_lines": "967 blank, 968 ---, 969 blank, 970 <a id=adr-0031></a>, 971 heading",
+          "reason": "append ADR-0031 only; the first 137491 bytes remain byte-identical to the before hash; separator style matches ADR-0029 at 859-862 and ADR-0030 at 964-968",
+          "structures": "purpose/status/confirmation source/inheritance/problem/decision/current state-pain-change-effect with four-candidate table/approval-execution-isolation invariants with POSIX-Windows matrix/constraints with nine release conditions/reference record"
+        },
+        {
+          "round": "review-rework",
+          "line": 981,
+          "kind": "in-place edit",
+          "rv": ["RV-03"],
+          "added_text": "与 ADR-0030 的合并口径是“生产 `enter`/`install` 与 `enter`/`resume` 的 DB 替换路径均保持 closed”，二者是不同入口而非范围收窄。",
+          "reason": "merge the closed scope wording with ADR-0030 without narrowing either entry point"
+        },
+        {
+          "round": "review-rework",
+          "line": 1006,
+          "kind": "in-place edit",
+          "rv": ["RV-05"],
+          "added_text": "执行身份切换与程序启动禁止经 shell 脚本、`su`、`sudo` 等包装实现（与固定 argv、无 shell 冲突）；具体切换机制由批准记录固定，并要求在实现阶段以隔离实测证明，本 ADR 不选具体机制。",
+          "reason": "forbid su/sudo/shell wrapper identity switching that conflicts with fixed argv and no shell"
+        },
+        {
+          "round": "review-rework",
+          "line": 1036,
+          "kind": "new line",
+          "rv": ["RV-01"],
+          "text": "   - 负向验证门禁通过：以执行身份凭据写入 Journal/keyring/部署锁/Store 绑定/审计，以及该身份的目标 DB 角色写入 identity/recovery 表，均必须被拒绝；",
+          "reason": "make the permission-matrix invariant verifiable as a release condition"
+        },
+        {
+          "round": "review-rework",
+          "line": 1045,
+          "kind": "in-place edit",
+          "rv": ["RV-01"],
+          "previous_line": 1044,
+          "reason": "rewrite the adoption record so it matches the actual design text: approval record including no supplier self-approval, dedicated execution identity, root retaining Store binding/audit writes, execution identity forbidden to write Journal/keyring/deployment lock/Store binding/audit, independent DB role and GRANT matrix, no network beyond the target connection, and no su/sudo/shell wrapper"
+        },
+        {
+          "round": "review-r02-rework",
+          "line": 1007,
+          "kind": "in-place edit",
+          "rv": ["RV2-01"],
+          "before_length": 224,
+          "after_length": 384,
+          "reason": "replace the one-line write denial with the two satisfiable layers (outside the window the role may not write protected objects; inside the window writes come only from the approved full-database artifact restore and root alone writes this run binding via the same Store short transaction)"
+        },
+        {
+          "round": "review-r02-rework",
+          "line": 1034,
+          "kind": "in-place edit",
+          "rv": ["RV2-01"],
+          "before_length": 88,
+          "after_length": 153,
+          "reason": "make the permission-matrix release condition satisfiable under full-database restore instead of forbidding all Store writes by the execution identity"
+        },
+        {
+          "round": "review-r02-rework",
+          "line": 1036,
+          "kind": "in-place edit",
+          "rv": ["RV2-01"],
+          "before_length": 100,
+          "after_length": 179,
+          "reason": "rewrite the negative verification gate so it no longer requires rejecting the identity/recovery-table writes that a full-database restore necessarily performs; outside the window everything must be rejected, inside the window only the approved artifact restore may write and no authoritative binding may be produced by the execution identity"
+        },
+        {
+          "round": "review-r02-rework",
+          "line": 1045,
+          "kind": "in-place edit",
+          "rv": ["RV2-01", "RV2-02"],
+          "before_length": 656,
+          "after_length": 827,
+          "reason": "correct the attribution so the trace names process tree/ENV allowlist and fd isolation precheck on design :3862 while no-follow stable fd points at :3870, and restate the two-layer write boundary plus the checklist-only reading of the protected objects"
+        }
+      ],
+      "unchanged_prefix": {
+        "bytes": 137491,
+        "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+        "byte_identical": true,
+        "lines_identical": 966
+      },
+      "rework_unchanged_prefix": {
+        "bytes": 137491,
+        "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+        "byte_identical": true,
+        "note": "the review-r01 rework edits are inside ADR-0031 from :981 onward and the review-r02 rework edits are inside :1007-:1045 with no line added or removed; the prefix is still byte-identical to the D03 initial baseline"
+      }
+    },
+    {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "before": {
+        "sha256": "5075879AC7F3E31D83A06E843BCCE80CAA8DBA27F588E39D700E7F6C3765C10D",
+        "bytes": 19724,
+        "lines_terminated": 106,
+        "crlf": 2,
+        "bare_lf": 104,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)"
+      },
+      "rework_before": {
+        "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+        "bytes": 20764,
+        "note": "identical to after; review rework made no README change"
+      },
+      "after": {
+        "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+        "bytes": 20764,
+        "lines_terminated": 108,
+        "crlf": 2,
+        "bare_lf": 106,
+        "bom": false,
+        "trailing_newline": "single LF (0x0a)",
+        "control_chars_non_crlf": 0
+      },
+      "line_count_note": "106 -> 108 because the global index and scenario query table each gained one LF-terminated row; the framework.md domain row was edited in place; the two pre-existing CRLF lines remain at :36 and :59; the rework round changed zero bytes",
+      "changes": [
+        {
+          "round": "initial-delivery",
+          "line": 39,
+          "kind": "new global index row",
+          "after_excerpt": "| ADR-0031 | [首期不提供生产 restore 工具与批准主体，固定受批准执行与宿主隔离合同](framework.md#adr-0031) | 已接受（2026-11-01 D03 架构决策授权……无真实工具/备份/演练验证） | 架构设计 | 框架 | …… | 1 |"
+        },
+        {
+          "round": "initial-delivery",
+          "line": 45,
+          "kind": "in-place edit of framework.md domain row",
+          "before_excerpt": "……ADR-0028、ADR-0029、ADR-0030 |",
+          "after_excerpt": "……ADR-0028、ADR-0029、ADR-0030、ADR-0031 |"
+        },
+        {
+          "round": "initial-delivery",
+          "line": 71,
+          "kind": "new scenario query row",
+          "after_excerpt": "| 选择或调整生产 restore 工具、备份来源与可执行文件批准主体、执行主体与 root 权限边界、宿主隔离（进程组/no-follow/ENV allowlist/无 shell）、原生耐久回执、首期不提供或解除条件 | [framework.md（ADR-0031）](framework.md#adr-0031)、framework.md（ADR-0027、ADR-0018） |"
+        }
+      ]
+    }
+  ],
+  "round_delta": {
+    "changed_files": 3,
+    "design_changed_lines": [5, 38, 83, 3858, 3862, 3870],
+    "design_changed_line_count": 6,
+    "design_byte_delta": 2850,
+    "framework_added_lines": 83,
+    "framework_byte_delta": 16583,
+    "readme_added_lines": 2,
+    "readme_modified_lines": 1,
+    "readme_byte_delta": 1040,
+    "review_rework": {
+      "review_report": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r01/report.md",
+      "review_verdict": "CHANGES REQUIRED (design review CHANGES REQUIRED, security review CHANGES REQUIRED)",
+      "design_changed_lines": [3862],
+      "design_byte_delta": 824,
+      "framework_changed_lines": [981, 1006, 1036, 1045],
+      "framework_changed_line_note": ":1036 is a new line; :1045 was :1044 before the insert",
+      "framework_added_lines": 1,
+      "framework_byte_delta": 1041,
+      "readme_changed_lines": [],
+      "readme_byte_delta": 0,
+      "findings": {
+        "B13J-D03-RV-01": "CLOSED: design :3862 adds the write-side denial and the independent DB role/GRANT mechanism; framework :1036 adds the negative verification gate; :1045 trace rewritten so it no longer claims text the design does not have",
+        "B13J-D03-RV-02": "CLOSED: design :3862 now also forbids supplier self-approval, root substituting for execution/entering a shell/replaying, and any network beyond the target connection",
+        "B13J-D03-RV-03": "CLOSED: framework :981 states the merged position with ADR-0030 (enter/install and enter/resume DB replacement both closed; different entry points, not a narrowing)",
+        "B13J-D03-RV-04": "CLOSED: report.md :83 row now states the measured longest common prefix 1184 chars and tail append 462 chars / 760 bytes, with the measurement method",
+        "B13J-D03-RV-05": "CLOSED: framework :1006 and design :3862 forbid shell-script/su/sudo wrapper identity switching and require isolation measurement at implementation time"
+      }
+    },
+    "review_r02_rework": {
+      "review_report": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/review-r02/report.md",
+      "review_verdict": "CHANGES REQUIRED (design review CHANGES REQUIRED, security review CHANGES REQUIRED); RV-01 to RV-05 CLOSED, blockers are the newly introduced RV2-01 plus RV2-02/RV2-03",
+      "design_changed_lines": [83, 3862],
+      "design_byte_delta": 496,
+      "framework_changed_lines": [1007, 1034, 1036, 1045],
+      "framework_added_lines": 0,
+      "framework_byte_delta": 1065,
+      "readme_changed_lines": [],
+      "readme_byte_delta": 0,
+      "findings": {
+        "B13J-D03-RV2-01": "CLOSED: the design :3862 sentence reserving schema-level exclusion and root-controlled switching is deleted; the write denial is rebuilt as two satisfiable layers (outside the replacement window the role may not write protected objects, inside the window writes come only from the approved full-database artifact restore with root alone writing this run binding via the same Store short transaction); the protected-object list becomes a post-restore checklist item only; framework :1007/:1034/:1036/:1045 are rewritten so no gate contradicts full-database restore",
+        "B13J-D03-RV2-02": "CLOSED: design :83 uses 进程树 instead of 进程组 (equal length and bytes) and framework :1045 attributes process tree/ENV allowlist/fd precheck to :3862 while pointing no-follow stable fd at :3870",
+        "B13J-D03-RV2-03": "CLOSED: pre-change byte copies retained as snapshots/design-before-r03.md and snapshots/framework-before-r03.md before any edit, enabling the line-wise zero-extra-change proof"
+      },
+      "full_database_restore_consistency": "Every write invariant holds simultaneously under full-database restore; nothing survives that only works for a partial restore, and no exception path was added. The tension between the execution identity being forbidden to write the Store and a full-database restore necessarily containing Store tables is resolved by separating historical rows inside the artifact (data being restored, never this run authority) from this run running row and immutable binding (created or verified only by root through the same Store short transaction per design :3866, with VerifyRestored still bound to the same artifact/target through the no-follow stable fd at :3870). This is not a silent relaxation: the identity still may not construct, inject or declare any authoritative binding and may not write Journal/keyring or the deployment lock."
+    },
+    "reverse_reconstruction": {
+      "design": {
+        "sha256": "B452E38E7074B1D483CB8A0EB511A7EF858B3F35C13CC0841A75118E4B7F013C",
+        "bytes": 846941,
+        "result": "REVERSE-OK",
+        "method": "restore the snapshot text of the two differing lines (:83, :3862) and rejoin on LF; resulting length 846941 bytes and SequenceEqual=True against snapshots/design-before-r03.md"
+      },
+      "framework": {
+        "sha256": "3A3B2B214D9732BB61A0C8768CEF701B08F65ED3D8161C85F254A0F4B37275B8",
+        "bytes": 154074,
+        "result": "REVERSE-OK",
+        "method": "restore the snapshot text of the four differing lines (:1007, :1034, :1036, :1045) and rejoin on CRLF; resulting length 154074 bytes and SequenceEqual=True against snapshots/framework-before-r03.md"
+      },
+      "framework_prefix": {
+        "sha256": "33281CB5CF6807A9B8B57825CD8A7D9A2AFBED52CC899D9F95D64196DD1CF532",
+        "bytes": 137491,
+        "byte_identical": true,
+        "result": "REVERSE-OK"
+      },
+      "readme": {
+        "sha256": "A67B00D5BF050E100EA5AEC9DEBBFB8E5DABCE4463448658D68A5B4792E0F706",
+        "bytes": 20764,
+        "result": "UNCHANGED-OK"
+      },
+      "snapshots": [
+        {
+          "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/snapshots/design-before-r03.md",
+          "sha256": "B452E38E7074B1D483CB8A0EB511A7EF858B3F35C13CC0841A75118E4B7F013C",
+          "bytes": 846941,
+          "note": "byte copy of design.md taken before the first review-r02 rework edit; copy only, the original file was not modified by the copy step"
+        },
+        {
+          "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/snapshots/framework-before-r03.md",
+          "sha256": "3A3B2B214D9732BB61A0C8768CEF701B08F65ED3D8161C85F254A0F4B37275B8",
+          "bytes": 154074,
+          "note": "byte copy of framework.md taken before the first review-r02 rework edit; copy only, the original file was not modified by the copy step"
+        }
+      ],
+      "baseline_source": "design-d03/snapshots/design-before-r03.md and design-d03/snapshots/framework-before-r03.md, copied before the first review-r02 rework edit"
+    },
+    "line_diff_method": "split before and after on LF (design) or CRLF (framework) and compare element-wise against the snapshots; design differs at exactly :83 (equal length, 1646 chars / 2508 bytes) and :3862 (1043 -> 1265 chars, 2105 -> 2601 bytes); framework differs at exactly :1007 (224 -> 384 chars, 382 -> 718 bytes), :1034 (88 -> 153 chars, 142 -> 287 bytes), :1036 (100 -> 179 chars, 194 -> 383 bytes) and :1045 (656 -> 827 chars, 1178 -> 1573 bytes) with no line added or removed; README is byte-identical to the baseline"  },
+  "acceptance": [
+    {
+      "command": "Get-FileHash -Algorithm SHA256 + byte/line/CRLF/BOM/trailing-newline/control-char measurement on the three files",
+      "exit_code": 0,
+      "output": "design B452E38E.../846941 -> B07BAFC7.../847437 with 4924 lines and crlf=169/bareLF=4755; framework 3A3B2B21.../154074 -> D74F09A0.../155139 with 1049 pure CRLF lines; README unchanged at A67B00D5.../20764 with 108 lines and crlf=2/bareLF=106"
+    },
+    {
+      "command": "rg -n \"restore-v1|verify-v1|批准者|批准主体|执行主体|进程树|no-follow|restore_unknown\" .add/project/knowledge/design-workspace/identity-auth/design.md",
+      "exit_code": 0,
+      "output": "13 hits; full output reproduced verbatim in report.md section 7.1 and byte-compared equal to the live command output"
+    },
+    {
+      "command": "rg -n \"restore|恢复工具|批准|进程隔离|no-follow\" .add/project/knowledge/decisions/framework.md",
+      "exit_code": 0,
+      "output": "72 hits after the review-r02 rework (70 before it); full output reproduced verbatim in report.md section 7.2 and byte-compared equal to the live command output"
+    },
+    {
+      "command": "git diff --check -- .add/project/knowledge/design-workspace/identity-auth/design.md .add/project/knowledge/decisions/framework.md",
+      "exit_code": 0,
+      "output": "no whitespace errors; only the Git autocrlf advisory for the existing LF style of design.md"
+    },
+    {
+      "command": "reverse reconstruction of design.md from the after-state to the review-r02 baseline using snapshots/design-before-r03.md",
+      "exit_code": 0,
+      "output": "SHA256 B452E38E7074B1D483CB8A0EB511A7EF858B3F35C13CC0841A75118E4B7F013C and 846941 bytes: REVERSE-OK; differing LF indexes exactly 83 and 3862"
+    },
+    {
+      "command": "reverse reconstruction of framework.md from the after-state to the review-r02 baseline using snapshots/framework-before-r03.md",
+      "exit_code": 0,
+      "output": "SHA256 3A3B2B214D9732BB61A0C8768CEF701B08F65ED3D8161C85F254A0F4B37275B8 and 154074 bytes: REVERSE-OK; differing CRLF indexes exactly 1007, 1034, 1036 and 1045, no line added or removed"
+    },
+    {
+      "command": "README.md zero-change check",
+      "exit_code": 0,
+      "output": "byte-for-byte identical to the review-r02 baseline A67B00D5.../20764 (SequenceEqual=True)"
+    },
+    {
+      "command": "framework.md prefix check (first 137491 bytes)",
+      "exit_code": 0,
+      "output": "SHA256 33281CB5...1CF532 and byte-identical to the D03 initial baseline; ADR-0019, ADR-0030 and ADR-0027 bodies untouched"
+    },
+    {
+      "command": "snapshot line-wise zero-extra-change proof: element-wise comparison of the after-state against both snapshots",
+      "exit_code": 0,
+      "output": "design differing line set is exactly {83, 3862} and framework differing line set is exactly {1007, 1034, 1036, 1045}; every other line of design (4922) and framework (1045) is character-identical, so no undeclared edit exists"
+    },
+    {
+      "command": "ADR-0031 block reproduction check in report.md section 4.2",
+      "exit_code": 0,
+      "output": "the 82 reproduced lines (:968-:1049) compare -ceq True line by line against the live framework.md"
+    },
+    {
+      "command": "report.md reproduction check: section 4.1 quoted lines and section 4.2 ADR block against the live files",
+      "exit_code": 0,
+      "output": "report :97 equals live design :83, report :121 equals snapshot :3862, report :127 equals live design :3862, report :109 equals live design :3858 and report :139 equals live design :3870 by ordinal string equality; report :150-:231 equals framework :968-:1049 line by line"
+    },
+    {
+      "command": "index.json parse check after the review-r02 rework",
+      "exit_code": 0,
+      "output": "ConvertFrom-Json parses without error; the two authoring defects (a stray +X token and one trailing comma) introduced while drafting this evidence file were fixed before the final measurement"
+    }
+  ],  "evidence": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/report.md",
+      "sha256": "27AC38D34E4A814B97F9056FE203BEB40E7AD96DC1E874F87B960F5C2BA69685",
+      "bytes": 108987,
+      "lines": 505,
+      "format": "UTF-8 without BOM, LF only, single trailing LF, zero control characters",
+      "description": "D03 decision rationale, four-candidate comparison, four one-line conclusions, line-level before/after text of every changed line, before/after hash and format measurements, reverse reconstruction from the retained snapshots, full acceptance command output, residual risks, D04 boundary, the review-r01 rework disposition (RV-01 to RV-05) and the review-r02 rework disposition (RV2-01 to RV2-03) including the full-database-restore consistency self-check"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/snapshots/design-before-r03.md",
+      "sha256": "B452E38E7074B1D483CB8A0EB511A7EF858B3F35C13CC0841A75118E4B7F013C",
+      "bytes": 846941,
+      "lines": 4924,
+      "format": "UTF-8 without BOM, crlf=169 / bareLF=4755, single trailing LF, one pre-existing TAB control character",
+      "description": "byte copy of identity-auth design.md taken before the first review-r02 rework edit, retained so that the zero-extra-change proof and the reverse reconstruction do not depend on any temporary location"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/snapshots/framework-before-r03.md",
+      "sha256": "3A3B2B214D9732BB61A0C8768CEF701B08F65ED3D8161C85F254A0F4B37275B8",
+      "bytes": 154074,
+      "lines": 1049,
+      "format": "UTF-8 without BOM, pure CRLF (1049 / 0), single trailing CRLF, zero control characters",
+      "description": "byte copy of decisions framework.md taken before the first review-r02 rework edit, retained so that the zero-extra-change proof and the reverse reconstruction do not depend on any temporary location"
+    }
+  ],
+  "write_set": [
+    ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    ".add/project/knowledge/decisions/framework.md",
+    ".add/project/knowledge/decisions/README.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/index.json",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/snapshots/design-before-r03.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d03/snapshots/framework-before-r03.md"
+  ],  "not_proven": [
+    "no human artifact acceptance, sign-off or checkpoint; design remains draft and human precise acceptance remains unknown",
+    "review-r01 and review-r02 are Agent reviews (both design CHANGES REQUIRED, both security CHANGES REQUIRED), not a human sign-off or a security acceptance; the r03 directed re-review after this rework is still pending",
+    "no real restore tool, approved binary, named approval record, dedicated execution identity, ACL/process-isolation measurement or native durable receipt sample exists",
+    "the independent DB role and GRANT matrix are fixed only as a contract plus a negative verification gate; no role, schema scope or grant statement was measured",
+    "no restore, backup or old-backup drill was executed; no POSIX or Windows isolation was measured",
+    "no claim that any restore tool, backup system, managed platform, execution identity, ACL, process isolation or drill passed",
+    "no implementation, code, migration, deployment, test or E2E execution in this round",
+    "Case18 and S8.2 are not PASS; blocked-upstream is not lifted; production assembly is not approved",
+    "no git add/commit/push/checkout/switch/stash/restore/clean performed",
+    "no changes to tests, tasks.md, plans/, stories.md, test-plan.md or decisions/identity.md; no Task status changed and no candidate Task id registered",
+    "ADR-0019 and ADR-0030 bodies were not modified; framework.md first 137491 bytes are byte-identical",
+    "design.md :3874-3902 command/ENV tables were not modified",
+    "the framework.md :1036 negative verification gate has never been executed in a real environment: no database role, no GRANT statement and no replacement-window isolation was measured, so the gate is satisfiable on paper only",
+    "the full-database restore semantics is a contract statement: no restore was run, so it is not measured that a real tool restores whole-database rather than a schema-level subset"
+  ],
+  "open_items": [
+    "independent re-review (design and security) of the reworked ADR-0031 and design r59",
+    "appoint a named recovery approval role and produce two independent approval records",
+    "define and approve the dedicated execution identity, its independent DB role and the exact GRANT matrix; prove the negative verification gate",
+    "select and prove the POSIX identity-switch mechanism without shell/su/sudo wrappers",
+    "obtain a real native durable receipt sample and a real old-backup consistency drill",
+    "formal task planning registration for any restore implementation and validation scope",
+    "handle design.md :3828 and :3957 provider/approval unknowns separately in the S4.16 scope",
+    "human precise acceptance of the design and decision remains unknown"
+  ],
+  "verdict": {
+    "state": "pass-reviewed-r03",
+    "approval_claimed": false,
+    "review_claimed": false,
+    "gate_claimed": false,
+    "production_claimed": false,
+    "summary": "ADR-0031 recorded on the user's D03 decision authorization; non-author review r03 returned PASS for both the design and the security perspective (contract layer only, not a human acceptance or security sign-off): no production restore tool or approval subject in phase one; production enter/install (ADR-0030) and the enter/resume DB replacement path both stay closed as different entry points rather than a narrowing; six approval/execution/isolation/receipt invariants and nine release conditions fixed. review-r01 findings RV-01 to RV-05 and review-r02 findings RV2-01 to RV2-03 are all disposed in this rework: design :3862 now carries a two-layer write boundary that holds under full-database restore with the protected objects demoted to a post-restore checklist, design :83 uses 进程树, framework :1007/:1034/:1036/:1045 are rewritten so no gate contradicts full-database restore and the adoption trace matches the actual design lines, and pre-change byte snapshots are retained for the line-wise zero-extra-change proof. README is unchanged in this round. No tool, backup, drill, GRANT, isolation, security acceptance or production readiness is claimed."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "scope": "Immutable independent bounded R02 re-review of F001 and related new risks",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "runtime_id": "01a1835a-8010-7a73-a8dd-3192719b6965",
+    "provenance": "Main real spawn result; role designated by Main under user standing authorization and project delegation rules; not direct user selection"
+  },
+  "result": "PASS - bounded F001 document re-review only",
+  "finding_results": [
+    {
+      "id": "ARCH-R32-R01-F001",
+      "prior_severity": "MEDIUM",
+      "status": "CLOSED",
+      "level": "design/ADR/index only",
+      "risk_waiver": false
+    }
+  ],
+  "new_findings": [],
+  "main_reception": "Full report/receipt read. F001 design closure accepted technically; Reconcile/ReplayAll capability distinction is an explicit downstream FD obligation. No implementation/human acceptance.",
+  "documents_at_review": {
+    ".add/project/knowledge/design/architecture.md": "F0D1334187A5E7533CF31C88EFCE4E3BB84F36EE484B01A1BDD9B7DB0D382CBA",
+    ".add/project/knowledge/decisions/framework.md": "2825D595FFC6C347DAC41142B23AB22DC29B543A1E2924D6C42744A76E7A7C71",
+    ".add/project/knowledge/decisions/README.md": "2F2F3B2C70D07218A06217AA8D1A15B3CC2C67C7F35BB99583F0A0E4EEC90C6E"
+  },
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r02/review-report.md",
+      "sha256": "A2AFB90642B3BE5F5E5F0F06BB6E269302953AAE7CC9A54A16D8534A60D676FE",
+      "bytes": 13877
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r02/readset.json",
+      "sha256": "FB33A636B68392E2A906E003DB444D8D3786B3A4A1393010A3EAAC70C51E2CFA",
+      "bytes": 14918
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r02/verification.json",
+      "sha256": "CEDBC9756459C713F996D1EF1A801F387CBA58C1ABE45729381A6C144AC824AC",
+      "bytes": 3390
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r02/initial.json",
+      "sha256": "0123F9E0AD9DB6A716920D305BC3DFC190DB6C59215EB14E53AD2CB441713953",
+      "bytes": 546
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r02/readset.jsonl",
+      "sha256": "530D3C4E4312602D18060C6F3AACB07E134620C1CC593B1FFC2CB2FBCD49BBC5",
+      "bytes": 6255
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r02/receipt.json",
+      "sha256": "F794935AE5AC54ED3724D8D84AA1ECFC6F2A9A2B9877D2FE590CBBEEBDFED4F0",
+      "bytes": 3840
+    }
+  ]
+}

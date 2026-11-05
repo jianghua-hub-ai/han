@@ -1,0 +1,26 @@
+{
+  "scope": "s48-g0-delta-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13b-s48-delta-z27foe3q",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-g0-delta-r01/delta.json",
+      "sha256": "7423269E30E78056A42B1357D49E6C32E1F02A9832A59405FAC3025E54E11550",
+      "bytes": 2019,
+      "source_name": "delta.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/s48-g0-delta-r01/delta.md",
+      "sha256": "604346BC2E78E0ED1A17D0695F55B0142248B296357F8A1E6777617A9260351C",
+      "bytes": 4492,
+      "source_name": "delta.md"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "scope": "c1-design-review-r01",
+  "owner": {
+    "role": "Reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-review-1a6c6ec5d5334eaab1d10f11b2d07174",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/artifacts.sha256.json",
+      "sha256": "445B09257798BF684E1D37BD291BCDEAC3F797857EC9C3F8A9BEED83DCECCA1E",
+      "bytes": 1333,
+      "source_name": "artifacts.sha256.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/final-git-status.txt",
+      "sha256": "8D9177E8B729469C0845483A3E61CC89DF48285513D6D7188B5F711546A587DD",
+      "bytes": 16248,
+      "source_name": "final-git-status.txt"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/read.ps1",
+      "sha256": "7D8118D88F1D56E18AF0648A2F671D1D012E6EEAF170282F64C5826C9B6CDFB1",
+      "bytes": 718,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/readset.jsonl",
+      "sha256": "116906273CBCF1EADDB8AE8020DEE31386906572FB80E7E92A9B1586F32452FE",
+      "bytes": 17239,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/receipt.json",
+      "sha256": "A9982E68C2ED6A57774030BC8CA6E412F97D8CD360FA9D4729DFF8510EE230B6",
+      "bytes": 4429,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/review-report.md",
+      "sha256": "8BC76F4789D4C32DD58F5B273CB4E0B6AAEE7BD95E2B33608FAE95762A0DD9BB",
+      "bytes": 12005,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/static-integrity.json",
+      "sha256": "DBEB8CAED3E281A0D038B1D257D14B6950570AC9E3F0570E3B748CF0BE608F00",
+      "bytes": 12571,
+      "source_name": "static-integrity.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/static-readset.jsonl",
+      "sha256": "9156B586E9C0EC538F3EDD755035B8F706164206B0913C5AA2D84167ABDA6F04",
+      "bytes": 13117,
+      "source_name": "static-readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-design-review-r01/static_integrity.py",
+      "sha256": "0AA34E324DEFAE0A6A3BB9A43245E95C11FE3D66969D83EA69F17A7F75267ACA",
+      "bytes": 4007,
+      "source_name": "static_integrity.py"
+    }
+  ]
+}

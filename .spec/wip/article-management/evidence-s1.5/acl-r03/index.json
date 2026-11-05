@@ -1,0 +1,427 @@
+{
+  "round": "S1.5 ACL R03",
+  "generated_at": "2026-10-31T09:35:00Z",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "review_input": {
+    "path": ".spec/wip/article-management/review-code-s1.5-acl-r02.md",
+    "sha256": "E1B93E05D005521C729FEBDC69CE663FC64D5923D5B870F5596EA7AEDC517C67"
+  },
+  "write_scope": {
+    "modified": [
+      "cmd/han-server/append_only_acl.go",
+      "cmd/han-server/append_only_acl_test.go",
+      "cmd/han-server/append_only_acl_integration_test.go",
+      "cmd/han-server/database_config.go",
+      "deploy/db/README.md"
+    ],
+    "new": [
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/index.json",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/retained-resources.ndjson",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-01.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-02.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-03.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-04.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-05.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-06.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-07.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-08.log",
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/run-09.log"
+    ],
+    "untouched_by_design": [
+      "cmd/han-server/main.go",
+      "deploy/db/provision.sql",
+      "deploy/db/grant-application.sql",
+      ".add/project/knowledge/decisions/framework.md",
+      ".add/project/knowledge/decisions/README.md",
+      ".add/project/knowledge/decisions/content.md",
+      ".add/project/knowledge/decisions/identity.md"
+    ],
+    "external_concurrent_artifacts": [
+      ".spec/wip/article-management/evidence-s1.5/acl-r03/lead-gate.log"
+    ]
+  },
+  "findings": [
+    {
+      "id": "S15-ACL-R02-F001",
+      "severity": "MEDIUM",
+      "status": "fixed",
+      "implementation": "Option B implemented. The gate counts same-name relations in the effective search_path via pg_catalog.current_schemas(false) and fails closed with the independent error category errAppendOnlyTableAmbiguous when the count is not 1. The existing pg_table_is_visible count check is retained and runs first; the two checks are additive.",
+      "code_points": [
+        "cmd/han-server/append_only_acl.go:42-44 errAppendOnlyTableAmbiguous",
+        "cmd/han-server/append_only_acl.go:130-141 appendOnlyPrivileges.visible and onSearchPath fields",
+        "cmd/han-server/append_only_acl.go:182-187 retained pg_table_is_visible count check with errAppendOnlyTableUnresolved",
+        "cmd/han-server/append_only_acl.go:188-193 ambiguity fail-closed check with errAppendOnlyTableAmbiguous",
+        "cmd/han-server/append_only_acl.go:261-269 on_search_path CTE filtered by pg_catalog.current_schemas(false)",
+        "cmd/han-server/append_only_acl.go:270-303 count selection and scan",
+        "cmd/han-server/append_only_acl.go:364-419 resolveVisibleTableSchema with the same independent ambiguity check at 412-416"
+      ],
+      "unit_tests": [
+        "cmd/han-server/append_only_acl_test.go:23 insert_only_passes covers onSearchPath=1 passes",
+        "cmd/han-server/append_only_acl_test.go:150-157 ambiguous_same_name_relations_on_search_path_are_rejected covers count 2 rejected with errAppendOnlyTableAmbiguous",
+        "cmd/han-server/append_only_acl_test.go:160-167 missing_same_name_relation_on_search_path_is_rejected covers count 0 rejected"
+      ],
+      "integration_test": [
+        "cmd/han-server/append_only_acl_integration_test.go:35-40 boundary wording now matches implementation",
+        "cmd/han-server/append_only_acl_integration_test.go:333-369 ambiguous_same_name_schema_rejected creates a second same-name schema and asserts errAppendOnlyTableAmbiguous",
+        "cmd/han-server/append_only_acl_integration_test.go:448-478 aclSearchPathPool helper sets search_path on the application pool",
+        "cmd/han-server/append_only_acl_integration_test.go:515-517 evidence registry directory acl-r03"
+      ],
+      "docs": [
+        "deploy/db/README.md:89-91 failure-order item 7 requires current_schemas(false) same-name count 1 and pg_table_is_visible count 1 with independent error categories",
+        "deploy/db/README.md:115-124 explicit search_path boundary, no historical schema cleanup, and not-1 fail-closed semantics",
+        "deploy/db/README.md:131-135 does-not-prove boundary"
+      ]
+    },
+    {
+      "id": "S15-ACL-R02-F002",
+      "severity": "LOW",
+      "status": "fixed",
+      "implementation": "DSN validation now rejects URL top-level role and session_authorization query keys case-insensitively after percent decoding, and keyword DSN role/session_authorization settings, before pgx parses them. application_name and other non-role runtime parameters remain accepted.",
+      "code_points": [
+        "cmd/han-server/database_config.go:57 roleSwitchingDatabaseOption regex",
+        "cmd/han-server/database_config.go:91-93 URL validation call site",
+        "cmd/han-server/database_config.go:109-116 keyword top-level and options checks",
+        "cmd/han-server/database_config.go:156-183 hasRoleSwitchingURLSetting with QueryUnescape and EqualFold",
+        "cmd/han-server/database_config.go:167-169 URL top-level role/session_authorization rejection"
+      ],
+      "unit_tests": [
+        "cmd/han-server/append_only_acl_test.go:258 TestParseDatabasePoolConfigRejectsRoleSwitchingOptions",
+        "cmd/han-server/append_only_acl_test.go:291-294 url_role_parameter",
+        "cmd/han-server/append_only_acl_test.go:296-299 url_role_parameter_uppercase",
+        "cmd/han-server/append_only_acl_test.go:301-304 url_role_parameter_encoded percent-encoded key",
+        "cmd/han-server/append_only_acl_test.go:306-309 url_session_authorization_parameter",
+        "cmd/han-server/append_only_acl_test.go:311-314 url_session_authorization_parameter_mixed_case",
+        "cmd/han-server/append_only_acl_test.go:316-318 url_application_name_is_allowed",
+        "cmd/han-server/append_only_acl_test.go:320-322 url_application_name_next_to_allowed_options",
+        "cmd/han-server/append_only_acl_test.go:342-345 keyword_role_parameter",
+        "cmd/han-server/append_only_acl_test.go:347-350 keyword_session_authorization_parameter",
+        "cmd/han-server/append_only_acl_test.go:352-354 keyword_application_name_is_allowed"
+      ],
+      "docs": [
+        "deploy/db/README.md:17-21 URL top-level role/session_authorization rejection including case and percent-encoding; application_name is unaffected"
+      ]
+    },
+    {
+      "id": "S15-ACL-R02-F003",
+      "severity": "LOW",
+      "status": "handoff_only_not_modified",
+      "implementation": "ADR-0029 was not modified in this round. The divergence is recorded under adr_divergence_handoff for Lead handling via add-adr-decision."
+    }
+  ],
+  "file_hashes": [
+    {
+      "path": "cmd/han-server/append_only_acl.go",
+      "before_sha256": "FFA71581CAC2EE05A43E0B99ECBF5A4C68D5FE32CC0B3CC0FD6284511FD1D282",
+      "after_sha256": "A916412CBCDD7279A61B26B56993FDAA320AED940F2BA53A9727E09A4E68CFF5",
+      "changed": true
+    },
+    {
+      "path": "cmd/han-server/append_only_acl_test.go",
+      "before_sha256": "5DBE9C14D225FCCDFAD10F42C8C073E4FCAA715CDA307FD13D9F060895444C7F",
+      "after_sha256": "6555F88A2FB6E24317236EAA6710CE1464061FA80FD409782673773020F95739",
+      "changed": true
+    },
+    {
+      "path": "cmd/han-server/append_only_acl_integration_test.go",
+      "before_sha256": "F9C288BE0576E415C6CC27BCE9F97D15C0728DD6E85E14F3209B9645CD16D605",
+      "after_sha256": "A8CF9C9CD02828FF1A426156526853D51AFE94F6662DBBCD6934F41A79E533E2",
+      "changed": true
+    },
+    {
+      "path": "cmd/han-server/database_config.go",
+      "before_sha256": "6B29E8720593D6BE19F68AFFE053F037173F5DE04A17AB6B4D9F2453A83846BC",
+      "after_sha256": "16EEB0E97652CBED16628BCD3B64F6D2D99B5E5C2EF77F6C65DC90DDD35405DA",
+      "changed": true
+    },
+    {
+      "path": "cmd/han-server/main.go",
+      "before_sha256": "1D47CC94E415E80C69DEEBE237EBD085AF05044902B12E07B2A04B0822028187",
+      "after_sha256": "1D47CC94E415E80C69DEEBE237EBD085AF05044902B12E07B2A04B0822028187",
+      "changed": false
+    },
+    {
+      "path": "deploy/db/provision.sql",
+      "before_sha256": "5252556099A335A480041A62ED30C7618384A5B4D038BFA29356423C446B8C23",
+      "after_sha256": "5252556099A335A480041A62ED30C7618384A5B4D038BFA29356423C446B8C23",
+      "changed": false
+    },
+    {
+      "path": "deploy/db/grant-application.sql",
+      "before_sha256": "FC0D229818D48407EF4CCBF97D0860E08E781FF8EF102201C551560741AF0AE8",
+      "after_sha256": "FC0D229818D48407EF4CCBF97D0860E08E781FF8EF102201C551560741AF0AE8",
+      "changed": false
+    },
+    {
+      "path": "deploy/db/README.md",
+      "before_sha256": "AFBD40278AA3CE23BCB3319CCDD08FD7E46CFB9E0BC70D1808CD73B53A5A6087",
+      "after_sha256": "9A47DD10CA1699757658728F7BE7F04FD221FFAD3F025DB0AA699E8F2F29F0E9",
+      "changed": true
+    }
+  ],
+  "commands": [
+    {
+      "id": "run-01",
+      "command": "go build ./...",
+      "log": "run-01.log",
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "id": "run-02",
+      "command": "gofmt -l cmd/han-server/append_only_acl.go cmd/han-server/append_only_acl_test.go cmd/han-server/append_only_acl_integration_test.go cmd/han-server/database_config.go",
+      "log": "run-02.log",
+      "exit_code": 0,
+      "result": "PASS empty output"
+    },
+    {
+      "id": "run-03",
+      "command": "go vet ./cmd/han-server",
+      "log": "run-03.log",
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "id": "run-04",
+      "command": "go vet -tags=integration ./cmd/han-server",
+      "log": "run-04.log",
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "id": "run-05",
+      "command": "go test ./cmd/han-server -count=1",
+      "log": "run-05.log",
+      "exit_code": 0,
+      "result": "PASS ok han/cmd/han-server 38.347s"
+    },
+    {
+      "id": "run-06",
+      "command": "set HAN_TEST_POSTGRES_DSN=postgres://postgres:<redacted>@127.0.0.1:5433/postgres & go test -tags=integration ./cmd/han-server -run ^TestAppendOnlyApplicationACL$ -count=1 -v",
+      "log": "run-06.log",
+      "log_sha256": "92CE23AC63D9769783376810D8884644B11FF16E66873D9AAEE3F03187349025",
+      "exit_code": 0,
+      "result": "PASS 12 of 12 subtests",
+      "note": "Executed before the README wording-only correction; Go source hashes were unchanged."
+    },
+    {
+      "id": "run-07",
+      "command": "set HAN_TEST_POSTGRES_DSN=postgres://postgres:<redacted>@127.0.0.1:5433/postgres & go test -tags=integration -race ./cmd/han-server -run ^TestAppendOnlyApplicationACL$ -count=1 -v",
+      "log": "run-07.log",
+      "log_sha256": "9D547C7AB8E160D4D68154362F2A780ED0ED796BEFBEE8EF9495A89F606FC01C",
+      "exit_code": 0,
+      "result": "PASS 12 of 12 subtests, no data race",
+      "note": "Executed before the README wording-only correction; Go source hashes were unchanged."
+    },
+    {
+      "id": "run-08",
+      "command": "go build ./... final",
+      "log": "run-08.log",
+      "exit_code": 0,
+      "result": "PASS"
+    },
+    {
+      "id": "run-09",
+      "command": "go build ./... final after README wording-only update",
+      "log": "run-09.log",
+      "exit_code": 0,
+      "result": "PASS final working-tree state"
+    }
+  ],
+  "postgres": {
+    "dsn": "postgres://postgres:<redacted>@127.0.0.1:5433/postgres",
+    "server_version_num": 180006,
+    "normal_run": {
+      "command_id": "run-06",
+      "subtests_passed": 12,
+      "subtests_failed": 0,
+      "duration": "2.467s"
+    },
+    "race_run": {
+      "command_id": "run-07",
+      "subtests_passed": 12,
+      "subtests_failed": 0,
+      "duration": "4.027s",
+      "data_race_detected": false
+    },
+    "key_stages": {
+      "fresh_install_gate_passed": true,
+      "non_superuser_login_positive": true,
+      "superuser_session_rejected": true,
+      "superuser_set_role_rejected": true,
+      "owner_rejected": true,
+      "column_update_rejected": true,
+      "ambiguous_same_name_schema_rejected": true
+    },
+    "subtests": [
+      "fresh_install_default_privileges_gate_passed",
+      "schema_owner_is_migrator",
+      "non_superuser_login_positive",
+      "insert_allowed",
+      "migration_ledger_denied",
+      "mutation_denied",
+      "schema_create_denied",
+      "superuser_session_rejected",
+      "superuser_set_role_rejected",
+      "owner_identity_rejected",
+      "column_update_rejected",
+      "ambiguous_same_name_schema_rejected"
+    ],
+    "runs": [
+      {
+        "command_id": "run-06",
+        "schema": "han_s15_acl_31e69204bd45e7aa",
+        "decoy_schema": "han_s15_acl_31e69204bd45e7aa_decoy",
+        "observed_stage": "ambiguous_same_name_schema_rejected"
+      },
+      {
+        "command_id": "run-07",
+        "schema": "han_s15_acl_c08198fb5fb475fd",
+        "decoy_schema": "han_s15_acl_c08198fb5fb475fd_decoy",
+        "observed_stage": "ambiguous_same_name_schema_rejected"
+      }
+    ],
+    "concurrent_lead_gate": {
+      "log": ".spec/wip/article-management/evidence-s1.5/acl-r03/lead-gate.log",
+      "observed_at": "2026-10-31T09:32:32Z",
+      "commands": {
+        "build": 0,
+        "vet": 0,
+        "vet-integration": 0,
+        "gofmt": 0,
+        "unit": 0,
+        "pg-normal": 0,
+        "pg-race": 0
+      },
+      "schemas": [
+        "han_s15_acl_44142b0d7d60d021",
+        "han_s15_acl_44142b0d7d60d021_decoy",
+        "han_s15_acl_c8a7001535d3dbee",
+        "han_s15_acl_c8a7001535d3dbee_decoy"
+      ],
+      "note": "Appended to the shared retained-resources.ndjson by a concurrent Lead gate run. This agent did not create these resources, did not modify lead-gate.log, and did not drop anything."
+    },
+    "lead_reverification": {
+      "log": ".spec/wip/article-management/evidence-s1.5/acl-r03/lead-verify-r03-pg.log",
+      "log_sha256": "2F1DAB5052698A69D38B935AE1F906927981FA88C279DC2D2C58B634862AB4FF",
+      "gate_log": ".spec/wip/article-management/evidence-s1.5/acl-r03/lead-verify-r03.log",
+      "gate_log_sha256": "B859DCA723654BDECDA9A96E225351F12130CAC4F221D5F51D0FD9F32A8360F4",
+      "schemas": ["han_s15_acl_1509382e7e7f2404", "han_s15_acl_c9e729d9f5dc850b"],
+      "note": "Lead re-ran normal and -race TestAppendOnlyApplicationACL on the final tree; both exit 0, 12/12 subtests each."
+    }
+  },
+  "retained_resources": {
+    "registry": ".spec/wip/article-management/evidence-s1.5/acl-r03/retained-resources.ndjson",
+    "registry_sha256_before_concurrent_lead_gate": "137F8CF50F91919174BB70B8C740AAD72E49391EB7BA200C6EB100047BFA69DB",
+    "entry_count_before_concurrent_lead_gate": 20,
+    "registry_sha256_final": "940609FCEA1E56CA59F7C7C8C247F7398A3F5B5906C087823D3A6C1F04A44FFA",
+    "append_only": true,
+    "entry_count": 36,
+    "drop_count": 0,
+    "schemas": [
+      "han_s15_acl_a04b2888befad537",
+      "han_s15_acl_a04b2888befad537_decoy",
+      "han_s15_acl_017b3fb9d2e51478",
+      "han_s15_acl_017b3fb9d2e51478_decoy",
+      "han_s15_acl_12c6b698780925e1",
+      "han_s15_acl_12c6b698780925e1_decoy",
+      "han_s15_acl_31e69204bd45e7aa",
+      "han_s15_acl_31e69204bd45e7aa_decoy",
+      "han_s15_acl_c08198fb5fb475fd",
+      "han_s15_acl_c08198fb5fb475fd_decoy",
+      "han_s15_acl_44142b0d7d60d021",
+      "han_s15_acl_44142b0d7d60d021_decoy",
+      "han_s15_acl_c8a7001535d3dbee",
+      "han_s15_acl_c8a7001535d3dbee_decoy",
+      "han_s15_acl_1509382e7e7f2404",
+      "han_s15_acl_1509382e7e7f2404_decoy",
+      "han_s15_acl_c9e729d9f5dc850b",
+      "han_s15_acl_c9e729d9f5dc850b_decoy"
+    ],
+    "roles": [
+      "han_s15_mig_a04b2888befad537",
+      "han_s15_app_a04b2888befad537",
+      "han_s15_mig_017b3fb9d2e51478",
+      "han_s15_app_017b3fb9d2e51478",
+      "han_s15_mig_12c6b698780925e1",
+      "han_s15_app_12c6b698780925e1",
+      "han_s15_mig_31e69204bd45e7aa",
+      "han_s15_app_31e69204bd45e7aa",
+      "han_s15_mig_c08198fb5fb475fd",
+      "han_s15_app_c08198fb5fb475fd",
+      "han_s15_mig_44142b0d7d60d021",
+      "han_s15_app_44142b0d7d60d021",
+      "han_s15_mig_c8a7001535d3dbee",
+      "han_s15_app_c8a7001535d3dbee",
+      "han_s15_mig_1509382e7e7f2404",
+      "han_s15_app_1509382e7e7f2404",
+      "han_s15_mig_c9e729d9f5dc850b",
+      "han_s15_app_c9e729d9f5dc850b"
+    ],
+    "provenance": [
+      {
+        "schemas": ["han_s15_acl_a04b2888befad537", "han_s15_acl_017b3fb9d2e51478", "han_s15_acl_12c6b698780925e1"],
+        "source": "R03 pre-final local runs; entries retained; no dedicated run-01..09 log"
+      },
+      {
+        "schemas": ["han_s15_acl_31e69204bd45e7aa"],
+        "source": "run-06 normal integration run"
+      },
+      {
+        "schemas": ["han_s15_acl_c08198fb5fb475fd"],
+        "source": "run-07 race integration run"
+      },
+      {
+        "schemas": ["han_s15_acl_44142b0d7d60d021", "han_s15_acl_c8a7001535d3dbee"],
+        "source": "concurrent Lead gate run; see lead-gate.log"
+      },
+      {
+        "schemas": ["han_s15_acl_1509382e7e7f2404", "han_s15_acl_c9e729d9f5dc850b"],
+        "source": "Lead R03 re-verification: normal and -race TestAppendOnlyApplicationACL runs; see lead-verify-r03-pg.log"
+      }
+    ],
+    "r02_registry_untouched": true
+  },
+  "adr_divergence_handoff": {
+    "adr": "ADR-0029",
+    "reference": ".add/project/knowledge/decisions/framework.md",
+    "divergence_observed_at_review": "The R02 review found that ADR-0029 sections 5 and 8 still described provision.sql plus grant-application.sql as a mandatory two-phase install, while the R02 implementation performs migrations with the migration identity, then REVOKEs UPDATE/DELETE/TRUNCATE on the two append-only tables and REVOKE ALL on schema_migrations before the gate; grant-application.sql is out-of-band replay/verification.",
+    "current_working_tree_state": "The framework.md working-tree copy already contains Lead revision text at line 910 and updated section 5 (line 893) and section 8 (line 896) describing startup auto-REVOKE plus out-of-band grant-application replay. This agent did not modify any ADR or decisions file.",
+    "observed_references": [
+      ".add/project/knowledge/decisions/framework.md:873",
+      ".add/project/knowledge/decisions/framework.md:893",
+      ".add/project/knowledge/decisions/framework.md:896",
+      ".add/project/knowledge/decisions/framework.md:910",
+      "cmd/han-server/append_only_acl.go:110-117",
+      "deploy/db/README.md:51-55"
+    ],
+    "recommended_action": "Lead should use add-adr-decision to confirm or ratify ADR-0029 sections 5 and 8 as already drafted in the working tree: startup auto-REVOKE as the fresh-install path, grant-application.sql as out-of-band replay/verification. No ADR change is made in this round.",
+    "status": "handoff_only_not_modified",
+    "owner": "Lead"
+  },
+  "notes": [
+    "The first integration negative-control attempt failed because the decoy schema had no USAGE for the application role; current_schemas(false) is privilege-aware and excluded it, so the gate correctly passed. The harness was corrected by granting USAGE on the decoy schema; the gate code was not weakened.",
+    "No schema or role was dropped in R03. All runs append to retained-resources.ndjson and prior entries are preserved.",
+    "A concurrent Lead gate run appended two more schema groups and lead-gate.log at 09:32Z. They are recorded here and retained; this agent did not create, modify, or delete them.",
+    "main.go, provision.sql and grant-application.sql were not modified; before and after SHA256 are equal.",
+    "The R02 evidence directory and existing registries were not modified.",
+    "The README wording was corrected after run-06/07 to state the actual not-1 fail-closed semantics and error-category ordering; run-09 re-ran go build on the final working-tree state. Go source hashes were unchanged by that correction.",
+    "The 11 pre-existing integration subtests were not made slower or flaky; the added 12th subtest completed in 0.25s (normal) and 0.28s (race)."
+  ],
+  "redaction": {
+    "date": "2026-10-31",
+    "reason": "S15-ACL-R03-F001: plaintext local-dev superuser password removed from recorded command lines and postgres.dsn. No file, log line, or evidence was removed; token replaced with <redacted> and log_sha256 values added for the affected logs.",
+    "files": ["run-06.log", "run-07.log", "index.json"]
+  },  "not_proven": [
+    "Real deployment, CI, credential distribution, credential rotation, and backup/restore are not proven.",
+    "The service does not set or prove that search_path points at the schema provisioned by deploy/db/provision.sql; operators must configure both DSNs explicitly.",
+    "Historical same-name schemas are not cleaned up. Schemas without USAGE are excluded by current_schemas(false); the gate cannot prove that all historical schemas are isolated.",
+    "The public schema owner change risk documented in deploy/db/README.md is not proven or exercised in a real cluster.",
+    "Database-wide least privilege outside the two append-only tables is not proven.",
+    "Column-level ACL coverage beyond the checked INSERT/UPDATE/DELETE columns and aclexplode(attacl) DELETE entries is not proven.",
+    "The actual listener socket was not observed; the gate runs before listener startup by code order only.",
+    "Only PostgreSQL 18.6 was exercised.",
+    "The concurrent Lead gate artifacts were not independently reviewed by this agent."
+  ]
+}

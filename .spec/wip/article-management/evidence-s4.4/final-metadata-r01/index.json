@@ -1,0 +1,168 @@
+{
+  "scope": "Final two-stage S4.4-card/B8A-only metadata update, RCA and Lead byte verification; no new runtime tests or human acceptance",
+  "captured_at": "2026-10-28T00:29:58.751861+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\apply-metadata.ps1",
+      "copy": "final/apply-metadata.ps1.txt",
+      "role": "Task-Planner",
+      "sha256": "5CFCF332FEC2BAA56A199516512F176C605012333AFD624C8AC43527A1FCDD64"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\exactpatch.json",
+      "copy": "final/exactpatch.json",
+      "role": "Task-Planner",
+      "sha256": "3676A934A635F3BBA32EF72DC3AAC382FEADBB401164718440D15AB4E449E5DB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\plan.actual.diff",
+      "copy": "final/plan.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "053BE9A8571F168D9310C8184705B1CC98977C7A15896233899D5DEAC31B399B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\plan.after.md",
+      "copy": "final/plan.after.md",
+      "role": "Task-Planner",
+      "sha256": "8806D74187E14AF08F21BA27B851CCCAFF9B745BE72EE634EAC5A33C914AB028"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\plan.before.md",
+      "copy": "final/plan.before.md",
+      "role": "Task-Planner",
+      "sha256": "409F0D6CA2CBE805AEEF6B928910074B7457C56A71BB1078E0808C6B9E4574AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\plan.candidate.md",
+      "copy": "final/plan.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "8806D74187E14AF08F21BA27B851CCCAFF9B745BE72EE634EAC5A33C914AB028"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\readback-scope-check.json",
+      "copy": "final/readback-scope-check.json",
+      "role": "Task-Planner",
+      "sha256": "23A06802E0F828033451DC7DA24B229FAA56CC514DD2A7FB659BB0F743B060C4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\tasks.actual.diff",
+      "copy": "final/tasks.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "1A388545BEFCE88922B7DFC39E53E94F4E06E72EDBB20458DDC76A4504B710A2"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\tasks.after.md",
+      "copy": "final/tasks.after.md",
+      "role": "Task-Planner",
+      "sha256": "12EEACB435560AAC747E5A2369156BECF95AD49ED2E16D616BC9E7A9874A7BD4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\tasks.before.md",
+      "copy": "final/tasks.before.md",
+      "role": "Task-Planner",
+      "sha256": "73DD68DAC9EF910B15F6D869201A76B7DF0A96B848832FD62F58A827675BA67C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\tasks.candidate.md",
+      "copy": "final/tasks.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "12EEACB435560AAC747E5A2369156BECF95AD49ED2E16D616BC9E7A9874A7BD4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-final-metadata-d4904189a9f94b21b2b5609047c5f0e2\\write-receipt.json",
+      "copy": "final/write-receipt.json",
+      "role": "Task-Planner",
+      "sha256": "A2F4F707674663913C21967928E4A3D5772C0249212339B1E9F8BB7AC58FBFA1"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\apply-metadata.ps1",
+      "copy": "durable/apply-metadata.ps1.txt",
+      "role": "Task-Planner",
+      "sha256": "AE3366D8048681E12FC7E186994F7580ED9500AD59B48A99F233EC8E66889155"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\exactpatch.json",
+      "copy": "durable/exactpatch.json",
+      "role": "Task-Planner",
+      "sha256": "F620E32A4E02AEB8561D455B10F2C5F4AE4379C39933FB2B4C0A2A26307F73FF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\plan.actual.diff",
+      "copy": "durable/plan.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "F0A9428DF185B23397E420FC9FCE0501E3E6D7CA094CE15AFEE0DB769A006BCF"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\plan.after.md",
+      "copy": "durable/plan.after.md",
+      "role": "Task-Planner",
+      "sha256": "E0C2C647460959E34EA8E7789E8BEF7BD943AFD4DBBA1EFD48A98FCF53A66021"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\plan.before.md",
+      "copy": "durable/plan.before.md",
+      "role": "Task-Planner",
+      "sha256": "8806D74187E14AF08F21BA27B851CCCAFF9B745BE72EE634EAC5A33C914AB028"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\plan.candidate.md",
+      "copy": "durable/plan.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "E0C2C647460959E34EA8E7789E8BEF7BD943AFD4DBBA1EFD48A98FCF53A66021"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\readback-scope-check.json",
+      "copy": "durable/readback-scope-check.json",
+      "role": "Task-Planner",
+      "sha256": "0960ED7588B31B43E33A49165443C6B99CE1A9968A160DA8E58C04A29AC31BC5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\tasks.actual.diff",
+      "copy": "durable/tasks.actual.diff",
+      "role": "Task-Planner",
+      "sha256": "D7A2305B1644B2573175C0C9B2951795D6E98D41AE06DA4F2746F22E1F53371E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\tasks.after.md",
+      "copy": "durable/tasks.after.md",
+      "role": "Task-Planner",
+      "sha256": "86284D1E14D527F8B46DEF400EF359620284AA38C33ACDE9D8D7606DD4F5D604"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\tasks.before.md",
+      "copy": "durable/tasks.before.md",
+      "role": "Task-Planner",
+      "sha256": "12EEACB435560AAC747E5A2369156BECF95AD49ED2E16D616BC9E7A9874A7BD4"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\tasks.candidate.md",
+      "copy": "durable/tasks.candidate.md",
+      "role": "Task-Planner",
+      "sha256": "86284D1E14D527F8B46DEF400EF359620284AA38C33ACDE9D8D7606DD4F5D604"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-review-durable-metadata-221c5231554148d19b0b337585d25b2e\\write-receipt.json",
+      "copy": "durable/write-receipt.json",
+      "role": "Task-Planner",
+      "sha256": "EA4A3C73212F01F1AD829EEF89A88B1A844C99B970F4804190CB55185890D523"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\rca-issue0001-r01.md",
+      "copy": "rca-final.md",
+      "role": "Steward",
+      "sha256": "A05DB5A797B676AD4E6864A94EC07141F57F70E3463EE0349EDE209E1463CAFE"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-final-metadata-verification.json",
+      "copy": "lead-final-metadata-verification.json",
+      "role": "Lead",
+      "sha256": "B7FA3149782F8E91AD41E4D2BA26B5B863AB06EB6D46B6E5B474AF81364D059C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\final-git-status.txt",
+      "copy": "final-git-status.txt",
+      "role": "Lead",
+      "sha256": "6DC86DEC3EDCFC843A79EF38E023399B8BDFD7194AD17CEE29D43614019387B6"
+    }
+  ]
+}

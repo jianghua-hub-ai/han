@@ -1,0 +1,369 @@
+{
+    "schema":  "add.evidence.planning-review/v1",
+    "item":  "B13J planning review r05 - registration round r01",
+    "agent_role":  "add-reviewer (non-author; did not write tasks.md, Plan, D01-D04 designs or ADR revisions)",
+    "review_round":  "r05",
+    "scope":  "Registration round r01: six new Task cards in tasks.md, six Plan hunks, and their decision basis (framework.md ADR-0030/0031/0032 and the r04 registration order).",
+    "recorded_at":  "2026-11-02",
+    "timezone":  "Asia/Shanghai",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "verdict":  "CHANGES REQUIRED",
+    "inputs":  [
+                   {
+                       "path":  ".add/project/knowledge/tasks/tasks.md",
+                       "bytes":  855008,
+                       "lines":  3222,
+                       "sha256":  "A8205A2196AC77673C37C47545966C89B28AD9ADBBF643611CDD6A2125312852",
+                       "role":  "registration write: six new cards 3037-3222",
+                       "format":  "CRLF 3222; bareLF 0; no BOM; single trailing CRLF; controls 0x0C x2 @12676,12691 + TAB x1 @12631 (historical)"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/plans/ir-01-content-community-batches.md",
+                       "bytes":  504272,
+                       "lines":  1651,
+                       "sha256":  "D9A79C54612B90A69462FAA53067CB97B1DE109065633968369A586874CC936B",
+                       "role":  "registration write: six hunks",
+                       "format":  "CRLF 1651; bareLF 0; no BOM; single trailing CRLF; controls 0"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/decisions/framework.md",
+                       "bytes":  182488,
+                       "lines":  1141,
+                       "sha256":  "39BD3A797B0FA2F5CDF944ACCF4129BB0B7F7A23FABC743B7E5CCC9F7B9BD704",
+                       "role":  "decision basis (unchanged this round): ADR-0030 r04 :918, ADR-0031 r04 :978, ADR-0032 r03 :1068",
+                       "format":  "CRLF 1141; bareLF 0; no BOM; single trailing CRLF; controls 0"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r04/report.md",
+                       "bytes":  21187,
+                       "lines":  157,
+                       "sha256":  "38DE303B432921C9A369C08F7BF4DD1999C08EBA72CACF8A99BFDEBE9174E352",
+                       "role":  "prior review: registration order section",
+                       "format":  "LF; no BOM; single trailing LF"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r04/index.json",
+                       "bytes":  26320,
+                       "lines":  0,
+                       "sha256":  "95C2D39DDBC12FEA441B1AB083133A1636582CBF50C80CEDA7DB79F36D639D4E",
+                       "role":  "prior review: machine-readable verdict PASS WITH MINOR",
+                       "format":  "UTF-8 JSON; no BOM; lines not counted"
+                   }
+               ],
+    "registration_round":  {
+                               "tasks_added":  6,
+                               "cards":  [
+                                             {
+                                                 "id":  "identity-auth-D05",
+                                                 "lines":  "3037-3061",
+                                                 "checkbox":  "unchecked",
+                                                 "hard_requires":  "none (ADR-0030 constraint 9(a))",
+                                                 "files_declared":  2,
+                                                 "evidence_slot":  "counted"
+                                             },
+                                             {
+                                                 "id":  "identity-auth-D06",
+                                                 "lines":  "3063-3087",
+                                                 "checkbox":  "unchecked",
+                                                 "hard_requires":  "none",
+                                                 "files_declared":  2,
+                                                 "evidence_slot":  "counted"
+                                             },
+                                             {
+                                                 "id":  "identity-auth-S4.23",
+                                                 "lines":  "3089-3120",
+                                                 "checkbox":  "unchecked",
+                                                 "hard_requires":  "identity-auth-D05 (ADR-0030 constraint 9(b), not full constraint-7 release)",
+                                                 "files_declared":  4,
+                                                 "evidence_slot":  "excluded"
+                                             },
+                                             {
+                                                 "id":  "identity-auth-S4.24a",
+                                                 "lines":  "3122-3153",
+                                                 "checkbox":  "unchecked",
+                                                 "hard_requires":  "identity-auth-D06 (ADR-0031 :1050)",
+                                                 "files_declared":  4,
+                                                 "evidence_slot":  "excluded"
+                                             },
+                                             {
+                                                 "id":  "identity-auth-S4.24b",
+                                                 "lines":  "3155-3189",
+                                                 "checkbox":  "unchecked",
+                                                 "hard_requires":  "identity-auth-S4.23 (bundle delivered; Exclusive leaves recoveryClosedPort)",
+                                                 "files_declared":  6,
+                                                 "evidence_slot":  "excluded"
+                                             },
+                                             {
+                                                 "id":  "identity-auth-S4.22",
+                                                 "lines":  "3191-3222",
+                                                 "checkbox":  "unchecked",
+                                                 "hard_requires":  "identity-auth-S4.24b; registration unaffected by constraint 7 per 9(c); release needs full constraint 7 + explicit human production approval",
+                                                 "files_declared":  4,
+                                                 "evidence_slot":  "excluded"
+                                             }
+                                         ],
+                               "plan_hunks":  [
+                                                  ":1311 outer table B13J row",
+                                                  ":1334-:1339 ownership index",
+                                                  ":1342 DAG note",
+                                                  ":1456-:1465 mermaid nodes and four edges",
+                                                  ":1637-:1644 B13J body",
+                                                  ":1647 handoff sentence"
+                                              ],
+                               "requires_chain":  "D05 none; D06 none; S4.23\u003c-D05 (constraint 9(b) acceptance, not full constraint-7 release); S4.24a\u003c-D06 (ADR-0031 :1050); S4.24b\u003c-S4.23 (bundle delivered and Exclusive leaves recoveryClosedPort); S4.22\u003c-S4.24b (registration per 9(c); release needs full constraint 7 plus explicit human production approval)",
+                               "counts":  {
+                                              "cards":  6,
+                                              "edges":  4,
+                                              "runtime_cards":  "18 to 24",
+                                              "runtime_edges":  "75 to 79",
+                                              "graph_nodes":  "77 to 83",
+                                              "graph_edges":  "329 to 333",
+                                              "declared_slots":  22,
+                                              "unique_files":  14,
+                                              "mermaid_nodes":  41,
+                                              "mermaid_edges":  79
+                                          },
+                               "baseline":  {
+                                                "tasks_reconstructed":  "823187 B / F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34",
+                                                "plan_claimed":  "497542 B, not reproducible (no plan-before.md)",
+                                                "plan_line_delta":  "1628 to 1651 (+23)"
+                                            }
+                           },
+    "field_check":  {
+                        "mandatory_fields":  12,
+                        "all_present":  {
+
+                                        },
+                        "unchecked_cards":  6,
+                        "notes":  "All six cards contain target, ID/category rationale, type/Story/scope, exact file list/write set, hard/soft requires, acceptance commands, negative oracle, close conditions, evidence landing, owner, non-claim boundary and stop condition."
+                    },
+    "findings":  [
+                     {
+                         "id":  "B13J-R05-F002",
+                         "severity":  "HIGH",
+                         "status":  "OPEN",
+                         "title":  "S4.24b Windows exit-code-2 negative oracle is not executable inside the declared write set",
+                         "location":  "tasks.md:3184 (negative e), :3168 (only new test file, POSIX-only build tag), :3189 (stop condition), :3185 (close conditions 4/5)",
+                         "evidence":  "(e) requires Windows/non-POSIX exit code 2 before any side effect, but the only declared new test file is tagged integration \u0026\u0026 (aix||darwin||dragonfly||freebsd||linux||netbsd||openbsd||solaris) and is not compiled on Windows. main_test.go:650 covers maintenance extra argv exit 2; TestRecoveryRootStartup (main_test.go:11032) covers only recovery invalid-argument exit 2 and verify exit 1; recovery_exclusive_test.go has no build tag but uses an injected fake facility and asserts ErrAdmissionUnsupported, not process exit code. The card write set contains no Windows-compilable test file and the stop condition forbids unlisted files.",
+                         "impact":  "Close conditions (4)(5) lack a falsifiable oracle; ADR-0032 release condition 3 (framework.md:1114, Windows exits 2 before side effects) has no B13J carrier.",
+                         "suggestion":  "Either add a non-POSIX test file to the write set (slots 6 to 7, unique files 14 to 15, update Plan :1311/:1641 and ownership index), or remove (e) from this card and route it to ADR-0032 release condition 3 with a named carrier card.",
+                         "close_condition":  "Card text, write set and slot counts agree, and (e) points to a test that compiles on its target platform and can fail when exit code is not 2."
+                     },
+                     {
+                         "id":  "B13J-R05-F001",
+                         "severity":  "MEDIUM",
+                         "status":  "OPEN",
+                         "title":  "S4.22 mixes ADR revision number with design revision number",
+                         "location":  "tasks.md:3195",
+                         "evidence":  "Card says ADR-0032 r60 and an 11-port assembly. framework.md:1068 records ADR-0032 revision adr-0032-r03; no ADR-0032 r60 exists. r60 is the design revision identity-auth-design-ir01-r60 (design.md:5 and :3601, 11-port production root list).",
+                         "impact":  "Traceability: searching ADR-0032 r60 fails, and authority for the 11-port list is misattributed from design r60 to the ADR.",
+                         "suggestion":  "Reword to design identity-auth-design-ir01-r60 section r60 11-port list, with boundaries governed by ADR-0032 r03; keep the close-condition reference to the design list.",
+                         "close_condition":  "No nonexistent ADR revision appears; each reference resolves to a real artifact and section."
+                     },
+                     {
+                         "id":  "B13J-R05-F003",
+                         "severity":  "LOW",
+                         "status":  "OPEN",
+                         "title":  "Declared-slot accounting differs between D cards and implementation cards",
+                         "location":  "plans/ir-01-content-community-batches.md:1311 and :1641; tasks.md:3044/:3070 versus :3101/:3134/:3169/:3203",
+                         "evidence":  "22 path slots dedupe to exactly 14 files (2+2+4+4+6+4), so the numbers are self-consistent. But D05/D06 count their evidence reports inside 2 files, while the four implementation cards explicitly exclude evidence reports from their 4/4/6/4 slots.",
+                         "impact":  "Cross-batch comparison and the declared-slot-equals-written-files gate can diverge; implementation safety is unaffected.",
+                         "suggestion":  "Adopt one rule (evidence never counted in code write set, but declared separately in evidence landing; or always counted) and state it in Plan :1311.",
+                         "close_condition":  "One accounting rule is stated in the Plan and applied uniformly to all six cards."
+                     },
+                     {
+                         "id":  "B13J-R05-F004",
+                         "severity":  "LOW",
+                         "status":  "OPEN",
+                         "title":  "Registration round lacks author evidence package and Plan before-image is not reproducible",
+                         "location":  ".spec/wip/recovery-runtime/evidence-b13j-r01/registration-round-r01/ (only lead-r04-low-triage.md 4052 B and lead-verification-r05.md 5242 B)",
+                         "evidence":  "No author (Carson) report.md or index.json exists in the directory. Claimed tasks-before.md and plan-before.md snapshots do not exist anywhere in the repository. The tasks.md baseline is independently reproducible (first 3034 lines plus restored statistics lines gives 823187 B and F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34), but the Plan 497542 B baseline cannot be recomputed; only 1628 to 1651 (+23 lines, 25 added / 2 replaced) is self-consistent.",
+                         "impact":  "The byte-level change record is not independently verifiable from the author side; static verifiability of the six cards and Plan text is unaffected.",
+                         "suggestion":  "Add an author index.json with before/after hashes, bytes, line counts and hunk ranges; provide a reproducible Plan before-image or a git blob identifier instead of a physical snapshot.",
+                         "close_condition":  "Author evidence gives reproducible before/after hashes and hunk ranges for both files."
+                     },
+                     {
+                         "id":  "B13J-R05-F005",
+                         "severity":  "LOW",
+                         "status":  "OPEN",
+                         "title":  "ADR-0032 :1121 parenthetical (not yet registered as a formal Task) became historical after this registration",
+                         "location":  "framework.md:1121; contrast tasks.md:3089 and Plan :1311/:1336",
+                         "evidence":  ":1121 reads candidate S4.23 (anchor adapter bundle four ports complete and registered; not yet registered as a formal Task) complete. After this round S4.23 is a formal Task. :1124/:1125 use candidate S4.24a/S4.22 as category labels, which do not conflict with the registration state.",
+                         "impact":  "Traceability of the release-order text only; the substantive gate (bundle delivered and Exclusive leaves recoveryClosedPort) is unchanged and neither registration nor implementation is blocked.",
+                         "suggestion":  "Fold into the next ADR-0032 revision (together with the :1108 qualifier requested by B13J-PLAN-R04-F002): remove the parenthetical or make it time-neutral (planning ID; registration state in Tasks).",
+                         "close_condition":  "Next ADR-0032 revision contains no registration-state parenthetical conflicting with Tasks."
+                     }
+                 ],
+    "observations":  [
+                         {
+                             "id":  "O01",
+                             "severity":  "INFO",
+                             "status":  "OPEN",
+                             "title":  "tasks.md statistics off-by-one pre-exists this round",
+                             "location":  "tasks.md:46, :47, :49, :51",
+                             "evidence":  ":46 total 82 versus measured - [ count 83; :49 identity-auth 55 versus measured 56 (56+26+1=83); pre-registration values were 76 versus 77 and 49 versus 50; :47 67/2/14 matches. Historically present; this round synced the same wrong convention. 0x0C x2 and TAB x1 at offsets 12631/12676/12691 remain (r01 F009).",
+                             "suggestion":  "Handle in a separate metadata-correction record; no authorization to change in this round."
+                         }
+                     ],
+    "carried_r04_lows":  [
+                             {
+                                 "id":  "B13J-PLAN-R04-F001",
+                                 "severity":  "LOW",
+                                 "status":  "OPEN",
+                                 "basis":  "framework.md:960(b) cites explicit human production approval as an existing constraint-7 sub-item; constraint 7 (:954-:958) has no such item; the requirement appears at :960(c) and ADR-0032 :1117. Cards add it as a stricter requirement, so no bypass."
+                             },
+                             {
+                                 "id":  "B13J-PLAN-R04-F002",
+                                 "severity":  "LOW",
+                                 "status":  "OPEN",
+                                 "basis":  "framework.md:1108 last clause (finally formal Task planning registers assembly and verification) can still be read as a registration precondition; Plan :1642 now states registration is not blocked by unmet constraint 7, mitigating the operational risk; ADR wording awaits next revision."
+                             },
+                             {
+                                 "id":  "B13J-PLAN-R04-F003",
+                                 "severity":  "LOW",
+                                 "status":  "OPEN",
+                                 "basis":  "adr-r04/report.md:19 and adr-r04/index.json record 259 lines for planning-review-r03/report.md (measured 258); author evidence metadata only; unchanged this round."
+                             }
+                         ],
+    "commands":  [
+                     {
+                         "n":  1,
+                         "command":  "[IO.File]::ReadAllBytes + Get-FileHash on inputs",
+                         "result":  "tasks 855008/A8205A21...12852; Plan 504272/D9A79C54...C936B; framework 182488/39BD3A79...BD704"
+                     },
+                     {
+                         "n":  2,
+                         "command":  "CRLF/bareLF/BOM/tail/control scan",
+                         "result":  "tasks CRLF 3222, bareLF 0, no BOM, tail 0d 0a, 0x0C x2 + TAB x1; Plan CRLF 1651, bareLF 0, tail 0d 0a; framework CRLF 1141, tail 0d 0a"
+                     },
+                     {
+                         "n":  3,
+                         "command":  "rebuild tasks baseline: first 3034 lines + restore 4 statistics lines",
+                         "result":  "823187 B / F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34 (matches claimed baseline)"
+                     },
+                     {
+                         "n":  4,
+                         "command":  "count - [ and tri-state lines",
+                         "result":  "BOXCOUNT=83; TODO=14 / ACTIVE=2 / DONE=67; :46=82 and :49=55 are off by one (O01)"
+                     },
+                     {
+                         "n":  5,
+                         "command":  "ID ownership counts",
+                         "result":  "identity-auth 56 / article-management 26 / bootstrap 1"
+                     },
+                     {
+                         "n":  6,
+                         "command":  "locate 0x0C and TAB",
+                         "result":  "0x0C x2 @12676,12691; TAB x1 @12631"
+                     },
+                     {
+                         "n":  7,
+                         "command":  "check 12 mandatory labels per card (3037-3222)",
+                         "result":  "six cards missing=[]; six unchecked - [ ]"
+                     },
+                     {
+                         "n":  8,
+                         "command":  "extract hard requires lines",
+                         "result":  "D05 none; D06 none; S4.23\u003c-D05; S4.24a\u003c-D06; S4.24b\u003c-S4.23; S4.22\u003c-S4.24b"
+                     },
+                     {
+                         "n":  9,
+                         "command":  "parse mermaid nodes/edges (1344-1465)",
+                         "result":  "NODE=41, EDGE=79, unique nodes 41, unique edges 79; new n35-n40 and four edges"
+                     },
+                     {
+                         "n":  10,
+                         "command":  "extract ownership index path slots (Plan 1334-1339)",
+                         "result":  "22 path slots / 14 unique files (4 backticked test names and one bare word excluded)"
+                     },
+                     {
+                         "n":  11,
+                         "command":  "rg func TestRecovery...",
+                         "result":  "6 existing test names exist; 4 new test names land on declared new files"
+                     },
+                     {
+                         "n":  12,
+                         "command":  "rg --pcre2 S4\\.24(?![ab]) tasks.md and Plan",
+                         "result":  "no hits (exit 1)"
+                     },
+                     {
+                         "n":  13,
+                         "command":  "rg ErrUnsupportedPlatform/exit code 2 in cmd and internal",
+                         "result":  "cmd/han-server only main_test.go:650 (maintenance); recovery_exclusive_test.go uses fake facility"
+                     },
+                     {
+                         "n":  14,
+                         "command":  "read main_test.go:640-670 and 11032-11072",
+                         "result":  "maintenance extra argv exit 2 and recovery invalid-argument exit 2 / verify exit 1; no platform-unsupported gate"
+                     },
+                     {
+                         "n":  15,
+                         "command":  "read recovery_exclusive_test.go",
+                         "result":  "no build tag; fake facility; asserts ErrAdmissionUnsupported, not process exit code"
+                     },
+                     {
+                         "n":  16,
+                         "command":  "read recovery_runtime.go:545-570",
+                         "result":  ":551 newRecoveryAnchorRegistry(nil); :565-567 unconditional inputs.exclusive overwrite"
+                     },
+                     {
+                         "n":  17,
+                         "command":  "rg adr-003[012]-r[0-9]+ framework.md",
+                         "result":  "ADR-0030 r04 :918; ADR-0031 r04 :978; ADR-0032 r03 :1068; no r60"
+                     },
+                     {
+                         "n":  18,
+                         "command":  "rg 11 port / ir01-r60 design.md",
+                         "result":  "design.md:5 and :38 r60; :3601 11-port list"
+                     },
+                     {
+                         "n":  19,
+                         "command":  "git status --porcelain; git rev-parse",
+                         "result":  "293 lines; HEAD 6da8abb...; branch main; three target files modified; no git write"
+                     },
+                     {
+                         "n":  20,
+                         "command":  "git diff --numstat (reference only)",
+                         "result":  "HEAD tasks.md is 69445 B and Plan is 830 lines shorter; git cannot serve as pre-registration baseline"
+                     },
+                     {
+                         "n":  21,
+                         "command":  "rg -n 尚未登记为正式 Task framework.md",
+                         "result":  "4 hits: :960/:1050 category phrasing, :1059 historical trace, :1121 stale registration-state parenthetical (F005)"
+                     }
+                 ],
+    "format":  {
+                   "tasks":  "3222 lines; CRLF 3222; bareLF 0; no BOM; single trailing CRLF; 0x0C x2 + TAB x1 historical",
+                   "plan":  "1651 lines; CRLF 1651; bareLF 0; no BOM; single trailing CRLF; controls 0",
+                   "framework":  "1141 lines; CRLF 1141; bareLF 0; no BOM; single trailing CRLF; controls 0",
+                   "report":  "23571 B; 183 LF; CRLF 0; no BOM; single trailing LF; controls 0",
+                   "index":  "UTF-8 JSON; no BOM; ConvertFrom-Json validated"
+               },
+    "not_covered":  [
+                        "Full 333-edge requires graph recomputation and global acyclicity/reference validity",
+                        "Item-by-item implementability of the 11-port list against cmd/han-server/main.go",
+                        "Compileability of the four new test files on real Linux/Windows (files do not exist yet)",
+                        "Full conflict re-review of ADR-0019/0027/0029 against ADR-0030/0031/0032 (carried from r01-r04; only registration-relevant ranges re-read)",
+                        "Current card faces of article-management-S8.2 and Case18 (only checked that the six cards do not claim PASS)",
+                        "Full .spec tree inventory of new artifacts (only the registration-round and this review directory)",
+                        "Plan before-image byte-level reconstruction"
+                    ],
+    "boundaries":  [
+                       "Read-only review of the reviewed artifacts; the only writes are this directory report.md and index.json",
+                       "No implementation authorization; no registration or status advance of S4.22/S4.23/S4.24a/S4.24b",
+                       "Does not close pending-B13J-D04",
+                       "Does not release blocked-upstream",
+                       "Not a human business sign-off or production approval",
+                       "Does not authorize production enter/install or any fallback"
+                   ],
+    "files":  [
+                  {
+                      "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r05/report.md",
+                      "bytes":  23571,
+                      "sha256":  "FC5FACF409379149C1F0422515B32B6C1E1A2E1C90905688616496B58BB82558"
+                  }
+              ],
+    "self_hash_note":  "index.json cannot embed its own SHA256 without changing its bytes; its final bytes and hash are reported in the Lead reply and can be recomputed with Get-FileHash."
+}

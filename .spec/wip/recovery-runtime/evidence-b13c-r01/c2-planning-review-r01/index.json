@@ -1,0 +1,122 @@
+{
+  "scope": "c2-planning-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-c2-planning-review-401fd58cf945408da75f18c255999f69",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/diagnose_static.py",
+      "sha256": "5E0AC60BDB58F59AF10781CB6CBFB08DA4A6E40D1389A1DD82ACF53B9C2F8FB6",
+      "bytes": 814,
+      "source_name": "diagnose_static.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/entry-hashes.json",
+      "sha256": "B3B48B78A56F20A3D454F0B067D067FA335A5ECB7A04D74526C15947A0F5F2FB",
+      "bytes": 454,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/exit-hashes.json",
+      "sha256": "C0E572109D3134D8F49DB2FABE78AB29DCDD08D63111D951D602FC63C4BFF3A5",
+      "bytes": 463,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/finalize_packet.py",
+      "sha256": "2F60A4E34012725C83A19ADE91F98523AFCE979196BBC62A345D32969123F5B6",
+      "bytes": 3983,
+      "source_name": "finalize_packet.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/fix_static.py",
+      "sha256": "8FBA5C3BE51D9CAD5B6E687415624D246D269F02F715F4E9EDF6560AC86A1589",
+      "bytes": 885,
+      "source_name": "fix_static.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/hashes.json",
+      "sha256": "16AF28B1D90398F44918AC8DF294E06B732D44A09F426FC11D09927A399D0D2D",
+      "bytes": 2518,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/independent-card-protection.json",
+      "sha256": "FEADF04899573507AC6FBFA86CD2045DABEC57B747F3A1AD06D17E3E6FD1851A",
+      "bytes": 22948,
+      "source_name": "independent-card-protection.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/independent-graph.json",
+      "sha256": "3BDE4BF21D2B68452C80391149FE6FF408135D48322E3F44D7C35E7D67F4C50D",
+      "bytes": 11812,
+      "source_name": "independent-graph.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/read.ps1",
+      "sha256": "785BD29D2138D9016F7DFC4EE0E1E6CCAFF157D63BA9DA2130EF36B845531E19",
+      "bytes": 608,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/readset.jsonl",
+      "sha256": "236C6D25BBBB1EC8002A16435F8DBF5E8937F2D886ADF0A7AA922904C61A7904",
+      "bytes": 7767,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/receipt.json",
+      "sha256": "DAB838104B5171E5326956114CEC7984036738398C3D7FF90241DBDA1DE3AF54",
+      "bytes": 3608,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/reused-methods.json",
+      "sha256": "46EDB15A7AD85CE982B781C7363BB8E3E060A67C6D4775CE900D57CBD4F4C1BB",
+      "bytes": 4639,
+      "source_name": "reused-methods.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/review-report.md",
+      "sha256": "0DF20C8397E0F050D3B12BB58D87E622E8B8C39ED2B763B67ED9B7D7EFFF8A78",
+      "bytes": 8503,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/risk-row-protection.json",
+      "sha256": "F75A213CA1F5395779DDF5162ABA27A127C1F4E0F4ACDB769FF5C45F8674EDFC",
+      "bytes": 696,
+      "source_name": "risk-row-protection.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/risk_row_analysis.py",
+      "sha256": "662C79E9DB7CFE0A83DA60BF7CDA0F073076D2B99CD0AF7463981FCA98E1EA98",
+      "bytes": 2941,
+      "source_name": "risk_row_analysis.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/static-analysis.json",
+      "sha256": "363788CE45260406E1953537150950DBECD887F971035BFBA35240F2937BEA72",
+      "bytes": 3142,
+      "source_name": "static-analysis.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/static-readset.jsonl",
+      "sha256": "3DF5B2F0495AB972B6D69EB1A3FD7394F987A2F2C0CD6F9CD86E6BEC9975D569",
+      "bytes": 10314,
+      "source_name": "static-readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c2-planning-review-r01/static_analysis.py",
+      "sha256": "CEB88759F75CD576E25BDA821C7F15B2E4922431514CECC352C1BA0A42007212",
+      "bytes": 8404,
+      "source_name": "static_analysis.py"
+    }
+  ]
+}

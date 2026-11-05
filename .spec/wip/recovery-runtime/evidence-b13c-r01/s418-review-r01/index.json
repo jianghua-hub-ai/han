@@ -1,0 +1,182 @@
+{
+  "scope": "s418-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-s418-review-r01-sn77gs0g",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-list/result.json",
+      "sha256": "4B48BAB7B78760C2D368FF785D81F7BFDCB03A59919B449D43B7FFDD93E5E3EB",
+      "bytes": 770,
+      "source_name": "checks/independent-list/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-list/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-list/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-list/stdout.log",
+      "sha256": "76B118899C12B66250353CDAB829C885E6B015B7A6ADF6EB75D257F971726EC4",
+      "bytes": 148,
+      "source_name": "checks/independent-list/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-normal/result.json",
+      "sha256": "9D6F09750B2B66CF31C34E7D5465CB8BC77F40C6AE28FE77DBA044082C367DE1",
+      "bytes": 941,
+      "source_name": "checks/independent-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-normal/stdout.log",
+      "sha256": "D5C25F146ED8E98E89C7F8BC8016422AE2EC3FB5C3DF71BD04A54931BDE2B4D4",
+      "bytes": 511604,
+      "source_name": "checks/independent-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-race/result.json",
+      "sha256": "DB0CAC99AB3B607A5D468CA292DAC00257A6769DB67D8A420C2E7D2507015F8B",
+      "bytes": 952,
+      "source_name": "checks/independent-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-race/stdout.log",
+      "sha256": "F58940116E6C21FCA295A4BEF3A124D6D32B738F42E876BF4CA4CE17E356C0DE",
+      "bytes": 512045,
+      "source_name": "checks/independent-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-sourcefmt/result.json",
+      "sha256": "FE8080DF80712B21AA0477F98CEDD72CDDFC5E6D41D3F0B182F5A6370233FCE8",
+      "bytes": 685,
+      "source_name": "checks/independent-sourcefmt/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-sourcefmt/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-sourcefmt/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-sourcefmt/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-sourcefmt/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-vet/result.json",
+      "sha256": "2C802F7B797C8D35EBF6584292CEE9B75E7A1750556E43AF66BDEAD4071249B4",
+      "bytes": 660,
+      "source_name": "checks/independent-vet/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-vet/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-vet/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/checks/independent-vet/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "checks/independent-vet/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/entry-audit.json",
+      "sha256": "0CAD32D5566BED66C82D9F8CB4F184F90312153A3D994A81DD2CF10F30BDEE4B",
+      "bytes": 3462,
+      "source_name": "entry-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/finalize.py",
+      "sha256": "7EA148B14E818F507C7C1EB93F62F778F899D34EC600AD6E2120EDA535811436",
+      "bytes": 25137,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/manifest-oracles.json",
+      "sha256": "08076241264B0BC78042A7C4E4808DB9BA04A0271A767AA9BFF7A4BD80EE75F2",
+      "bytes": 3724,
+      "source_name": "manifest-oracles.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/manifest-probes.frozen",
+      "sha256": "CBDACFD4739ECAD32FE1D38EC94F64DBA29D3E4B8F7E7D64E9C1F8C2176CCCF4",
+      "bytes": 1232,
+      "source_name": "manifest-probes.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/prepare.py",
+      "sha256": "D8DF2848BEEAEF261B6C3E06E81D4310AF4CBFD0F8DC2B2D260471D50BD6153F",
+      "bytes": 5943,
+      "source_name": "prepare.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/probe-overlay.json",
+      "sha256": "5846C7A698ACA41CC3832689EE82977B88D701FE31E7F7A05490B9493BAAE288",
+      "bytes": 209,
+      "source_name": "probe-overlay.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/probe-summary.json",
+      "sha256": "27DBEF593D5F1AAA308B84DBDCA75680F3AE3C21C5B4F0B726D9CE53A5989BD2",
+      "bytes": 196240,
+      "source_name": "probe-summary.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/probes.frozen",
+      "sha256": "F1220DC970ED83ED41A395515989EBB8971DFBDCA00B8F9D5EB579D92FD3BEFD",
+      "bytes": 5701,
+      "source_name": "probes.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/readset.md",
+      "sha256": "F836388453EAC42DE54FB0D55B437EAC654706E5DD1C895791D093D4F030C7C7",
+      "bytes": 3711,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/receipt.json",
+      "sha256": "1103E3EB74C31706D736F96E927A0D2A3A393C06269E297E3E2C89D2183CC62B",
+      "bytes": 8668,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/review-report.md",
+      "sha256": "79430B874DD997ED2CA2D41D4A8C514FA6365D6345B268C193F17C757D2E8B04",
+      "bytes": 12553,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/run_local.py",
+      "sha256": "4D8B5F30048FC1C5A4F62D5BC46ACF2AAA45250E2E2616042ACEE7A74B504CFD",
+      "bytes": 2421,
+      "source_name": "run_local.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/s418-review-r01/runtime-test-overlay.frozen",
+      "sha256": "01E9FAA8E570E76D77F9CC47794815909F94275110CB30D39A93455AEDA5E65D",
+      "bytes": 90574,
+      "source_name": "runtime-test-overlay.frozen"
+    }
+  ]
+}

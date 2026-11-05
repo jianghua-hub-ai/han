@@ -1,0 +1,76 @@
+{
+  "owner": "Main actual local receipt/diff/metadata verification; no professional Role or human signoff claim",
+  "scope": "final bounded B13B task/batch reception, frozen R04 software object",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/baseline.json",
+      "sha256": "BDAE00512E8CA9680C481456C4A8C29116C2E1818153DC434F8E04D00C7AF746",
+      "bytes": 350444
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/guard.py",
+      "sha256": "B63FE5B233E38904564A8E6AEBB5C968650DCA95548AAACBA1164BD48301B0C2",
+      "bytes": 3324
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/guard-before-final-close.json",
+      "sha256": "D6DCB2FB1FB4719280F0EBD123FB3B0419D69416B0E88D57184F4FA3602EE5F5",
+      "bytes": 24031
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/guard-final-closed.json",
+      "sha256": "5D0656911F54EB11D1B349804930AAED0C28B3AD88D5F1AC692A7CA17B42C242",
+      "bytes": 24031
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/preclose-status-diagnostic.json",
+      "sha256": "1FF67A05CE5CC41D87FFAC60F311AFF20D32851E9F511AACEDCDB2FB2D035A45",
+      "bytes": 476
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/final-close-metadata.json",
+      "sha256": "B4E5C6C07F08F37F85366FE1531EF91464B6A1CED9D449D65AACEE66476C61CB",
+      "bytes": 746
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/final-close-tasks.diff",
+      "sha256": "441E8A8DEB2DD6FAE44289BCBAB398C4E310E25AF73166013EEB0042300E39C5",
+      "bytes": 12668
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/final-close-ir-01-content-community-batches.diff",
+      "sha256": "B5A6D5425F600FA2D344882A333B87D53661EF0AC792D6625A681B68FC186DA7",
+      "bytes": 6736
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/final-note-correction.json",
+      "sha256": "6572C84D383C67F669FAB7A9E36ABAC2B7911D2FCFA06E9B5E0B12F0A085AAFE",
+      "bytes": 867
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/final-note-correction-tasks.diff",
+      "sha256": "C7CBB9EA26EF72F50902116F0B0EA6022CFF7B7F30A39506394FE162C1342961",
+      "bytes": 9877
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/final-note-correction-ir-01-content-community-batches.diff",
+      "sha256": "97EC1873DB7FA6F92D6D2567D4B464B09174F2C2E70EEAD6AF2875DF64234A2E",
+      "bytes": 4336
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/close_b13b_metadata_final.py",
+      "sha256": "2B9EA2842EFC3E068937F4AACFCFC88C07D20AC1F6B9EB95760CD82DFDE5719B",
+      "bytes": 6586
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/correct_final_metadata.py",
+      "sha256": "D2A1641896021A6C3633C4DE50727747D6C4F10E4E2B364E5A1F68196D454EE6",
+      "bytes": 1864
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13b-r01/main-final-evidence-r01/finalize_b13b_main.py",
+      "sha256": "BBBAE8EE7B07ED2B64A9C9302C8F266D27C67FE5CEA68D88D9DF4607488F32D8",
+      "bytes": 7842
+    }
+  ]
+}

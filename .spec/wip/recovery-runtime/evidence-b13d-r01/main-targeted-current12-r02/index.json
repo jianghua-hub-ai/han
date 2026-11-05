@@ -1,0 +1,385 @@
+{
+  "scope": "main-targeted-current12-r02",
+  "owner": {
+    "role": "Lead-verification-not-Role",
+    "nickname": "Main",
+    "runtime_id": "Main runtime ID not exposed"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-lead-gz6d1yr8\\checks\\main-current-threecard-targeted-r02",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-normal/owned-lifecycle.json",
+      "sha256": "F2B33B283CCA225B928E39794CC2490AD3DFEA7BD771D88C2CB62DE316357695",
+      "bytes": 321,
+      "source_name": "article-local-normal/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-normal/result.json",
+      "sha256": "67E1838F3ABBB2C2C37BC9143FEEE653BA702F394522B3CBBE33BF0662104BC5",
+      "bytes": 1148,
+      "source_name": "article-local-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-normal/running.json",
+      "sha256": "F657A3E45117410A7281E3230FD372C2E41C3221C36F6F9C48C623A261C96F52",
+      "bytes": 475,
+      "source_name": "article-local-normal/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "article-local-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-normal/stdout.log",
+      "sha256": "BC1C623DD4436F556F4A6E39D8C83E3923DFCD5023D41970818F3A9FB6C4A068",
+      "bytes": 63337,
+      "source_name": "article-local-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-race/owned-lifecycle.json",
+      "sha256": "632660999DF7B18F928D1C85FB50F6D94C4F16EB9E83829636DB7AF2A72689FC",
+      "bytes": 322,
+      "source_name": "article-local-race/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-race/result.json",
+      "sha256": "39748F18E57BD6083F5F05F178374C15BAC3A78DB5A1D9E3E68341495B921698",
+      "bytes": 1161,
+      "source_name": "article-local-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-race/running.json",
+      "sha256": "3FEF0228A9C00645E683BEB4C32D227745E0EAABFE3DF7287E15B3BF5446FC95",
+      "bytes": 487,
+      "source_name": "article-local-race/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "article-local-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-local-race/stdout.log",
+      "sha256": "E5F0F1FCA2C30F617905055F235998BCB296DBA5CE7C0B1D25C0CE7F6D0DA5CA",
+      "bytes": 63348,
+      "source_name": "article-local-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-normal/owned-lifecycle.json",
+      "sha256": "6330E3B40E3A529BAA7710CFFDE621E195B203601103DF8075CFFE242E8096A8",
+      "bytes": 334,
+      "source_name": "article-pg-normal/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-normal/result.json",
+      "sha256": "301B23CC3AC3ABA447725344896F8C4FA4C994D3EDB793E355682853A6C0C534",
+      "bytes": 1167,
+      "source_name": "article-pg-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-normal/running.json",
+      "sha256": "856E8DE786BE81FF7E36DAAA2B1F0431002895B240FE6A9DBAD3A91BABD3B13A",
+      "bytes": 478,
+      "source_name": "article-pg-normal/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "article-pg-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-normal/stdout.log",
+      "sha256": "756FAD4B555B89ACA6DBE05A3015245980D9F50018BEA46108F35878881720EE",
+      "bytes": 275997,
+      "source_name": "article-pg-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-race/owned-lifecycle.json",
+      "sha256": "0C15F2922B6DBA65DFE5175C470941A977C26204981F79495FA4EECD199EE5E5",
+      "bytes": 333,
+      "source_name": "article-pg-race/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-race/result.json",
+      "sha256": "70E56B8C623D32C4DE66E06007B11796A53ED2E8B2A005249631873B91F976CD",
+      "bytes": 1178,
+      "source_name": "article-pg-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-race/running.json",
+      "sha256": "F892136B8C6404A71B066819FD6116B237021E905C1FA00C8B82960457636B47",
+      "bytes": 490,
+      "source_name": "article-pg-race/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "article-pg-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/article-pg-race/stdout.log",
+      "sha256": "A5226C2F53597F58CA5B54AE5B6A4439D1DF3EC372E13A91734DEB7E982BE32D",
+      "bytes": 276014,
+      "source_name": "article-pg-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/copy-provenance.json",
+      "sha256": "5E39070CE28D7D0CF0154C1C7FDA874F30B72CB78D63EF3A9D3F5711EC7CD618",
+      "bytes": 27819,
+      "source_name": "copy-provenance.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-normal/owned-lifecycle.json",
+      "sha256": "D6A3255026F61AF978B6D1E275B956D5F69C085AF20B2E17FD4CDD11A0B700FC",
+      "bytes": 321,
+      "source_name": "identity-local-normal/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-normal/result.json",
+      "sha256": "290A80B891BC82D58A787A25DCC1CBC892023261AA72E31DF8CC56EEF3C7FA0C",
+      "bytes": 1096,
+      "source_name": "identity-local-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-normal/running.json",
+      "sha256": "1C9C48449D40DFE3F5E1F50E1E38824D2363A663EC9A3F3FDD58A0B24742BFAF",
+      "bytes": 423,
+      "source_name": "identity-local-normal/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "identity-local-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-normal/stdout.log",
+      "sha256": "C1522BBA9A042CD97E66E1CE9F524669F994123F864534863BFF524A5D802F6C",
+      "bytes": 107608,
+      "source_name": "identity-local-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-race/owned-lifecycle.json",
+      "sha256": "95B84A7277D032903C7DABE45B23A50DB52BF499B6D1CFAA0F44E96567F005F5",
+      "bytes": 322,
+      "source_name": "identity-local-race/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-race/result.json",
+      "sha256": "7A9C726042DA603CED938B2C2659A28CF621E17FC6BCB5E1928134D0A4C1F757",
+      "bytes": 1108,
+      "source_name": "identity-local-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-race/running.json",
+      "sha256": "A09E694F0F78FC01F88C8399502E282217165686D6272F4EAC729DD4D43CFC9E",
+      "bytes": 435,
+      "source_name": "identity-local-race/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "identity-local-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-local-race/stdout.log",
+      "sha256": "3AF4F9F26B1270CC6E6C993E38EFF9699DA3D0E12009293522E557706DED7C7D",
+      "bytes": 107647,
+      "source_name": "identity-local-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-normal/owned-lifecycle.json",
+      "sha256": "689C58B138E75DAFA5CAE86FEB1F476485EF31D63C00D8143C5D73375924500A",
+      "bytes": 333,
+      "source_name": "identity-pg-normal/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-normal/result.json",
+      "sha256": "63BD74CD6B57C91DD826B56E7295B22A8C3A8BF41069E7121E20055A1D85DF6F",
+      "bytes": 1148,
+      "source_name": "identity-pg-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-normal/running.json",
+      "sha256": "C8D66A9E1BA52B41883363A46FA9002719967E4A535A367038309E3938891482",
+      "bytes": 460,
+      "source_name": "identity-pg-normal/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "identity-pg-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-normal/stdout.log",
+      "sha256": "D86A197541969EF323ACAB121D1282C27F0CD464AC4CE21B74FFFAE22CF6741B",
+      "bytes": 204757,
+      "source_name": "identity-pg-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-race/owned-lifecycle.json",
+      "sha256": "1FEF975D4BED2F7AC490C0192D0A3FCC0E85C910F403BCC8270F2BE02A2CE9F9",
+      "bytes": 334,
+      "source_name": "identity-pg-race/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-race/result.json",
+      "sha256": "BA0FFEAB4137B9057EEC5165DD525C891B65CCBCCF4DCAC9C6A44AA3E9E2C89B",
+      "bytes": 1162,
+      "source_name": "identity-pg-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-race/running.json",
+      "sha256": "83F5AF9809FD23BF55FACFED9995152145DD498657FC3258B358EB79AB1FE2F7",
+      "bytes": 472,
+      "source_name": "identity-pg-race/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "identity-pg-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/identity-pg-race/stdout.log",
+      "sha256": "6BBBEB3EF9CDDD0E59C3E31FD5EC22D9A589614FD7427A02B983D466F5EFFCB6",
+      "bytes": 204772,
+      "source_name": "identity-pg-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-normal/owned-lifecycle.json",
+      "sha256": "C8EE5248C336F540746E710B3102C5EB9A67AAC7B215CA953CE78E1C97D4FD79",
+      "bytes": 322,
+      "source_name": "restore-local-normal/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-normal/result.json",
+      "sha256": "61F5DEB2C8E2C0E9CB96C828023473E5074DF93804D34FBBD6CD78CB4DE1F85D",
+      "bytes": 1123,
+      "source_name": "restore-local-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-normal/running.json",
+      "sha256": "9E5AF845FEB4CB687D6208EB4A452EAE1BF07E78C16D8E8000A2BD7A0D1164BC",
+      "bytes": 449,
+      "source_name": "restore-local-normal/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "restore-local-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-normal/stdout.log",
+      "sha256": "596F46ED5E8EF230A9BF62C4E7E1F7BD99B791C1ECFCC1507C37006F9AEBB087",
+      "bytes": 152878,
+      "source_name": "restore-local-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-race/owned-lifecycle.json",
+      "sha256": "455B3D1E2F9002B5CA834C06A6C742B8F0CC4C7D8C3A8965BA762D7224E034DA",
+      "bytes": 345,
+      "source_name": "restore-local-race/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-race/result.json",
+      "sha256": "5CC042631DB213009490597486BD29BDE87241ECD50DBEDB3EF85F5B5D811E53",
+      "bytes": 1163,
+      "source_name": "restore-local-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-race/running.json",
+      "sha256": "23E373311FD27AD3D0330092B10378558A591CCDA9123845EFD6B2D44AE1E847",
+      "bytes": 461,
+      "source_name": "restore-local-race/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "restore-local-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-local-race/stdout.log",
+      "sha256": "91B03ED956C98ECE9318049730D0ABF38B559818AF7CBDD014A675F35606075A",
+      "bytes": 152844,
+      "source_name": "restore-local-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-normal/owned-lifecycle.json",
+      "sha256": "9AC1912E6E401A4B7BA7572714CC59FF4BA49C1974124727AD2FAFD6A587127F",
+      "bytes": 334,
+      "source_name": "restore-pg-normal/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-normal/result.json",
+      "sha256": "37F61C04CF738763C1459D87224591510670D6CCCFE5BD15F3BAA26F7BB2B491",
+      "bytes": 1148,
+      "source_name": "restore-pg-normal/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-normal/running.json",
+      "sha256": "19370D4ECF097CEA780F4201B07E418D5D33B4E02D68D7782C636C606E24892A",
+      "bytes": 459,
+      "source_name": "restore-pg-normal/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-normal/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "restore-pg-normal/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-normal/stdout.log",
+      "sha256": "B81AFC787C7A1C667595F68D7099F3CE451E1E64077D23FFF1125974614E6E78",
+      "bytes": 21260,
+      "source_name": "restore-pg-normal/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-race/owned-lifecycle.json",
+      "sha256": "58FD00EFD602891339BA2814350683DA9C50D1088E75DDEB4C937959A97EDFC9",
+      "bytes": 346,
+      "source_name": "restore-pg-race/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-race/result.json",
+      "sha256": "34FBB8D8136BEA731EF64B20DA82C77A3EDAC0CE5513F4CB93FCDFC0D6803130",
+      "bytes": 1174,
+      "source_name": "restore-pg-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-race/running.json",
+      "sha256": "BE2182B4CB1FCCCD5F8608526C543E8BB59A4E0A35F97AFCAAC6BCC0384C098F",
+      "bytes": 471,
+      "source_name": "restore-pg-race/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "restore-pg-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/restore-pg-race/stdout.log",
+      "sha256": "3BAC7B2472FAA2AEB0FAF3898DFAE4A1BD6BC213EE2E2211D2551750A382D465",
+      "bytes": 21258,
+      "source_name": "restore-pg-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-targeted-current12-r02/summary.json",
+      "sha256": "0834F4895B60945FE7536473A56E9EF8EFA9575687D00A4DA2E0AD7F5A710B4E",
+      "bytes": 19083,
+      "source_name": "summary.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

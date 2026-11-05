@@ -1,0 +1,23 @@
+{
+  "actor": "Main intermediate migration inspection, not final receipt or independent Role Review",
+  "files": [
+    {
+      "path": "internal/recovery/journal.go",
+      "sha256": "DC72806D200D3FBBA598E69F35D31A811FBCE538EDFD610312B54D7280F37C62",
+      "bytes": 40898,
+      "diff_bytes": 31156
+    },
+    {
+      "path": "internal/recovery/filelock_flock.go",
+      "sha256": "D44E05E837C082D0313D4511FD4CC7C6B7D3A0C5AD9BDDFD777AC1630F4218E3",
+      "bytes": 4565,
+      "diff_bytes": 4588
+    },
+    {
+      "path": "internal/recovery/filelock_unsupported.go",
+      "sha256": "4AD82AEE6250919AB4236FCF367FAC006D26205378409591E88611E160359765",
+      "bytes": 685,
+      "diff_bytes": 905
+    }
+  ]
+}

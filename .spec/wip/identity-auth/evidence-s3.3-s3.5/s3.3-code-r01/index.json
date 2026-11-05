@@ -1,0 +1,393 @@
+{
+  "scope": "s3.3-code-r01",
+  "at": "2026-10-28T04:12:16.474910+00:00",
+  "original_index_sha256": "F0A5F5D0FE1AE6FDA40FCBA26E08338F1D5FF05A2DC69925ABA84B680B6AA034",
+  "records": [
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\candidate-selection.json",
+      "copy": "candidate-selection.json",
+      "sha256": "7E27BC46EB01EB25FC263BA37B8241F7FD15B752B88339D628A870D4E45141AD",
+      "bytes": 1590
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\code-handoff.txt",
+      "copy": "code-handoff.txt",
+      "sha256": "4F8A2FBB08F8399EF3CC5EF3D5EF30C73A4AAFC240A1041FBA5B51E8B5F4BADF",
+      "bytes": 3179
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\compile\\environment.json",
+      "copy": "compile/environment.json",
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A",
+      "bytes": 1328
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\compile\\launch.json",
+      "copy": "compile/launch.json",
+      "sha256": "BA8474D3071F2919D1377BF88E138F39BEA1753C4B1304BE5FBF20A8B0168F29",
+      "bytes": 479
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\compile\\result.json",
+      "copy": "compile/result.json",
+      "sha256": "25C82A0BB0506B05586E52BB92D42BDD38152980097D55F3F9DC8184FDAD927E",
+      "bytes": 875
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\compile\\source-after.json",
+      "copy": "compile/source-after.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\compile\\source-before.json",
+      "copy": "compile/source-before.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\compile\\stderr.raw",
+      "copy": "compile/stderr.raw",
+      "sha256": "0132DFC8036083A783C8F81ED213AA4FF44193F12E40C142C8E31691BD06B0F0",
+      "bytes": 97
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\compile\\stdout.raw",
+      "copy": "compile/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\delivery.json",
+      "copy": "delivery.json",
+      "sha256": "A835FE418DFFA7ED4C67BB1EFDAC903260113F6F4117A03E37D4945F605B66F5",
+      "bytes": 2591
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format\\environment.json",
+      "copy": "format/environment.json",
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A",
+      "bytes": 1328
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format\\launch.json",
+      "copy": "format/launch.json",
+      "sha256": "8E955A713593FFE73C5766C4585E3988274D0FFD05ECFD24A3BB7C9A7C4ADACA",
+      "bytes": 414
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format\\result.json",
+      "copy": "format/result.json",
+      "sha256": "56D60CAFBFC7E416CB090A8E57E21E2F92268C91A831228E5295805CF8B596BF",
+      "bytes": 811
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format\\source-after.json",
+      "copy": "format/source-after.json",
+      "sha256": "2D028C63AB5DEDB4F5843266328255D7376A895AAE26C8A593AC3B16E41156B1",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format\\source-before.json",
+      "copy": "format/source-before.json",
+      "sha256": "23A81A2DDCD9F523B1C8FE0245742161C48501A79291D526F71C19499D5CEC86",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format\\stderr.raw",
+      "copy": "format/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format\\stdout.raw",
+      "copy": "format/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format-r02\\environment.json",
+      "copy": "format-r02/environment.json",
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A",
+      "bytes": 1328
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format-r02\\launch.json",
+      "copy": "format-r02/launch.json",
+      "sha256": "ADA244387147FF71AF0BA9AC8D4DD9206C9AA59327754C557F8C134006453089",
+      "bytes": 414
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format-r02\\result.json",
+      "copy": "format-r02/result.json",
+      "sha256": "9447F9CC1974AB5D1A868C000B64825C401B756AB1AA9BE98131569AC67ECA3B",
+      "bytes": 810
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format-r02\\source-after.json",
+      "copy": "format-r02/source-after.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format-r02\\source-before.json",
+      "copy": "format-r02/source-before.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format-r02\\stderr.raw",
+      "copy": "format-r02/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\format-r02\\stdout.raw",
+      "copy": "format-r02/stdout.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\g0-readset.jsonl",
+      "copy": "g0-readset.jsonl",
+      "sha256": "56332F246394045F0B080F30846D686CF6006D89775045ED00AB7A2C56F91571",
+      "bytes": 19448
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\invalid-mode\\environment.json",
+      "copy": "invalid-mode/environment.json",
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A",
+      "bytes": 1328
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\invalid-mode\\launch.json",
+      "copy": "invalid-mode/launch.json",
+      "sha256": "9D0E31399B81E2E9BEE5B7786F798B4AE2A7489FAB1AFF790657A0520C217A26",
+      "bytes": 444
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\invalid-mode\\result.json",
+      "copy": "invalid-mode/result.json",
+      "sha256": "BE6F47FFD51C22E1CB331C435578C61577D7159027F339B0522A39A9E5EA21E6",
+      "bytes": 874
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\invalid-mode\\source-after.json",
+      "copy": "invalid-mode/source-after.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\invalid-mode\\source-before.json",
+      "copy": "invalid-mode/source-before.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\invalid-mode\\stderr.raw",
+      "copy": "invalid-mode/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\invalid-mode\\stdout.raw",
+      "copy": "invalid-mode/stdout.raw",
+      "sha256": "0D47C6950CCE7B9A2E2D48BE1E5AFEC0AFF4A91D22C4E1B260C67A1E43B8AEBA",
+      "bytes": 168
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list\\environment.json",
+      "copy": "list/environment.json",
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A",
+      "bytes": 1328
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list\\launch.json",
+      "copy": "list/launch.json",
+      "sha256": "E9E16FFEC6B19868FB59FDA4CD6EA76113BDA9455036A4A8C2A1ED465652B1E9",
+      "bytes": 454
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list\\result.json",
+      "copy": "list/result.json",
+      "sha256": "28A94899F713FFDE10CB98466ABBB721A0CE5AEFD200C72BFBD2E57FDB1BA4EB",
+      "bytes": 901
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list\\source-after.json",
+      "copy": "list/source-after.json",
+      "sha256": "2D028C63AB5DEDB4F5843266328255D7376A895AAE26C8A593AC3B16E41156B1",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list\\source-before.json",
+      "copy": "list/source-before.json",
+      "sha256": "2D028C63AB5DEDB4F5843266328255D7376A895AAE26C8A593AC3B16E41156B1",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list\\stderr.raw",
+      "copy": "list/stderr.raw",
+      "sha256": "2315A09789CCB03BB1E91A30361553AFB7D5FCB630EBF68E7DC3C93DF96E5732",
+      "bytes": 656
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list\\stdout.raw",
+      "copy": "list/stdout.raw",
+      "sha256": "C2FAE57907C05732AEC8B1C397CDD95CBB54FC595242E6EEBF9877A39BFFDFF3",
+      "bytes": 55
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list-r02\\environment.json",
+      "copy": "list-r02/environment.json",
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A",
+      "bytes": 1328
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list-r02\\launch.json",
+      "copy": "list-r02/launch.json",
+      "sha256": "EE7CBEE519C224E4D81D50DAA54343A34342E961E6480160540E3CB47A44B34F",
+      "bytes": 454
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list-r02\\result.json",
+      "copy": "list-r02/result.json",
+      "sha256": "5C9EC7AB508B009E8BE2F8135276A04BCF6D35F46690003A36BBD2CCDDFB969C",
+      "bytes": 1009
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list-r02\\source-after.json",
+      "copy": "list-r02/source-after.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list-r02\\source-before.json",
+      "copy": "list-r02/source-before.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list-r02\\stderr.raw",
+      "copy": "list-r02/stderr.raw",
+      "sha256": "C53030F983D9404D0A23B52D5F878E5548C6D7C0A8B6119F6DA60A006769442F",
+      "bytes": 97
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\list-r02\\stdout.raw",
+      "copy": "list-r02/stdout.raw",
+      "sha256": "B20E5A70385E1EDE642B30E0C562DF9ECFEBCD3277295EF7D251FDBC859C8D47",
+      "bytes": 124
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\missing-mode\\environment.json",
+      "copy": "missing-mode/environment.json",
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A",
+      "bytes": 1328
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\missing-mode\\launch.json",
+      "copy": "missing-mode/launch.json",
+      "sha256": "466A628586881E58D05934DE0CFE5C4C72A0DEEF8547DE410854F0D4D3D1A9BE",
+      "bytes": 444
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\missing-mode\\result.json",
+      "copy": "missing-mode/result.json",
+      "sha256": "1BDF7BCA56320C790CAED3DFDD974C13A7608782C0597F088B046391B1BA01CE",
+      "bytes": 874
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\missing-mode\\source-after.json",
+      "copy": "missing-mode/source-after.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\missing-mode\\source-before.json",
+      "copy": "missing-mode/source-before.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\missing-mode\\stderr.raw",
+      "copy": "missing-mode/stderr.raw",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\missing-mode\\stdout.raw",
+      "copy": "missing-mode/stdout.raw",
+      "sha256": "0D47C6950CCE7B9A2E2D48BE1E5AFEC0AFF4A91D22C4E1B260C67A1E43B8AEBA",
+      "bytes": 168
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\new-files.json",
+      "copy": "new-files.json",
+      "sha256": "6399E7DAB40B71808ECA86FE012FDC7D48D928A3B4590B8A33A8F13FD91A8015",
+      "bytes": 613
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\payload\\test\\integration\\identity\\auth_security_fixture_test.go",
+      "copy": "payload/test/integration/identity/auth_security_fixture_test.go.txt",
+      "sha256": "0DF966B9F17AD4DAF3275F3BE6428A37A4E600619524C484279C9EE4E26ED088",
+      "bytes": 31011
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\payload\\test\\integration\\identity\\auth_security_postgres_test.go",
+      "copy": "payload/test/integration/identity/auth_security_postgres_test.go.txt",
+      "sha256": "0A96A652CFBE74B7E222E1774BAAD4C50606588C298593982D0F9820A602A4AA",
+      "bytes": 19610
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\protection-final.json",
+      "copy": "protection-final.json",
+      "sha256": "61DA1794ACE85BD15135E1E7ED86C81604F901D296963FF375E50595AAFBD143",
+      "bytes": 43827
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\run_offline-r01.py.txt",
+      "copy": "run_offline-r01.py.txt",
+      "sha256": "3F3CA3BE3D2AE613E8D278BC6951B8E479C2455C2A93A3A8CA0E91AD54D1F3AE",
+      "bytes": 4073
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\run_offline.py.txt",
+      "copy": "run_offline.py.txt",
+      "sha256": "9AACE4296C929AF72FC45A4D3302AB8DADC2B70FD7748455CDF28D8CB81C5D0F",
+      "bytes": 4122
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\source185.json",
+      "copy": "source185.json",
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09",
+      "bytes": 26578
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\static-inventory.json",
+      "copy": "static-inventory.json",
+      "sha256": "FBD13BD42C70CEA16F3B815226A6A2E72F45B7900DD689E718306F8A7F18A42F",
+      "bytes": 825
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\status-after.txt",
+      "copy": "status-after.txt",
+      "sha256": "1C191B0469E58C34A6ECD6CA5AC47C9489CA4CDA22870AF4D9ACB9C92BBC3E17",
+      "bytes": 14988
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\status-before.txt",
+      "copy": "status-before.txt",
+      "sha256": "1C191B0469E58C34A6ECD6CA5AC47C9489CA4CDA22870AF4D9ACB9C92BBC3E17",
+      "bytes": 14988
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff\\index.json",
+      "copy": "original-index.json",
+      "sha256": "F0A5F5D0FE1AE6FDA40FCBA26E08338F1D5FF05A2DC69925ABA84B680B6AA034",
+      "bytes": 10814
+    }
+  ],
+  "source_binding_index": "../prep-r01/index.json",
+  "limits": "No cache or live credentials copied. Scope waivers are NOT RUN, not platform/browser PASS; seven application checks are same-source evidence from the previous run, not newly executed."
+}

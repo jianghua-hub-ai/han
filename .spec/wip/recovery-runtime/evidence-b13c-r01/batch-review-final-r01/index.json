@@ -1,0 +1,260 @@
+{
+  "scope": "batch-review-final-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-whole-batch-final-iu7imrxq",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/applicability-matrix.json",
+      "sha256": "A24551D7ACADDFAF480DDD8AEBB26532215200C8E11F6DD7343DA35242D69F2F",
+      "bytes": 1709,
+      "source_name": "applicability-matrix.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/audit_final_packet.py",
+      "sha256": "6EF0EF997A7947DF940347C7046EFB03A9FA717E9428D9A43DC0BF089EABB12C",
+      "bytes": 5913,
+      "source_name": "audit_final_packet.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/audit_main_directed.py",
+      "sha256": "1B47A9C6195D0C9A550DD3A3752785A8A8B9A747E2EECD1A9C8AF8464314ACD0",
+      "bytes": 4663,
+      "source_name": "audit_main_directed.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/audit_r02.py",
+      "sha256": "EE631CC7EA50454938CCC60595FB6C5FA95850C418E49B8DBD1BD5EF1A68E6F4",
+      "bytes": 6697,
+      "source_name": "audit_r02.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/design-meta-final-hashes.json",
+      "sha256": "1CC218F59387BC53580840A11349276CF9C25567C4C110A56E3207AB54672522",
+      "bytes": 536,
+      "source_name": "design-meta-final-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/entry-hashes.json",
+      "sha256": "DF7935B2F9BCB320489CD2898621B1BA8925696C17A4CC5C8FBDF9D20BCE5BC2",
+      "bytes": 9970,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/exit-hashes.json",
+      "sha256": "3A0BC7584BAAA7B25C0F27E507753C4E8BC4D8E3A2F36D050DD757DCD7077550",
+      "bytes": 7948,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/final-packet-audit.json",
+      "sha256": "D7AEEF5D1BF24EBF220F2DF9B9398E70DEB19AD41FBB7D02993FDC2D6390008A",
+      "bytes": 14445,
+      "source_name": "final-packet-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/final-packet-static-readset.json",
+      "sha256": "EDC372851012C334CA496B48D8EAC442E6BBB154C4000ADE0475A5D09219F373",
+      "bytes": 40688,
+      "source_name": "final-packet-static-readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/final-review-report.md",
+      "sha256": "05DD2D7B0FC82AD7EE96BD3406F33D3EBE9661700DEA1903990A104807B7036D",
+      "bytes": 12925,
+      "source_name": "final-review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/hashes.json",
+      "sha256": "D984352D97FD1183260066EA9437AD3E9A6E9FDA1B5F7F0D45AEFE7AEECA4FC8",
+      "bytes": 4239,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/main-directed-audit.json",
+      "sha256": "C6C3540D25DA9DBD3464453B33D73DA1CD69515C2CF789136194C134F0C8C924",
+      "bytes": 250573,
+      "source_name": "main-directed-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/main-directed-static-readset.json",
+      "sha256": "D42E88D354D9F35E3B794B2241B0975F91443E0C3021D71204BD2632FE424E97",
+      "bytes": 8618,
+      "source_name": "main-directed-static-readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/methods-reuse.json",
+      "sha256": "E8C74CD4368A541EFEACF1834AB3096C2BAB936D0BD9C4569489EC69E79015FF",
+      "bytes": 11901,
+      "source_name": "methods-reuse.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/r02-evidence-audit.json",
+      "sha256": "A060701994CCDA857758526C1E20D7A6DC122112FE136A633A1098791B9682CE",
+      "bytes": 64833,
+      "source_name": "r02-evidence-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/r02-static-readset.json",
+      "sha256": "F2E778F2A2FB7FBD38AD91E1C2977A98336D43F62EFB2495058A8480BC989CDF",
+      "bytes": 13995,
+      "source_name": "r02-static-readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-045273c635e547b18bb5a331d7165136.json",
+      "sha256": "549333E881CAC538B6F7671BF26778BFB3D7824E1891EEE3D3311FC7E079AFE2",
+      "bytes": 276,
+      "source_name": "read-045273c635e547b18bb5a331d7165136.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-096967e9948f49c1b25ed4900b295814.json",
+      "sha256": "DD44870D32DB0C80BF1C8D64C5EC3D70C9746D89D3B8D1B9C71788666A90142F",
+      "bytes": 277,
+      "source_name": "read-096967e9948f49c1b25ed4900b295814.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-22ad3489e7234dac97266313d94a7412.json",
+      "sha256": "1C002A5E4F8B13D5E325942B90A5278BE640890617968298F7F8C57D32EA5050",
+      "bytes": 267,
+      "source_name": "read-22ad3489e7234dac97266313d94a7412.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-339dd70cd41e4efdb9c7c109b59bf0d5.json",
+      "sha256": "9E9762F033D97D2CEFC3408F44D276A377D6D00F7E0BEA70E75EEA571BD8A723",
+      "bytes": 257,
+      "source_name": "read-339dd70cd41e4efdb9c7c109b59bf0d5.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-69170b415f3b47ac8f507b3ea2132446.json",
+      "sha256": "5FDAC385E3298C4EDE0673CE5A289AD4A6711C3E87C10B5BA74C21682BA8F0D5",
+      "bytes": 264,
+      "source_name": "read-69170b415f3b47ac8f507b3ea2132446.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-6df4d06bcace4ee3a57507a5a20cc278.json",
+      "sha256": "4707FF52C0EA2E1A161AFF57320C39F8698FD59E965010E705EE5596D95958FE",
+      "bytes": 192,
+      "source_name": "read-6df4d06bcace4ee3a57507a5a20cc278.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-77387e0664804fe49cb8b103998f1d7e.json",
+      "sha256": "C0922DD9D724EC1819F87FB23A1D58751DD2332FC62EC8ECFCF833932B5ADC4A",
+      "bytes": 271,
+      "source_name": "read-77387e0664804fe49cb8b103998f1d7e.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-8045a8106e6d45fc8acdded6e38e21fa.json",
+      "sha256": "9C918DEED49F7A22B8F42A325EBB7F0FA9D6D9F54531FA1ABAA4DE6C096DD0F2",
+      "bytes": 258,
+      "source_name": "read-8045a8106e6d45fc8acdded6e38e21fa.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-939c68fcf6c645d7804e3a3d022e1b96.json",
+      "sha256": "687BEB2121FF0E805FE854BA590322771353A8C6785980D99A33AAC010BFED0E",
+      "bytes": 252,
+      "source_name": "read-939c68fcf6c645d7804e3a3d022e1b96.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-9ba3ad63b5b24d089a0dfe56103be153.json",
+      "sha256": "E1A0ED5C9A52E04ABFD1F73EAD13CD67867898D353C3D4C1076749F1F4B7EB29",
+      "bytes": 261,
+      "source_name": "read-9ba3ad63b5b24d089a0dfe56103be153.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-9e5d31a185a7462eb69989840a4c940b.json",
+      "sha256": "22C66FFBC9FCCD97E8D6A1FFC63D48F3D09A153DE0DFEEA5E071631346DD67F1",
+      "bytes": 275,
+      "source_name": "read-9e5d31a185a7462eb69989840a4c940b.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-bda5e55f548a4be1b7266bb064db57cc.json",
+      "sha256": "50137CB813FC905EED587769C5BEB394D740CDF872FA6AC0939BBA7364A2D4DE",
+      "bytes": 280,
+      "source_name": "read-bda5e55f548a4be1b7266bb064db57cc.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-c769dfcbcd244d29b14e1aa465793b59.json",
+      "sha256": "A5F80990016122A2EB99DA1AC52913CFC86940ED926812A9769F5ED0E993EF04",
+      "bytes": 261,
+      "source_name": "read-c769dfcbcd244d29b14e1aa465793b59.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-c9c27587064e4a6180c9870fe3010913.json",
+      "sha256": "57542BD866C12C4605F4B27B36675B83B7D7177678AE143CB06DA76C673C2591",
+      "bytes": 237,
+      "source_name": "read-c9c27587064e4a6180c9870fe3010913.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-cf4bcf77826e41969644f302e522e81b.json",
+      "sha256": "79D3962E1249A819111D14795B950C92918F40EE4072C484884C2228C123C7A0",
+      "bytes": 253,
+      "source_name": "read-cf4bcf77826e41969644f302e522e81b.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-dab98bd09ae04e15a8cd6139e9cdcda4.json",
+      "sha256": "99E2BBD79CC11523AED34C6B00AA7C3599A3708FA0E9A2973497AE3F16EE452F",
+      "bytes": 278,
+      "source_name": "read-dab98bd09ae04e15a8cd6139e9cdcda4.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-ec38ae5b0f1741448cc06dc9d15f7697.json",
+      "sha256": "679E3688444A00BA64F7FC072F9C0965E16CF982EF79B63560FFEF7905061C86",
+      "bytes": 252,
+      "source_name": "read-ec38ae5b0f1741448cc06dc9d15f7697.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-f397ba4495a24e6e957bfc83bac41efc.json",
+      "sha256": "A3F78FD8382D1E91A110A75C6E863D7F8DC70D0A2F362A584341C1C9187377D0",
+      "bytes": 256,
+      "source_name": "read-f397ba4495a24e6e957bfc83bac41efc.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read-f6ce474925e94e38a644729bba86ae19.json",
+      "sha256": "B29903BE497A7C22ABAC491B712013669BE642B7A9AB18BF0F7FECA2A3E6D860",
+      "bytes": 275,
+      "source_name": "read-f6ce474925e94e38a644729bba86ae19.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/read.ps1",
+      "sha256": "CB7A3E0A2905824A6D679A7252EAB5BB61F6234B817E9439A95314EE2DCF5E52",
+      "bytes": 535,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/readset.json",
+      "sha256": "75940A812CDAF0951EEE19336D5225DCCA90A00D89DD9822ED5C3537CDF2D805",
+      "bytes": 6476,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/receipt.json",
+      "sha256": "2C8E2D34FA7A16265C5A886ED57AE80E15DB50E5FA6BBFBDC56B6CA2390E43BA",
+      "bytes": 5177,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/seal_final.py",
+      "sha256": "9D9A919E40912E9A0753B0099A57527297FB93D5F8693A92434770B5B0D88BAD",
+      "bytes": 8766,
+      "source_name": "seal_final.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/source-and-meta-hashes.md",
+      "sha256": "CA7E2A2B5BE95FE12AC5351EC90886AEC68C1D4C351FBC98FE8D2CE3080B0046",
+      "bytes": 3026,
+      "source_name": "source-and-meta-hashes.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/batch-review-final-r01/source19-final-hashes.json",
+      "sha256": "8C7B485A36D2E2CAA189A49653E09C3F05DB64D3492F48F1303E6CE192ECBE7F",
+      "bytes": 2334,
+      "source_name": "source19-final-hashes.json"
+    }
+  ]
+}

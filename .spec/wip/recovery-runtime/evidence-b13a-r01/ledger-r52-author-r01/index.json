@@ -1,0 +1,98 @@
+{
+  "scope": "ledger-r52-author-r01",
+  "owner": {
+    "role": "add-arch-designer",
+    "nickname": "Pascal",
+    "runtime_id": "01a17e3d-5550-7f91-bb7e-6e6fad3d082c"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-adr27-identity-r52-meta-0tkvkd5e",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/after/.add/project/knowledge/decisions/framework.md",
+      "sha256": "EA9E8D3EB9A5A7EBF12669EA60321B1EDB6E2845A5825B45D227F6F076EF2144",
+      "bytes": 104034,
+      "source_name": "after/.add/project/knowledge/decisions/framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/after/.add/project/knowledge/decisions/README.md",
+      "sha256": "7112FA46EF75F8130AA900CF46D5532521D9E5002160FB8BBBDB3031FFF6AFB4",
+      "bytes": 15477,
+      "source_name": "after/.add/project/knowledge/decisions/README.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/baseline.json",
+      "sha256": "0477B7382F10749534998DA11AB73BF43A033FD54507237518D10A723F16624C",
+      "bytes": 956,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/before/.add/project/knowledge/decisions/framework.md",
+      "sha256": "681D89C65C1384280C386F4B59BE8C8E3308CD3C10516E23D561D5A23E1CCFDD",
+      "bytes": 102161,
+      "source_name": "before/.add/project/knowledge/decisions/framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/before/.add/project/knowledge/decisions/README.md",
+      "sha256": "7112FA46EF75F8130AA900CF46D5532521D9E5002160FB8BBBDB3031FFF6AFB4",
+      "bytes": 15477,
+      "source_name": "before/.add/project/knowledge/decisions/README.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/expected-framework.frozen",
+      "sha256": "EA9E8D3EB9A5A7EBF12669EA60321B1EDB6E2845A5825B45D227F6F076EF2144",
+      "bytes": 104034,
+      "source_name": "expected-framework.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/framework.md.diff",
+      "sha256": "F3ED8BB9E73E59199BA44CD805B4EA5FE8D12C1632D1C53D13859DD8155D38E2",
+      "bytes": 5737,
+      "source_name": "framework.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/metadata.patch",
+      "sha256": "C07916905C59A8379DE7F9B24B70439C45340533DF362C998FE35A9DC0531A32",
+      "bytes": 4167,
+      "source_name": "metadata.patch"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/README.md.diff",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "README.md.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/readset.json",
+      "sha256": "FFC77F0573427925BC43269E8AAD1BBECED6ADEDB21AD6719BE7952B3AFCCC3F",
+      "bytes": 1222,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/receipt.md",
+      "sha256": "22B1FBF3E1C6ACB194A133F7C902460A57127D1D622F9DF9826D86119DA3B7CE",
+      "bytes": 1978,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/sha256sums.json",
+      "sha256": "32C6ADD74E023B5B3FEC9679E8D3DF4770D8312418626569A6C4392A9A7E8CB4",
+      "bytes": 1309,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/verification.json",
+      "sha256": "8553C74AC03D2903BBCAE521EC0FBF6D7C17C3604DBB4EF43E28C3AAA48D40C4",
+      "bytes": 2786,
+      "source_name": "verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/ledger-r52-author-r01/verify.py",
+      "sha256": "5326B5EEBCD5B7B600783C796381390F395B1322B631FF881A4F3DED022E438E",
+      "bytes": 6651,
+      "source_name": "verify.py"
+    }
+  ]
+}

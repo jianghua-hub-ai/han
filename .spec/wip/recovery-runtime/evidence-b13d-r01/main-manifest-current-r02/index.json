@@ -1,0 +1,253 @@
+{
+  "scope": "main-manifest-current-r02",
+  "owner": {
+    "role": "Lead-verification-not-Role",
+    "nickname": "Main",
+    "runtime_id": "Main runtime ID not exposed"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-lead-gz6d1yr8\\checks\\main-manifest-current-r02",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-build/owned-lifecycle.json",
+      "sha256": "DC5E7FFE5CAB9AD1CF811E69E14CD581CE1A92EC0E618F9752DE8244DB1B86D4",
+      "bytes": 321,
+      "source_name": "manifest-build/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-build/result.json",
+      "sha256": "82887D185A3197AC74719B174B3E7200BD313446F2E88BEBEAB863D2557371D1",
+      "bytes": 979,
+      "source_name": "manifest-build/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-build/running.json",
+      "sha256": "043A36F86247E51804CA85AE0438C01D66BAB271AF30E25425B3782FFF17392E",
+      "bytes": 306,
+      "source_name": "manifest-build/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-build/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-build/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-build/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-build/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-contract/owned-lifecycle.json",
+      "sha256": "98277B08BD58CA67E15E91CF784BD34E83A0307AC3FDF330A5DC62C11C1F0A70",
+      "bytes": 393,
+      "source_name": "manifest-contract/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-contract/result.json",
+      "sha256": "87EB997FB057D4D6458D3D053C0E5E96E8523F3F7C9F24DDA8E76A21957D8E18",
+      "bytes": 1089,
+      "source_name": "manifest-contract/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-contract/running.json",
+      "sha256": "A3FE93A10DBC62AE75A56AE357A11C671ECE186377380F00C4DAA3C0C1689F12",
+      "bytes": 330,
+      "source_name": "manifest-contract/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-contract/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-contract/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-contract/stdout.log",
+      "sha256": "7CDC160DFA25888278D252E865D63B5AB02B5E28FAFC7F1ECB32FCF49A573994",
+      "bytes": 521,
+      "source_name": "manifest-contract/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-format/owned-lifecycle.json",
+      "sha256": "D1A32F4386C12F00108635AEABE7763E9136C3E678563FBF5531F4CA0C3BB5FC",
+      "bytes": 321,
+      "source_name": "manifest-format/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-format/result.json",
+      "sha256": "2DDA799714D6A5FAF6E5754544E3A7487F9E27A9B766B73D70BD1291B734AC95",
+      "bytes": 976,
+      "source_name": "manifest-format/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-format/running.json",
+      "sha256": "118120446D8C91821AE4440C04EDCF0A0955AB6E7758A00D9CC02B5A0FAD87B6",
+      "bytes": 303,
+      "source_name": "manifest-format/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-format/stderr.log",
+      "sha256": "53258F7B21EF40C6BE7E8E671216EEF5DD0441B27314FA806AE24F5C2CB010FD",
+      "bytes": 1133,
+      "source_name": "manifest-format/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-format/stdout.log",
+      "sha256": "D01225B146C06C238B38AEA344662D8253842CEE671EF68137BCC4B66C9379A8",
+      "bytes": 1631,
+      "source_name": "manifest-format/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-modules/owned-lifecycle.json",
+      "sha256": "174870E5241EE7C161BA8902A6855E1D584992E39343892E80B4EAFB9EA9472A",
+      "bytes": 333,
+      "source_name": "manifest-modules/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-modules/result.json",
+      "sha256": "30FAF2DE0D95F2B74DEB2BDCD4922E0C315FBA4DAC4AF431B0B5C3315D5138C4",
+      "bytes": 994,
+      "source_name": "manifest-modules/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-modules/running.json",
+      "sha256": "559DBF0A6E5439362418A96C464D3D66589F06E9983FDAAC12ED3159F167B401",
+      "bytes": 307,
+      "source_name": "manifest-modules/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-modules/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-modules/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-modules/stdout.log",
+      "sha256": "B4537ED75F533F993F371954DE47E42A793B8E5B0587577DE7E27FB3E50696BD",
+      "bytes": 21,
+      "source_name": "manifest-modules/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-race/owned-lifecycle.json",
+      "sha256": "F580E6766EB3756C5F1E7031B7757E9BD3601166CD4C052BC83CCFE515031430",
+      "bytes": 620,
+      "source_name": "manifest-race/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-race/result.json",
+      "sha256": "AB9136BCCAB02C70E96C06264E3DC53775838678D9D6683E78AB82C059AAF03D",
+      "bytes": 1342,
+      "source_name": "manifest-race/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-race/running.json",
+      "sha256": "B59A664390FCED33FEB413F19FA117E8CAE4EC3E52C7AFD39F15B7C17EB3177D",
+      "bytes": 318,
+      "source_name": "manifest-race/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-race/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-race/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-race/stdout.log",
+      "sha256": "17DFE53F1FDEB60AA1A94C667AED773AAF77D868A276C2B3C78B459575D3DBC4",
+      "bytes": 444,
+      "source_name": "manifest-race/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-tests/owned-lifecycle.json",
+      "sha256": "4ED2008149B703B97769D21DC257B7B9F29C9346801134885FA9E291247D1B1A",
+      "bytes": 358,
+      "source_name": "manifest-tests/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-tests/result.json",
+      "sha256": "132A114740341D3BE3653F10D0B160182E4E03A587F7B2BDD331D6704EA51038",
+      "bytes": 1022,
+      "source_name": "manifest-tests/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-tests/running.json",
+      "sha256": "6A071C2D085BDC82CCE1B3A66DD0BC0328633C06DF0517AACC6D91B2BED4129A",
+      "bytes": 305,
+      "source_name": "manifest-tests/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-tests/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-tests/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-tests/stdout.log",
+      "sha256": "74C9557D7639A8262B3A3A0608D51AE7558047568A5A30C1728B0F641EA61AFD",
+      "bytes": 444,
+      "source_name": "manifest-tests/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-vet/owned-lifecycle.json",
+      "sha256": "9206F1A5A8079C7EF575A4818DEB1371EB580223F2EA8AADC4F25871141E9B3F",
+      "bytes": 407,
+      "source_name": "manifest-vet/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-vet/result.json",
+      "sha256": "80DE9A3F9E57800903BD8BD7C36696DDBA43F6344F37974215F8EC82EE401803",
+      "bytes": 1077,
+      "source_name": "manifest-vet/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-vet/running.json",
+      "sha256": "7DE39628181A13EB2A97EF4C6B1EB5152780320F9DF2F29245B069E0B3DBBCED",
+      "bytes": 302,
+      "source_name": "manifest-vet/running.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-vet/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-vet/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/manifest-vet/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "manifest-vet/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/owned17-format/owned-lifecycle.json",
+      "sha256": "709284CFCFA00FCA7DD57F12E16FB70983183B8614CD319B73BDD5848B7ACC41",
+      "bytes": 294,
+      "source_name": "owned17-format/owned-lifecycle.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/owned17-format/result.json",
+      "sha256": "22E7449ECBA9E9F4399168578C2F56EFAD984DFC7BF01633962290E5479BC13D",
+      "bytes": 1809,
+      "source_name": "owned17-format/result.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/owned17-format/stderr.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "owned17-format/stderr.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/owned17-format/stdout.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0,
+      "source_name": "owned17-format/stdout.log"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/main-manifest-current-r02/summary.json",
+      "sha256": "C90C10842EDBF5029D4557FABF646320BA302B4E1C02FA6E9609AA44D239D68B",
+      "bytes": 13815,
+      "source_name": "summary.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

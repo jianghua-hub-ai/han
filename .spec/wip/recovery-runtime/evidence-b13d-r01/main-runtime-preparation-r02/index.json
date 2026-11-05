@@ -1,0 +1,27 @@
+{
+  "actor": "Main actual Temp-only preparation and exact byte copies",
+  "status": "PREPARED; no Go/PG execution or new verification PASS",
+  "files": [
+    {
+      "path": "main-go-sum-local-cache-copy-r02.json",
+      "sha256": "EC08AF00AC1C1738F9F1528BF4D768F84298FF1D43840F6762EC4D508BF7C5AD",
+      "bytes": 10245
+    },
+    {
+      "path": "main-owned-runner-preparation-r02.json",
+      "sha256": "F6D094F2C60E7AFE84AF4C3FA1D4CC0E68D6182DB42558227A9E899874BC2C25",
+      "bytes": 777
+    },
+    {
+      "path": "run_main_checks_r02.py",
+      "sha256": "E7B6E0B51647586002C3303129D7C2AA26FA8BB3FF233BF6FD58D52389BE1807",
+      "bytes": 4409
+    },
+    {
+      "path": "owned_windows_main_r02.py",
+      "sha256": "F845004D63C83EF86862CF660B9E18ADCE0BA829D5ADFCE61721E8D6A1AE936D",
+      "bytes": 10113
+    }
+  ],
+  "retention": "All original scripts/cache/data retained, no cleanup"
+}

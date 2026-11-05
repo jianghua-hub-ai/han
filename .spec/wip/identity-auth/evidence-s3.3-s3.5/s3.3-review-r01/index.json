@@ -1,0 +1,375 @@
+{
+  "scope": "s3.3-review-r01",
+  "at": "2026-10-28T03:31:44.660644+00:00",
+  "original_index_sha256": "7FB36B7CE9832598EF907B75A2160C4F8C02F5D53BA6BDE27D59759D1557BA14",
+  "records": [
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.add\\project\\knowledge\\design-workspace\\identity-auth\\design.md",
+      "copy": "payload/repo/.add/project/knowledge/design-workspace/identity-auth/design.md",
+      "sha256": "D57BB2152A93F6F651165EE7DBE1913B28E9E8719B6991B1FDD36E8B7DBAB7FE",
+      "bytes": 634074
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.add\\project\\knowledge\\design-workspace\\identity-auth\\test-plan.md",
+      "copy": "payload/repo/.add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+      "sha256": "0052894D3C4B58F644749F8337BB264FD2768DD26A31C7EA0A361F0F61D939BD",
+      "bytes": 196280
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.add\\project\\knowledge\\tasks\\tasks.md",
+      "copy": "payload/repo/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "E63E9805F4A51EFCD3CA8C13F65068C3BEA251E7D58EEF07012EA48E6DD95487",
+      "bytes": 426091
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.codex\\skills\\add-code-review\\references\\\u4ea7\u54c1\u5b89\u5168\u7ea2\u7ebf.md",
+      "copy": "payload/repo/.codex/skills/add-code-review/references/\u4ea7\u54c1\u5b89\u5168\u7ea2\u7ebf.md",
+      "sha256": "994EABF6BD9076EBA67F497768AD298D7AEFEDA90D901DB39B6AABC263B405FA",
+      "bytes": 22270
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.codex\\skills\\add-research\\SKILL.md",
+      "copy": "payload/repo/.codex/skills/add-research/SKILL.md",
+      "sha256": "AEAACF12AE7855EBB46FE51C0928D82E5E087CC3C50BF89B4278EC27C6352857",
+      "bytes": 2937
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.spec\\wip\\identity-auth\\review-code-s1.6-r01.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-code-s1.6-r01.md",
+      "sha256": "EFBDE5D35FD198888CB4CD40624C5947C1FE9E0486A4E112847BF9D62D40C485",
+      "bytes": 10375
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.spec\\wip\\identity-auth\\review-code-s3.2-f005-r06.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-code-s3.2-f005-r06.md",
+      "sha256": "0739133B9674B9B03EE76F0E4D0D0D3F81F6BA3D3AA1A40F7A7DEA057DB6EE67",
+      "bytes": 10568
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.spec\\wip\\identity-auth\\review-verification-s3.3-r01.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-verification-s3.3-r01.md",
+      "sha256": "1854B46F231C2C260C07A7DA8D8FEAF366A5567FCBB54BB7C836ECC8BB0D1340",
+      "bytes": 18463
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\.spec\\wip\\identity-auth\\verification-s3.3-r01.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/verification-s3.3-r01.md",
+      "sha256": "F9F8D228BC1B092CCA709E01AB51557971FA896D9C6DE58FC2A6DD4D37AB98D8",
+      "bytes": 16033
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\cmd\\han-server\\main.go",
+      "copy": "payload/repo/cmd/han-server/main.go.txt",
+      "sha256": "6B45B5509A2D01C9F5DF0393CA00CAD5C8430353B5F849BF6E71BA3A47C52AC4",
+      "bytes": 132684
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\cmd\\han-server\\main_test.go",
+      "copy": "payload/repo/cmd/han-server/main_test.go.txt",
+      "sha256": "B53DD34D57AD6A2797E9FC080FD90034FC52CB26675686CB075D3153F193A9BC",
+      "bytes": 319039
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\identity\\handler.go",
+      "copy": "payload/repo/internal/identity/handler.go.txt",
+      "sha256": "EC4533A6CAA6819255BF9FC7D19EEE3AEEAA90B9E3A9128A5D24B5017D1F1EA3",
+      "bytes": 52167
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\identity\\login.go",
+      "copy": "payload/repo/internal/identity/login.go.txt",
+      "sha256": "FDB1ED13FB499A1219AE24884F053A3626567BB81CAAB56EC02B1FC197B6864C",
+      "bytes": 68034
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\identity\\login_integration_test.go",
+      "copy": "payload/repo/internal/identity/login_integration_test.go.txt",
+      "sha256": "15C28D7BA7EE39499D970E8C7AE53F7CE28A1A450D2530FD7697BF8BE4D407BA",
+      "bytes": 23923
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\identity\\login_test.go",
+      "copy": "payload/repo/internal/identity/login_test.go.txt",
+      "sha256": "FB5483FB93649F9B01B060D54F35B5CC7B7A3305704D19DFCA445A2C7400414F",
+      "bytes": 108703
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\platform\\http_security.go",
+      "copy": "payload/repo/internal/platform/http_security.go.txt",
+      "sha256": "3676B4C64BCF115C43845DC69D77F6875F3A7BBCD67DA6A91920B84594C3CFDA",
+      "bytes": 11962
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\platform\\http_security_test.go",
+      "copy": "payload/repo/internal/platform/http_security_test.go.txt",
+      "sha256": "BF3DCEC73440B687ED2A1C68F2B30D0FCEA52A6BF9AF8300E82449B8499E5002",
+      "bytes": 28083
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\session\\store.go",
+      "copy": "payload/repo/internal/session/store.go.txt",
+      "sha256": "4B12462E29D46B730F0DD58E6A0BAA57EC1D91B99D9F43FC91179319FF88E679",
+      "bytes": 20501
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\internal\\session\\store_test.go",
+      "copy": "payload/repo/internal/session/store_test.go.txt",
+      "sha256": "3D32E65D407F24211355B642DAB3933F1AB36E10B60CAFC7F039B2F9B8201E09",
+      "bytes": 28512
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\repo\\test\\integration\\identity\\postgres_test.go",
+      "copy": "payload/repo/test/integration/identity/postgres_test.go.txt",
+      "sha256": "C3A7F455C6AD40DC43557F578286CD53B1EB48A018DFAC699A43F152C0B9D1CB",
+      "bytes": 49827
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\index.json",
+      "copy": "payload/author/index.json",
+      "sha256": "A0BE45DCF9F96BCE02784108D299E8BD2CD7AF9FCA1E946284509B102424B0C3",
+      "bytes": 52314
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\selection.json",
+      "copy": "payload/author/selection.json",
+      "sha256": "8DDC6B2F9E8880A5481C5CF1911AB79BB4F6404D0A46ADF7D06DF55DBB7FAB7B",
+      "bytes": 66756
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\provenance.json",
+      "copy": "payload/author/provenance.json",
+      "sha256": "41FD31F80D93901555E80B98399213B2C8748DE6C3DE6C85BDF8325F623071BA",
+      "bytes": 343
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\sourceguard-initial.json",
+      "copy": "payload/author/sourceguard-initial.json",
+      "sha256": "57AD6E50E597517F5FB233FF8DAB4C89EDA168F55DAB9AC8629DB738ED6D7A9A",
+      "bytes": 67252
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\sourceguard-final.json",
+      "copy": "payload/author/sourceguard-final.json",
+      "sha256": "485D6C912770EB6DDA6C8C0E42A8C4F5E583DCF7C3DFBABC16AE1C119D391B2C",
+      "bytes": 67252
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\normal\\launch.json",
+      "copy": "payload/author/normal/launch.json",
+      "sha256": "A9C556EB3A5633A66ECC9965BD1FCD87F486D12663455803396029AE1C0E63DD",
+      "bytes": 1997
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\normal\\result.json",
+      "copy": "payload/author/normal/result.json",
+      "sha256": "B7AE3EC52F1826B3C146E3338C71D8830632F16CB48DE0866289225A91FD7A90",
+      "bytes": 2332
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\normal\\environment.json",
+      "copy": "payload/author/normal/environment.json",
+      "sha256": "3F8D3CA931ADD845F2138DB2400ADA32A79A3063C78F4FDBCC9FB77C50178004",
+      "bytes": 1254
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\normal\\stdout.raw.jsonl",
+      "copy": "payload/author/normal/stdout.raw.jsonl",
+      "sha256": "E295BFE5099D690617FBE45BBFD6E80039423171D1D47F991460BB2E635E3B34",
+      "bytes": 95912
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\normal\\stderr.raw.log",
+      "copy": "payload/author/normal/stderr.raw.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\normal\\sourceguard-before.json",
+      "copy": "payload/author/normal/sourceguard-before.json",
+      "sha256": "43B3B805A1B4A8B781C8AA3B0AD766622DEFF55DA67E05E6D026A3BAA4997BC1",
+      "bytes": 67252
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\normal\\sourceguard-after.json",
+      "copy": "payload/author/normal/sourceguard-after.json",
+      "sha256": "ABE09A50657F276145081308057B237BC025405317C0D60EB038C1B460B3BA33",
+      "bytes": 67252
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\race\\launch.json",
+      "copy": "payload/author/race/launch.json",
+      "sha256": "F75AA007255ED626E59C9B1760531EB5AAC0C02AA9495D0325B929C0791D1B0A",
+      "bytes": 2011
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\race\\result.json",
+      "copy": "payload/author/race/result.json",
+      "sha256": "134B8D07AFB72D392CC01C36602BB81526D2425EEAF304A53ECAF7130D4265D2",
+      "bytes": 2345
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\race\\environment.json",
+      "copy": "payload/author/race/environment.json",
+      "sha256": "3F8D3CA931ADD845F2138DB2400ADA32A79A3063C78F4FDBCC9FB77C50178004",
+      "bytes": 1254
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\race\\stdout.raw.jsonl",
+      "copy": "payload/author/race/stdout.raw.jsonl",
+      "sha256": "F28103C70394F37473CC1EFEB2A51BE9F8ABA4FBB0C56A3E5E4921C254D41116",
+      "bytes": 96024
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\race\\stderr.raw.log",
+      "copy": "payload/author/race/stderr.raw.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\race\\sourceguard-before.json",
+      "copy": "payload/author/race/sourceguard-before.json",
+      "sha256": "0CE91D2B68D915BB316B08C6CF7E80B8BEF0EAEBCF8E61FAD8E4CE750B3B39AC",
+      "bytes": 67252
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\author\\race\\sourceguard-after.json",
+      "copy": "payload/author/race/sourceguard-after.json",
+      "sha256": "D9B972EE96D0CF3F390E09732351D5A929E76AB5DC90E9A1C60F4642BF5A9281",
+      "bytes": 67252
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload\\lead\\lead-s3.3-raw-verification.json",
+      "copy": "payload/lead/lead-s3.3-raw-verification.json",
+      "sha256": "BD7E6E4973EF212BBF50B86454C31B77C136F2285ED7675EC69EA5123D864BAE",
+      "bytes": 1455
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\after.json",
+      "copy": "after.json",
+      "sha256": "6DFD04490B924786859042E9A8143008591741F5DF545037B18DA0682E735795",
+      "bytes": 22369
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\author-frozen-report.md",
+      "copy": "author-frozen-report.md",
+      "sha256": "F9F8D228BC1B092CCA709E01AB51557971FA896D9C6DE58FC2A6DD4D37AB98D8",
+      "bytes": 16033
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\before.json",
+      "copy": "before.json",
+      "sha256": "1227EDB95B6B884322FFB14B5468AB7D769C463B3652B00C0401984C0ED9B4BA",
+      "bytes": 22369
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\git-status-after.txt",
+      "copy": "git-status-after.txt",
+      "sha256": "1C191B0469E58C34A6ECD6CA5AC47C9489CA4CDA22870AF4D9ACB9C92BBC3E17",
+      "bytes": 14988
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\historical-applicability.json",
+      "copy": "historical-applicability.json",
+      "sha256": "013C05A95278E4299DFF8C87B74DB58A97367A6209E3452BC743175B22E3F3AD",
+      "bytes": 777
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\lead-freeze-signal.json",
+      "copy": "lead-freeze-signal.json",
+      "sha256": "ECFA97C82B3EC2816E086B9158D9BA5F96381F644C16A1DE32035020C3EF599E",
+      "bytes": 973
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\metadata-guard.json",
+      "copy": "metadata-guard.json",
+      "sha256": "B7196257A7117451E036332EBC3308A828EF9C544A9FC992823519452695D959",
+      "bytes": 2585
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\plan-metadata.diff",
+      "copy": "plan-metadata.diff",
+      "sha256": "1AE556D7241BBF5B77905BD9A42FE08AF91A55511FC25A0E08E18908572ADB86",
+      "bytes": 6709
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\plan.before.md",
+      "copy": "plan.before.md",
+      "sha256": "C9EACB04A51545DB77715C32B6F76C7B234C6407325CF61F87AFF9C66FBD6EBD",
+      "bytes": 408913
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\protection-check.json",
+      "copy": "protection-check.json",
+      "sha256": "63C71395EAC58E953DDD5D56D2F3ADF496E0870878A8EE3DA48ED3ADD4549ED1",
+      "bytes": 253
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\raw-independent-check.json",
+      "copy": "raw-independent-check.json",
+      "sha256": "ACECDB221BD6C7B481B437BBD0E666154E259DD30EF20963A4D2CDA21EA5937F",
+      "bytes": 1466
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\read.py",
+      "copy": "read.py.txt",
+      "sha256": "C3D75609A4712D45A94585C975784F15A458500F8F714CFD1C24C118125D8919",
+      "bytes": 888
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\readset.jsonl",
+      "copy": "readset.jsonl",
+      "sha256": "287FEBD1022BA454175704DCB5E1C2C69DD2271C2841D5CB67CCE3E20A8AA4D7",
+      "bytes": 9699
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\reviewed-readset.json",
+      "copy": "reviewed-readset.json",
+      "sha256": "9030E93DE3F6485FFB5A313E88F86D51A0E5407D60539B887495CB49CA219C78",
+      "bytes": 8174
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\s33-card.after.raw",
+      "copy": "s33-card.after.raw",
+      "sha256": "486581BD23D56280476072C4CB0AE20023DB2CF4DC34E0CDC73887BBA95C8517",
+      "bytes": 3063
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\s33-card.before.raw",
+      "copy": "s33-card.before.raw",
+      "sha256": "486581BD23D56280476072C4CB0AE20023DB2CF4DC34E0CDC73887BBA95C8517",
+      "bytes": 3063
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\seal.py",
+      "copy": "seal.py.txt",
+      "sha256": "AE81ABC6765A06BECE4C70BEE7824B2F6429660B88A26D21FCF1535AC351F2FA",
+      "bytes": 10188
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\tasks-metadata.diff",
+      "copy": "tasks-metadata.diff",
+      "sha256": "66560ED677AF8E296CC80A27239CEBF5D31559934429739F91240122428B6D54",
+      "bytes": 6885
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\tasks.before.md",
+      "copy": "tasks.before.md",
+      "sha256": "22C4796844643688FEA82925966656CF51C6CD0FA2885190ADFBC712BAE7ACDA",
+      "bytes": 424649
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\verify_raw.py",
+      "copy": "verify_raw.py.txt",
+      "sha256": "C473BFE19C72C4C30040E0FC2E271E94550CC083C54267C137DC7F702294D865",
+      "bytes": 4382
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-review-r01-34df0bf58e\\payload-index.json",
+      "copy": "original-payload-index.json",
+      "sha256": "7FB36B7CE9832598EF907B75A2160C4F8C02F5D53BA6BDE27D59759D1557BA14",
+      "bytes": 24142
+    }
+  ],
+  "source_binding_index": "../prep-r01/index.json",
+  "limits": "No cache or live credentials copied. Scope waivers are NOT RUN, not platform/browser PASS; seven application checks are same-source evidence from the previous run, not newly executed."
+}

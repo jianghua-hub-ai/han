@@ -1,0 +1,121 @@
+{
+  "scope": "s414-code-review-r03-static",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s414-review-r03-static-4b9lkjz4",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/compound-panic-candidate.fragment.frozen",
+      "sha256": "613CD0AE6DB387C08C9E611C9937F5452BB93AFBDF5B454C043F956FB82A6D7A",
+      "bytes": 2976,
+      "source_name": "compound-panic-candidate.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/current-prefix-plus-original-six.frozen",
+      "sha256": "86ED60BF18E4EF2FC0D3A1A3F2149A39FE53675E828807C16AA3CFA7CD44CE3A",
+      "bytes": 53722,
+      "source_name": "current-prefix-plus-original-six.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/current-prefix-six-plus-compound.frozen",
+      "sha256": "7003D8F89EAAF75836215D882F1BD4BE4E45C745EAF5C606DC107470D544CCF8",
+      "bytes": 56699,
+      "source_name": "current-prefix-six-plus-compound.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/methods-same-version.json",
+      "sha256": "DE2ED31756A9CA92467B3BC8900BB8880ECF25339D027A30C865B6DFC1219D63",
+      "bytes": 4122,
+      "source_name": "methods-same-version.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/overlay-original-six-NOTRUN.json",
+      "sha256": "18BAECA088C3C8C84CF0EE81A60456646F05065D88A46470472A48FA80740FC3",
+      "bytes": 233,
+      "source_name": "overlay-original-six-NOTRUN.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/overlay-provenance.json",
+      "sha256": "EC04AF866A9051363CF19F73754F58315EB4EC9836039469C93FAE2DA2BC9FE0",
+      "bytes": 552,
+      "source_name": "overlay-provenance.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/overlay-with-compound-NOTRUN.json",
+      "sha256": "74298E2C490E2A38C723CB6B41E74539438A3A24C40B8B7A780D091288497EBA",
+      "bytes": 234,
+      "source_name": "overlay-with-compound-NOTRUN.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/pending-run-matrix.json",
+      "sha256": "7FA5EDF1379EC9C3B625ED5FC575ADBF5C42DA957A4F2E5F621D47DA1E604213",
+      "bytes": 1616,
+      "source_name": "pending-run-matrix.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/readset.json",
+      "sha256": "04B995ABCF5339CF36DD7C2EAE2DF862088DA28C2382DF0481D3B86E2FD34EE5",
+      "bytes": 5909,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/receipt.json",
+      "sha256": "BB0CD6571C791B8AB0E4A48E9439003D8C679AFED2A595077F2FF8B9DA078B32",
+      "bytes": 5103,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/repair.patch",
+      "sha256": "04542641ABC9A88F097DE55752BE3225DE086FB023863CB3335399B7A12C83E7",
+      "bytes": 9102,
+      "source_name": "repair.patch"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/review-static-notes.md",
+      "sha256": "89570605E629C52CBCDFF4C93309E6D4192B9CD8BE2999B4714DE42446ED4029",
+      "bytes": 3679,
+      "source_name": "review-static-notes.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/reviewer-original.fragment.frozen",
+      "sha256": "DBDEDF67A4E252BB9E22E6316FF4A31CED4C9689569F109A7F811D48517073BA",
+      "bytes": 3782,
+      "source_name": "reviewer-original.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/reviewer-panic.fragment.frozen",
+      "sha256": "24D710DF1DD3B85B1CED8FEA4650C0BAB6C7EAFF8319525D1ECF02B263737223",
+      "bytes": 2617,
+      "source_name": "reviewer-panic.fragment.frozen"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/source5-static-entry-exit.json",
+      "sha256": "C21D590A44290A4E5646AB223E1E4F6E40D5BE598708349EC675F0F2749B8ED5",
+      "bytes": 2337,
+      "source_name": "source5-static-entry-exit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/source5-static-entry.json",
+      "sha256": "FFCFF879E5692F5728025A1E539D429F8DA7DB0B99E9CA4BACC6D7E78388277D",
+      "bytes": 1672,
+      "source_name": "source5-static-entry.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/static-diff-audit.json",
+      "sha256": "D81654872494A6C25223A523B53989BDECE5D99D0409FA74546B8351A152BB32",
+      "bytes": 888,
+      "source_name": "static-diff-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s414-code-review-r03-static/static-preparation-checks.json",
+      "sha256": "531EE4E25CF115631CB0FCB691971CE2EBF55CB965F6700E50321A0EB13A5801",
+      "bytes": 408,
+      "source_name": "static-preparation-checks.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

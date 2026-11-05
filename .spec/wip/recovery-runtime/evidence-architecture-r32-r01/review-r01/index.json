@@ -1,0 +1,49 @@
+{
+  "scope": "Immutable independent architecture/ADR Review R01",
+  "agent": {
+    "role": "add-reviewer",
+    "nickname": "Kuhn",
+    "id": "01a1835a-8010-7a73-a8dd-3192719b6965"
+  },
+  "provenance": "Dispatched by Main under user standing authorization and project Role requirement. Agent receipt says own ID not exposed; actual runtime ID above is from Main spawn result. Original report wording user-assigned denotes delegated authorization, not a direct user selection of this reviewer.",
+  "result": "CHANGES REQUIRED",
+  "finding": {
+    "id": "ARCH-R32-R01-F001",
+    "severity": "MEDIUM",
+    "status_at_reception": "OPEN"
+  },
+  "main_reception": "Full report/receipt read; article Journal options/persist inspected onsite; finding accepted and sent to original architect for bounded three-document repair. No risk waiver or implementation acceptance.",
+  "author_repair_submission_id": "01a18367-875a-7e93-95df-f61f6a9c1b9d",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r01/review-report.md",
+      "sha256": "81BFE22BC1481630602176CDAD45AA19971BB7B3B328188CB91680DDDFDF0B53",
+      "bytes": 14426
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r01/readset.json",
+      "sha256": "52AD7C17A84E3DD7BDD3886D15411AEAABB853BA51527EEBA4E8065922A6D418",
+      "bytes": 31049
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r01/verification.json",
+      "sha256": "CB21C8D31E3C317EAC323AEDF863AD57597A913869FF4D6EEE0CA7B010C41074",
+      "bytes": 2707
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r01/initial.json",
+      "sha256": "C090CC84AD97341381AE1B05985807E5A3B1D3D7531B9719AC4521353346A6C3",
+      "bytes": 1717221
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r01/readset.jsonl",
+      "sha256": "A8A77ABF51870C489A087A070F7B24C2CCCC8B22AC029918E905E597E925A973",
+      "bytes": 17482
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-architecture-r32-r01/review-r01/receipt.json",
+      "sha256": "5B56CE75144C159B6FB1D73375152DFFB90867265585492AA1333EAA64E384BB",
+      "bytes": 3421
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "at_utc": "2026-10-27T18:48:16.984949+00:00",
+  "scope": "fixed preparation evidence only; no execution pass inferred",
+  "files": [
+    {
+      "owner": "lead",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\baseline.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/lead/baseline.json",
+      "sha256": "045B2360BC519F2CE03D3F60B8653344CA8ACED2544124C7EBAC52DF4AFCD3DA"
+    },
+    {
+      "owner": "lead",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\tasks.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/lead/tasks.md",
+      "sha256": "D9054472CE84390844380E3E3C944046421342674DCCBF3D500CEC2565EE53C5"
+    },
+    {
+      "owner": "lead",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\ir-01-content-community-batches.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/lead/ir-01-content-community-batches.md",
+      "sha256": "B7C61AD1173990E90A60F373533AF40E548E00DA54FDB39F2F2B417AFC7CAF4B"
+    },
+    {
+      "owner": "lead",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\lead-metadata-claim-verification.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/lead/lead-metadata-claim-verification.json",
+      "sha256": "F23C55F86D89CC0E68FDB4798DBB73DA04AC2F3820FCF4B9AE5480E643EBD849"
+    },
+    {
+      "owner": "lead",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\lead-pre-code-start.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/lead/lead-pre-code-start.json",
+      "sha256": "221EC46E5C0D16F3A71DF5C23CBF2FA8A191E69F4899BDBF7D6CF025377363C2"
+    },
+    {
+      "owner": "lead",
+      "original": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s15-lead-8swt43b0\\verify_runner.py",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/lead/verify_runner.py.txt",
+      "sha256": "EC4F70EC853410AE0F91B397DC910A83AB31D5C2540607B39E86CED53C02ACE1"
+    },
+    {
+      "owner": "testplan",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-testplan-r18-e9baed6003ee445f8d91268b52f58db8\\test-plan-r17-before.md.txt",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/testplan/test-plan-r17-before.md.txt",
+      "sha256": "93071AB5E9E68ED976FA376EF52874E7B1A74DEE3FA9860561DD46A596A8DFA2"
+    },
+    {
+      "owner": "testplan",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-testplan-r18-e9baed6003ee445f8d91268b52f58db8\\test-plan-r18-fixed.md.txt",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/testplan/test-plan-r18-fixed.md.txt",
+      "sha256": "BCBCFDD8CD1747540726A46C35D565FF1CC211AAB43F6059145474568841DE42"
+    },
+    {
+      "owner": "testplan",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-testplan-r18-e9baed6003ee445f8d91268b52f58db8\\r17-to-r18.diff",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/testplan/r17-to-r18.diff",
+      "sha256": "4ACAFD95B979381C5B88981F940C1205D637015E2EAD44D69592A950372F5707"
+    },
+    {
+      "owner": "testplan",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-testplan-r18-e9baed6003ee445f8d91268b52f58db8\\handoff-s15-testplan-r18.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/testplan/handoff-s15-testplan-r18.json",
+      "sha256": "E3497D8A5D5E6AAE3E3EF1111691BE28E4B7544967C4BBF68FE2E7F4A2B85A22"
+    },
+    {
+      "owner": "testplan",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-testplan-r18-e9baed6003ee445f8d91268b52f58db8\\actual-readset-r18.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/testplan/actual-readset-r18.json",
+      "sha256": "B6E753E5AEA902CB46FE651ED73AF04D35CB0ABF871E7A40E78332C9818EB5BD"
+    },
+    {
+      "owner": "backend-g0",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-dalton-prep-eb08cc7d8d084642aa10ce0c37f26ffa\\g0-readset-baseline.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/backend-g0/g0-readset-baseline.json",
+      "sha256": "1049770182E3A954A444BAB16642374C14D8A2AE8F1066AA3B5CEAF494AAEF90"
+    },
+    {
+      "owner": "backend-g0",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-dalton-prep-eb08cc7d8d084642aa10ce0c37f26ffa\\g0-prep.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/backend-g0/g0-prep.md",
+      "sha256": "6F135040DD13E5B6306E14D86166839C7AA5E99E6DEBB645E227A09DF56F2939"
+    },
+    {
+      "owner": "backend-g0",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-dalton-prep-eb08cc7d8d084642aa10ce0c37f26ffa\\r18-g0-binding.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/backend-g0/r18-g0-binding.json",
+      "sha256": "1AA4C5F3FFF5A177E6F06CC8E50ED8B62420836341B5049E2028561C5FF451A8"
+    },
+    {
+      "owner": "backend-g0",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-dalton-prep-eb08cc7d8d084642aa10ce0c37f26ffa\\r18-coverage-prep.md",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/backend-g0/r18-coverage-prep.md",
+      "sha256": "1FD1F069A44D95CA367B99A1CB47B974D3BFC6ABD01BD1CA9BE4C0FF8C68F809"
+    },
+    {
+      "owner": "planner",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-claim-apply-4974919ef8344dd28ea60a1c4fa0a7d8\\tasks.actual.diff",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/planner/tasks.actual.diff",
+      "sha256": "E07C70D831D6B6DCB30C952B5AE64D73E9B3963A5A44F1241DDAF4C3F75ACA7B"
+    },
+    {
+      "owner": "planner",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-claim-apply-4974919ef8344dd28ea60a1c4fa0a7d8\\plan.actual.diff",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/planner/plan.actual.diff",
+      "sha256": "D0769417628BE0573BEA80A013E55F2780A1881FFDC64F5E1D92EE94CBD57E5C"
+    },
+    {
+      "owner": "planner",
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-claim-apply-4974919ef8344dd28ea60a1c4fa0a7d8\\write-receipt.json",
+      "copy": ".spec/wip/article-management/evidence-s1.5/pre-start-r01/planner/write-receipt.json",
+      "sha256": "067971241FEF109678D292ED40B2BB0C9258637552AD1F8DD1E6162BD26C0C65"
+    }
+  ]
+}

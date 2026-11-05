@@ -1,0 +1,162 @@
+{
+  "task": "article-management-S4.4",
+  "slice": "shared harness publication ports + single 0011 migration entry (test-only)",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abb",
+  "index_revision": "r01",
+  "role": "add-backend-dev (Backend-Dev)",
+  "run_window_utc": ["2026-10-31T09:05:58Z", "2026-10-31T09:08:06Z"],
+  "changed_files": [
+    {
+      "path": "test/integration/recovery/article_replay_test.go",
+      "role": "shared harness (authorised)",
+      "lines_after": 1990,
+      "bytes_after": 86039,
+      "sha256_after": "0417235496741176A98D28548BCF9789C3FF9AD9E13D20B075342514FF2DF560",
+      "bytes_before": 84041,
+      "sha256_before": "5AC08A738C5EEC85...D36876EA",
+      "sha256_before_complete": false,
+      "sha256_before_note": "full digest measured by this session's earlier turn but only the prefix/suffix survived the handoff transcript; the file is untracked by git so no authoritative copy of the immediate-before blob exists. bytes_before (84041) was recorded together with the digest.",
+      "diff_points": [
+        "migrate(): applies 0001-0009 in one tx, then calls s44ApplyPublicationMigration(t, f)",
+        "new s44ApplyPublicationMigration(t, f): single idempotent entry for migrations/0011_article_replay_publication.sql; probes to_regclass('<schema>.article_replay_publications') and logs stage=already_applied instead of re-running the non-idempotent DDL",
+        "new type ReplayEvidenceStore = article.PostgresReplayEvidenceStore alias; s44StoreProbe now embeds *ReplayEvidenceStore (concrete) instead of the public interface, so the package-private readback used by production Publish survives method promotion",
+        "s44PublicationJournal gained snapshotHook func(context.Context) error invoked at the head of ReadVerifiedSnapshot (before namespace validation)",
+        "new (*s44Barrier).snapshot() hook; s44Winner and s44RefreshPublish arm f.publication.snapshotHook so the barrier fires inside the real Publish path",
+        "s44Fixture gained publication *s44PublicationJournal; s44WireExistingReplay stores the journal there",
+        "s44ConfigureReplayPublication gained a 5th parameter runtime *s44PublicationRuntime and is now used by s44WireExistingReplay (NewReplayPublicationPorts is sealed exactly once per Store)",
+        "s44PublicationRuntime gained backupRef, falling back to s44Backup when empty (peer store B binds its own backup ref)",
+        "s44AckLoss assertion replaced with a full ordered event-sequence equality plus unchanged no-retry/no-Fail/single-metadata/count==1 checks (see assertion_changes_for_lead)"
+      ]
+    },
+    {
+      "path": "test/integration/recovery/replay_evidence_test.go",
+      "role": "second original path harness (authorised, only as needed)",
+      "lines_after": 651,
+      "bytes_after": 29878,
+      "sha256_after": "C23C5C776627C4D065FE5E805A64BB582ED4EE9FB8A3FBB157FD1818949E88DB",
+      "sha256_before": "CF1B07C58F5A7DDCDEA256484CFC9E5F1C0E595B0A1A13B3B1B49DDB410E9048",
+      "sha256_before_complete": true,
+      "sha256_before_source": ".spec/wip/article-management/evidence-s4.4/current-update-r01/author/static-r02/source185.code.json (unchanged between that snapshot and this round)",
+      "diff_points": [
+        "s44EvidenceBinding: both peer Stores are sealed through s44ConfigureReplayPublication (A -> f.source with default runtime; B -> sourceB with &s44PublicationRuntime{backupRef: backupB}); without this Begin failed checkReplay before reaching the real INSERT barrier",
+        "s44EvidenceSourceB: journal argument wrapped as &s44PublicationJournal{s44Journal: f.journal} because the publication port requires recovery.VerifiedJournalReader; delegation of every existing journal read is unchanged"
+      ]
+    },
+    {
+      "path": "test/integration/recovery/old_backup_restore_test.go",
+      "role": "third path; NOT modified in this round (only the 0011 idempotency change landed in the previous round)",
+      "lines_after": 350,
+      "bytes_after": 15848,
+      "sha256_after": "E0C202F25A11A7584E43B734A1BD7FE7A73CA9DA113795CE08EA666C92AE61DA",
+      "sha256_before": "E0C202F25A11A7584E43B734A1BD7FE7A73CA9DA113795CE08EA666C92AE61DA",
+      "diff_points": [
+        "s44OldBackupApplyPublicationMigration only delegates to s44ApplyPublicationMigration (duplicate 0011 DDL removed in the previous round); the four subtest assertions are untouched"
+      ]
+    }
+  ],
+  "untouched_inputs": [
+    {"path": "test/integration/recovery/fixtures_test.go", "sha256": "0CD7471AD1574D05465CA3F29C8B967B631F520A2F3BA94E91BE5E346A485ACB", "bytes": 19148, "mtime_local": "2026-10-22T17:30:01"},
+    {"path": "internal/**", "note": "no production change"},
+    {"path": "cmd/**", "note": "no production change"},
+    {"path": "migrations/**", "note": "no migration change; 0011 executed once, read-only from the migration file"},
+    {"path": ".add/project/knowledge/**", "note": "task cards / design untouched by this round"}
+  ],
+  "migration_0011_responsibility": {
+    "owner": "shared harness",
+    "single_entry": "test/integration/recovery/article_replay_test.go :: s44ApplyPublicationMigration(t, f)",
+    "applied_when": "inside s44New() -> migrate(), exactly once per schema, right after the 0001-0009 transaction commits",
+    "idempotency": "SELECT to_regclass('<schema>.article_replay_publications') IS NOT NULL; when present the helper logs stage=already_applied and returns without executing DDL. migrations/0011 has no IF NOT EXISTS guards, so no other call site may run it directly.",
+    "other_callers": ["test/integration/recovery/old_backup_restore_test.go :: s44OldBackupApplyPublicationMigration -> delegates only"],
+    "observed_in_run_05": "article_replay_test.go:254 migration=0011_article_replay_publication.sql stage=applied_in_tx, then old_backup_restore_test.go:109/171 stage=already_applied"
+  },
+  "commands": [
+    {"id": "run-01", "command": "go build ./...", "exit_code": 0, "elapsed_s": 3.15, "log": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/run-01.log", "log_sha256": "6B3AD0649B78BBC9412B3E74E45047FAEB2230DBEC915A79060A67F20CE83FC1", "log_bytes": 104},
+    {"id": "run-02", "command": "go vet -tags=integration ./test/integration/recovery", "exit_code": 0, "elapsed_s": 1.22, "log": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/run-02.log", "log_sha256": "4E905E8973BB7144DEE34B8AFAA25D8BFBF6A0D9EEF9D4D3B2A2AF81071E87DE", "log_bytes": 142},
+    {"id": "run-03", "command": "go test -tags=integration ./test/integration/recovery -run '^TestArticleReplayPostgres$' -count=1 -v", "exit_code": 0, "elapsed_s": 20.89, "go_test_reported": "ok han/test/integration/recovery 18.947s", "result": "PASS", "log": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/run-03.log", "log_sha256": "2DAF2AA196BD73901A87556FC89E377E930AF8DE7CE259064D87C90A8E3FF793", "log_bytes": 37974},
+    {"id": "run-04", "command": "go test -tags=integration ./test/integration/recovery -run '^TestArticleReplayEvidencePostgres$' -count=1 -v", "exit_code": 0, "elapsed_s": 6.16, "go_test_reported": "ok han/test/integration/recovery 3.979s", "result": "PASS", "log": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/run-04.log", "log_sha256": "27648B3C5802F92A5DC8878C66E340EE259E4B66BB73B8D39AF422748B1C5792", "log_bytes": 7006},
+    {"id": "run-05", "command": "go test -tags=integration ./test/integration/recovery -run '^TestOldBackupRestore$' -count=1 -v", "exit_code": 0, "elapsed_s": 5.08, "go_test_reported": "ok han/test/integration/recovery 3.299s", "result": "PASS 4/4", "log": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/run-05.log", "log_sha256": "BA7C106114FB9C66D2C3D5FF35AB00B25AAB51D9A9DD1B1DD0310EF3CDCF1C2D", "log_bytes": 8359},
+    {"id": "gofmt", "command": "gofmt -l test/integration/recovery", "exit_code": 0, "output": "empty (no unformatted file)"}
+  ],
+  "results": {
+    "TestArticleReplayPostgres": {
+      "outcome": "PASS", "duration_s": 18.83, "leaf_count": 16,
+      "groups": {
+        "CountsAndReadback": "PASS 5.84s (AllAbsent0N, AllPendingN0/ExistingTrace, AllPendingN0/GeneratedTrace, Mixed2And1, RepeatAndRebuildZeroReplay)",
+        "InterruptedReplayAndPublish": "PASS 4.04s (PartialFailureRetry, CrashAfterReplayBeforeReady, PublishCommitAckLoss)",
+        "AttemptAndFreshFacts": "PASS 5.69s (SameAttemptWinnerLateAbsent, OperationAuditDriftRepublish/Operation+Audit, RefreshOutsideRunAndRecheck/Publish+ReadCurrent)",
+        "HistoryAndLegacy": "PASS 3.27s (FactsAToBToA, LegacyGen0Mixed, AmbiguousHistoryRejected)"
+      },
+      "schemas": 16
+    },
+    "TestArticleReplayEvidencePostgres": {
+      "outcome": "PASS", "duration_s": 3.85, "leaf_count": 3,
+      "leaves": {"DifferentBackupFirstBinding": "PASS 1.59s", "PublishRollback": "PASS 1.08s", "CurrentUpdateRollback": "PASS 1.18s"},
+      "schemas": 3
+    },
+    "TestOldBackupRestore": {
+      "outcome": "PASS 4/4", "duration_s": 3.19,
+      "leaves": {"SyntheticManifestIsNotRealBackup": "PASS 0.00s", "RestoreAndReplayThreeTombstones": "PASS 1.14s", "ReadyDriftInvalidatesEvidence": "PASS 1.05s", "InventoryUnavailable": "PASS 0.99s"},
+      "schemas": 3
+    }
+  },
+  "assertions": {
+    "new": [
+      "article_replay_test.go: s44ApplyPublicationMigration logs stage=already_applied / stage=applied_in_tx, making duplicate 0011 DDL impossible from any call site",
+      "article_replay_test.go: s44AckLoss now requires the exact ordered event sequence [ReadCurrent, Begin, Publish, CommitObservedThenAckLost]",
+      "replay_evidence_test.go: both peer stores must be sealed through NewReplayPublicationPorts before Begin, so DifferentBackupFirstBinding still proves the real INSERT barrier blocks the second binding"
+    ],
+    "preserved": [
+      "every existing PASS/FAIL assertion of the three test functions is unchanged; no assertion was relaxed, skipped or converted to expected-failure",
+      "s44AckLoss keeps begins==1, publishes==1, evidenceIDs.calls==1, evidenceClock.calls==1, no Fail event, evidence row count == 1",
+      "old_backup_restore_test.go four subtests untouched (PASS 4/4 re-verified on this tree)"
+    ]
+  },
+  "assertion_changes_for_lead": [
+    {
+      "test": "TestArticleReplayPostgres/InterruptedReplayAndPublish/PublishCommitAckLoss",
+      "before": "asserted the recovery readback reached the probe (Commit then immediately ReadCurrent through the instrumented interface)",
+      "after": "asserts the full ordered event sequence equals [ReadCurrent, Begin, Publish, CommitObservedThenAckLost]",
+      "why": "with the probe embedding the concrete Store the package-private exact-triplet readback no longer passes through the probe, so the probe cannot observe it; the new equality is strictly tighter (it forbids any extra Begin/Publish/Fail/read attempt) rather than looser",
+      "lead_decision": "confirm the semantic change is acceptable"
+    }
+  ],
+  "root_causes_fixed": [
+    "TestArticleReplayPostgres/CountsAndReadback/AllAbsent0N failed at article_replay_test.go:543 with type=*pgx.proxyError / 'article replay publication is not configured': the shared Store was built without article.NewReplayPublicationPorts, so Begin hit checkReplay before any SQL. Fix: s44WireExistingReplay seals the Store through s44ConfigureReplayPublication.",
+    "After sealing, PublishCommitAckLoss still failed because production prepareReplayPublicationPublish ignores request.Refresh and reads Source.Snapshot; the test barrier was armed on the request and never fired (90s timeout). Fix: gate the first verified snapshot through s44PublicationJournal.snapshotHook.",
+    "With the barrier fixed, ACK recovery returned failed/dependency_unavailable because the probe embedded the public interface and hid the package-private readback method. Fix: embed the concrete Store via the ReplayEvidenceStore alias.",
+    "DifferentBackupFirstBinding failed because both peer stores were unsealed. Fix: seal both peers (B binds backupB through s44PublicationRuntime.backupRef)."
+  ],
+  "retained_resources": {
+    "file": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/retained-resources.ndjson",
+    "sha256": "ACE4E82DD55424B3B47B582CB04B4DFB706D9610A517D648CDE7C91E3844B522",
+    "record_count": 102,
+    "attributed_by_transcript": 61,
+    "unmapped_debug_iterations": 41,
+    "window": "pg_namespace oid >= 2813277 (first command of this round). 24 schemas with lower oid (2802811..2811402) were created before this round's baseline run and are not claimed here.",
+    "policy": "nothing dropped; every schema, role and file created by the runs is retained",
+    "formal_run_schemas": {
+      "run-03": 16, "run-04": 3, "run-05": 3, "run-00-baseline": 1, "iter-full-article": 16, "lead-verify-r01": 22
+    }
+  },
+  "prior_logs_in_same_directory": [
+    {"path": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/run-00-baseline.log", "sha256": "AE38357C4B3D938E127CDC836F80F93DE7F74E7D9BBB532229D4E389544635EF", "bytes": 4758, "result": "FAIL (pre-fix baseline: article_replay_test.go:543 synthetic replay dependency failed type=*pgx.proxyError)"},
+    {"path": ".spec/wip/article-management/evidence-s4.4/harness-publication-r01/iter-full-article.log", "sha256": "83AA2DF9F37111E0ABAFB22DE7882E489FA47759899DE221382A54B77B562D24", "bytes": 76038, "result": "intermediate iteration transcript; superseded by run-03"}
+  ],
+  "not_proven": [
+    "real backup restore: every fixture, journal snapshot, runtime permit binding and publication ID is synthetic",
+    "real POSIX Journal, fsync durability, flock / POSIX lock semantics",
+    "real keyring / HMAC runtime verification (fixtures use synthetic keys and synthetic record hashes)",
+    "identity side: dual namespace, MarkConsumed, joint stream opening are not exercised",
+    "RPO/RTO and retention behaviour",
+    "production wiring: cmd/han-server does not call NewReplayPublicationPorts at this HEAD, so a green harness does not prove the production restore path",
+    "different-backup isolation is proven only up to the synthetic INSERT barrier, not against a real second installation"
+  ],
+  "known_risks": [
+    "old_backup_restore_test.go still carries an independent synthetic publication assembly (s44OldBackupConfigurePublication, s44OldBackupJournal, s44OldBackupRuntime). It was intentionally left as-is (option 'keep as-is, only make 0011 idempotent'), so two assemblers coexist; both are constrained by the single s44ApplyPublicationMigration entry.",
+    "its comment 'The shared harness intentionally leaves them unconfigured' is now stale after this round; it was not edited because the authorised change to that file is limited to the 0011 idempotency edit.",
+    "s44AckLoss no longer observes the post-commit readback; correctness of that readback is covered by the exact-triplet path in production code plus the sequence equality, not by an intercepted call.",
+    "gofmt -l over the package is clean, but the build/vet/test matrix was run without -race this round; race-mode coverage of the new barrier hook is not re-established here."
+  ]
+}

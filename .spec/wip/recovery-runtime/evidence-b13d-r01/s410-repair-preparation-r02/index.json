@@ -1,0 +1,43 @@
+{
+  "scope": "s410-repair-preparation-r02",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "source_temp": "D:\\Temp\\han-b13d-s410-repair-prep-ybrx192d",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-repair-preparation-r02/source-index.json",
+      "sha256": "34CA546FEA1E71E6C749463FB7643255EDB0E3EE391725FF730C1E757F1BA4E4",
+      "bytes": 749,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-repair-preparation-r02/readset.json",
+      "sha256": "FE2C618E6DC2401A6BA42B4DB1B94B3B4B87D0A46898922FCB3B122974003993",
+      "bytes": 11531,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-repair-preparation-r02/receipt.md",
+      "sha256": "AF212637C044140AB2EEA4258574489EFF497BDC214823F8C8DB07653D0F222D",
+      "bytes": 1369,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-repair-preparation-r02/repair-plan.md",
+      "sha256": "1EE5CA2A87BF81171B627CAE3AF3C8A8E81938A0266765A5AED38C3A02D450DC",
+      "bytes": 10064,
+      "source_name": "repair-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-repair-preparation-r02/source-before.json",
+      "sha256": "7AA4767536D4AECD7085234A53285D5F3FAEC1A5319B188FBECB593BCFBECD34",
+      "bytes": 799,
+      "source_name": "source-before.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

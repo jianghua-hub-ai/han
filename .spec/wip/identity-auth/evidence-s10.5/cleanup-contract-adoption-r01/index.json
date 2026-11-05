@@ -1,0 +1,17 @@
+{
+  "scope": "Explicit Lead technical adoption of FD recommendation under standing user authorization; no implementation/test PASS",
+  "payloads": {
+    "fd-phase-a/consult.md": "0591453C50F13F4161155E6745C7B377D064965995F99DF0B278E5172697570F",
+    "fd-phase-a/readset.json": "BF7F122F074F8DFDE7916524614327F858815857B33EBD6176546CF8755659B6",
+    "fd-phase-a/proofs/author-gap.md": "609C67E068947FBB03161C0C736F505B9BA732E704E012300AC6F868C9A9A658",
+    "fd-phase-a/proofs/cleanup-review.md": "8C1063321915846CA299E53DBC58CF037507EFE8015819A2E1EF84599AC0359A",
+    "fd-phase-a/proofs/verification.json": "FEF0A2573045DC418AED88DA62898FD48CC09F01DDEA58B906403AA9F411583D",
+    "before/.add/project/knowledge/decisions/identity.md": "BCB5707C90E008D4200087750361A6A6C648BCF0822691A3BD8BDBF8EB0F6442",
+    "before/.add/project/knowledge/decisions/README.md": "A0D02A02ED4EC5A32FC7A2AF38BCE193D287A2BFD25240A3F2EE4A8A77086CC6",
+    "before/.add/project/knowledge/design/architecture.md": "7854417E2FD2090FE0EB3EAE1BF54A2502F3393764D3CE77462331F33D07C5D5",
+    "before/.add/project/knowledge/design-workspace/identity-auth/design.md": "69309241DFAEB448383EE2C63CA494B4ABAD8CE0AC5DE29A1555F7D54A5CCEB5",
+    "before/.add/project/knowledge/design-workspace/identity-auth/stories.md": "5DAE6F90D143FB02324107AB782694EF15CB293ABB24AD6CE4D3D0F216D6FC52",
+    "before/.add/project/knowledge/design-workspace/identity-auth/test-plan.md": "86B8C4026643F4B3B7876077510FDC29103D12952E7CF5FEB850D7437D5035C4",
+    "lead-adoption.json": "3ED915618A722E910835FB39D990DAF932786A4131EE6E87B131F8238ED5B84A"
+  }
+}

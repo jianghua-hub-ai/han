@@ -1,0 +1,328 @@
+{
+  "format": "han-s33-code-offline-evidence-v1",
+  "status": "CODE DELIVERED / source writes frozen / stopped",
+  "root": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-code-4l42o33_\\handoff",
+  "effective_handoff": "code-handoff.txt",
+  "files": [
+    {
+      "path": "candidate-selection.json",
+      "bytes": 1590,
+      "sha256": "7E27BC46EB01EB25FC263BA37B8241F7FD15B752B88339D628A870D4E45141AD"
+    },
+    {
+      "path": "code-handoff.txt",
+      "bytes": 3179,
+      "sha256": "4F8A2FBB08F8399EF3CC5EF3D5EF30C73A4AAFC240A1041FBA5B51E8B5F4BADF"
+    },
+    {
+      "path": "compile/environment.json",
+      "bytes": 1328,
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A"
+    },
+    {
+      "path": "compile/launch.json",
+      "bytes": 479,
+      "sha256": "BA8474D3071F2919D1377BF88E138F39BEA1753C4B1304BE5FBF20A8B0168F29"
+    },
+    {
+      "path": "compile/result.json",
+      "bytes": 875,
+      "sha256": "25C82A0BB0506B05586E52BB92D42BDD38152980097D55F3F9DC8184FDAD927E"
+    },
+    {
+      "path": "compile/source-after.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "compile/source-before.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "compile/stderr.raw",
+      "bytes": 97,
+      "sha256": "0132DFC8036083A783C8F81ED213AA4FF44193F12E40C142C8E31691BD06B0F0"
+    },
+    {
+      "path": "compile/stdout.raw",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "delivery.json",
+      "bytes": 2591,
+      "sha256": "A835FE418DFFA7ED4C67BB1EFDAC903260113F6F4117A03E37D4945F605B66F5"
+    },
+    {
+      "path": "format/environment.json",
+      "bytes": 1328,
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A"
+    },
+    {
+      "path": "format/launch.json",
+      "bytes": 414,
+      "sha256": "8E955A713593FFE73C5766C4585E3988274D0FFD05ECFD24A3BB7C9A7C4ADACA"
+    },
+    {
+      "path": "format/result.json",
+      "bytes": 811,
+      "sha256": "56D60CAFBFC7E416CB090A8E57E21E2F92268C91A831228E5295805CF8B596BF"
+    },
+    {
+      "path": "format/source-after.json",
+      "bytes": 26578,
+      "sha256": "2D028C63AB5DEDB4F5843266328255D7376A895AAE26C8A593AC3B16E41156B1"
+    },
+    {
+      "path": "format/source-before.json",
+      "bytes": 26578,
+      "sha256": "23A81A2DDCD9F523B1C8FE0245742161C48501A79291D526F71C19499D5CEC86"
+    },
+    {
+      "path": "format/stderr.raw",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "format/stdout.raw",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "format-r02/environment.json",
+      "bytes": 1328,
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A"
+    },
+    {
+      "path": "format-r02/launch.json",
+      "bytes": 414,
+      "sha256": "ADA244387147FF71AF0BA9AC8D4DD9206C9AA59327754C557F8C134006453089"
+    },
+    {
+      "path": "format-r02/result.json",
+      "bytes": 810,
+      "sha256": "9447F9CC1974AB5D1A868C000B64825C401B756AB1AA9BE98131569AC67ECA3B"
+    },
+    {
+      "path": "format-r02/source-after.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "format-r02/source-before.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "format-r02/stderr.raw",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "format-r02/stdout.raw",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "g0-readset.jsonl",
+      "bytes": 19448,
+      "sha256": "56332F246394045F0B080F30846D686CF6006D89775045ED00AB7A2C56F91571"
+    },
+    {
+      "path": "invalid-mode/environment.json",
+      "bytes": 1328,
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A"
+    },
+    {
+      "path": "invalid-mode/launch.json",
+      "bytes": 444,
+      "sha256": "9D0E31399B81E2E9BEE5B7786F798B4AE2A7489FAB1AFF790657A0520C217A26"
+    },
+    {
+      "path": "invalid-mode/result.json",
+      "bytes": 874,
+      "sha256": "BE6F47FFD51C22E1CB331C435578C61577D7159027F339B0522A39A9E5EA21E6"
+    },
+    {
+      "path": "invalid-mode/source-after.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "invalid-mode/source-before.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "invalid-mode/stderr.raw",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "invalid-mode/stdout.raw",
+      "bytes": 168,
+      "sha256": "0D47C6950CCE7B9A2E2D48BE1E5AFEC0AFF4A91D22C4E1B260C67A1E43B8AEBA"
+    },
+    {
+      "path": "list/environment.json",
+      "bytes": 1328,
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A"
+    },
+    {
+      "path": "list/launch.json",
+      "bytes": 454,
+      "sha256": "E9E16FFEC6B19868FB59FDA4CD6EA76113BDA9455036A4A8C2A1ED465652B1E9"
+    },
+    {
+      "path": "list/result.json",
+      "bytes": 901,
+      "sha256": "28A94899F713FFDE10CB98466ABBB721A0CE5AEFD200C72BFBD2E57FDB1BA4EB"
+    },
+    {
+      "path": "list/source-after.json",
+      "bytes": 26578,
+      "sha256": "2D028C63AB5DEDB4F5843266328255D7376A895AAE26C8A593AC3B16E41156B1"
+    },
+    {
+      "path": "list/source-before.json",
+      "bytes": 26578,
+      "sha256": "2D028C63AB5DEDB4F5843266328255D7376A895AAE26C8A593AC3B16E41156B1"
+    },
+    {
+      "path": "list/stderr.raw",
+      "bytes": 656,
+      "sha256": "2315A09789CCB03BB1E91A30361553AFB7D5FCB630EBF68E7DC3C93DF96E5732"
+    },
+    {
+      "path": "list/stdout.raw",
+      "bytes": 55,
+      "sha256": "C2FAE57907C05732AEC8B1C397CDD95CBB54FC595242E6EEBF9877A39BFFDFF3"
+    },
+    {
+      "path": "list-r02/environment.json",
+      "bytes": 1328,
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A"
+    },
+    {
+      "path": "list-r02/launch.json",
+      "bytes": 454,
+      "sha256": "EE7CBEE519C224E4D81D50DAA54343A34342E961E6480160540E3CB47A44B34F"
+    },
+    {
+      "path": "list-r02/result.json",
+      "bytes": 1009,
+      "sha256": "5C9EC7AB508B009E8BE2F8135276A04BCF6D35F46690003A36BBD2CCDDFB969C"
+    },
+    {
+      "path": "list-r02/source-after.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "list-r02/source-before.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "list-r02/stderr.raw",
+      "bytes": 97,
+      "sha256": "C53030F983D9404D0A23B52D5F878E5548C6D7C0A8B6119F6DA60A006769442F"
+    },
+    {
+      "path": "list-r02/stdout.raw",
+      "bytes": 124,
+      "sha256": "B20E5A70385E1EDE642B30E0C562DF9ECFEBCD3277295EF7D251FDBC859C8D47"
+    },
+    {
+      "path": "missing-mode/environment.json",
+      "bytes": 1328,
+      "sha256": "174892D788DC693B1FC9C9F27DA46F83226257ADDA7E4C4833EDF1F6213C936A"
+    },
+    {
+      "path": "missing-mode/launch.json",
+      "bytes": 444,
+      "sha256": "466A628586881E58D05934DE0CFE5C4C72A0DEEF8547DE410854F0D4D3D1A9BE"
+    },
+    {
+      "path": "missing-mode/result.json",
+      "bytes": 874,
+      "sha256": "1BDF7BCA56320C790CAED3DFDD974C13A7608782C0597F088B046391B1BA01CE"
+    },
+    {
+      "path": "missing-mode/source-after.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "missing-mode/source-before.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "missing-mode/stderr.raw",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "missing-mode/stdout.raw",
+      "bytes": 168,
+      "sha256": "0D47C6950CCE7B9A2E2D48BE1E5AFEC0AFF4A91D22C4E1B260C67A1E43B8AEBA"
+    },
+    {
+      "path": "new-files.json",
+      "bytes": 613,
+      "sha256": "6399E7DAB40B71808ECA86FE012FDC7D48D928A3B4590B8A33A8F13FD91A8015"
+    },
+    {
+      "path": "payload/test/integration/identity/auth_security_fixture_test.go",
+      "bytes": 31011,
+      "sha256": "0DF966B9F17AD4DAF3275F3BE6428A37A4E600619524C484279C9EE4E26ED088"
+    },
+    {
+      "path": "payload/test/integration/identity/auth_security_postgres_test.go",
+      "bytes": 19610,
+      "sha256": "0A96A652CFBE74B7E222E1774BAAD4C50606588C298593982D0F9820A602A4AA"
+    },
+    {
+      "path": "protection-final.json",
+      "bytes": 43827,
+      "sha256": "61DA1794ACE85BD15135E1E7ED86C81604F901D296963FF375E50595AAFBD143"
+    },
+    {
+      "path": "run_offline-r01.py.txt",
+      "bytes": 4073,
+      "sha256": "3F3CA3BE3D2AE613E8D278BC6951B8E479C2455C2A93A3A8CA0E91AD54D1F3AE"
+    },
+    {
+      "path": "run_offline.py.txt",
+      "bytes": 4122,
+      "sha256": "9AACE4296C929AF72FC45A4D3302AB8DADC2B70FD7748455CDF28D8CB81C5D0F"
+    },
+    {
+      "path": "source185.json",
+      "bytes": 26578,
+      "sha256": "C3C3FF1611FA35EAC69FB1F42FA0E0A4400DDB9F52C47757FEE569B146473C09"
+    },
+    {
+      "path": "static-inventory.json",
+      "bytes": 825,
+      "sha256": "FBD13BD42C70CEA16F3B815226A6A2E72F45B7900DD689E718306F8A7F18A42F"
+    },
+    {
+      "path": "status-after.txt",
+      "bytes": 14988,
+      "sha256": "1C191B0469E58C34A6ECD6CA5AC47C9489CA4CDA22870AF4D9ACB9C92BBC3E17"
+    },
+    {
+      "path": "status-before.txt",
+      "bytes": 14988,
+      "sha256": "1C191B0469E58C34A6ECD6CA5AC47C9489CA4CDA22870AF4D9ACB9C92BBC3E17"
+    }
+  ],
+  "exclusions": [
+    "runtime-temp Go work/build cache",
+    "large test executable; external retained hash in delivery.json"
+  ],
+  "note": "Copy this handoff directory only. Payload paths are relative. Source guard maps use original absolute source paths. index.json does not hash itself."
+}

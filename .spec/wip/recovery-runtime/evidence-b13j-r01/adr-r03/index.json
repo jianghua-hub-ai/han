@@ -1,0 +1,378 @@
+{
+    "schema":  "add.evidence.design-decision/v1",
+    "item":  "B13J ADR prerequisite-node rework r03 (ADR-0030 / ADR-0031 / ADR-0032 r02 -> r03)",
+    "agent_role":  "add-arch-designer",
+    "workflow":  "development-delivery",
+    "phase":  "architecture-decision-ADR",
+    "route_executed":  false,
+    "recorded_at":  "2026-11-02",
+    "timezone":  "Asia/Shanghai",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "inputs":  [
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r02/report.md",
+                       "sha256":  "0462EC08AD8BCFECC24AB0BDDC8A9627700DF8D72DEE0441781BF6CFD930C155",
+                       "bytes":  18538,
+                       "lines":  164,
+                       "role":  "non-author planning review r02 (CHANGES REQUIRED) carrying B13J-PLAN-R02-F001/F002/F005"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r02/index.json",
+                       "sha256":  "D325F724670C6238F724DB5B873AEF8CE6286F09AE8F3FB86738D32F47F8AE83",
+                       "bytes":  16508,
+                       "lines":  170,
+                       "role":  "machine-readable companion of planning review r02"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/snapshots/framework-before-r03.md",
+                       "sha256":  "DA77EA1332DB69CB94B90960DEA58B35CABDA76C712EDAE23F2CCF6A1F45B5C1",
+                       "bytes":  175141,
+                       "lines":  1135,
+                       "role":  "byte-exact pre-change copy of decisions/framework.md"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/snapshots/gap-map-before-r03.md",
+                       "sha256":  "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+                       "bytes":  26452,
+                       "lines":  218,
+                       "role":  "read-only backup of gap-map.md used to confirm S4.24a/S4.24b canonical numbering context; original left untouched"
+                   }
+               ],
+    "findings":  [
+                     {
+                         "id":  "B13J-PLAN-R02-F001",
+                         "severity":  "HIGH",
+                         "disposition":  "applied-in-adr-0030",
+                         "conclusion_unchanged":  true,
+                         "landing":  [
+                                         "framework.md:953",
+                                         "framework.md:960",
+                                         "framework.md:961",
+                                         "framework.md:970"
+                                     ],
+                         "note":  "constraint 9 is split into three card categories with one-directional entries: decision card (document-only, registrable at any time) -> decision revision accepted by architecture and security independent review -> implementation/verification card producing real evidence -> production assembly/release card gated by the full constraint 7 plus explicit human production approval. Constraint 7 is now explicitly a production-release-level gate that does not gate decision or implementation/verification card registration. Constraint 10 is restated with the same order while keeping the single-source registry semantics (four-port bundle, ErrAdmissionBinding, no fallback, no synthetic/test injection)."
+                     },
+                     {
+                         "id":  "B13J-PLAN-R02-F002",
+                         "severity":  "HIGH",
+                         "disposition":  "applied-in-adr-0031-and-adr-0032",
+                         "conclusion_unchanged":  true,
+                         "landing":  [
+                                         "framework.md:1049",
+                                         "framework.md:1059",
+                                         "framework.md:1118",
+                                         "framework.md:1121",
+                                         "framework.md:1122",
+                                         "framework.md:1123",
+                                         "framework.md:1125",
+                                         "framework.md:1139"
+                                     ],
+                         "note":  "candidate numbering made canonical: S4.24a = production restore source/target/tool and approver wiring (gated by ADR-0031, independent of the lock backend node); S4.24b = deployment-exclusive POSIX lock backend and exclusive wiring (gated by ADR-0032, requires candidate S4.23); S4.22 requires candidate S4.24b, with its relation to S4.24a registered separately under ADR-0031. ADR-0031 gated-candidate token changed from S4.24 to S4.24a and the decision-card exemption added. No single number carries two different gates any more."
+                     },
+                     {
+                         "id":  "B13J-PLAN-R02-F005",
+                         "severity":  "LOW",
+                         "disposition":  "applied-errata",
+                         "conclusion_unchanged":  true,
+                         "landing":  [
+                                         "framework.md:969",
+                                         "framework.md:1058",
+                                         "framework.md:1138",
+                                         "adr-r03/report.md#9"
+                                     ],
+                         "note":  "the three r02 trace records now read 2026-11-02 r02 revision (ADR decision date 2026-11-01), so the revision timestamp no longer precedes the triggering review report; the historical adr-r02/ report and index are left untouched as immutable evidence and the errata is documented in the r03 report"
+                     },
+                     {
+                         "id":  "B13J-PLAN-R02-F003",
+                         "severity":  "MEDIUM",
+                         "disposition":  "not-in-architecture-write-set",
+                         "conclusion_unchanged":  true,
+                         "landing":  [],
+                         "note":  "adoption-record line anchors and standing-authorization wording are not part of this round's write set; R02 report judges F003 still OPEN, and nothing here is evidence of its closure"
+                     },
+                     {
+                         "id":  "B13J-PLAN-R02-F004",
+                         "severity":  "MEDIUM",
+                         "disposition":  "not-in-architecture-write-set",
+                         "conclusion_unchanged":  true,
+                         "landing":  [],
+                         "note":  "standing-authorization original wording is not part of this round's write set; F004 remains OPEN per R02 report"
+                     },
+                     {
+                         "id":  "B13J-PLAN-R02-F006",
+                         "severity":  "LOW",
+                         "disposition":  "not-in-architecture-write-set",
+                         "conclusion_unchanged":  true,
+                         "landing":  [],
+                         "note":  "planning registration order remains OUT OF SCOPE; F006 remains OPEN per R02 report"
+                     },
+                     {
+                         "id":  "B13J-PLAN-R02-F009",
+                         "severity":  "LOW",
+                         "disposition":  "not-in-architecture-write-set",
+                         "conclusion_unchanged":  true,
+                         "landing":  [],
+                         "note":  "tasks.md 0x0C control-character finding is outside the architecture write set; F009 remains OPEN per R02 report and tasks.md was not modified this round"
+                     }
+                 ],
+    "artifacts":  [
+                      {
+                          "path":  ".add/project/knowledge/decisions/framework.md",
+                          "before":  {
+                                         "sha256":  "DA77EA1332DB69CB94B90960DEA58B35CABDA76C712EDAE23F2CCF6A1F45B5C1",
+                                         "bytes":  175141,
+                                         "lines":  1135,
+                                         "crlf":  1135,
+                                         "bare_lf":  0,
+                                         "bom":  false,
+                                         "trailing_newline":  "single CRLF (0x0d0a)",
+                                         "control_chars_non_crlf_tab":  0,
+                                         "tabs":  0
+                                     },
+                          "after":  {
+                                        "sha256":  "9B9A0D7A62DAE9B62F4CF292E9B85888903352E39D06C70B04D303C40D6D53B8",
+                                        "bytes":  179565,
+                                        "lines":  1139,
+                                        "crlf":  1139,
+                                        "bare_lf":  0,
+                                        "bare_cr":  0,
+                                        "bom":  false,
+                                        "trailing_newline":  "single CRLF (0x0d0a)",
+                                        "control_chars_non_crlf_tab":  0,
+                                        "tabs":  0
+                                    },
+                          "status":  "modified (ADR-0030/0031/0032 r02 -> r03)"
+                      },
+                      {
+                          "path":  ".add/project/knowledge/decisions/README.md",
+                          "before":  {
+                                         "sha256":  "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97",
+                                         "bytes":  21472,
+                                         "lines":  110,
+                                         "crlf":  2,
+                                         "bare_lf":  108,
+                                         "bom":  false,
+                                         "trailing_newline":  "single LF (0x0a)",
+                                         "control_chars_non_crlf_tab":  0,
+                                         "tabs":  0
+                                     },
+                          "after":  {
+                                        "sha256":  "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97",
+                                        "bytes":  21472,
+                                        "lines":  110,
+                                        "crlf":  2,
+                                        "bare_lf":  108,
+                                        "bom":  false,
+                                        "trailing_newline":  "single LF (0x0a)",
+                                        "control_chars_non_crlf_tab":  0,
+                                        "tabs":  0
+                                    },
+                          "status":  "unchanged this round (index rows carry no revision field); the pre-existing ' M' in git status predates r03"
+                      },
+                      {
+                          "path":  ".add/project/knowledge/design-workspace/identity-auth/design.md",
+                          "before":  {
+                                         "sha256":  "FED48FA9908F9EADD970A3E57B0B448181C51030A4460B437852009722F34D8D",
+                                         "bytes":  854991,
+                                         "lines":  4944,
+                                         "crlf":  169,
+                                         "bare_lf":  4775,
+                                         "bom":  false,
+                                         "control_chars_non_crlf_tab":  1,
+                                         "tabs":  1
+                                     },
+                          "after":  {
+                                        "sha256":  "FED48FA9908F9EADD970A3E57B0B448181C51030A4460B437852009722F34D8D",
+                                        "bytes":  854991,
+                                        "lines":  4944,
+                                        "crlf":  169,
+                                        "bare_lf":  4775,
+                                        "bom":  false,
+                                        "control_chars_non_crlf_tab":  1,
+                                        "tabs":  1
+                                    },
+                          "status":  "unchanged this round (read-only input)"
+                      },
+                      {
+                          "path":  ".add/project/knowledge/design-workspace/article-management/design.md",
+                          "before":  {
+                                         "sha256":  "690015BB5C3B4800539F98C5B75115A5A20B5C161ECE7422F9F271840F7C55A7",
+                                         "bytes":  377424,
+                                         "lines":  3267,
+                                         "crlf":  0,
+                                         "bare_lf":  3267,
+                                         "bom":  false,
+                                         "control_chars_non_crlf_tab":  0,
+                                         "tabs":  0
+                                     },
+                          "after":  {
+                                        "sha256":  "690015BB5C3B4800539F98C5B75115A5A20B5C161ECE7422F9F271840F7C55A7",
+                                        "bytes":  377424,
+                                        "lines":  3267,
+                                        "crlf":  0,
+                                        "bare_lf":  3267,
+                                        "bom":  false,
+                                        "control_chars_non_crlf_tab":  0,
+                                        "tabs":  0
+                                    },
+                          "status":  "unchanged this round (read-only input)"
+                      }
+                  ],
+    "diff":  {
+                 "hunks":  [
+                               "old 918 -> new 918: ADR-0030 revision adr-0030-r02 -> adr-0030-r03",
+                               "old 953 -> new 953: ADR-0030 constraint 7 declared production-release-level and pointed at constraint 9 card entries",
+                               "old 960-961 -> new 960-961: ADR-0030 constraint 9 rewritten as three-tier acyclic registration order and constraint 10 successor path restated in the same order (single-source semantics kept)",
+                               "old 969 -> new 969-970: ADR-0030 r02 trace date errata plus new r03 trace record",
+                               "old 976 -> new 977: ADR-0031 revision adr-0031-r02 -> adr-0031-r03",
+                               "old 1048 -> new 1049: ADR-0031 gated candidate S4.24 -> S4.24a, decision-card exemption, S4.24b pointer",
+                               "old 1057 -> new 1057-1058: ADR-0031 r02 trace date errata plus new r03 trace record",
+                               "old 1064 -> new 1066: ADR-0032 revision adr-0032-r02 -> adr-0032-r03",
+                               "old 1116 -> new 1118: ADR-0032 release clause 8 first node now decision-level per ADR-0030 constraint 9",
+                               "old 1119-1120 -> new 1121-1123: S4.24 -> S4.24b, new S4.24a node inserted, S4.22 requires S4.24b with S4.24a relation registered separately",
+                               "old 1122 -> new 1125: acyclicity paragraph restated as one-directional decision/implementation/production-release levels",
+                               "old 1132 -> new 1135: adjacent-decision line reference framework.md:974 -> :975 (post-change measurement)",
+                               "old 1135 -> new 1135-1138: ADR-0032 r02 trace date errata plus new r03 trace record"
+                           ],
+                 "numstat":  "19 insertions / 15 deletions (15 line replacements + 4 insertions; net +4 lines); 13 unified=0 hunks because git merges adjacent changed lines",
+                 "line_changes":  [
+                                      {"old":  918, "new":  918, "kind":  "modify", "what":  "ADR-0030 revision field r02 -> r03"},
+                                      {"old":  953, "new":  953, "kind":  "modify", "what":  "ADR-0030 constraint 7: production-release-level gate; does not gate decision or implementation/verification card registration; pointer to constraint 9"},
+                                      {"old":  960, "new":  960, "kind":  "modify", "what":  "ADR-0030 constraint 9: three card categories, one-directional entries, acyclic order (R02-F001 core)"},
+                                      {"old":  961, "new":  961, "kind":  "modify", "what":  "ADR-0030 constraint 10: successor path restated with the same order; four-port bundle, ErrAdmissionBinding, no fallback and no synthetic/test injection retained"},
+                                      {"old":  969, "new":  969, "kind":  "modify", "what":  "ADR-0030 r02 trace date errata: 2026-11-02 r02 revision (decision date 2026-11-01)"},
+                                      {"old":  null, "new":  970, "kind":  "insert", "what":  "ADR-0030 r03 trace record (triggers R02-F001/F002/F005)"},
+                                      {"old":  976, "new":  977, "kind":  "modify", "what":  "ADR-0031 revision field r02 -> r03"},
+                                      {"old":  1048, "new":  1049, "kind":  "modify", "what":  "ADR-0031 prerequisite node: S4.24 -> S4.24a; decision cards exempt; lock wiring is S4.24b under ADR-0032"},
+                                      {"old":  1057, "new":  1058, "kind":  "modify", "what":  "ADR-0031 r02 trace date errata"},
+                                      {"old":  null, "new":  1059, "kind":  "insert", "what":  "ADR-0031 r03 trace record (triggers R02-F002/F005)"},
+                                      {"old":  1064, "new":  1066, "kind":  "modify", "what":  "ADR-0032 revision field r02 -> r03"},
+                                      {"old":  1116, "new":  1118, "kind":  "modify", "what":  "ADR-0032 release clause 8 first node: decision revision accepted by independent review (decision level); production release still per constraint 7"},
+                                      {"old":  1119, "new":  1121, "kind":  "modify", "what":  "candidate S4.24 -> S4.24b (deployment-exclusive POSIX lock backend and exclusive wiring), requires candidate S4.23"},
+                                      {"old":  null, "new":  1122, "kind":  "insert", "what":  "candidate S4.24a node (production restore source/target/tool and approver wiring, ADR-0031 gated, independent of lock backend)"},
+                                      {"old":  1120, "new":  1123, "kind":  "modify", "what":  "candidate S4.22 requires candidate S4.24b; relation to S4.24a registered separately under ADR-0031"},
+                                      {"old":  1122, "new":  1125, "kind":  "modify", "what":  "acyclicity paragraph: decision level -> implementation/verification -> real evidence -> production release, one-directional"},
+                                      {"old":  1132, "new":  1135, "kind":  "modify", "what":  "adjacent-decision line reference framework.md:974 -> :975 after insertions"},
+                                      {"old":  1135, "new":  1138, "kind":  "modify", "what":  "ADR-0032 r02 trace date errata"},
+                                      {"old":  null, "new":  1139, "kind":  "insert", "what":  "ADR-0032 r03 trace record (triggers R02-F001/F002/F005)"}
+                                  ],
+                                  "first_diff_offset":  126770,
+                 "common_prefix_bytes":  126770,
+                 "common_prefix_sha256":  "0D80C9D34B5E16735AA9E6B0BBB8406398B37DBF8A11A99557173E6F32DA940F",
+                 "common_suffix_bytes":  319,
+                 "common_suffix_text":  "或生产批准。\u000d\u000a",
+                 "delta_bytes":  4424
+             },
+    "invariant_evidence":  {
+                               "adr0019_region":  {
+                                                      "start_byte":  31305,
+                                                      "end_byte":  126598,
+                                                      "bytes":  95294,
+                                                      "before_sha256":  "607827B08F64D2ADD88DCB815F428575BA214EED3780D67C28DE7DEA6C18D2B6",
+                                                      "after_sha256":  "607827B08F64D2ADD88DCB815F428575BA214EED3780D67C28DE7DEA6C18D2B6",
+                                                      "identical":  true
+                                                  },
+                               "prefix_before_first_diff":  {
+                                                                "bytes":  126770,
+                                                                "before_sha256":  "0D80C9D34B5E16735AA9E6B0BBB8406398B37DBF8A11A99557173E6F32DA940F",
+                                                                "after_sha256":  "0D80C9D34B5E16735AA9E6B0BBB8406398B37DBF8A11A99557173E6F32DA940F",
+                                                                "identical":  true,
+                                                                "covers":  "ADR-0019 through ADR-0029 and the ADR-0030 header/first lines up to the revision field"
+                                                            },
+                               "unchanged_lines":  [
+                                                       {"meaning":  "ADR-0030 decision (no production CAS provider; S4.5 undelivered; production closed)", "old_line":  926, "new_line":  926, "identical":  true},
+                                                       {"meaning":  "ADR-0030 constraint 7 sub-bullets (product/fault domain, credentials/ACL, config keys, real verification, independent review plus formal Task registration)", "old_line":  "954-958", "new_line":  "954-958", "identical":  true},
+                                                       {"meaning":  "ADR-0031 decision (no production restore tool or approver)", "old_line":  984, "new_line":  985, "identical":  true},
+                                                       {"meaning":  "ADR-0031 constraint 8 (release conditions)", "old_line":  1034, "new_line":  1035, "identical":  true},
+                                                       {"meaning":  "ADR-0032 decision (POSIX single-machine OS exclusive non-blocking file lock)", "old_line":  1072, "new_line":  1074, "identical":  true}
+                                                   ],
+                               "note":  "the previously reported literal first-155139-byte constraint is not reused; equivalence is proven by the common-prefix hash plus the ADR-0019 region hash plus the unchanged decision and constraint lines above"
+                           },
+    "reverse_restore":  {
+                            "method":  "remove the four inserted lines verbatim, rewrite the three rev fields to -r02, rewrite the three errata prefixes back to 2026-11-01 r02 修订, then restate the nine remaining replaced lines from the snapshot; join with CRLF and add the final CRLF",
+                            "remaining_diff_lines_after_step_4":  [953, 960, 961, 1048, 1116, 1119, 1120, 1122, 1132],
+                            "sha256":  "DA77EA1332DB69CB94B90960DEA58B35CABDA76C712EDAE23F2CCF6A1F45B5C1",
+                            "bytes":  175141,
+                            "lines":  1135,
+                            "byte_identical_to_snapshot":  true
+                        },
+    "acceptance":  [
+                       {
+                           "command":  "rg -n \"部署锁|文件锁|Windows|POSIX|ADR-003\" .add/project/knowledge/decisions/framework.md",
+                           "exit_code":  0,
+                           "result":  "hits include ADR-0019 :471/:472 and the ADR-0030/0031/0032 sections"
+                       },
+                       {
+                           "command":  "rg -n \"^## ADR-003[012]\" .add/project/knowledge/decisions/framework.md",
+                           "exit_code":  0,
+                           "result":  "3 hits: 916 (ADR-0030), 975 (ADR-0031), 1064 (ADR-0032)"
+                       },
+                       {
+                           "command":  "rg -n \"adr-003[012]-r03\" .add/project/knowledge/decisions/framework.md",
+                           "exit_code":  0,
+                           "result":  "3 hits: 918 / 977 / 1066"
+                       },
+                       {
+                           "command":  "rg -n \"S4\\.24[ab]?|S4\\.2[23]\" .add/project/knowledge/decisions/framework.md",
+                           "exit_code":  0,
+                           "result":  "hits: 960, 969, 1049, 1058, 1059, 1119, 1121, 1122, 1123, 1138, 1139"
+                       },
+                       {
+                           "command":  "git diff --check -- .add/project/knowledge/decisions/framework.md",
+                           "exit_code":  0,
+                           "result":  "no whitespace errors"
+                       },
+                       {
+                           "command":  "git diff --no-index --unified=0 .spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/snapshots/framework-before-r03.md .add/project/knowledge/decisions/framework.md",
+                           "exit_code":  1,
+                           "result":  "differences present as expected; 13 unified=0 hunks (adjacent changed lines merged) covering the 19 declared line changes, no other hunk"
+                       },
+                       {
+                           "command":  "byte scan for control characters (<0x20 excluding CR, LF) and TAB count on framework.md",
+                           "exit_code":  0,
+                           "result":  "0 control characters; 0 TAB; CRLF 1139 / bare LF 0; no BOM; single trailing CRLF"
+                       },
+                       {
+                           "command":  "ConvertFrom-Json over adr-r03/index.json",
+                           "exit_code":  0,
+                           "result":  "valid JSON"
+                       },
+                       {
+                           "command":  "git rev-parse HEAD",
+                           "exit_code":  0,
+                           "result":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca"
+                       }
+                   ],
+    "write_set":  [
+                      ".add/project/knowledge/decisions/framework.md (ADR-0030/0031/0032 r02 -> r03 only)",
+                      ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/ (new evidence: report.md, index.json, snapshots/)"
+                  ],
+    "not_proven":  [
+                       "no independent review, planning-review PASS, human acceptance, security sign-off or production approval is claimed",
+                       "no implementation task is registered: S4.22/S4.23/S4.24a/S4.24b remain candidates and are not formal Tasks",
+                       "no lock backend, ACL, two-process exclusion, crash release, restore tool, backup, drill, CAS product or independent fault domain is claimed verified",
+                       "ADR-0019/ADR-0027/ADR-0029 bodies, README.md, identity-auth design.md, article-management design.md, gap-map.md, tasks.md, plans, tests and source code were not modified",
+                       "R02-F003/F004/F006/F009 are outside the architecture write set and remain OPEN per the R02 report"
+                   ],
+    "open_items":  [
+                       "non-author re-review of this r03 author disposition (does not exist yet)",
+                       "planning-role synchronization of gap-map.md to the canonical S4.24a/S4.24b numbering",
+                       "R02-F003/F004 (adoption-record line anchors, standing-authorization wording) and R02-F006/F009 (planning registration order, tasks.md 0x0C control character) remain OPEN"
+                   ],
+    "verdict":  "applied-draft-unreviewed",
+    "review_claimed":  false,
+    "approval_claimed":  false,
+    "production_claimed":  false,
+    "gate_claimed":  false,
+    "evidence_files":  [
+                           {
+                               "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/report.md",
+                               "sha256":  "5750C3DDB15C6E74E5A562F73D3D3C1288BF3D6897F159E8E3FB7555E84DF35B",
+                               "bytes":  34025,
+                               "lines":  391,
+                               "role":  "author-side evidence report for this r03 rework"
+                           }
+                       ]
+}

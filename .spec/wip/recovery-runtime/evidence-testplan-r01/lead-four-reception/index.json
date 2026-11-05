@@ -1,0 +1,57 @@
+{
+  "scope": "Main onsite technical reception of final four planning artifacts before final nonauthor review",
+  "actual_planner": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "id": "01a18414-b2ab-7392-9b04-fd974203bf5e",
+    "source": "Actual Main Host spawn return; raw receipt null runtime field not interpreted as absent dispatch"
+  },
+  "delegation_provenance": "Main selected and delegated Role under user standing authorization; agent-side references to user instructions mean its Main context pack, not a human naming the Role or signing the design",
+  "read_scope": "Full original Tasks increment in stable draft snapshot plus exact final source-wording delta; all final Plan and both mapping-only TP diffs; full final author receipt; independent raw-byte and scope/graph/links audits",
+  "final_hashes": {
+    ".add/project/knowledge/tasks/tasks.md": "0F197F4586195FEC2340DF074C00CAB6D7EBD6C5AA196F11BF585DDB867A7B08",
+    ".add/project/knowledge/plans/ir-01-content-community-batches.md": "1B2540B5F59756FF3D4B397B90FE44E6111700DCA8F8538A75BE863B99CCF9C7",
+    ".add/project/knowledge/design-workspace/identity-auth/test-plan.md": "468864D2FBA7281CABDCA0C771D56E1316BAFAE8B0F9B524269435E544BDF41D",
+    ".add/project/knowledge/design-workspace/article-management/test-plan.md": "E2E7ADFD0581BCCE9CD2782F7181C12BA67A8496A1A321EF88006EA94D9FCA27"
+  },
+  "counts": {
+    "total": 73,
+    "completed": 48,
+    "active": 3,
+    "todo": 22
+  },
+  "new_tasks": 14,
+  "batches": 9,
+  "new_unassigned": 0,
+  "Main_technical_reception": "received after actual diff and onsite checks; pending final independent PlanningReview and metadata pair",
+  "independent_final_review": "pending",
+  "implementation_and_tests": "NOT RUN",
+  "human_acceptance": "unknown; no checkpoint",
+  "metadata_write_submission": "01a1845d-9ab8-7d90-86a7-2e3040a9c0f9",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-four-reception/audit_planning.py",
+      "sha256": "253EDF3D7262D5DE359E6E4F8D901BFF8B70A078F5CA3416079BA836E6CEF24F"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-four-reception/audit-planning-r01.json",
+      "sha256": "F39B6A278C1FF6141F547F2F993E214F9B1AC12F00049A071CCAEC00090D1B1B"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-four-reception/planning-byte-preservation.json",
+      "sha256": "2D92C75799D1916D60ABFA11D80FB91ECFB2DC30B3E5B8FCCBF9443F06E685C2"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-four-reception/scope-planning-frozen-r01.json",
+      "sha256": "5A54EC875C79D552ECEE5272F44DBC1276A4C1EFA0D566FBABC4D02A39F2AF11"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-four-reception/final-authorization.json",
+      "sha256": "FE3B5661799BB470ADC146E321423CF9DFA9D26175973525C021FD583C3BEF67"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-four-reception/check_final_scope.py",
+      "sha256": "6CEEAB16B2B58256F134FB2028F7AB55303227BAC456554B4FD345FCCAD6BFC5"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schema": "add.planning-review-index/v1",
+  "role": "add-reviewer",
+  "review_round": "r03",
+  "objectType": "planning",
+  "item": "pending-B13J",
+  "workflow": "development-delivery",
+  "phase": "planning-review-r03",
+  "workspace": "D:/AID/VSCode/Codex/Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "recorded_at": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "independence": {
+    "nonAuthor": true,
+    "designAuthors": "Singer for D01-D04",
+    "adrRevisionAuthor": "Singer (add-arch-designer) for ADR r03",
+    "d04Reviewer": "Sagan for design-d04 review",
+    "statement": "本评审未参与 D01-D04 设计、ADR r03 修订或 gap-map r03 修订的产出；全部行锚、字节与哈希现场实测，不默认接受作者或 Lead 的结论。"
+  },
+  "scope": "r03 targeted re-review: dispose r02 new F001-F005 and r01 still-OPEN F003/F005/F006/F009; scan for issues introduced by the r03 revisions; not a full re-review.",
+  "verdict": {
+    "status": "PASS WITH MINOR",
+    "reason": "r02 的 2 HIGH + 3 LOW 全部 CLOSED；r01 F005 转 CLOSED，F003/F006/F009 如实保持 OPEN；新增 7 条 LOW，无新增 HIGH/MEDIUM。ADR-0030 约束 9 的三级入口已断开登记回边，S4.24a/b 三方编号一致。",
+    "round_entry": "可以进入「决策卡 + Task 卡（S4.22/S4.23/S4.24a/S4.24b）登记轮」；建议在 ADR-0031 r04 决策卡内同时关闭 B13J-PLAN-R03-F006，S4.24a 实施卡方可登记。"
+  },
+  "inputs": [
+    { "path": ".add/project/knowledge/decisions/framework.md", "bytes": 179565, "sha256": "9B9A0D7A62DAE9B62F4CF292E9B85888903352E39D06C70B04D303C40D6D53B8" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md", "bytes": 26721, "sha256": "88AE01132F573D14E4C06217AC1E0D8587D0B68E596242A4CA5A31B721538FA7" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/u-adoption-record-r01.md", "bytes": 5238, "sha256": "DE5B018B6FE6477A486CC0D9C5E5CB1005EDD1E66828530DCC15570FE74101EB" },
+    { "path": ".add/project/knowledge/tasks/tasks.md", "bytes": 823187, "sha256": "F1D65B0D7016CDBF9C2F4E85B012B5B0B9F714B6DF0C7CDC9326C05676900E34" },
+    { "path": ".add/project/knowledge/plans/ir-01-content-community-batches.md", "bytes": 497542, "sha256": "3FA19CDD4902F56B8C2F1DF59C570D96FAAE02D8AEE519B4B4165DCCA3637380" },
+    { "path": ".add/project/knowledge/decisions/README.md", "bytes": 21472, "sha256": "2EE124AE50FA0393D9D5B90F21075993F19B1BE6241C058D465CD56D9CD86B97" },
+    { "path": ".add/project/knowledge/design-workspace/identity-auth/design.md", "bytes": 854991, "sha256": "FED48FA9908F9EADD970A3E57B0B448181C51030A4460B437852009722F34D8D" },
+    { "path": ".add/project/knowledge/design-workspace/article-management/design.md", "bytes": 377424, "sha256": "690015BB5C3B4800539F98C5B75115A5A20B5C161ECE7422F9F271840F7C55A7" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/report.md", "bytes": 34025, "sha256": "5750C3DDB15C6E74E5A562F73D3D3C1288BF3D6897F159E8E3FB7555E84DF35B" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/index.json", "bytes": 28898, "sha256": "4BA08EA7876C6EB01B18B4769A20C9A295B2895DEC9CE5802DABAAE01C101BC1" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map-r03/report.md", "bytes": 5996, "sha256": "4DD31F9DE6FB26214D1A840C3C10702516E6D444D034D39F95FAD27BB16D792A" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r02/report.md", "bytes": 18538, "sha256": "0462EC08AD8BCFECC24AB0BDDC8A9627700DF8D72DEE0441781BF6CFD930C155" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r02/index.json", "bytes": 16508, "sha256": "D325F724670C6238F724DB5B873AEF8CE6286F09AE8F3FB86738D32F47F8AE83" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r02/snapshots/framework-before-r02.md", "bytes": 169890, "sha256": "58C97FC06361022AA48EF737189EF3EB069A7AAD25772BCA4C80FE4D1D5E1F8E" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/snapshots/framework-before-r03.md", "bytes": 175141, "sha256": "DA77EA1232DB69CB94B90960DEA58B35CABDA76C712EDAE23F2CCF6A1F45B5C1" },
+    { "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/adr-r03/snapshots/gap-map-before-r03.md", "bytes": 26452, "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F" }
+  ],
+  "findings": [
+    {
+      "id": "B13J-PLAN-R02-F001",
+      "original_severity": "HIGH",
+      "status": "CLOSED",
+      "basis": "framework.md:953 把约束 7 限定为生产解除级；:960(a) 决策卡无前置、:960(b) 实施/验证卡入口是决策修订被独立评审接受、:960(c) 生产装配/解除卡仍受约束 7 全项 + 人的生产批准；:961 / :1049 / :1118-:1125 均未把全项解除写成登记前置；链条 D0->D1->I1->I2->P1->R 无回边。",
+      "residual": "B13J-PLAN-R03-F005 / R03-F006（LOW，措辞可读性）"
+    },
+    {
+      "id": "B13J-PLAN-R02-F002",
+      "original_severity": "HIGH",
+      "status": "CLOSED",
+      "basis": "ADR-0031 :1049 = S4.24a；ADR-0032 :1121 S4.24b requires S4.23、:1122 S4.24a 独立且早于 S4.22 生产解除、:1123 S4.22 requires S4.24b；gap-map :139/:161/:172/:174/:178/:182 一致；gap-map 裸 S4.24 = 0。解除链同时覆盖 restore 与锁接线。"
+    },
+    {
+      "id": "B13J-PLAN-R02-F003",
+      "original_severity": "LOW",
+      "status": "CLOSED",
+      "basis": "u-adoption-record-r01.md:7 现为 §3.2 :191 / §4 :207，与 gap-map.md:191（登记时机）、:207（建议值声明）实测一致。"
+    },
+    {
+      "id": "B13J-PLAN-R02-F004",
+      "original_severity": "LOW",
+      "status": "CLOSED",
+      "basis": "u-adoption-record-r01.md:6 引用 tasks.md:8（2026-10-31 ADR-0028 项目级验证授权）、:140（2026-10-26 采用建议值）、:1956（2026-10-27 采用建议值并继续推进）、:2876（2026-10-31 standing 建议授权），四条实测存在且语义相符；会话内重复如实标注不可独立回放。"
+    },
+    {
+      "id": "B13J-PLAN-R02-F005",
+      "original_severity": "LOW",
+      "status": "CLOSED",
+      "basis": "framework.md:969/:1058/:1138 现为「2026-11-02 r02 修订（本 ADR 决定日期 2026-11-01）」；adr-r02/report.md 与 index.json 原样保留，errata 由 adr-r03/report.md §9 承接。"
+    },
+    {
+      "id": "B13J-PLAN-F003",
+      "original_severity": "HIGH",
+      "status": "OPEN",
+      "basis": "本轮未登记任何 Task：tasks.md 823187 B / F1D65B0D...900E34、Plan 497542 B / 3FA19CDD...637380 均未变；rg 'S4\\.2[234]|B13J' tasks.md Plan 无命中。卡面缺文件清单、验收命令、关闭条件、requires。"
+    },
+    {
+      "id": "B13J-PLAN-F005",
+      "original_severity": "HIGH",
+      "status": "CLOSED",
+      "basis": "链入口改为决策级（framework.md:960(b) / :1118），规划级可满足；生产仍 closed、无任何真实验证声明。结论仅限规划可满足性。"
+    },
+    {
+      "id": "B13J-PLAN-F006",
+      "original_severity": "MEDIUM",
+      "status": "OPEN",
+      "basis": "B13J-D04-RV2-01（recovery_runtime.go:565-567 的 inputs.exclusive 覆盖无构建校验）仍无承接任务；framework.md:961 仅为规范禁止，不是可核负向验收。"
+    },
+    {
+      "id": "B13J-PLAN-F009",
+      "original_severity": "LOW",
+      "status": "OPEN",
+      "basis": "tasks.md 控制字符 2 个（0x0C，偏移 12676 / 12691），本轮零改动、未获修复授权。"
+    }
+  ],
+  "new_findings": [
+    {
+      "id": "B13J-PLAN-R03-F001",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "采用记录中两处 ADR 行锚已随 r02/r03 修订漂移",
+      "location": "u-adoption-record-r01.md:18 (:970 起) / :19 (:1053 起)",
+      "basis": "现行 framework.md ADR-0031 锚点/标题在 :974/:975、ADR-0032 在 :1063/:1064；:970/:1053 为 r02 前基线（adr-r02/snapshots/framework-before-r02.md:970/:1053 实证）。",
+      "close_condition": "记录内 ADR 行锚与现行 framework.md 一致，或明确标注行锚基线时点。"
+    },
+    {
+      "id": "B13J-PLAN-R03-F002",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "gap-map.md:182 单行堆叠 S4.24a/S4.24b/S4.22 requires",
+      "location": "gap-map.md:182",
+      "basis": "同一物理行承载三条语义；:172/:174/:178 已分列。语义与 ADR-0031 :1049、ADR-0032 :1121-:1123 一致，仅可读性与 diff 友好性差。",
+      "close_condition": "三条语义分列且内容不变。"
+    },
+    {
+      "id": "B13J-PLAN-R03-F003",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "framework.md:960 内嵌数值行锚 :957/:958 易随修订漂移",
+      "location": "framework.md:960",
+      "basis": "当前 :957/:958 确为约束 7 第 4、5 子项，但 ADR-0030 在 r02->r03 已发生 +4 行位移。",
+      "close_condition": "改为符号引用，或下次 ADR 修订同步校正。"
+    },
+    {
+      "id": "B13J-PLAN-R03-F004",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "adr-r03 证据索引 finding 编号/级别与 r02 报告不一致",
+      "location": "adr-r03/index.json findings[] / adr-r03/report.md:390",
+      "basis": "r02 报告只有 R02-F001..F005 且 F003/F004 为 LOW；索引标为 MEDIUM 并另列 r02 报告中不存在的 R02-F006/R02-F009（实为 r01 F006/F009）。",
+      "close_condition": "索引编号与级别同 r01/r02 报告逐条一致，或显式区分 r02_findings 与 carried_open_findings。"
+    },
+    {
+      "id": "B13J-PLAN-R03-F005",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "「被架构与安全独立评审接受」未声明不等于人的决策接纳",
+      "location": "framework.md:960(b) / :1049 / :1118",
+      "basis": "生产侧人的批准在 :960(c)、:1115、:1044 保留且明写 Agent 产出/评审/测试不替代；但决策级「评审接受」措辞接近人的接纳。",
+      "close_condition": "文本显式区分评审接受与人的接纳。"
+    },
+    {
+      "id": "B13J-PLAN-R03-F006",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": "ADR-0031 :1049 缺少与 :960(b) 同形的「而不是约束 8 全项解除」限定",
+      "location": "framework.md:1049",
+      "basis": "该句只写「按约束 8 通过架构与安全独立评审」，无「解除」动词，字面不构成死锁；但紧邻引用约束 8（:1035-:1044，含 :1039 隔离实测、:1042 真实旧备份演练）仍可被读成全项。",
+      "close_condition": "ADR-0031 r04 在 :1049 补同形否定句，S4.24a 实施卡登记入口不再可被读成解除级。"
+    },
+    {
+      "id": "B13J-PLAN-R03-F007",
+      "severity": "LOW",
+      "status": "OPEN",
+      "title": ":960(c) 未说明约束 7 作用于 S4.22 的登记还是解除/声明",
+      "location": "framework.md:960(c)，对照 :953",
+      "basis": ":953 的范围限定句只豁免决策卡与实施/验证卡，未含生产装配/解除卡；:960(c) 未写该约束作用于登记还是解除。两种读法均可执行，非死锁，但登记轮需要单一答案。",
+      "close_condition": ":960(c) 明确登记不受约束 7 未满足阻断、约束 7 约束解除与生产可用声明。"
+    }
+  ],
+  "commands": [
+    { "cmd": "git rev-parse --abbrev-ref HEAD", "result": "main" },
+    { "cmd": "git rev-parse HEAD", "result": "6da8abbceb0fa197364810a92a8fa2d97b38ddca" },
+    { "cmd": "git status --porcelain | Measure-Object -Line", "result": "293" },
+    { "cmd": "git diff --no-index --numstat snapshot framework", "result": "19 insertions / 15 deletions；--unified=0 @@ count = 13" },
+    { "cmd": "SHA256/格式实测 framework.md", "result": "179565 B / 9B9A0D7A...6D53B8 / CRLF 1139 / bareLF 0 / bareCR 0 / TAB 0 / ctrl 0 / BOM False / tail CRLF" },
+    { "cmd": "前缀哈希 framework bytes 0..126769", "result": "0D80C9D34B5E16735AA9E6B0BBB8406398B37DBF8A11A99557173E6F32DA940F" },
+    { "cmd": "ADR-0019 区间字节 31305..126598", "result": "607827B08F64D2ADD88DCB815F428575BA214EED3780D67C28DE7DEA6C18D2B6" },
+    { "cmd": "SHA256/格式实测 gap-map.md", "result": "26721 B / 88AE0113...538FA7 / LF 218 / CR 0 / ctrl 0 / BOM False / tail none" },
+    { "cmd": "SHA256/格式实测 u-adoption-record-r01.md", "result": "5238 B / DE5B018B...4101EB / LF 37 / tail none" },
+    { "cmd": "SHA256/格式实测 tasks.md", "result": "823187 B / F1D65B0D...900E34 / CRLF 3034 / ctrl 2 (0x0C @12676,12691) / TAB 1" },
+    { "cmd": "SHA256/格式实测 Plan", "result": "497542 B / 3FA19CDD...637380 / CRLF 1628" },
+    { "cmd": "rg 'S4\\.2[234]|B13J' tasks.md Plan", "result": "exit 1（无命中）" },
+    { "cmd": "rg --pcre2 'S4\\.24(?!a|b)' framework.md gap-map.md", "result": "仅 framework.md:969/:1058/:1138 三条历史 r02 追溯行；gap-map 0" },
+    { "cmd": "rg '不得登记|登记或启动|才可登记|可登记|登记入口|无环|死锁' framework.md", "result": ":953/:960/:970/:1049/:1117/:1125/:1138/:1139" },
+    { "cmd": "rg 'ErrAdmissionClosed' tasks.md", "result": "production enter/install 仍 closed（:1873/:2969/:2975/:3025/:3034 等）" },
+    { "cmd": "adr-r03/index.json 读取与 claim 核对", "result": "UTF-8 + ConvertFrom-Json OK；review_claimed=False / approval_claimed=False / production_claimed=False / gate_claimed=False；verdict=applied-draft-unreviewed" },
+    { "cmd": "各行锚读取（framework 953-961/969-970/1049/1118-1125/1135/1138-1139；gap-map 139/161/172/174/178/182/191/207）", "result": "全部与报告引用一致" }
+  ],
+  "format_checks": {
+    "report": { "bytes": 27104, "sha256": "3FC6A611EE3ACCBCBDBE33AAD77506B7A0AED7158691CF842229669AF201EC19", "lines": 258, "crlf": 0, "bareLF": 258, "bareCR": 0, "bom": false, "ctrl": 0, "tab": 0, "trailing": "single LF" },
+    "index": { "utf8_no_bom": true, "json_valid": true, "validator": "IO.File::ReadAllText(UTF8) + ConvertFrom-Json" }
+  },
+  "boundary": {
+    "implementation_authorized": false,
+    "tasks_registered": [],
+    "closes_pending_B13J_D04": false,
+    "unblocks_blocked_upstream": false,
+    "human_signoff": false,
+    "statement": "只判是否可进入决策卡 + Task 卡（S4.22/S4.23/S4.24a/S4.24b）登记轮；不登记任何卡、不分配 Task ID、不写所有权表、不授权实施、不关闭 pending-B13J-D04、不解除 blocked-upstream、不构成人的签收。生产 enter/install 仍 ErrAdmissionClosed；article-management-S8.2 仍 [-]；Case18 未被宣称 PASS。"
+  },
+  "not_verified": [
+    "未重做 r01/r02 整轮评审；未重读 D01-D04 全部 review 正文（仅核哈希/字节与引用行锚）。",
+    "未运行 Go/PG/HTTP/E2E/restore/锁后端或任何真实部署；未验证 exclusive 运行时、独立故障域、ACL、OS 锁、崩溃释放。",
+    "未核验 S4.22/S4.23/S4.24a/S4.24b 卡面字段（尚不存在）。",
+    "未取得人的业务签收、部署许可或生产可用性声明。",
+    "未用 Git 证明 .spec 历史时点唯一性（.spec 不被跟踪）。"
+  ]
+}

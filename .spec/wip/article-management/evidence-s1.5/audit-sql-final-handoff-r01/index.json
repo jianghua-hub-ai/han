@@ -1,0 +1,78 @@
+{
+  "scope": "Final metadata handoff and Lead live source179/task protection verification; no new tests",
+  "captured_at": "2026-10-27T21:26:38.655923+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\tasks.before.md",
+      "copy": "planner/tasks.before.md",
+      "role": "Ptolemy",
+      "sha256": "76CB9A763792D862F4ADB3B21C85493B0351C8F5BEEF4A594109CD04F35B7B0D"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\tasks.after.md",
+      "copy": "planner/tasks.after.md",
+      "role": "Ptolemy",
+      "sha256": "53AE60BC1FD05B8ED0DBEE3E4BF0439E4C39A1F20626E172D985238797A6804F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\plan.before.md",
+      "copy": "planner/plan.before.md",
+      "role": "Ptolemy",
+      "sha256": "C0F34ECA6FD50DF6B310296FA402C03F6790495C0D4B346874C4F3F0B86BC854"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\plan.after.md",
+      "copy": "planner/plan.after.md",
+      "role": "Ptolemy",
+      "sha256": "C7D75A021E5C0677B93B456A6DA72083D3E1367DCB88CA4079631BCB92B8A0CA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\tasks.actual.diff",
+      "copy": "planner/tasks.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "4626E331B91926520C3C6D018D7250975760F9EADA2D8F2A430BB2FD0FDC7D00"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\plan.actual.diff",
+      "copy": "planner/plan.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "E4E8CF847EAC9BA362D9CB39D200AAE174E1B91D1E3192DD39AB197E07E10241"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\write-receipt.json",
+      "copy": "planner/write-receipt.json",
+      "role": "Ptolemy",
+      "sha256": "84D25D276312EB60C8067488D54FD5C514693A409B32D592B6463E50EFC3E02A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s15-audit-final-metadata-6701d05b2a194c909f8a3e72d4f4eeb5\\readback-scope-check.json",
+      "copy": "planner/readback-scope-check.json",
+      "role": "Ptolemy",
+      "sha256": "949169A2BF254E606EB779BC9941C4ACE312C4F493367F96605522AC27E72EA0"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-final-state-verification.json",
+      "copy": "lead/lead-final-state-verification.json",
+      "role": "Lead",
+      "sha256": "574F261EABCFC8C4874E62564461F15B2FFF951F704A69E36F0B6BB70D940D0E"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\lead-evidence-links-verification.json",
+      "copy": "lead/lead-evidence-links-verification.json",
+      "role": "Lead",
+      "sha256": "CF217D23A8A72FEA17BAA3672767DCB1CAF61BA921DC31B27337061E8F24B8C3"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-audit-lead-nttquqk3\\fixed179.json",
+      "copy": "lead/fixed179.json",
+      "role": "Lead",
+      "sha256": "43FDA5D8BDEC3682F5DA7AD50770C9A1A4C1B2E53EF2EEF9C93B14455FB1D463"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\verification-s1.5.md",
+      "copy": "lead/verification-s1.5-accepted-9EF6.md.txt",
+      "role": "Lead",
+      "sha256": "9EF6EF3B264807685F372717D09106C6879786DA571B3BBBD4C943F8BA5B8E93"
+    }
+  ]
+}

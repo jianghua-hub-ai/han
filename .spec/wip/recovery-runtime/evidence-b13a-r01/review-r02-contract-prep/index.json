@@ -1,0 +1,50 @@
+{
+  "scope": "review-r02-contract-prep",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Ptolemy",
+    "runtime_id": "01a18492-af9e-7ea2-9cd5-e4dd368d7bee"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13a-review-r02-contract-prep-589336fc1a854e03bc8d99178ed01371",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-r02-contract-prep/contract-delta.md",
+      "sha256": "52F2EC990034A796EE854F10C9742BBE680FAA9F747C4497D7BD72518BAB8D75",
+      "bytes": 6135,
+      "source_name": "contract-delta.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-r02-contract-prep/finalize.py",
+      "sha256": "A5CB1897CB9EA761F94FB49C660094CC5D3F6D8057AA0EFCEB4C84E83C8E6B7C",
+      "bytes": 10257,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-r02-contract-prep/input-hashes.json",
+      "sha256": "BBA21A63241A2D79C24BF2C979C1500BB6E35F2AB6E881B3B208BC8104286BAC",
+      "bytes": 4601,
+      "source_name": "input-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-r02-contract-prep/prepare.py",
+      "sha256": "697890B19677FB96545FD6F0DDF20F07FF687D577A42BE42AEA992C0F41EC385",
+      "bytes": 4689,
+      "source_name": "prepare.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-r02-contract-prep/readset.md",
+      "sha256": "2A2BA8BF669555DBDDE0A6B20710D51B155539C718BD764F28B55A3B0C29B06A",
+      "bytes": 4019,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13a-r01/review-r02-contract-prep/receipt.json",
+      "sha256": "1D2F42628EE5E7BC4ECE3B5171DD4AD966CE6A2FC79824F3CCDA25ABBB752B7D",
+      "bytes": 2287,
+      "source_name": "receipt.json"
+    }
+  ]
+}

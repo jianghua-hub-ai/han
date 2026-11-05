@@ -1,0 +1,237 @@
+{
+    "schema":  "add.evidence.planning-review/v1",
+    "item":  "B13J planning review r07 - narrow confirmation of registration round r03 microfix",
+    "agent_role":  "add-reviewer (non-author; wrote only this evidence directory)",
+    "review_round":  "r07",
+    "scope":  "Narrow only: whether B13J-R06-F001 and B13J-R06-F002 are CLOSED after the r03 microfix (5 hunks inside the S4.24b card), and whether the fix introduced new inconsistencies. No full re-review.",
+    "recorded_at":  "2026-11-02",
+    "timezone":  "Asia/Shanghai",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "prior_round":  {
+                        "round":  "r06",
+                        "verdict":  "PASS WITH MINOR",
+                        "report_sha256":  "6E00D8B576F3C0B01442DEE6341753EB7A5B2155B8D7E6342FA7FFC43D611291",
+                        "index_sha256":  "1B97015BD8D54FA5B7D9FFBA7C1467543B9E83F49563F78DC8A7331ECF17AB82"
+                    },
+    "verdict":  "PASS WITH MINOR",
+    "verdict_rationale":  "Both R06 findings are CLOSED; the 5 hunks stay inside the S4.24b card; no new blocker or inconsistency. Verdict follows the agreed rule (both closed + no new blocker =\u003e PASS WITH MINOR).",
+    "registration_round_gate":  "No change to the r06 gate: the six-card registration baseline stands; this confirmation grants no implementation authorization.",
+    "inputs":  [
+                   {
+                       "path":  ".add/project/knowledge/tasks/tasks.md",
+                       "bytes":  857169,
+                       "lines":  3226,
+                       "sha256":  "B5AC1D1D5A57A94872511ABC6B7F2F73DFBD22FB37EC5D460B5D5FDADC1EBA4F",
+                       "format":  "CRLF 3226, bareLF 0, no BOM, single trailing CRLF; historical TAB@12631 and 0x0C@12676/12691 untouched"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/plans/ir-01-content-community-batches.md",
+                       "bytes":  504671,
+                       "lines":  1651,
+                       "sha256":  "EC24892E46D5CB1C668F8F7E13443BC60F64F6A53A82812DBAEA30C79D9D37B9",
+                       "format":  "unchanged this round"
+                   },
+                   {
+                       "path":  ".add/project/knowledge/decisions/framework.md",
+                       "bytes":  182488,
+                       "sha256":  "39BD3A797B0FA2F5CDF944ACCF4129BB0B7F7A23FABC743B7E5CCC9F7B9BD704",
+                       "format":  "unchanged this round"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/registration-round-r01/author-report-r02.md",
+                       "bytes":  11370,
+                       "sha256":  "592376924EA7551244D1D7D8F853CE0CF2306A594EB0021A9FB5B48291635410",
+                       "format":  "r03 addendum in section 7; pure LF"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/registration-round-r01/author-index-r02.json",
+                       "bytes":  13868,
+                       "sha256":  "E11CEC80B511B50AC390A1EDD08AE743B6A391B35E4A51A025CBF0E50E0E03FC",
+                       "format":  "r03_microfix section appended; valid JSON"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r06/report.md",
+                       "bytes":  18374,
+                       "sha256":  "6E00D8B576F3C0B01442DEE6341753EB7A5B2155B8D7E6342FA7FFC43D611291",
+                       "format":  "unchanged"
+                   },
+                   {
+                       "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r06/index.json",
+                       "bytes":  22680,
+                       "sha256":  "1B97015BD8D54FA5B7D9FFBA7C1467543B9E83F49563F78DC8A7331ECF17AB82",
+                       "format":  "unchanged"
+                   }
+               ],
+    "r06_dispositions":  [
+                             {
+                                 "id":  "B13J-R06-F001",
+                                 "severity":  "LOW",
+                                 "status":  "CLOSED",
+                                 "location":  "tasks.md:3174",
+                                 "evidence":  "gofmt -l now lists exactly the 7 .go paths of the write set (:3163-:3169); set comparison shows empty differences in both directions and matching order; evidence report at :3170 still excluded from the 7-file write set",
+                                 "residual":  "none"
+                             },
+                             {
+                                 "id":  "B13J-R06-F002",
+                                 "severity":  "MEDIUM",
+                                 "status":  "CLOSED",
+                                 "location":  "tasks.md:3182, :3183, :3184, :3189, :3193",
+                                 "evidence":  "Host gate go env GOOS at :3182 (POSIX exit 0 does not count); :3183/:3184 require an actual -json \"Action\":\"pass\" event for the test, no execution means failure; close condition (5) requires recorded GOOS, execution on both host classes, and treats exit-0-without-execution as unverified; stop condition :3193 forbids passing off an empty run; heading 13 commands matches 13 command lines (:3174-:3186), 13 unique",
+                                 "residual":  "Semantics nit O01 and Windows race toolchain risk O02 are observations, not blockers"
+                             }
+                         ],
+    "drift_check":  {
+                        "tasks_1_3154":  "842938:31B0BB3EDFD584FECD683B84758748D0BF6588CB2BFF728353FF0E8580C05152 (equal to frozen value)",
+                        "s424b_card_after":  "3155-3193 8007B 1F44129480141226B2AEB2325715404D894305995B6E3CC335D4852743917FBB",
+                        "s422_card_after":  "3194-3226 6224B A2F5EB15BFF6D2C19A29410DDCDF49D5AB9D680D187A4EB7CA26F3408E4EB351 (byte-identical to pre-fix 3193-3225)",
+                        "delta":  "+698 B / +1 line",
+                        "changed_lines":  "3172, 3174, 3182 (added), 3183, 3184, 3189, 3193",
+                        "line_by_line":  "Compared against the card body printed during r06: differences occur only at the listed lines; target, write set 3163-3170, requires, 3178-3181, oracle paragraph, evidence location, owner and non-claim boundary are byte-identical",
+                        "plan_unchanged":  true
+                    },
+    "new_findings":  [
+
+                     ],
+    "observations":  [
+                         {
+                             "id":  "O01",
+                             "note":  "go env GOOS at :3182 is counted among the 13 commands that must exit 0, but its pass criterion is the value, not the exit code (it exits 0 everywhere); the inline note and :3189(5) supply the real criterion, so no false pass, only loose framing"
+                         },
+                         {
+                             "id":  "O02",
+                             "note":  "-race at :3184 needs CGO and a C toolchain on windows/amd64; implementations should record toolchain availability in evidence and must not relax (5)"
+                         },
+                         {
+                             "id":  "O03",
+                             "note":  "author-index top-level changed_files/changes[] still describe the r02 end state (after=856471/3225, \"12 commands\"); r03 state lives in r03_microfix and author-report section 7 explicitly states section 1 is superseded — disclosed staleness, no impact"
+                         },
+                         {
+                             "id":  "O04",
+                             "note":  "boundary.changed_existing_cards=false still conflicts with the r03 edit of the S4.24b card text (same as r06 O05); fully disclosed line-by-line in r03_microfix"
+                         },
+                         {
+                             "id":  "O05",
+                             "note":  "Historical statistics off-by-one at :46/:47/:49 persists and the TAB/0x0C bytes are untouched; no repair authorization"
+                         },
+                         {
+                             "id":  "O06",
+                             "note":  "B13J-R05-F005 (ADR-0032 candidate wording at framework.md:1121/:1123-:1125) still OPEN, deferred to the next ADR-0032 revision"
+                         }
+                     ],
+    "consistency_scan":  {
+                             "command_count":  "13 heading vs 13 command lines, 13 unique, no duplicates",
+                             "gofmt_scope":  "7 paths equal to write set, no missing, no extra",
+                             "stale_counts":  "only :3172 mentions 13; no residual \"12 commands\" in cards",
+                             "references":  "no bare S4.24 (rg --pcre2 exit 1); no ADR-0032 r60 (exit 1)",
+                             "scope":  "no hunk outside the S4.24b card"
+                         },
+    "commands":  [
+                     {
+                         "n":  1,
+                         "command":  "git rev-parse HEAD; git branch --show-current",
+                         "result":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca; main"
+                     },
+                     {
+                         "n":  2,
+                         "command":  "bytes + SHA256 for tasks, Plan, framework, both author evidence files",
+                         "result":  "matches section 2 of report"
+                     },
+                     {
+                         "n":  3,
+                         "command":  "print tasks.md 3156-3193",
+                         "result":  "13 commands, 7 gofmt paths, GOOS gate, strengthened (5) and stop condition"
+                     },
+                     {
+                         "n":  4,
+                         "command":  "parse write set :3162-:3170 and :3174, Compare-Object",
+                         "result":  "7 vs 7, no differences either direction"
+                     },
+                     {
+                         "n":  5,
+                         "command":  "count command lines :3174-:3186 and dedupe",
+                         "result":  "13 lines, 13 unique; heading says 13"
+                     },
+                     {
+                         "n":  6,
+                         "command":  "byte-span SHA256 for 1-3154, 3155-3193, 3194-3226",
+                         "result":  "31B0BB3E...C05152, 1F441294...917FBB, A2F5EB15...4EB351"
+                     },
+                     {
+                         "n":  7,
+                         "command":  "delta arithmetic",
+                         "result":  "+698 B / +1 line; S4.22 card fingerprint unchanged"
+                     },
+                     {
+                         "n":  8,
+                         "command":  "rg for acceptance-command counts in tasks and Plan",
+                         "result":  "only :3172 with 13; no residual 12 in cards"
+                     },
+                     {
+                         "n":  9,
+                         "command":  "rg -n --pcre2 \"S4\\.24(?!a|b)\"",
+                         "result":  "exit 1, zero matches"
+                     },
+                     {
+                         "n":  10,
+                         "command":  "rg -n \"ADR-0032 r60\" tasks.md",
+                         "result":  "exit 1, zero matches"
+                     },
+                     {
+                         "n":  11,
+                         "command":  "print statistics lines and S4.22 card head",
+                         "result":  "unchanged; historical off-by-one remains"
+                     },
+                     {
+                         "n":  12,
+                         "command":  "re-hash r06 evidence",
+                         "result":  "unchanged (see section 2)"
+                     },
+                     {
+                         "n":  13,
+                         "command":  "git status --porcelain",
+                         "result":  "293 lines"
+                     }
+                 ],
+    "not_run":  "Go build/test, PG, services, any Git write; Windows/POSIX executability is a static judgement",
+    "not_covered":  [
+                        "No command was executed on Windows or POSIX, so removal of the vacuous-pass path is a textual-constraint judgement, not runtime evidence",
+                        "No byte-level r02-\u003er03 diff (no in-repo r02 snapshot); scope determined by prefix fingerprint, S4.22 card fingerprint, delta arithmetic and line-by-line comparison with the r06 card body",
+                        "No re-review of r01-r05 closed items or ADR/design conclusions",
+                        "Plan batches outside this card and article-management-S8.2 / Case18 state not checked"
+                    ],
+    "format":  {
+                   "report":  {
+                                  "bytes":  9186,
+                                  "sha256":  "5F777D49840C02920FB36BBC8845CA814FE5E256C273A01C58435F04B50C1867",
+                                  "lf":  95,
+                                  "crlf":  0,
+                                  "bom":  false,
+                                  "trailing":  "single LF",
+                                  "control_chars":  0,
+                                  "tab":  0
+                              },
+                   "index":  {
+                                 "newline":  "LF",
+                                 "bom":  false,
+                                 "json_valid":  true,
+                                 "self_hash_note":  "A file cannot embed its own SHA256; files[] lists only report.md. The index hash is measured after write and reported to Lead."
+                             }
+               },
+    "boundaries":  [
+                       "This confirmation is not an implementation authorization",
+                       "It does not register, start or advance S4.22/S4.23/S4.24a/S4.24b",
+                       "It does not close pending-B13J-D04",
+                       "It does not release blocked-upstream",
+                       "It is not a human sign-off",
+                       "Only this evidence directory was written; no Git writes; no Go/PG/service runs"
+                   ],
+    "files":  [
+                  {
+                      "path":  ".spec/wip/recovery-runtime/evidence-b13j-r01/planning-review-r07/report.md",
+                      "bytes":  9186,
+                      "sha256":  "5F777D49840C02920FB36BBC8845CA814FE5E256C273A01C58435F04B50C1867"
+                  }
+              ]
+}

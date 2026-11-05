@@ -1,0 +1,249 @@
+{
+  "scope": "s3.5-review-r04",
+  "at": "2026-10-28T03:16:30.390228+00:00",
+  "original_index_sha256": "4802B41BDEE38898246996B3CA85650A03304F16F8BAE20738D7BFD78FC29D8D",
+  "records": [
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\deploy\\observability\\identity-alerts.yaml",
+      "copy": "payload/repo/deploy/observability/identity-alerts.yaml",
+      "sha256": "A341B8651CF3A37DCDECEF58AA061D2F5AD243103D18C59CD2FBCBF336738422",
+      "bytes": 2845
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\deploy\\observability\\identity-alerts.test.yaml",
+      "copy": "payload/repo/deploy/observability/identity-alerts.test.yaml",
+      "sha256": "DCE00924EC9993CC5DB017D0B924242FEB87AC18F82C50DE77EBE3EF2CA7C213",
+      "bytes": 15840
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\deploy\\observability\\identity-grafana-dashboard.json",
+      "copy": "payload/repo/deploy/observability/identity-grafana-dashboard.json",
+      "sha256": "4736FAF82DFE82B28C658BACDEE0C9A8EB1EA61CCE28DC982AF6FE336C665015",
+      "bytes": 9840
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\deploy\\observability\\identity-alertmanager-routing.yaml",
+      "copy": "payload/repo/deploy/observability/identity-alertmanager-routing.yaml",
+      "sha256": "C2177891552E9797EDE767AA7AA420828C7F666C349951AD483CB36DE3B42EC2",
+      "bytes": 925
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\docs\\runbooks\\identity-observability.md",
+      "copy": "payload/repo/docs/runbooks/identity-observability.md",
+      "sha256": "3DB9B5421E98040B194832377B960EED9C701DB05638AF8F7E70CB9346632887",
+      "bytes": 22110
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.add\\project\\knowledge\\tasks\\tasks.md",
+      "copy": "payload/repo/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "22C4796844643688FEA82925966656CF51C6CD0FA2885190ADFBC712BAE7ACDA",
+      "bytes": 424649
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.add\\project\\knowledge\\plans\\ir-01-content-community-batches.md",
+      "copy": "payload/repo/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "C9EACB04A51545DB77715C32B6F76C7B234C6407325CF61F87AFF9C66FBD6EBD",
+      "bytes": 408913
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.add\\project\\knowledge\\decisions\\framework.md",
+      "copy": "payload/repo/.add/project/knowledge/decisions/framework.md",
+      "sha256": "4FA647D562B869A4D5F09241244937F5E7066A6837965C766E39B6B7099315A2",
+      "bytes": 82065
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.add\\project\\knowledge\\design-workspace\\identity-auth\\design.md",
+      "copy": "payload/repo/.add/project/knowledge/design-workspace/identity-auth/design.md",
+      "sha256": "D57BB2152A93F6F651165EE7DBE1913B28E9E8719B6991B1FDD36E8B7DBAB7FE",
+      "bytes": 634074
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.add\\project\\knowledge\\design-workspace\\identity-auth\\test-plan.md",
+      "copy": "payload/repo/.add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+      "sha256": "0052894D3C4B58F644749F8337BB264FD2768DD26A31C7EA0A361F0F61D939BD",
+      "bytes": 196280
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\add.manifest.yaml",
+      "copy": "payload/repo/add.manifest.yaml",
+      "sha256": "E8F5E9C1CDB0548BE00F20A187DEA22347D40C8FF2E5E8D61E563699DA253F80",
+      "bytes": 3056
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.spec\\wip\\identity-auth\\review-code-s3.5-r01.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-code-s3.5-r01.md",
+      "sha256": "E9D0822E20E9A55C012F58B7A0D681F895058BA9BD6BAB1536EAAFEBBD7CF241",
+      "bytes": 12894
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.spec\\wip\\identity-auth\\review-code-s3.5-r02.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-code-s3.5-r02.md",
+      "sha256": "43C0B18850540CC405F269B26E19A032D4BBA478FFF32CEDDAC6EB0E1DACF9F5",
+      "bytes": 11806
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.spec\\wip\\identity-auth\\review-code-s3.5-r03.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-code-s3.5-r03.md",
+      "sha256": "96C395621E87C4A35700A6F9C11DE68B53EFA92C254FA106D3461EA1EE25A805",
+      "bytes": 8471
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.spec\\wip\\identity-auth\\review-validation-waivers-r01.json",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-validation-waivers-r01.json",
+      "sha256": "A793E9995CB2FD7C41173B6C4097F1E6442AB9412BA1249F86D4A4B914E5CAF6",
+      "bytes": 1581
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\repo\\.spec\\wip\\identity-auth\\review-code-s3.5-r04.md",
+      "copy": "payload/repo/.spec/wip/identity-auth/review-code-s3.5-r04.md",
+      "sha256": "E4E0849679967F52D308679708C74765595D7DB9347D23057CE71FE3834C5F28",
+      "bytes": 13674
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\receipts\\lead-runbook-scope-diff.json",
+      "copy": "payload/receipts/lead-runbook-scope-diff.json",
+      "sha256": "4CDAC764B492DEFA691F24AE33990450684246789F179AFA629D168BAC978F9C",
+      "bytes": 584
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload\\receipts\\lead-prior-manifest-applicability.json",
+      "copy": "payload/receipts/lead-prior-manifest-applicability.json",
+      "sha256": "06DA785C9B4905971AAFF588DD37FB6C14072DF113E26988D3C4296737A485CD",
+      "bytes": 1354
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\after.json",
+      "copy": "after.json",
+      "sha256": "1227EDB95B6B884322FFB14B5468AB7D769C463B3652B00C0401984C0ED9B4BA",
+      "bytes": 22369
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\baseline.json",
+      "copy": "baseline.json",
+      "sha256": "9588472BF28DD774AECC209C9D7AC7EA73632897A25B81D7A604534AA3406D47",
+      "bytes": 22414
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\before-read-dependencies.json",
+      "copy": "before-read-dependencies.json",
+      "sha256": "62518083048C111B3F9455F4D985284FA51E989FDFBC41B6830A2B28175F114D",
+      "bytes": 5634
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\before.json",
+      "copy": "before.json",
+      "sha256": "1227EDB95B6B884322FFB14B5468AB7D769C463B3652B00C0401984C0ED9B4BA",
+      "bytes": 22369
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\dependency-protection.json",
+      "copy": "dependency-protection.json",
+      "sha256": "414285F4273AF3E57F695A2039831230EF08DD02A8A50DA5BAF94E40F50268C6",
+      "bytes": 10352
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\fixture-arithmetic.json",
+      "copy": "fixture-arithmetic.json",
+      "sha256": "D432E937D9ACA36E3AB49A455CCF4DA271730F1441DABC93184849E0A5EEFD1E",
+      "bytes": 398
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\git-readonly-checks.json",
+      "copy": "git-readonly-checks.json",
+      "sha256": "AF8F1B9896B51443444788EA3089EF1E94F862CA4229F6A97AF6B919E485E6B6",
+      "bytes": 979
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\package_handoff.py",
+      "copy": "package_handoff.py.txt",
+      "sha256": "AD86502A427AE034E55CC790995739CDCC7FC3D9B6A4232CDA1F180D69FD86E3",
+      "bytes": 8462
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\protection-check.json",
+      "copy": "protection-check.json",
+      "sha256": "BEC67A60A66134166B64AC0F7C37593AB1F243141166104C2B501F94084D6629",
+      "bytes": 333
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\read.py",
+      "copy": "read.py.txt",
+      "sha256": "2E018B16E7D5774C385B5FFDA0195798358B0E1388532CA0D8148C82AD9E2550",
+      "bytes": 810
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\readset.jsonl",
+      "copy": "readset.jsonl",
+      "sha256": "586FB9FB78BC2EB748218CA70AE4D4D1EB7F3AC33322CC4BC00CFD62DFA9AB77",
+      "bytes": 18282
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\reviewed-readset.json",
+      "copy": "reviewed-readset.json",
+      "sha256": "2E29875802BB2432867FA88E19734DCB26D428AB1275457A93A0408726705229",
+      "bytes": 13941
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\runbook-r03-reconstructed.md",
+      "copy": "runbook-r03-reconstructed.md",
+      "sha256": "390963951DB1A4225E957375F3C2A2790D64D09AC224423B8CE5D433C08FB0DF",
+      "bytes": 20957
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\s32-upstream18.json",
+      "copy": "s32-upstream18.json",
+      "sha256": "649E15F97807CFC7B94CE27CF9205658D1858FDC5535CEB3B3EF364D54E4348D",
+      "bytes": 4429
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\static-results.json",
+      "copy": "static-results.json",
+      "sha256": "D4C3B1F07049D988F3B47F37F0FA367B5BA1CE881CEDF80AF4E85A0320D1FCF0",
+      "bytes": 6620
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\static_review.py",
+      "copy": "static_review.py.txt",
+      "sha256": "E5B35460C79EA07262B54F1DA45E86E3108C9C0D7AACAC3D330F90057602FA9F",
+      "bytes": 7111
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\status-after.txt",
+      "copy": "status-after.txt",
+      "sha256": "7DB0FD486C86C3272C6C0F6632AC040971D6A0C1DEB04FB3CEED3CC7A37E95CD",
+      "bytes": 14825
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\status-before.txt",
+      "copy": "status-before.txt",
+      "sha256": "7DB19DD14861BAB404D71576FC0A17D76CE21B6D338899C10FC458B2374331DA",
+      "bytes": 14727
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\status-delta.json",
+      "copy": "status-delta.json",
+      "sha256": "24FD756E7A7FB850792DB4FBFDE477B59ACECEE943FCDF2F92A0B4EF49D865BB",
+      "bytes": 334
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s35-review-r04-553241dc7d\\payload-index.json",
+      "copy": "original-payload-index.json",
+      "sha256": "4802B41BDEE38898246996B3CA85650A03304F16F8BAE20738D7BFD78FC29D8D",
+      "bytes": 13216
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-s35-lead-k2hnhmtu\\lead-runbook-scope-diff.json",
+      "copy": "lead/runbook-scope-diff.json",
+      "sha256": "4CDAC764B492DEFA691F24AE33990450684246789F179AFA629D168BAC978F9C",
+      "bytes": 584
+    },
+    {
+      "original": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s33-s35-lead-k2hnhmtu\\lead-prior-manifest-applicability.json",
+      "copy": "lead/prior-manifest-applicability.json",
+      "sha256": "06DA785C9B4905971AAFF588DD37FB6C14072DF113E26988D3C4296737A485CD",
+      "bytes": 1354
+    }
+  ],
+  "source_binding_index": "../prep-r01/index.json",
+  "limits": "No cache or live credentials copied. Scope waivers are NOT RUN, not platform/browser PASS; seven application checks are same-source evidence from the previous run, not newly executed."
+}

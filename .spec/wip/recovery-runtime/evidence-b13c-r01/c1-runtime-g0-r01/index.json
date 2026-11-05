@@ -1,0 +1,74 @@
+{
+  "scope": "c1-runtime-g0-r01",
+  "owner": {
+    "role": "Backend-Dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-c1-runtime-g0-d5zhsgfk",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/finalize.py",
+      "sha256": "AEC1450CE14E405A39A43E38E679F003025A4309851A1D118DCC45A47DE5C756",
+      "bytes": 6610,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/g0receipt.md",
+      "sha256": "085EDAD1F90D6F0DA946E1D1F4D8321DAAD5D20B8D85E888B55CAA48FD6D2CAC",
+      "bytes": 11894,
+      "source_name": "g0receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/guard.json",
+      "sha256": "1C4221968617EEFD4BF70BA181F56999CC12132CD4CB3C56736DB6799BDDDC26",
+      "bytes": 868,
+      "source_name": "guard.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/source-index.json",
+      "sha256": "883051A2F34C17D26DB1CD70E65EAB55074313E5B10C3A218A9B5F6CFEEAACA7",
+      "bytes": 1298,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/read.py",
+      "sha256": "41003EFAA1D35E8552A05CB7C6C008C17F982C6F0BC9BA533B3A2BBD6D6FE333",
+      "bytes": 809,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/readset.json",
+      "sha256": "6BD8C9253DEF331A5F4035FB69B022779AAE3046E79890861B0A077113F50777",
+      "bytes": 13934,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/readset.jsonl",
+      "sha256": "B6618460F24DFF23958C6A230A8291931FA3869D5CCBE1BF091D8863EABF6A8C",
+      "bytes": 9730,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/readset.md",
+      "sha256": "782C03FB1226E02B29EF93C820E9337D07BA0B161D3AF649C124AE90C9E726F3",
+      "bytes": 5518,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/source-beforehash.json",
+      "sha256": "912FADB1BEEC8A35E379907D64E246B5298D529C9D9164D265487288FCBBC636",
+      "bytes": 2391,
+      "source_name": "source-beforehash.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/c1-runtime-g0-r01/validationplan.md",
+      "sha256": "5BE9107BC81DB9858D1FB6EEDCE241F424ED1F5A6186B1C05225F320E007FC58",
+      "bytes": 6088,
+      "source_name": "validationplan.md"
+    }
+  ]
+}

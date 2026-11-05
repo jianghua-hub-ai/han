@@ -1,0 +1,121 @@
+{
+  "scope": "planner-prep",
+  "agent": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-runtime-tp-readonly-c4900677683f40c1a1449ebfcbcda105",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/absence-and-task-counts.json",
+      "sha256": "1E77B0F3E344C4FBB8196BC1AC9D5AF34C7FEB4BEEB5F808A93747AF4EF0162F",
+      "bytes": 2879,
+      "source_name": "absence-and-task-counts.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/absence.py",
+      "sha256": "FD7C07C357849E71FF62B47B3D25948854713C819034E4E6EF1DC55718C0F6F3",
+      "bytes": 2113,
+      "source_name": "absence.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/baseline-after.json",
+      "sha256": "3A5CDB4F387C6A2D2176EAEB5C23A44C6C3FFCAAAC234E72AA03B374D2D565B3",
+      "bytes": 30552,
+      "source_name": "baseline-after.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/baseline.json",
+      "sha256": "1E0071E8D00BF8C6EAF690126DA6A7215346668F527DEBDBC075C99F0687DB45",
+      "bytes": 31391,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/candidates.json",
+      "sha256": "4E79A463FC9CF17B6EA5B5C3FF0E1F0BD92DB8C8DBA18DDF4D660419591C2B2D",
+      "bytes": 35398,
+      "source_name": "candidates.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/finalize.py",
+      "sha256": "CCAA5FBDAC2D77C36E81B1C7E287E9678F418F8F341CE83E7CE3A99F679E9239",
+      "bytes": 12136,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/gap-map.md",
+      "sha256": "7987C017919F700C7D68330695355636295A41A82FABE628A61766EB71AE7889",
+      "bytes": 18183,
+      "source_name": "gap-map.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/make_candidates.py",
+      "sha256": "86A09F5FEA9555A534562ED46C11EDF8185645ED08F48699EB91EDE033EE5EC4",
+      "bytes": 33365,
+      "source_name": "make_candidates.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/ownership-audit.json",
+      "sha256": "7E737CE668F20343A63FA397B187E62778CB404524348E79619A70BA4D242E1F",
+      "bytes": 1119,
+      "source_name": "ownership-audit.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/ownership-candidates.md",
+      "sha256": "B60FDE2407405B50A38921089CCBC7CC2CAF0A66B537D43A5D7F6D0515B2F789",
+      "bytes": 43929,
+      "source_name": "ownership-candidates.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/read.py",
+      "sha256": "E00A53B64FFB77ECA7BD0D783658DA89D0663E5D05269D2532D2E5C1C54423C1",
+      "bytes": 2885,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/readset.jsonl",
+      "sha256": "B5711995E26EB441750925270166C91C5E3C6881C7715E8B703BD1651785E12D",
+      "bytes": 32661,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/readset.md",
+      "sha256": "079967B44F57564F2B5F01838D9EE9351AE67A0C172653846D95C2F072419F6B",
+      "bytes": 13894,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/receipt.json",
+      "sha256": "E0653D3CDB903EC7B33C9231E3E838F6B7E3D0EC2EF42A128C3ADF9292EE3D67",
+      "bytes": 604,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/receipt.md",
+      "sha256": "3BDA2E005587F69A2C62D0CFF51F98BC90BAF821E77FDBDC7ECC45CD1B55DFED",
+      "bytes": 2679,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/scan.py",
+      "sha256": "A871360A4CB2F5E89F5B9A7241200E2ADD95B6EC793CC8397B85C75067448A59",
+      "bytes": 958,
+      "source_name": "scan.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/sha256sums.json",
+      "sha256": "42A43A325D7C357D549F6FF9807D5D378EE8E32303852829E5714F6744FC8E48",
+      "bytes": 1521,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planner-prep/verification.json",
+      "sha256": "6D798D1F05383552FACF6A342681F8DD128836D9E124FD63E1992A48990BCCD5",
+      "bytes": 16870,
+      "source_name": "verification.json"
+    }
+  ]
+}

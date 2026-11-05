@@ -1,0 +1,91 @@
+{
+  "scope": "s410-temp-preparation-r01",
+  "owner": {
+    "role": "add-backend-dev",
+    "nickname": "Zeno",
+    "runtime_id": "01a18486-3e11-7852-9723-ad380e0bb392"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-s410-proposal-8q370efe",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/codeproposal.md",
+      "sha256": "9ED39A1C2E136B846E2E44DA673A5C83D47BCBFDD3F283FD237F8BFA61E44428",
+      "bytes": 14063,
+      "source_name": "codeproposal.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/guard.json",
+      "sha256": "BC017CEDC7DA1DB97EB2407C6D8D2F821F14160B634F8A9F2A6367F9C4BF07A2",
+      "bytes": 12523,
+      "source_name": "guard.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/source-index.json",
+      "sha256": "48825C694533F73C2EECC7782AECCA5B325446260135C6679C96A064EB67F2B8",
+      "bytes": 2155,
+      "source_name": "index.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/methods-reused.json",
+      "sha256": "E13B4EE0D5D9DCB1A21E54DC7F4CC4B2F43A95F0C296967697226F4A3B3821FD",
+      "bytes": 5069,
+      "source_name": "methods-reused.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/preparation-diagnostics.json",
+      "sha256": "8A60E9B45C5E9E3B35A13094D7028BC9F8C6305C81FDF2AF5B10D5D16486300F",
+      "bytes": 607,
+      "source_name": "preparation-diagnostics.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/read.py",
+      "sha256": "1AE80F4072D359BF1D096CAD105789F6B15F98E4ED4203F78371661B58E62087",
+      "bytes": 575,
+      "source_name": "read.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/readset.jsonl",
+      "sha256": "E81701F506A1EB87A5E3DEF6AFB0E61B4339FB3338F9CD0C119FFE144D457CFF",
+      "bytes": 10256,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/readset.md",
+      "sha256": "20E804FCDDAD6299CBBF172410F57D8BBB101153EFA25AB31DD5338668E183BA",
+      "bytes": 5068,
+      "source_name": "readset.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/receipt.md",
+      "sha256": "E85B1C4A6DB309227AD1B30503E69227B2BE450029854F4E6398A7F8D64127B9",
+      "bytes": 4353,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/recovery_execution.go.draft",
+      "sha256": "563DACCE923EA3DFF76D3007E031478D46327CCED402E82DBC9DC8DCF4B1346D",
+      "bytes": 8940,
+      "source_name": "recovery_execution.go.draft"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/recovery_execution_postgres_test.go.draft",
+      "sha256": "505BD8E1538EA66B79F18B47C661FD06E150C52648B5B479EE586B28B9E5DE00",
+      "bytes": 7355,
+      "source_name": "recovery_execution_postgres_test.go.draft"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/recovery_execution_test.go.draft",
+      "sha256": "9C0161416B342559C4CD1792F7906EF0A598D0688073863FDF7838F8C72DAD47",
+      "bytes": 3613,
+      "source_name": "recovery_execution_test.go.draft"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/s410-temp-preparation-r01/risk-validation.md",
+      "sha256": "388806B6E201B1C2C57BDF200A86E4E004864C82544E12A201271EA54A385D37",
+      "bytes": 3170,
+      "source_name": "risk-validation.md"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

@@ -1,0 +1,157 @@
+{
+  "scope": "planning-author-r02",
+  "agent": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "provenance": "Actual runtime ID returned by Host; raw original receipt retained; Agent report is not human acceptance",
+  "main_reception": "Main has read the reported receipt and applicable reports/diffs; payload copies verified by bytes, not every helper file interpreted as prose",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-runtime-planning-f001-repair-fc80f45519244f4485f2038950884720",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/after/.add/project/knowledge/decisions/framework.md",
+      "sha256": "902D6F066BE6B0F728C9946E1EE83B69608A92F37FF80C929431D7267A47B4F8",
+      "bytes": 101915,
+      "source_name": "after/.add/project/knowledge/decisions/framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/after/.add/project/knowledge/decisions/README.md",
+      "sha256": "7112FA46EF75F8130AA900CF46D5532521D9E5002160FB8BBBDB3031FFF6AFB4",
+      "bytes": 15477,
+      "source_name": "after/.add/project/knowledge/decisions/README.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/after/.add/project/knowledge/design-workspace/article-management/test-plan.md",
+      "sha256": "E2E7ADFD0581BCCE9CD2782F7181C12BA67A8496A1A321EF88006EA94D9FCA27",
+      "bytes": 312862,
+      "source_name": "after/.add/project/knowledge/design-workspace/article-management/test-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/after/.add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+      "sha256": "468864D2FBA7281CABDCA0C771D56E1316BAFAE8B0F9B524269435E544BDF41D",
+      "bytes": 306129,
+      "source_name": "after/.add/project/knowledge/design-workspace/identity-auth/test-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/after/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "1B2540B5F59756FF3D4B397B90FE44E6111700DCA8F8538A75BE863B99CCF9C7",
+      "bytes": 446481,
+      "source_name": "after/.add/project/knowledge/plans/ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/after/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "D7059350422894480AE2B0E10F310E973B3CAAC27FA6B49B2AE5DFEB5A7C5993",
+      "bytes": 542311,
+      "source_name": "after/.add/project/knowledge/tasks/tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/baseline.json",
+      "sha256": "CFCD93484A7FF0251342133D4740A2535391593D5A91D206070A7736395AAC3B",
+      "bytes": 151380,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/before/.add/project/knowledge/decisions/framework.md",
+      "sha256": "902D6F066BE6B0F728C9946E1EE83B69608A92F37FF80C929431D7267A47B4F8",
+      "bytes": 101915,
+      "source_name": "before/.add/project/knowledge/decisions/framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/before/.add/project/knowledge/decisions/README.md",
+      "sha256": "7112FA46EF75F8130AA900CF46D5532521D9E5002160FB8BBBDB3031FFF6AFB4",
+      "bytes": 15477,
+      "source_name": "before/.add/project/knowledge/decisions/README.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/before/.add/project/knowledge/design-workspace/article-management/test-plan.md",
+      "sha256": "E2E7ADFD0581BCCE9CD2782F7181C12BA67A8496A1A321EF88006EA94D9FCA27",
+      "bytes": 312862,
+      "source_name": "before/.add/project/knowledge/design-workspace/article-management/test-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/before/.add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+      "sha256": "468864D2FBA7281CABDCA0C771D56E1316BAFAE8B0F9B524269435E544BDF41D",
+      "bytes": 306129,
+      "source_name": "before/.add/project/knowledge/design-workspace/identity-auth/test-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "1B2540B5F59756FF3D4B397B90FE44E6111700DCA8F8538A75BE863B99CCF9C7",
+      "bytes": 446481,
+      "source_name": "before/.add/project/knowledge/plans/ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/before/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "0F197F4586195FEC2340DF074C00CAB6D7EBD6C5AA196F11BF585DDB867A7B08",
+      "bytes": 541086,
+      "source_name": "before/.add/project/knowledge/tasks/tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/finalize.py",
+      "sha256": "09EF8AF589D0166841EA51D9DBE9A14797AD5033F445D3FEC403B5FE09312E06",
+      "bytes": 12625,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/prewrite-verification.json",
+      "sha256": "66A798430E24994A7D0B4E1A259800004B54DB650681C91A04B661A4C21F99DC",
+      "bytes": 29988,
+      "source_name": "prewrite-verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/readset.json",
+      "sha256": "E7D6AB81586827A4422E9C9F0C2845B7F54E207E3AB2EC8FF28143002C5B2643",
+      "bytes": 2671,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/receipt.json",
+      "sha256": "3495BD92241105E1A391C27704F13426234BAB992A1E82AA50D72E9229C7BE52",
+      "bytes": 4116,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/receipt.md",
+      "sha256": "F6D339E2F7FB6EE649CE4406A09FC773E552669D20E4E76AA0CBF13BAA6E9ED6",
+      "bytes": 3264,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/repair.py",
+      "sha256": "EEFFDE349140F0A5A1F48BEA3B5520306612645E01A0187A4820D22A89FE6062",
+      "bytes": 6532,
+      "source_name": "repair.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/replacements.json",
+      "sha256": "7515B12698CF8BB13CED669983C8E11340E2294ED63F655CBF48C22904212131",
+      "bytes": 2718,
+      "source_name": "replacements.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/sha256sums.json",
+      "sha256": "CB1CDDEED0CE12B6420737B3751654974E51D85E8B83D77F25880D68BB8375F4",
+      "bytes": 2615,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/tasks.diff",
+      "sha256": "81E2BEC85FB73E12D991D7B5FB26FBDC2433E1AF2768A1FDA1E415D51F214B01",
+      "bytes": 7220,
+      "source_name": "tasks.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/validation-attempts.json",
+      "sha256": "135AA76133093BCDF2C0AF55BEE9649696339906AF96CA39CFBB7FD8E91AD533",
+      "bytes": 648,
+      "source_name": "validation-attempts.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-author-r02/verification.json",
+      "sha256": "B093F7CFCF535DEE90D938A817606CAF8EB1A66424F54F04F8BC9FC1C3C39F0C",
+      "bytes": 3005,
+      "source_name": "verification.json"
+    }
+  ]
+}

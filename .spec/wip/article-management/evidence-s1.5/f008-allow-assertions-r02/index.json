@@ -1,0 +1,103 @@
+{
+    "evidence":  "f008-allow-assertions-r02",
+    "card":  "article-management-S1.5",
+    "finding":  "S15-RE-F008",
+    "kind":  "test-side-fix-evidence",
+    "supersedes":  "f008-allow-assertions-r01 (bookkeeping only; r01 files retained unchanged)",
+    "superseded_because":  [
+                               "leaf count 33 vs actual 34",
+                               "durations copied from a different execution",
+                               "no saved gofmt log",
+                               "race log single line without per-leaf proof"
+                           ],
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "generated_at":  "2026-10-31T23:22:32+08:00",
+    "single_execution_round":  true,
+    "counts_derived_from_logs":  true,
+    "source":  {
+                   "cmd/han-server/main_test.go":  {
+                                                       "sha256":  "3720652EF4774011732455D4901ADFC7D98096F0BECED4F8479F73819F9A7ECC",
+                                                       "bytes":  400312,
+                                                       "stable_across_runs":  true
+                                                   },
+                   "cmd/han-server/main.go":  {
+                                                  "sha256":  "6D5373CA1535C41A5FA340D2B75834EB7E15AEEE39ABF9928BD0E0A210CF8727",
+                                                  "bytes":  173317,
+                                                  "changed_in_this_round":  false
+                                              }
+               },
+    "code_changes":  [
+                         "inject trace seam and record events",
+                         "assert Allow equals mainOrphanAllow(t, action) exactly",
+                         "assert events == [trace] and resolver.calls == 0",
+                         "mainOrphanAllow now takes *testing.T; publish/transfer explicit; default calls t.Fatalf"
+                     ],
+    "production_allow_literals":  {
+                                      "main.go:3613":  "GET (list)",
+                                      "main.go:3615":  "POST (publish)",
+                                      "main.go:3617":  "POST (transfer)",
+                                      "main.go:3653":  "GET, DELETE (detail/delete)"
+                                  },
+    "leaves":  {
+                   "targeted_normal_subtest_pass":  34,
+                   "targeted_race_subtest_pass":  34,
+                   "targeted_race_top_level_pass":  2,
+                   "fail":  0,
+                   "skip":  0
+               },
+    "runs":  [
+                 {
+                     "name":  "targeted-normal",
+                     "command":  "go test ./cmd/han-server -run \u0027^TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity$\u0027 -count=1 -v",
+                     "exit":  0,
+                     "duration":  "1.326s",
+                     "log":  "f008-targeted-normal.log",
+                     "sha256":  "309047C765243AF0D59A6B83FC14F5F2CCE02A9EFBFD6C60A8241484738E19A9",
+                     "bytes":  7036
+                 },
+                 {
+                     "name":  "targeted-race",
+                     "command":  "go test -race ./cmd/han-server -run \u0027^(TestOrphanDispositionProductionRoutes_RealHandlersEnforceSecurity|TestOrphanDispositionProductionRoutes_ExactPathsAndSharedAdapter)$\u0027 -count=1 -v",
+                     "exit":  0,
+                     "duration":  "3.027s",
+                     "log":  "f008-targeted-race.log",
+                     "sha256":  "600C463A42C40AB3466A0B3E12AF425CAD9163BAD1B7109D78616925F9ACD726",
+                     "bytes":  7194
+                 },
+                 {
+                     "name":  "full-package-normal",
+                     "command":  "go test ./cmd/han-server -count=1",
+                     "exit":  0,
+                     "duration":  "39.076s",
+                     "log":  "full-package-normal.log",
+                     "sha256":  "C4B92BBD6064061F8D155CC942BC7A0226155FFB61C0A7734B3DE5B8EB937EDD",
+                     "bytes":  32
+                 },
+                 {
+                     "name":  "go-vet",
+                     "command":  "go vet ./cmd/han-server",
+                     "exit":  0,
+                     "duration":  null,
+                     "log":  "go-vet.log",
+                     "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                     "bytes":  0
+                 },
+                 {
+                     "name":  "gofmt",
+                     "command":  "gofmt -l cmd/han-server/main_test.go",
+                     "exit":  0,
+                     "duration":  null,
+                     "log":  "gofmt.log",
+                     "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                     "bytes":  0
+                 }
+             ],
+    "boundaries":  [
+                       "does not prove real Session/SQL, real PostgreSQL, Journal/old backup, Case18 global recovery isolation, application-role ACL or deployment E2E",
+                       "trace seam records event order only; does not prove absence of every side effect",
+                       "source consistency via SHA256 only (cmd/ is untracked); no git writes performed",
+                       "not yet independently re-reviewed after this revision; S15-RE-F008 stays open until re-review PASS"
+                   ]
+}

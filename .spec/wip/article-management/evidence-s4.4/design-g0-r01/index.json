@@ -1,0 +1,108 @@
+{
+  "scope": "Fixed r22 and independent design PASS plus backend read-only G0; no code/PG execution",
+  "captured_at": "2026-10-27T22:28:12.614645+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-design-r22-8515ba6ac19f438080f00f790e578d93\\design.r21.before.md",
+      "copy": "designer/design.r21.before.md",
+      "role": "Hubble",
+      "sha256": "A4C9FD6589DC5FDE912DE8E5CD6C076268AD077A218F9866439B9477A479C3BA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-design-r22-8515ba6ac19f438080f00f790e578d93\\design.r21-to-r22.actual.diff",
+      "copy": "designer/design.r21-to-r22.actual.diff",
+      "role": "Hubble",
+      "sha256": "3735F448C99DE29724347CB95BBDAFA1B88E590F8BCC2324A1E6C195F2228A62"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-design-r22-8515ba6ac19f438080f00f790e578d93\\actual-readset.json",
+      "copy": "designer/actual-readset.json",
+      "role": "Hubble",
+      "sha256": "A4750D7419E8B1A2389973213780E3360F48B471D95167DFFE99331AAE8260F8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-design-r22-8515ba6ac19f438080f00f790e578d93\\stopped.json",
+      "copy": "designer/stopped.json",
+      "role": "Hubble",
+      "sha256": "85851674C1FFDCA252C71FD3D12C459419BB6EAAA3C70D58B742853D3195BFDB"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-replay-design-r22-8515ba6ac19f438080f00f790e578d93\\hashes.json",
+      "copy": "designer/hashes.json",
+      "role": "Hubble",
+      "sha256": "3030EAD4E1FBCA9FB4F7D6C8BD5C615A0C0250A24709696E5D087E3251CFDE8F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-design-r22-review-8743193a6dd44f9397f5ff5116d53006\\readset-start.json",
+      "copy": "reviewer/readset-start.json",
+      "role": "Pauli",
+      "sha256": "69FC6E64DF3B6D6905E36852C0E88E25F89DF5FBCB1BBA004B1CF266553854DA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-design-r22-review-8743193a6dd44f9397f5ff5116d53006\\independent-static.json",
+      "copy": "reviewer/independent-static.json",
+      "role": "Pauli",
+      "sha256": "22DADA4CC061F90BC1845FACED90740CB55C48C4E6828929E44C1D74767B43C7"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-pauli-design-r22-review-8743193a6dd44f9397f5ff5116d53006\\end-check.json",
+      "copy": "reviewer/end-check.json",
+      "role": "Pauli",
+      "sha256": "4004FA32B649A8CC544DC2D2AF873251027E4F97C31CACC008376A3D1B9ED006"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-g0-c9458d802cc34d3d8a574bc2bc3bfaaa\\G0.md",
+      "copy": "backend/G0.md",
+      "role": "Dalton",
+      "sha256": "63ACD355DA5A9991158E838CBCB31731A2831831D02D6ADD4817296AD9F301FA"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-g0-c9458d802cc34d3d8a574bc2bc3bfaaa\\actual-readset.json",
+      "copy": "backend/actual-readset.json",
+      "role": "Dalton",
+      "sha256": "B843AD74E2DCADCAC6AE3076469E20473318082DC5A3AFC271038E4FA593C41B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-g0-c9458d802cc34d3d8a574bc2bc3bfaaa\\candidate-paths.json",
+      "copy": "backend/candidate-paths.json",
+      "role": "Dalton",
+      "sha256": "C4DDFCA601085EDC7DF5BCEF18EC86CAB51334AD855B49E87DEBE106FB698059"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-g0-c9458d802cc34d3d8a574bc2bc3bfaaa\\ready-stopped.json",
+      "copy": "backend/ready-stopped.json",
+      "role": "Dalton",
+      "sha256": "9595BA3B72D7CB92F12CAF5BC00DFDECC3D827BF4F800A601907BBE64A277875"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-g0-c9458d802cc34d3d8a574bc2bc3bfaaa\\source179-before.json",
+      "copy": "backend/source179-before.json",
+      "role": "Dalton",
+      "sha256": "F253083287B30E43305459E0B146B9E439376DA27B94ADBDB9C194C59C17A700"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-issue0001-s44-g0-c9458d802cc34d3d8a574bc2bc3bfaaa\\source179-after.json",
+      "copy": "backend/source179-after.json",
+      "role": "Dalton",
+      "sha256": "F253083287B30E43305459E0B146B9E439376DA27B94ADBDB9C194C59C17A700"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.add\\project\\knowledge\\design-workspace\\article-management\\design.md",
+      "copy": "design-r22.md.txt",
+      "role": "Hubble",
+      "sha256": "8C6FEAEFDDC1234B550D8AFCD0E3B45B53527A5F688426CF93798724AA39F66E"
+    },
+    {
+      "source": "D:\\AID\\VSCode\\Codex\\Han\\.spec\\wip\\article-management\\review-design-r22-replay-counters-r01.md",
+      "copy": "review-design-r22-replay-counters-r01.md",
+      "role": "Pauli",
+      "sha256": "74BB3F80998A08EA917347DD68D042CB995BAF576CD3EA9B9203300A58FD99A1"
+    },
+    {
+      "source": "Lead actual live bindings/read depth",
+      "copy": "lead-binding.json",
+      "role": "Lead",
+      "sha256": "2A74B87899B0B1D8D5BC555DE0AD8153EA6BD81E6F7EED2291C617B6DEC85D37"
+    }
+  ]
+}

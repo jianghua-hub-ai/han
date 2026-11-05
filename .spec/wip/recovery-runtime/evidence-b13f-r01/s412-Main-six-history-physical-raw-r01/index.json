@@ -1,0 +1,30 @@
+{
+  "owner": {
+    "role": "Main",
+    "nickname": "Main",
+    "runtime_id": "unknown-main-session-id"
+  },
+  "source_temp": "D:\\Temp\\han-b13f-lead-20261030-r01\\Main-repair-six-history-physical-r01",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-six-history-physical-raw-r01/query.sql",
+      "source_name": "query.sql",
+      "bytes": 27653,
+      "sha256": "B38FA556E481D2DBE3A42FA64A74B1A9285B0F0DC753B508DC87FC68CCBA597A"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-six-history-physical-raw-r01/stderr.log",
+      "source_name": "stderr.log",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13f-r01/s412-Main-six-history-physical-raw-r01/stdout.log",
+      "source_name": "stdout.log",
+      "bytes": 137988,
+      "sha256": "A33BC19F69B5E73D4A3406E6E1EE229D88A3F5CAEA59252130FC37EB0AF3EE54"
+    }
+  ],
+  "Main_read": "Hash/byte copy only; semantic reception separately documented",
+  "retention": "All original files/data/cache retained; copy only, no cleanup/move"
+}

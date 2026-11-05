@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-28",
+  "scope": "Existing identity-auth-S10.5 Case01..23 local software PG/B verification",
+  "user_authorization": "Repeated explicit authorization to adopt recommendations and continue, reaffirmed this turn. Not human result acceptance.",
+  "workspace": "D:/AID/VSCode/Codex/Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "owner": "Original Backend Dalton 01a18135-18b1-7431-b0d9-4e225d0f19d7",
+  "inputs": {
+    "contracts_six": "478E11DB183DB40B53BF3980BF897753FD8E50331992A4B468455A8A0A4E5BF5",
+    "root_author_index": "1D3CAA1AC73B3A5086CD1E551AD95F7BF9BCF0C28D5ECF525BDCD4909CC2C7B0",
+    "domain_fixed_index": "7A8D2B8B6ADEC3904C4A434DDC372DF81547D5A1852563E3AD34C7514700937F",
+    "lead_units_index": "EF239BA6E6E908820A55CCD88AFADE7FF27D4AEAF1013AC027A836073FAE6FF2",
+    "prepared_carrier": "20694013E96AA4D5B5AA2D6D41F7C8B31AB0D8C8EF42244176AF5C00F005CF10"
+  },
+  "allowed_code_write": "Only test/integration/identity/password_reset_maintenance_test.go. Root4/Domain2 frozen for independent review; product defects return to original owner.",
+  "environment": "Only identified User HAN_TEST_POSTGRES_DSN into executing process. No printing/persistence/argv/persistent ENV or other credential discovery. Verify ALL endpoints numeric loopback:5433, version180006 and expected database/user before writes.",
+  "data": "Only fresh retained schemas, nine migrations and legal synthetic fixtures with independent observer. No DROP/TRUNCATE/disabled constraints or append-only triggers/old schema mutation/roles/GRANT/external mail.",
+  "binary": "Actual ./cmd/han-server to NEW retained Temp; exact source/binary hashes and flags. Real Windows os.Pipe/current SID, synthetic keys in memory. Parent race does not imply child race. No old binary overwrite or cleanup.",
+  "runs": "Original two normal/race integration commands selecting only TestPasswordResetMaintenancePostgresCLI. Eleven r23 mandatory prefixes require real nonempty assertions. No skip/placeholder/compile-only/Kill-as-PASS.",
+  "ack_loss_adopted": "Existing Case15 only: in NEW retained schema add targeted DEFERRABLE INITIALLY DEFERRED constraint trigger for synthetic AuditID, waiting on random advisory key held by observer. Owned numeric127.0.0.1 ephemeral opaque TCP proxy forwards ONLY verified loopback:5433, preserves TLS verification/SNI, records no payload/key/DSN. Observe child backend waiting in deferred COMMIT, arm server-to-client ACK loss, release lock, independently prove committed job/Audit, close proxy. Actual binary unknown5/empty stdout; fresh same-valid-request replay already_applied0/no extra writes. Actually join every pump/listener/connection/child/producer.",
+  "stop": "Unprovable COMMIT causality, required public/TLS change, another source path or external endpoint stops that subcase with evidence; other cases continue. Preserve all failures. No simulated PG/B PASS.",
+  "not_granted": "Git commit/push, deployment, real signing/launcher ACL/second SID acceptance, external services, deletion/archival moves, public/API/ENV/dependency changes.",
+  "review": "Independent reviews are in progress; no F001 closure yet. This is execution permission, not CodeGate/CaseRun/PG/E2E PASS or human acceptance.",
+  "runtime_note": "Initial orchestration tool failed before writing. Actual bounded authorization was successfully sent directly to resumed Dalton as submission01a1829d-d25c-74d0-9c90-877f657222ca."
+}

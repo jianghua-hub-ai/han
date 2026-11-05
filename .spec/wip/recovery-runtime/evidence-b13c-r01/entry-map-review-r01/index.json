@@ -1,0 +1,92 @@
+{
+  "scope": "entry-map-review-r01",
+  "owner": {
+    "role": "add-reviewer",
+    "nickname": "Dirac",
+    "runtime_id": "01a18663-d9ac-79c2-b843-ba6dcca3de7e"
+  },
+  "actual_id_source": "Host returned Agent ID; not human signoff",
+  "main_read": "Main read receipt and applicable primary diffs/reports; hash-copy proof does not claim every helper semantically reviewed",
+  "retention": "retain source evidence; cleanup requires specific user list approval",
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13c-entry-map-review-6660df78a13346e9923432cd395670ce",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/entry-hashes.json",
+      "sha256": "65DA2CB184D4A664DF1C558026C7ADBE043A93EEF403210B8AF3EBB57A566497",
+      "bytes": 356,
+      "source_name": "entry-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/exit-hashes.json",
+      "sha256": "BC10A01E2605FC68C2E039A03C6F6EC7A3D21CFB03B4AF4EFFD8EF6F1F346F68",
+      "bytes": 367,
+      "source_name": "exit-hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/finalize.py",
+      "sha256": "E0CF6C370F7FAFCA3B68F262F16A20D5D2C06AF77E08534B014B86BEAA3B02D2",
+      "bytes": 3981,
+      "source_name": "finalize.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/hashes.json",
+      "sha256": "042960219D0F8AA5A8D8B56F464BE9AB0E35ED13A21AE4EB9E3FCDF5613251A9",
+      "bytes": 1752,
+      "source_name": "hashes.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/independent-requires.json",
+      "sha256": "3BDE4BF21D2B68452C80391149FE6FF408135D48322E3F44D7C35E7D67F4C50D",
+      "bytes": 11812,
+      "source_name": "independent-requires.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/read.ps1",
+      "sha256": "A06EB08A039755A26B08681551123E3FE6B6003CF54DC04FBE2E1C4622BCA689",
+      "bytes": 864,
+      "source_name": "read.ps1"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/readset.jsonl",
+      "sha256": "7232B60DD46753B35AF5C1E668D12D563D9A79BF2D478FDD09AD92B1C9B24BAF",
+      "bytes": 3755,
+      "source_name": "readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/receipt.json",
+      "sha256": "CCEEBA7F6386D69F07298DB59030AF26C409DBE6016C36F271C8EC2735146D3D",
+      "bytes": 3336,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/reused-methods.json",
+      "sha256": "93D715E886D2E8EC170D87BE6078FEB2593BA4AFAA847DF617114FA083944F38",
+      "bytes": 7521,
+      "source_name": "reused-methods.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/review-report.md",
+      "sha256": "AA27499A3C494A654D3259A9B1D2C91876CE0E8A9F4EE7D5E17DC12FBB29850C",
+      "bytes": 7819,
+      "source_name": "review-report.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/static-proof.json",
+      "sha256": "B15412537FC7219810E05A43CD65F4BF50D6428E7905CA880E105F004B0D4EE1",
+      "bytes": 2009,
+      "source_name": "static-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/static-readset.jsonl",
+      "sha256": "DBDA1E3C85FCDCD13B7B9C59C0005897EC0DB1F316DD6411E1C314250C348B73",
+      "bytes": 7631,
+      "source_name": "static-readset.jsonl"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13c-r01/entry-map-review-r01/static_proof.py",
+      "sha256": "2558D27381DF3831DA349726911CDE38F4183CE215E688FDD6AAEA70C4C4BA34",
+      "bytes": 7818,
+      "source_name": "static_proof.py"
+    }
+  ]
+}

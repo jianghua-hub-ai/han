@@ -1,0 +1,151 @@
+{
+  "scope": "Fixed180 Lead Manifest7, freeze binding, format-after-copy-correction and recorded container-hash correction; no PG execution by Lead",
+  "captured_at": "2026-10-28T00:06:05.601333+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\source180-r01.json",
+      "copy": "source180-r01.json",
+      "role": "Lead",
+      "sha256": "422C89C4AF451EA1B53FF17366C25FF3BEF2B683258A8A0A7E661EBFA517F790"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\source180-r01.flat.json",
+      "copy": "source180-r01.flat.json",
+      "role": "Lead",
+      "sha256": "18270024690941D7A20294FE78C56696FCFD8B19414B07823ED3E5E8368D2071"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\source180-r01.overlay.json",
+      "copy": "source180-r01.overlay.json",
+      "role": "Lead",
+      "sha256": "9A03F0B26E847C9411B1665FB27DFF3C86C063618C0AF227661CEC12BAA37D95"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-freeze180-r01.json",
+      "copy": "lead-freeze180-r01.json",
+      "role": "Lead",
+      "sha256": "CFB67AD4C3BC781554343DEB90A0CE894CC9657B6752D257FFC2E5776DC206C0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-results.json",
+      "copy": "lead-manifest-recovery-r01-results.json",
+      "role": "Lead",
+      "sha256": "F0184DC556CBFA666B7D301A048FCBF8A5E742822EABC228406FE7CC69459D5F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-format-after-copy-name-fix.json",
+      "copy": "lead-format-after-copy-name-fix.json",
+      "role": "Lead",
+      "sha256": "25F4380D0662A27171B5335C2353C341D63A85DF7D8E88896AA63EAE872F469F"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\format-after-copy-name-fix.stdout.log",
+      "copy": "format-after-copy-name-fix.stdout.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\format-after-copy-name-fix.stderr.log",
+      "copy": "format-after-copy-name-fix.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-index-hash-correction.json",
+      "copy": "lead-index-hash-correction.json",
+      "role": "Lead",
+      "sha256": "47013C50770F2893F159BF30F5F0CFD313DF8B1C225E068D7C0F123D2B40923A"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-oldapi-red-sql-images.json",
+      "copy": "lead-oldapi-red-sql-images.json",
+      "role": "Lead",
+      "sha256": "CA4EE9A501147325CBD6905304657EAEB031BB936886BED5C2DDD10FA0A2433C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-format.stdout.log",
+      "copy": "lead-manifest-recovery-r01-format.stdout.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-format.stderr.log",
+      "copy": "lead-manifest-recovery-r01-format.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-modules.stdout.log",
+      "copy": "lead-manifest-recovery-r01-modules.stdout.log",
+      "role": "Lead",
+      "sha256": "B4537ED75F533F993F371954DE47E42A793B8E5B0587577DE7E27FB3E50696BD"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-modules.stderr.log",
+      "copy": "lead-manifest-recovery-r01-modules.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-vet.stdout.log",
+      "copy": "lead-manifest-recovery-r01-vet.stdout.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-vet.stderr.log",
+      "copy": "lead-manifest-recovery-r01-vet.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-build.stdout.log",
+      "copy": "lead-manifest-recovery-r01-build.stdout.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-build.stderr.log",
+      "copy": "lead-manifest-recovery-r01-build.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-contract.stdout.log",
+      "copy": "lead-manifest-recovery-r01-contract.stdout.log",
+      "role": "Lead",
+      "sha256": "D71046CDB5A46CC17E02ACBCCB2878DB7E6AEA66E67AA69FE1CE6AADCF6F39E5"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-contract.stderr.log",
+      "copy": "lead-manifest-recovery-r01-contract.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-race.stdout.log",
+      "copy": "lead-manifest-recovery-r01-race.stdout.log",
+      "role": "Lead",
+      "sha256": "10EEC653ECDE578F0B66C245EC3E5DF70D4E71B5E802BCCE9B93C12061AC10AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-race.stderr.log",
+      "copy": "lead-manifest-recovery-r01-race.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-unit.stdout.log",
+      "copy": "lead-manifest-recovery-r01-unit.stdout.log",
+      "role": "Lead",
+      "sha256": "D930E16526A129C4DDADA25DBDD5F34154978B5633B457261866258F2EBC82A0"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-manifest-recovery-r01-unit.stderr.log",
+      "copy": "lead-manifest-recovery-r01-unit.stderr.log",
+      "role": "Lead",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ],
+  "durable_source_binding_index": "../pg-execution-r01/index.json"
+}

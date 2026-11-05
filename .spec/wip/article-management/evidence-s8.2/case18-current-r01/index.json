@@ -1,0 +1,111 @@
+{
+    "generated_at":  "2026-11-03T00:00:00+08:00",
+    "generator":  "Lead direct execution (no Role output)",
+    "authorization":  "ADR-0028 project-level verification authorization + user 2026-11-03 instruction",
+    "workspace":  "D:\\AID\\VSCode\\Codex\\Han",
+    "branch":  "main",
+    "head":  "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+    "environment":  {
+                        "go":  "go1.27.0 windows/amd64",
+                        "postgres":  "PostgreSQL 18.6 at 127.0.0.1:5433",
+                        "dsn":  "HAN_TEST_POSTGRES_DSN injected from User env; never printed"
+                    },
+    "artifacts":  {
+                      "report_md":  {
+                                        "path":  "report.md",
+                                        "sha256":  "C54E4EAB1AF5761F2F250CE51A1E0B4EAD63A22AC51B02AC60E99D20F46EEC3C",
+                                        "bytes":  7384
+                                    },
+                      "source_hashes_before":  {
+                                                   "path":  "source-hashes-before.txt",
+                                                   "sha256":  "7B78FD435F5A65CBFEA2F9ECEC829A4BCE5DE712FBB24AF726AE9692D6F1F635",
+                                                   "bytes":  1654
+                                               },
+                      "source_hashes_after":  {
+                                                  "path":  "source-hashes-after.txt",
+                                                  "sha256":  "6CF304C63CFF1B6B63D37540BB71896D2B339F6BEC71F8E11C30999545F7F334",
+                                                  "bytes":  829
+                                              }
+                  },
+    "runs":  [
+                 {
+                     "id":  "root-normal",
+                     "command":  "go test ./cmd/han-server -run \u0027^TestProductionAdminArticleQuery$\u0027 -count=1 -v",
+                     "log":  "run-root-normal.log",
+                     "log_sha256":  "D58A8DF3F1949568D71A43DBFE5DA687B91DBBE781B4349C97B060CFD30F48B4",
+                     "log_bytes":  18999
+                 },
+                 {
+                     "id":  "root-race",
+                     "command":  "go test -race ./cmd/han-server -run \u0027^TestProductionAdminArticleQuery$\u0027 -count=1 -v",
+                     "log":  "run-root-race.log",
+                     "log_sha256":  "5A2618FEE27651C19A1716958D75049F108BA2EFEBC44FC6AB24B4133079EE67",
+                     "log_bytes":  18999
+                 },
+                 {
+                     "id":  "uc-normal",
+                     "command":  "go test ./internal/article -run \u0027^(TestAdminQuery|TestAdminCursor|TestAdminCursorFiveViewIsolation)$\u0027 -count=1 -v",
+                     "log":  "run-uc-normal.log",
+                     "log_sha256":  "4C7D1CC6655E1AF2E265A6EE2C09FE716FA61248C5AB4F9EE88899175BFCC0EA",
+                     "log_bytes":  18001
+                 },
+                 {
+                     "id":  "uc-race",
+                     "command":  "go test -race ./internal/article -run \u0027^(TestAdminQuery|TestAdminCursor|TestAdminCursorFiveViewIsolation)$\u0027 -count=1 -v",
+                     "log":  "run-uc-race.log",
+                     "log_sha256":  "9B3323C1E9F3764C145751B832FE3FEAFE3A4FB4A3A313C50A3FC6CC223931D7",
+                     "log_bytes":  18001
+                 },
+                 {
+                     "id":  "build",
+                     "command":  "go build ./...",
+                     "log":  "build.log",
+                     "log_sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                     "log_bytes":  0
+                 },
+                 {
+                     "id":  "vet",
+                     "command":  "go vet ./cmd/han-server ./internal/article",
+                     "log":  "vet.log",
+                     "log_sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                     "log_bytes":  0
+                 },
+                 {
+                     "id":  "adminquery-pg",
+                     "command":  "go test -tags=integration ./test/integration/article -run \u0027^TestAdminQueryPostgres$\u0027 -count=1 -v",
+                     "log":  "run-adminquery-pg.log",
+                     "log_sha256":  "F51D2F4F942C067426285A0D4DA318B63E1A6B66FDA4F58D64FA5390F52F17E3",
+                     "log_bytes":  64739
+                 },
+                 {
+                     "id":  "session-sql-pg",
+                     "command":  "go test -tags=integration ./test/integration/identity -run \u0027^(TestS16SessionResolveRejectsRevokedAndSuspendedUsers|TestS16UserFirstLockOrderingAndSessionRevocation|TestS33LoginSessionPostgres)$\u0027 -count=1 -v",
+                     "log":  "run-session-sql-pg.log",
+                     "log_sha256":  "B000D2141C6E61D5C2A7732EF03B98FF83A88FE020EC0F579D7A1231D60F4E1F",
+                     "log_bytes":  8447
+                 }
+             ],
+    "retained_schemas":  [
+                             "han_admin2_1cc188e4ed204226825e9420363a9bbb",
+                             "han_s33_12bc6017e1f14506a10675dc82999702"
+                         ],
+    "findings_fact_layer":  {
+                                "C18-COV-F001":  "current-revision root/assembly executed (93 pass normal+race, 0 fail/skip); closure requires independent re-review",
+                                "C18-COV-F004":  "SessionStore SQL + revocation executed on real PG; AccessGeneral side still uncovered; finding stays open",
+                                "C18-COV-F002":  "unchanged: fake runtime, no real PG/dual-system; failed/expired/undetermined are not admission states",
+                                "C18-COV-F003":  "unchanged: production Enter/Install still ErrAdmissionClosed",
+                                "C18-COV-F005":  "unchanged: snapshot semantics, stays open"
+                            },
+    "not_proven":  [
+                       "deployment E2E",
+                       "real SMTP / approved provider",
+                       "dual-system wiring",
+                       "full recovery then public open flow",
+                       "Enter/Install admission open",
+                       "real Journal/HMAC/keyring",
+                       "old backup restore",
+                       "capacity/P95",
+                       "production readiness",
+                       "human business acceptance"
+                   ]
+}

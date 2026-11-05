@@ -1,0 +1,158 @@
+{
+  "type": "Main field reception and preserved evidence; not a professional Role or human acceptance",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/baseline.json",
+      "sha256": "47DFDFC3F3E5C895DE85753A482B54D05E98C8856F7BB74D54037519827ABAF2",
+      "bytes": 69496,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/final-authorization.json",
+      "sha256": "FE3B5661799BB470ADC146E321423CF9DFA9D26175973525C021FD583C3BEF67",
+      "bytes": 1072,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\final-authorization.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/body-preservation.json",
+      "sha256": "352399198854B160B1875FE927D04C66688862B796A1717019B471D8A3205191",
+      "bytes": 654,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\body-preservation.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/one-row-repair-proof.json",
+      "sha256": "40DD6AD3A9D79E6A883D9CCD2B4C85670E42797FF00C4D99228D992A352FD5BD",
+      "bytes": 322,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\one-row-repair-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/planning-byte-preservation.json",
+      "sha256": "2D92C75799D1916D60ABFA11D80FB91ECFB2DC30B3E5B8FCCBF9443F06E685C2",
+      "bytes": 2590,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\planning-byte-preservation.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/audit-planning-r01.json",
+      "sha256": "F39B6A278C1FF6141F547F2F993E214F9B1AC12F00049A071CCAEC00090D1B1B",
+      "bytes": 26181,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\audit-planning-r01.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/audit-planning-r02.json",
+      "sha256": "1DAF1E56FD9AB521FE61D62F116D1D1E4BDD47734CC2ACE8A7FF664C6A978146",
+      "bytes": 26181,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\audit-planning-r02.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/metadata-byte-proof.json",
+      "sha256": "F7383844F83D08443B662F8D0879E073364A5833825952589E7BC7654A818168",
+      "bytes": 730,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\metadata-byte-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/metadata-r02-byte-proof.json",
+      "sha256": "F9B5429D9F08EEF236DC9A1D4BCE30C19BD7221DCFC0281C6FF86ADEA540FAF4",
+      "bytes": 611,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\metadata-r02-byte-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/metadata-r02-links.json",
+      "sha256": "1BF2DECF30C91F52C4A20136F80F32ABBAF2DD1B17C721FC63E35F5575291BE8",
+      "bytes": 3354,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\metadata-r02-links.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/scope-after-review-r02.json",
+      "sha256": "B2A76920216C17977AF71774EC2F502F9D46AC25C46D99FB3782354EC7B1902A",
+      "bytes": 19639,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\scope-after-review-r02.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/integrity-before-final-review.json",
+      "sha256": "D4D4D46774B94A72BE61AD70F826B066487E1FD74AAA783D751D12A96CF73C3E",
+      "bytes": 5553,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\integrity-before-final-review.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/planning-frozen-r02/five-line-proof.json",
+      "sha256": "0D6F59A1BD274A87F95AFBB64DD4DF52EDF081B305EE46F8F5FC9C9DF0CDBEFC",
+      "bytes": 781,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\planning-frozen-r02\\five-line-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/planning-frozen-r02/objects.json",
+      "sha256": "AE8F1DE19D53CDB2C0A62CFBA7A2F837FF3EC1FEE0EF283049D714B9AB75D778",
+      "bytes": 2128,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\planning-frozen-r02\\objects.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/check_final_scope.py",
+      "sha256": "6CEEAB16B2B58256F134FB2028F7AB55303227BAC456554B4FD345FCCAD6BFC5",
+      "bytes": 2123,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\check_final_scope.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/check_evidence.py",
+      "sha256": "38D2AEA78DCBC9B1D9A0E35B59A7A03F2148EE52A763CBEDE13C74DA6AEBE0F6",
+      "bytes": 1279,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\check_evidence.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/main-proof/audit_planning.py",
+      "sha256": "253EDF3D7262D5DE359E6E4F8D901BFF8B70A078F5CA3416079BA836E6CEF24F",
+      "bytes": 6058,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\audit_planning.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/frozen/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "1B2540B5F59756FF3D4B397B90FE44E6111700DCA8F8538A75BE863B99CCF9C7",
+      "bytes": 446481,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\final-six-r02\\.add\\project\\knowledge\\plans\\ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/frozen/.add/project/knowledge/decisions/framework.md",
+      "sha256": "681D89C65C1384280C386F4B59BE8C8E3308CD3C10516E23D561D5A23E1CCFDD",
+      "bytes": 102161,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\final-six-r02\\.add\\project\\knowledge\\decisions\\framework.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/frozen/.add/project/knowledge/design-workspace/identity-auth/test-plan.md",
+      "sha256": "468864D2FBA7281CABDCA0C771D56E1316BAFAE8B0F9B524269435E544BDF41D",
+      "bytes": 306129,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\final-six-r02\\.add\\project\\knowledge\\design-workspace\\identity-auth\\test-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/frozen/.add/project/knowledge/decisions/README.md",
+      "sha256": "7112FA46EF75F8130AA900CF46D5532521D9E5002160FB8BBBDB3031FFF6AFB4",
+      "bytes": 15477,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\final-six-r02\\.add\\project\\knowledge\\decisions\\README.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/frozen/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "D7059350422894480AE2B0E10F310E973B3CAAC27FA6B49B2AE5DFEB5A7C5993",
+      "bytes": 542311,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\final-six-r02\\.add\\project\\knowledge\\tasks\\tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/frozen/.add/project/knowledge/design-workspace/article-management/test-plan.md",
+      "sha256": "E2E7ADFD0581BCCE9CD2782F7181C12BA67A8496A1A321EF88006EA94D9FCA27",
+      "bytes": 312862,
+      "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-recovery-testplan-lead-wrrsctup\\final-six-r02\\.add\\project\\knowledge\\design-workspace\\article-management\\test-plan.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/verification-testplan-planning-r01.md",
+      "sha256": "8B8BC62D0F36A757701D3A89F639346E2688107DA5E9083D9F13055E03A02624",
+      "bytes": 10500
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/lead-reception/decision.json",
+      "sha256": "46E22A82C5867BCA16A60F57B4DB6E11B4EFF4EE4DF3ABEFA480BC9E1D4A6A2A",
+      "bytes": 3045
+    }
+  ],
+  "review_package_index": {
+    "path": ".spec/wip/recovery-runtime/evidence-testplan-r01/planning-review-r02/index.json",
+    "sha256": "32D04B2A5C546D5FDBD6CDDE935828B8BF93409502BABF9245BD929B34416BAF"
+  },
+  "pending_at_time_records": "historical source records remain immutable; current conclusion held in Review R02 and this decision"
+}

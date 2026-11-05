@@ -1,0 +1,250 @@
+{
+  "schema": "add.review-index/v1",
+  "role": "add-reviewer",
+  "independence": "independent non-author review; reviewed artifacts not modified by reviewer",
+  "objectType": "design + adr + index (composite)",
+  "item": "pending-B13J-D02",
+  "workflow": "development-delivery",
+  "phase": "architecture-decision-ADR / non-author review r01",
+  "verdict": "CHANGES REQUIRED",
+  "rounds": {
+    "round1": "PASS",
+    "round2": "CHANGES REQUIRED"
+  },
+  "reviewedAt": "2026-11-01T22:39:42+08:00",
+  "timezone": "Asia/Shanghai",
+  "workspace": "D:\\AID\\VSCode\\Codex\\Han",
+  "branch": "main",
+  "head": "6da8abbceb0fa197364810a92a8fa2d97b38ddca",
+  "artifact": {
+    "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r01/report.md",
+    "sha256": "DAC90356F102F5E7AF18BFCDAFA153AD369D1F796923B5A42B8B6BC79606FF5E",
+    "bytes": 18497,
+    "encoding": "utf-8",
+    "bom": false,
+    "line_endings": "LF only",
+    "trailing": "single LF (0x0a)",
+    "source": "independent review report (this review)"
+  },
+  "object": {
+    "design": {
+      "path": ".add/project/knowledge/design-workspace/identity-auth/design.md",
+      "baseline": {
+        "sha256": "504966EADBB3D74C9D3BAD83FBA500624C8273A6462CCDD5987420EBE3B5307C",
+        "bytes": 842966,
+        "lines": 4924
+      },
+      "target": {
+        "sha256": "30B122A08CA127D39FFF4F4331713F83E189630B8D739106DB24CF32B17D47BC",
+        "bytes": 844091,
+        "lines": 4924
+      },
+      "declaredChangedLines": [5, 7, 38, 83, 3577, 3892],
+      "deltaBytes": 1125,
+      "deltaProvenExact": true,
+      "deltaMethod": "reverse-substituted all six before/after phrases in memory, re-encoded UTF-8, recomputed SHA256",
+      "reconstructedBytes": 842966,
+      "reconstructedSha256": "504966EADBB3D74C9D3BAD83FBA500624C8273A6462CCDD5987420EBE3B5307C",
+      "deltaBreakdown": {
+        "line83": 694,
+        "line3577": 198,
+        "line3892": 233
+      }
+    },
+    "framework": {
+      "path": ".add/project/knowledge/decisions/framework.md",
+      "baseline": {
+        "sha256": "5711F51016CBC091DCB8DEC4ABE1339158C713CD997980982A14D6D00938A38A",
+        "bytes": 126590,
+        "lines": 911
+      },
+      "target": {
+        "sha256": "31960C7A7BAE3EA3B2B250A6ED9DC1FB1E1F81464520E03A0D42C5E0B491C9BA",
+        "bytes": 137200,
+        "lines": 966
+      },
+      "prefixBytes": 126590,
+      "prefixSha256": "5711F51016CBC091DCB8DEC4ABE1339158C713CD997980982A14D6D00938A38A",
+      "prefixMatchesBaseline": true,
+      "addedRange": "framework.md:912-966 (ADR-0030; anchor at :915)",
+      "adr0019RangeChecked": "framework.md:418-494"
+    },
+    "readme": {
+      "path": ".add/project/knowledge/decisions/README.md",
+      "baseline": {
+        "sha256": "35A5623E7E3CFCC140DA0DE9C8B218210C0E34A850A26B5CDD450B81DA40CC63",
+        "bytes": 18948,
+        "lines": 104
+      },
+      "target": {
+        "sha256": "5075879AC7F3E31D83A06E843BCCE80CAA8DBA27F588E39D700E7F6C3765C10D",
+        "bytes": 19724,
+        "lines": 106
+      },
+      "changedLines": [38, 44, 69],
+      "deltaProvenExact": true,
+      "deltaMethod": "removed the new global-index line, the domain-table suffix, and the new scenario-query line in memory, re-encoded UTF-8, recomputed SHA256",
+      "reconstructedBytes": 18948,
+      "reconstructedSha256": "35A5623E7E3CFCC140DA0DE9C8B218210C0E34A850A26B5CDD450B81DA40CC63"
+    }
+  },
+  "formatInvariants": {
+    "framework": {
+      "bom": false,
+      "lines": 966,
+      "crlf": 966,
+      "bare_lf": 0,
+      "lf_total": 966,
+      "bare_cr": 0,
+      "trailing": "CRLF (0d0a)",
+      "control_excluding_cr_lf_tab": 0
+    },
+    "design": {
+      "bom": false,
+      "lines": 4924,
+      "crlf": 169,
+      "bare_lf": 4755,
+      "lf_total": 4924,
+      "bare_cr": 0,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf_tab": 0,
+      "tab_count": 1,
+      "tab_byte_offset": 466069,
+      "tab_character_offset": 308573,
+      "tab_pre_existing": true,
+      "tab_context": "existing Go fenced code block (CheckLockedUser)"
+    },
+    "readme": {
+      "bom": false,
+      "lines": 106,
+      "crlf": 2,
+      "bare_lf": 104,
+      "lf_total": 106,
+      "bare_cr": 0,
+      "trailing": "single LF (0x0a)",
+      "control_excluding_cr_lf_tab": 0
+    }
+  },
+  "findings": {
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 1,
+      "LOW": 1
+    },
+    "total": 2,
+    "items": [
+      {
+        "id": "B13J-D02-RV-01",
+        "severity": "MEDIUM",
+        "category": "traceability-factual-reference",
+        "location": ".add/project/knowledge/decisions/framework.md:924; affected object .add/project/knowledge/design-workspace/identity-auth/design.md:3892; related source framework.md:965",
+        "summary": "ADR-0030 describes design.md:3892 as recording that the actual product, credential, and independent failure domain are unknown, while the current design text says no product, credential, or independent failure domain is registered. 'Fact unknown' and 'registry has no entry' are not the same fact.",
+        "impact": "No runtime behaviour change; production remains closed. The accepted ADR has an inaccurate exact-line citation, weakening the U3 evidence chain and downstream D03/D04 references.",
+        "blocking": true,
+        "requiredFix": "Either make design.md:3892 retain both layers, preferably 'current no registered adapter; actual product/credential/independent failure domain unknown', or change framework.md:924 (and :965 if needed) to the accurate two-layer meaning. Re-run targeted review and record new hashes/formats."
+      },
+      {
+        "id": "B13J-D02-RV-02",
+        "severity": "LOW",
+        "category": "candidate-analysis-rigour",
+        "location": ".add/project/knowledge/decisions/framework.md:937-938; author report .spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/report.md:36-37",
+        "summary": "Candidate B states at category level that KMS does not provide general conditional writes without product/version/API verification; candidate C calls object storage naturally independent of PostgreSQL although same account, region, network, or control plane may correlate failures.",
+        "impact": "Weakens defensibility of the option comparison but does not change option D; framework.md:952 already states that no product or environment verification is proved.",
+        "blocking": false,
+        "requiredFix": "Revise B to 'not verified per product/version; KMS is usually not a general CAS KV store' and C to 'different service, with failure-domain independence to be proved by account/region/network/control plane', or carry this into D03/D04 or a later ADR revision."
+      }
+    ]
+  },
+  "inputs": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/gap-map.md",
+      "sha256": "3AA5B959B206223FDD51BD3602B7CEA9417C60269E33E653DA0CCF6FDB8ED10F",
+      "bytes": 26452,
+      "role": "reconciliation source defining D02 and recording A08, section 2.4, and U3"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/report.md",
+      "sha256": "2ED84374590D5B42805A8F1333F90A5EE60E4EA6B744A6C90CA6BE6CD146F591",
+      "bytes": 16136,
+      "role": "author design report; declares D02 decision and evidence"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/index.json",
+      "sha256": "7AE883504FA6047D1A3080A828869C711BB40C3CAF97F3F0CD280AAD47331E7D",
+      "bytes": 14978,
+      "role": "author evidence index"
+    }
+  ],
+  "crossChecks": {
+    "tasksMd": {
+      ".add/project/knowledge/tasks/tasks.md:658": "actual S4.5 registration is still unchecked: '- [ ] identity-auth-S4.5 选择并交付生产 CAS JournalHeadAnchor provider 与独立故障域验证 [P]'",
+      ".add/project/knowledge/tasks/tasks.md:656": "task brief cited this line, but it is not the S4.5 registration; line drift noted in the review"
+    },
+    "scopeExclusions": {
+      "ADR-0030 or B13J-D02 in tasks/plans/stories/test-plan/decisions-identity": "no hits found",
+      "S4.22/S4.23/S4.24 in reviewed ADR/design": "no hits found"
+    },
+    "readmeIndex": {
+      "globalIndex": "README.md:38 contains ADR-0030",
+      "domainTable": "README.md:44 appends ADR-0030",
+      "scenarioTable": "README.md:69 contains ADR-0030",
+      "anchor": "all links use framework.md#adr-0030, matching framework.md:915 <a id=adr-0030>",
+      "referenceCount": "1, consistent with the sole adoption record at framework.md:963"
+    },
+    "adrBoundaries": {
+      "adr0019PrefixUnchanged": "true",
+      "fallbackForbidden": "file/SQL/fake/environment probing as production selection or fallback remains forbidden",
+      "configKeys": "HAN_RECOVERY_ANCHOR_ADAPTER and HAN_RECOVERY_ANCHOR_CONFIG_PATH are explicit, mutually non-inferred, have no code default, and leave anchor capability unstarted when absent",
+      "s45State": "S4.5 remains unfinished; production enter/install remain closed",
+      "case18AndS82": "ADR explicitly does not claim Case18, S8.2, or restore E2E passed"
+    }
+  },
+  "commands": [
+    "Get-FileHash plus UTF-8 byte scans on the three reviewed files; values recorded in object and formatInvariants",
+    "reverse-substitution of design.md lines 5/7/38/83/3577/3892 -> 842966 B, 504966EA...5307C, match=true",
+    "reverse-substitution of README.md additions -> 18948 B, 35A5623E...40CC63, match=true",
+    "Get-FileHash on framework.md first 126590 B -> 5711F510...38A38A, equal to pre-change whole-file hash",
+    "Get-FileHash on review-r01/report.md, gap-map.md, author report.md and author index.json",
+    "git rev-parse HEAD -> 6da8abb...; branch -> main; no Git write commands executed",
+    "rg over excluded task/plan/story/test-plan/identity-decision scope for ADR-0030, B13J-D02, S4.22-S4.24"
+  ],
+  "writeSet": [
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r01/report.md",
+    ".spec/wip/recovery-runtime/evidence-b13j-r01/design-d02/review-r01/index.json"
+  ],
+  "notWritten": [
+    ".add/project/knowledge/decisions/framework.md",
+    ".add/project/knowledge/design-workspace/identity-auth/design.md",
+    ".add/project/knowledge/decisions/README.md",
+    "tasks.md",
+    "plans/",
+    "stories.md",
+    "test-plan.md",
+    "decisions/identity.md",
+    "any code/tests/config",
+    "git index/history"
+  ],
+  "notVerified": [
+    "No Go, PostgreSQL, HTTP, restore, Case18, S8.2, E2E, integration, or real CAS provider execution",
+    "framework.md and design.md were not read in full; semantic conclusions cover the named windows and the byte-proven unchanged regions",
+    "No markdown render or lint run",
+    "Real independent failure domain, product, credential, ACL, deployment, and operations were not verified",
+    "Human exact acceptance, design Gate, and Task registration remain unknown"
+  ],
+  "pendingDecisions": [
+    {
+      "id": "D-RV-01",
+      "question": "Fix RV-01 in design.md:3892 (preferred) or in framework.md:924/:965",
+      "owner": "Lead / Arch-Designer",
+      "blocking": "true; B13J-D02-RV-01 remains open until the two texts match factually"
+    },
+    {
+      "id": "D-RV-02",
+      "question": "Revise the candidate B/C wording now or carry B13J-D02-RV-02 into D03/D04 or a later ADR revision",
+      "owner": "Lead / Architect",
+      "blocking": "false"
+    }
+  ],
+  "limitations": "Reviewer verdict does not close pending-B13J-D02, does not grant a design Gate, does not authorize implementation, does not claim Case18/S8.2 or any real provider verification, does not release blocked-upstream, and does not constitute human acceptance."
+}

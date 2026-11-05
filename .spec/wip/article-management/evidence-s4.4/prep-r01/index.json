@@ -1,0 +1,36 @@
+{
+  "scope": "S4.4 read-only gap recommendation and environment preflight; no code/PG test START",
+  "captured_at": "2026-10-27T21:42:33.555748+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-readonly-prep-2d1846c02bcc4f94a81fd1a61493635c\\prep-s44-gap.md",
+      "copy": "test-engineer/prep-s44-gap.md",
+      "role": "Ohm",
+      "sha256": "1F34D147A013E0C132182A25E34A23378B6387291308106A9F879A8716356CF8"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-readonly-prep-2d1846c02bcc4f94a81fd1a61493635c\\actual-readset-s44.json",
+      "copy": "test-engineer/actual-readset-s44.json",
+      "role": "Ohm",
+      "sha256": "1323906A40A033C77ACC9C24F1ED7BB75FB406A7D5D97F860FFEE2DA14F3539B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-readonly-prep-2d1846c02bcc4f94a81fd1a61493635c\\handoff-s44-prep.json",
+      "copy": "test-engineer/handoff-s44-prep.json",
+      "role": "Ohm",
+      "sha256": "52E0751B7A4FF23F9B2FF86646FDBFA6BFE653C8785063E7A7357ED95A2FF931"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\baseline.json",
+      "copy": "lead/baseline.json",
+      "role": "Lead",
+      "sha256": "DA42E307BDCF200EACBD2BEA222B3CD4811954229E94699A2F9AC9A20A486ACA"
+    },
+    {
+      "source": "C:\\Users\\J00010~1\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-environment-preflight.json",
+      "copy": "lead/lead-environment-preflight.json",
+      "role": "Lead",
+      "sha256": "BF2D3641BB9437D09FC17014F42E795339E2FBABF8D0CCB9835170A84B5CBBE0"
+    }
+  ]
+}

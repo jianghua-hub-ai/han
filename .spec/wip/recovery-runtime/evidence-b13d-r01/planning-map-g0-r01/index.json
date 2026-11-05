@@ -1,0 +1,145 @@
+{
+  "scope": "planning-map-g0-r01",
+  "owner": {
+    "role": "add-task-planner",
+    "nickname": "Goodall",
+    "runtime_id": "01a18414-b2ab-7392-9b04-fd974203bf5e"
+  },
+  "source_temp": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-b13d-r55-map-prep-a7cd76b2bd44406c94733e58d87d5fbd",
+  "Main_read": "Main read applicable primary receipt/report/diff; hash copy not semantic fullread of every helper",
+  "files": [
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/baseline.json",
+      "sha256": "D0EFAC08B4061749C4B1D59E7B68DB8520592BBE87DF452EFF0674B6F9F84D77",
+      "bytes": 924,
+      "source_name": "baseline.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/before/.add/project/knowledge/plans/ir-01-content-community-batches.md",
+      "sha256": "FDBF3E26BD9B8063C3158299EF8056E3AE60427D44D46D11D670E2DEC8E71736",
+      "bytes": 468454,
+      "source_name": "before/.add/project/knowledge/plans/ir-01-content-community-batches.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/before/.add/project/knowledge/tasks/tasks.md",
+      "sha256": "ED7B2E51DAF509B3292BC57347373A7708C8E28D2DAC940F5DEC608F2793BE25",
+      "bytes": 611265,
+      "source_name": "before/.add/project/knowledge/tasks/tasks.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/candidate-exact-operations.json",
+      "sha256": "47F97D52AA7274BCF1B2777C060C662C251FBC30642ECA8885D5CFE56C066523",
+      "bytes": 56138,
+      "source_name": "candidate-exact-operations.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/candidate-verification.json",
+      "sha256": "877B17A9C6E6819D66CC31A1E0B84BD5AD8081D17EE3F5CF714AD4E49A595705",
+      "bytes": 4170,
+      "source_name": "candidate-verification.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/candidates.py",
+      "sha256": "079509FAD48924BEB6E4297A12E6451CAFF495C1D25FC91CD490ECBC6A93FFB7",
+      "bytes": 26890,
+      "source_name": "candidates.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/graph-proof.json",
+      "sha256": "BE25CEFE3176B553EEE85EA88015D5F0E749A8BCC2751EAD4711FC04110F1BBD",
+      "bytes": 15126,
+      "source_name": "graph-proof.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/links.json",
+      "sha256": "6C3A9AF45DD9170D1E17262073430156B597A6C13FB7C749E4DED9924C6F0F06",
+      "bytes": 688,
+      "source_name": "links.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/plan.r27.pending-review.extension.diff",
+      "sha256": "B77DA16C2B34539DCF87FCB2AD7BBA4305897DF9FCEA3EF4049E1DD567FB3E7C",
+      "bytes": 3981,
+      "source_name": "plan.r27.pending-review.extension.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/plan.r55.candidate.diff",
+      "sha256": "5FB66E4F58214F63E284383C62F13E6DC3AF7788E3A2103449B3D779E5DD016F",
+      "bytes": 3491,
+      "source_name": "plan.r55.candidate.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/r55-base-card-protection.json",
+      "sha256": "282B17B93A9C4FBE1C9FE43F7F949CE01E2F7C93487A25B1169208E094B344CF",
+      "bytes": 25906,
+      "source_name": "r55-base-card-protection.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/r55-plus-r27-contingent-card-protection.json",
+      "sha256": "32C59FD3BD31CB1D5F9FD576A5D46E0C991267846C96348A03D43C7F5F4703B4",
+      "bytes": 25907,
+      "source_name": "r55-plus-r27-contingent-card-protection.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/read_inputs.py",
+      "sha256": "96ABF6D06D8582788B456C601E77ACE33E7AFF5333339CDC61F7A9E772A88BC7",
+      "bytes": 4489,
+      "source_name": "read_inputs.py"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/readonly-protection.json",
+      "sha256": "1D58741BBC89591BC0645A0F7D9806CD81EBCEC2830FBB2103D4E1823F64580F",
+      "bytes": 8680,
+      "source_name": "readonly-protection.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/readset.json",
+      "sha256": "07031FFC0F8EB3D350B4EF51C2956135BEAC9576EAF4C5C9EDD4164F21B5E89C",
+      "bytes": 8874,
+      "source_name": "readset.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/receipt.json",
+      "sha256": "876044D8B8B12CFC43453B731ADCAD7B3506D75D97DF1A29E968D8C6CA9DF82F",
+      "bytes": 2357,
+      "source_name": "receipt.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/receipt.md",
+      "sha256": "E424F931D8DEC48945F49DE7211538FA05DC48043BE774A46FC5008370FE0CFF",
+      "bytes": 3894,
+      "source_name": "receipt.md"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/risk-mapping.json",
+      "sha256": "20D6F64C22ED850BAC5C12D1932233C26AD811CBCD667C5860CB05699B9076D2",
+      "bytes": 3817,
+      "source_name": "risk-mapping.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/sha256sums.json",
+      "sha256": "17C112B235D332BAABCAD3DC38162B9E6B882A5791EC5C4A4F28468A59141387",
+      "bytes": 2103,
+      "source_name": "sha256sums.json"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/tasks.r27.pending-review.extension.diff",
+      "sha256": "CB3B6909F5494D81B39C48830F727A638DAA670B1384B36BC01E7626E6BBBDB1",
+      "bytes": 8306,
+      "source_name": "tasks.r27.pending-review.extension.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/tasks.r55.candidate.diff",
+      "sha256": "80BF9E57FAFC43AE9B8F2E3C5D3E96D2F348BC784997728C889EB82162DF46F2",
+      "bytes": 17573,
+      "source_name": "tasks.r55.candidate.diff"
+    },
+    {
+      "path": ".spec/wip/recovery-runtime/evidence-b13d-r01/planning-map-g0-r01/tool-notes.json",
+      "sha256": "3D23694D4D5E6ACE452CF7B7FA642252AC1B83FF331DE3035063AAE64130F064",
+      "bytes": 444,
+      "source_name": "tool-notes.json"
+    }
+  ],
+  "retention": "copy only, all original evidence/data retained; no cleanup/delete/move"
+}

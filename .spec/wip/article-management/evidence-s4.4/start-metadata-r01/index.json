@@ -1,0 +1,60 @@
+{
+  "scope": "S4.4/B8A old-API execution start metadata only; no runtime result",
+  "captured_at": "2026-10-27T22:51:04.808136+00:00",
+  "records": [
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\tasks.before.md",
+      "copy": "planner/tasks.before.md",
+      "role": "Ptolemy",
+      "sha256": "95E71CC3993ADA0EAAD90E456962C73DCE1AA9082DE611C3C2D604CAAD1D7BE3"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\tasks.after.md",
+      "copy": "planner/tasks.after.md",
+      "role": "Ptolemy",
+      "sha256": "73DD68DAC9EF910B15F6D869201A76B7DF0A96B848832FD62F58A827675BA67C"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\tasks.actual.diff",
+      "copy": "planner/tasks.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "B7ED1F0D9AEAB6391686CC8AF815EAA85542A9297BB38E992BE5225A36CE5794"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\plan.before.md",
+      "copy": "planner/plan.before.md",
+      "role": "Ptolemy",
+      "sha256": "A8C232A96A0D20A4729DD00DB61284F9689EAF1917B9AA5636F3BD634FBE8C8E"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\plan.after.md",
+      "copy": "planner/plan.after.md",
+      "role": "Ptolemy",
+      "sha256": "409F0D6CA2CBE805AEEF6B928910074B7457C56A71BB1078E0808C6B9E4574AC"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\plan.actual.diff",
+      "copy": "planner/plan.actual.diff",
+      "role": "Ptolemy",
+      "sha256": "0F65C93B812AD96F2121E6163D0FA9F96AFA79346DBBC6CB39C1A9EC71D46A2B"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\write-receipt.json",
+      "copy": "planner/write-receipt.json",
+      "role": "Ptolemy",
+      "sha256": "9542DB698ABE3FA6BEA7485B8F73230BC8B6F1DA65AF9C0564A4796958C23940"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-r20-start-metadata-fbf347c78457400086ab860cbc391b55\\readback-scope-check.json",
+      "copy": "planner/readback-scope-check.json",
+      "role": "Ptolemy",
+      "sha256": "1309BF0EDCF847760DFB803360F1F900764939833CE187B3F4F5CAF5BC63EE58"
+    },
+    {
+      "source": "C:\\Users\\J00010385\\AppData\\Local\\Temp\\han-s44-lead-qemw_2sb\\lead-start-metadata-verification.json",
+      "copy": "lead/verification.json",
+      "role": "Lead",
+      "sha256": "1E0E2AD2A6282FB9C7CB8E38C9CF2DD00D5DCD8D6A1D0293FD32395492D8EAB4"
+    }
+  ]
+}
