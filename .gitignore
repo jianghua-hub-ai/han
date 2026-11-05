@@ -4,3 +4,5 @@ Temp/
 
 # Working evidence stays local; only curated digests are force-added
 .spec/wip/**
+# Build artifacts
+*.exe
