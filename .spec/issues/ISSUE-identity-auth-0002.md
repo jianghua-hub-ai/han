@@ -190,3 +190,22 @@ func s414Directory(t *testing.T) string {
 - 运行后：`after_count=8466`，集合差 **new_dirs=0**。
 - 结论：当前代码在单元与 contract 两套标签下不再产生新的保留型临时目录，与 ADR-0039 的默认 `t.TempDir()` 一致。
 - 边界：本次未跑 `-tags=integration`（需真实 PG 实例），集成路径的泄漏回归仍以各包实跑记录为准；`s413WriteSyntheticTombstone` 等 ADR-0039 明确排除的点位不在本口径内。
+
+### 2026-11-06 新发现：S10.5 CLI 证据目录仍回落到 `%TEMP%`（与 ADR-0039 决策 1 不一致）
+
+按 `os.MkdirTemp` 全仓枚举（11 处调用点）核对残留来源时发现：
+
+- 位置：`test/integration/identity/password_reset_maintenance_test.go:115`
+  `evidence, err := os.MkdirTemp(os.Getenv(maintenanceTestEvidenceEnv), "han-s105-cli-")`
+- 行为：`HAN_S105_TEST_EVIDENCE_DIR` 未设置时，`os.MkdirTemp("")` 落到 `%TEMP%`，且该目录**全程无删除**（`:98` 仅 `t.Logf("retained evidence=%s")`，`:250` 继续写入）。
+- 实测残留：`%TEMP%\han-s105-cli-*` **4 个目录 / 81.31 MB**（每个含构建出的 `han-server.exe`），最新写入 2026-11-05 23:20。
+- 与决策冲突：ADR-0039 决策 1 要求「默认使用 `t.TempDir()`，默认不留产物」；决策 3 的排除清单只列了 crossmodule、identity auth_security / orphan_disposition、recovery article_replay 四处，**不含 S10.5**。
+- 影响：每次真实集成运行约新增 20 MB 且永不回收；不影响生产代码与契约。
+
+**未自行修复的原因**：该测试需要真实 PostgreSQL 实例并构建子进程二进制，修复后必须实跑一次才能声称有效；本轮没有该环境，不写未验证的 PASS。
+
+可选处置：
+- A（推荐）：改为 `t.TempDir()`；`HAN_S105_TEST_EVIDENCE_DIR` 非空时仍保留到该根。改动约 4 行，需一次集成运行验证。
+- B：显式登记为 ADR-0039 排除点并补记 §3，接受持续保留。
+
+**附带口径修正**：`%TEMP%` 测试残留不止清理清单里的 1,429 个 `han-s414-retain-*`；另有 1,135 个其他前缀目录 / 约 111.7 MB（`han-s44-retained-*` 1,001 / 30.33 MB、`han-b13d-a48-media-*` 62、`han-b13d-a48-legacy-*` 54、`s413-approved-checkpoint-*` 6、`han_s62_journal_*` 5、`han-s105-cli-*` 4 / 81.31 MB、`s413-deletion-media-*` 3）。其中 s44 / s62 属 ADR-0039 已登记的排除点，b13d-media / b13d-legacy / s413-* 为历史集成运行产物。
