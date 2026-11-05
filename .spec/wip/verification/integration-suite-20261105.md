@@ -36,3 +36,10 @@
 - 全套：`go test -tags=integration ./... -count=1 -timeout 30m`
 - 仅验证今日改动：`go test -tags=integration ./internal/article -run '^TestReplayPublicationPostgres$' -count=1`
 - 专用实例缺失时不要把这些 FAIL 读成回归；逐条看失败信息里的实例名/端口/环境变量。
+
+## race 与静态检查核实（同日）
+
+- `go test -race ./internal/session -count=1` → `go: -race requires cgo; enable cgo by setting CGO_ENABLED=1`（exit 2）。
+- 环境：`go env CGO_ENABLED` = `0`；`CC` = `gcc` 但 PATH 上无 `gcc`/`clang`，无 C 工具链。**结论：`-race` 在本机不可用，属工具链缺失，不是测试失败**；启用需安装 C 工具链并设 `CGO_ENABLED=1`，属环境变更，未做。
+- `go vet -tags=integration ./...` → exit 0（全仓，含集成构建约束）。
+- `gofmt -l cmd internal test` → 0 个文件。
