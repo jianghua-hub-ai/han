@@ -152,7 +152,7 @@ func s414Directory(t *testing.T) string {
 
 **当时未改**（同日稍后按 ADR-0039 修复，见本节末）：`cmd/han-server/recovery_restore_test.go` 的 `s414Directory`（主因，10.45 GB），以及 §3.3 中 4 处注释明示 `Intentionally retained` 的点位。理由：保留是设计要求，问题在证据根/上限/清理入口，属策略决策，不作局部修改。
 
-**验证**：`go test ./internal/article -count=1` → `ok`；执行前后 `han-article-anchor-fixture-*` 计数均为 5,889（不再新增）；`gofmt -l` 三文件无输出；`go vet -tags=integration ./internal/article ./internal/identity` exit 0。**未验证**：受授权 DSN 守卫的集成测试在本机不可运行（`internal/article` 要求 `han_b13c_article`/`han_b13c`，本机 DSN 为 `postgres`），replay 与 s413 两处的真实集成回归仍待按授权 fixture 执行；`s413WriteSyntheticTombstone`（`:662`，无 `*testing.T` 可用）未改。
+**验证**：`go test ./internal/article -count=1` → `ok`；执行前后 `han-article-anchor-fixture-*` 计数均为 5,889（不再新增）；`gofmt -l` 三文件无输出；`go vet -tags=integration ./internal/article ./internal/identity` exit 0。**补充实测（同日）**：`TestReplayPublicationPostgres`（`internal/article`，只要求回环 DSN 并自建 `han_b13d_a48_*` 隔离 schema）实际执行 `ok 35.799s`，覆盖 replay 两处 `t.TempDir()` 改动；执行前后 `%TEMP%` 的 `han-b13d-a48-media-*` / `han-b13d-a48-legacy-*` 计数 62/54 → 62/54，**新增 0**。**仍未验证**：`TestAnchoredArticleFinalizerPostgres` 要求固定 `han_b13c_article`/`han_b13c`（本机 DSN 为 `postgres`）；`internal/identity` 的 s413 系列要求专用实例 `127.0.0.1:51935` / `han_b13e_identity` / 数据目录 `d:/temp/han-b13e-lead-20261030-r01/postgres/data`，该实例已不存在，故 `s413Checkpoint` 一处只有编译级覆盖；`s413WriteSyntheticTombstone`（`:662`，无 `*testing.T` 可用）未改。
 
 **当时结论**：仍未关闭；下一步须先决定 s414 与其余保留型点位的证据根、保留上限与清理入口（§5 候选），再实施。
 
