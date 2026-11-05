@@ -1,6 +1,6 @@
 # ISSUE-identity-auth-0002 — 恢复驱动测试证据写死系统临时目录，重复运行累积 26 GB 挤占系统盘
 
-**状态：已完成登记、定级建议与定位；2026-11-05 部分修复（§7），主因未改，回归未闭环、未关闭。** 本轮按用户 2026-11-02 指令「启动 Issue 流程开单并定位具体代码位置」执行，授权仅覆盖开单与只读定位，不含修复、清理、提交或验收关闭。
+**状态：已完成登记、定级建议与定位；2026-11-05 修复主因（ADR-0039），回归与独立评审未闭环、未关闭。** 本轮按用户 2026-11-02 指令「启动 Issue 流程开单并定位具体代码位置」执行，授权仅覆盖开单与只读定位，不含修复、清理、提交或验收关闭。
 
 ## 1. 登记（register）
 
@@ -150,8 +150,24 @@ func s414Directory(t *testing.T) string {
 - `internal/article/replay_publication_integration_test.go:864`（`han-b13d-a48-legacy-`）
 - `internal/identity/recovery_installation_postgres_test.go:476`（`s413-approved-checkpoint-`）
 
-**未改**：`cmd/han-server/recovery_restore_test.go` 的 `s414Directory`（主因，10.45 GB），以及 §3.3 中 4 处注释明示 `Intentionally retained` 的点位。理由：保留是设计要求，问题在证据根/上限/清理入口，属策略决策，不作局部修改。
+**当时未改**（同日稍后按 ADR-0039 修复，见本节末）：`cmd/han-server/recovery_restore_test.go` 的 `s414Directory`（主因，10.45 GB），以及 §3.3 中 4 处注释明示 `Intentionally retained` 的点位。理由：保留是设计要求，问题在证据根/上限/清理入口，属策略决策，不作局部修改。
 
 **验证**：`go test ./internal/article -count=1` → `ok`；执行前后 `han-article-anchor-fixture-*` 计数均为 5,889（不再新增）；`gofmt -l` 三文件无输出；`go vet -tags=integration ./internal/article ./internal/identity` exit 0。**未验证**：受授权 DSN 守卫的集成测试在本机不可运行（`internal/article` 要求 `han_b13c_article`/`han_b13c`，本机 DSN 为 `postgres`），replay 与 s413 两处的真实集成回归仍待按授权 fixture 执行；`s413WriteSyntheticTombstone`（`:662`，无 `*testing.T` 可用）未改。
 
-**结论**：仍未关闭；下一步须先决定 s414 与其余保留型点位的证据根、保留上限与清理入口（§5 候选），再实施。
+**当时结论**：仍未关闭；下一步须先决定 s414 与其余保留型点位的证据根、保留上限与清理入口（§5 候选），再实施。
+
+### 2026-11-05 续：按 ADR-0039 修复主因
+
+项目负责人回复「继续」，采 Lead 建议第二项，落 **ADR-0039**（`decisions/framework.md`）：测试临时/证据目录默认用 `t.TempDir()` 回收，需保留演练证据时由环境变量显式指定证据根。
+
+据此修改 `cmd/han-server/recovery_restore_test.go` 的 `s414Directory`：`HAN_S414_TEST_EVIDENCE_DIR` 为空 → `t.TempDir()`；非空 → 仍在指定根保留并 `t.Logf`。4 处设计标注 `Intentionally retained` 的点位按 ADR-0039 保持现状。
+
+**实测**：
+
+- 未设变量：`go test ./cmd/han-server -run TestRecoveryRestoreDriver -count=1` → `ok 7.147s`；`%TEMP%` 中 `han-s414-retain-*` 计数 1,429 → 1,429（**新增 0**）。
+- 设 `HAN_S414_TEST_EVIDENCE_DIR`：同命令 → `ok 6.837s`；55 个目录落在指定根，`%TEMP%` 计数不变；验证后已删除该临时探针目录。
+- `gofmt -l cmd/han-server/recovery_restore_test.go` 无输出。
+
+**现状**：`%TEMP%` 仍残留 1,429 个目录 / 10.88 GB，全部是修复前产物；清理清单 `.spec/wip/cleanup/temp-residue-20261105.md`（逐项列出），**未执行任何删除**，待用户按清单确认。
+
+**仍未关闭**：独立评审与两方验收未完成；历史残留的清理未完成。

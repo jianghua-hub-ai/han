@@ -44,12 +44,13 @@
 | ADR-0036 | [测试项目中部署后验证类任务经决策不验证](framework.md#adr-0036) | 已接受 | 代码质量 | 框架 | `identity-auth-S3.4`、`identity-auth-S3.6`、`article-management-S1.4` 的部署后验证范围；6 张生产恢复实现卡不受影响 | 1 |
 | ADR-0037 | [生产恢复实现链六张任务不纳入本版交付范围](framework.md#adr-0037) | 已接受 | 架构设计 | 框架 | `identity-auth-S4.5`/`S4.6`/`S4.23`/`S4.24a`/`S4.24b`/`S4.22` 的交付范围；生产 fail-closed 与 ADR-0030/0031/0032 门禁不变 | 1 |
 | ADR-0038 | [合成 loopback/example DSN 不视为真实凭据](framework.md#adr-0038) | 已接受 | 代码质量 | 框架 | 本机/保留域名的合成测试 DSN 可入库；真实凭据、私钥、token 仍禁止 | 1 |
+| ADR-0039 | [测试临时与证据目录默认回收，保留须显式指定根](framework.md#adr-0039) | 已接受 | 代码质量 | 框架 | 测试默认 `t.TempDir()`；保留演练证据须用环境变量指定根 | 1 |
 
 ## 领域文件表
 
 | 领域文件 | 领域 | 包含决策 |
 |---|---|---|
-| framework.md | 框架与技术栈 | ADR-0001、ADR-0002、ADR-0003、ADR-0004、ADR-0008、ADR-0009、ADR-0014、ADR-0015、ADR-0016、ADR-0017、ADR-0018、ADR-0019、ADR-0021、ADR-0022、ADR-0025、ADR-0027、ADR-0028、ADR-0029、ADR-0030、ADR-0031、ADR-0032、ADR-0036、ADR-0037、ADR-0038 |
+| framework.md | 框架与技术栈 | ADR-0001、ADR-0002、ADR-0003、ADR-0004、ADR-0008、ADR-0009、ADR-0014、ADR-0015、ADR-0016、ADR-0017、ADR-0018、ADR-0019、ADR-0021、ADR-0022、ADR-0025、ADR-0027、ADR-0028、ADR-0029、ADR-0030、ADR-0031、ADR-0032、ADR-0036、ADR-0037、ADR-0038、ADR-0039 |
 | identity.md | 身份、会话与凭据 | ADR-0005、ADR-0006、ADR-0007、ADR-0011、ADR-0012、ADR-0013、ADR-0023、ADR-0026 |
 | content.md | 文章与内容治理 | ADR-0010、ADR-0020、ADR-0024、ADR-0033、ADR-0034、ADR-0035 |
 
@@ -90,6 +91,7 @@
 | 查询或变更测试项目部署后 identity/article E2E、production observability 演练的验证范围、3 张卡关闭理由或 6 张生产恢复卡阻塞边界 | [framework.md（ADR-0036）](framework.md#adr-0036)、framework.md（ADR-0028、ADR-0025） |
 | 查询或变更生产恢复实现链（anchor provider、key-retirement、anchor/CAS bundle、restore 接线、POSIX 锁、production root）的交付范围或六卡关闭理由 | [framework.md（ADR-0037）](framework.md#adr-0037)、framework.md（ADR-0030、ADR-0031、ADR-0032） |
 | 判断测试/证据文件中的 DSN 是否可作为凭据提交，或调整合成值的 host/口令边界 | [framework.md（ADR-0038）](framework.md#adr-0038)、framework.md（ADR-0028） |
+| 判断测试临时/证据目录是否需要默认保留，或在何处保留演练证据 | [framework.md（ADR-0039）](framework.md#adr-0039) |
 | 调整文章发布意图、违规状态、作者归属、删除账号墓碑、无归属来源关联或派生可见性 | content.md（ADR-0010） |
 | 调整密码哈希算法或参数治理 | identity.md（ADR-0012）、framework.md（ADR-0009） |
 | 调整删除账号标识复用或通知邮箱清理 | identity.md（ADR-0013） |
@@ -129,3 +131,4 @@
 > **2026-11-05 ADR-0036 增量**：项目负责人回复「继续」，采用 Lead 建议方案 A。据此在 `framework.md` 追加 ADR-0036：`identity-auth-S3.4`、`identity-auth-S3.6`、`article-management-S1.4` 三张部署后验证卡按「经决策不验证」关闭并登记未验证边界；6 张生产恢复实现卡（`identity-auth-S4.5`/`S4.6`/`S4.23`/`S4.24a`/`S4.24b`/`S4.22`）维持 `[ ]` 阻塞，不受本决定影响。不以模拟或既有单机证据冒充部署/演练结论。
 > **2026-11-05 ADR-0037 增量**：项目负责人回复「继续」，采用 Lead 建议的「以 ADR 登记不纳入本版」方向。据此在 `framework.md` 追加 ADR-0037：生产恢复实现链六张卡（`identity-auth-S4.5`/`S4.6`/`S4.23`/`S4.24a`/`S4.24b`/`S4.22`）按范围决策关闭并登记未实现边界；不实施代码、不改变写集，生产恢复入口继续 fail-closed，ADR-0030/0031/0032 的门禁与解除条件不变，未来需另立授权与 ADR 重开。
 > **2026-11-05 ADR-0038 增量**：项目负责人回复「继续」，采用 Lead 建议第一项。据此在 `framework.md` 追加 ADR-0038：仅 host 为本机/保留域名且口令为占位或合成值的 DSN 视为非凭据，可随代码与证据入库；真实凭据、私钥、token 仍禁止。首次适用为 IR-01 工作树提交前的敏感信息扫描（31,619 个文件，28 个命中，均为合成值）。
+> **2026-11-05 ADR-0039 增量**：项目负责人回复「继续」，采用 Lead 建议第二项。据此在 `framework.md` 追加 ADR-0039：测试临时/证据目录默认用 `t.TempDir()` 回收，需保留演练证据时须由环境变量显式指定证据根；4 处设计标注「Intentionally retained」的点位不在范围内。首次适用为 `ISSUE-identity-auth-0002` 的 s414 与 3 个 article/identity 生成点，实测默认运行新增 0 个 `%TEMP%` 目录。

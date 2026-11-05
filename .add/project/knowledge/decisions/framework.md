@@ -1756,3 +1756,38 @@ r19 按 Lead F001 裁定第 1、3 条删除的 r17 旧 `:1234` S3.6 模拟替代
 ### 引用记录
 
 - 2026-11-05 首次提交 IR-01 工作树时适用：扫描 31,619 个文本文件，28 个文件命中，均为合成值。
+
+<a id="adr-0039"></a>
+## ADR-0039: 测试临时与证据目录默认回收，保留须显式指定根 (2026-11-05)
+
+**目的**: 代码质量 | **仓库**: han
+
+**状态**: 已接受 | **确认来源**: 项目负责人 2026-11-05 在 Lead 提出「证据根用环境变量必填 / 默认 `t.TempDir()` 且仅显式设置时保留」二选一后回复「继续」，采用第二项；与本项目既有「对待确认或决策项采用建议值」授权一致。
+
+### 背景
+
+`ISSUE-identity-auth-0002`（P2）记录：S4.14 恢复演练测试把每轮 55 个约 50 MB 的 fixture 目录固定写入 `%TEMP%`，无上限、无清理入口。2026-11-05 复核实测 `%TEMP%` 残留 1,429 个 `han-s414-retain-*` 目录 / 10.88 GB。同类模式另见 article、identity 的多个生成点。
+
+### 决策
+
+1. 测试创建的临时/证据目录**默认**使用 `testing.T.TempDir()`，测试结束由框架回收；默认不向系统临时盘或仓库留下产物。
+2. 需要保留演练证据时，测试必须通过显式环境变量指定证据根（既有 `HAN_S414_TEST_EVIDENCE_DIR`、`HAN_S105_TEST_EVIDENCE_DIR`、`HAN_AUDIT_EVIDENCE_DIR` 等），保留语义仅在变量非空时生效；设置者承担清理责任。
+3. 已由设计标注「Intentionally retained」的点位（`test/integration/crossmodule`、`test/integration/identity` 的 auth_security 与 orphan_disposition、`test/integration/recovery/article_replay`）不在本 ADR 范围，保持现状。
+4. 不引入仓库内硬编码盘符或绝对路径；证据根一律来自环境变量。
+
+### 理由
+
+- 默认泄漏有实测代价（10.88 GB），且与「证据保留」无关——保留只在少数演练场景需要。
+- 与仓内既有先例一致（`HAN_S105_TEST_EVIDENCE_DIR`、`HAN_AUDIT_EVIDENCE_DIR`）。
+- 不需要 CI/开发机额外配置即可运行；需要证据时显式开启，语义清晰。
+
+### 约束
+
+- 默认路径不得写死 `os.TempDir()`，改用 `t.TempDir()`。
+- 显式证据根只接受环境变量，不引入第二套机制。
+- 本 ADR 不授权删除历史残留；清理须按清理清单逐项确认。
+- 只影响测试脚手架，不改变被测生产代码或其契约。
+
+### 引用记录
+
+- 2026-11-05 首次适用：`cmd/han-server/recovery_restore_test.go`（`s414Directory`）、`internal/article/deletion_journal_snapshot_test.go`、`internal/article/replay_publication_integration_test.go`（两处）、`internal/identity/recovery_installation_postgres_test.go:476`。实测：未设变量时 `TestRecoveryRestoreDriver` 新增 0 个 `%TEMP%` 目录；设置 `HAN_S414_TEST_EVIDENCE_DIR` 后 55 个目录落在指定根。
