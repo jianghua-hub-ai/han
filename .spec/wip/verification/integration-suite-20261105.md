@@ -100,3 +100,10 @@
 信号文件格式（`HAN_B13E_S411_PG_CONFIG`）：`Purpose=B13E-S411`、`Host=127.0.0.1`、`Database=han_b13e_identity`、`User=han_b13e`、非零 `Port`、`ServerVersion>=180000`；DSN 必须带 `sslmode=disable`；文件路径必须是 `d:/temp/` 下的绝对路径。
 
 收尾：`pg_ctl stop -m fast`，删除 `Temp/pg-verify-b13c` 与 `D:\temp\han-b13e-verify`；既有 `D:\temp\han-b13e-lead-20261030-r01` 未改动。
+
+### 同日补充：cmd/han-server 集成包由 3 项失败降为 1 项
+
+- `TestRecoveryRuntimeProductionChain`、`TestRecoveryMaintenanceAuthorizerScope`、`TestRecoveryControlAuthorizerSealedMaintenance`：一次性集群 `Temp/pg-verify-b13h`（`127.0.0.1:53519`，`han_b13h` 角色 + `han_b13h_root` / `han_b13h_backup` 两库）→ 三项同时跑 **ok 2.304s**。
+- `TestRecoveryRestoreTargetReadbackPostgres`：一次性集群 `Temp/pg-verify-restore`（`127.0.0.1:51934`，`han_b13d` 角色 + `han_b13d_restore` 库）→ 通过；整包复跑时该项已不再失败。
+- 剩余 1 项 `TestAppendOnlyApplicationACL`：断言 `requires literal loopback:5433 for primary and all fallbacks`，且会变更 ACL/角色；未在共享 5433 实例上执行（需明确授权）。
+- 收尾：两集群 `pg_ctl stop -m fast` 后删除目录，`53519` 与 `51934` 均不再监听。
