@@ -180,3 +180,13 @@ func s414Directory(t *testing.T) string {
 - 最新目录写入时间 2026-11-05 23:05:03，早于泄漏修复提交 `51086aa`（23:07:49）；按修复时间过滤，**修复后新增 0 个**。
 - `apply-cleanup.ps1` dry-run：清单 1,429 项 / 实际存在 1,429 项，根 `C:\Users\J00010385\AppData\Local\Temp\`，无越界或缺失。
 - 本状态未改变：**仍未执行任何删除**，待用户按清单确认；问题单不因本次复核关闭。
+
+### 2026-11-05 全量套件快照：单元 + contract 运行后 `%TEMP%` 新增 0
+
+此前只对单条测试做过「前后计数」核对；本次改为**整套**前后快照：
+
+- 快照口径：`%TEMP%` 下目录名匹配 `han-*` / `s413-*` / `b13*` 的**目录名集合**（不是计数），运行前 `before_count=8466`。
+- 运行：`go test ./... -count=1`（exit 0，0 FAIL）+ `go test -tags=contract ./... -count=1`（exit 0，0 FAIL）。
+- 运行后：`after_count=8466`，集合差 **new_dirs=0**。
+- 结论：当前代码在单元与 contract 两套标签下不再产生新的保留型临时目录，与 ADR-0039 的默认 `t.TempDir()` 一致。
+- 边界：本次未跑 `-tags=integration`（需真实 PG 实例），集成路径的泄漏回归仍以各包实跑记录为准；`s413WriteSyntheticTombstone` 等 ADR-0039 明确排除的点位不在本口径内。
