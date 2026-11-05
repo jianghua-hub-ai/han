@@ -107,3 +107,10 @@
 - `TestRecoveryRestoreTargetReadbackPostgres`：一次性集群 `Temp/pg-verify-restore`（`127.0.0.1:51934`，`han_b13d` 角色 + `han_b13d_restore` 库）→ 通过；整包复跑时该项已不再失败。
 - 剩余 1 项 `TestAppendOnlyApplicationACL`：断言 `requires literal loopback:5433 for primary and all fallbacks`，且会变更 ACL/角色；未在共享 5433 实例上执行（需明确授权）。
 - 收尾：两集群 `pg_ctl stop -m fast` 后删除目录，`53519` 与 `51934` 均不再监听。
+
+### 同日补充：cmd/han-server 全部集成测试实跑通过（须分两轮）
+
+- `TestAppendOnlyApplicationACL` 要求 `HAN_TEST_POSTGRES_DSN` 指向字面 `127.0.0.1:5433`；`TestRecoveryRestoreTargetReadbackPostgres` 要求同一变量指向 `127.0.0.1:51934/han_b13d_restore`。两者**不能在同一次运行中同时满足**，因此整包必须分两轮执行，这不是缺陷。
+- 5433 轮：`TestAppendOnlyApplicationACL` → **ok 2.408s**。该测试按设计**永久保留**创建物，实测 `han_s15_acl_*` schema 54 → 56、`han_s15_*` 角色 62 → 64，与历史运行产物一致（未清理）。
+- 51934 轮（一次性集群）：恢复链三项 + restore 读回通过；集群已删除。
+- 结论：`cmd/han-server` 集成包在本机可分两轮全部跑通。
