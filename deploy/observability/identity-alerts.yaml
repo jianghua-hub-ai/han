@@ -1,0 +1,76 @@
+groups:
+  - name: han-identity-auth
+    rules:
+      - alert: HanIdentityAuthScrapeDown
+        expr: up{job="han-identity-auth"} == 0
+        for: 2m
+        keep_firing_for: 10m
+        labels:
+          service: identity-auth
+          severity: paging
+          signal: scrape_health
+        annotations:
+          summary: Han identity-auth metrics scrape is down
+          description: The identity-auth scrape target has reported up == 0 for at least 2 minutes.
+          runbook: docs/runbooks/identity-observability.md
+
+      - alert: HanIdentityAuthInternalFailureRatioHigh
+        expr: |
+          (
+            sum(increase(han_identity_login_attempts_total{job="han-identity-auth"}[10m])) >= 20
+          )
+          and
+          (
+            sum(increase(han_identity_login_internal_failures_total{job="han-identity-auth"}[10m]))
+              /
+            sum(increase(han_identity_login_attempts_total{job="han-identity-auth"}[10m])) > 0.05
+          )
+        for: 10m
+        keep_firing_for: 10m
+        labels:
+          service: identity-auth
+          severity: paging
+          signal: login_internal_failure_ratio
+        annotations:
+          summary: Han identity-auth login internal failure ratio is high
+          description: Over 10 minutes there are at least 20 login attempts and the internal failure ratio is greater than 5 percent.
+          runbook: docs/runbooks/identity-observability.md
+
+      - alert: HanIdentityAuthLoginDurationP95High
+        expr: |
+          (
+            sum(increase(han_identity_login_duration_seconds_count{job="han-identity-auth"}[10m])) >= 20
+          )
+          and
+          (
+            histogram_quantile(
+              0.95,
+              sum by (le) (
+                rate(han_identity_login_duration_seconds_bucket{job="han-identity-auth"}[10m])
+              )
+            ) > 2
+          )
+        for: 15m
+        keep_firing_for: 10m
+        labels:
+          service: identity-auth
+          severity: warning
+          signal: login_duration_p95
+        annotations:
+          summary: Han identity-auth login P95 duration is high
+          description: Over 10 minutes there are at least 20 login duration samples and P95 is greater than 2 seconds.
+          runbook: docs/runbooks/identity-observability.md
+
+      - alert: HanIdentityAuthOriginRejectionsHigh
+        expr: |
+          sum(increase(han_platform_origin_rejections_total{job="han-identity-auth"}[10m])) >= 20
+        for: 10m
+        keep_firing_for: 10m
+        labels:
+          service: identity-auth
+          severity: warning
+          signal: origin_rejections
+        annotations:
+          summary: Han identity-auth Origin rejections are high
+          description: At least 20 Origin rejections occurred over 10 minutes.
+          runbook: docs/runbooks/identity-observability.md

@@ -1,0 +1,30 @@
+# Provider-neutral Alertmanager routing template.
+# Receiver names are role placeholders, not real integrations. Platform/operations
+# ownership must add the approved receiver configuration and credentials outside
+# this repository before S3.6.
+route:
+  receiver: role-team-operations-alerting
+  group_by:
+    - alertname
+    - service
+    - severity
+  routes:
+    - receiver: role-production-on-call
+      matchers:
+        - service="identity-auth"
+        - severity="paging"
+      continue: false
+    - receiver: role-team-operations-alerting
+      matchers:
+        - service="identity-auth"
+        - severity="warning"
+      continue: false
+
+receivers:
+  - name: role-production-on-call
+  - name: role-team-operations-alerting
+
+# Escalation ownership:
+# 1. Production on-call role.
+# 2. Han service owner / identity technical responsibility role.
+# 3. Security on-call role for suspected or confirmed security events.

@@ -1,0 +1,269 @@
+rule_files:
+  - deploy/observability/identity-alerts.yaml
+
+evaluation_interval: 1m
+
+tests:
+  - name: scrape hold and exact keep-firing boundary ignore another job
+    interval: 1m
+    input_series:
+      - series: 'up{job="han-identity-auth",instance="identity-1"}'
+        values: '0 0 0 1+0x10'
+      - series: 'up{job="other-service",instance="other-1"}'
+        values: '0+0x13'
+    alert_rule_test:
+      - eval_time: 1m
+        alertname: HanIdentityAuthScrapeDown
+        exp_alerts: []
+      - eval_time: 2m
+        alertname: HanIdentityAuthScrapeDown
+        exp_alerts:
+          - exp_labels:
+              instance: identity-1
+              job: han-identity-auth
+              service: identity-auth
+              severity: paging
+              signal: scrape_health
+            exp_annotations:
+              summary: Han identity-auth metrics scrape is down
+              description: The identity-auth scrape target has reported up == 0 for at least 2 minutes.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 12m
+        alertname: HanIdentityAuthScrapeDown
+        exp_alerts:
+          - exp_labels:
+              instance: identity-1
+              job: han-identity-auth
+              service: identity-auth
+              severity: paging
+              signal: scrape_health
+            exp_annotations:
+              summary: Han identity-auth metrics scrape is down
+              description: The identity-auth scrape target has reported up == 0 for at least 2 minutes.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 13m
+        alertname: HanIdentityAuthScrapeDown
+        exp_alerts: []
+
+  - name: internal failure hold and exact keep-firing boundary ignore another job
+    interval: 1m
+    input_series:
+      - series: 'han_identity_login_attempts_total{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+2x20 240+0x10'
+      - series: 'han_identity_login_internal_failures_total{job="han-identity-auth",endpoint="POST /api/v1/sessions",reason_bucket="persistence",error_code="identity.internal_error",failure_stage="transaction_commit"}'
+        values: '0+1x20 20+0x10'
+      - series: 'han_identity_login_attempts_total{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+100x31'
+      - series: 'han_identity_login_internal_failures_total{job="other-service",endpoint="POST /api/v1/sessions",reason_bucket="persistence",error_code="identity.internal_error",failure_stage="transaction_commit"}'
+        values: '0+100x31'
+    alert_rule_test:
+      - eval_time: 19m
+        alertname: HanIdentityAuthInternalFailureRatioHigh
+        exp_alerts: []
+      - eval_time: 20m
+        alertname: HanIdentityAuthInternalFailureRatioHigh
+        exp_alerts:
+          - exp_labels:
+              service: identity-auth
+              severity: paging
+              signal: login_internal_failure_ratio
+            exp_annotations:
+              summary: Han identity-auth login internal failure ratio is high
+              description: Over 10 minutes there are at least 20 login attempts and the internal failure ratio is greater than 5 percent.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 30m
+        alertname: HanIdentityAuthInternalFailureRatioHigh
+        exp_alerts:
+          - exp_labels:
+              service: identity-auth
+              severity: paging
+              signal: login_internal_failure_ratio
+            exp_annotations:
+              summary: Han identity-auth login internal failure ratio is high
+              description: Over 10 minutes there are at least 20 login attempts and the internal failure ratio is greater than 5 percent.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 31m
+        alertname: HanIdentityAuthInternalFailureRatioHigh
+        exp_alerts: []
+
+  - name: internal failure requires at least twenty target attempts
+    interval: 1m
+    input_series:
+      - series: 'han_identity_login_attempts_total{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0 2 4 6 8 10 12 14 16 18 19 21 23 25 27 29 31 33 35 37 38'
+      - series: 'han_identity_login_internal_failures_total{job="han-identity-auth",endpoint="POST /api/v1/sessions",reason_bucket="persistence",error_code="identity.internal_error",failure_stage="transaction_commit"}'
+        values: '0+1x20'
+      - series: 'han_identity_login_attempts_total{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+100x20'
+      - series: 'han_identity_login_internal_failures_total{job="other-service",endpoint="POST /api/v1/sessions",reason_bucket="persistence",error_code="identity.internal_error",failure_stage="transaction_commit"}'
+        values: '0+100x20'
+    alert_rule_test:
+      - eval_time: 20m
+        alertname: HanIdentityAuthInternalFailureRatioHigh
+        exp_alerts: []
+
+  - name: internal failure ratio equal to five percent does not page
+    interval: 1m
+    input_series:
+      - series: 'han_identity_login_attempts_total{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+2x20'
+      - series: 'han_identity_login_internal_failures_total{job="han-identity-auth",endpoint="POST /api/v1/sessions",reason_bucket="persistence",error_code="identity.internal_error",failure_stage="transaction_commit"}'
+        values: '0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 2'
+      - series: 'han_identity_login_attempts_total{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+100x20'
+      - series: 'han_identity_login_internal_failures_total{job="other-service",endpoint="POST /api/v1/sessions",reason_bucket="persistence",error_code="identity.internal_error",failure_stage="transaction_commit"}'
+        values: '0+100x20'
+    alert_rule_test:
+      - eval_time: 20m
+        alertname: HanIdentityAuthInternalFailureRatioHigh
+        exp_alerts: []
+
+  - name: duration hold and exact keep-firing boundary ignore another job
+    interval: 1m
+    input_series:
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="1"}'
+        values: '0+0x25 400+0x10'
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="2"}'
+        values: '0+0x25 400+0x10'
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="5"}'
+        values: '0+2x25 450+0x10'
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="+Inf"}'
+        values: '0+2x25 450+0x10'
+      - series: 'han_identity_login_duration_seconds_count{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+2x25 450+0x10'
+      - series: 'han_identity_login_duration_seconds_sum{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+6x25 350+0x10'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="2"}'
+        values: '0+0x36'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="5"}'
+        values: '0+100x36'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="+Inf"}'
+        values: '0+100x36'
+      - series: 'han_identity_login_duration_seconds_count{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+100x36'
+    alert_rule_test:
+      - eval_time: 24m
+        alertname: HanIdentityAuthLoginDurationP95High
+        exp_alerts: []
+      - eval_time: 25m
+        alertname: HanIdentityAuthLoginDurationP95High
+        exp_alerts:
+          - exp_labels:
+              service: identity-auth
+              severity: warning
+              signal: login_duration_p95
+            exp_annotations:
+              summary: Han identity-auth login P95 duration is high
+              description: Over 10 minutes there are at least 20 login duration samples and P95 is greater than 2 seconds.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 35m
+        alertname: HanIdentityAuthLoginDurationP95High
+        exp_alerts:
+          - exp_labels:
+              service: identity-auth
+              severity: warning
+              signal: login_duration_p95
+            exp_annotations:
+              summary: Han identity-auth login P95 duration is high
+              description: Over 10 minutes there are at least 20 login duration samples and P95 is greater than 2 seconds.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 36m
+        alertname: HanIdentityAuthLoginDurationP95High
+        exp_alerts: []
+
+  - name: duration requires at least twenty target samples
+    interval: 1m
+    input_series:
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="2"}'
+        values: '0+0x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="5"}'
+        values: '0 2 4 6 8 10 12 14 16 18 19 21 23 25 27 29 31 33 35 37 38 40 42 44 46 48'
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="+Inf"}'
+        values: '0 2 4 6 8 10 12 14 16 18 19 21 23 25 27 29 31 33 35 37 38 40 42 44 46 48'
+      - series: 'han_identity_login_duration_seconds_count{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0 2 4 6 8 10 12 14 16 18 19 21 23 25 27 29 31 33 35 37 38 40 42 44 46 48'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="2"}'
+        values: '0+0x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="5"}'
+        values: '0+100x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="+Inf"}'
+        values: '0+100x25'
+      - series: 'han_identity_login_duration_seconds_count{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+100x25'
+    alert_rule_test:
+      - eval_time: 25m
+        alertname: HanIdentityAuthLoginDurationP95High
+        exp_alerts: []
+
+  - name: duration p95 at or below two seconds does not warn
+    interval: 1m
+    input_series:
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="1"}'
+        values: '0+2x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="2"}'
+        values: '0+2x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="+Inf"}'
+        values: '0+2x25'
+      - series: 'han_identity_login_duration_seconds_count{job="han-identity-auth",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+2x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="2"}'
+        values: '0+0x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="5"}'
+        values: '0+100x25'
+      - series: 'han_identity_login_duration_seconds_bucket{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none",le="+Inf"}'
+        values: '0+100x25'
+      - series: 'han_identity_login_duration_seconds_count{job="other-service",endpoint="POST /api/v1/sessions",outcome="success",reason_bucket="none",error_code="none"}'
+        values: '0+100x25'
+    alert_rule_test:
+      - eval_time: 25m
+        alertname: HanIdentityAuthLoginDurationP95High
+        exp_alerts: []
+
+  - name: origin hold and exact keep-firing boundary ignore another job
+    interval: 1m
+    input_series:
+      - series: 'han_platform_origin_rejections_total{job="han-identity-auth",reason="origin_mismatch",response_write="ok"}'
+        values: '0+2x20 40+0x10'
+      - series: 'han_platform_origin_rejections_total{job="other-service",reason="origin_mismatch",response_write="ok"}'
+        values: '0+100x31'
+    alert_rule_test:
+      - eval_time: 19m
+        alertname: HanIdentityAuthOriginRejectionsHigh
+        exp_alerts: []
+      - eval_time: 20m
+        alertname: HanIdentityAuthOriginRejectionsHigh
+        exp_alerts:
+          - exp_labels:
+              service: identity-auth
+              severity: warning
+              signal: origin_rejections
+            exp_annotations:
+              summary: Han identity-auth Origin rejections are high
+              description: At least 20 Origin rejections occurred over 10 minutes.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 30m
+        alertname: HanIdentityAuthOriginRejectionsHigh
+        exp_alerts:
+          - exp_labels:
+              service: identity-auth
+              severity: warning
+              signal: origin_rejections
+            exp_annotations:
+              summary: Han identity-auth Origin rejections are high
+              description: At least 20 Origin rejections occurred over 10 minutes.
+              runbook: docs/runbooks/identity-observability.md
+      - eval_time: 31m
+        alertname: HanIdentityAuthOriginRejectionsHigh
+        exp_alerts: []
+
+  - name: nineteen target origin rejections do not warn
+    interval: 1m
+    input_series:
+      - series: 'han_platform_origin_rejections_total{job="han-identity-auth",reason="origin_mismatch",response_write="ok"}'
+        values: '0 2 4 6 8 10 12 14 16 18 19 21 23 25 27 29 31 33 35 37 38'
+      - series: 'han_platform_origin_rejections_total{job="other-service",reason="origin_mismatch",response_write="ok"}'
+        values: '0+100x20'
+    alert_rule_test:
+      - eval_time: 20m
+        alertname: HanIdentityAuthOriginRejectionsHigh
+        exp_alerts: []
