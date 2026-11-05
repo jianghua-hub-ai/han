@@ -1,35 +1,37 @@
 ---
-status: accepted
-revision: identity-auth-boundary-ir01-r11
+status: draft
+revision: identity-auth-boundary-ir01-r13
 scope: identity-auth
 source_revision: requirements-ir01-r16
 architecture_revision: architecture-ir01-r12
-last_updated: 2026-10-20
+last_updated: 2026-10-24
 ---
 
 # Han 身份认证与账号治理边界
 
-本边界定义身份认证与账号治理（Identity Authentication and Account Governance）在 Han 首期中拥有什么业务事实、执行哪些动作、向文章管理提供什么合同，以及恢复开放如何验证绑定当前备份的文章删除重放证据。`identity-auth-boundary-ir01-r11` 已于 2026-10-20 由 `current-user` 接受，可供双设计同步消费；该接收不表示独立复审 PASS。r02 至 r10 历史接收继续保留。
+本边界定义身份认证与账号治理（Identity Authentication and Account Governance）在 Han 首期中拥有什么业务事实、执行哪些动作、向文章管理提供什么合同，以及恢复开放如何验证绑定当前备份的文章删除重放证据。`identity-auth-boundary-ir01-r13` 仅关闭 design R02 F006 暴露的临时凭据重发接缝歧义：新管理员重发继续沿用 ADR-0011，普通用户 password-reset 重发纳入 ADR-0023 的持久 operation、Gate 与 worker；公共 REST、公共错误、权限、requirements 范围和 ADR-0023 核心均不变。r11 仍是最近一次已接收边界，r12 是未接收的 Q1 同步草案，r02 至 r10 历史接收继续保留。本次返工不表示 architecture/design/stories、test-plan、实现、测试执行或独立复审已经通过。
 
 ## 1. 需求来源与适用依据
 
-边界以 requirements r16、architecture r12 accepted checkpoint 与已接受 ADR-0020 为权威依据。
+边界以 requirements r16、architecture r12 accepted checkpoint、已接受 ADR-0020 与已接受 ADR-0023 为权威依据；design R02 F006 和 architecture r26、identity design r37、stories r13 只用于本次接缝与消费者一致性核对。
 
 | 依据 | 精确版本或摘要 | 本边界如何使用 |
 |---|---|---|
-| 首期需求规格 | `requirements-ir01-r16`；checkpoint `decision-e3af3912166f7287e8324488cad1cf1b87ba1034fca3378d3e0467a23751592d`；确认对象摘要 `sha256:b5f8874a4d90e1226d52ce4c1e87388846c1c15dde264cf2e94a4cfed383189b` | 19 条用户故事、隐私确认、管理员声明与双 Gate、事务性邮件、部署责任、撤回复用删除及 Q1–Q4/Q7–Q9 |
-| 当前需求文件读取快照 | `sha256:999cba3c0cd25d2760e400a41d2a373611406854e76e24e453321913d71cbc4f` | 证明本次完整读取了包含 r16 accepted checkpoint 的当前文件 |
+| 首期需求规格 | `requirements-ir01-r16`；checkpoint `decision-e3af3912166f7287e8324488cad1cf1b87ba1034fca3378d3e0467a23751592d`；确认对象摘要 `sha256:b5f8874a4d90e1226d52ce4c1e87388846c1c15dde264cf2e94a4cfed383189b` | 19 条用户故事，包括 US-IDENTITY-03.10 的密码重置与 US-IDENTITY-03.11 的两类临时密码重发；保留隐私确认、管理员声明与双 Gate、事务性邮件、部署责任、撤回复用删除及 Q1–Q4/Q7–Q9 |
+| 当前需求文件核对快照 | `sha256:999cba3c0cd25d2760e400a41d2a373611406854e76e24e453321913d71cbc4f` | 本次定向读取并核对 US-IDENTITY-03.10/03.11；requirements r16 的其余已确认内容不变 |
 | 系统架构 | `architecture-ir01-r12`；checkpoint `decision-0347e1026fd9148ad16f66750023cb50445a1d7c133db6d82669ea14865b318f`；artifact `sha256:e2ca9b4edd2b1360288429f47b7589f18ef510e76dcf22dd69325c38687d5aa3` | ready/unavailable tagged union、`inventory_scope` string、共享 fixture、非 ready 立即 fail closed，并继承 run 唯一、input_digest 与 completed_at 幂等 |
-| 当前架构文件读取快照 | `sha256:5cac5b922fbe976640a5617a9a24136abb4283ad7ad866a6ab933498b5bd1dce` | 证明本次从真实文件读取了包含 r12 accepted checkpoint 的当前载体；载体 frontmatter 的 pending 不覆盖 checkpoint 对精确 artifact 的接受 |
+| 当前架构、设计与 Story 术语核对 | architecture r26 `sha256:d2fc176d5877aa265b137c78450ae0dc0e9abe1b45ab0c4de672ca65d44c352f`；identity design r37 `sha256:e3e54b5788321883284e05d6128ed2073218f1d959b05f837bb360ae253f21ef`；stories r13 `sha256:00285eabb587c1eca876adfcd5db552b167bc8b647b6062437198d537cd19a50` | 只核对 `new_administrator`、`password_reset`、operation/execution generation、integrity hold、三消费者 Gate 与 worker 术语；不把下游草案提升为已接受边界依据 |
 | 内容 ADR | ADR-0010、已接受 ADR-0020；当前 `content.md` 快照 `sha256:a0594229fcfda0b8f243a476024bf51825f8dfb12671b41675fc270fa12dbf88` | tagged union 唯一 schema、ready canonical、unavailable 最小字段、共享 fixture、首份 completed_at、run/backup 并发合同 |
-| 身份与框架 ADR | 最小同步 ADR-0007、ADR-0019，并继承 ADR-0001 至 ADR-0018 的既有合同 | Recovery Journal/keyring、recovery run/secret 指纹与 namespace 隔离继续有效 |
+| 身份与框架 ADR | 最小同步 ADR-0011、已接受 ADR-0023，并继承 ADR-0001 至 ADR-0022 的既有合同；当前 `identity.md` 快照 `sha256:2fce6825777b3fbf07621a3793db080845587e651edebac1272218a38fd1b978` | `new_administrator` 重发继续使用 SMTP/数据库残余窗口；普通用户 `password_reset` 重发使用 durable operation/job/Gate/worker，且幂等记录不得单独放行 |
+| F006 定点返工输入 | `review-design-r37-s10.1-r02.md` F006；报告 `sha256:41a988fb57e823ef3adc7a1960245eb42677370b37fed1e4791ec2fd019d9473`；用户于 2026-10-24 明确采用推荐值 | 只关闭 boundary 接缝歧义：普通用户每次重发候选使用新的 durable operation/execution generation，existing unresolved operation 或 integrity hold 时拒绝新重发 |
 | identity 独立复审 | `identity-auth` review r08，`IA-DES-R06-N001` still-open；报告 `sha256:5292bb4341b16f7f42e0ab1e92b7d54dafba3c0f2dcd7136d8fdb3e194acd127` | 要求统一 `inventory_scope` 类型、共享 ready fixture/digest 与非 ready variant；architecture r12 已拍板合同，finding 仍待独立复审关闭 |
 | article 独立复审 | `article-management` review r05，`AM-DES-R04-N001` still-open、N002/N003 closed；报告 `sha256:40e8a864fcb58ee6ceeacd5d91c3ed4e5aa3ccd848e4aab67f9d9d50f810f6a5` | 要求 producer/consumer 使用同一 tagged union；保留 completed_at/input_digest 幂等和同 run 错 backup 并发合同 |
+| Q1 业务决定与详细合同 | 用户于 2026-10-23 明确采用建议值；identity design r28 `sha256:977435c8391e4a21c070c359afbb6f143ec84e4ca3ee19cbec7fc5fcc9c0e6b0`；identity test-plan r10 `sha256:3ad85455e8affd2a17a39e92c3f87d6a3327292463150d70753c2cd7d6c1be87` | 关闭 IA-Q1，固定统一改密入口、主体准入、密码规则、403/401/422、凭据绑定与 Session 后置；实现与验证仍未完成 |
 | 项目采用清单 | 当前读取快照 `sha256:8467771211cddd6295f3cb6724a82c0432090206b22efe3bfa13ad217b6df929` | 只有 `identity-auth` 与 `article-management` 两个首期业务模块 |
 
 ### 1.1 上游确认状态
 
-`requirements-ir01-r16` 继续有效；`architecture-ir01-r12` 已由 checkpoint `decision-0347e1026fd9148ad16f66750023cb50445a1d7c133db6d82669ea14865b318f` 接受，artifact 为 `sha256:e2ca9b4edd2b1360288429f47b7589f18ef510e76dcf22dd69325c38687d5aa3`。ADR-0020 是 `ArticleDeletionReplayStatus` v1 的唯一 schema 来源：identity 对 ready variant 才按 canonical 字段重算摘要；收到 unavailable variant 立即 fail closed。identity 比较当前 RecoveryRun 的 backup 与两次 ready 读取的 evidence ref/digest，不得读取 Article Deletion Journal、DeletionOperation、AuditEvent、inventory 或 evidence 内部表。
+`requirements-ir01-r16` 继续有效；`architecture-ir01-r12` 已由 checkpoint `decision-0347e1026fd9148ad16f66750023cb50445a1d7c133db6d82669ea14865b318f` 接受，artifact 为 `sha256:e2ca9b4edd2b1360288429f47b7589f18ef510e76dcf22dd69325c38687d5aa3`。ADR-0020 是 `ArticleDeletionReplayStatus` v1 的唯一 schema 来源：identity 对 ready variant 才按 canonical 字段重算摘要；收到 unavailable variant 立即 fail closed。identity 比较当前 RecoveryRun 的 backup 与两次 ready 读取的 evidence ref/digest，不得读取 Article Deletion Journal、DeletionOperation、AuditEvent、inventory 或 evidence 内部表。ADR-0023 是普通用户 password-reset 的安全结果权威来源：首次重置和后续重发都必须由持久 operation、同事务 recovery job/outbox、认证消费者 Gate 与 worker 收敛覆盖；ADR-0011 继续约束 SMTP 受理判据和残余窗口，但不得成为普通用户 password-reset 重发绕过 operation 的依据。
 
 ## 2. 五段边界叙事
 
@@ -45,14 +47,14 @@ last_updated: 2026-10-20
 2. 注册建立用户身份，并保证用户名、邮箱和手机号符合当前唯一性与删除标识生命周期；
 3. 密码与临时凭据只保存 Argon2id 摘要；实际参数经目标环境基准确定，明文只在受控瞬时路径存在；
 4. 登录统一失败，浏览器 API 默认 same-origin，禁止跨源 credentialed CORS；登录请求必须校验可信 Origin 与 Fetch Metadata 或等价 fail-closed 信号；
-5. 登录建立可即时撤销并可轮换的服务端会话；已有会话再次登录时创建新会话并撤销旧会话，写请求继续校验会话绑定 CSRF Header；
+5. 登录建立可即时撤销并可轮换的服务端会话；已有会话再次登录时创建新会话并撤销旧会话，写请求继续校验会话绑定 CSRF Header。改密只接受当前 Session 所绑定的权威凭据；成功撤销其他 Session 并轮换当前 Session，陈旧或失效绑定只撤销当前 Session；
 6. 账号状态与角色由本模块唯一写入，接入层和文章管理只消费已经判定的身份结果；
 7. 用户停用或删除时撤销其全部会话；停用只改变账号状态，删除写入不可恢复墓碑，并通过文章管理合同把文章转为无归属、进入 `held`、记录删除来源且保持隐藏；
 8. 已删除用户名永久保留；邮箱和手机号在对应保留数据存续期间阻止复用；专用通知邮箱在关联无归属文章全部处置且转移地址已独立留存后清理；
 9. 初始 `admin` 创建新管理员前必须记录其有权提供目标管理员信息的声明；新管理员首次使用临时凭据后必须同时完成改密与当前隐私声明确认，两项完成前不得使用其他管理员能力；
 10. 初始 `admin` 永久受保护并且是其他管理员账号的唯一治理者；普通管理员只治理普通用户，不能治理初始 `admin`、其他管理员或自己；
 11. 创建管理员、密码重置和临时密码重发消费共享作用域化 `Idempotency-Key` 合同；停用与恢复使用目标状态幂等；
-12. 高风险身份治理和凭据动作与追加式审计事件同事务写入；新管理员创建、密码重置和重发在 SMTP 未受理时 fail closed，并显式治理 SMTP 已受理但数据库提交失败的残余窗口；
+12. 高风险身份治理和凭据动作与追加式审计事件同事务写入。新管理员创建及 `new_administrator` 重发在 SMTP 未受理时 fail closed，并按 ADR-0011 治理 SMTP 已受理但数据库提交失败的残余窗口；普通用户密码重置及 `password_reset` 重发在 SMTP 前建立 durable operation、exact pending credential 与 recovery job/outbox，每次重发候选使用新的 operation/execution generation，existing unresolved operation 或 integrity hold 时拒绝新重发，并由 Login、PasswordChange、Session resolve Gate 与 worker 保持 fail closed 和最终收敛；
 13. 邮件仅用于已确认事务性场景，并经强制 TLS 的 SMTP 适配器发送；安全配置、证书校验或获批准处理方登记缺失时相关能力 fail closed；
 14. 用户撤回个人数据处理请求不新增自助能力，由运营交给具备现有删除权限的管理员复用删除流程；
 15. 数据库恢复期间服务进入维护模式；恢复终结事务把全部非初始管理员账号置为 `suspended` 且 `recovery_required=true`，失效所有永久密码、Session 和活动/未完成 TemporaryCredential，并把 `processing`/`uncertain` 幂等记录转为 `recovery_review_required`；
@@ -67,13 +69,15 @@ last_updated: 2026-10-20
 
 **普通用户主路径**：访问者提交符合删除标识生命周期且当前唯一的用户名、邮箱、手机号和合规密码 → 平台展示当前隐私声明 → 访问者确认后，identity-auth 在注册成功时记录声明版本和确认时间；未确认则不建立账号 → 用户经 same-origin 登录入口提交凭据 → 接入层校验可信同源信号，identity-auth 统一处理失败 → 成功后建立或轮换服务端会话 → 已有会话再次登录时新建会话并撤销旧会话 → 写请求继续校验会话绑定 CSRF Header。
 
-**初始管理员主路径**：服务首次具备运行条件且不存在 `admin` 账号 → 运行时从环境变量取得初始凭据并建立初始管理员 → 初始管理员首次登录 → 在完成改密前只能完成强制改密 → 改密后才可使用其他管理员能力。初始管理员的管理员身份永久不可撤销。
+**初始管理员主路径**：服务首次具备运行条件且不存在 `admin` 账号 → 运行时从环境变量取得初始凭据并建立初始管理员 → 初始管理员首次登录 → 在完成改密前只能完成强制改密 → 复用既有改密入口，把当前 Session 绑定的 bootstrap 凭据换为符合统一规则的永久密码 → 撤销其他 Session 并轮换当前 Session → 改密后才可使用其他管理员能力。初始管理员的管理员身份永久不可撤销。
+
+**统一改密路径**：任何处于强制改密状态的有效账号，以及非强制状态的初始 `admin`，都复用 `PUT /api/v1/users/me/password`。identity-auth 先判定主体资格，再核对当前 Session 的 credential kind/id 与权威凭据，随后验证当前密码和新密码；新密码至少 8 位且同时含字母和数字。非强制状态的普通成员或其他管理员返回 `403 auth.forbidden`；当前密码或新密码策略错误返回 `422 identity.validation_failed`；credential kind/id 陈旧、失配或所绑临时凭据已 superseded、expired、recovery_invalidated、consumed 时返回 `401 auth.session_required`，且只撤销当前 Session。成功后写入永久密码、完成强制改密 Gate、撤销其他 Session 并轮换当前 Session；其他 onboarding Gate 保持原状态。
 
 **普通用户治理主路径**：任一当前有效管理员查看、停用、恢复、删除普通用户或重置其密码。停用与恢复按目标状态幂等，每次仍重新校验权限和目标资格；状态变化同时撤销或轮换会话并追加审计。删除时本模块编排同一业务事务，写入不可恢复的 `deleted` 墓碑、永久保留用户名并保留仍有用途的邮箱和手机号；文章管理把文章归属置空、发布意图置为 `held`、记录 `orphaned_from_user_id` 并保留违规事实。
 
 **管理员治理主路径**：初始 `admin` 声明有权提供目标管理员信息 → 携带作用域化幂等键建立新管理员账号 → 临时凭据仅经获批准处理方的强制 TLS SMTP 投递 → 未受理则业务失败；已受理后数据库提交失败按残余窗口处置 → 新管理员首次使用临时凭据后完成改密和当前隐私声明确认；两项均完成才可使用其他管理员能力 → 身份与权限安全上下文变化时轮换会话。
 
-**临时凭据重发主路径**：初始 `admin` 可以重发新管理员临时密码邮件；任一当前有效管理员可以重发普通用户密码重置邮件。邮件只用于该事务性目的，并通过强制 TLS SMTP 投递；处理方未获批准或 TLS/证书校验失败时能力 fail closed。请求必须消费幂等合同；后续成功重置或重发产生最新凭据并使此前值失效。
+**临时凭据重发主路径**：初始 `admin` 可以重发新管理员临时密码邮件；任一当前有效管理员可以重发普通用户密码重置邮件。邮件只用于该事务性目的，并通过强制 TLS SMTP 投递；处理方未获批准或 TLS/证书校验失败时能力 fail closed。`new_administrator` 重发继续按 ADR-0011 在 SMTP 未受理时保持旧值，受理后数据库提交失败进入既有残余窗口治理。`password_reset` 重发先按同一 User Gate 拒绝 existing unresolved operation 或 integrity hold，再为本次候选建立新的 durable operation/execution generation、exact pending credential 与 recovery job/outbox；不得复用已经结算且只绑定旧 exact credential 的 operation。SMTP 未受理或安全失败时旧凭据保持；SMTP 已受理、提交结果未知或 cleanup 未收敛时认证 Gate 保持，由 worker 收敛本次候选；到期仍为 prepared 的候选只能失效本次新值，不得由 worker 重发邮件。只有本次 operation 安全结算并完成最新凭据替换后，旧临时凭据才失效。两类路径继续消费既有幂等合同，且不改变公共 REST、公共错误或权限。
 
 **标识清理协作路径**：文章管理完成某删除账号关联的无归属文章恢复、转移或永久删除，并确保转移通知地址已进入独立快照 → identity-auth 判断专用通知邮箱已无剩余业务用途 → 清理 `retained_email` 并追加审计。用户名永久保留；其他邮箱、手机号保留数据的清理条件仍待确认。
 
@@ -120,26 +124,26 @@ identity --> shared : 幂等与审计协作
 article --> shared : 追加审计
 shared --> journal : 全 retained key 判重与对账
 article --> deletionJournal : tombstone 重放完成
-identity --> smtp : 临时凭据邮件
-identity --> db : 账号、会话与临时凭据
+identity --> smtp : 两类临时凭据事务邮件
+identity --> db : 账号、会话、凭据与 password-reset operation
 article --> db : 文章权威状态
 @enduml
 ```
 
-**说明**：article-management 拥有 DeletionReplayRun、input_digest、current evidence 指针与不可变 evidence；identity-auth 只对 ready variant 重算摘要并比较当前 RecoveryRun backup 与两次读取的 ref/digest，unavailable variant 直接关闭 Gate。identity 不查询 tombstone、inventory、DeletionOperation、AuditEvent、evidence 表或 Article。MarkConsumed 必须晚于 ready evidence、共享 fixture 契约验证和双 namespace 验证。
+**说明**：临时凭据邮件都经同一获批准 TLS SMTP 接缝，但失败后的 identity 内部责任按 purpose 分流：`new_administrator` 使用 ADR-0011 残余窗口，`password_reset` 使用 ADR-0023 operation/Gate/worker，二者不共享安全结果权威。article-management 拥有 DeletionReplayRun、input_digest、current evidence 指针与不可变 evidence；identity-auth 只对 ready variant 重算摘要并比较当前 RecoveryRun backup 与两次读取的 ref/digest，unavailable variant 直接关闭 Gate。identity 不查询 tombstone、inventory、DeletionOperation、AuditEvent、evidence 表或 Article。MarkConsumed 必须晚于 ready evidence、共享 fixture 契约验证和双 namespace 验证。
 
 ### 2.5 设计含义
 
-该边界把“完成状态”固定为 tagged union 的 ready 证据，而不是可复用布尔值或带零值的伪 ready。identity 无法用 unavailable 状态、backup A 的 ready 或 input_digest 变化前的旧 ref/digest 打开 backup B；并发绑定、证据生成与 current 指针所有权仍留在 article-management。
+该边界把“完成状态”固定为各自权威对象可证明的终态：文章恢复只能使用 tagged union 的 ready 证据，普通用户 password-reset 只能使用与 exact credential 绑定的 terminal operation 及一致 settlement。identity 无法用 unavailable 状态、旧 evidence 或已结算旧 operation 为新的 backup 或新的重发凭据放行；并发绑定、文章证据生成与 current 指针所有权仍留在 article-management，password-reset operation/Gate/worker 所有权留在 identity-auth。
 
 ## 3. 四栏边界
 
 | 栏 | 边界结论 |
 |---|---|
-| **管什么** | **对象**：既有身份对象、RecoveryRun、恢复核对结论和 article replay 只读 DTO。**属性**：RecoveryRun.backup_ref、已核验 evidence version/ref/digest/namespace。**动作**：身份恢复终结、canonical 账号删除协调、请求/读取 ReplayStatus、只对 ready 凭 DTO canonical 字段重算摘要，以及比较 backup/ref/digest 后开放 readiness。 |
-| **接入形态** | 恢复仍是单实例维护入口。Recovery Journal 与完整 keyring 位于业务数据库恢复域外并整体迁移；一个 active key 用于写入，verify-only key 只用于历史判重。Article replay 通过内部恢复协作接缝提供，不新增用户业务入口。 |
-| **消费者** | 日常消费者不变。RecoveryCoordinator 是 `ArticleDeletionReplayStatus` v1 tagged union 的只读消费者；identity 不拥有 DeletionReplayRun、DeletionReplayEvidence、input_digest、current evidence 指针、删除日志或内部对账。 |
-| **接口契约** | `ReplayAndVerify`、`ReadStatus` 都以 run+backup 工作且各自只返回一个 variant。identity 对 ready 严格校验 20 个必填非 null 字段、重算 canonical 摘要并比较 `RecoveryRun.backup_ref`；对只含 6 字段的 unavailable 立即 fail closed。二次 ready 的 `evidence_ref/evidence_digest` 必须完全相同。variant 字段越界、缺失/额外/null 字段、未知版本、摘要或 namespace/backup/ref 不匹配时不得 MarkConsumed/open。 |
+| **管什么** | **对象**：既有身份对象、凭据、Session、PasswordResetOperation、RecoveryRun、恢复核对结论和 article replay 只读 DTO。**属性**：必须改密、credential mode、Session credential kind/id、password-reset operation/execution generation、settlement 与 integrity hold、RecoveryRun.backup_ref、已核验 evidence version/ref/digest/namespace。**动作**：统一改密、Session 撤销与轮换、按 purpose 重发临时凭据、拒绝 unresolved/hold 下的新 password-reset 重发、由 Gate/worker 收敛普通用户重发、身份恢复终结、canonical 账号删除协调、请求/读取 ReplayStatus、只对 ready 凭 DTO canonical 字段重算摘要，以及比较 backup/ref/digest 后开放 readiness。 |
+| **接入形态** | 临时凭据重发继续使用既有公共 REST 入口；`password_reset` 分支增加的 operation/Gate/worker 是 identity 内部持久协作，不新增公共入口。恢复仍是单实例维护入口。Recovery Journal 与完整 keyring 位于业务数据库恢复域外并整体迁移；一个 active key 用于写入，verify-only key 只用于历史判重。Article replay 通过内部恢复协作接缝提供，不新增用户业务入口。 |
+| **消费者** | 初始 `admin` 消费 `new_administrator` 重发；有权重置目标普通用户的当前有效管理员消费 `password_reset` 重发。Login、PasswordChange 与 Session resolve 必须消费普通用户 password-reset Gate，worker/受控运行路径消费 unresolved operation 并负责收敛；`new_administrator` 重发不因此迁入 ADR-0023。强制改密状态的有效账号与非强制状态的初始 `admin` 消费统一改密能力；其他非强制账号不是该自助能力的消费者。RecoveryCoordinator 是 `ArticleDeletionReplayStatus` v1 tagged union 的只读消费者；identity 不拥有 DeletionReplayRun、DeletionReplayEvidence、input_digest、current evidence 指针、删除日志或内部对账。 |
+| **接口契约** | 临时凭据重发的公共 REST、公共错误和权限不变；`new_administrator` 继续使用 ADR-0011，普通用户 `password_reset` 的每次重发候选必须使用新的 durable operation/execution generation，不得复用已结算旧 operation，existing unresolved operation 或 integrity hold 时拒绝新重发。SMTP 未受理时旧值保持；受理后结果不确定时 Gate 保持并由 worker 收敛；stale prepared 只能失效本次候选且不得重发邮件；只有安全结算后才以新值替换旧值。幂等记录只负责请求重放，不得单独证明凭据安全。改密复用 `PUT /api/v1/users/me/password`，不新增第二入口；主体越权、凭据绑定失效、当前密码错误和新密码策略错误分别使用唯一的 403、401、422 语义，成功与失败的凭据、Gate、当前及其他 Session 后置固定。`ReplayAndVerify`、`ReadStatus` 都以 run+backup 工作且各自只返回一个 variant。identity 对 ready 严格校验 20 个必填非 null 字段、重算 canonical 摘要并比较 `RecoveryRun.backup_ref`；对只含 6 字段的 unavailable 立即 fail closed。二次 ready 的 `evidence_ref/evidence_digest` 必须完全相同。variant 字段越界、缺失/额外/null 字段、未知版本、摘要或 namespace/backup/ref 不匹配时不得 MarkConsumed/open。 |
 
 ## 4. OO 对象、属性、动作审查
 
@@ -149,6 +153,7 @@ article --> db : 文章权威状态
 | 对象 | 删除账号墓碑 | 用户删除后的不可恢复事实；状态为 `deleted`，不可登录、不可恢复、不可成为转移目标。 |
 | 对象 | 会话 | 已认证状态的服务端记录；账号停用或删除时全部撤销。会话不是用户角色，也不是文章权限。 |
 | 对象 | 临时凭据 | 有期限、一次性替代密码；同一用途只有最新值可用；明文不作为持久属性。 |
+| 对象 | PasswordResetOperation | 普通用户 password-reset 凭据的安全结果权威；每次重置或重发候选绑定新的 execution generation 与 exact credential。非终态、关系不一致或不可读时保持认证 Gate，已结算旧 operation 不得绑定新的重发凭据。 |
 | 对象 | 隐私确认记录 | 保存主体、声明版本、确认时间与来源；是注册和新管理员双 Gate 的证据，不是账号角色。 |
 | 对象 | 管理员信息提供声明 | 初始 `admin` 创建目标管理员前作出的可核对声明；缺失时创建失败，不授予额外权限。 |
 | 对象 | 删除后转移通知联系信息 | 删除账号墓碑上的最小联系事实；仅供无归属文章转移通知，不得作为登录身份、普通用户资料或其他用途。文章转移时由文章管理保存受控快照。 |
@@ -164,20 +169,21 @@ article --> db : 文章权威状态
 | 协作对象 | ArticleDeletionReplayStatus v1 tagged union | article-owned 只读证据视图。ready variant 固定 20 个必填非 null 字段，前十六项是 canonical digest 输入；unavailable variant 只含 `evidence_version,run_id,backup_ref,namespace,status,reason_code`。identity 只对 ready 重算和比较，不持久化文章内部事实；unavailable 立即 fail closed。 |
 | 属性 | 角色与初始管理员标识 | 账号属性；初始 `admin` 与其他管理员的治理权限不同，初始管理员标识不可撤销。它们不是“创建管理员”等动作枚举。 |
 | 属性 | 账号状态 | 由身份认证唯一写入；文章管理只读消费。状态不是文章隐藏原因的复制字段。 |
-| 属性 | 必须改密 | 限制当前账号可使用的业务能力；完成改密后解除。它不是一种账号角色。 |
+| 属性 | 必须改密 | 限制当前账号可使用的业务能力；任何处于该状态的有效账号都可使用统一改密入口，成功后解除。它不是一种账号角色。 |
 | 属性 | 凭据编码与期限 | 密码和临时凭据采用带算法版本、参数、盐与摘要的 Argon2id 编码；临时凭据成功生成起 7 天有效。 |
 | 属性 | 删除标识生命周期 | 用户名永久保留；邮箱和手机号在保留数据存在期间阻止复用；专用通知邮箱按已确认处置完成条件清理。 |
 | 属性 | `recovery_required` | 恢复后非初始账号的 fail-closed Gate；核对和凭据重置完成前不得登录或获得运行权限。 |
 | 属性 | `recovery_review_required` | 恢复后不确定幂等记录的正式状态；未经受控核对不得同键重放副作用。 |
+| 属性 | password-reset operation/execution generation、settlement 与 integrity hold | generation 区分每次候选执行；settlement 证明 operation 与凭据能力后置一致；integrity hold 表示安全关系尚不可证明。unresolved operation 或 hold 存在时拒绝新的普通用户重发。 |
 | 属性 | `recovery_run_id`、`key_id/key_version` 与 HMAC 指纹 | run ID 每次唯一；指纹与生成 key 版本绑定。候选 secret 必须接受所有 retained key 的跨版本判重。 |
-| 动作 | 注册、登录、会话轮换、改密、停用、恢复、删除、重置、重发、标识清理、创建或治理管理员 | 动作改变对象或属性，不得被建模成账号类型。审计和幂等是动作合同，不是新的业务能力。 |
+| 动作 | 注册、登录、会话轮换、改密、停用、恢复、删除、重置、重发、标识清理、创建或治理管理员 | 动作改变对象或属性，不得被建模成账号类型。重发按 `new_administrator` 与 `password_reset` 分流；后者每次候选建立新的 durable operation/execution generation，并在 unresolved/hold 时拒绝。改密先核主体资格与当前 Session credential kind/id，再验证当前密码和新密码；成功撤销其他 Session 并轮换当前 Session。审计和幂等是动作合同，不是新的业务能力。 |
 | 运行动作 | keyring 加载、全版本判重、Journal Begin/Consumed 与迁移 | 由维护流程执行；历史 key 不满足退役条件时不得销毁，任一 key/Journal 校验失败保持停服。 |
 
 **审查结论**：本边界没有把“停用”“删除”“重置密码”“创建管理员”等动作塞入角色或账号类型枚举；没有把会话、临时凭据和通知联系信息误写成 User 的角色取值；没有新增第三个权威业务模块。
 
 ## 5. 跨模块关键接缝
 
-两份边界使用以下同一合同。
+下表保持两模块共用接缝；S6、S9 对 identity-owned password-reset 安全权威作最小细化，不改变 article-management 的消费者、所有权或协作责任。
 
 | 接缝 | 一致合同 |
 |---|---|
@@ -186,10 +192,10 @@ article --> db : 文章权威状态
 | S3 · 停用、恢复与会话失效 | 停用和恢复使用目标状态幂等，每次仍重新校验权限与目标资格。身份认证停用账号时撤销全部会话，并与状态变化同事务追加审计；文章管理不接收批量隐藏写命令，而是读取作者状态派生可见性，违规事实继续有效。 |
 | S4 · canonical 删除与无归属化 | 日常删除和恢复核对的 `kept_deleted` 结论必须执行同一 canonical 删除协作：身份认证写不可恢复墓碑、标识生命周期并失效 Session/永久及临时凭据；文章管理置空 `author_id`、设置 `publication_state=held`、写入 `orphaned_from_user_id`、保留 `violation_state`，并共同维护 `retained_email`/零文章清理与 AuditEvent。任一子步骤失败时不得只保留 User 删除状态。 |
 | S5 · 无归属处置与标识清理 | 文章管理只允许处置无归属文章。恢复公开、成功转移或永久删除后，该文章退出对应墓碑的待处置集合；转移前保存新作者与已删除原作者通知地址快照，再清除 `orphaned_from_user_id`。当关联无归属文章全部处置且所需地址已独立留存时，文章管理提供可核对完成事实，身份认证据此清理专用 `retained_email`；其他邮箱/手机号清理条件仍待确认。 |
-| S6 · 事务性邮件、TLS 与残余窗口 | 邮件仅限已确认的新管理员临时凭据、密码重置/重发和无归属文章转移通知，不得用于营销。生产 SMTP 必须使用隐式 TLS 或强制 STARTTLS，验证证书链与主机名，禁止明文、机会式降级和跳过验证；安全配置或获批准 SMTP 处理方登记缺失时相关能力 fail closed。临时凭据业务继续治理 SMTP/数据库残余窗口；文章转移通知继续 best effort 且不得回滚转移。 |
+| S6 · 事务性邮件、TLS 与残余窗口 | 邮件仅限已确认的新管理员临时凭据、密码重置/重发和无归属文章转移通知，不得用于营销。生产 SMTP 必须使用隐式 TLS 或强制 STARTTLS，验证证书链与主机名，禁止明文、机会式降级和跳过验证；安全配置或获批准 SMTP 处理方登记缺失时相关能力 fail closed。新管理员创建与 `new_administrator` 重发继续按 ADR-0011 治理 SMTP/数据库残余窗口。普通用户密码重置与 `password_reset` 重发保留 ADR-0011 的 SMTP 受理判据，但安全结果必须由 ADR-0023 durable operation/Gate/worker 证明和收敛；stale prepared 不得由 worker 重发邮件。文章转移通知继续 best effort 且不得回滚转移。 |
 | S7 · 管理员治理与文章治理 | 身份认证拥有角色与管理员目标资格。初始 `admin` 永久受保护，并且是其他管理员账号的唯一查看、创建与治理者；普通管理员只治理普通用户，不能治理自己或任何管理员。文章管理消费已确认管理员身份执行删除他人文章、无归属处置和违规治理，但管理员不能修改他人文章。 |
 | S8 · 公共错误 | 共享错误能力拥有公共 REST 错误注册与映射。所有接口只返回稳定错误标识、用户可读说明、可选字段错误和 `trace_id`；登录失败必须统一，内部错误链、账号存在性、敏感状态和基础设施细节不得泄露。业务模块只选择公共错误语义，不各自发明响应结构。 |
-| S9 · 幂等记录 | 共享幂等能力拥有幂等记录。创建管理员、密码重置和临时密码重发要求作用域化幂等键与请求摘要；停用和恢复采用目标状态幂等。当前 ADR 未把文章治理、转移或永久删除纳入键式幂等合同，边界不得擅自扩大。业务模块不得把幂等记录当业务真相源。 |
+| S9 · 幂等记录 | 共享幂等能力拥有幂等记录。创建管理员、密码重置和临时密码重发要求作用域化幂等键与请求摘要；停用和恢复采用目标状态幂等。普通用户 `password_reset` 的幂等记录只承担重放合同，每次新的重发候选必须绑定新的 durable operation/execution generation；已结算旧 operation 不得因同一业务目的被复用为新 exact credential 的安全权威，existing unresolved operation 或 integrity hold 时不得创建新候选。当前 ADR 未把文章治理、转移或永久删除纳入键式幂等合同，边界不得擅自扩大。业务模块不得把幂等记录当业务真相源或认证放行依据。 |
 | S10 · 追加式审计与删除证据 | 共享审计能力拥有 `AuditEvent`，只提供追加和查询。隐私/授权确认、身份治理、凭据操作、标识清理、文章治理、无归属恢复/转移、永久删除和数据库恢复必须追加最小必要审计；高风险业务状态与审计同事务，审计失败时业务写入 fail closed。审计保存永久删除证据但不保存可恢复文章内容；业务模块不得更新或删除审计事件。 |
 | S11 · Article Deletion Journal 永久删除 | 文章管理拥有永久删除协议。授权与版本前置通过后，先把 Article 置内部 `deletion_pending` 并隐藏，创建 DeletionOperation；独立 `article-deletion` namespace 的外部 tombstone 耐久写入后，finalizer 幂等物理 DELETE，并同事务写 AuditEvent 与完成状态。只有 tombstone 与物理删除均完成才返回 204。Journal 成功而数据库删除失败时文章保持不可见并继续 finalizer；任一失败不得恢复公开。 |
 | S12 · 隐私证据与部署处理门禁 | 普通用户注册成功要求当前版本隐私确认证据；初始 `admin` 创建其他管理员要求信息提供声明；新管理员使用其他管理员能力要求改密与当前隐私确认均完成。部署责任人必须在相关能力对外提供前登记适用地区、数据控制者、个人数据处理依据及获批准 SMTP 处理方；任何对应输入缺失时注册、管理员创建或邮件能力 fail closed。登记不构成特定法域或自动合规结论。 |
@@ -216,8 +222,8 @@ article --> db : 文章权威状态
 | `US-IDENTITY-03.7` 删除用户 | identity-auth 负责目标资格、墓碑、标识生命周期、会话与事务编排 | article-management 完成无归属化；恢复 `kept_deleted` 重放相同 canonical 删除；共享审计同事务追加 |
 | `US-IDENTITY-03.8` 处置无归属文章 | article-management | identity-auth 提供管理员身份、目标资格和墓碑联系信息；永久删除受 Article Deletion Journal 保护 |
 | `US-IDENTITY-03.9` 发送文章转移通知 | article-management | 隐私限定事务性用途；identity-auth 提供通知地址与清理协作；强制 TLS SMTP/处理方门禁；审计记录结果 |
-| `US-IDENTITY-03.10` 重置用户密码 | identity-auth | 事务性用途、强制 TLS SMTP/处理方门禁、幂等、Argon2id、审计与残余窗口 |
-| `US-IDENTITY-03.11` 重发临时密码邮件 | identity-auth | 事务性用途、强制 TLS SMTP/处理方门禁、幂等、Argon2id、审计与最新凭据语义 |
+| `US-IDENTITY-03.10` 重置用户密码 | identity-auth | 事务性用途、强制 TLS SMTP/处理方门禁、幂等、Argon2id、审计，以及 ADR-0023 durable operation/job、三消费者 Gate、worker 与 integrity hold |
+| `US-IDENTITY-03.11` 重发临时密码邮件 | identity-auth | `new_administrator` 继续 ADR-0011 残余窗口；普通用户 `password_reset` 每次候选使用新的 durable operation/execution generation，unresolved/hold 时拒绝，Gate/worker 收敛；两类路径保持既有事务性用途、TLS/处理方门禁、幂等、Argon2id、审计与最新凭据语义 |
 | `US-IDENTITY-03.12` 隐藏、解除判定与删除违规文章 | article-management | identity-auth 提供管理员身份；违规文章永久删除受外部 tombstone 保护 |
 | `US-ARTICLE-01.1` 创建文章 | article-management | identity-auth 提供已确认用户身份 |
 | `US-ARTICLE-02.1` 发现并阅读文章 | article-management | identity-auth 提供会话结果及作者账号状态 |
@@ -234,7 +240,8 @@ article --> db : 文章权威状态
 - 不提供用户自助撤回个人数据处理或自助注销入口；撤回只复用既有管理员删除流程，不扩大运营或管理员权限。
 - 不发送营销邮件，不把隐私确认、信息提供声明或部署输入登记表述为特定法域合规或自动合规。
 - 不允许跨源 credentialed CORS，不允许绕过 login CSRF、SMTP TLS、证书链/主机名验证或获批准处理方门禁。
-- 不定义具体 HTTP endpoint、函数签名、包路径、Cookie/Header 名称、公共错误码集合、数据库字段默认值或响应字段序列化细节。
+- 除 Q1 已确认复用 `PUT /api/v1/users/me/password` 外，不定义或新增其他具体 HTTP endpoint、函数签名、包路径、Cookie/Header 名称、公共错误码集合、数据库字段默认值或响应字段序列化细节。
+- 不增加周期性强制轮换、定期密码过期、密码历史或高于“至少 8 位且同时含字母和数字”的额外复杂度要求。
 - 不硬编会话期限、Argon2id 参数、幂等/审计保留期、限流、连接池、SMTP 超时、容量或可用性数值。
 - 不把数据库恢复、recovery secret 或逐账号核对变成普通用户业务能力；recovery secret 不进入普通启动、登录或日常轮换路径。
 - 不允许恢复点中的永久密码、角色、状态或删除事实直接授予运行权限，不引入全局 epoch 或第二套恢复授权机制。
@@ -245,12 +252,15 @@ article --> db : 文章权威状态
 - 不读取 Article Deletion Journal、DeletionOperation、AuditEvent、inventory、DeletionReplayEvidence 或 DeletionReplayRun 内部表；只消费 article-owned v1 tagged union。
 - 不接受混合 variant、仅按 run ID、ready 缺少任一字段或含 null/额外字段、unavailable 携带 canonical/digest/ref/time、旧/未知 evidence 版本、不可验证摘要、错 backup 或二次 ref/digest 变化；identity 不自行生成 evidence_ref 或 completed_at。
 - 不为未来可能出现的 CLI、消息队列、外部身份提供方或多服务形态预造接口。
+- 不把 `new_administrator` 重发迁入 ADR-0023，不为普通用户 `password_reset` 重发新增公共 REST、公共错误、权限、角色或业务模块。
+- 不复用已经结算且绑定旧 exact credential 的 PasswordResetOperation 承载新的重发候选，不允许在 existing unresolved operation 或 integrity hold 下创建新候选。
 
 ## 8. 待澄清清单
 
+IA-Q1 已由用户于 2026-10-23 采用建议值并关闭，确定合同移入 §9；该编号保留用于历史追溯，不再是待确认项或设计/测试规划阻塞项。F006 的五项推荐值已由用户于 2026-10-24 明确拍板并移入 §9，本次不新增待澄清项。
+
 | 编号 | 问题 | 影响 | 当前边界假设 | 需谁决定 | 阻塞性 |
 |---|---|---|---|---|---|
-| IA-Q1 | 初始管理员凭据后续如何轮换，首次改密后的密码是否沿用现有口令规则？ | 影响凭据持续管理与改密校验 | 采用环境变量仅首次注入和强制改密；不填轮换与额外规则默认值 | 项目负责人 | 非阻塞边界；详细设计保留明确 TBD |
 | IA-Q2 | 已删除账号除专用通知邮箱外的其他保留身份信息（包括手机号）何时清理？ | 决定邮箱和手机号何时重新进入新账号唯一性校验 | 用户名永久保留；专用 `retained_email` 清理条件已确认；其他数据清理前不得复用 | 需求提出人、项目负责人 | 非阻塞边界；阻塞其他标识清理策略定稿 |
 | IA-Q3 | 会话绝对期限与空闲期限是什么？ | 影响会话过期和重复访问验收 | Cookie/CSRF/轮换与登录统一失败已经确定；期限不设默认值 | 需求提出人 | 非阻塞边界；详细设计保留明确 TBD |
 | IA-Q4 | 邮箱变更由谁、在什么流程执行？ | 需求只定义变更后的临时密码不变量，但用户资料编辑未纳入首期 | 保留条件性不变量，不新增邮箱编辑动作 | 需求提出人、项目负责人 | 非阻塞 |
@@ -272,12 +282,19 @@ article --> db : 文章权威状态
 - 浏览器 API 默认 same-origin，禁止跨源 credentialed CORS；登录校验可信同源信号，已有会话再次登录时新建会话并撤销旧会话。
 - 接入层校验 Cookie 与会话绑定 CSRF Header；认证成功和权限安全上下文变化后轮换会话 ID。
 - 密码与临时凭据采用 Argon2id；`golang.org/x/crypto` 是已批准依赖，参数数值保持 TBD。
+- Q1 改密统一复用 `PUT /api/v1/users/me/password`；新密码至少 8 位且同时含字母和数字。任何处于强制改密状态的有效账号，以及非强制状态的初始 `admin`，可以使用该入口；其他非强制普通成员或管理员返回 `403 auth.forbidden`，且不验证请求密码、不改变凭据或 Gate，当前及其他 Session 保持有效。
+- 改密只验证当前 Session credential kind/id 所绑定的权威凭据，不切换、搜索或回退其他凭据。当前密码错误返回 `422 identity.validation_failed` 和 `current_password_mismatch`；新密码依次以 `password_too_short`、`password_requires_letter`、`password_requires_digit` 返回首个 `422 identity.validation_failed` 字段错误。上述 422 不改变凭据或 Gate，当前及其他 Session 保持有效。
+- 当前 Session credential kind/id 失配，或所绑临时凭据不是当前值、已 superseded、expired、recovery_invalidated、consumed 时，返回 `401 auth.session_required` 并只撤销当前 Session；凭据、Gate 和其他 Session 不变。成功改密写入永久密码；强制路径完成改密 Gate，非强制初始 `admin` 保持非强制；随后撤销其他 Session 并轮换当前 Session，其他 onboarding Gate 不变。
+- 首期不增加周期性强制轮换、定期密码过期、密码历史或额外复杂度要求。
 - 公共 REST 错误使用稳定结构与最小披露；登录失败统一，不泄露账号存在性、凭据正确性或状态。
 - 创建管理员、密码重置和临时密码重发采用作用域化 `Idempotency-Key`；停用和恢复采用目标状态幂等。
 - 高风险身份治理、凭据操作、标识清理与业务状态同事务追加审计；业务模块不能更新或删除审计事件。
 - SMTP 经适配器调用并强制隐式 TLS 或 STARTTLS，校验证书链与主机名，禁止明文、降级和跳过验证。
 - 邮件仅用于已确认事务性用途；安全配置或获批准 SMTP 处理方缺失时相关能力 fail closed。
-- 临时凭据邮件在未受理时 fail closed，受理后数据库提交失败按残余窗口治理；文章转移通知 best effort。
+- 新管理员创建与 `new_administrator` 重发继续沿用 ADR-0011 的 SMTP/数据库残余窗口合同；文章转移通知继续 best effort。
+- 普通用户首次 password-reset 与后续 `password_reset` 重发必须使用 ADR-0023 durable operation/job/Gate/worker；每次重发候选使用新的 operation/execution generation，不复用已结算旧 operation。
+- 普通用户存在 unresolved PasswordResetOperation 或 integrity hold 时拒绝新重发；SMTP 未受理时旧值保持，受理后结果不确定时 Gate 保持并由 worker 收敛，stale prepared 只失效本次候选且不得由 worker 重发邮件。
+- 上述分流不改变公共 REST、公共错误、权限、requirements 范围或 ADR-0023 核心。
 - 普通用户注册记录当前隐私声明版本和确认时间；初始 `admin` 创建管理员前记录信息提供声明；新管理员完成改密与当前隐私确认双 Gate 后才能使用其他管理员能力。
 - 部署前必须登记地区、数据控制者、处理依据与获批准 SMTP 处理方；缺失时注册、管理员创建或邮件能力不得开放，且不声称自动合规。
 - 个人数据处理撤回请求由运营转交具备现有删除权限的管理员，复用账号删除流程，不新增系统权限或自助入口。
@@ -333,6 +350,10 @@ article --> db : 文章权威状态
 | r10 下一阶段接收责任 | `current-user` | 接受确认时的 r10 精确 revision/hash，继续担任双设计同步接收责任人 | accepted；2026-10-20 |
 | r11 边界修订责任 | 当前 Boundary-Griller 角色会话 | 消费 accepted architecture r12/ADR-0020、identity review r08 与 article review r05，固定 ready/unavailable tagged union、`inventory_scope` string、共享 fixture digest 与非 ready 立即 fail closed | 已完成专业修订并获接收 |
 | r11 下一阶段接收责任 | `current-user` | 接受 r11 精确 revision/hash，继续担任双设计同步接收责任人 | accepted；2026-10-20 |
+| r12 边界返工责任 | 当前 Boundary-Griller 角色会话 | 消费用户于 2026-10-23 对 Q1 建议值的明确采用、identity design r28 与 test-plan r10，关闭 IA-Q1 并同步主体、错误和 Session 后置 | 已完成专业修订；待 Lead 现场复核 |
+| r12 下一阶段接收责任 | Lead（主会话） | 核对 r12 精确 revision/hash、Q1 与 design r28/test-plan r10 一致性、范围及共享工作树越界情况，并决定是否接收 | 未接收；由 r13 当前草案取代 |
+| r13 边界返工责任 | 当前 Boundary-Griller 角色会话 | 消费 requirements r16 的 US-IDENTITY-03.10/03.11、accepted ADR-0011/0023 与 design R02 F006，只同步两类重发分流、普通用户 durable operation generation、unresolved/hold Gate 和 worker 接缝 | 已完成专业修订；待 Lead 现场复核 |
+| r13 下一阶段接收责任 | Lead（主会话） | 核对 r13 精确 revision/hash、F006 五项固定决定、未变公共契约、单文件范围及共享工作树越界情况，并决定是否接收 | pending |
 
 ### 10.1 r02 历史接收记录
 
@@ -428,28 +449,45 @@ r02 至 r09 的全部接收均为历史 accepted 证据；它们不自动接受�
 
 该决定只针对表中“确认时 revision/hash”对应的 r11 精确内容。补录接收记录会改变文件完整 SHA-256；补录后的载体摘要不替换、撤销或扩大用户已接受的 r11 对象。r02 至 r10 的历史接收继续保留。
 
+### 10.11 r12 Q1 返工追溯
+
+| 决定日期 | 决定来源 | 返工输入 | 结论 |
+|---|---|---|---|
+| 2026-10-23 | 用户明确授权对待确认或决策项采用建议值 | identity design r28 `sha256:977435c8391e4a21c070c359afbb6f143ec84e4ca3ee19cbec7fc5fcc9c0e6b0`；identity test-plan r10 `sha256:3ad85455e8affd2a17a39e92c3f87d6a3327292463150d70753c2cd7d6c1be87` | IA-Q1 业务选择已拍板并从待澄清清单移除；r12 只同步边界 SSOT，不表示 design/test-plan 独立复审、实现或测试完成 |
+
+r02 至 r11 的历史接收记录原样保留。r12 未被接收，现仅保留 Q1 返工追溯；r13 是当前精确成果对象，等待 Lead 按本次 revision/hash 现场复核和接收，不自动继承 r11 的 accepted 状态。
+
+### 10.12 r13 F006 接缝返工追溯
+
+| 决定日期 | 决定来源 | 返工输入 | 结论 |
+|---|---|---|---|
+| 2026-10-24 | 用户明确授权采用 F006 推荐值 | requirements r16 US-IDENTITY-03.10/03.11；accepted ADR-0011/0023；design R02 F006 `sha256:41a988fb57e823ef3adc7a1960245eb42677370b37fed1e4791ec2fd019d9473` | `new_administrator` 保持 ADR-0011；普通用户 `password_reset` 每次重发候选使用新的 durable operation/execution generation，unresolved/hold 时拒绝；公共契约与需求范围不变 |
+
+r13 只修订 boundary SSOT，不修改或批准 architecture r26、identity design r37、stories r13，也不关闭 review F006；下游对象仍须按本边界修订并经原 Reviewer 复审。
+
 ## 11. 进入详细设计前 Gate
 
-**Gate 结论：开放（OPEN）。r11 边界已接收，可供双设计同步消费。**
+**Gate 结论：边界接缝已收敛，可供 F006 下游返工消费（OPEN，r13 待 Lead 接收）。**
 
-`current-user` 于 2026-10-20 接受 `identity-auth-boundary-ir01-r11`，确认时完整 SHA-256 为 `10c6eb6884b40adbb6534c1512dea44c41bb96d09c5475b9ee63f94f99c35c7a`，并继续担任双设计同步接收责任人。Gate 开放只表示该边界可供双设计同步，不表示 identity/article design 已通过，也不表示任何 review finding 已独立复审关闭。IA-Q9 至 IA-Q13 仍是部署/灾备演练前必填。
+`current-user` 于 2026-10-20 接受 `identity-auth-boundary-ir01-r11`，确认时完整 SHA-256 为 `10c6eb6884b40adbb6534c1512dea44c41bb96d09c5475b9ee63f94f99c35c7a`。用户于 2026-10-23 拍板 IA-Q1，并于 2026-10-24 拍板 F006 五项推荐值；当前边界已明确两类重发的安全权威、候选 generation、unresolved/hold 拒绝和 worker 收敛，不再存在待用户决定的 F006 boundary 歧义。r13 仍需 Lead 按精确 revision/hash 接收；Design Review Gate 仍为 CHANGES REQUIRED，architecture r26、identity design r37、stories r13 尚未据此返工，F006 尚未由原 Reviewer 关闭。本 Gate 开放不表示 test-plan、实现、测试执行、E2E 或任何独立复审已经通过。IA-Q9 至 IA-Q13 仍是部署/灾备演练前必填。
 
 ## 12. 完整性自检
 
 | 自检项 | 结果 |
 |---|---|
-| 五段叙事、接缝图与图后说明 | 通过：五段齐全；图内嵌且说明调用方向、DTO-only 消费和所有权 |
-| 四栏与 OO | 通过：身份侧只拥有消费、重算和比较动作；DeletionReplayRun/Evidence 明确归 article |
-| 需求与上游 | 通过：requirements r16、accepted architecture r12 checkpoint/artifact、ADR-0020、identity review r08、article review r05 均精确记录 |
-| 19 条 US | 通过：共同追溯矩阵仍为 19 条，主责与协作归属未改变 |
-| S1–S16 | 通过：与 article boundary 逐字一致；S16 固定 ready 20 字段与 unavailable 6 字段 strict tagged union |
+| 五段叙事、接缝图与图后说明 | 通过：五段齐全；重发主路径和图后说明明确 `new_administrator` 与 `password_reset` 的不同安全权威 |
+| 四栏与 OO | 通过：PasswordResetOperation 是对象，generation/settlement/hold 是属性，重发/拒绝/收敛是动作；DeletionReplayRun/Evidence 仍明确归 article |
+| 需求与上游 | 通过：requirements r16、accepted architecture r12 checkpoint/artifact、ADR-0011/0020/0023 与 F006 均精确记录；r26/r37/r13 仅作术语核对 |
+| 19 条 US | 通过：共同追溯矩阵仍为 19 条，主责不变；US-IDENTITY-03.10/03.11 的普通用户分支补齐 durable operation/Gate/worker |
+| S1–S16 | 通过：S6/S9 只细化 identity-owned password-reset 权威，不改变 article 消费者或责任；S16 继续固定 ready 20 字段与 unavailable 6 字段 strict tagged union |
 | DTO-only 重算 | 通过：identity 只对 ready 从 DTO 重算并比较 backup/ref/digest，不读 article 内部表；unavailable 立即 fail closed |
 | completed_at 与幂等 | 通过：completed_at 只作首份元数据；输入不变复用同 ref/digest/time，变化才追加 |
 | 并发与所有权 | 通过：DeletionReplayRun 唯一 `(run_id,namespace)`、backup 首次绑定不可变；执行约束归 article |
 | schema 与 fixture | 通过：`inventory_scope` 为 JSON string；共享 ready fixture digest 为 `sha256:169e0f30407867083598ab146c950968e1b5f508ed4fd5d5198bb61e788926a7` |
 | variant 唯一性 | 通过：ReplayAndVerify/ReadStatus 各只返回一个 variant；unavailable 禁止 canonical/digest/ref/time |
-| 明确排除与待澄清 | 通过：未扩展业务范围；IA-Q13 只保留 v1 退役/归档/保留，不把已拍板 schema 重新列为 unknown |
-| 历史接收 | 通过：r02 至 r10 历史记录原样保留；新增 r11 的 current-user/date/确认时 SHA-256 接收记录 |
-| 精确 revision 与状态 | 通过：revision 保持 `identity-auth-boundary-ir01-r11`，状态为 `accepted`，日期 2026-10-20 |
+| Q1 主体、错误与 Session 后置 | 通过：允许强制改密有效账号与非强制初始 admin；其他非强制账号 403；字段错误 422；陈旧/失效绑定 401 且只撤销当前 Session；成功撤销其他 Session 并轮换当前 Session |
+| 明确排除与待澄清 | 通过：F006 五项决定已进入已拍板项；不新增 API、错误、权限、角色、模块或需求，其他待澄清项未改 |
+| 历史接收 | 通过：r02 至 r11 历史记录原样保留；r12 明确未接收且由 r13 草案取代，未伪造接收记录 |
+| 精确 revision 与状态 | 通过：revision 更新为 `identity-auth-boundary-ir01-r13`，状态为 `draft`，日期 2026-10-24 |
 | PlantUML 静态限制 | 通过静态检查：1 个块起止成对、无反斜杠换行标签、无正交线型配置；未执行实渲染 |
-| Gate | 通过：明确 OPEN 且可供双设计同步；未写成 identity/article design 或独立复审 PASS |
+| Gate | 通过：F006 boundary 歧义已收敛，r13 待 Lead 接收；Design Review 仍 CHANGES REQUIRED，未写成 architecture/design/stories、实现、测试或独立复审 PASS |

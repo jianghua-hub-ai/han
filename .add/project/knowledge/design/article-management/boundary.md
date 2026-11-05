@@ -1,19 +1,19 @@
 ---
 status: accepted
-revision: article-management-boundary-ir01-r12
+revision: article-management-boundary-ir01-r13
 scope: article-management
 source_revision: requirements-ir01-r16
 architecture_revision: architecture-ir01-r12
-last_updated: 2026-10-20
+last_updated: 2026-10-23
 ---
 
 # Han 文章管理与内容治理边界
 
-本边界定义文章管理与内容治理（Article Management and Content Governance）在 Han 首期中拥有什么业务事实、执行哪些文章动作，以及如何为当前恢复批次持久化可验证、不可复用的删除重放证据。`article-management-boundary-ir01-r12` 已于 2026-10-20 由 `current-user` 接受，可供双设计同步消费；该接收不表示独立复审 PASS。r02 至 r11 历史接收继续保留。
+本边界定义文章管理与内容治理（Article Management and Content Governance）在 Han 首期中拥有什么业务事实、执行哪些文章动作，以及如何为当前恢复批次持久化可验证、不可复用的删除重放证据。`article-management-boundary-ir01-r13` 于 2026-10-23 同步 `current-user` 已确认的 AM-Q1 内容合同，边界职责、消费者与接口职责不变；该同步不表示独立复审 PASS。r02 至 r12 历史接收继续保留。
 
 ## 1. 需求来源与适用依据
 
-边界以 requirements r16、architecture r12 accepted checkpoint 与已接受 ADR-0020 为权威依据。
+边界以 requirements r16、architecture r12 accepted checkpoint、已接受 ADR-0020 与 2026-10-23 当前用户对 AM-Q1 的明确确认作为权威依据。
 
 | 依据 | 精确版本或摘要 | 本边界如何使用 |
 |---|---|---|
@@ -25,11 +25,12 @@ last_updated: 2026-10-20
 | 身份与框架 ADR | 最小同步 ADR-0007、ADR-0019，并继承 ADR-0001 至 ADR-0018 的既有合同 | Recovery Journal/keyring、recovery run/secret 指纹与 namespace 隔离继续有效 |
 | identity 独立复审 | `identity-auth` review r08，`IA-DES-R06-N001` still-open；报告 `sha256:5292bb4341b16f7f42e0ab1e92b7d54dafba3c0f2dcd7136d8fdb3e194acd127` | 要求统一 `inventory_scope` 类型、共享 ready fixture/digest 与非 ready variant；architecture r12 已拍板合同，finding 仍待独立复审关闭 |
 | article 独立复审 | `article-management` review r05，`AM-DES-R04-N001` still-open、N002/N003 closed；报告 `sha256:40e8a864fcb58ee6ceeacd5d91c3ed4e5aa3ccd848e4aab67f9d9d50f810f6a5` | 要求 producer/consumer 使用同一 tagged union；保留 completed_at/input_digest 幂等和同 run 错 backup 并发合同 |
+| AM-Q1 用户确认与评审追溯 | `current-user` 于 2026-10-23 明确采用建议值；article design r07 `sha256:71669cea6e0878710de023a9a029d67644c36897d7bbda584ab16088fcd1ded0`；review `AM-Q1-R01-F001` 报告 `sha256:16c3db39185ecacb66518d2315db541b1438a8914fe6cd46331fb9e8bd4ac992` | 固定纯文本、Unicode 空白判空但不 trim 写回、title≤200 rune、body≤20000 rune、合法原值保留；关闭 boundary 的内容规则事实漂移 |
 | 项目采用清单 | 当前读取快照 `sha256:8467771211cddd6295f3cb6724a82c0432090206b22efe3bfa13ad217b6df929` | 只有 `identity-auth` 与 `article-management` 两个首期业务模块 |
 
 ### 1.1 上游确认状态
 
-`requirements-ir01-r16` 继续有效；`architecture-ir01-r12` 已由 checkpoint `decision-0347e1026fd9148ad16f66750023cb50445a1d7c133db6d82669ea14865b318f` 接受，artifact 为 `sha256:e2ca9b4edd2b1360288429f47b7589f18ef510e76dcf22dd69325c38687d5aa3`。ADR-0020 是 `ArticleDeletionReplayStatus` v1 的唯一 schema 来源：article-management 拥有 DeletionReplayRun、input_digest、current evidence 指针与不可变 Evidence，并且只能输出唯一 ready 或 unavailable variant；identity 只对 ready 重算并比较 backup/ref/digest，收到 unavailable 立即 fail closed。
+`requirements-ir01-r16` 继续有效；`architecture-ir01-r12` 已由 checkpoint `decision-0347e1026fd9148ad16f66750023cb50445a1d7c133db6d82669ea14865b318f` 接受，artifact 为 `sha256:e2ca9b4edd2b1360288429f47b7589f18ef510e76dcf22dd69325c38687d5aa3`。ADR-0020 是 `ArticleDeletionReplayStatus` v1 的唯一 schema 来源：article-management 拥有 DeletionReplayRun、input_digest、current evidence 指针与不可变 Evidence，并且只能输出唯一 ready 或 unavailable variant；identity 只对 ready 重算并比较 backup/ref/digest，收到 unavailable 立即 fail closed。AM-Q1 的内容格式、空白、长度与原值合同已由 `current-user` 于 2026-10-23 明确确认；具体 validator 组织和 HTTP 请求体 byte 上限仍由详细设计承担，不属于边界职责。
 
 ## 2. 五段边界叙事
 
@@ -142,7 +143,7 @@ article --> db : 内容、归属、发布意图与违规事实
 | 协作对象 | Recovery Journal/RecoveryRun | 分别位于业务数据库外与业务数据库内，用于恢复批次防重放和对账；Journal 记录 `key_id/key_version`，均不是 Article 真相源。 |
 | 协作对象 | Recovery keyring | active/verify-only HMAC key 的受控集合；文章模块不读取、不轮换，也不据此改变文章状态。 |
 | 协作对象 | Article Deletion Journal tombstone | 业务数据库外的最小删除事实，仅含文章/版本/operation/时间/key/阶段信息，不保存内容、摘要、邮箱或其他 PII。 |
-| 属性 | 标题与正文 | 首期全部文章内容；具体格式和长度仍待确认，不增加其他内容字段。 |
+| 属性 | 标题与正文 | 首期全部文章内容，均为纯文本。判空覆盖全部 Unicode 空白，但不得 trim 或改写合法值；标题不超过 200 rune，正文不超过 20000 rune，前后空白及其他合法原值原样保留。不增加其他内容字段。 |
 | 属性 | 作者归属 | 可为空；空值表示无归属，不等于必然隐藏。 |
 | 属性 | 无归属删除来源 | `orphaned_from_user_id` 指向 identity-auth 的 `deleted` 墓碑，仅用于取得已删除原作者通知邮箱；不表示当前作者。 |
 | 属性 | 发布意图 | 表达文章管理是否允许发布；无归属删除协作进入保持隐藏，恢复或转移可重新进入发布。 |
@@ -220,7 +221,7 @@ article --> db : 内容、归属、发布意图与违规事实
 - 不允许明文或可降级 SMTP，不绕过证书链/主机名验证或获批准处理方门禁。
 - 不把 ADR-0015 的 `Idempotency-Key` 擅自扩展到文章治理、转移或永久删除；如需扩展必须回到 decision。
 - 不定义具体 HTTP endpoint、函数签名、包路径、字段默认值、具体页大小、公共错误码集合或审计字段序列化；列表、详情、倒序和分页本身已经确认。
-- 不硬编标题正文格式与长度、容量、SMTP 超时、审计/通知记录保留期等数值，也不决定删除二次确认、隐藏原因展示或人工重发通知能力。
+- 不在边界中指定具体 validator、HTTP 请求体 byte 上限或其执行位置，也不硬编容量、SMTP 超时、审计/通知记录保留期等数值；这些属于详细设计或运行输入。边界不决定删除二次确认、隐藏原因展示或人工重发通知能力。
 - 不修改账号 `recovery_required`、永久密码、Session、TemporaryCredential 或幂等恢复状态；不参与初始管理员恢复信任根和逐账号授权决定。
 - 不把维护模式、恢复运行记录、RPO 声明或永久删除审计解释为新的文章恢复能力。
 - 不拥有 Recovery Journal、RecoveryRun、HMAC key 或 recovery secret；不把防重放记录当文章真相源。
@@ -236,7 +237,7 @@ article --> db : 内容、归属、发布意图与违规事实
 
 | 编号 | 问题 | 影响 | 当前边界假设 | 需谁决定 | 阻塞性 |
 |---|---|---|---|---|---|
-| AM-Q1 | 标题和正文的长度与格式规则，以及文章列表的具体页大小是什么？ | 影响创建、修改、详情契约与分页参数 | 只承诺标题和正文；列表按创建时间倒序并支持分页，不预设数值 | 需求提出人 | 非阻塞边界；详细设计保留明确 TBD |
+| AM-Q1 | 文章列表的具体页大小是什么？ | 影响列表分页参数，不影响已确认的标题与正文合同 | 列表按创建时间倒序并支持分页；具体页大小不预设 | 需求提出人 | 非阻塞边界；详细设计保留分页 TBD |
 | AM-Q2 | `TransferNotice`、投递结果与 `AuditEvent` 的保留、归档和清理周期是什么？ | 影响隐私、容量和审计可追溯时间 | 专用 `retained_email` 清理触发条件已确认；记录对象保留数值不预设 | 项目负责人、指定技术代表 | 非阻塞；部署与详细设计保持 TBD |
 | AM-Q3 | 首期用户规模、文章规模、响应时间、可用性、SMTP 超时与审计容量目标是什么？ | 影响列表、详情、治理与通知的容量设计 | 方向已批准，数值无来源 | 项目负责人、指定技术代表 | 非阻塞；数值保持 TBD |
 | AM-Q4 | 首期是否纳入搜索？ | 可能扩大文章发现方式、接口与索引边界 | 当前不纳入；草稿与下线已明确排除 | 需求提出人、项目负责人 | 非阻塞；新增时回需求与边界 |
@@ -247,6 +248,8 @@ article --> db : 内容、归属、发布意图与违规事实
 | AM-Q11 | Recovery Journal 持久卷备份/迁移窗口、记录保留、retained key 数量上限、active/verify-only key 轮换和退役条件是什么？ | 影响 canonical 删除重放前的恢复开放可信度 | 文章模块只消费完整 keyring 判重和 Journal/DB 对账已通过的恢复协调；具体介质、周期和数值不预设 | 项目负责人、运行责任人、安全责任人 | 灾备演练前必填；不阻塞 r07 边界交接 |
 | AM-Q12 | Article tombstone 保留周期、可恢复备份 inventory、备份退役证明、DeletionOperation/finalizer 容量及对应 key 保留条件是什么？ | 决定旧备份恢复时永久删除事实能否完整重放 | tombstone/key 至少保留到所有早于删除时间的可恢复备份退役；具体周期、inventory 和容量不预设 | 项目负责人、运行责任人、文章设计责任人 | 上线与灾备演练前必填；不阻塞 r08 边界交接 |
 | AM-Q13 | DeletionReplayEvidence v1 退役、归档和记录保留策略是什么？ | 影响崩溃续跑、历史证据验证和 identity 消费兼容性 | v1 tagged union、ready canonical、unavailable 最小字段和 fail-closed 机制已经固定；演进须新版本而非原位改 v1 | 项目负责人、运行责任人、文章设计责任人 | 灾备演练前必填；不阻塞 r12 边界交接 |
+
+AM-Q1 的内容部分已由当前用户于 2026-10-23 确认，不再作为待澄清：标题和正文是纯文本；全 Unicode 空白用于判空但不写回 trim 结果；标题不超过 200 rune，正文不超过 20000 rune；合法输入保留原值。具体 validator 和 HTTP 请求体 byte 上限属于详细设计，不能从 rune 上限推导。AM-Q1 仅剩列表具体页大小待确认。
 
 作者端隐藏原因披露范围已由当前用户于 2026-10-20 确认，不再作为待澄清：作者可读取/修改自己的未物理删除且仍归属文章；违规文章仅返回 `moderation_status=restricted` 与 `editable=true`，完整类别和隐藏原因仅管理员治理接口可见。
 
@@ -261,6 +264,7 @@ article --> db : 内容、归属、发布意图与违规事实
 - 永久删除审计保存核对证据但不保存可恢复文章内容；数据库恢复不产生文章恢复动作。
 - ADR-0015 的键式幂等只适用于已列身份操作，当前不扩展到文章治理、转移或永久删除。
 - 所有文章浏览和写入都要求已认证身份；文章创建后直接发布。
+- 标题和正文均为纯文本；全 Unicode 空白用于判空但不 trim 或改写合法值；标题不超过 200 rune，正文不超过 20000 rune，合法输入保留原值。具体 validator 与 HTTP 请求体 byte 上限由详细设计承担。
 - 作者可读取和修改自己未物理删除且仍归属的违规文章；修改只更新标题、正文和版本，不清除违规或其他隐藏约束。
 - 作者端对受限文章仅暴露 `moderation_status=restricted` 与 `editable=true`；不暴露 `violation_category` 或完整 `hidden_reasons`。
 - 管理员治理接口继续返回完整违规类别和隐藏原因；普通成员继续获得统一不可用语义。
@@ -321,6 +325,8 @@ article --> db : 内容、归属、发布意图与违规事实
 | r11 下一阶段接收责任 | `current-user` | 接受确认时的 r11 精确 revision/hash，继续担任双设计同步接收责任人 | accepted；2026-10-20 |
 | r12 边界修订责任 | 当前 Boundary-Griller 角色会话 | 消费 accepted architecture r12/ADR-0020、identity review r08 与 article review r05，固定 ready/unavailable tagged union、`inventory_scope` string、共享 fixture digest 与非 ready 立即 fail closed | 已完成专业修订并获接收 |
 | r12 下一阶段接收责任 | `current-user` | 接受 r12 精确 revision/hash，继续担任双设计同步接收责任人 | accepted；2026-10-20 |
+| r13 边界修订责任 | 当前 Boundary-Griller 角色会话 | 消费 2026-10-23 当前用户对 AM-Q1 的明确确认与 review F001，关闭内容规则事实漂移，不改变边界职责、消费者或接口职责 | 已完成专业修订 |
+| r13 下一阶段接收责任 | `current-user` | 已确认 AM-Q1 业务值；由 Lead 核对 r13 精确 revision/hash 后继续原设计评审闭环 | 待 Lead 现场复核 |
 
 ### 10.1 r02 历史接收记录
 
@@ -428,9 +434,9 @@ r02 至 r10 的全部接收均为历史 accepted 证据；它们不自动接受�
 
 ## 11. 进入详细设计前 Gate
 
-**Gate 结论：开放（OPEN）。r12 边界已接收，可供双设计同步消费。**
+**Gate 结论：开放（OPEN）。r13 已同步确认的 AM-Q1 内容合同，可供受影响设计继续消费。**
 
-`current-user` 于 2026-10-20 接受 `article-management-boundary-ir01-r12`，确认时完整 SHA-256 为 `cdfd77fc0375ecfbd510974a6f01b5d2c011544aa56eeef000a1e235d0c452c7`，并继续担任双设计同步接收责任人。Gate 开放只表示该边界可供双设计同步，不表示 identity/article design 已通过，也不表示任何 review finding 已独立复审关闭。AM-Q9 至 AM-Q13 仍是部署/灾备演练前必填。
+`current-user` 于 2026-10-23 明确确认 AM-Q1 的内容格式、空白、rune 长度与原值合同；r13 仅把该决定同步到 accepted boundary，未改变 r12 已接受的业务边界、消费者或接口职责。Gate 开放只表示该边界可供受影响设计消费，不表示 design review F001、tasks/Plan 同步或任何实现与测试已经完成。AM-Q9 至 AM-Q13 仍是部署/灾备演练前必填。
 
 ## 12. 完整性自检
 
@@ -438,7 +444,7 @@ r02 至 r10 的全部接收均为历史 accepted 证据；它们不自动接受�
 |---|---|
 | 五段叙事、接缝图与图后说明 | 通过：五段齐全；图内嵌且说明 run/evidence 所有权、DTO 消费和开放顺序 |
 | 四栏与 OO | 通过：DeletionReplayRun、Evidence、input_digest/current 指针和动作归属明确 |
-| 需求与上游 | 通过：requirements r16、accepted architecture r12 checkpoint/artifact、ADR-0020、identity review r08、article review r05 均精确记录 |
+| 需求与上游 | 通过：requirements r16、accepted architecture r12 checkpoint/artifact、ADR-0020、既有 reviews 与 2026-10-23 AM-Q1 用户确认均精确记录 |
 | 19 条 US | 通过：共同追溯矩阵仍为 19 条，主责与协作归属未改变 |
 | S1–S16 | 通过：与 identity boundary 逐字一致；S16 固定 ready 20 字段与 unavailable 6 字段 strict tagged union |
 | schema 与命名 | 通过：唯一字段名为 `tombstones_replayed`；不存在其他字段名替代合同 |
@@ -447,8 +453,9 @@ r02 至 r10 的全部接收均为历史 accepted 证据；它们不自动接受�
 | 所有权与消费者 | 通过：article 拥有 Evidence/并发约束；identity 只对 ready 重算并比较 backup/ref/digest，unavailable 立即 fail closed |
 | schema 与 fixture | 通过：`inventory_scope` 为 JSON string；共享 ready fixture digest 为 `sha256:169e0f30407867083598ab146c950968e1b5f508ed4fd5d5198bb61e788926a7` |
 | variant 唯一性 | 通过：ReplayAndVerify/ReadStatus 各只返回一个 variant；unavailable 禁止 canonical/digest/ref/time |
-| 明确排除与待澄清 | 通过：未扩展业务范围；AM-Q13 只保留 v1 退役/归档/保留，不把已拍板 schema 重新列为 unknown |
-| 历史接收 | 通过：r02 至 r11 历史记录原样保留；新增 r12 的 current-user/date/确认时 SHA-256 接收记录 |
-| 精确 revision 与状态 | 通过：revision 保持 `article-management-boundary-ir01-r12`，状态为 `accepted`，日期 2026-10-20 |
+| AM-Q1 内容合同 | 通过：纯文本、全 Unicode 空白判空但不 trim 写回、title≤200 rune、body≤20000 rune 与合法原值保留已固定；validator 和请求体 byte 上限留在详细设计 |
+| 明确排除与待澄清 | 通过：未扩展业务范围；AM-Q1 仅剩分页具体页大小，AM-Q13 只保留 v1 退役/归档/保留 |
+| 历史接收 | 通过：r02 至 r12 历史接收记录原样保留；r13 记录本次 AM-Q1 同步与 Lead 精确 revision/hash 复核责任 |
+| 精确 revision 与状态 | 通过：revision 为 `article-management-boundary-ir01-r13`，状态为 `accepted`，日期 2026-10-23 |
 | PlantUML 静态限制 | 通过静态检查：1 个块起止成对、无反斜杠换行标签、无正交线型配置；未执行实渲染 |
 | Gate | 通过：明确 OPEN 且可供双设计同步；未写成 identity/article design 或独立复审 PASS |
