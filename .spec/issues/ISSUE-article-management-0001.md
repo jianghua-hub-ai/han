@@ -89,3 +89,20 @@ G0及独立设计评审另静态确认同Source.go的Trace接缝：固定 `artic
 2026-10-28：S4.4准备核到旧PG证据的受控Replayer边界；05:42:17开始首个精确诊断；05:45:58原执行者完成三次一致结果并stopped；Lead随后逐项核raw、六份canonical对、overlay前缀和179项。未启动PG/SMTP/服务，没有清理或Git写入，全部定位材料保留。
 
 暂不使用改变计数的止血方案。根因修复、实际回归效果、独立评审、接收意见及相称复盘在本单追加；候选防再发措施是增加真实Finalizer/PG计数接缝回归，尚未实施，不自动写Rule/Skill或外传经验。定位完成不等于问题关闭。
+
+## 2026-11-05 引用完整性复核（只读）
+
+逐项重算本单引用的固定材料：
+
+| 材料 | 记录 SHA256 | 实测 | 结论 |
+|---|---|---|---|
+| `review-design-r22-replay-counters-r01.md` | `74BB3F80…FD99A1` | 一致 | 保留 |
+| `review-test-plan-r20-s4.4-r01.md` | `1F5FBF2F…B6E4402` | 一致 | 保留 |
+| `evidence-s4.4/design-g0-r01/index.json` | `80142448…30DDEC` | 一致 | 保留 |
+| `evidence-s4.4/oldapi-red-r01/index.json` | `5EC14AFB…`（前缀） | 前缀一致 | 保留 |
+| `evidence-s4.4/metadata-consult-r01/designer/consult.md` | `E94FD568…`（前缀） | 前缀一致 | 保留 |
+| `test/integration/recovery/article_replay_test.go` | `B71D378C…`（本单登记时点） | 现为 `1BD2B0ED…` | 2026-10-31 r01 收口时更新，`tasks.md` 已登记新哈希，非漂移 |
+| `article-management/design.md` | `8C6FEAEF…`（r22） | 现为 r31 | 设计后续推进，属历史时点值 |
+| `article-management/test-plan.md` | `DD7D603C…`（r20） | 现为更新版本 | 规划后续推进，属历史时点值 |
+
+**结论**：证据与评审材料无缺失、无篡改；差异全部来自后续已登记的修订。本单关闭状态不变——仍 pending 实际产出接收决定，不由 AI 或一般授权代签。
