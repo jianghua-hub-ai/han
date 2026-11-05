@@ -109,6 +109,9 @@ func s414ReceiptJSON(p recovery.RestorePlan) []byte {
 func s414Directory(t *testing.T) string {
 	t.Helper()
 	root := os.Getenv(s414EvidenceDirEnv)
+	if root == "" {
+		return t.TempDir()
+	}
 	dir, err := os.MkdirTemp(root, "han-s414-retain-")
 	if err != nil {
 		t.Fatalf("create retained fixture under root %q from %s: %v", root, s414EvidenceDirEnv, err)
