@@ -1,0 +1,8 @@
+{
+  "evidence_version": "article-deletion-replay/v1",
+  "run_id": "run-01",
+  "backup_ref": "backup-2026-10-20T00:00:00Z",
+  "namespace": "article-deletion/v1",
+  "status": "pending",
+  "reason_code": "replay_in_progress"
+}

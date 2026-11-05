@@ -1,0 +1,55 @@
+{
+  "schema_version": "han.recovery.keyring-fixtures/v1",
+  "synthetic_only": true,
+  "production_use": "forbidden",
+  "material_encoding": "utf8",
+  "fixtures": [
+    {
+      "name": "rotated_complete",
+      "description": "Synthetic v1/v2/v3 rotated keyring with one active key and two retained verify-only keys.",
+      "keys": [
+        {
+          "id": "recovery-fixture",
+          "version": "v3",
+          "state": "active",
+          "material": "SYNTHETIC-TEST-ONLY-RECOVERY-KEY-V3"
+        },
+        {
+          "id": "recovery-fixture",
+          "version": "v2",
+          "state": "verify_only",
+          "material": "SYNTHETIC-TEST-ONLY-RECOVERY-KEY-V2"
+        },
+        {
+          "id": "recovery-fixture",
+          "version": "v1",
+          "state": "verify_only",
+          "material": "SYNTHETIC-TEST-ONLY-RECOVERY-KEY-V1"
+        }
+      ],
+      "test_vectors": [
+        {
+          "name": "fingerprint-with-active-v3",
+          "synthetic_recovery_input": "SYNTHETIC-TEST-ONLY-RECOVERY-INPUT-CROSS-VERSION-0001",
+          "expected_key_id": "recovery-fixture",
+          "expected_key_version": "v3",
+          "expected_fingerprint": "hmac-sha256:b2a08420a4bae70f17393d93e4e3678bc3649ecc479e957accf7b7342f874a91"
+        },
+        {
+          "name": "fingerprint-with-retained-v2",
+          "synthetic_recovery_input": "SYNTHETIC-TEST-ONLY-RECOVERY-INPUT-CROSS-VERSION-0001",
+          "expected_key_id": "recovery-fixture",
+          "expected_key_version": "v2",
+          "expected_fingerprint": "hmac-sha256:6c11879587113f5e3777b91cb71f035315b4ad3a35b1c0fb91513e8b911d597c"
+        },
+        {
+          "name": "fingerprint-with-retained-v1",
+          "synthetic_recovery_input": "SYNTHETIC-TEST-ONLY-RECOVERY-INPUT-CROSS-VERSION-0001",
+          "expected_key_id": "recovery-fixture",
+          "expected_key_version": "v1",
+          "expected_fingerprint": "hmac-sha256:91140beeb29a1b20dace29b63eae8506854b0e20d3694434a14627b6180b299b"
+        }
+      ]
+    }
+  ]
+}

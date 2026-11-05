@@ -1,0 +1,105 @@
+{
+  "schema_version": "han.recovery.backup-manifest/v1",
+  "synthetic_only": true,
+  "production_use": "forbidden",
+  "backup": {
+    "backup_ref": "synthetic-backup:identity-auth-s4.3:0001",
+    "captured_at": "2026-10-22T00:00:00.000000Z",
+    "artifact": {
+      "status": "not_included",
+      "location": "unknown",
+      "sha256": "unknown"
+    },
+    "data_classes": [
+      "synthetic_accounts_and_roles",
+      "synthetic_deleted_account_tombstones",
+      "synthetic_sessions",
+      "synthetic_temporary_credentials",
+      "synthetic_idempotency_records",
+      "synthetic_pre_deletion_article_metadata"
+    ]
+  },
+  "keyring_fixture": {
+    "file": "keyring-fixtures.json",
+    "name": "rotated_complete",
+    "active_key_id": "recovery-fixture",
+    "active_key_version": "v3",
+    "test_vector": "fingerprint-with-active-v3",
+    "retained_key_versions": [
+      "v2",
+      "v1"
+    ]
+  },
+  "run": {
+    "run_id": "synthetic-recovery-run-0001",
+    "backup_ref": "synthetic-backup:identity-auth-s4.3:0001",
+    "journal_key_id": "recovery-fixture",
+    "journal_key_version": "v3",
+    "journal_secret_fingerprint": "hmac-sha256:b2a08420a4bae70f17393d93e4e3678bc3649ecc479e957accf7b7342f874a91",
+    "journal_stage": "begun",
+    "started_at": "2026-10-22T01:02:03.123456Z",
+    "outcome": "running"
+  },
+  "article_evidence": {
+    "status": "not_included",
+    "required_binding": "same run_id and backup_ref",
+    "future_task": "article-management-S4.4"
+  },
+  "operational_unknowns": {
+    "rpo": "unknown",
+    "rto": "unknown",
+    "recovery_batch_capacity": "unknown",
+    "recovery_runtime_owner": "unknown",
+    "account_review_owner": "unknown",
+    "recovery_record_retention": "unknown",
+    "key_retention": "unknown",
+    "tombstone_inventory_retention": "unknown",
+    "q10_cycle": "unknown",
+    "historical_noncanonical_time_migration_plan": "unknown",
+    "evidence_version_compatibility_window": "unknown",
+    "deletion_operation_capacity": "unknown",
+    "finalizer_capacity": "unknown",
+    "key_retirement_conditions": "unknown",
+    "production_journal_volume": "unknown",
+    "production_anchor_provider_config_wiring": "unknown",
+    "independent_failure_domain_validation": "unknown",
+    "target_posix_filesystem_evidence": "unknown",
+    "future_windows_allowed_sid_list": "unknown"
+  },
+  "entry_gate": {
+    "real_exercise_allowed": false,
+    "reason": "operational_unknowns_present",
+    "unknown_policy": "block",
+    "not_applicable_policy": "explicit_owner_confirmation_and_recorded_basis_required"
+  },
+  "anchor_preflight": {
+    "mode": "read_only",
+    "source": "current_independent_anchor",
+    "restore": "forbidden",
+    "reset": "forbidden",
+    "bootstrap": "forbidden",
+    "rollback": "forbidden",
+    "missing_or_indeterminate": "stop_and_wait_for_identity-auth-S4.5_approved_process"
+  },
+  "cleanup": {
+    "responsible_owner": "unknown",
+    "status": "TBD-by-owner",
+    "allowed_scope": "only isolated resources created by the synthetic recovery exercise",
+    "forbidden_scope": "production data and any unconfirmed directory"
+  },
+  "recovery_steps": [
+    "entry_gate_blocks_required_unknowns",
+    "enter_maintenance_before_any_state_change",
+    "bind_immutable_backup_ref",
+    "read_only_preflight_current_journal_complete_keyring_and_current_independent_anchor",
+    "journal_begin",
+    "restore_database",
+    "create_identity_recovery_run",
+    "finalize_identity_and_review_accounts",
+    "replay_and_verify_article_deletions",
+    "advance_to_ready_to_consume",
+    "journal_mark_consumed",
+    "final_reconciliation_and_readiness",
+    "owner_confirmed_cleanup"
+  ]
+}

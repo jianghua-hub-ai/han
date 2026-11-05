@@ -1,0 +1,519 @@
+{
+  "schema_version": "article-deletion-fixtures/v1",
+  "synthetic_only": true,
+  "production_use": "forbidden",
+  "inventory_file": "article-backup-inventory.json",
+  "keys": [
+    {
+      "key_id": "article-key-verify",
+      "key_version": "v1",
+      "state": "verify_only",
+      "synthetic_material": "SYNTHETIC-TEST-ONLY-ARTICLE-VERIFY-V1"
+    },
+    {
+      "key_id": "article-key-active",
+      "key_version": "v2",
+      "state": "active",
+      "synthetic_material": "SYNTHETIC-TEST-ONLY-ARTICLE-ACTIVE-V2"
+    }
+  ],
+  "operational_unknowns": {
+    "tombstone_retention": "unknown",
+    "key_retention": "unknown",
+    "inventory_retention": "unknown",
+    "evidence_retention": "unknown",
+    "rpo": "unknown",
+    "rto": "unknown"
+  },
+  "entry_gate": {
+    "real_recovery_allowed": false,
+    "retirement_authorized": false,
+    "cleanup_allowed": false,
+    "reason": "operational_unknowns_present",
+    "unknown_policy": "block"
+  },
+  "positive_cases": [
+    {
+      "case_id": "article-recovery-ready-canonical",
+      "description": "Shared synthetic Ready20 canonical fixture.",
+      "references": {
+        "inventory_backup_id": "synthetic-backup-20261020",
+        "backup_ref": "backup-2026-10-20T00:00:00Z",
+        "key_id": "article-key-active",
+        "key_version": "v2",
+        "deletion_operation_id": "synthetic-delete-operation-01",
+        "evidence_ref": "evidence-01"
+      },
+      "tombstone": {
+        "namespace": "article-deletion/v1",
+        "sequence": 7,
+        "article_id": "synthetic-article-01",
+        "article_version": 3,
+        "deletion_operation_id": "synthetic-delete-operation-01",
+        "deleted_at": "2026-10-20T00:00:00.000000Z",
+        "key_id": "article-key-active",
+        "key_version": "v2",
+        "stage": "tombstoned",
+        "previous_record_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+        "record_hmac": "hmac-sha256:1111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "replay_status": {
+        "evidence_version": "article-deletion-replay/v1",
+        "run_id": "run-01",
+        "backup_ref": "backup-2026-10-20T00:00:00Z",
+        "namespace": "article-deletion/v1",
+        "journal_head_sequence": 7,
+        "journal_head_hash": "sha256:aaaa",
+        "inventory_scope": "recoverable-backups-before-cutoff",
+        "backup_cutoff": "2026-10-20T00:00:00Z",
+        "inventory_digest": "sha256:bbbb",
+        "deletion_operations_digest": "sha256:cccc",
+        "audit_events_digest": "sha256:dddd",
+        "tombstones_total": 3,
+        "tombstones_replayed": 2,
+        "already_absent": 1,
+        "deletion_operations_reconciled_count": 3,
+        "audit_events_verified_count": 3,
+        "status": "ready",
+        "evidence_digest": "sha256:169e0f30407867083598ab146c950968e1b5f508ed4fd5d5198bb61e788926a7",
+        "evidence_ref": "evidence-01",
+        "completed_at": "2026-10-20T01:00:00Z"
+      },
+      "expected_gate": {
+        "replay_variant": "ready",
+        "retirement_preconditions_met": true,
+        "real_recovery_allowed": false,
+        "cleanup_allowed": false,
+        "reason_code": "operational_unknowns_present"
+      }
+    },
+    {
+      "case_id": "article-recovery-pending-unretired",
+      "description": "Synthetic pending replay while an older recoverable backup remains.",
+      "references": {
+        "inventory_backup_id": "synthetic-backup-20261021",
+        "backup_ref": "backup-2026-10-21T00:00:00Z",
+        "key_id": "article-key-verify",
+        "key_version": "v1",
+        "deletion_operation_id": "synthetic-delete-operation-02",
+        "evidence_ref": null
+      },
+      "tombstone": {
+        "namespace": "article-deletion/v1",
+        "sequence": 8,
+        "article_id": "synthetic-article-02",
+        "article_version": 1,
+        "deletion_operation_id": "synthetic-delete-operation-02",
+        "deleted_at": "2026-10-20T12:00:00.000000Z",
+        "key_id": "article-key-verify",
+        "key_version": "v1",
+        "stage": "tombstoned",
+        "previous_record_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "record_hmac": "hmac-sha256:2222222222222222222222222222222222222222222222222222222222222222"
+      },
+      "replay_status": {
+        "evidence_version": "article-deletion-replay/v1",
+        "run_id": "run-02",
+        "backup_ref": "backup-2026-10-21T00:00:00Z",
+        "namespace": "article-deletion/v1",
+        "status": "pending",
+        "reason_code": "replay_in_progress"
+      },
+      "expected_gate": {
+        "replay_variant": "unavailable",
+        "retirement_preconditions_met": false,
+        "real_recovery_allowed": false,
+        "cleanup_allowed": false,
+        "reason_code": "operational_unknowns_present"
+      }
+    },
+    {
+      "case_id": "article-recovery-unknown-unretired",
+      "description": "Synthetic unknown evidence while an older recoverable backup remains.",
+      "references": {
+        "inventory_backup_id": "synthetic-backup-20261021",
+        "backup_ref": "backup-2026-10-21T00:00:00Z",
+        "key_id": "article-key-verify",
+        "key_version": "v1",
+        "deletion_operation_id": "synthetic-delete-operation-03",
+        "evidence_ref": null
+      },
+      "tombstone": {
+        "namespace": "article-deletion/v1",
+        "sequence": 9,
+        "article_id": "synthetic-article-03",
+        "article_version": 2,
+        "deletion_operation_id": "synthetic-delete-operation-03",
+        "deleted_at": "2026-10-20T18:00:00.000000Z",
+        "key_id": "article-key-verify",
+        "key_version": "v1",
+        "stage": "tombstoned",
+        "previous_record_hash": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+        "record_hmac": "hmac-sha256:3333333333333333333333333333333333333333333333333333333333333333"
+      },
+      "replay_status": {
+        "evidence_version": "article-deletion-replay/v1",
+        "run_id": "run-03",
+        "backup_ref": "backup-2026-10-21T00:00:00Z",
+        "namespace": "article-deletion/v1",
+        "status": "unknown",
+        "reason_code": "evidence_missing"
+      },
+      "expected_gate": {
+        "replay_variant": "unavailable",
+        "retirement_preconditions_met": false,
+        "real_recovery_allowed": false,
+        "cleanup_allowed": false,
+        "reason_code": "operational_unknowns_present"
+      }
+    },
+    {
+      "case_id": "article-recovery-failed-unretired",
+      "description": "Synthetic failed verification while older recoverable backups remain.",
+      "references": {
+        "inventory_backup_id": "synthetic-backup-20261021",
+        "backup_ref": "backup-2026-10-21T00:00:00Z",
+        "key_id": "article-key-active",
+        "key_version": "v2",
+        "deletion_operation_id": "synthetic-delete-operation-04",
+        "evidence_ref": null
+      },
+      "tombstone": {
+        "namespace": "article-deletion/v1",
+        "sequence": 10,
+        "article_id": "synthetic-article-04",
+        "article_version": 4,
+        "deletion_operation_id": "synthetic-delete-operation-04",
+        "deleted_at": "2026-10-22T00:00:00.000000Z",
+        "key_id": "article-key-active",
+        "key_version": "v2",
+        "stage": "tombstoned",
+        "previous_record_hash": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+        "record_hmac": "hmac-sha256:4444444444444444444444444444444444444444444444444444444444444444"
+      },
+      "replay_status": {
+        "evidence_version": "article-deletion-replay/v1",
+        "run_id": "run-04",
+        "backup_ref": "backup-2026-10-21T00:00:00Z",
+        "namespace": "article-deletion/v1",
+        "status": "failed",
+        "reason_code": "verification_failed"
+      },
+      "expected_gate": {
+        "replay_variant": "unavailable",
+        "retirement_preconditions_met": false,
+        "real_recovery_allowed": false,
+        "cleanup_allowed": false,
+        "reason_code": "operational_unknowns_present"
+      }
+    }
+  ],
+  "negative_cases": [
+    {
+      "case_id": "missing-inventory-field",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/inventory_scope",
+      "mutation": "remove_field",
+      "operand_json": "",
+      "expected_error": "missing_field"
+    },
+    {
+      "case_id": "extra-inventory-field",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "",
+      "mutation": "add_field",
+      "operand_json": "{\"unexpected\":\"synthetic\"}",
+      "expected_error": "extra_field"
+    },
+    {
+      "case_id": "wrong-inventory-type",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/synthetic_only",
+      "mutation": "replace_value",
+      "operand_json": "\"true\"",
+      "expected_error": "wrong_type"
+    },
+    {
+      "case_id": "null-disallowed-key",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/keys/0/key_id",
+      "mutation": "replace_value",
+      "operand_json": "null",
+      "expected_error": "wrong_type"
+    },
+    {
+      "case_id": "duplicate-top-level-key",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/schema_version",
+      "mutation": "duplicate_key",
+      "operand_json": "\"article-backup-inventory-fixture/v1\"",
+      "expected_error": "duplicate_key"
+    },
+    {
+      "case_id": "duplicate-nested-key",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/tombstone/article_id",
+      "mutation": "duplicate_key",
+      "operand_json": "\"synthetic-article-duplicate\"",
+      "expected_error": "duplicate_key"
+    },
+    {
+      "case_id": "reordered-inventory-fields",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "",
+      "mutation": "reorder_fields",
+      "operand_json": "[\"synthetic_only\",\"schema_version\",\"production_use\",\"inventory_scope\",\"backups\",\"inventory_digest\"]",
+      "expected_error": "invalid_order"
+    },
+    {
+      "case_id": "reordered-ready-fields",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/replay_status",
+      "mutation": "reorder_fields",
+      "operand_json": "[\"run_id\",\"evidence_version\",\"backup_ref\",\"namespace\",\"journal_head_sequence\",\"journal_head_hash\",\"inventory_scope\",\"backup_cutoff\",\"inventory_digest\",\"deletion_operations_digest\",\"audit_events_digest\",\"tombstones_total\",\"tombstones_replayed\",\"already_absent\",\"deletion_operations_reconciled_count\",\"audit_events_verified_count\",\"status\",\"evidence_digest\",\"evidence_ref\",\"completed_at\"]",
+      "expected_error": "invalid_order"
+    },
+    {
+      "case_id": "invalid-created-at-format",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/backups/0/created_at",
+      "mutation": "replace_value",
+      "operand_json": "\"2026-10-19T00:00:00Z\"",
+      "expected_error": "invalid_time"
+    },
+    {
+      "case_id": "retired-at-not-after-created-at",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/backups/0/retired_at",
+      "mutation": "replace_value",
+      "operand_json": "\"2026-10-19T00:00:00.000000Z\"",
+      "expected_error": "invalid_time"
+    },
+    {
+      "case_id": "recoverable-with-retirement-metadata",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/backups/1/retired_at",
+      "mutation": "replace_value",
+      "operand_json": "\"2026-10-20T01:00:00.000000Z\"",
+      "expected_error": "invalid_state"
+    },
+    {
+      "case_id": "retired-with-null-evidence",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/backups/0/retirement_evidence_ref",
+      "mutation": "replace_value",
+      "operand_json": "null",
+      "expected_error": "invalid_state"
+    },
+    {
+      "case_id": "duplicate-backup-id",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/backups/1/backup_id",
+      "mutation": "replace_value",
+      "operand_json": "\"synthetic-backup-20261019\"",
+      "expected_error": "invalid_state"
+    },
+    {
+      "case_id": "unsorted-backups",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/backups/1/created_at",
+      "mutation": "replace_value",
+      "operand_json": "\"2026-10-18T00:00:00.000000Z\"",
+      "expected_error": "invalid_order"
+    },
+    {
+      "case_id": "tombstone-pii-field",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/tombstone",
+      "mutation": "add_field",
+      "operand_json": "{\"title\":\"synthetic prohibited field\"}",
+      "expected_error": "pii_forbidden"
+    },
+    {
+      "case_id": "positive-string-pii-canary",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/description",
+      "mutation": "replace_value",
+      "operand_json": "\"synthetic@example.invalid\"",
+      "expected_error": "pii_forbidden"
+    },
+    {
+      "case_id": "inventory-reference-mismatch",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/references/inventory_backup_id",
+      "mutation": "replace_value",
+      "operand_json": "\"synthetic-backup-missing\"",
+      "expected_error": "reference_mismatch"
+    },
+    {
+      "case_id": "key-reference-mismatch",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/references/key_id",
+      "mutation": "replace_value",
+      "operand_json": "\"article-key-missing\"",
+      "expected_error": "reference_mismatch"
+    },
+    {
+      "case_id": "tombstone-operation-mismatch",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/tombstone/deletion_operation_id",
+      "mutation": "replace_value",
+      "operand_json": "\"synthetic-delete-operation-other\"",
+      "expected_error": "reference_mismatch"
+    },
+    {
+      "case_id": "ready-evidence-reference-mismatch",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/references/evidence_ref",
+      "mutation": "replace_value",
+      "operand_json": "\"evidence-other\"",
+      "expected_error": "reference_mismatch"
+    },
+    {
+      "case_id": "unavailable-evidence-reference-present",
+      "base_case_id": "article-recovery-pending-unretired",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/1/references/evidence_ref",
+      "mutation": "replace_value",
+      "operand_json": "\"evidence-not-allowed\"",
+      "expected_error": "reference_mismatch"
+    },
+    {
+      "case_id": "ready-mixed-unavailable-field",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/replay_status",
+      "mutation": "add_field",
+      "operand_json": "{\"reason_code\":\"verification_failed\"}",
+      "expected_error": "mixed_variant"
+    },
+    {
+      "case_id": "unavailable-mixed-ready-field",
+      "base_case_id": "article-recovery-pending-unretired",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/1/replay_status",
+      "mutation": "add_field",
+      "operand_json": "{\"inventory_digest\":\"sha256:bbbb\"}",
+      "expected_error": "mixed_variant"
+    },
+    {
+      "case_id": "ready-canonical-digest-mismatch",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/replay_status/evidence_digest",
+      "mutation": "replace_value",
+      "operand_json": "\"sha256:0000000000000000000000000000000000000000000000000000000000000000\"",
+      "expected_error": "invalid_state"
+    },
+    {
+      "case_id": "ready-inventory-digest-mismatch",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/replay_status",
+      "mutation": "replace_value",
+      "operand_json": "{\"evidence_version\":\"article-deletion-replay/v1\",\"run_id\":\"run-01\",\"backup_ref\":\"backup-2026-10-20T00:00:00Z\",\"namespace\":\"article-deletion/v1\",\"journal_head_sequence\":7,\"journal_head_hash\":\"sha256:aaaa\",\"inventory_scope\":\"recoverable-backups-before-cutoff\",\"backup_cutoff\":\"2026-10-20T00:00:00Z\",\"inventory_digest\":\"sha256:eeee\",\"deletion_operations_digest\":\"sha256:cccc\",\"audit_events_digest\":\"sha256:dddd\",\"tombstones_total\":3,\"tombstones_replayed\":2,\"already_absent\":1,\"deletion_operations_reconciled_count\":3,\"audit_events_verified_count\":3,\"status\":\"ready\",\"evidence_digest\":\"sha256:5ed3acaa6eeb46f153a025ee3e57b0051d699225b7b1bea811e051aeff7f0857\",\"evidence_ref\":\"evidence-01\",\"completed_at\":\"2026-10-20T01:00:00Z\"}",
+      "expected_error": "digest_mismatch"
+    },
+    {
+      "case_id": "old-recoverable-backup-blocks-retirement",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/backups/0",
+      "mutation": "replace_value",
+      "operand_json": "{\"backup_id\":\"synthetic-backup-20261019\",\"backup_ref\":\"backup-2026-10-19T00:00:00Z\",\"created_at\":\"2026-10-19T00:00:00.000000Z\",\"status\":\"recoverable\",\"retired_at\":null,\"retirement_owner_ref\":null,\"retirement_evidence_ref\":null}",
+      "expected_error": "unretired_backup"
+    },
+    {
+      "case_id": "unsupported-inventory-version",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-backup-inventory.json",
+      "target_path": "/schema_version",
+      "mutation": "replace_value",
+      "operand_json": "\"article-backup-inventory-fixture/v2\"",
+      "expected_error": "unsupported_version"
+    },
+    {
+      "case_id": "unsupported-fixture-version",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/schema_version",
+      "mutation": "replace_value",
+      "operand_json": "\"article-deletion-fixtures/v2\"",
+      "expected_error": "unsupported_version"
+    },
+    {
+      "case_id": "unknown-gate-open",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/entry_gate/real_recovery_allowed",
+      "mutation": "replace_value",
+      "operand_json": "true",
+      "expected_error": "unknown_gate_open"
+    },
+    {
+      "case_id": "operational-unknown-replaced",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/operational_unknowns/rpo",
+      "mutation": "replace_value",
+      "operand_json": "\"one-hour\"",
+      "expected_error": "unknown_gate_open"
+    },
+    {
+      "case_id": "invalid-key-state",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/keys/1/state",
+      "mutation": "replace_value",
+      "operand_json": "\"retired\"",
+      "expected_error": "invalid_state"
+    },
+    {
+      "case_id": "unsupported-replay-version",
+      "base_case_id": "article-recovery-pending-unretired",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/1/replay_status/evidence_version",
+      "mutation": "replace_value",
+      "operand_json": "\"article-deletion-replay/v2\"",
+      "expected_error": "invalid_state"
+    },
+    {
+      "case_id": "ready-null-evidence-ref",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/replay_status/evidence_ref",
+      "mutation": "replace_value",
+      "operand_json": "null",
+      "expected_error": "invalid_state"
+    },
+    {
+      "case_id": "invalid-tombstone-time",
+      "base_case_id": "article-recovery-ready-canonical",
+      "target_file": "article-deletion-fixtures.json",
+      "target_path": "/positive_cases/0/tombstone/deleted_at",
+      "mutation": "replace_value",
+      "operand_json": "\"2026-10-20T00:00:00Z\"",
+      "expected_error": "invalid_time"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "evidence_version": "article-deletion-replay/v1",
+  "run_id": "run-01",
+  "backup_ref": "backup-2026-10-20T00:00:00Z",
+  "namespace": "article-deletion/v1",
+  "journal_head_sequence": 7,
+  "journal_head_hash": "sha256:aaaa",
+  "inventory_scope": "recoverable-backups-before-cutoff",
+  "backup_cutoff": "2026-10-20T00:00:00Z",
+  "inventory_digest": "sha256:bbbb",
+  "deletion_operations_digest": "sha256:cccc",
+  "audit_events_digest": "sha256:dddd",
+  "tombstones_total": 3,
+  "tombstones_replayed": 2,
+  "already_absent": 1,
+  "deletion_operations_reconciled_count": 3,
+  "audit_events_verified_count": 3,
+  "status": "ready",
+  "evidence_digest": "sha256:169e0f30407867083598ab146c950968e1b5f508ed4fd5d5198bb61e788926a7",
+  "evidence_ref": "evidence-01",
+  "completed_at": "2026-10-20T01:00:00Z"
+}
