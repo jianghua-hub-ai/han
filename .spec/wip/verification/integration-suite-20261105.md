@@ -114,3 +114,10 @@
 - 5433 轮：`TestAppendOnlyApplicationACL` → **ok 2.408s**。该测试按设计**永久保留**创建物，实测 `han_s15_acl_*` schema 54 → 56、`han_s15_*` 角色 62 → 64，与历史运行产物一致（未清理）。
 - 51934 轮（一次性集群）：恢复链三项 + restore 读回通过；集群已删除。
 - 结论：`cmd/han-server` 集成包在本机可分两轮全部跑通。
+
+### 同日补充：最后两项“未运行”的真实性质
+
+- `TestS33LoginAbuseChildProbe`：源码注释明确 `This top is NOT in the parent selector`，它是父测试经 `f.child(...)` 拉起的**子进程探针**；单独运行必然在 DSN 访问前失败（`helper mode required before DSN access`）。该包其余测试已通过，故不构成覆盖缺口。
+- `TestPgPerf*`（3 项）：除 `HAN_PG_PERF_EVIDENCE_DIR` 外还要求 `HAN_PG_PERF_RUN_ID`、`HAN_PG_PERF_DATABASE`（默认 `han_perf_s24`）、`HAN_PG_PERF_WINDOW_START`、`HAN_PG_PERF_BASE_BYTES`、`HAN_PG_PERF_BASELINE_DIR`，且需 5433 上的 PG 18.6。性能结论依赖受控窗口与基线；人为拼凑这些条件只会产出不可信数字，**不跑**。
+
+至此本机可运行的集成测试已全部实际执行；其余缺口均由 ADR-0036/0037 的范围决策或专用受控环境所致。
