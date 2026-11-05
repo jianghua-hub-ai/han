@@ -72,3 +72,12 @@
 - `go test -tags=integration ./internal/article -run '^TestAnchoredArticleFinalizerPostgres$' -count=1` → **ok 8.434s**。
 - 收尾：`pg_ctl stop -m fast` 成功，临时数据目录已删除（`Test-Path` 为 False）。
 - 仍被挡：s413 系列要求固定端口 `51935` 与固定数据目录字符串 `d:/temp/han-b13e-lead-20261030-r01/postgres/data`；cmd/han-server 恢复链要求 `53519` 上的 `han_b13h`。重建这类“按旧会话字形匹配”的实例没有验证价值，未做。
+
+### 同日补充：B13E fixture 仍在磁盘，s413 已实跑通过
+
+- `D:\temp\han-b13e-lead-20261030-r01\postgres\data` 仍存在（PG 18），`pg_hba.conf` 对 `127.0.0.1` 为 `trust`，不需要口令；只是当时未运行。
+- 以 `pg_ctl -D <data> -o "-p 51935"` 启动后核对：`han_b13e` / `han_b13e_identity` / `180006` / `D:/temp/han-b13e-lead-20261030-r01/postgres/data`，与 s413 准入条件逐项一致。
+- `HAN_TEST_POSTGRES_DSN=postgres://han_b13e@127.0.0.1:51935/han_b13e_identity?sslmode=disable`：
+  - `go test -tags=integration ./internal/identity -run '^TestRecoveryInstallationPostgres$' -count=1` → **ok 11.621s**（覆盖本次改动的 `s413Checkpoint`）。
+  - 同包整包运行：本测试通过；另有 7 项要求 `han_b13c` / `han_b13c_identity`（5433 上存在该库但口令未知，可用一次性集群复现）。
+- 收尾：`pg_ctl stop -m fast`，恢复运行前状态（`51935` 已不再监听）。
