@@ -33,7 +33,8 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 
 ### Tests
 
-- Record integration suite run map (12 packages pass; 5 blocked by missing dedicated instances)
+- Record integration suite run map; all runnable integration packages verified (dedicated fixtures provisioned via throwaway PostgreSQL clusters)
 - Verify the offline bundle clones, builds and tests clean
 - Record `-race` unavailability (no C toolchain) and static check results
+- Verify `go mod verify`, README-documented runbooks and fail-closed startup behaviour
 
