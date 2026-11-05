@@ -1,6 +1,6 @@
 # ISSUE-identity-auth-0002 — 恢复驱动测试证据写死系统临时目录，重复运行累积 26 GB 挤占系统盘
 
-**状态：已完成登记、定级建议与定位；未修复、未回归、未关闭。** 本轮按用户 2026-11-02 指令「启动 Issue 流程开单并定位具体代码位置」执行，授权仅覆盖开单与只读定位，不含修复、清理、提交或验收关闭。
+**状态：已完成登记、定级建议与定位；2026-11-05 部分修复（§7），主因未改，回归未闭环、未关闭。** 本轮按用户 2026-11-02 指令「启动 Issue 流程开单并定位具体代码位置」执行，授权仅覆盖开单与只读定位，不含修复、清理、提交或验收关闭。
 
 ## 1. 登记（register）
 
@@ -138,3 +138,20 @@ func s414Directory(t *testing.T) string {
 - 增量复现：见 §3.1 表格，两轮真实执行（`ok 8.615s` / `ok 7.395s`）与前后计数。
 - 代码位置核对：`Select-String -Path cmd\han-server\recovery_restore_test.go -Pattern 's414Directory|MkdirTemp'`，行号与 §3.2 一致。
 - 同类点位核对：全仓 `*.go`（排除 `.spec` 快照）检索 `MkdirTemp(|os.Getenv("TEMP")|EVIDENCE_DIR`，结果与 §3.3、§3.4 一一对应。
+
+## 7. 2026-11-05 复核与部分修复
+
+**复核（只读实测）**：`%TEMP%` 现残留 1,367 个 `han-s414-retain-*` 目录，合计 **10.45 GB**；另 5,889 个空 `han-article-anchor-fixture-*`、62 个 `han-b13d-a48-media-*`、54 个 `han-b13d-a48-legacy-*`、6 个 `s413-approved-checkpoint-*`、1 个 `s413-deletion-media-*`；C: 可用 38.39 GB。§3.1 的 26 GB 已被人工搬移，但清理策略仍未建立，泄漏按原速率继续。
+
+**部分修复（3 文件 4 处）**：§3.3 表中未被设计标注为「刻意保留」的生成点改为 `t.TempDir()`，随测试自动回收：
+
+- `internal/article/deletion_journal_snapshot_test.go:321`（`han-article-anchor-fixture-`）
+- `internal/article/replay_publication_integration_test.go:226`（`han-b13d-a48-media-`）
+- `internal/article/replay_publication_integration_test.go:864`（`han-b13d-a48-legacy-`）
+- `internal/identity/recovery_installation_postgres_test.go:476`（`s413-approved-checkpoint-`）
+
+**未改**：`cmd/han-server/recovery_restore_test.go` 的 `s414Directory`（主因，10.45 GB），以及 §3.3 中 4 处注释明示 `Intentionally retained` 的点位。理由：保留是设计要求，问题在证据根/上限/清理入口，属策略决策，不作局部修改。
+
+**验证**：`go test ./internal/article -count=1` → `ok`；执行前后 `han-article-anchor-fixture-*` 计数均为 5,889（不再新增）；`gofmt -l` 三文件无输出；`go vet -tags=integration ./internal/article ./internal/identity` exit 0。**未验证**：受授权 DSN 守卫的集成测试在本机不可运行（`internal/article` 要求 `han_b13c_article`/`han_b13c`，本机 DSN 为 `postgres`），replay 与 s413 两处的真实集成回归仍待按授权 fixture 执行；`s413WriteSyntheticTombstone`（`:662`，无 `*testing.T` 可用）未改。
+
+**结论**：仍未关闭；下一步须先决定 s414 与其余保留型点位的证据根、保留上限与清理入口（§5 候选），再实施。
