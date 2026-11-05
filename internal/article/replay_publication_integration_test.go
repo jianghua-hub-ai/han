@@ -223,8 +223,7 @@ func newPublicationPGFixtureOnPool(t *testing.T, pool *pgxpool.Pool, parent cont
 		present = presence[0]
 	}
 	pubMust(t, publicationSeedTargets(f.ctx, pool, present))
-	dir, err := os.MkdirTemp("", "han-b13d-a48-media-")
-	pubMust(t, err)
+	dir := t.TempDir()
 	f.path = filepath.Join(dir, "inventory.json")
 	writeInventory(t, f.path, inventoryManifestWithCutoff(t, f.backup, "2026-10-20T00:00:00.000000Z"))
 	reader, err := NewFileBackupInventoryReader(f.path)
@@ -861,10 +860,7 @@ func (x *publicationImportFixture) execute(t *testing.T, pc context.Context, per
 	return x.importAndReuse(t, pc, permit, proof)
 }
 func (x *publicationImportFixture) source(t *testing.T) (*ProductionDeletionReplaySource, string, error) {
-	dir, err := os.MkdirTemp("", "han-b13d-a48-legacy-")
-	if err != nil {
-		return nil, "", err
-	}
+	dir := t.TempDir()
 	path := filepath.Join(dir, "inventory.json")
 	writeInventory(t, path, inventoryManifestWithCutoff(t, "legacy-backup", "2026-10-20T00:00:00.000000Z"))
 	reader, err := NewFileBackupInventoryReader(path)

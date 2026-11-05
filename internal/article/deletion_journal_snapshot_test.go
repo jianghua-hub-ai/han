@@ -318,10 +318,7 @@ func (l *anchorCoreNamespaceLease) WaitReleased(ctx context.Context) error {
 
 func anchorCoreFixture(t *testing.T) (AnchoredJournalOptions, DeletionJournalKeyring, deletionAnchorMedia, *anchorCoreCAS, *anchorCoreLease) {
 	t.Helper()
-	dir, err := os.MkdirTemp("", "han-article-anchor-fixture-")
-	if err != nil {
-		t.Fatal(err)
-	}
+	dir := t.TempDir()
 	a := &anchorCoreCAS{value: recovery.AnchorSnapshot{JournalID: "article-core", Namespace: ArticleDeletionNamespace, Epoch: 2}, revision: 1}
 	l := &anchorCoreLease{}
 	m := deletionAnchorMedia{

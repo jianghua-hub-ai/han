@@ -473,10 +473,7 @@ func s413RunImage(h *s413PG) map[string]any {
 }
 func s413Checkpoint(t *testing.T, p recovery.PublicationBinding) string {
 	t.Helper()
-	dir, err := os.MkdirTemp(os.Getenv("TEMP"), "s413-approved-checkpoint-")
-	if err != nil {
-		t.Fatal(err)
-	}
+	dir := t.TempDir()
 	path := filepath.Join(dir, "approved-original-publication.json")
 	raw, err := json.Marshal(p)
 	if err != nil {
