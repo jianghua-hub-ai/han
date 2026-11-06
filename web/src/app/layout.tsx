@@ -1,5 +1,7 @@
 import { Link, Outlet } from 'react-router-dom'
 
+import { LogoutButton } from '../components/LogoutButton'
+
 /** Application shell shared by every authenticated route. */
 export function AppLayout() {
   return (
@@ -10,6 +12,7 @@ export function AppLayout() {
           <Link to="/">文章</Link>
           <Link to="/me/articles">我的文章</Link>
         </nav>
+        <LogoutButton />
       </header>
       <main>
         <Outlet />

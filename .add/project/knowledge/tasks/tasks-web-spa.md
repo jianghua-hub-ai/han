@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 4 建成待验 / 8 未开始。
+**当前统计**：0 已完成 / 5 建成待验 / 7 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -82,7 +82,7 @@
   - 本任务关闭条件：US-WEB-01.1 五条可观察断言全绿；未确认声明时不可提交
   - 后续验证关联：无
 
-- [ ] `web-spa-S3.2` 登录与登出界面
+- [-] `web-spa-S3.2` 登录与登出界面 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：登录表单、统一失败提示、登出按钮（调用新端点）。
   - 文件清单：`web/src/pages/login.tsx`（新增）、`web/src/pages/login.test.tsx`（新增）、`web/src/components/LogoutButton.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -90,6 +90,14 @@
   - 类型：开发
   - 本任务关闭条件：US-WEB-01.2/01.3 断言全绿；登出后回到未登录态
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - `web/src/pages/login.tsx`：受控表单（`label` 与 `input` 用 `htmlFor`/`id` 绑定，`autoComplete` 正确）；提交中按钮禁用并显示"正在登录…"；4xx 统一提示"登录失败，请检查用户名和密码"（不区分凭据错误/账号不存在/停用/删除，US-WEB-01.2.2），5xx/网络用"登录失败，请稍后重试"；成功后按 `location.state.from` 返回（仅接受 `/` 开头的同源绝对路径，防开放重定向）；`expired` 时提示"登录已失效，请重新登录。"。
+    - `web/src/components/LogoutButton.tsx`：调用 `POST /api/v1/sessions/logout`，成功或失败都落到匿名态；并已挂到 `AppLayout` 头部。
+    - `web/src/app/session.tsx` 增量：新增 `expired` 语义——**启动探测的 401 不算过期**（只判为未登录），**引导完成后的 401 才算会话失效**；登录/登出会清除该标记。
+    - `web/src/api/client.ts` 增量：`RequestOptions.suppressUnauthorized`；`auth.login` 用它避免"登录失败"被误判为"会话过期"（这是自测中发现的真实 UX 缺陷，已修正并加断言）。
+    - 测试：`web/src/pages/login.test.tsx` 5 用例（字段可访问、成功回跳目标路径、统一失败文案且不泄漏后端措辞、请求中禁用按钮、活会话被 401 打断后回登录页并提示已失效）；`client.test.ts` 增至 8 用例（新增 suppress 钩子用例）。
+    - 命令：`npm run test` → 4 文件 30 用例全绿；`npm run lint` exit 0；`npm run build` exit 0（52 modules，326.00 kB / gzip 104.06 kB）。
+  - **仍未做**：独立评审与接收决定；真实浏览器 E2E（属 test-plan 的 E2E 层）。
 
 ## 批次 W3 · 文章浏览
 

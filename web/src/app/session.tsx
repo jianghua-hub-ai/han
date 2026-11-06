@@ -22,6 +22,8 @@ export interface SessionContextValue {
   csrfToken: string | null
   /** True when the startup probe failed for a non-401 reason. */
   bootstrapFailed: boolean
+  /** True when a live session was ended by a 401 rather than by the user. */
+  expired: boolean
   api: ApiClient
   login(credentials: LoginCredentials): Promise<void>
   logout(): Promise<void>
@@ -49,10 +51,12 @@ export function SessionProvider({
   basePath,
 }: SessionProviderProps) {
   const csrfRef = useRef<string | null>(null)
+  const bootstrappedRef = useRef(false)
   const [csrfToken, setCsrfToken] = useState<string | null>(null)
   const [state, setState] = useState<SessionState>('unknown')
   const [user, setUser] = useState<AuthenticatedUser | null>(null)
   const [bootstrapFailed, setBootstrapFailed] = useState(false)
+  const [expired, setExpired] = useState(false)
 
   const clearSession = useCallback(() => {
     csrfRef.current = null
@@ -63,6 +67,11 @@ export function SessionProvider({
   const invalidate = useCallback(() => {
     clearSession()
     setState('anonymous')
+    // A 401 during the startup probe simply means "no session"; only a 401
+    // after bootstrap means the user's live session ended.
+    if (bootstrappedRef.current) {
+      setExpired(true)
+    }
   }, [clearSession])
 
   const api = useMemo(
@@ -85,6 +94,7 @@ export function SessionProvider({
       setCsrfToken(result.csrfToken)
       setUser(result.user)
       setBootstrapFailed(false)
+      setExpired(false)
       setState('authenticated')
     },
     [auth],
@@ -95,6 +105,7 @@ export function SessionProvider({
       await auth.logout()
     } finally {
       clearSession()
+      setExpired(false)
       setState('anonymous')
     }
   }, [auth, clearSession])
@@ -120,6 +131,11 @@ export function SessionProvider({
         // A transport or backend failure must not be reported as "logged out".
         setBootstrapFailed(true)
       }
+      finally {
+        if (!cancelled) {
+          bootstrappedRef.current = true
+        }
+      }
     }
     void probe()
     return () => {
@@ -133,12 +149,23 @@ export function SessionProvider({
       user,
       csrfToken,
       bootstrapFailed,
+      expired,
       api,
       login,
       logout,
       invalidate,
     }),
-    [state, user, csrfToken, bootstrapFailed, api, login, logout, invalidate],
+    [
+      state,
+      user,
+      csrfToken,
+      bootstrapFailed,
+      expired,
+      api,
+      login,
+      logout,
+      invalidate,
+    ],
   )
 
   return (

@@ -51,6 +51,8 @@ export function createAuthApi(client: ApiClient): AuthApi {
       const payload = await client.request<LoginPayload>('/sessions', {
         method: 'POST',
         body: credentials,
+        // A rejected login is not an expired session.
+        suppressUnauthorized: true,
       })
       return {
         user: {

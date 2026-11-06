@@ -94,6 +94,11 @@ export interface RequestOptions {
   method?: string
   body?: unknown
   signal?: AbortSignal
+  /**
+   * Set when a 401 is an expected answer rather than a dead session, e.g. a
+   * failed login. The request still rejects; only the global hook is skipped.
+   */
+  suppressUnauthorized?: boolean
 }
 
 export class ApiClient {
@@ -153,7 +158,7 @@ export class ApiClient {
     }
 
     const failure = toApiError(response.status, payload)
-    if (response.status === 401) {
+    if (response.status === 401 && !options.suppressUnauthorized) {
       this.onUnauthorized()
     }
     throw failure

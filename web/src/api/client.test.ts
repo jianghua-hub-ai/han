@@ -111,6 +111,28 @@ describe('ApiClient', () => {
     expect(onUnauthorized).toHaveBeenCalledTimes(1)
   })
 
+  it('can suppress the global 401 hook for expected rejections', async () => {
+    const onUnauthorized = vi.fn()
+    const client = new ApiClient({
+      fetchImpl: spyFetch(response(401, {
+        code: 'auth.invalid_credentials',
+        message: '登录失败',
+        trace_id: 'trace-login',
+      })),
+      onUnauthorized,
+    })
+
+    await expect(
+      client.request('/sessions', {
+        method: 'POST',
+        body: { username: 'a', password: 'b' },
+        suppressUnauthorized: true,
+      }),
+    ).rejects.toBeInstanceOf(ApiError)
+
+    expect(onUnauthorized).not.toHaveBeenCalled()
+  })
+
   it('reports transport failures as a network error instead of a 401', async () => {
     const client = new ApiClient({
       fetchImpl: async () => {
