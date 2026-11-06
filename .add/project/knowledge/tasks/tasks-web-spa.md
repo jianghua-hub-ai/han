@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 5 建成待验 / 7 未开始。
+**当前统计**：0 已完成 / 7 建成待验 / 5 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -101,7 +101,7 @@
 
 ## 批次 W3 · 文章浏览
 
-- [ ] `web-spa-S4.1` 文章列表页
+- [-] `web-spa-S4.1` 文章列表页 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：游标分页列表、空态、加载与错误态。
   - 文件清单：`web/src/pages/article-list.tsx`（新增）、`web/src/components/Pagination.tsx`（新增）、`web/src/pages/article-list.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -109,8 +109,14 @@
   - 类型：开发
   - 本任务关闭条件：T09/T10 断言全绿（无重复、无跳过、末页停止）
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - 新增 `web/src/api/articles.ts`（设计 §5.1 指定但任务卡未列，属实现必需）：`list({cursor,limit})` 映射 `items/next_cursor` 与 snake_case 字段、`get(id)` 映射详情投影、`authorLabel()`（`anonymous`→「匿名」，无 label 的用户→「社区成员」，不臆造用户名）。
+    - `web/src/pages/article-list.tsx`：首屏加载、游标翻页（`Pagination` 只在 `next_cursor` 非空时出现，末页自动消失）、append 时按 id 去重（服务器重发也不会重复）、空态「还没有文章」与错误态「重试」分离、加载态 `role="status"`。
+    - 新增 `web/src/components/Pagination.tsx`：游标模型下唯一动作是"加载更多"，无页码。
+    - 测试：`article-list.test.tsx` 3 用例——T09 两页游标翻页后 4 条顺序正确、无重复、无跳过、按钮消失且第二次请求带 `cursor=cursor-1`；T10 空列表显示空态且无 alert；503 显示错误条、点击重试恢复。
+  - **仍未做**：独立评审与接收决定；真实浏览器 E2E。
 
-- [ ] `web-spa-S4.2` 文章详情页
+- [-] `web-spa-S4.2` 文章详情页 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：详情展示、不可见统一提示、作者显示（无归属为「匿名」）。
   - 文件清单：`web/src/pages/article-detail.tsx`（新增）、`web/src/pages/article-detail.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -118,6 +124,10 @@
   - 类型：开发
   - 本任务关闭条件：T11 断言全绿；404/403 分支有独立用例
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - `web/src/pages/article-detail.tsx`：`GET /api/v1/articles/{id}`；标题、作者（无归属显示「匿名」）、日期、正文按纯文本渲染（`white-space: pre-wrap`，不使用 `dangerouslySetInnerHTML`）；404→「内容不可用」、403→「没有权限」、其它→错误条+重试；加载态 `role="status"`。
+    - 测试：`article-detail.test.tsx` 4 用例——成功渲染标题/正文/匿名作者；T11 404 统一「内容不可用」；403 独立「没有权限」且不落 404 文案；500 后重试成功。
+  - **仍未做**：独立评审与接收决定；真实浏览器 E2E。
 
 ## 批次 W4 · 我的文章
 

@@ -162,7 +162,7 @@ describe('LoginPage', () => {
   })
 
   it('explains an expired session when a live session dies', async () => {
-    const captured: Captured = { pathname: '/articles/article-1' }
+    const captured: Captured = { pathname: '/me/articles' }
     let authorized = true
     const fetchImpl: FetchLike = async () =>
       authorized
@@ -195,7 +195,7 @@ describe('LoginPage', () => {
 
     render(
       <SessionProvider fetchImpl={fetchImpl}>
-        <MemoryRouter initialEntries={['/articles/article-1']}>
+        <MemoryRouter initialEntries={['/me/articles']}>
           <RouteTree />
           <Failer />
         </MemoryRouter>
@@ -204,7 +204,7 @@ describe('LoginPage', () => {
 
     await waitFor(() =>
       expect(
-        screen.getByRole('heading', { name: '文章详情' }),
+        screen.getByRole('heading', { name: '我的文章' }),
       ).toBeInTheDocument(),
     )
 

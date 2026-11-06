@@ -15,8 +15,19 @@ function json(status: number, body: unknown): HttpResponseLike {
   }
 }
 
-const authenticated: FetchLike = async () =>
-  json(200, { items: [], next_cursor: null })
+const authenticated: FetchLike = async (url) =>
+  url.includes('/articles/article-1')
+    ? json(200, {
+        id: 'article-1',
+        title: '第一篇',
+        body: '正文',
+        author: { kind: 'user', id: 'author-1', label: '' },
+        publication_state: 'published',
+        violation_state: 'clear',
+        created_at: '2026-11-01T08:00:00Z',
+        updated_at: '2026-11-02T08:00:00Z',
+      })
+    : json(200, { items: [], next_cursor: null })
 
 const anonymous: FetchLike = async () =>
   json(401, {
@@ -83,7 +94,7 @@ describe('routes', () => {
 
   it.each([
     ['/', '文章列表'],
-    ['/articles/article-1', '文章详情'],
+    ['/articles/article-1', '第一篇'],
     ['/me/articles', '我的文章'],
     ['/me/articles/new', '文章编辑'],
     ['/me/articles/article-1/edit', '文章编辑'],
