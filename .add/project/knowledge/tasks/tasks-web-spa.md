@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 3 建成待验 / 9 未开始。
+**当前统计**：0 已完成 / 4 建成待验 / 8 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -19,7 +19,7 @@
   - **已知环境限制**：npm 的 `allow-scripts` 策略跳过了 `esbuild` 的 postinstall；本次 `vite build` 仍成功，但换机或清理后重装可能需 `npm approve-scripts esbuild`。
   - 后续验证关联：无（E2E 另立）
 
-- [ ] `web-spa-S1.2` 应用外壳与路由骨架
+- [-] `web-spa-S1.2` 应用外壳与路由骨架 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：建立路由表、布局与受保护路由守卫骨架（暂用占位页面）。
   - 文件清单：`web/src/app/router.tsx`（新增）、`web/src/app/layout.tsx`（新增）、`web/src/pages/*`（占位，新增）
   - 验收命令：工作目录 `web/` → `npm run build`；`npm run test`
@@ -27,6 +27,15 @@
   - 类型：开发
   - 本任务关闭条件：7 条路由可达（含 404 兜底）、未登录访问受保护路由重定向且保留目标路径（组件测试）
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - 新增 `web/src/app/router.tsx`：`routes` 路由表 + `RequireSession` 守卫（`unknown`→骨架屏 `role="status"`；`anonymous`→`<Navigate to="/login" state={{from}}>`；`authenticated`→`<Outlet/>`）+ `AppRouter`（`createBrowserRouter`）。
+    - 新增 `web/src/app/layout.tsx`：`AppLayout`（头部导航 + `<Outlet/>`）。
+    - 新增 `web/src/pages/`：`login`、`register`、`article-list`、`article-detail`、`my-articles`、`article-editor`、`not-found` 七个占位页。
+    - `web/src/main.tsx` 改为挂载 `<SessionProvider><AppRouter/></SessionProvider>`；S1.1 的占位外壳 `web/src/App.tsx`、`web/src/App.test.tsx` 已被真实外壳取代并**删除**（无其它引用，产物不再有死代码）。
+    - 测试 `web/src/app/router.test.tsx` 10 用例：未登录访问 `/me/articles?page=2` → 落到 `/login` 且 `state.from` 保留完整目标；探测中显示骨架屏；5 条受保护路由在已登录态各自渲染正确标题；2 条公开路由无需会话；未知路径落 404。
+    - 命令：`npm run test` → 3 文件 24 用例全绿；`npm run lint` exit 0；`npm run build` exit 0（51 modules，`dist/assets/index-*.js` 324.26 kB / gzip 103.43 kB）。
+  - **仍未做**：独立评审与接收决定（本 Host 无 Reviewer Role，不冒充）。
+  - **范围说明**：占位页只渲染标题与说明，不发任何请求；真实表单/列表由 S3.x–S5.x 接入。
 
 - [-] `web-spa-S2.1` 后端新增登出端点 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：新增 `POST /api/v1/sessions/logout`，需会话与 CSRF，成功 204 并清 Cookie，未认证 401，重复调用不得 5xx。
@@ -58,7 +67,7 @@
     - 新增 `web/src/api/auth.ts`：`POST /api/v1/sessions` 登录（`user` 字段 snake_case→camelCase，取 `csrf_token`）、`POST /api/v1/sessions/logout` 登出。均为工厂函数 `createAuthApi(client)`，无模块级可变全局。
     - 新增 `web/src/app/session.tsx`：三态 `unknown|anonymous|authenticated`；挂载时以 `GET /api/v1/articles?limit=1` 探测（401→anonymous，传输/后端失败→保持 unknown 并置 `bootstrapFailed`，不误判未登录）；CSRF 只存 `useRef`/state，**不写 localStorage/sessionStorage**；任一 401 统一 `invalidate()`；登出成功清空。
     - 测试：`npm run test` → 3 文件 15 用例全绿（client 7 + session 7 + App 1）；`npm run lint` exit 0；`npm run build` exit 0（tsc --noEmit + vite build）。
-    - 说明：`SessionProvider` 尚未挂到 `main.tsx`（属 S1.2 路由骨架的范围），因此本轮 bundle 内容未变；模块已进入 `tsc --noEmit` 类型检查。
+    - 说明：本任务提交时 `SessionProvider` 尚未挂到 `main.tsx`（属 S1.2 范围）；S1.2 已完成挂载，模块此前也已进入 `tsc --noEmit` 类型检查。
   - **仍未做**：独立评审与接收决定；页面尚未消费（S3.x/S4.x 接入）。
   - **G0 核对发现（阻塞后续页面，未自行改契约）**：见下方「契约缺口」小节。
 
