@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom'
 
 import { ArticleDetailPage } from '../pages/article-detail'
+import { ArticleEditPage } from '../pages/article-edit'
 import { ArticleEditorPage } from '../pages/article-editor'
 import { ArticleListPage } from '../pages/article-list'
 import { LoginPage } from '../pages/login'
@@ -56,7 +57,7 @@ export const routes: RouteObject[] = [
           { path: 'articles/:id', element: <ArticleDetailPage /> },
           { path: 'me/articles', element: <MyArticlesPage /> },
           { path: 'me/articles/new', element: <ArticleEditorPage /> },
-          { path: 'me/articles/:id/edit', element: <ArticleEditorPage /> },
+          { path: 'me/articles/:id/edit', element: <ArticleEditPage /> },
         ],
       },
     ],

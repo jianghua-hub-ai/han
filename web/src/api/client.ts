@@ -59,6 +59,7 @@ export interface HttpResponseLike {
   ok: boolean
   status: number
   text(): Promise<string>
+  headers?: { get(name: string): string | null }
 }
 
 /** Injectable transport so tests never touch the network. */
@@ -73,6 +74,7 @@ const defaultFetch: FetchLike = async (input, init) => {
     ok: response.ok,
     status: response.status,
     text: () => response.text(),
+    headers: response.headers,
   }
 }
 
@@ -94,6 +96,8 @@ export interface RequestOptions {
   method?: string
   body?: unknown
   signal?: AbortSignal
+  /** Extra request headers, e.g. `If-Match` for optimistic writes. */
+  headers?: Record<string, string>
   /**
    * Set when a 401 is an expected answer rather than a dead session, e.g. a
    * failed login. The request still rejects; only the global hook is skipped.
@@ -115,8 +119,27 @@ export class ApiClient {
   }
 
   async request<T>(path: string, options: RequestOptions = {}): Promise<T> {
+    const result = await this.execute<T>(path, options)
+    return result.data
+  }
+
+  /** Same contract as `request`, plus the response `ETag` when present. */
+  async requestWithEtag<T>(
+    path: string,
+    options: RequestOptions = {},
+  ): Promise<{ data: T; etag: string | null }> {
+    return this.execute<T>(path, options)
+  }
+
+  private async execute<T>(
+    path: string,
+    options: RequestOptions,
+  ): Promise<{ data: T; etag: string | null }> {
     const method = (options.method ?? 'GET').toUpperCase()
-    const headers: Record<string, string> = { Accept: 'application/json' }
+    const headers: Record<string, string> = {
+      Accept: 'application/json',
+      ...options.headers,
+    }
     if (options.body !== undefined) {
       headers['Content-Type'] = 'application/json'
     }
@@ -149,12 +172,15 @@ export class ApiClient {
     }
 
     if (response.status === 204) {
-      return undefined as T
+      return { data: undefined as T, etag: null }
     }
 
     const payload = parsePayload(await response.text())
     if (response.ok) {
-      return payload as T
+      return {
+        data: payload as T,
+        etag: response.headers?.get('ETag') ?? null,
+      }
     }
 
     const failure = toApiError(response.status, payload)

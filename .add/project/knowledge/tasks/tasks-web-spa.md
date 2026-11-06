@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 8 建成待验 / 4 未开始。
+**当前统计**：0 已完成 / 11 建成待验 / 1 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -131,7 +131,7 @@
 
 ## 批次 W4 · 我的文章
 
-- [ ] `web-spa-S5.1` 我的文章列表与新建
+- [-] `web-spa-S5.1` 我的文章列表与新建 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：`/me/articles` 列表 + `/me/articles/new` 创建表单。
   - 文件清单：`web/src/pages/my-articles.tsx`（新增）、`web/src/pages/article-editor.tsx`（新增）、`web/src/pages/my-articles.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -139,8 +139,14 @@
   - 类型：开发
   - 本任务关闭条件：T12/T13 全绿（失败保留输入）
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - `web/src/api/articles.ts` 新增 `listMine`（`GET /users/me/articles`，复用 `{items,next_cursor}` 信封）与 `create`（`POST /articles`，`requestWithEtag` 取回 ETag）。
+    - `my-articles.tsx`：游标分页（`Pagination`）、空态「你还没有文章」、加载失败可重试、进入编辑页与新建页入口。
+    - `article-editor.tsx`：标题/正文必填才可提交；发布成功跳回 `/me/articles`；失败显示 `role="alert"` 且**输入不丢**。
+    - 测试：`my-articles.test.tsx` 4 用例（列表与编辑链接、空态、删除二次确认成功后移除行、删除失败保持原状）；`article-editor.test.tsx` 2 用例（提交体与跳转、失败保留输入）。
+  - **仍未做**：独立评审与接收决定；真实浏览器 E2E（含真实 `GET /api/v1/users/me/articles`）。
 
-- [ ] `web-spa-S5.2` 编辑自己的文章
+- [-] `web-spa-S5.2` 编辑自己的文章 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：编辑页预填与保存；先核实现有编辑接口是否要求 `If-Match`。
   - 文件清单：`web/src/pages/article-edit.tsx`（新增）、`web/src/pages/article-edit.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -148,8 +154,13 @@
   - 类型：开发
   - 本任务关闭条件：T14 全绿；若接口要求 `If-Match`，须实现 ETag 往返并回写 design §9 A3 后再关闭
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - G0 核对结论：作者视图为 `GET /api/v1/users/me/articles/{id}`，保存为 `PUT /api/v1/articles/{id}` 且**强制 `If-Match: <强 ETag>`**（`internal/article/handler.go:443-531`）；design §9 A3 已记录该结论。
+    - `article-edit.tsx`：预填标题/正文；保存时回传预填响应的 `ETag`；`412/409` 显示「内容已被修改，请刷新后重试。」；`editable=false` 时只读、按钮禁用并提示「这篇文章当前不可编辑」；404/403 各有独立页面。
+    - 测试：`article-edit.test.tsx` 3 用例（预填 + `If-Match` 回传、412 冲突文案、不可编辑只读）。
+  - **仍未做**：独立评审与接收决定；真实浏览器 E2E。
 
-- [ ] `web-spa-S5.3` 删除自己的文章
+- [-] `web-spa-S5.3` 删除自己的文章 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：删除入口、二次确认、成功后刷新列表。
   - 文件清单：`web/src/components/ConfirmDialog.tsx`（新增）、`web/src/pages/my-articles.tsx`（修改：接删除）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -157,6 +168,12 @@
   - 类型：开发
   - 本任务关闭条件：T16 全绿；失败时文章保持原状
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - 删除走 `DELETE /api/v1/articles/{id}`（`internal/article/handler.go` 204 无正文）。
+    - `ConfirmDialog.tsx`：`role="dialog"` + `aria-modal`、Esc 与「取消」关闭、`pending` 时禁用按钮。
+    - 成功路径**不做乐观删除**：接口 204 后才从本地列表移除该行；失败保留原行并显示 `role="alert"`「删除失败…」。
+    - 测试：`my-articles.test.tsx` 的删除两用例即 T16 的可观察断言（确认层拦截、成功移除、失败保持）。
+  - **仍未做**：独立评审与接收决定；真实浏览器 E2E（含真实 204 与失败分支）。
 
 ## 批次 W5 · 部署接入
 

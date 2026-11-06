@@ -15,9 +15,17 @@ function json(status: number, body: unknown): HttpResponseLike {
   }
 }
 
-const authenticated: FetchLike = async (url) =>
-  url.includes('/articles/article-1')
-    ? json(200, {
+const authenticated: FetchLike = async (url) => {
+  if (url.includes('/users/me/articles/')) {
+    return json(200, {
+      title: '第一篇',
+      body: '正文',
+      moderation_status: 'normal',
+      editable: true,
+    })
+  }
+  if (url.includes('/articles/article-1')) {
+    return json(200, {
         id: 'article-1',
         title: '第一篇',
         body: '正文',
@@ -27,7 +35,9 @@ const authenticated: FetchLike = async (url) =>
         created_at: '2026-11-01T08:00:00Z',
         updated_at: '2026-11-02T08:00:00Z',
       })
-    : json(200, { items: [], next_cursor: null })
+  }
+  return json(200, { items: [], next_cursor: null })
+}
 
 const anonymous: FetchLike = async () =>
   json(401, {
@@ -96,8 +106,8 @@ describe('routes', () => {
     ['/', '文章列表'],
     ['/articles/article-1', '第一篇'],
     ['/me/articles', '我的文章'],
-    ['/me/articles/new', '文章编辑'],
-    ['/me/articles/article-1/edit', '文章编辑'],
+    ['/me/articles/new', '新建文章'],
+    ['/me/articles/article-1/edit', '编辑文章'],
   ])('renders %s for an authenticated session', async (path, heading) => {
     renderRouter(path, authenticated)
 
