@@ -211,3 +211,8 @@ Profile 入口只在项目初始化，或客户明确要求“通过 ADD”新�
 未知新版本先验证语法、发现和真实 smoke，失败不覆盖既有投影；过旧版本明确缺少的能力，已有提交不自动撤除。运行时不能物理限制权限时说明降级风险，不把文字约定当硬隔离。
 
 <!-- ADD:END -->
+
+## 本地补充（非 ADD 托管）
+
+- `go test -race ./...` 在本机不可执行：`CGO_ENABLED=0` 且无 C 工具链；换到具备 CGO 的环境再跑。
+- 若上方「项目检查命令」显示为「未配置」，说明投影未随 `add.manifest.yaml` 刷新；以 `add.manifest.yaml` 的 `project.check_commands` 与 `README.md`「项目检查」的 7 条为准。

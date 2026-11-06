@@ -75,6 +75,8 @@ go test -race ./...
 go test ./...
 ```
 
+本节与 `add.manifest.yaml` 同源；`AGENTS.md` 的同一段由采用链投影，重投影后请核对仍为这 7 条。
+
 ## 接口
 
 生产业务 API 共 16 个端点，覆盖文章读取/写入、作者管理、管理员文章查询与无归属文章处置。每个端点有精确 method/path、405 `Allow`，且 404/405 先于安全链。契约由 `test/contract/` 锁定。
