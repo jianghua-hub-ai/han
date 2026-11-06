@@ -30,13 +30,20 @@
 
 - [-] `web-spa-S2.1` 后端新增登出端点 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：新增 `POST /api/v1/sessions/logout`，需会话与 CSRF，成功 204 并清 Cookie，未认证 401，重复调用不得 5xx。
-  - 文件清单：`internal/identity/session_logout.go`（新增）、`internal/identity/session_logout_test.go`（新增）、`cmd/han-server/main.go`（修改：路由与装配）、`test/contract/identity/session_logout_test.go`（新增）
-  - 验收命令：仓库根 → `go build ./...`；`go vet ./...`；`go test ./internal/identity -run TestSessionLogout -count=1`；`go test -tags=contract ./test/contract/identity -run TestSessionLogout -count=1`
+  - 文件清单：`internal/identity/session_logout.go`（新增）、`internal/identity/session_logout_test.go`（新增）、`cmd/han-server/main.go`（修改：路由与装配）、`cmd/han-server/logout_revoker.go`（新增）、`cmd/han-server/session_logout_route_test.go`（新增）、`cmd/han-server/session_logout_integration_test.go`（新增）、`test/contract/identity/session_logout_test.go`（新增）
+  - 验收命令：仓库根 → `go build ./...`；`go vet ./...`；`go test ./internal/identity -run TestSessionLogout -count=1`；`go test -tags=contract ./test/contract/identity -run TestSessionLogout -count=1`；`HAN_TEST_POSTGRES_DSN=<真实 PG 18 DSN> go test -tags=integration ./cmd/han-server -run TestSessionLogoutRevokesRealPostgresSession -count=1`
   - 依赖：无（后端独立）
   - 类型：开发（②档：先写失败的契约测试再实现）
   - 本任务关闭条件：契约测试红→绿、`gofmt -l` 为空、既有 identity 测试无回归；独立评审待安排
   - 后续验证关联：`web-spa-S2.2`（前端消费）；集成层的会话撤销验证见 test-plan T07
-  - **当前证据（2026-11-06）**：新增 `internal/identity/session_logout.go`、`cmd/han-server/logout_revoker.go`、`cmd/han-server/session_logout_route_test.go`；`platform.ClearSessionCookie`；路由 `POST /api/v1/sessions/logout` 挂在 `handlers[22]`，经 `originGuard` + `authorizer.Protect(session.AccessGeneral)`。`go build ./...`、`go vet ./...`、`gofmt -l`、`go test ./...`（14 包）全部 exit 0；2 个 handler 单测 + 2 个路由级测试通过（POST 204 / GET 405 且 `Allow: POST`）。**未做**：`test/contract/identity` 公共契约测试、真实 PG 集成验证（`Revoke` 落库效果）、独立评审。**偏离记录**：未按 ②档先写失败测试再实现。
+  - **当前证据（2026-11-06）**：新增 `internal/identity/session_logout.go`、`cmd/han-server/logout_revoker.go`、`cmd/han-server/session_logout_route_test.go`；`platform.ClearSessionCookie`；路由 `POST /api/v1/sessions/logout` 挂在 `handlers[22]`，经 `originGuard` + `authorizer.Protect(session.AccessGeneral)`。`go build ./...`、`go vet ./...`、`gofmt -l`、`go test ./...`（14 包）全部 exit 0；2 个 handler 单测 + 2 个路由级测试通过（POST 204 / GET 405 且 `Allow: POST`）。
+  - **当前证据（2026-11-06 第二轮补齐）**：
+    - 公共契约测试已补：`test/contract/identity/session_logout_test.go`（`//go:build contract`）三条断言——204 且无 body、唯一清 Cookie（`MaxAge<0`/`HttpOnly`/`Secure`/`SameSite=Lax`/`Path=/`）、无 Cookie 时 401 `auth.session_required` 且不触碰 revoker、revoker 失败时 500 `platform.internal_error` 且不泄漏内部 cause 也不清 Cookie。`go test -tags=contract ./test/contract/...` → `article`/`identity` 两包 ok。
+    - 真实 PG 集成已验：本地一次性 PostgreSQL 18.6 集群（`127.0.0.1:55441`，非生产库），`HAN_TEST_POSTGRES_DSN` 指向它，跑 `go test -tags=integration ./cmd/han-server -run TestSessionLogoutRevokesRealPostgresSession -count=1` → PASS（0.79s）。
+    - 该集成测试使用**生产同款**依赖：`session.Store` + `postgresSessionLogout`（生产 revoker 本体）+ `identity.SessionLogoutHandler` + `platform.HTTPAuthorizer`。断言链：登录态探测 204（证明 fixture 真的可用）→ POST 登出 204 且 `Set-Cookie` 清 Cookie → 数据库 `sessions.revoked_at` 非空且 `revoke_reason='logout'` → 同一 Cookie 再探受保护路由 **401** → 重复调用登出为 **401 而非 5xx**。未接入 `originGuard`（正交 CSRF 加固，另有测试覆盖），已在测试注释中写明。
+    - 测试 schema 自建自删（`DROP SCHEMA ... CASCADE`），不留残留。
+  - **仍未做**：独立评审与接收决定（本 Host 无 Reviewer Role，不冒充）。
+  - **偏离记录**：实现顺序未按 ②档先写失败测试再实现（先实现、后补契约测试与集成测试）。
 
 - [ ] `web-spa-S2.2` 前端会话上下文与 API 客户端
   - 目标：实现会话三态、启动探测、401 全局处理、CSRF 注入与错误归一。
