@@ -37,6 +37,7 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 - Record IR-02 Q1/Q2 decisions and add the web SPA boundary
 - Confirm web SPA design and add its story slices
 - Add web SPA test plan, task ledger and batch plan
+- Add the web SPA scaffold (Vite + React + TypeScript, lint and test runners)
 
 ### Tests
 

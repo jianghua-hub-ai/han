@@ -4,17 +4,19 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 0 进行中 / 12 未开始。
+**当前统计**：0 已完成 / 1 建成待验 / 11 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
-- [ ] `web-spa-S1.1` 建立前端工程骨架
+- [-] `web-spa-S1.1` 建立前端工程骨架 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：在 `web/` 建立可构建、可 lint、可跑测试的最小 React + TypeScript + Vite 工程。
   - 文件清单：`web/package.json`（新增）、`web/package-lock.json`（新增）、`web/tsconfig.json`（新增）、`web/vite.config.ts`（新增）、`web/index.html`（新增）、`web/src/main.tsx`（新增）、`web/eslint.config.js`（新增）、`web/src/setupTests.ts`（新增）
   - 验收命令：工作目录 `web/` → `npm ci`；`npm run build`；`npm run lint`；`npm run test`
   - 依赖：无
   - 类型：开发
   - 本任务关闭条件：四条命令 exit 0（测试可为空集但 runner 必须真实执行）、`web/dist` 生成、未改 `add.manifest.yaml`；作者自测 + Lead 核 diff
+  - **当前证据（2026-11-06）**：`npm install` 完成（286 包）；`npm run build` exit 0（`dist/index.html` 0.32 kB、`dist/assets/index-*.js` 224.07 kB）；`npm run lint` exit 0；`npm run test` 1 passed。**未做**：独立评审、`npm ci` 冷启动验证。
+  - **已知环境限制**：npm 的 `allow-scripts` 策略跳过了 `esbuild` 的 postinstall；本次 `vite build` 仍成功，但换机或清理后重装可能需 `npm approve-scripts esbuild`。
   - 后续验证关联：无（E2E 另立）
 
 - [ ] `web-spa-S1.2` 应用外壳与路由骨架
