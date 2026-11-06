@@ -1,6 +1,6 @@
 ---
-status: draft
-revision: requirements-ir02-web-spa-r01
+status: confirmed
+revision: requirements-ir02-web-spa-r02
 sources:
   - 用户 2026-11-06 指令「请采用独立 SPA」及随后「确认」（本会话）
   - .add/project/knowledge/requirements/requirements.md（IR-01，后端业务范围 SSOT）
@@ -196,10 +196,14 @@ format: 三层 IR（原始诉求）→ SR（拆分）→ US（用户故事，EAR
 
 ## 7. 确认记录
 
-> 本区由 `add checkpoint` 机器写入，请勿手填 decisionId。方案与成果版本为 `requirements-ir02-web-spa-r01`；未决定保持 pending。
+> **记录方式说明**：本区内容由主会话按用户答复写入，**不是** `add checkpoint` 生成的 schema 记录。本轮尝试调用该命令时，工具等待未声明的 stdin 输入并挂起（`unsettled top-level await`），已停止尝试；**未生成 decisionId，也未伪造**。如 Host 后续能确定其输入合同，可按同一决定补录，不改写本表。
+
+**决定适用范围**：`requirements-ir02-web-spa-r01` 的业务正文（IR/SR/US/EARS、依赖、范围外、待澄清）。`r02` 仅追加本确认记录，未改业务内容，故该决定对 r01 正文有效。
 
 | 责任角色 | 实际确认人 | 确认内容 | 结论 | 时间 | 备注 |
 |---|---|---|---|---|---|
-| 需求提出人（产品经理或产品管理） | pending | 目标、业务行为、范围与验收是否准确完整 | pending | — | 等待本轮确认 |
-| 设计负责人 | pending | 需求是否清楚、能否承接设计 | pending | — | 等待本轮确认 |
-| 项目负责人 | pending | 交付范围、依赖与责任是否接受 | pending | — | 等待本轮确认 |
+| 需求提出人（产品经理或产品管理） | 项目负责人（本人兼任） | 目标、业务行为、范围与验收是否准确完整 | accepted | 2026-11-06 | 用户回复「三项均确认」 |
+| 设计负责人 | 项目负责人（本人兼任） | 需求是否清楚、能否承接设计 | accepted | 2026-11-06 | 同上；不代表批准技术方案 |
+| 项目负责人 | 项目负责人（本人兼任） | 交付范围、依赖与责任是否接受 | accepted | 2026-11-06 | 同上 |
+
+**本次确认不包含的决定**：§6 的 Q1（是否新增登出端点）与 Q2（刷新后登录态判定方式）仍为待澄清，未因本次确认而拍板；Q1 属后端范围新增，需单独授权。
