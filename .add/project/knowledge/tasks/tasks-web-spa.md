@@ -4,11 +4,11 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 12 建成待验 / 0 未开始。
+**当前统计**：12 已完成 / 0 建成待验 / 0 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
-- [-] `web-spa-S1.1` 建立前端工程骨架 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S1.1` 建立前端工程骨架 — 完成@2026-11-06
   - 目标：在 `web/` 建立可构建、可 lint、可跑测试的最小 React + TypeScript + Vite 工程。
   - 文件清单：`web/package.json`（新增）、`web/package-lock.json`（新增）、`web/tsconfig.json`（新增）、`web/vite.config.ts`（新增）、`web/index.html`（新增）、`web/src/main.tsx`（新增）、`web/eslint.config.js`（新增）、`web/src/setupTests.ts`（新增）
   - 验收命令：工作目录 `web/` → `npm ci`；`npm run build`；`npm run lint`；`npm run test`
@@ -19,7 +19,7 @@
   - **已知环境限制**：npm 的 `allow-scripts` 策略跳过了 `esbuild` 的 postinstall；本次 `vite build` 仍成功，但换机或清理后重装可能需 `npm approve-scripts esbuild`。
   - 后续验证关联：无（E2E 另立）
 
-- [-] `web-spa-S1.2` 应用外壳与路由骨架 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S1.2` 应用外壳与路由骨架 — 完成@2026-11-06
   - 目标：建立路由表、布局与受保护路由守卫骨架（暂用占位页面）。
   - 文件清单：`web/src/app/router.tsx`（新增）、`web/src/app/layout.tsx`（新增）、`web/src/pages/*`（占位，新增）
   - 验收命令：工作目录 `web/` → `npm run build`；`npm run test`
@@ -37,7 +37,7 @@
   - **仍未做**：独立评审与接收决定（本 Host 无 Reviewer Role，不冒充）。
   - **范围说明**：占位页只渲染标题与说明，不发任何请求；真实表单/列表由 S3.x–S5.x 接入。
 
-- [-] `web-spa-S2.1` 后端新增登出端点 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S2.1` 后端新增登出端点 — 完成@2026-11-06
   - 目标：新增 `POST /api/v1/sessions/logout`，需会话与 CSRF，成功 204 并清 Cookie，未认证 401，重复调用不得 5xx。
   - 文件清单：`internal/identity/session_logout.go`（新增）、`internal/identity/session_logout_test.go`（新增）、`cmd/han-server/main.go`（修改：路由与装配）、`cmd/han-server/logout_revoker.go`（新增）、`cmd/han-server/session_logout_route_test.go`（新增）、`cmd/han-server/session_logout_integration_test.go`（新增）、`test/contract/identity/session_logout_test.go`（新增）
   - 验收命令：仓库根 → `go build ./...`；`go vet ./...`；`go test ./internal/identity -run TestSessionLogout -count=1`；`go test -tags=contract ./test/contract/identity -run TestSessionLogout -count=1`；`HAN_TEST_POSTGRES_DSN=<真实 PG 18 DSN> go test -tags=integration ./cmd/han-server -run TestSessionLogoutRevokesRealPostgresSession -count=1`
@@ -54,7 +54,7 @@
   - **仍未做**：独立评审与接收决定（本 Host 无 Reviewer Role，不冒充）。
   - **偏离记录**：实现顺序未按 ②档先写失败测试再实现（先实现、后补契约测试与集成测试）。
 
-- [-] `web-spa-S2.2` 前端会话上下文与 API 客户端 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S2.2` 前端会话上下文与 API 客户端 — 完成@2026-11-06
   - 目标：实现会话三态、启动探测、401 全局处理、CSRF 注入与错误归一。
   - 文件清单：`web/src/api/client.ts`（新增）、`web/src/api/auth.ts`（新增）、`web/src/app/session.tsx`（新增）、`web/src/api/client.test.ts`（新增）、`web/src/app/session.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`（覆盖 T01–T06）；`npm run lint`；`npm run build`
@@ -73,7 +73,7 @@
 
 ## 批次 W2 · 身份界面
 
-- [-] `web-spa-S3.1` 注册页 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S3.1` 注册页 — 完成@2026-11-06
   - 目标：注册表单、隐私声明确认、字段错误映射。
   - 文件清单：`web/src/pages/register.tsx`（新增）、`web/src/pages/register.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -89,7 +89,7 @@
   - **偏离记录**：任务卡写「字段错误映射」，但后端 `validateRegistrationRequest` 对用户名/邮箱/手机号/密码的失败只返回 `identity.validation_failed`（**不带 `field_errors`**），因此实现为「按稳定错误码映射的表单级提示」，无法逐字段内联。若要逐字段提示，需要后端补充 `field_errors`，属另一次契约变更。
   - **仍未做**：独立评审与接收决定；真实浏览器 E2E（注册依赖 `privacy_notices.current` 与 processing gate 的真实数据准备）。
 
-- [-] `web-spa-S3.2` 登录与登出界面 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S3.2` 登录与登出界面 — 完成@2026-11-06
   - 目标：登录表单、统一失败提示、登出按钮（调用新端点）。
   - 文件清单：`web/src/pages/login.tsx`（新增）、`web/src/pages/login.test.tsx`（新增）、`web/src/components/LogoutButton.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -108,7 +108,7 @@
 
 ## 批次 W3 · 文章浏览
 
-- [-] `web-spa-S4.1` 文章列表页 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S4.1` 文章列表页 — 完成@2026-11-06
   - 目标：游标分页列表、空态、加载与错误态。
   - 文件清单：`web/src/pages/article-list.tsx`（新增）、`web/src/components/Pagination.tsx`（新增）、`web/src/pages/article-list.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -123,7 +123,7 @@
     - 测试：`article-list.test.tsx` 3 用例——T09 两页游标翻页后 4 条顺序正确、无重复、无跳过、按钮消失且第二次请求带 `cursor=cursor-1`；T10 空列表显示空态且无 alert；503 显示错误条、点击重试恢复。
   - **仍未做**：独立评审与接收决定；真实浏览器 E2E。
 
-- [-] `web-spa-S4.2` 文章详情页 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S4.2` 文章详情页 — 完成@2026-11-06
   - 目标：详情展示、不可见统一提示、作者显示（无归属为「匿名」）。
   - 文件清单：`web/src/pages/article-detail.tsx`（新增）、`web/src/pages/article-detail.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -138,7 +138,7 @@
 
 ## 批次 W4 · 我的文章
 
-- [-] `web-spa-S5.1` 我的文章列表与新建 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S5.1` 我的文章列表与新建 — 完成@2026-11-06
   - 目标：`/me/articles` 列表 + `/me/articles/new` 创建表单。
   - 文件清单：`web/src/pages/my-articles.tsx`（新增）、`web/src/pages/article-editor.tsx`（新增）、`web/src/pages/my-articles.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -153,7 +153,7 @@
     - 测试：`my-articles.test.tsx` 4 用例（列表与编辑链接、空态、删除二次确认成功后移除行、删除失败保持原状）；`article-editor.test.tsx` 2 用例（提交体与跳转、失败保留输入）。
   - **仍未做**：独立评审与接收决定；真实浏览器 E2E（含真实 `GET /api/v1/users/me/articles`）。
 
-- [-] `web-spa-S5.2` 编辑自己的文章 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S5.2` 编辑自己的文章 — 完成@2026-11-06
   - 目标：编辑页预填与保存；先核实现有编辑接口是否要求 `If-Match`。
   - 文件清单：`web/src/pages/article-edit.tsx`（新增）、`web/src/pages/article-edit.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -167,7 +167,7 @@
     - 测试：`article-edit.test.tsx` 3 用例（预填 + `If-Match` 回传、412 冲突文案、不可编辑只读）。
   - **仍未做**：独立评审与接收决定；真实浏览器 E2E。
 
-- [-] `web-spa-S5.3` 删除自己的文章 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S5.3` 删除自己的文章 — 完成@2026-11-06
   - 目标：删除入口、二次确认、成功后刷新列表。
   - 文件清单：`web/src/components/ConfirmDialog.tsx`（新增）、`web/src/pages/my-articles.tsx`（修改：接删除）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -184,7 +184,7 @@
 
 ## 批次 W5 · 部署接入
 
-- [-] `web-spa-S6.1` 部署接入文档与反代样例 — 已建成@2026-11-06（待独立评审与接收）
+- [x] `web-spa-S6.1` 部署接入文档与反代样例 — 完成@2026-11-06
   - 目标：产出同源反代与 SPA 回退配置样例、上线核对清单（不执行真实部署）。
   - 文件清单：`docs/runbooks/web-frontend-deployment.md`（新增）、`deploy/nginx-han.conf.example`（新增）
   - 验收命令：仓库根 → 文本核对：`Select-String -Path docs/runbooks/web-frontend-deployment.md -Pattern '/api'`
@@ -250,3 +250,26 @@
   - 命令：`HAN_TEST_POSTGRES_DSN=<真实 PG> go test -tags=integration ./internal/article -run TestAuthorArticleListKeysetAgainstPostgres -count=1` → **PASS（0.77s）**。
 - 复核轮同时重跑全部项目检查：`gofmt -l ./cmd ./internal ./test` 无输出、`go mod verify` 全通过、`go vet ./...`、`go build ./...`、`go test -tags=contract ./...`（16 包）、`go test ./...`（14 包）全部 exit 0；前端 `npm run test` 46 用例 / 9 文件全绿、`npm run lint`、`npm run build` 均 exit 0。
 - 注册仍**没有**真实 PostgreSQL 端到端（需要 `privacy_notices.current` 与 processing gate 的真实数据准备），该项保持未验证。
+
+## 评审与接收记录（IR-02）
+
+| 项 | 内容 |
+|---|---|
+| 确认人 | 项目负责人（本人） |
+| 时间 | 2026-11-06 |
+| 原话 | 「确认独立评审通过」 |
+| 覆盖范围 | 本台账全部 12 张任务卡（S1.1、S1.2、S2.1、S2.2、S3.1、S3.2、S4.1、S4.2、S5.1、S5.2、S5.3、S6.1） |
+| 结论 | 评审通过并接收；12 张卡按 `[x]` 关闭 |
+
+**记录方式说明（不伪造）**：本 Host 没有可用的 Reviewer Role，**没有生成评审报告文件、没有 reviewer agent id**。本表记录的是项目负责人的人工确认，不是自动化评审产出；不把「用户确认」写成「Reviewer 通过」。
+
+**关闭依据**：任务卡成果与提交（`b245f92`、`3f413c2`、`dec3b2b`、`5ccb804`、`116b807`、`f9535c5`、`82218bb`、`6a46a33`、`d8b6a5f`、`358d596`）+ 真实执行的检查证据（见各卡「当前证据」与 §契约缺口补充验证）+ 上述人工确认。
+
+**本确认不覆盖的残留风险（如实保留）**
+
+1. **注册无真实 PostgreSQL/E2E**：需要 `privacy_notices` 存在 `current` 且隐私 processing gate 正确配置；当前只有单元、路由与契约层证据。
+2. **无真实浏览器 E2E**：本机无浏览器自动化环境、无部署主机；`test-plan` 的 E2E 层未执行。
+3. **部署样例未在真实主机验证**：`deploy/nginx-han.conf.example` 只是示例，未部署、未跑 TLS/反代实测。
+4. **注册没有逐字段错误提示**：后端注册校验不返回 `field_errors`，前端只能按错误码给表单级提示。
+5. **`go test -race ./...` 未执行**：本机 `CGO_ENABLED=0` 且无 C 工具链。
+6. **未推送**：所有提交仍在本地 `main`（ahead 19），推送需另行授权。
