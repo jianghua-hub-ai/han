@@ -87,7 +87,7 @@
     - 测试：`web/src/pages/register.test.tsx` 5 用例——①四个字段与隐私声明正文/版本可见；②未确认声明时阻止提交且完全无 `/users` 请求；③成功路径断言请求体（含版本与确认标记）、成功面板与登录链接、**无 `/sessions` 调用**、密码输入从 DOM 移除、`localStorage`/`sessionStorage` 均为空；④冲突文案且保留已填内容、无 storage 写入；⑤声明过期文案。
     - 命令：`npm run test` → 10 文件 51 用例全绿；`npm run lint` exit 0；`npm run build` exit 0（56 modules，339.23 kB / gzip 107.46 kB）。
   - **偏离记录**：任务卡写「字段错误映射」，但后端 `validateRegistrationRequest` 对用户名/邮箱/手机号/密码的失败只返回 `identity.validation_failed`（**不带 `field_errors`**），因此实现为「按稳定错误码映射的表单级提示」，无法逐字段内联。若要逐字段提示，需要后端补充 `field_errors`，属另一次契约变更。
-  - **仍未做**：独立评审与接收决定；真实浏览器 E2E（注册依赖 `privacy_notices.current` 与 processing gate 的真实数据准备）。
+  - **仍未做**：真实浏览器 E2E。真实 PostgreSQL 注册验证已于关账后补齐（见文末「关账后补充验证 · 注册真实 PostgreSQL」），并据此修复了 D-01。
 
 - [x] `web-spa-S3.2` 登录与登出界面 — 完成@2026-11-06
   - 目标：登录表单、统一失败提示、登出按钮（调用新端点）。
@@ -267,9 +267,32 @@
 
 **本确认不覆盖的残留风险（如实保留）**
 
-1. **注册无真实 PostgreSQL/E2E**：需要 `privacy_notices` 存在 `current` 且隐私 processing gate 正确配置；当前只有单元、路由与契约层证据。
+1. ~~**注册无真实 PostgreSQL/E2E**~~：**已于关账后补验**（见文末「关账后补充验证 · 注册真实 PostgreSQL」，2026-11-06）；真实浏览器 E2E 仍缺（见第 2 条）。
 2. **无真实浏览器 E2E**：本机无浏览器自动化环境、无部署主机；`test-plan` 的 E2E 层未执行。
 3. **部署样例未在真实主机验证**：`deploy/nginx-han.conf.example` 只是示例，未部署、未跑 TLS/反代实测。
 4. **注册没有逐字段错误提示**：后端注册校验不返回 `field_errors`，前端只能按错误码给表单级提示。
 5. **`go test -race ./...` 未执行**：本机 `CGO_ENABLED=0` 且无 C 工具链。
-6. **未推送**：所有提交仍在本地 `main`（ahead 19），推送需另行授权。
+6. ~~**未推送**~~：已推送，`main` 与 `origin/main` 均为 `889ad3b`；本轮真库验证与缺陷修复的提交待推送。
+
+## 关账后补充验证 · 注册真实 PostgreSQL（2026-11-06）
+
+**触发**：项目负责人本轮要求「注册真库 E2E」，补上残留风险 1。
+
+**新增测试**：`internal/identity/registration_postgres_integration_test.go`（`//go:build integration`，包内 schema 自建自删，应用 0001–0011 全量迁移）。测试经 `identity.NewHandler` + `platform.TraceMiddleware` 走真实 HTTP 边界，装配生产同款依赖：`identity.Repository{}`、`identity.CurrentNoticeReader{}`、`privacy.NewProcessingGate`（读真实 `processing_gate_records`）、`security.PasswordPolicy{}`、真实 Gated Argon2id hasher、`audit.Store{}`、`identity.RandomUUIDGenerator{}`、`identity.SystemClock{}`。
+
+用例（全部通过；PostgreSQL 18.6，临时集群端口 55441）：
+
+- `TestRegistrationPostgresPersistsAggregate`：201；`users` 1 行（`role=member`、`status=active`、`credential_mode=permanent`、永久密码摘要可被真实 hasher 验证、`permanent_password_generation=0`）；`identity_identifiers` 3 行（username/email 归一化为小写、phone 原样）；`privacy_acknowledgements` 1 行且版本 `v1.0.0`；`audit_events` 1 条 `succeeded`/`anonymous` 且带 trace_id。
+- `TestRegistrationPostgresRejectsOutdatedNotice`：库中 current 为 `v1.1.0`、请求 `v1.0.0` → 409 `privacy.notice_outdated`，无写入。
+- `TestRegistrationPostgresRejectsUnacknowledgedNotice`：未确认声明 → 403 `privacy.acknowledgement_required`，无写入。
+- `TestRegistrationPostgresRejectsDuplicateIdentifier`：同名（大小写不同）第二次注册 → 409 `identity.identifier_conflict`，用户数仍为 1，并新增 1 条 failed 审计。
+- `TestRegistrationPostgresRequiresProcessingGate`：缺 gate 记录 / `region_ref` 不匹配 → 503 `platform.processing_gate_closed`，无写入。
+
+**验证中发现并修复的缺陷（D-01，真实缺陷，不是测试问题）**：
+
+- 现象：首轮真库测试的成功路径返回 503 `platform.database_unavailable`。
+- 根因：`identity.Repository.InsertUser` 的 `insertUserSQL` 不写 `permanent_password_generation`，而注册聚合会写 `permanent_password_digest`。`0008_password_reset_durable.sql` 的 `users_permanent_password_generation_check` 要求二者同为空或同非空 → 真实注册每次都会违反 CHECK。此前只有 fake repository 单测、没有真库注册测试，因此未暴露。
+- 修复（最小改动）：注册聚合为自注册账号设置 `PermanentPasswordGeneration = 0`（与 0008 的回填语义一致）；`InsertUser` 在 generation 非空时使用含该列的 17 列 INSERT，为空时保持原 16 列 INSERT（管理员创建等无永久凭据路径行为不变）。
+- 回归：`registration_test.go` 增加 `PermanentPasswordGeneration == 0` 断言；`TestIdentityRepository_SchemaConstraints_EnforceIdentityInvariants`、`TestIdentityRepository_UserGovernancePaginationIndexes`、登录集成测试、`go test ./...`、`go test -tags=contract ./...`、`go vet ./...`、`go build ./...`、`gofmt -l` 全部通过。
+
+**未执行**：`go test -race ./...`（本机 `CGO_ENABLED=0` 且无 C 工具链）；真实浏览器 E2E。
