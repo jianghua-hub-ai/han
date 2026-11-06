@@ -36,6 +36,7 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 - Add IR-02 web frontend (independent SPA) requirements draft
 - Record IR-02 Q1/Q2 decisions and add the web SPA boundary
 - Confirm web SPA design and add its story slices
+- Add web SPA test plan, task ledger and batch plan
 
 ### Tests
 
