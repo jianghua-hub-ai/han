@@ -1,6 +1,6 @@
 # ISSUE-article-management-0001 — 恢复已不存在文章时重放与快照计数不一致
 
-**状态：技术修复、回归、非作者CodeReview及Lead核收完成；待精确两方结果接收，尚未验收关闭。** r22设计及r20测试规划均通过独立评审。本问题在继续 `article-management-S4.4` 测试准备时发现；用户已授权采用建议值继续推进，Lead据实际证据安排缺陷闭环。原已关闭S4.2的历史结果保留，不将其原作者自审改称独立评审。
+**状态：已接受关闭（2026-11-06）。** 技术修复、回归、非作者 CodeReview 与 Lead 核收均已完成；项目负责人 2026-11-06 对当前修复版作出接收决定，见文末「2026-11-06 接收关闭」。r22 设计及 r20 测试规划均通过独立评审。本问题在继续 `article-management-S4.4` 测试准备时发现；用户已授权采用建议值继续推进，Lead 据实际证据安排缺陷闭环。原已关闭 S4.2 的历史结果保留，不将其原作者自审改称独立评审。
 
 ## 登记与定级
 
@@ -81,7 +81,7 @@ G0及独立设计评审另静态确认同Source.go的Trace接缝：固定 `artic
 | 产出与修复版本、根因回归 | 四生产/五既有测试加一新增PG文件已交付；固定180，作者新PG普通/race各16leaf通过，原三真实RED转GREEN |
 | 独立非作者评审/复审 | Erdos两轮有界CodeReview PASS/0findings及本人新16/旧6普通-race完成，Lead另核原始证据；不代完整恢复或人的接收 |
 | Lead同版本范围与项目检查 | 已核9＋1范围/170保护项、最终单元及全部原286contract节点、新PG32schema/58Ready-SQL-Facts、Manifest七项；180无漂移 |
-| 实际产出/接收责任与关闭决定 | pending；不以AI角色、用户先前一般授权或诊断交回代签结果接受 |
+| 实际产出/接收责任与关闭决定 | **已接收（2026-11-06，项目负责人）**：对 HEAD `304b400` 上 180 固定输入的修复版作接收决定；此前 AI 角色、先前一般授权与诊断交回均不代签，本次为明确的人为接收 |
 | S4.4及主交付其他门禁 | 不解除真实Journal/旧备份、S8.2/Case18、应用ACL与完整恢复开放义务 |
 
 ## P1阶段RCA与时间线
@@ -106,3 +106,26 @@ G0及独立设计评审另静态确认同Source.go的Trace接缝：固定 `artic
 | `article-management/test-plan.md` | `DD7D603C…`（r20） | 现为更新版本 | 规划后续推进，属历史时点值 |
 
 **结论**：证据与评审材料无缺失、无篡改；差异全部来自后续已登记的修订。本单关闭状态不变——仍 pending 实际产出接收决定，不由 AI 或一般授权代签。
+
+## 2026-11-06 接收关闭（accept-close）
+
+项目负责人本轮答复「接收」，即对 `ISSUE-article-management-0001` 的接收决定。据此按 [add-issue-handling](../../.codex/skills/add-issue-handling/SKILL.md#wf-step-accept-close) 关闭本单；上文「仍 pending」等措辞为其记录时点，保留不改。
+
+| 关闭依据 | 事实与来源 |
+|---|---|
+| 缺陷对象与版本 | 四生产文件（`deletion_replay_source.go`、`replay_evidence.go`、`deletion_replay.go`、`replay_status_v1.go`）+ 五既有测试 + 新增 `test/integration/recovery/article_replay_test.go`；关闭对象为 HEAD `304b4004ee5abe010c691e385fe4a69e82b6bfd5`，固定 180 输入，manifest SHA256 `18270024…8D2071` |
+| 根因回归 | 三条真实 RED 在新 PostgreSQL 普通/race 下转 GREEN；13 场景展开 16 leaf、24 节点全 PASS/0 skip；作者单元普通/race 67 节点 59 leaf、四 contract 286 节点 236 leaf 通过 |
+| 独立评审 | 非作者 Erdos 两轮正式 CodeReview PASS/0 findings（`68C412EC…49BAC`）；Lead 另核 414 份原始证据（`B6691BAA…859A4`） |
+| 项目检查 | Lead 同版本核收：Manifest 七项、180 项无漂移、原 286 contract 节点保留、58 份 Ready-SQL-Facts 复算 |
+| 两方验收 | 产出方：Dalton / Hegel / Erdos 与 Lead 核收；接收方：项目负责人（本轮答复为本单接收决定的来源） |
+| P1 相称复盘 | Steward Kepler 已完成 RCA（`rca-issue0001-r01.md`），无规则采用、无对外发送 |
+
+**接收范围**：本次接收针对上述修复版与其有界验证结论，**不构成**以下事项的通过或解除：
+
+- 真实文件 Journal、真实旧备份与真实部署恢复开流（本轮 Journal 为受控公开 seam）；
+- `article-management-S8.2`、Case18、应用 ACL 与完整恢复开放义务；
+- 生产就绪（production readiness）、RPO/RTO 或性能结论。
+
+**未验证边界与后续义务仍按原卡保留**：`S4.4` 完整真实恢复门禁、`F002`～`F005` 等已披露 LOW 项维持原状，不因本单接收而关闭。
+
+**已知限制**：本单未留存「接收决定」的书面签署物，来源为本轮项目负责人的明确答复；如后续需要签字件或评审记录归档，可另行补充，不覆盖本记录。
