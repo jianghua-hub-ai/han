@@ -227,3 +227,15 @@ func s414Directory(t *testing.T) string {
 **门禁与残留回归**：`gofmt -l cmd internal test` 0 文件、`go build ./...`、`go vet ./...`、`go vet -tags=integration ./...` 均 exit 0；`go test ./...` 14 包 0 FAIL、`go test -tags=contract ./...` 16 包 0 FAIL；套件前后 `%TEMP%` 目录集合 8,466 → 8,466，新增 0。
 
 **遗留**：该测试的完整通过仍需一台 `127.0.0.1:5433`、口令可知的实例；本轮不声称该测试 PASS。
+
+### 2026-11-06 历史残留已按授权清理
+
+- 授权：项目负责人回复「2」，即「按两份清单删除 1,429 + 129 个目录」。
+- 执行：`apply-cleanup.ps1 -Execute` → **removed=1429 / failed=0 / total=1429**；`apply-cleanup-extra.ps1 -Execute` → **removed=129 / failed=0 / total=129**。
+- 删除后核验：`han-s414-retain-*`、`han-b13d-a48-media-*`、`han-b13d-a48-legacy-*`、`s413-approved-checkpoint-*`、`han-s105-cli-*`、`s413-deletion-media-*` 计数均为 **0**；两份脚本 dry-run 均为「存在 0 项」。
+- 未触碰：ADR-0039 决策 3 的排除点 `han-s44-retained-*`=1,001、`han_s62_journal_*`=5，删除前后一致。
+- 磁盘：C 盘可用 35.77 GiB → 46.64 GiB（**+10.87 GiB**）。
+- 执行前已在隔离沙箱验证脚本行为：清单内 3 项被准确删除、前缀相似的清单外目录保留、越界条目被白名单拒绝。
+- 仓库未受影响：工作树 clean，HEAD `fd310db`。
+
+**状态不变更**：根因已修（ADR-0039 五处适用）且历史残留已清空，但「独立评审与两方验收」仍未完成，本单**不自行关闭**。
