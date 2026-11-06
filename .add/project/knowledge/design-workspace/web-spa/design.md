@@ -1,6 +1,6 @@
 ---
-status: draft
-revision: web-spa-design-ir02-r01
+status: confirmed
+revision: web-spa-design-ir02-r02
 feature: web-spa
 source_requirements: requirements-ir02-web-spa-r03
 source_boundary: web-spa-boundary-ir02-r02
@@ -211,3 +211,14 @@ web/
 | 接口投影 | `internal/article/model.go:284-360` |
 
 **本设计不构成**：设计确认、实现授权、部署批准或对既有接口的修改许可。
+
+## 11. 确认记录
+
+> 由主会话按用户答复写入；`add checkpoint` 在本 Host 未能成功调用（输入合同未确定），**未生成 decisionId，也未伪造**。
+
+| 责任角色 | 实际确认人 | 确认内容 | 结论 | 时间 | 备注 |
+|---|---|---|---|---|---|
+| 设计负责人 | 项目负责人（本人兼任） | 设计成果、需求覆盖与提交依据 | accepted | 2026-11-06 | 用户回复「设计确认」；r02 仅追加本记录，正文未改 |
+| 下一任务规划/开发责任人 | 项目负责人（本人兼任） | 方案、契约、实现与验证条件能否承接 | accepted | 2026-11-06 | 同上；不含实现授权 |
+
+**确认不覆盖**：§9 的 A1（登出端点形状）、A3（编辑是否要求 If-Match）、A5（前端检查命令入 manifest）、A6（部署归属）仍按设计假设推进，实施 G0 时核对并回写本设计。
