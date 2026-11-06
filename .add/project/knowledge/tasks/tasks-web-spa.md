@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 2 建成待验 / 10 未开始。
+**当前统计**：0 已完成 / 3 建成待验 / 9 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -45,7 +45,7 @@
   - **仍未做**：独立评审与接收决定（本 Host 无 Reviewer Role，不冒充）。
   - **偏离记录**：实现顺序未按 ②档先写失败测试再实现（先实现、后补契约测试与集成测试）。
 
-- [ ] `web-spa-S2.2` 前端会话上下文与 API 客户端
+- [-] `web-spa-S2.2` 前端会话上下文与 API 客户端 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：实现会话三态、启动探测、401 全局处理、CSRF 注入与错误归一。
   - 文件清单：`web/src/api/client.ts`（新增）、`web/src/api/auth.ts`（新增）、`web/src/app/session.tsx`（新增）、`web/src/api/client.test.ts`（新增）、`web/src/app/session.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`（覆盖 T01–T06）；`npm run lint`；`npm run build`
@@ -53,6 +53,14 @@
   - 类型：开发（②档：401/CSRF 分支先失败）
   - 本任务关闭条件：会话与 token 不出现在 storage（测试断言）、401 触发统一失效、写请求带 CSRF 头
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - 新增 `web/src/api/client.ts`：`ApiClient.request` 统一 `credentials: 'same-origin'`；不安全方法（POST/PUT/PATCH/DELETE）从内存取 `X-CSRF-Token`；204 返回 `undefined`；非 2xx 归一为 `ApiError{status,code,message,fieldErrors,traceId}`；传输失败归一为 `network.error`（status 0），不误判为 401；401 触发注入的 `onUnauthorized` 回调。为可测性保留 `FetchLike` 注入点，生产默认走 `fetch`。
+    - 新增 `web/src/api/auth.ts`：`POST /api/v1/sessions` 登录（`user` 字段 snake_case→camelCase，取 `csrf_token`）、`POST /api/v1/sessions/logout` 登出。均为工厂函数 `createAuthApi(client)`，无模块级可变全局。
+    - 新增 `web/src/app/session.tsx`：三态 `unknown|anonymous|authenticated`；挂载时以 `GET /api/v1/articles?limit=1` 探测（401→anonymous，传输/后端失败→保持 unknown 并置 `bootstrapFailed`，不误判未登录）；CSRF 只存 `useRef`/state，**不写 localStorage/sessionStorage**；任一 401 统一 `invalidate()`；登出成功清空。
+    - 测试：`npm run test` → 3 文件 15 用例全绿（client 7 + session 7 + App 1）；`npm run lint` exit 0；`npm run build` exit 0（tsc --noEmit + vite build）。
+    - 说明：`SessionProvider` 尚未挂到 `main.tsx`（属 S1.2 路由骨架的范围），因此本轮 bundle 内容未变；模块已进入 `tsc --noEmit` 类型检查。
+  - **仍未做**：独立评审与接收决定；页面尚未消费（S3.x/S4.x 接入）。
+  - **G0 核对发现（阻塞后续页面，未自行改契约）**：见下方「契约缺口」小节。
 
 ## 批次 W2 · 身份界面
 
@@ -133,3 +141,27 @@
   - 类型：开发（文档/配置样例）
   - 本任务关闭条件：样例覆盖 `/` 静态、`/api/**` 转发、SPA 回退、HTTPS、`X-Frame-Options`/CSP；不声称已部署
   - 后续验证关联：部署后 E2E（未登记）
+
+## 契约缺口（IR-02 G0 核对发现，2026-11-06）
+
+实施 S2.2 前按 design §4.1 的「实施 G0 时逐条核对」要求核对了真实路由表与 handler，发现两处设计假设与代码不一致。**未自行改契约**，登记待决策。
+
+### GAP-1 · `POST /api/v1/users`（注册）已实现但未挂载路由
+
+- 事实：`internal/identity/handler.go:447` 有 `Register`，`test/contract/identity/rest_contract_test.go` 也测了它；但 `cmd/han-server/main.go:3585-3680` 的路由 switch 没有 `/api/v1/users` 分支，`productionIdentityHandlers` 结构体也没有 register 字段。全仓除此 handler 与其单测外无任何挂载点。
+- 后果：真实服务器对 `POST /api/v1/users` 返回 `404 request.route_not_found`；SPA 注册页（`web-spa-S3.1`）无法工作。
+- 影响范围：这是既有后端装配缺口，不是 IR-02 引入；但它使 design §3.1 的 `/register` 与需求 IR-02 的注册范围无法交付。
+
+### GAP-2 · `GET /api/v1/users/me/articles`（我的文章列表）不存在
+
+- 事实：路由表只有 `GET /api/v1/users/me/articles/{id}`（作者视图详情，`main.go:3647`）。`article.Handler.ListArticles` 只接受 `cursor`、`limit`（`internal/article/handler.go:318-349`），无作者过滤参数。列表投影 `MemberArticleSummaryView{id,title,author{kind,id,label},created_at,updated_at}` 不含正文。
+- 后果：`/me/articles` 页（`web-spa-S5.1`）无法取得「我的文章」列表；用公共列表 + 客户端过滤会因游标分页而漏项。
+- 影响范围：需要新增只读端点（或给列表加作者过滤参数），属于 design「唯一后端变更是登出」之外的变更。
+
+### 建议处置（待确认）
+
+1. 把 GAP-1 视为**缺陷修复**：把已存在的 `Register` 挂到 `POST /api/v1/users`（新增一条路由 + 一个 handler 槽位 + 路由级测试），不改业务逻辑。
+2. 把 GAP-2 视为**范围增补**：新增 `GET /api/v1/users/me/articles?limit=&cursor=`，复用现有列表信封 `{items,next_cursor}`，按当前会话用户过滤；需要修订 design §4.1 与「唯一后端变更」表述。
+3. 两项都补契约测试与路由级测试后，再继续 S3.1 / S5.1。
+
+未获确认前不实施上述后端改动。
