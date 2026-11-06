@@ -36,7 +36,7 @@
   - 类型：开发（②档：先写失败的契约测试再实现）
   - 本任务关闭条件：契约测试红→绿、`gofmt -l` 为空、既有 identity 测试无回归；独立评审待安排
   - 后续验证关联：`web-spa-S2.2`（前端消费）；集成层的会话撤销验证见 test-plan T07
-  - **当前证据（2026-11-06）**：新增 `internal/identity/session_logout.go`、`cmd/han-server/logout_revoker.go`；`platform.ClearSessionCookie`；路由 `POST /api/v1/sessions/logout` 挂在 `handlers[22]`，经 `originGuard` + `authorizer.Protect(session.AccessGeneral)`。`go build ./...`、`go vet ./...`、`gofmt -l`、`go test ./...`（14 包）全部 exit 0；新增 2 个单测通过。**未做**：契约测试、真实 PG 集成验证、独立评审。**偏离记录**：未按 ②档先写失败测试再实现。
+  - **当前证据（2026-11-06）**：新增 `internal/identity/session_logout.go`、`cmd/han-server/logout_revoker.go`、`cmd/han-server/session_logout_route_test.go`；`platform.ClearSessionCookie`；路由 `POST /api/v1/sessions/logout` 挂在 `handlers[22]`，经 `originGuard` + `authorizer.Protect(session.AccessGeneral)`。`go build ./...`、`go vet ./...`、`gofmt -l`、`go test ./...`（14 包）全部 exit 0；2 个 handler 单测 + 2 个路由级测试通过（POST 204 / GET 405 且 `Allow: POST`）。**未做**：`test/contract/identity` 公共契约测试、真实 PG 集成验证（`Revoke` 落库效果）、独立评审。**偏离记录**：未按 ②档先写失败测试再实现。
 
 - [ ] `web-spa-S2.2` 前端会话上下文与 API 客户端
   - 目标：实现会话三态、启动探测、401 全局处理、CSRF 注入与错误归一。
