@@ -34,6 +34,7 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 - Close `ISSUE-identity-auth-0002` on owner-confirmed independent review and two-party acceptance
 - Accept and close `ISSUE-article-management-0001` (owner acceptance of the fixed 180-input version)
 - Add IR-02 web frontend (independent SPA) requirements draft
+- Record IR-02 Q1/Q2 decisions and add the web SPA boundary
 
 ### Tests
 
