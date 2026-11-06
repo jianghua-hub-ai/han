@@ -1,6 +1,6 @@
 ---
-status: draft
-revision: web-spa-boundary-ir02-r01
+status: confirmed
+revision: web-spa-boundary-ir02-r02
 scope: web-spa
 source_revision: requirements-ir02-web-spa-r03
 source_digest: sha256:3676fdf0a9620541dd762d47cb5951817b168604c85a982370e361f3b4be258e
@@ -169,5 +169,5 @@ last_updated: 2026-11-06
 | 未决项 | 是（§5，均未写成结论） |
 
 **产出责任**：主会话按 Skill 产出（无 `add-boundary-griller` Role 独立产出）。
-**下一阶段接收责任**：设计负责人（项目负责人兼任）——需确认本边界版本能否供 `web-spa` 设计承接。
+**下一阶段接收责任**：设计负责人（项目负责人兼任）——**2026-11-06 确认**（用户答复「边界确认」），本边界可供电 `web-spa` 设计承接。`r02` 仅追加本接收记录，边界正文未改，故该决定对 `r01` 正文有效。
 **本边界不构成**：设计批准、接口形状批准、部署批准或实现授权。
