@@ -69,9 +69,10 @@ type ArticleAuthorStateReader[Status ~string] interface {
 
 // ArticleQueryService serves member-visible Article reads.
 type ArticleQueryService struct {
-	repository ArticleQueryRepository
-	identity   func(context.Context, []string) (map[string]string, error)
-	config     QueryConfig
+	repository       ArticleQueryRepository
+	authorRepository AuthorArticleRepository
+	identity         func(context.Context, []string) (map[string]string, error)
+	config           QueryConfig
 }
 
 // NewArticleQueryService creates the read-only Article query service.
@@ -88,7 +89,7 @@ func NewArticleQueryService[Status ~string](
 		config.CandidateBatchSize <= config.MaxLimit {
 		return nil, errors.New("article query pagination config is invalid")
 	}
-	return &ArticleQueryService{
+	service := &ArticleQueryService{
 		repository: repository,
 		identity: func(
 			ctx context.Context,
@@ -105,7 +106,11 @@ func NewArticleQueryService[Status ~string](
 			return normalized, nil
 		},
 		config: config,
-	}, nil
+	}
+	if authorRepository, ok := repository.(AuthorArticleRepository); ok {
+		service.authorRepository = authorRepository
+	}
+	return service, nil
 }
 
 // ListArticles returns one stable member-visible page.

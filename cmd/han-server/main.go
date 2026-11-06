@@ -357,6 +357,7 @@ type articleProductionTestSeam struct {
 	createHandler             http.Handler
 	updateHandler             http.Handler
 	authorDetailHandler       http.Handler
+	authorListHandler         http.Handler
 	orphanHandlers            [4]http.Handler
 	principalResolver         platform.PrincipalResolver
 	protectOrigin             func(http.Handler) http.Handler
@@ -2399,6 +2400,7 @@ type productionBusinessBuilder struct {
 
 type productionIdentityHandlers struct {
 	login                     http.Handler
+	register                  http.Handler
 	password                  http.Handler
 	administratorNotice       http.Handler
 	administratorCreate       http.Handler
@@ -2438,7 +2440,7 @@ func newProductionBusinessHandler(
 	if err != nil {
 		return nil, err
 	}
-	routerHandlers := [23]http.Handler{
+	routerHandlers := [25]http.Handler{
 		identityHandlers.password,
 		identityHandlers.administratorNotice,
 		identityHandlers.administratorCreate,
@@ -2451,8 +2453,10 @@ func newProductionBusinessHandler(
 	routerHandlers[10] = articleHandlers[4]
 	routerHandlers[11] = articleHandlers[5]
 	routerHandlers[12] = articleHandlers[6]
-	copy(routerHandlers[13:], articleHandlers[7:])
+	copy(routerHandlers[13:22], articleHandlers[7:16])
 	routerHandlers[22] = identityHandlers.logout
+	routerHandlers[23] = identityHandlers.register
+	routerHandlers[24] = articleHandlers[16]
 	var trace func(*http.Request)
 	if composition.articleTestSeam != nil {
 		trace = composition.articleTestSeam.trace
@@ -2591,8 +2595,13 @@ func (b *productionBusinessBuilder) buildIdentityHandlers() (productionIdentityH
 	if err != nil {
 		return productionIdentityHandlers{}, errors.New("create session logout handler")
 	}
+	registerHandler, err := b.newRegistrationHandler()
+	if err != nil {
+		return productionIdentityHandlers{}, err
+	}
 	return b.protectIdentityHandlers(
 		loginHandler,
+		registerHandler,
 		passwordHandler,
 		administratorHandler,
 		passwordResetHandler,
@@ -2600,6 +2609,43 @@ func (b *productionBusinessBuilder) buildIdentityHandlers() (productionIdentityH
 		logoutHandler,
 		authorizer,
 	), nil
+}
+
+// newRegistrationHandler wires the public self-service registration boundary.
+//
+// The service existed and was contract-tested since IR-01 but was never mounted
+// on the production router, so POST /api/v1/users returned 404.
+func (b *productionBusinessBuilder) newRegistrationHandler() (*identity.Handler, error) {
+	if b.processingGate == nil {
+		// Open registration is gated by the privacy processing gate. A partial
+		// composition (tests, degraded boots) leaves the route unregistered
+		// instead of failing the whole server; a real deployment always builds
+		// the gate before this point.
+		return nil, nil
+	}
+	service, err := identity.NewService(identity.RegistrationDependencies{
+		Transactions:   b.pool,
+		Repository:     identity.Repository{},
+		Notices:        identity.CurrentNoticeReader{},
+		Gate:           b.processingGate,
+		PasswordPolicy: security.PasswordPolicy{},
+		PasswordHasher: b.prepared.passwords,
+		Audit:          b.auditStore,
+		IDs:            b.prepared.ids,
+		Clock:          b.prepared.clock,
+	})
+	if err != nil {
+		return nil, errors.New("create registration service")
+	}
+	handler, err := identity.NewHandler(
+		service,
+		b.prepared.source,
+		b.composition.loginMaxBodyBytes,
+	)
+	if err != nil {
+		return nil, errors.New("create registration handler")
+	}
+	return handler, nil
 }
 
 func (b *productionBusinessBuilder) newCoreIdentityHandlers() (
@@ -3041,6 +3087,7 @@ func (b *productionBusinessBuilder) observeAdministratorDependencies() {
 
 func (b *productionBusinessBuilder) protectIdentityHandlers(
 	loginHandler *identity.Handler,
+	registerHandler *identity.Handler,
 	passwordHandler *identity.Handler,
 	administratorHandler *identity.Handler,
 	passwordResetHandler *identity.Handler,
@@ -3048,7 +3095,7 @@ func (b *productionBusinessBuilder) protectIdentityHandlers(
 	logoutHandler *identity.SessionLogoutHandler,
 	authorizer platform.HTTPAuthorizer,
 ) productionIdentityHandlers {
-	return productionIdentityHandlers{
+	handlers := productionIdentityHandlers{
 		login: b.composition.originGuard.Protect(http.HandlerFunc(loginHandler.Login)),
 		password: b.composition.originGuard.Protect(authorizer.Protect(
 			session.AccessChangePassword,
@@ -3082,12 +3129,18 @@ func (b *productionBusinessBuilder) protectIdentityHandlers(
 		)),
 		authorizer: authorizer,
 	}
+	if registerHandler != nil {
+		handlers.register = b.composition.originGuard.Protect(
+			http.HandlerFunc(registerHandler.Register),
+		)
+	}
+	return handlers
 }
 
 func (b *productionBusinessBuilder) buildArticleHandlers(
 	authorizer platform.HTTPAuthorizer,
-) ([16]http.Handler, error) {
-	var handlers [16]http.Handler
+) ([17]http.Handler, error) {
+	var handlers [17]http.Handler
 	queryHandlers, err := b.buildArticleQueryHandlers(authorizer)
 	if err != nil {
 		return handlers, err
@@ -3097,6 +3150,7 @@ func (b *productionBusinessBuilder) buildArticleHandlers(
 	handlers[7], handlers[8] = queryHandlers[2], queryHandlers[3]
 	handlers[12] = queryHandlers[4]
 	handlers[14], handlers[15] = queryHandlers[5], queryHandlers[6]
+	handlers[16] = queryHandlers[7]
 	if b.composition.articleJournal == nil && b.composition.articleDeletion == nil {
 		return handlers, nil
 	}
@@ -3121,8 +3175,8 @@ func (b *productionBusinessBuilder) buildArticleHandlers(
 
 func (b *productionBusinessBuilder) buildArticleQueryHandlers(
 	authorizer platform.HTTPAuthorizer,
-) ([7]http.Handler, error) {
-	var handlers [7]http.Handler
+) ([8]http.Handler, error) {
+	var handlers [8]http.Handler
 	repository, err := article.NewPostgresArticleQueryRepository(b.pool)
 	if err != nil {
 		return handlers, errors.New("create Article query repository")
@@ -3159,20 +3213,31 @@ func (b *productionBusinessBuilder) buildProtectedArticleQueryHandlers(
 	authorizer platform.HTTPAuthorizer,
 	service *article.ArticleQueryService,
 	handler, orphanHandler *article.Handler,
-) ([7]http.Handler, error) {
+) ([8]http.Handler, error) {
 	authorHandler, err := article.NewAuthorDetailHandler(service)
 	if err != nil {
-		return [7]http.Handler{}, errors.New("create Article author detail handler")
+		return [8]http.Handler{}, errors.New("create Article author detail handler")
+	}
+	authorListHandler, err := article.NewAuthorArticleListHandler(service)
+	if err != nil {
+		return [8]http.Handler{}, errors.New("create Article author list handler")
 	}
 	adminHandler, err := article.NewAdminQueryHandler(service)
 	if err != nil {
-		return [7]http.Handler{}, errors.New("create Article admin query handler")
+		return [8]http.Handler{}, errors.New("create Article admin query handler")
 	}
 	observeArticleSharedDependency(b.composition, "article_query_service", "article_author_detail_handler", service)
 	observeArticleSharedDependency(b.composition, "article_author_detail_handler", "router", authorHandler)
 	observeArticleSharedDependency(b.composition, "article_query_service", "article_admin_query_handler", service)
 	observeArticleSharedDependency(b.composition, "article_admin_query_handler", "router", adminHandler)
-	return b.protectArticleQueryHandlers(authorizer, handler, orphanHandler, authorHandler, adminHandler), nil
+	return b.protectArticleQueryHandlers(
+		authorizer,
+		handler,
+		orphanHandler,
+		authorHandler,
+		authorListHandler,
+		adminHandler,
+	), nil
 }
 
 func (b *productionBusinessBuilder) observeArticleQueryDependencies(
@@ -3224,9 +3289,10 @@ func (b *productionBusinessBuilder) protectArticleQueryHandlers(
 	handler *article.Handler,
 	orphanHandler *article.Handler,
 	authorHandler *article.Handler,
+	authorListHandler *article.Handler,
 	adminHandler *article.Handler,
-) [7]http.Handler {
-	routeHandlers := [7]http.Handler{
+) [8]http.Handler {
+	routeHandlers := [8]http.Handler{
 		http.HandlerFunc(handler.ListArticles),
 		http.HandlerFunc(handler.GetArticle),
 		http.HandlerFunc(orphanHandler.ListOrphanArticles),
@@ -3234,6 +3300,7 @@ func (b *productionBusinessBuilder) protectArticleQueryHandlers(
 		http.HandlerFunc(authorHandler.GetAuthorArticle),
 		http.HandlerFunc(adminHandler.ListAdminArticles),
 		http.HandlerFunc(adminHandler.GetAdminArticle),
+		http.HandlerFunc(authorListHandler.ListMyArticles),
 	}
 	if b.composition.articleTestSeam != nil {
 		for index, injected := range b.composition.articleTestSeam.adminQueryHandlers {
@@ -3243,6 +3310,9 @@ func (b *productionBusinessBuilder) protectArticleQueryHandlers(
 		}
 		if injected := b.composition.articleTestSeam.authorDetailHandler; injected != nil {
 			routeHandlers[4] = injected
+		}
+		if injected := b.composition.articleTestSeam.authorListHandler; injected != nil {
+			routeHandlers[7] = injected
 		}
 		for index, injected := range b.composition.articleTestSeam.queryHandlers {
 			if injected != nil {
@@ -3255,7 +3325,7 @@ func (b *productionBusinessBuilder) protectArticleQueryHandlers(
 			}
 		}
 	}
-	return [7]http.Handler{
+	return [8]http.Handler{
 		authorizer.Protect(session.AccessGeneral, routeHandlers[0]),
 		authorizer.Protect(session.AccessGeneral, routeHandlers[1]),
 		authorizer.Protect(session.AccessGeneral, routeHandlers[2]),
@@ -3263,6 +3333,7 @@ func (b *productionBusinessBuilder) protectArticleQueryHandlers(
 		authorizer.Protect(session.AccessGeneral, routeHandlers[4]),
 		authorizer.Protect(session.AccessGeneral, routeHandlers[5]),
 		authorizer.Protect(session.AccessGeneral, routeHandlers[6]),
+		authorizer.Protect(session.AccessGeneral, routeHandlers[7]),
 	}
 }
 
@@ -3560,7 +3631,7 @@ func newLoginBusinessRouterWithTraceAndRecovery(
 	recoveryHandle func() recovery.Runtime,
 	password ...http.Handler,
 ) http.Handler {
-	var handlers [23]http.Handler
+	var handlers [25]http.Handler
 	for index := range handlers {
 		if index < len(password) {
 			handlers[index] = password[index]
@@ -3590,6 +3661,14 @@ func newLoginBusinessRouterWithTraceAndRecovery(
 			handler = handlers[22]
 			allow = http.MethodPost
 			methodAllowed = request.Method == http.MethodPost
+		case request.URL.Path == "/api/v1/users":
+			handler = handlers[23]
+			allow = http.MethodPost
+			methodAllowed = request.Method == http.MethodPost
+		case request.URL.Path == "/api/v1/users/me/articles":
+			handler = handlers[24]
+			allow = http.MethodGet
+			methodAllowed = request.Method == http.MethodGet
 		case request.URL.Path == "/api/v1/users/me/password":
 			handler = handlers[0]
 			allow = http.MethodPut

@@ -141,6 +141,30 @@ func (policy VisibilityPolicy) MemberListProjection(
 	}, nil
 }
 
+// AuthorListProjection creates the body-free summary of one Article the
+// current author owns. Unlike MemberListProjection it keeps Articles that are
+// member-invisible (violating or held) so the author can still manage them;
+// it never exposes another user's Article and never exposes a deleted one.
+func (policy VisibilityPolicy) AuthorListProjection(
+	article Article,
+	principal session.Principal,
+) (MemberArticleSummaryView, error) {
+	if !principal.Allows(session.AccessGeneral) ||
+		ValidateArticleState(article) != nil ||
+		article.DeletionState != DeletionActive ||
+		article.AuthorID == nil ||
+		*article.AuthorID != principal.UserID {
+		return MemberArticleSummaryView{}, ErrArticleUnavailable
+	}
+	return MemberArticleSummaryView{
+		ID:        article.ID,
+		Title:     article.Title,
+		Author:    publicAuthor(article.AuthorID),
+		CreatedAt: article.CreatedAt,
+		UpdatedAt: article.UpdatedAt,
+	}, nil
+}
+
 // MemberDetailProjection creates the regular-member detail projection.
 func (policy VisibilityPolicy) MemberDetailProjection(
 	article Article,

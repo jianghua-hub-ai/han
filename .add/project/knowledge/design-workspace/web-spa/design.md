@@ -1,6 +1,6 @@
 ---
 status: confirmed
-revision: web-spa-design-ir02-r02
+revision: web-spa-design-ir02-r03
 feature: web-spa
 source_requirements: requirements-ir02-web-spa-r03
 source_boundary: web-spa-boundary-ir02-r02
@@ -82,7 +82,7 @@ last_updated: 2026-11-06
 
 ## 4. API 契约
 
-### 4.1 前端消费的现有端点
+### 4.1 前端消费的现有端点（G0 核对后修正）
 
 | 用途 | 方法与路径 | 关键字段 |
 |---|---|---|
@@ -90,13 +90,17 @@ last_updated: 2026-11-06
 | 列表 | `GET /api/v1/articles?limit=20&cursor=<opaque>` | 响应 `{items:[...], next_cursor}` |
 | 详情 | `GET /api/v1/articles/{id}` | 见 §2 详情投影 |
 | 创建 | `POST /api/v1/articles` | 请求 `{title, body}` |
-| 编辑 | `GET/PUT /api/v1/articles/{id}`（作者视图） | `title/body/moderation_status/editable` |
+| 编辑预填 | `GET /api/v1/users/me/articles/{id}` | 作者视图 `title/body/moderation_status/editable`，响应头带强 `ETag` |
+| 编辑保存 | `PUT /api/v1/articles/{id}` | **必须**带 `If-Match: <强 ETag>`，否则拒绝；请求 `{title, body}`；成功回新 `ETag` |
 | 删除 | `DELETE /api/v1/articles/{id}` | 成功语义以后端为准 |
-| 我的文章 | `GET /api/v1/users/me/articles` | 与列表同构 |
 
-> 上述路径与字段来自代码实测；具体请求体字段名与状态码在实施 G0 时逐条核对 `internal/article/handler.go`，不符即回本设计修正，不在实现中私自改契约。
+> G0 核对结论（2026-11-06）：r01/r02 把编辑写成 `GET/PUT /api/v1/articles/{id}` 是错的——作者视图是 `/api/v1/users/me/articles/{id}`，且 `PUT` 强制要求 `If-Match` 强 ETag（`internal/article/handler.go:443-531`）。原文已按事实修正。
+>
+> 同样在 G0 发现：**注册** `POST /api/v1/users` 的 handler 早已存在且被契约测试覆盖，但生产路由从未挂载（真实服务返回 404）；**我的文章列表** `GET /api/v1/users/me/articles` 在后端根本不存在。两项均不在 r01/r02 的「唯一后端变更」范围内，经项目负责人于 2026-11-06 授权后纳入 §4.2。
 
-### 4.2 新增：登出端点（本设计唯一的后端变更）
+### 4.2 本设计新增/挂载的后端端点（三处）
+
+#### 4.2.1 登出（IR-02 新增）
 
 | 项 | 设计 |
 |---|---|
@@ -106,6 +110,28 @@ last_updated: 2026-11-06
 | 成功 | `204 No Content`，并下发过期 Set-Cookie 清除客户端 Cookie |
 | 未认证 | `401`，沿用统一错误体 |
 | 影响面 | 新增 handler + 路由 + 契约测试；不改既有端点行为 |
+
+#### 4.2.2 注册路由挂载（GAP-1，缺陷修复）
+
+| 项 | 设计 |
+|---|---|
+| 方法与路径 | `POST /api/v1/users` |
+| 认证 | 无（公开端点），仅经 `originGuard` |
+| 语义 | 复用既有 `identity.Handler.Register` 与既有注册服务，**不改业务逻辑** |
+| 成功 | `201 Created`，返回 `{id, username, role, status, must_change_password, created_at}` |
+| 校验失败 | `400/422`，沿用统一错误体与 `field_errors` |
+| 影响面 | 仅新增路由槽位与生产装配（`identity.NewService` + `NewHandler`）；handler 与契约测试均已存在 |
+
+#### 4.2.3 我的文章列表（GAP-2，只读新增）
+
+| 项 | 设计 |
+|---|---|
+| 方法与路径 | `GET /api/v1/users/me/articles?limit=&cursor=<opaque>` |
+| 认证 | 需要有效会话（`session.AccessGeneral`） |
+| 语义 | 按 `created_at DESC, id DESC` 返回**当前用户自己的**文章；与公共列表同一信封 `{items, next_cursor}` |
+| 可见性 | 仅 `author_id = 当前用户` 且未删除的文章；**包含被限制/违规的本人文章**（作者需要能管理自己的内容），绝不含他人文章 |
+| 分页 | 与公共列表同一游标编码与上限（默认 20，上限见 `QueryConfig`） |
+| 影响面 | 新增只读 seam `AuthorArticleRepository`、service 方法、handler 与路由；不改既有 `ArticleQueryRepository` 契约，不影响公共列表行为 |
 
 ### 4.3 错误映射
 
@@ -194,9 +220,9 @@ web/
 
 | # | 项 | 当前处理 | 影响 |
 |---|---|---|---|
-| A1 | 登出端点最终形状 | 按 §4.2 实施；若后端评审改路径，前端同步 | 契约测试与前端调用 |
+| A1 | 登出端点最终形状 | **已落地**：`POST /api/v1/sessions/logout`，204+清 Cookie，真实 PG 集成验证通过 | 契约测试与前端调用 |
 | A2 | 列表 `limit` 上限与默认 | 前端固定 20，后端为准 | 分页验收值 |
-| A3 | 编辑冲突（ETag/If-Match） | 现有编辑是否要求 `If-Match` 待 G0 核对；若要求，前端需保存 ETag | 可能新增一次契约细节 |
+| A3 | 编辑冲突（ETag/If-Match） | **G0 结论：强制要求**。`PUT` 必须带 `If-Match: <强 ETag>`；前端编辑页需保存预填响应的 `ETag` 并回传 | 已解决 |
 | A4 | 隐私声明文本与版本 | 由部署方提供，前端按内容展示 | 注册页文案 |
 | A5 | 前端检查命令是否入 manifest | 未授权，暂不入 | 项目检查覆盖 |
 | A6 | 部署域名/证书/反代归属 | 未定，按同源假设设计 | 环境验收 |
@@ -220,5 +246,6 @@ web/
 |---|---|---|---|---|---|
 | 设计负责人 | 项目负责人（本人兼任） | 设计成果、需求覆盖与提交依据 | accepted | 2026-11-06 | 用户回复「设计确认」；r02 仅追加本记录，正文未改 |
 | 下一任务规划/开发责任人 | 项目负责人（本人兼任） | 方案、契约、实现与验证条件能否承接 | accepted | 2026-11-06 | 同上；不含实现授权 |
+| 项目负责人 | 项目负责人（本人兼任） | G0 发现的 GAP-1（注册路由未挂载）与 GAP-2（我的文章列表缺失）按建议处置，并修订本设计 §4.1/§4.2 | accepted | 2026-11-06 | 用户原话「按建议执行 GAP-1 + GAP-2 并修订 design」；本次修订将 design 升至 r03 |
 
-**确认不覆盖**：§9 的 A1（登出端点形状）、A3（编辑是否要求 If-Match）、A5（前端检查命令入 manifest）、A6（部署归属）仍按设计假设推进，实施 G0 时核对并回写本设计。
+**确认不覆盖**：§9 的 A5（前端检查命令入 manifest）与 A6（部署归属）仍待定；A1/A3 已由 G0 核对与实现关闭（见 §9 与 §4.1）。

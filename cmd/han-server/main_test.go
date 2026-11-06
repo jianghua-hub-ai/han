@@ -2214,7 +2214,7 @@ func TestProductionArticleAuthorRoutes_ExactRouting_RejectsBeforeSecurity(t *tes
 func TestProductionArticleAuthorRoutes_ExactRouting_UnknownPathsDoNotRedirect(t *testing.T) {
 	for _, path := range []string{
 		"/api/v1/articles/", "/api/v1/articles/" + articleAuthorRootID + "/",
-		"/api/v1/articles/" + articleAuthorRootID + "/extra", "/api/v1/users/me/articles",
+		"/api/v1/articles/" + articleAuthorRootID + "/extra",
 		"/api/v1/users/me/articles/", "/api/v1/users/me/articles/" + articleAuthorRootID + "/",
 		"/api/v1/users/me/articles/" + articleAuthorRootID + "/extra", "/unknown",
 	} {
@@ -2233,6 +2233,33 @@ func TestProductionArticleAuthorRoutes_ExactRouting_UnknownPathsDoNotRedirect(t 
 			assertArticleAuthorRootNoSecurity(t, f)
 		})
 	}
+}
+
+// TestProductionArticleAuthorRoutes_MyArticlesListAcceptsOnlyGet pins the new
+// author-scoped list route added by IR-02 GAP-2: the exact path is registered
+// for GET, so any other method is a 405 with an explicit Allow and never falls
+// through to security or downstream ports.
+func TestProductionArticleAuthorRoutes_MyArticlesListAcceptsOnlyGet(t *testing.T) {
+	f := newArticleAuthorRootFixture(t, true)
+	request := httptest.NewRequest(
+		http.MethodPost,
+		"/api/v1/users/me/articles",
+		nil,
+	)
+	request.Header.Set("Origin", "https://attacker.example.invalid")
+	response := f.serve(t, request, http.StatusMethodNotAllowed)
+	assertArticleAuthorRootError(
+		t,
+		response,
+		platform.CodeRequestMethodNotAllowed,
+	)
+	if allow := response.Header().Get("Allow"); allow != http.MethodGet {
+		t.Fatalf("Allow = %q, want GET", allow)
+	}
+	if response.Header().Get("Location") != "" {
+		t.Fatalf("registered path redirected: %v", response.Header())
+	}
+	assertArticleAuthorRootNoSecurity(t, f)
 }
 
 func assertArticleAuthorRootNoSecurity(t *testing.T, f *articleAuthorRootFixture) {

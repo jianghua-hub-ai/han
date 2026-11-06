@@ -186,6 +186,7 @@ type Handler struct {
 	creator             ArticleCreator
 	replacer            ArticleContentReplacer
 	authorReader        AuthorArticleReader
+	authorLister        AuthorArticleLister
 	query               ArticleQuerier
 	deleter             PermanentArticleDeleter
 	responseWriteLogger ArticleResponseWriteLogger
@@ -314,6 +315,14 @@ func NewAuthorDetailHandler(reader AuthorArticleReader) (*Handler, error) {
 	return &Handler{authorReader: reader}, nil
 }
 
+// NewAuthorArticleListHandler creates the "my articles" list HTTP handler.
+func NewAuthorArticleListHandler(lister AuthorArticleLister) (*Handler, error) {
+	if lister == nil {
+		return nil, errors.New("article author list service is required")
+	}
+	return &Handler{authorLister: lister}, nil
+}
+
 // ListArticles handles GET /api/v1/articles.
 func (h *Handler) ListArticles(response http.ResponseWriter, request *http.Request) {
 	if h == nil || h.query == nil {
@@ -433,6 +442,48 @@ func (h *Handler) Create(response http.ResponseWriter, request *http.Request) {
 			err,
 		)
 	}
+}
+
+// ListMyArticles handles GET /api/v1/users/me/articles.
+func (h *Handler) ListMyArticles(
+	response http.ResponseWriter,
+	request *http.Request,
+) {
+	if h == nil || h.authorLister == nil {
+		_ = WriteArticleError(response, request, platform.NewPublicError(
+			platform.CodePlatformInternalError,
+			errors.New("article author list handler is not configured"),
+		))
+		return
+	}
+	principal, ok := platform.PrincipalFromContext(request.Context())
+	if !ok {
+		_ = WriteArticleError(response, request, platform.NewPublicError(
+			platform.CodeAuthSessionRequired,
+			errors.New("article principal is required"),
+		))
+		return
+	}
+	cursor, cursorPresent, err := singleArticleQueryParameter(request, "cursor")
+	if err != nil || cursorPresent && cursor == "" {
+		_ = WriteArticleError(response, request, ErrInvalidCursor)
+		return
+	}
+	limit, err := articleQueryLimit(request)
+	if err != nil {
+		_ = WriteArticleError(response, request, err)
+		return
+	}
+	page, err := h.authorLister.ListAuthorArticles(
+		request.Context(),
+		principal,
+		ListArticlesRequest{Cursor: cursor, Limit: limit},
+	)
+	if err != nil {
+		_ = WriteArticleError(response, request, err)
+		return
+	}
+	_ = WriteArticleJSON(response, http.StatusOK, page, "")
 }
 
 // GetAuthorArticle handles GET /api/v1/users/me/articles/{id}.

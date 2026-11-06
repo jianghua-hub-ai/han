@@ -175,7 +175,7 @@
     - **没有执行任何真实部署**，文档开头与台账均写明"样例未在真实主机验证"。
   - **仍未做**：独立评审与接收决定；真实部署环境下的 E2E（本机无 docker/无目标主机）。
 
-## 契约缺口（IR-02 G0 核对发现，2026-11-06）
+## 契约缺口（IR-02 G0 核对发现，2026-11-06；已授权处置）
 
 实施 S2.2 前按 design §4.1 的「实施 G0 时逐条核对」要求核对了真实路由表与 handler，发现两处设计假设与代码不一致。**未自行改契约**，登记待决策。
 
@@ -191,10 +191,30 @@
 - 后果：`/me/articles` 页（`web-spa-S5.1`）无法取得「我的文章」列表；用公共列表 + 客户端过滤会因游标分页而漏项。
 - 影响范围：需要新增只读端点（或给列表加作者过滤参数），属于 design「唯一后端变更是登出」之外的变更。
 
-### 建议处置（待确认）
+### 建议处置（已获授权：2026-11-06「按建议执行 GAP-1 + GAP-2 并修订 design」）
 
 1. 把 GAP-1 视为**缺陷修复**：把已存在的 `Register` 挂到 `POST /api/v1/users`（新增一条路由 + 一个 handler 槽位 + 路由级测试），不改业务逻辑。
 2. 把 GAP-2 视为**范围增补**：新增 `GET /api/v1/users/me/articles?limit=&cursor=`，复用现有列表信封 `{items,next_cursor}`，按当前会话用户过滤；需要修订 design §4.1 与「唯一后端变更」表述。
 3. 两项都补契约测试与路由级测试后，再继续 S3.1 / S5.1。
 
-未获确认前不实施上述后端改动。
+### 处置结果（2026-11-06）
+
+**GAP-1 · 注册路由已挂载**
+
+- `cmd/han-server/main.go` 新增 `newRegistrationHandler()`：用既有 `identity.NewService(RegistrationDependencies{…})`（`identity.Repository{}`、`identity.CurrentNoticeReader{}`、`processingGate`、`security.PasswordPolicy{}`、既有 hasher、`audit.Store{}`、既有 ID/Clock）构造服务，再用既有 `identity.NewHandler` 造 handler；**未改任何注册业务逻辑**。
+- 装配：`productionIdentityHandlers.register`；仅经 `originGuard`（公开端点，无 authorizer），与登录同一安全边界；路由槽位 `handlers[23]`，`POST /api/v1/users`。
+- 降级行为：若 `processingGate` 未装配（部分测试组合），`newRegistrationHandler` 返回 nil，路由保持未注册（返回 404），不会让整个 server 启动失败；真实部署必经 `newProcessingGate()`，不存在该降级。
+- 测试：`cmd/han-server/ir02_route_test.go` 的 `TestRegistrationRoute_PostIsDispatched`（201）与 `..._OtherMethodsRejected`（405 + `Allow: POST`）。
+
+**GAP-2 · 我的文章列表已新增**
+
+- 新文件 `internal/article/author_list.go`：`AuthorArticleRepository`（独立只读 seam，不动既有 `ArticleQueryRepository`）、`ListAuthorBatch`（`WHERE author_id = $1` + 同一 keyset 游标/排序）、`ArticleQueryService.ListAuthorArticles`（复用 `resolveLimit`/`decodeMemberCursor`/`buildListArticlesPage`）、`Handler.ListMyArticles`（`limit`/`cursor` 校验与统一错误体）。
+- `internal/article/policy.go` 新增 `AuthorListProjection`：仅当 `author_id == 当前用户`、状态合法、`DeletionState == active` 时返回摘要；**包含违规/限制的本人文章**，但绝不含他人文章。
+- 装配：`buildArticleQueryHandlers` → `[8]` 槽位（第 8 个 = 我的文章），`buildArticleHandlers` → `[17]`，路由槽位 `handlers[24]`，`GET /api/v1/users/me/articles`，经 `authorizer.Protect(session.AccessGeneral, …)`。
+- 测试：`internal/article/author_list_test.go` 3 个用例（只返回本人且含违规文章、排除他人与已删除；游标两页无重复无跳过；handler 信封与超大 `limit` → 422）；`cmd/han-server/ir02_route_test.go`（GET 分发、POST → 405 + `Allow: GET`）；原「未知路径」用例已移除该路径，改为独立 405 断言。
+- design 已修订为 `web-spa-design-ir02-r03`：§4.1 修正作者视图/If-Match，§4.2 拆为三处后端变更（登出、注册挂载、我的文章）。
+
+**仍未验证（如实记录）**
+
+- 注册与我的文章列表**没有跑真实 PostgreSQL 端到端**：注册依赖 `privacy_notices` 有 `current` 版本且 processing gate 开启，需要真实数据准备；本轮只有单元 / 路由 / 契约层证据。
+- `newRegistrationHandler` 的生产装配正确性由编译期类型 + 既有适配器实现保证，未在真实启动路径执行。
