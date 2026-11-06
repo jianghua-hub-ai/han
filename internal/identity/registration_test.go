@@ -474,6 +474,7 @@ func assertPersistedRegistration(t *testing.T, fixture *registrationFixture) {
 		user.Email == nil || *user.Email != "Alice@Example.test" ||
 		user.Phone == nil || *user.Phone != "+15550000001" ||
 		user.PermanentPasswordDigest == nil || *user.PermanentPasswordDigest != "$argon2id$test" ||
+		user.PermanentPasswordGeneration == nil || *user.PermanentPasswordGeneration != 0 ||
 		user.Role != RoleMember || user.Status != UserStatusActive ||
 		user.CredentialMode != CredentialModePermanent ||
 		user.OnboardingPrivacyAcknowledgedVersion == nil ||

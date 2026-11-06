@@ -17,13 +17,27 @@ func (Repository) InsertUser(ctx context.Context, tx pgx.Tx, user User) error {
 	if err := requireTransaction(tx); err != nil {
 		return err
 	}
-	if _, err := tx.Exec(ctx, insertUserSQL,
-		user.ID, user.Username, user.Email, user.Phone, user.PermanentPasswordDigest,
-		user.Role, user.IsInitialAdmin, user.Status, user.CredentialMode,
-		user.RecoveryRequired, user.OnboardingPrivacyAcknowledgedVersion,
-		user.OnboardingCompletedAt, user.RetainedEmail, user.CreatedAt,
-		user.UpdatedAt, user.DeletedAt,
-	); err != nil {
+	var err error
+	if user.PermanentPasswordGeneration == nil {
+		_, err = tx.Exec(ctx, insertUserSQL,
+			user.ID, user.Username, user.Email, user.Phone, user.PermanentPasswordDigest,
+			user.Role, user.IsInitialAdmin, user.Status, user.CredentialMode,
+			user.RecoveryRequired, user.OnboardingPrivacyAcknowledgedVersion,
+			user.OnboardingCompletedAt, user.RetainedEmail, user.CreatedAt,
+			user.UpdatedAt, user.DeletedAt,
+		)
+	} else {
+		// The generation column only exists once a permanent credential does,
+		// mirroring users_permanent_password_generation_check.
+		_, err = tx.Exec(ctx, insertUserWithPermanentPasswordGenerationSQL,
+			user.ID, user.Username, user.Email, user.Phone, user.PermanentPasswordDigest,
+			user.Role, user.IsInitialAdmin, user.Status, user.CredentialMode,
+			user.RecoveryRequired, user.OnboardingPrivacyAcknowledgedVersion,
+			user.OnboardingCompletedAt, user.RetainedEmail, user.CreatedAt,
+			user.UpdatedAt, user.DeletedAt, *user.PermanentPasswordGeneration,
+		)
+	}
+	if err != nil {
 		return fmt.Errorf("insert identity user: %w", err)
 	}
 	return nil
@@ -211,6 +225,20 @@ const insertUserSQL = `
 	VALUES (
 		$1, $2, $3, $4, $5, $6, $7, $8,
 		$9, $10, $11, $12, $13, $14, $15, $16
+	)
+`
+
+const insertUserWithPermanentPasswordGenerationSQL = `
+	INSERT INTO users (
+		id, username, email, phone, permanent_password_digest, role,
+		is_initial_admin, status, credential_mode, recovery_required,
+		onboarding_privacy_acknowledged_version, onboarding_completed_at,
+		retained_email, created_at, updated_at, deleted_at,
+		permanent_password_generation
+	)
+	VALUES (
+		$1, $2, $3, $4, $5, $6, $7, $8,
+		$9, $10, $11, $12, $13, $14, $15, $16, $17
 	)
 `
 

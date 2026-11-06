@@ -157,10 +157,16 @@ func (s *Service) newRegistrationAggregate(
 	now := s.dependencies.Clock.Now().UTC()
 	email, phone, digest := request.email, request.phone, passwordDigest
 	noticeVersion := request.privacyNoticeVersion
+	// A self-registered account starts its permanent credential lineage at
+	// generation 0, matching the password reset migration backfill and the
+	// users_permanent_password_generation_check invariant.
+	initialPasswordGeneration := int64(0)
 
 	user := User{
 		ID: userID, Username: request.username, Email: &email, Phone: &phone,
-		PermanentPasswordDigest: &digest, Role: RoleMember, Status: UserStatusActive,
+		PermanentPasswordDigest:     &digest,
+		PermanentPasswordGeneration: &initialPasswordGeneration,
+		Role:                        RoleMember, Status: UserStatusActive,
 		CredentialMode: CredentialModePermanent, RecoveryRequired: false,
 		OnboardingPrivacyAcknowledgedVersion: &noticeVersion,
 		OnboardingCompletedAt:                &now,
