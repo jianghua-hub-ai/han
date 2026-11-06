@@ -1,0 +1,63 @@
+# Han 同源反代样例（示例，不是已部署配置）
+#
+# 前提：
+#   1. 只经 HTTPS 暴露。会话 Cookie 为 __Host-han_session，浏览器要求
+#      Secure + Path=/ + 无 Domain，HTTP 下无法工作。
+#   2. 前端产物在 /srv/han/web/dist（npm run build 的输出）。
+#   3. 后端监听回环地址，例如 127.0.0.1:8080。
+
+server {
+    listen 80;
+    server_name han.example.invalid;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name han.example.invalid;
+
+    ssl_certificate     /etc/ssl/han/fullchain.pem;
+    ssl_certificate_key /etc/ssl/han/privkey.pem;
+    ssl_protocols       TLSv1.2 TLSv1.3;
+
+    add_header Strict-Transport-Security "max-age=31536000" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "DENY" always;
+    add_header Referrer-Policy "same-origin" always;
+    add_header Content-Security-Policy "default-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'" always;
+
+    root /srv/han/web/dist;
+    index index.html;
+
+    # 后端 API：同源转发，保留 Cookie 与 CSRF 头。
+    location /api/ {
+        proxy_pass         http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header   Host              $host;
+        proxy_set_header   X-Real-IP         $remote_addr;
+        proxy_set_header   X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+        proxy_set_header   X-CSRF-Token      $http_x_csrf_token;
+        proxy_read_timeout 30s;
+    }
+
+    # 健康探针不对外暴露（按需改为仅内网可达）。
+    location = /livez  { proxy_pass http://127.0.0.1:8080; }
+    location = /readyz { proxy_pass http://127.0.0.1:8080; }
+
+    # 带哈希的静态资源可长缓存。
+    location /assets/ {
+        try_files $uri =404;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # SPA 回退：非 /api 且非静态资源的路径回 index.html。
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    location = /index.html {
+        add_header Cache-Control "no-store";
+    }
+}

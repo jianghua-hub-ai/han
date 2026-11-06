@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 7 建成待验 / 5 未开始。
+**当前统计**：0 已完成 / 8 建成待验 / 4 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -160,7 +160,7 @@
 
 ## 批次 W5 · 部署接入
 
-- [ ] `web-spa-S6.1` 部署接入文档与反代样例
+- [-] `web-spa-S6.1` 部署接入文档与反代样例 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：产出同源反代与 SPA 回退配置样例、上线核对清单（不执行真实部署）。
   - 文件清单：`docs/runbooks/web-frontend-deployment.md`（新增）、`deploy/nginx-han.conf.example`（新增）
   - 验收命令：仓库根 → 文本核对：`Select-String -Path docs/runbooks/web-frontend-deployment.md -Pattern '/api'`
@@ -168,6 +168,12 @@
   - 类型：开发（文档/配置样例）
   - 本任务关闭条件：样例覆盖 `/` 静态、`/api/**` 转发、SPA 回退、HTTPS、`X-Frame-Options`/CSP；不声称已部署
   - 后续验证关联：部署后 E2E（未登记）
+  - **当前证据（2026-11-06）**：
+    - 新增 `docs/runbooks/web-frontend-deployment.md`：前提（仅 HTTPS、同源、`__Host-han_session` 的 Secure/Path/无 Domain 要求）、构建命令、反代四要点、9 条上线核对清单、已知边界（明确写出 GAP-1/GAP-2 未解决前对应页面不可用）。
+    - 新增 `deploy/nginx-han.conf.example`：80→443 跳转；`/api/` 反代（保留 Host/`X-CSRF-Token`、`X-Forwarded-Proto`）；`location /` 的 `try_files $uri $uri/ /index.html` SPA 回退；`/assets/` immutable 长缓存与 `index.html` no-store；HSTS、`X-Content-Type-Options`、`X-Frame-Options: DENY`、CSP `frame-ancestors 'none'`；`/livez`、`/readyz` 探针反代。
+    - 核对：`Select-String -Path docs/runbooks/web-frontend-deployment.md -Pattern '/api'` 命中 4 处；样例中 `try_files`、`proxy_pass`、HSTS、`X-Frame-Options`、CSP 均存在。
+    - **没有执行任何真实部署**，文档开头与台账均写明"样例未在真实主机验证"。
+  - **仍未做**：独立评审与接收决定；真实部署环境下的 E2E（本机无 docker/无目标主机）。
 
 ## 契约缺口（IR-02 G0 核对发现，2026-11-06）
 
