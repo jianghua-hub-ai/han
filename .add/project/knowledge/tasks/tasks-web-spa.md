@@ -235,3 +235,11 @@
 
 - 注册与我的文章列表**没有跑真实 PostgreSQL 端到端**：注册依赖 `privacy_notices` 有 `current` 版本且 processing gate 开启，需要真实数据准备；本轮只有单元 / 路由 / 契约层证据。
 - `newRegistrationHandler` 的生产装配正确性由编译期类型 + 既有适配器实现保证，未在真实启动路径执行。
+
+**补充验证（2026-11-06 复核轮）**
+
+- GAP-2 的 SQL 已用真实 PostgreSQL 18.6 验证：新增 `internal/article/author_list_integration_test.go`（`//go:build integration`），自建自删隔离 schema + 全量迁移；种子数据为「本人 3 篇（其中 1 篇 `violation_state=violating`）+ 他人 1 篇」，用 `limit=2` 走两页。
+  - 断言：第一页 2 条且顺序为最新在前、`next_cursor` 非空；第二页 1 条且 `next_cursor` 为空；跨页无重复、无跳过（共 3 个不同 id）；他人文章不出现；违规的本人文章仍可见。
+  - 命令：`HAN_TEST_POSTGRES_DSN=<真实 PG> go test -tags=integration ./internal/article -run TestAuthorArticleListKeysetAgainstPostgres -count=1` → **PASS（0.77s）**。
+- 复核轮同时重跑全部项目检查：`gofmt -l ./cmd ./internal ./test` 无输出、`go mod verify` 全通过、`go vet ./...`、`go build ./...`、`go test -tags=contract ./...`（16 包）、`go test ./...`（14 包）全部 exit 0；前端 `npm run test` 46 用例 / 9 文件全绿、`npm run lint`、`npm run build` 均 exit 0。
+- 注册仍**没有**真实 PostgreSQL 端到端（需要 `privacy_notices.current` 与 processing gate 的真实数据准备），该项保持未验证。
