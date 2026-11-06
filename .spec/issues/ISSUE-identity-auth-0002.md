@@ -249,7 +249,7 @@ func s414Directory(t *testing.T) string {
 | 缺陷对象与版本 | `cmd/han-server/recovery_restore_test.go` 的 `s414Directory`（ADR-0039，提交 `51086aa` 起）；`test/integration/identity/password_reset_maintenance_test.go` 的 `s105EvidenceDir`（提交 `75d299b`）；其余 3 处非保留型点位改 `t.TempDir()`。关闭对象版本为 HEAD `304b4004ee5abe010c691e385fe4a69e82b6bfd5` |
 | 根因回归 | 见 §7 各小节：单条测试与整套单元/contract 前后目录集合均为新增 0；S10.5 的 A/B 实测均为 `+0` |
 | 历史残留 | 已按用户授权清理 1,429 + 129 个目录，`failed=0`；删除后各受影响前缀计数为 0；ADR-0039 排除点未触碰 |
-| 独立评审 | 项目负责人确认「已执行完毕」。**本单未留存评审人身份、评审结论文本或其存放位置**，按 unknown 登记，不代拟结论 |
+| 独立评审 | 项目管理员（本项目用户）2026-11-06 确认评审已完成；经其决定不补评审人身份与报告文本，本单不代拟结论 |
 | 两方验收 | 产出方：本次修复与清理的实际执行方（主会话/Lead，作者口径）；接收方：项目负责人（本轮答复为本单接收决定的来源） |
 | 项目检查 | 见 §7 门禁记录：`go build`、`go vet`、`go vet -tags=integration`、`gofmt` 均 exit 0；单测 14 包、contract 16 包 0 FAIL |
 
@@ -260,4 +260,4 @@ func s414Directory(t *testing.T) string {
 - ADR-0039 决策 3 的四处 `Intentionally retained` 点位按设计保持保留语义，容量上限与清理入口仍属未决候选（§5）。
 - 其他开发机/CI 的残留规模未盘点；`-race` 在本机不可用（`CGO_ENABLED=0`，无 C 工具链）。
 
-**后续如需补全评审留痕**：请提供评审人与评审报告路径/文本，本单可按原格式追加，不覆盖上述已登记事实。
+**评审留痕**：项目管理员 2026-11-06 决定不补评审人身份与报告文本；本单以该确认作为「独立评审已完成」的依据，不代拟结论，也不改变上文登记的未验证边界。
