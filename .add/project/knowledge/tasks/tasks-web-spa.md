@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 11 建成待验 / 1 未开始。
+**当前统计**：0 已完成 / 12 建成待验 / 0 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -73,7 +73,7 @@
 
 ## 批次 W2 · 身份界面
 
-- [ ] `web-spa-S3.1` 注册页
+- [-] `web-spa-S3.1` 注册页 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：注册表单、隐私声明确认、字段错误映射。
   - 文件清单：`web/src/pages/register.tsx`（新增）、`web/src/pages/register.test.tsx`（新增）
   - 验收命令：工作目录 `web/` → `npm run test`；`npm run lint`
@@ -81,6 +81,13 @@
   - 类型：开发
   - 本任务关闭条件：US-WEB-01.1 五条可观察断言全绿；未确认声明时不可提交
   - 后续验证关联：无
+  - **当前证据（2026-11-06）**：
+    - `web/src/pages/register.tsx`：用户名/邮箱/手机号/密码四个受控字段（`label` ↔ `id` 绑定、`autoComplete` 正确）；隐私声明按**项目负责人确认的静态文案**展示（版本 `v1.0.0`），勾选框文案为「我已阅读并同意《用户隐私声明》（v1.0.0）」；未勾选时**不发请求**并提示「请先阅读并同意《用户隐私声明》再提交。」；提交体为 `{username,email,phone,password,privacy_notice_version:'v1.0.0',privacy_acknowledged:true}`；成功后面板显示「注册成功 / 账号已创建，请使用新账号登录。」+「前往登录」链接，**不调用登录、不进入已登录态**；失败按稳定错误码映射为可理解文案。
+    - 错误映射：`identity.identifier_conflict`→「用户名、邮箱或手机号已被使用，请更换后重试。」（不指明哪个标识、不透露他人账号信息）；`identity.validation_failed`→提示检查字段与密码复杂度；`privacy.notice_outdated`→要求刷新后重新确认；`privacy.acknowledgement_required`→要求先确认；`platform.processing_gate_closed`→「注册暂未开放」；5xx/未知→通用重试文案。
+    - 测试：`web/src/pages/register.test.tsx` 5 用例——①四个字段与隐私声明正文/版本可见；②未确认声明时阻止提交且完全无 `/users` 请求；③成功路径断言请求体（含版本与确认标记）、成功面板与登录链接、**无 `/sessions` 调用**、密码输入从 DOM 移除、`localStorage`/`sessionStorage` 均为空；④冲突文案且保留已填内容、无 storage 写入；⑤声明过期文案。
+    - 命令：`npm run test` → 10 文件 51 用例全绿；`npm run lint` exit 0；`npm run build` exit 0（56 modules，339.23 kB / gzip 107.46 kB）。
+  - **偏离记录**：任务卡写「字段错误映射」，但后端 `validateRegistrationRequest` 对用户名/邮箱/手机号/密码的失败只返回 `identity.validation_failed`（**不带 `field_errors`**），因此实现为「按稳定错误码映射的表单级提示」，无法逐字段内联。若要逐字段提示，需要后端补充 `field_errors`，属另一次契约变更。
+  - **仍未做**：独立评审与接收决定；真实浏览器 E2E（注册依赖 `privacy_notices.current` 与 processing gate 的真实数据准备）。
 
 - [-] `web-spa-S3.2` 登录与登出界面 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：登录表单、统一失败提示、登出按钮（调用新端点）。

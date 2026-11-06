@@ -53,6 +53,11 @@ npm run build     # tsc --noEmit && vite build → web/dist
 - 前端不读取任何后端环境变量，只依赖同源路径 `/api/v1`。
 - 不做 SSR/SEO，爬虫拿到的是空壳 `index.html`。
 - 管理员治理页、密码自助不在首期范围。
-- `GET /api/v1/users/me/articles`（我的文章列表）与 `POST /api/v1/users`（注册）
-  在撰写本运行手册时**尚未在服务端挂载/实现**，见任务台账「契约缺口」。
-  这两项完成前，对应页面不可用；部署时必须另行确认。
+- `POST /api/v1/users`（注册）与 `GET /api/v1/users/me/articles`（我的文章列表）
+  已在 IR-02 的 GAP-1/GAP-2 处置中挂载/实现，但**注册仍依赖部署侧真实数据**：
+  `privacy_notices` 必须存在 `current` 版本且隐私 processing gate 已正确配置，
+  否则注册会返回 `privacy.notice_outdated` 或 `platform.processing_gate_closed`。
+  上线前请按 §4 清单实测一次注册。
+- 前端注册页使用**静态隐私声明文案（v1.0.0）**；若服务端 `current` 版本号与之
+  不一致，注册会被拒绝。升级文案时必须同步改动 `web/src/pages/register.tsx`
+  的 `privacyNoticeVersion` 并重新构建。
