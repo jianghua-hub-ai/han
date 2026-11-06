@@ -36,7 +36,15 @@ Han
 
 项目检查命令：
 
-未配置
+- `gofmt -l ./cmd ./internal ./test`
+- `go mod verify`
+- `go vet ./...`
+- `go build ./...`
+- `go test -tags=contract ./...`
+- `go test ./...`
+- `go test -race ./...`（本机不可执行：`CGO_ENABLED=0` 且无 C 工具链；换到具备 CGO 的环境再跑）
+
+以上与 `add.manifest.yaml` 的 `project.check_commands`、`README.md`「项目检查」一致。
 
 环境与敏感信息策略：
 

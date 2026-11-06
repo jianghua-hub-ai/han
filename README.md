@@ -94,6 +94,7 @@ go test ./...
 - 生产恢复链未实现：CAS anchor provider、key-retirement、restore 接线、POSIX 独占锁、11 端口 production root（ADR-0037）。真实 Journal/HMAC/keyring、旧备份恢复未验证。
 - Case18 `failed`/`expired`/`undetermined`、真实部署双系统未验证（ADR-0034/0035）。
 - 容量与性能未测（ADR-0033）。
+- `.add/project/profiles/go-service/` 的投影文档沿用源树相对链接，7 条在投影目录下不可解析（其中 1 条在上游源树本身即死链）；运行时依据以 `.codex/guidance/`、`.codex/skills/` 为准，投影字节不改。
 
 ## 提交规范
 
