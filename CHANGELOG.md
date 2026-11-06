@@ -33,6 +33,7 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 - Mark dead `%TEMP%` evidence links in S9.2 and S1.5
 - Close `ISSUE-identity-auth-0002` on owner-confirmed independent review and two-party acceptance
 - Accept and close `ISSUE-article-management-0001` (owner acceptance of the fixed 180-input version)
+- Add IR-02 web frontend (independent SPA) requirements draft
 
 ### Tests
 
