@@ -38,6 +38,7 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 - Confirm web SPA design and add its story slices
 - Add web SPA test plan, task ledger and batch plan
 - Add the web SPA scaffold (Vite + React + TypeScript, lint and test runners)
+- Add the session logout endpoint and isolate the JS workspace from Go module walking
 
 ### Tests
 

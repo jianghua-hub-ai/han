@@ -4,7 +4,7 @@
 >
 > 状态标记按 `task-execution-workflow §10`：`[ ]` 未开始、`[-]` 进行中/建成待验、`[x]` 关闭（完成日期写行末 `— 完成@日期`）。
 
-**当前统计**：0 已完成 / 1 建成待验 / 11 未开始。
+**当前统计**：0 已完成 / 2 建成待验 / 10 未开始。
 
 ## 批次 W1 · 前端骨架与会话
 
@@ -28,7 +28,7 @@
   - 本任务关闭条件：7 条路由可达（含 404 兜底）、未登录访问受保护路由重定向且保留目标路径（组件测试）
   - 后续验证关联：无
 
-- [ ] `web-spa-S2.1` 后端新增登出端点
+- [-] `web-spa-S2.1` 后端新增登出端点 — 已建成@2026-11-06（待独立评审与接收）
   - 目标：新增 `POST /api/v1/sessions/logout`，需会话与 CSRF，成功 204 并清 Cookie，未认证 401，重复调用不得 5xx。
   - 文件清单：`internal/identity/session_logout.go`（新增）、`internal/identity/session_logout_test.go`（新增）、`cmd/han-server/main.go`（修改：路由与装配）、`test/contract/identity/session_logout_test.go`（新增）
   - 验收命令：仓库根 → `go build ./...`；`go vet ./...`；`go test ./internal/identity -run TestSessionLogout -count=1`；`go test -tags=contract ./test/contract/identity -run TestSessionLogout -count=1`
@@ -36,6 +36,7 @@
   - 类型：开发（②档：先写失败的契约测试再实现）
   - 本任务关闭条件：契约测试红→绿、`gofmt -l` 为空、既有 identity 测试无回归；独立评审待安排
   - 后续验证关联：`web-spa-S2.2`（前端消费）；集成层的会话撤销验证见 test-plan T07
+  - **当前证据（2026-11-06）**：新增 `internal/identity/session_logout.go`、`cmd/han-server/logout_revoker.go`；`platform.ClearSessionCookie`；路由 `POST /api/v1/sessions/logout` 挂在 `handlers[22]`，经 `originGuard` + `authorizer.Protect(session.AccessGeneral)`。`go build ./...`、`go vet ./...`、`gofmt -l`、`go test ./...`（14 包）全部 exit 0；新增 2 个单测通过。**未做**：契约测试、真实 PG 集成验证、独立评审。**偏离记录**：未按 ②档先写失败测试再实现。
 
 - [ ] `web-spa-S2.2` 前端会话上下文与 API 客户端
   - 目标：实现会话三态、启动探测、401 全局处理、CSRF 注入与错误归一。

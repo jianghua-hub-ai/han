@@ -2405,6 +2405,7 @@ type productionIdentityHandlers struct {
 	administratorPrivacy      http.Handler
 	passwordReset             http.Handler
 	temporaryCredentialResend http.Handler
+	logout                    http.Handler
 	authorizer                platform.HTTPAuthorizer
 }
 
@@ -2437,7 +2438,7 @@ func newProductionBusinessHandler(
 	if err != nil {
 		return nil, err
 	}
-	routerHandlers := [22]http.Handler{
+	routerHandlers := [23]http.Handler{
 		identityHandlers.password,
 		identityHandlers.administratorNotice,
 		identityHandlers.administratorCreate,
@@ -2451,6 +2452,7 @@ func newProductionBusinessHandler(
 	routerHandlers[11] = articleHandlers[5]
 	routerHandlers[12] = articleHandlers[6]
 	copy(routerHandlers[13:], articleHandlers[7:])
+	routerHandlers[22] = identityHandlers.logout
 	var trace func(*http.Request)
 	if composition.articleTestSeam != nil {
 		trace = composition.articleTestSeam.trace
@@ -2582,12 +2584,20 @@ func (b *productionBusinessBuilder) buildIdentityHandlers() (productionIdentityH
 	if err != nil {
 		return productionIdentityHandlers{}, err
 	}
+	logoutHandler, err := identity.NewSessionLogoutHandler(
+		postgresSessionLogout{pool: b.pool, store: b.sessionStore},
+		time.Now,
+	)
+	if err != nil {
+		return productionIdentityHandlers{}, errors.New("create session logout handler")
+	}
 	return b.protectIdentityHandlers(
 		loginHandler,
 		passwordHandler,
 		administratorHandler,
 		passwordResetHandler,
 		resendHandler,
+		logoutHandler,
 		authorizer,
 	), nil
 }
@@ -3035,6 +3045,7 @@ func (b *productionBusinessBuilder) protectIdentityHandlers(
 	administratorHandler *identity.Handler,
 	passwordResetHandler *identity.Handler,
 	temporaryCredentialResendHandler *identity.Handler,
+	logoutHandler *identity.SessionLogoutHandler,
 	authorizer platform.HTTPAuthorizer,
 ) productionIdentityHandlers {
 	return productionIdentityHandlers{
@@ -3064,6 +3075,10 @@ func (b *productionBusinessBuilder) protectIdentityHandlers(
 			http.HandlerFunc(
 				temporaryCredentialResendHandler.ResendTemporaryCredential,
 			),
+		)),
+		logout: b.composition.originGuard.Protect(authorizer.Protect(
+			session.AccessGeneral,
+			http.HandlerFunc(logoutHandler.Logout),
 		)),
 		authorizer: authorizer,
 	}
@@ -3545,7 +3560,7 @@ func newLoginBusinessRouterWithTraceAndRecovery(
 	recoveryHandle func() recovery.Runtime,
 	password ...http.Handler,
 ) http.Handler {
-	var handlers [22]http.Handler
+	var handlers [23]http.Handler
 	for index := range handlers {
 		if index < len(password) {
 			handlers[index] = password[index]
@@ -3569,6 +3584,10 @@ func newLoginBusinessRouterWithTraceAndRecovery(
 			methodAllowed = request.Method == http.MethodGet
 		case request.URL.Path == "/api/v1/sessions":
 			handler = login
+			allow = http.MethodPost
+			methodAllowed = request.Method == http.MethodPost
+		case request.URL.Path == "/api/v1/sessions/logout":
+			handler = handlers[22]
 			allow = http.MethodPost
 			methodAllowed = request.Method == http.MethodPost
 		case request.URL.Path == "/api/v1/users/me/password":

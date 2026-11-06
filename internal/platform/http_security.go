@@ -280,6 +280,22 @@ func SetSessionCookie(response http.ResponseWriter, token string) error {
 	return nil
 }
 
+// ClearSessionCookie expires the session cookie under the same contract.
+func ClearSessionCookie(response http.ResponseWriter) {
+	if response == nil {
+		return
+	}
+	http.SetCookie(response, &http.Cookie{
+		Name:     SessionCookieName,
+		Value:    "",
+		Path:     "/",
+		Secure:   true,
+		HttpOnly: true,
+		SameSite: http.SameSiteLaxMode,
+		MaxAge:   -1,
+	})
+}
+
 // PrincipalResolver resolves one current session into a trusted principal.
 type PrincipalResolver interface {
 	ResolvePrincipal(context.Context, session.ResolveInput) (session.Principal, error)
